@@ -18,6 +18,7 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import getLPTheme from './getLPTheme';
+import LogoCollection from './components/LogoCollection';
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }) {
   return (
@@ -92,7 +93,8 @@ export default function LandingPage() {
         <Divider />
         <FAQ />
         <Divider />
-        <Footer />
+        <LogoCollection/>
+        <Divider/>
       </Box>
       <ToggleCustomTheme
         showCustomTheme={showCustomTheme}
