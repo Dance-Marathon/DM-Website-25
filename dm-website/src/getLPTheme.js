@@ -118,7 +118,7 @@ const getDesignTokens = (mode) => ({
       ...(mode === 'dark' && { default: gray[900], paper: gray[800] }),
     },
     text: {
-      primary: gray[800],
+      primary: brand[200],
       secondary: gray[600],
       ...(mode === 'dark' && { primary: '#fff', secondary: gray[400] }),
     },
@@ -130,11 +130,11 @@ const getDesignTokens = (mode) => ({
     },
   },
   typography: {
-    fontFamily: ['"Roboto", "sans-serif"'].join(','),
+    fontFamily: ['"Montserrat", "sans-serif"'].join(','),
     h1: {
       fontSize: 60,
       fontWeight: 600,
-      lineHeight: 78 / 70,
+      lineHeight: 1.1,
       letterSpacing: -0.2,
     },
     h2: {
