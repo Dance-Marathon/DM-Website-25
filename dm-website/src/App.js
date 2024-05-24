@@ -10,7 +10,7 @@ import Hero from './components/Hero';
 import ToggleButton from '@mui/material/ToggleButton';
 import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
-import LandingPage from './LandingPage';
+import LandingPage from './views/LandingPage';
 
 function App() {
   const [mode, setMode] = React.useState('dark');

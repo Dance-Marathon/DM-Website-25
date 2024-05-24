@@ -18,6 +18,7 @@ import { Stack } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/X';
+import { useNavigate } from 'react-router-dom';
 
 const logoStyle = {
   width: '40px',
@@ -27,6 +28,7 @@ const logoStyle = {
 
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
+  const navigate = useNavigate();
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -92,10 +94,11 @@ function AppAppBar({ mode, toggleColorMode }) {
                 }
                 style={logoStyle}
                 alt="Dance Marathon at UF Logo"
+                onClick={() => navigate('/')}
               />
               <Box sx={{ display: { xs: 'none', md: 'flex' }, ml: '10px' }}>
                 <MenuItem
-                  onClick={() => scrollToSection('features')}
+                  onClick={() => navigate('/contact')}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="white">
