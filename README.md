@@ -2,4 +2,5 @@
 
 npm install @mui/material @emotion/react @emotion/styled
 npm install @fontsource/roboto
+npm install @fontsource/montserrat
 npm install @mui/icons-material
