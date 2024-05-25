@@ -7,10 +7,15 @@ import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 import FacebookIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import TwitterIcon from '@mui/icons-material/X';
+import getLPTheme from '../getLPTheme';
+
+// Images
+import MN from "../assets/images/miraclenetwork_dm.png";
 
 const logoStyle = {
   width: '140px',
@@ -28,7 +33,12 @@ function Copyright() {
 }
 
 export default function Footer() {
+  const [mode, setMode] = React.useState('light');
+  const LPtheme = createTheme(getLPTheme(mode));
+  const defaultTheme = createTheme({ palette: { mode } });
+
   return (
+    <ThemeProvider theme={LPtheme}>
     <Container
       sx={{
         display: 'flex',
@@ -45,116 +55,55 @@ export default function Footer() {
           flexDirection: { xs: 'column', sm: 'row' },
           width: '100%',
           justifyContent: 'space-between',
+          textAlign: { sm: 'center', md: 'center' },
+        }}>
+        <Typography variant="body2" color="primary" fontWeight={500}>
+          A copy of the official registration and financial information may be obtained from the division of consumer services by calling toll free 1-800-435-7352 within the state. Registration does not imply endorsement, approval or recommendation by the state. If you prefer not to be contacted for future fundraising activities, please notify us by calling 1-866-682-2372 or visiting: http://giving.ufhealth.org/opt-out
+        </Typography>
+      </Box>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: { sm: 'row' },
+          width: '80%',
+          justifyContent: 'space-between',
         }}
       >
         <Box
           sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 4,
-            minWidth: { xs: '100%', sm: '60%' },
-          }}
-        >
-          <Box sx={{ width: { xs: '100%', sm: '60%' } }}>
-            <Box sx={{ ml: '-15px' }}>
-              <img
-                src={
-                  'https://assets-global.website-files.com/61ed56ae9da9fd7e0ef0a967/61f12e6faf73568658154dae_SitemarkDefault.svg'
-                }
-                style={logoStyle}
-                alt="logo of sitemark"
-              />
-            </Box>
-            <Typography variant="body2" fontWeight={600} gutterBottom>
-              Newsletter
-            </Typography>
-            <Typography variant="body2" color="text.secondary" mb={2}>
-              Subscribe to our newsletter for weekly updates and promotions.
-            </Typography>
-            <Stack direction="row" spacing={1} useFlexGap>
-              <TextField
-                id="outlined-basic"
-                hiddenLabel
-                size="small"
-                variant="outlined"
-                fullWidth
-                aria-label="Enter your email address"
-                placeholder="Your email address"
-                inputProps={{
-                  autoComplete: 'off',
-                  'aria-label': 'Enter your email address',
-                }}
-              />
-              <Button variant="contained" color="primary" sx={{ flexShrink: 0 }}>
-                Subscribe
-              </Button>
-            </Stack>
-          </Box>
-        </Box>
-        <Box
-          sx={{
             display: { xs: 'none', sm: 'flex' },
-            flexDirection: 'column',
+            flexDirection: 'row',
             gap: 1,
+            width: '100%',
+            justifyContent: 'space-between',
           }}
         >
-          <Typography variant="body2" fontWeight={600}>
-            Product
+          <Link color="#4965A6" href="https://ufhealth.org/myrx/disclaimer.shtml">
+            Disclaimer & Permitted Use
+          </Link>
+          <Typography variant="body2" color="primary" fontWeight={400}>
+            |
           </Typography>
-          <Link color="text.secondary" href="#">
-            Features
+          <Link color="#4965A6" href="https://disability.ufl.edu/">
+            Disability Services
           </Link>
-          <Link color="text.secondary" href="#">
-            Testimonials
-          </Link>
-          <Link color="text.secondary" href="#">
-            Highlights
-          </Link>
-          <Link color="text.secondary" href="#">
-            Pricing
-          </Link>
-          <Link color="text.secondary" href="#">
-            FAQs
-          </Link>
-        </Box>
-        <Box
-          sx={{
-            display: { xs: 'none', sm: 'flex' },
-            flexDirection: 'column',
-            gap: 1,
-          }}
-        >
-          <Typography variant="body2" fontWeight={600}>
-            Company
+          <Typography variant="body2" color="primary" fontWeight={400}>
+            |
           </Typography>
-          <Link color="text.secondary" href="#">
-            About us
+          <Link color="#4965A6" href="https://security.ufl.edu/">
+            Security Policies
           </Link>
-          <Link color="text.secondary" href="#">
-            Careers
-          </Link>
-          <Link color="text.secondary" href="#">
-            Press
-          </Link>
-        </Box>
-        <Box
-          sx={{
-            display: { xs: 'none', sm: 'flex' },
-            flexDirection: 'column',
-            gap: 1,
-          }}
-        >
-          <Typography variant="body2" fontWeight={600}>
-            Legal
+          <Typography variant="body2" color="primary" fontWeight={400}>
+            |
           </Typography>
-          <Link color="text.secondary" href="#">
-            Terms
+          <Link color="#4965A6" href="https://privacy.ufl.edu/privacy-policies-and-procedures/onlineinternet-privacy-statement/">
+            UF Privacy Policy
           </Link>
-          <Link color="text.secondary" href="#">
-            Privacy
-          </Link>
-          <Link color="text.secondary" href="#">
-            Contact
+          <Typography variant="body2" color="primary" fontWeight={400}>
+            |
+          </Typography>
+          <Link color="#4965A6" href="#">
+            Shands Privacy Policy
           </Link>
         </Box>
       </Box>
@@ -169,17 +118,23 @@ export default function Footer() {
         }}
       >
         <div>
-          <Link color="text.secondary" href="#">
-            Privacy Policy
-          </Link>
-          <Typography display="inline" sx={{ mx: 0.5, opacity: 0.5 }}>
-            &nbsp;•&nbsp;
-          </Typography>
-          <Link color="text.secondary" href="#">
-            Terms of Service
-          </Link>
           <Copyright />
         </div>
+        <Box
+          sx={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            width: '100%',
+          }}>  
+          <Box
+            sx={{
+              display: 'flex',
+              width: '50px',
+              height: '50px',
+            }}>
+              {/* Add images here */}
+          </Box>      
+        </Box>
         <Stack
           direction="row"
           justifyContent="left"
@@ -216,5 +171,6 @@ export default function Footer() {
         </Stack>
       </Box>
     </Container>
+    </ThemeProvider>
   );
 }
