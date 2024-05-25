@@ -16,10 +16,26 @@ import ToggleColorMode from '../components/ToggleColorMode';
 import HorizontalTeamCard from "../components/TeamCard";
 
 // Images
-import team1 from "../assets/images/team-5.jpg";
-import team2 from "../assets/images/team-5.jpg";
-import team3 from "../assets/images/team-5.jpg";
-import team4 from "../assets/images/team-5.jpg";
+import OT1 from "../assets/images/RA.jpg";
+import OT2 from "../assets/images/SF.jpg";
+import OT3 from "../assets/images/MT.jpg";
+import OT4 from "../assets/images/SW.jpg";
+import OT5 from "../assets/images/AF.jpg";
+import OT6 from "../assets/images/RD.jpg";
+import OT7 from "../assets/images/CA.jpg";
+import OT8 from "../assets/images/DG.jpg";
+import OT9 from "../assets/images/BEANY.png";
+import OT10 from "../assets/images/SL.jpg";
+import OT11 from "../assets/images/LD.jpg";
+import OT12 from "../assets/images/OK.jpg";
+import OT13 from "../assets/images/DS.png";
+import OT14 from "../assets/images/AD.jpg";
+import OT15 from "../assets/images/CL.jpeg";
+import OT16 from "../assets/images/AE.jpg";
+import OT17 from "../assets/images/JW.jpg";
+import OT18 from "../assets/images/CE.jpg";
+import OT19 from "../assets/images/GC.jpg";
+import OT20 from "../assets/images/AO.jpg";
 
 function Contact() {
   const [mode, setMode] = React.useState('light');
@@ -43,54 +59,213 @@ function Contact() {
     >
       <Container>
         <Grid container>
-          <Grid item xs={12} md={8} sx={{ mb: 6 }}>
-            <Typography variant="h3" color="white">
-              The Executive Team
+          <Grid item xs={12} md={8} sx={{ mb: 3 }}>
+            <Typography variant="h3" color="primary">
+              The 2025 Overall Team
             </Typography>
-            <Typography variant="body2" color="white" opacity={0.8}>
-              There&apos;s nothing I really wanted to do in life that I wasn&apos;t able to get good
-              at. That&apos;s my skill.
+            <Typography variant="body2" color="secondary" opacity={0.8}>
+              <i>Meet the Overalls</i>
             </Typography>
           </Grid>
         </Grid>
-        <Grid container spacing={3}>
-          <Grid item xs={12} lg={6}>
+        <Grid container spacing={2}>
+          <Grid item xs={12} lg={6} md={4}>
             <Box mb={1}>
               <HorizontalTeamCard
-                image={team1}
-                name="Emma Roberts"
-                position={{ color: "info", label: "UI Designer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={OT1}
+                name="Ryan Athay"
+                position={{ color: "primary", label: "Executive Director" }}
+                email="rathay@floridadm.org"
               />
             </Box>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={12} lg={6} md={4}>
             <Box mb={1}>
               <HorizontalTeamCard
-                image={team2}
-                name="William Pearce"
-                position={{ color: "info", label: "Boss" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={OT2}
+                name="Skylar Finkel"
+                position={{ color: "info", label: "Finance Manager" }}
+                email="sfinkel@floridadm.org"
               />
             </Box>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={12} lg={6} md={4}>
             <Box mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image={team3}
-                name="Ivana Flow"
-                position={{ color: "info", label: "Athlete" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={OT3}
+                name="Macy Thompson"
+                position={{ color: "primary-light", label: "Operations Manager" }}
+                email="mthompson@floridadm.org"
               />
             </Box>
           </Grid>
-          <Grid item xs={12} lg={6}>
+          <Grid item xs={12} lg={6} md={4}>
             <Box mb={{ xs: 1, lg: 0 }}>
               <HorizontalTeamCard
-                image={team4}
-                name="Marquez Garcia"
-                position={{ color: "info", label: "JS Developer" }}
-                description="Artist is a term applied to a person who engages in an activity deemed to be an art."
+                image={OT4}
+                name="Sydney Wall"
+                position={{ color: "info", label: "Marketing Manager" }}
+                email="swall@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT5}
+                name="Abby Ferrell"
+                position={{ color: "info", label: "Membership Manager" }}
+                email="aferrell@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT6}
+                name="Raegan DiRenzo"
+                position={{ color: "info", label: "Dancer Engagement Overall" }}
+                email="rdirenzo@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT7}
+                name="Cameron Appel"
+                position={{ color: "info", label: "Digital Marketing Overall" }}
+                email="cappel@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT8}
+                name="Dawson Geller"
+                position={{ color: "info", label: "Family Relations Overall" }}
+                email="dgeller@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT9}
+                name="Ryan Beany"
+                position={{ color: "info", label: "Finance Overall" }}
+                email="rbeany@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT10}
+                name="Sophie Linale"
+                position={{ color: "info", label: "Leadership Development Overall" }}
+                email="slinale@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT11}
+                name="Lexi Devescovi"
+                position={{ color: "info", label: "Marathon Relations Overall" }}
+                email="adevescovi@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT12}
+                name="Olivia Knier"
+                position={{ color: "info", label: "Merchandise Overall" }}
+                email="oknier@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT13}
+                name="Dylan Siegel"
+                position={{ color: "info", label: "Morale Overall" }}
+                email="dsiegel@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT14}
+                name="Ava Dinow"
+                position={{ color: "info", label: "Multimedia Overall" }}
+                email="adinow@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT15}
+                name="Caroline Lee"
+                position={{ color: "info", label: "Organization Relations Overall" }}
+                email="clee@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT16}
+                name="Averie Engel"
+                position={{ color: "info", label: "Outreach Overall" }}
+                email="aengel@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT17}
+                name="Jessica Winograd"
+                position={{ color: "info", label: "Partnerships Overall" }}
+                email="jwinograd@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT18}
+                name="Caroline Eaton"
+                position={{ color: "info", label: "Productions Overall" }}
+                email="ceaton@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT19}
+                name="Grey Chapin"
+                position={{ color: "info", label: "Public Relations Overall" }}
+                email="gchapin@floridadm.org"
+              />
+            </Box>
+          </Grid>
+          <Grid item xs={12} lg={6} md={4}>
+            <Box mb={1}>
+              <HorizontalTeamCard
+                image={OT20}
+                name="Ava Orlando"
+                position={{ color: "info", label: "Recruitment Overall" }}
+                email="aorlando@floridadm.org"
               />
             </Box>
           </Grid>

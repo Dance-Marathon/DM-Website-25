@@ -2,13 +2,13 @@ import { alpha } from '@mui/material/styles';
 import { red } from '@mui/material/colors';
 
 export const brand = {
-  50: '#F0F7FF',
+  50:  '#F0F7FF',
   100: '#CEE5FD',
   200: '#9CCCFC',
   300: '#55A6F6',
-  400: '#0A66C2',
-  500: '#0959AA',
-  600: '#064079',
+  400: '#4965A6', // accent DM navy (light)
+  500: '#233563', // primary DM navy (main)
+  600: '#4965A6', 
   700: '#033363',
   800: '#02294F',
   900: '#021F3B',
@@ -19,9 +19,9 @@ export const secondary = {
   100: '#E9CEFD',
   200: '#D49CFC',
   300: '#B355F6',
-  400: '#750AC2',
-  500: '#6709AA',
-  600: '#490679',
+  400: '#EB9F68', // accent DM orange (light)
+  500: '#E2883c', // primary DM orange (main)
+  600: '#EB9F68', 
   700: '#3B0363',
   800: '#2F024F',
   900: '#23023B',
@@ -57,9 +57,10 @@ const getDesignTokens = (mode) => ({
   palette: {
     mode,
     primary: {
-      light: brand[200],
+      light: brand[400],
       main: brand[500],
       dark: brand[800],
+      accent: brand[400],
       contrastText: brand[50],
       ...(mode === 'dark' && {
         contrastText: brand[100],
@@ -69,9 +70,10 @@ const getDesignTokens = (mode) => ({
       }),
     },
     secondary: {
-      light: secondary[300],
+      light: secondary[400],
       main: secondary[500],
       dark: secondary[800],
+      accent: secondary[400],
       ...(mode === 'dark' && {
         light: secondary[400],
         main: secondary[500],
