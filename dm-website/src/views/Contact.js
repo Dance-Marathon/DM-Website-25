@@ -36,6 +36,7 @@ import OT17 from "../assets/images/JW.jpg";
 import OT18 from "../assets/images/CE.jpg";
 import OT19 from "../assets/images/GC.jpg";
 import OT20 from "../assets/images/AO.jpg";
+import Footer from '../components/Footer';
 
 function Contact() {
   const [mode, setMode] = React.useState('light');
@@ -272,6 +273,7 @@ function Contact() {
         </Grid>
       </Container>
     </Box>
+    <Footer/>
     </ThemeProvider>
   );
 }
