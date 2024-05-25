@@ -15,18 +15,13 @@ import TwitterIcon from '@mui/icons-material/X';
 import getLPTheme from '../getLPTheme';
 
 // Images
-import MN from "../assets/images/miraclenetwork_dm.png";
-
-const logoStyle = {
-  width: '140px',
-  height: 'auto',
-};
+import Footer_Image from "../assets/images/footer_image.png";
 
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary" mt={1}>
       {'Copyright © '}
-      <Link href="https://mui.com/">Sitemark&nbsp;</Link>
+      <Link href="https://floridadm.org/">Dance Marathon at The University of Florida&nbsp;</Link>
       {new Date().getFullYear()}
     </Typography>
   );
@@ -39,13 +34,18 @@ export default function Footer() {
 
   return (
     <ThemeProvider theme={LPtheme}>
+    <Box
+      sx={{
+        backgroundColor: '#E2883c',
+      }}
+    >
     <Container
       sx={{
         display: 'flex',
         flexDirection: 'column',
         alignItems: 'center',
-        gap: { xs: 4, sm: 8 },
-        py: { xs: 8, sm: 10 },
+        gap: { xs: 4, sm: 4 },
+        py: { xs: 8, sm: 8 },
         textAlign: { sm: 'center', md: 'left' },
       }}
     >
@@ -57,7 +57,7 @@ export default function Footer() {
           justifyContent: 'space-between',
           textAlign: { sm: 'center', md: 'center' },
         }}>
-        <Typography variant="body2" color="primary" fontWeight={500}>
+        <Typography variant="body2" color="white" fontWeight={500}>
           A copy of the official registration and financial information may be obtained from the division of consumer services by calling toll free 1-800-435-7352 within the state. Registration does not imply endorsement, approval or recommendation by the state. If you prefer not to be contacted for future fundraising activities, please notify us by calling 1-866-682-2372 or visiting: http://giving.ufhealth.org/opt-out
         </Typography>
       </Box>
@@ -78,31 +78,31 @@ export default function Footer() {
             justifyContent: 'space-between',
           }}
         >
-          <Link color="#4965A6" href="https://ufhealth.org/myrx/disclaimer.shtml">
+          <Link color="white" href="https://ufhealth.org/myrx/disclaimer.shtml">
             Disclaimer & Permitted Use
           </Link>
           <Typography variant="body2" color="primary" fontWeight={400}>
             |
           </Typography>
-          <Link color="#4965A6" href="https://disability.ufl.edu/">
+          <Link color="white" href="https://disability.ufl.edu/">
             Disability Services
           </Link>
           <Typography variant="body2" color="primary" fontWeight={400}>
             |
           </Typography>
-          <Link color="#4965A6" href="https://security.ufl.edu/">
+          <Link color="white" href="https://security.ufl.edu/">
             Security Policies
           </Link>
           <Typography variant="body2" color="primary" fontWeight={400}>
             |
           </Typography>
-          <Link color="#4965A6" href="https://privacy.ufl.edu/privacy-policies-and-procedures/onlineinternet-privacy-statement/">
+          <Link color="white" href="https://privacy.ufl.edu/privacy-policies-and-procedures/onlineinternet-privacy-statement/">
             UF Privacy Policy
           </Link>
           <Typography variant="body2" color="primary" fontWeight={400}>
             |
           </Typography>
-          <Link color="#4965A6" href="#">
+          <Link color="white" href="#">
             Shands Privacy Policy
           </Link>
         </Box>
@@ -111,31 +111,24 @@ export default function Footer() {
         sx={{
           display: 'flex',
           justifyContent: 'space-between',
-          pt: { xs: 4, sm: 8 },
+          pt: { sm: 4 },
           width: '100%',
           borderTop: '1px solid',
-          borderColor: 'divider',
+          borderColor: 'white',
         }}
       >
-        <div>
+        {/* <div>
           <Copyright />
-        </div>
+        </div> */}
         <Box
           sx={{
             display: 'flex',
-            justifyContent: 'space-between',
+            justifyContent: 'center',
             width: '100%',
-          }}>  
-          <Box
-            sx={{
-              display: 'flex',
-              width: '50px',
-              height: '50px',
-            }}>
-              {/* Add images here */}
-          </Box>      
-        </Box>
-        <Stack
+          }}>
+            <img src={Footer_Image} alt="Footer Image" style={{ width: '400px', height: 'auto' }} />
+        </Box>      
+        {/* <Stack
           direction="row"
           justifyContent="left"
           spacing={1}
@@ -168,9 +161,10 @@ export default function Footer() {
           >
             <LinkedInIcon />
           </IconButton>
-        </Stack>
+        </Stack> */}
       </Box>
     </Container>
+    </Box>
     </ThemeProvider>
   );
 }
