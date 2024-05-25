@@ -57,7 +57,7 @@ function Contact() {
       <Box
         component="section"
         variant="gradient"
-        bgColor="dark"
+        bgColor="background.paper"
         position="relative"
         py={6}
         px={{ xs: 2, lg: 0 }}
