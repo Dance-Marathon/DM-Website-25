@@ -15,6 +15,7 @@ import '@fontsource/montserrat/300.css';
 import '@fontsource/montserrat/400.css';
 import '@fontsource/montserrat/500.css';
 import '@fontsource/montserrat/700.css';
+import GetInvolved from './views/GetInvolved';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -24,6 +25,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/get-involved" element={<GetInvolved />} />
       </Routes>
     </Router>
   </React.StrictMode>,
