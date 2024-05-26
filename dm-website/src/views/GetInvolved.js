@@ -16,6 +16,9 @@ import FAQ from '../components/FAQ';
 import getLPTheme from '../getLPTheme';
 import LogoCollection from '../components/LogoCollection';
 import RegToFundraise from '../components/RegToFundraise';
+import Footer from '../components/Footer';
+
+import ScrollToTop from "../components/ScrollToTop";
 
 function ToggleCustomTheme({ showCustomTheme, toggleCustomTheme }) {
   return (
@@ -75,6 +78,7 @@ export default function GetInvolved() {
 
   return (
     <ThemeProvider theme={showCustomTheme ? LPtheme : defaultTheme}>
+      <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <Hero />
@@ -94,6 +98,7 @@ export default function GetInvolved() {
         showCustomTheme={showCustomTheme}
         toggleCustomTheme={toggleCustomTheme}
       />
+      <Footer />
     </ThemeProvider>
   );
 }
