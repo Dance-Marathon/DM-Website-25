@@ -12,6 +12,8 @@ import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
 import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
 import LandingPage from './views/LandingPage';
 
+import ScrollToTop from "./components/ScrollToTop";
+
 function App() {
   const [mode, setMode] = React.useState('dark');
   const [showCustomTheme, setShowCustomTheme] = React.useState(true);
@@ -24,6 +26,7 @@ function App() {
 
   return (
       <div className="App">
+      <ScrollToTop />
       <ThemeProvider theme={showCustomTheme ? LPtheme : defaultTheme}> </ThemeProvider>
       <CssBaseline />
         <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />

@@ -39,6 +39,8 @@ import OT19 from "../assets/images/GC.jpg";
 import OT20 from "../assets/images/AO.jpg";
 import Footer from '../components/Footer';
 
+import ScrollToTop from "../components/ScrollToTop";
+
 function Contact() {
   const [mode, setMode] = React.useState('light');
   const [showCustomTheme, setShowCustomTheme] = React.useState(true);
@@ -51,6 +53,7 @@ function Contact() {
 
   return (
     <ThemeProvider theme={showCustomTheme ? LPtheme : defaultTheme}>
+      <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode}/>
       <Hero />
