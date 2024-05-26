@@ -1,5 +1,3 @@
-// src/views/Donate.js
-
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -13,7 +11,7 @@ const Donate = () => {
       if (newWindow) {
         newWindow.opener = null;
       }
-      hasRedirected.current = true; // Set the ref to true
+      hasRedirected.current = true;
       navigate('/');
     }
   }, [navigate]);
