@@ -10,11 +10,11 @@ import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
+import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import ToggleColorMode from './ToggleColorMode';
 import IconButton from '@mui/material/IconButton';
 import { Stack } from '@mui/material';
-
 import FacebookIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/X';
@@ -28,10 +28,30 @@ const logoStyle = {
 
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
+  const [menuAnchor, setMenuAnchor] = React.useState(null);
+  const [subMenuAnchor, setSubMenuAnchor] = React.useState(null);
+
   const navigate = useNavigate();
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
+  };
+
+  const handleMenuOpen = (event) => {
+    setMenuAnchor(event.currentTarget);
+  };
+
+  const handleMenuClose = () => {
+    setMenuAnchor(null);
+    setSubMenuAnchor(null);
+  };
+
+  const handleSubMenuOpen = (event) => {
+    setSubMenuAnchor(event.currentTarget);
+  };
+
+  const handleSubMenuClose = () => {
+    setSubMenuAnchor(null);
   };
 
   const scrollToSection = (sectionId) => {
@@ -68,7 +88,7 @@ function AppAppBar({ mode, toggleColorMode }) {
               justifyContent: 'space-between',
               flexShrink: 0,
               borderRadius: '999px',
-              bgcolor:'#23356370',
+              bgcolor: '#23356370',
               backdropFilter: 'blur(24px)',
               maxHeight: 40,
               border: '1px solid',
@@ -89,15 +109,13 @@ function AppAppBar({ mode, toggleColorMode }) {
               }}
             >
               <img
-                src={
-                  '/logo2024.png'
-                }
+                src={'/logo2024.png'}
                 style={logoStyle}
                 alt="Dance Marathon at UF Logo"
                 onClick={() => navigate('/')}
               />
               <Box sx={{ display: { xs: 'none', md: 'flex' }, ml: '10px' }}>
-                <MenuItem
+              <MenuItem
                   onClick={() => navigate('/contact')}
                   sx={{ py: '6px', px: '12px' }}
                 >
@@ -106,13 +124,29 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('testimonials')}
+                  onMouseEnter={handleMenuOpen}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
                     About
                   </Typography>
                 </MenuItem>
+                <Menu
+                  anchorEl={menuAnchor}
+                  open={Boolean(menuAnchor)}
+                  onClose={handleMenuClose}
+                  MenuListProps={{ onMouseLeave: handleMenuClose }}
+                >
+                  <MenuItem onClick={() => navigate('/history')}>
+                    History
+                  </MenuItem>
+                  <MenuItem onClick={() => navigate('/team')}>
+                    Team
+                  </MenuItem>
+                  <MenuItem onClick={() => navigate('/mission')}>
+                    Mission
+                  </MenuItem>
+                </Menu>
                 <MenuItem
                   onClick={() => navigate('/get-involved')}
                   sx={{ py: '6px', px: '12px' }}
@@ -122,13 +156,26 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </Typography>
                 </MenuItem>
                 <MenuItem
-                  onClick={() => scrollToSection('pricing')}
+                  onMouseEnter={handleSubMenuOpen}
                   sx={{ py: '6px', px: '12px' }}
                 >
                   <Typography variant="body2" color="text.primary">
                     Events
                   </Typography>
                 </MenuItem>
+                <Menu
+                  anchorEl={subMenuAnchor}
+                  open={Boolean(subMenuAnchor)}
+                  onClose={handleSubMenuClose}
+                  MenuListProps={{ onMouseLeave: handleSubMenuClose }}
+                >
+                  <MenuItem onClick={() => navigate('/upcoming-events')}>
+                    Upcoming Events
+                  </MenuItem>
+                  <MenuItem onClick={() => navigate('/past-events')}>
+                    Past Events
+                  </MenuItem>
+                </Menu>
                 <MenuItem
                   onClick={() => scrollToSection('faq')}
                   sx={{ py: '6px', px: '12px' }}
@@ -164,39 +211,39 @@ function AppAppBar({ mode, toggleColorMode }) {
             >
               <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
               <Stack
-          direction="row"
-          justifyContent="left"
-          spacing={1}
-          useFlexGap
-          sx={{
-            color: 'text.secondary',
-          }}
-        >
-          <IconButton
-            color="inherit"
-            href="https://www.facebook.com/floridaDM/"
-            aria-label="Facebook"
-            sx={{ alignSelf: 'center' }}
-          >
-            <FacebookIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            href="https://x.com/floridadm?lang=en"
-            aria-label="X"
-            sx={{ alignSelf: 'center' }}
-          >
-            <TwitterIcon />
-          </IconButton>
-          <IconButton
-            color="inherit"
-            href="https://www.instagram.com/dmatuf/?hl=en"
-            aria-label="Instagram"
-            sx={{ alignSelf: 'center' }}
-          >
-            <InstagramIcon />
-          </IconButton>
-        </Stack>
+                direction="row"
+                justifyContent="left"
+                spacing={1}
+                useFlexGap
+                sx={{
+                  color: 'text.secondary',
+                }}
+              >
+                <IconButton
+                  color="inherit"
+                  href="https://www.facebook.com/floridaDM/"
+                  aria-label="Facebook"
+                  sx={{ alignSelf: 'center' }}
+                >
+                  <FacebookIcon />
+                </IconButton>
+                <IconButton
+                  color="inherit"
+                  href="https://x.com/floridadm?lang=en"
+                  aria-label="X"
+                  sx={{ alignSelf: 'center' }}
+                >
+                  <TwitterIcon />
+                </IconButton>
+                <IconButton
+                  color="inherit"
+                  href="https://www.instagram.com/dmatuf/?hl=en"
+                  aria-label="Instagram"
+                  sx={{ alignSelf: 'center' }}
+                >
+                  <InstagramIcon />
+                </IconButton>
+              </Stack>
             </Box>
             <Box sx={{ display: { sm: '', md: 'none' } }}>
               <Button
