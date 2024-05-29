@@ -19,6 +19,7 @@ import FacebookIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/X';
 import { useNavigate } from 'react-router-dom';
+import MenuPopupState from './MenuPopupState';
 
 const logoStyle = {
   width: '40px',
@@ -43,7 +44,6 @@ function AppAppBar({ mode, toggleColorMode }) {
 
   const handleMenuClose = () => {
     setMenuAnchor(null);
-    setSubMenuAnchor(null);
   };
 
   const handleSubMenuOpen = (event) => {
@@ -52,6 +52,14 @@ function AppAppBar({ mode, toggleColorMode }) {
 
   const handleSubMenuClose = () => {
     setSubMenuAnchor(null);
+  };
+
+  const handleAboutMouseLeave = () => {
+    setTimeout(() => {
+      if (!menuAnchor) {
+        handleMenuClose();
+      }
+    }, 100);
   };
 
   const scrollToSection = (sectionId) => {
@@ -123,67 +131,49 @@ function AppAppBar({ mode, toggleColorMode }) {
                     Contact Us
                   </Typography>
                 </MenuItem>
-                <MenuItem
-                  onMouseEnter={handleMenuOpen}
-                  sx={{ py: '6px', px: '12px' }}
+              <MenuPopupState 
+                title="About" 
+                submenuItems={[
+                  { label: "Our Story", url: "/our-story" },
+                  { label: "CMN & UF Health", url: "/cmn-uf-health" },
+                  { label: "Meet our Miracle Families", url: "/meet-miracle-families" }
+                ]}
                 >
-                  <Typography variant="body2" color="text.primary">
-                    About
-                  </Typography>
-                </MenuItem>
-                <Menu
-                  anchorEl={menuAnchor}
-                  open={Boolean(menuAnchor)}
-                  onClose={handleMenuClose}
-                  MenuListProps={{ onMouseLeave: handleMenuClose }}
+                </MenuPopupState>
+                <MenuPopupState 
+                title="Get Involved" 
+                submenuItems={[
+                  { label: "Alumni", url: "/alumni" },
+                  { label: "Applications", url: "/applications" },
+                  { label: "Ambassadors", url: "/ambassadors" },
+                  { label: "Captains", url: "/captains" },
+                  { label: "Dancers", url: "/dancers" },
+                  { label: "Emerging Leaders", url: "/emerging-leaders" },
+                  { label: "Organizations", url: "/organizations" }
+                ]}
                 >
-                  <MenuItem onClick={() => navigate('/history')}>
-                    History
-                  </MenuItem>
-                  <MenuItem onClick={() => navigate('/team')}>
-                    Team
-                  </MenuItem>
-                  <MenuItem onClick={() => navigate('/mission')}>
-                    Mission
-                  </MenuItem>
-                </Menu>
-                <MenuItem
-                  onClick={() => navigate('/get-involved')}
-                  sx={{ py: '6px', px: '12px' }}
+                </MenuPopupState>
+                <MenuPopupState 
+                title="Events" 
+                submenuItems={[
+                  { label: "Fall Kickoff", url: "/fall-kickoff" },
+                  { label: "Main Event", url: "/main-event" },
+                  { label: "Mini Marathons", url: "/mini-marathons" },
+                  { label: "Moralloween", url: "/moralloween" },
+                  { label: "Transform Today", url: "/transform-today" },
+                ]}
                 >
-                  <Typography variant="body2" color="text.primary">
-                    Get Involved
-                  </Typography>
-                </MenuItem>
-                <MenuItem
-                  onMouseEnter={handleSubMenuOpen}
-                  sx={{ py: '6px', px: '12px' }}
+                </MenuPopupState>
+                <MenuPopupState 
+                title="Fundraising" 
+                submenuItems={[
+                  { label: "DonorDrive", url: "/donordrive" },
+                  { label: "Employee Matching", url: "/employee-matching" },
+                  { label: "Fundraising Guide", url: "/fundraising-guide" },
+                  { label: "Sponsors", url: "/sponsors" },
+                ]}
                 >
-                  <Typography variant="body2" color="text.primary">
-                    Events
-                  </Typography>
-                </MenuItem>
-                <Menu
-                  anchorEl={subMenuAnchor}
-                  open={Boolean(subMenuAnchor)}
-                  onClose={handleSubMenuClose}
-                  MenuListProps={{ onMouseLeave: handleSubMenuClose }}
-                >
-                  <MenuItem onClick={() => navigate('/upcoming-events')}>
-                    Upcoming Events
-                  </MenuItem>
-                  <MenuItem onClick={() => navigate('/past-events')}>
-                    Past Events
-                  </MenuItem>
-                </Menu>
-                <MenuItem
-                  onClick={() => scrollToSection('faq')}
-                  sx={{ py: '6px', px: '12px' }}
-                >
-                  <Typography variant="body2" color="text.primary">
-                    Fundraising
-                  </Typography>
-                </MenuItem>
+                </MenuPopupState>
                 <MenuItem
                   onClick={() => navigate('/shop')}
                   sx={{ py: '6px', px: '12px' }}

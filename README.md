@@ -10,7 +10,8 @@ Dependencies:
 - npm install @fontsource/montserrat (5/23/24)
 - npm install @mui/icons-material (5/23/24)
 - npm install react-router-dom (5/24/24)
-- npm install react-lazyload (5/25/23)
+- npm install react-lazyload (5/25/24)
+- npm install --save material-ui-popup-state (5/29/24)
 
 # Getting Started with Create React App
 
