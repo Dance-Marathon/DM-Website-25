@@ -36,7 +36,7 @@ const MenuPopupState = ({ title, submenuItems }) => {
           borderColor: 'transparent',
         }}
       >
-        <Typography>{title}</Typography>
+        <Typography variant="body1">{title}</Typography>
       </Button>
       <HoverMenu
         {...bindMenu(popupState)}
@@ -44,9 +44,14 @@ const MenuPopupState = ({ title, submenuItems }) => {
         transformOrigin={{ vertical: 'top', horizontal: 'left' }}
       >
         {submenuItems.map((item, index) => (
-          <MenuItem key={index} onClick={() => handleMenuItemClick(item.url)}>
-            {item.label}
-          </MenuItem>
+          <MenuItem
+          key={index}
+          onClick={() => handleMenuItemClick(item.url)}
+        >
+          {item.label}
+        </MenuItem>
+        
+        
         ))}
       </HoverMenu>
     </React.Fragment>

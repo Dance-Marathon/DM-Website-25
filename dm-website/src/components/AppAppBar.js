@@ -26,6 +26,18 @@ const logoStyle = {
   cursor: 'pointer',
 };
 
+const menuTheme = {
+  color: 'text.primary',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  flexShrink: 0,
+  borderRadius: '999px',
+  maxHeight: 40,
+  //border: '1px solid',
+  //borderColor: 'transparent',
+}
+
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
 
@@ -96,14 +108,15 @@ function AppAppBar({ mode, toggleColorMode }) {
                 onClick={() => navigate('/')}
               />
               <Box sx={{ display: { xs: 'none', md: 'flex' }, ml: '10px' }}>
-              <MenuItem
+              <Button 
+                  variant='regular'
                   onClick={() => navigate('/contact')}
-                  sx={{ py: '6px', px: '12px' }}
+                  sx={{...menuTheme}}
                 >
-                  <Typography variant="body2" color="text.primary">
+                  <Typography variant="body1" color="text.primary">
                     Contact Us
                   </Typography>
-                </MenuItem>
+                </Button>
               <MenuPopupState 
                 title="About" 
                 submenuItems={[
@@ -147,22 +160,24 @@ function AppAppBar({ mode, toggleColorMode }) {
                 ]}
                 >
                 </MenuPopupState>
-                <MenuItem
+                <Button 
+                  variant='regular'
                   onClick={() => navigate('/shop')}
-                  sx={{ py: '6px', px: '12px' }}
+                  sx={{...menuTheme}}
                 >
-                  <Typography variant="body2" color="text.primary">
+                  <Typography variant="body1" color="text.primary">
                     Shop
                   </Typography>
-                </MenuItem>
-                <MenuItem
+                </Button>
+                <Button 
+                  variant='regular'
                   onClick={() => navigate('/donate')}
-                  sx={{ py: '6px', px: '12px' }}
+                  sx={{...menuTheme}}
                 >
-                  <Typography variant="body2" color="text.primary">
+                  <Typography variant="body1" color="text.primary">
                     Donate
                   </Typography>
-                </MenuItem>
+                </Button>
               </Box>
             </Box>
             <Box
