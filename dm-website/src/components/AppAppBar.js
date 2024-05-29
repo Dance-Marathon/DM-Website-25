@@ -10,7 +10,6 @@ import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
-import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import ToggleColorMode from './ToggleColorMode';
 import IconButton from '@mui/material/IconButton';
@@ -29,37 +28,11 @@ const logoStyle = {
 
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
-  const [menuAnchor, setMenuAnchor] = React.useState(null);
-  const [subMenuAnchor, setSubMenuAnchor] = React.useState(null);
 
   const navigate = useNavigate();
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
-  };
-
-  const handleMenuOpen = (event) => {
-    setMenuAnchor(event.currentTarget);
-  };
-
-  const handleMenuClose = () => {
-    setMenuAnchor(null);
-  };
-
-  const handleSubMenuOpen = (event) => {
-    setSubMenuAnchor(event.currentTarget);
-  };
-
-  const handleSubMenuClose = () => {
-    setSubMenuAnchor(null);
-  };
-
-  const handleAboutMouseLeave = () => {
-    setTimeout(() => {
-      if (!menuAnchor) {
-        handleMenuClose();
-      }
-    }, 100);
   };
 
   const scrollToSection = (sectionId) => {
