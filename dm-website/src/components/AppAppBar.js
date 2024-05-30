@@ -124,6 +124,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   { label: "CMN & UF Health", url: "/cmn-uf-health" },
                   { label: "Meet our Miracle Families", url: "/meet-miracle-families" }
                 ]}
+                menuURL={"/about"}
                 >
                 </MenuPopupState>
                 <MenuPopupState 
@@ -137,6 +138,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   { label: "Emerging Leaders", url: "/emerging-leaders" },
                   { label: "Organizations", url: "/organizations" }
                 ]}
+                menuURL={"/get-involved"}
                 >
                 </MenuPopupState>
                 <MenuPopupState 
@@ -148,6 +150,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   { label: "Moralloween", url: "/moralloween" },
                   { label: "Transform Today", url: "/transform-today" },
                 ]}
+                menuURL={"/events"}
                 >
                 </MenuPopupState>
                 <MenuPopupState 
@@ -158,6 +161,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   { label: "Fundraising Guide", url: "/fundraising-guide" },
                   { label: "Sponsors", url: "/sponsors" },
                 ]}
+                menuURL={"/fundraising"}
                 >
                 </MenuPopupState>
                 <Button 

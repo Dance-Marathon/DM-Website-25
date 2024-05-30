@@ -6,12 +6,13 @@ import Grid from "@mui/material/Grid";
 import { Box, Typography } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
 import AppAppBar from '../components/AppAppBar';
-import Hero from '../components/Hero';
 import CssBaseline from '@mui/material/CssBaseline';
 import getLPTheme from "../getLPTheme";
 import { createTheme } from "@mui/material";
-import ToggleColorMode from '../components/ToggleColorMode';
 import LazyLoad from 'react-lazyload';
+import PageHero from '../components/PageHero';
+
+import HeroPic from "../assets/images/CA.jpg"
 
 // Material Kit 2 React examples
 import HorizontalTeamCard from "../components/TeamCard";
@@ -43,20 +44,18 @@ import ScrollToTop from "../components/ScrollToTop";
 
 function Contact() {
   const [mode, setMode] = React.useState('light');
-  const [showCustomTheme, setShowCustomTheme] = React.useState(true);
   const LPtheme = createTheme(getLPTheme(mode));
-  const defaultTheme = createTheme({ palette: { mode } });
 
   const toggleColorMode = () => {
     setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
 
   return (
-    <ThemeProvider theme={showCustomTheme ? LPtheme : defaultTheme}>
+    <ThemeProvider theme={LPtheme}>
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode}/>
-      <Hero />
+      <PageHero imageUrl={HeroPic} title='Contact Us'/>
       <Box
         component="section"
         variant="gradient"

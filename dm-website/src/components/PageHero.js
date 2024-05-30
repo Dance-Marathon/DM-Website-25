@@ -1,11 +1,12 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 
-export default function Hero() {
+function PageHero({ imageUrl, title }) {
   return (
     <Box
-      id="hero"
+      id="pagehero"
       sx={{
         position: 'relative',
         width: '100%',
@@ -14,12 +15,11 @@ export default function Hero() {
         backgroundColor: 'black',
       }}
     >
-      <video
-        className='VideoTag'
-        autoPlay
-        loop
-        muted
-        style={{
+      <Box
+        component="img"
+        src={imageUrl}
+        alt="Page Hero"
+        sx={{
           position: 'absolute',
           top: 0,
           left: 0,
@@ -27,9 +27,7 @@ export default function Hero() {
           height: '100%',
           objectFit: 'cover',
         }}
-      >
-        <source src="/home_video.mp4" type='video/mp4'/>
-      </video>
+      />
       <Typography
         variant="h1"
         component="div"
@@ -48,7 +46,7 @@ export default function Hero() {
           maxWidth: '100%',
         }}
       >
-        Dance Marathon at the University of Florida
+        {title}
       </Typography>
       <Box
         sx={{
@@ -63,3 +61,10 @@ export default function Hero() {
     </Box>
   );
 }
+
+PageHero.propTypes = {
+  imageUrl: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+export default PageHero;

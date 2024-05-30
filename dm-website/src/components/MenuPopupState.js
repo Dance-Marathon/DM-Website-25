@@ -6,7 +6,7 @@ import { usePopupState, bindHover, bindMenu } from 'material-ui-popup-state/hook
 import { Typography } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
-const MenuPopupState = ({ title, submenuItems }) => {
+const MenuPopupState = ({ title, submenuItems, menuURL }) => {
   const popupState = usePopupState({
     variant: 'popover',
     popupId: 'demoMenu',
@@ -14,6 +14,11 @@ const MenuPopupState = ({ title, submenuItems }) => {
   const navigate = useNavigate();
 
   const handleMenuItemClick = (url) => {
+    popupState.close(); // Close the submenu when a menu item is clicked
+    navigate(menuURL); // Navigate to the specified URL
+  };
+
+  const handleSubMenuItemClick = (url) => {
     popupState.close(); // Close the submenu when a menu item is clicked
     navigate(url); // Navigate to the specified URL
   };
@@ -24,6 +29,7 @@ const MenuPopupState = ({ title, submenuItems }) => {
         {...bindHover(popupState)}
         variant="regular"
         role="menuitem"
+        onClick={() => handleMenuItemClick(menuURL)}
         sx={{
           color: 'text.primary',
           display: 'flex',
@@ -46,7 +52,7 @@ const MenuPopupState = ({ title, submenuItems }) => {
         {submenuItems.map((item, index) => (
           <MenuItem
           key={index}
-          onClick={() => handleMenuItemClick(item.url)}
+          onClick={() => handleSubMenuItemClick(item.url)}
         >
           {item.label}
         </MenuItem>
