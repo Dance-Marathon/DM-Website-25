@@ -298,7 +298,7 @@ export default function getLPTheme(mode) {
             }),
             ...(ownerState.variant === 'contained' &&
               ownerState.color === 'primary' && {
-                color: brand[50],
+                color: brand[400],
                 background: brand[500],
                 backgroundImage: `linear-gradient(to bottom, ${brand[400]}, ${brand[600]})`,
                 boxShadow: `inset 0 1px ${alpha(brand[300], 0.4)}`,
@@ -310,12 +310,12 @@ export default function getLPTheme(mode) {
                 },
               }),
             ...(ownerState.variant === 'outlined' && {
-              backgroundColor: alpha(brand[300], 0.1),
-              borderColor: brand[300],
+              backgroundColor: alpha(brand[400], 0.1),
+              borderColor: brand[400],
               color: brand[500],
               '&:hover': {
-                backgroundColor: alpha(brand[300], 0.3),
-                borderColor: brand[200],
+                backgroundColor: alpha(brand[400], 0.3),
+                borderColor: brand[500],
               },
             }),
             ...(ownerState.variant === 'text' && {
