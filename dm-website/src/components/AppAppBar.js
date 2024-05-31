@@ -121,8 +121,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                 title="About" 
                 submenuItems={[
                   { label: "Our Story", url: "/our-story" },
-                  { label: "CMN & UF Health", url: "/cmn-uf-health" },
-                  { label: "Meet our Miracle Families", url: "/meet-miracle-families" }
+                  { label: "CMN & UF Health", url: "/cmn-hospitals" },
+                  { label: "Meet our Miracle Families", url: "/miracle-families" }
                 ]}
                 menuURL={"/about"}
                 >
