@@ -38,11 +38,11 @@ function PageHero({ imageUrl, title }) {
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          color: '#e2883c',
+          color: 'white',
           textAlign: 'center',
           zIndex: 1,
           fontSize: 'clamp(3rem, 4vw, 4rem)',
-          textShadow: '2px 2px 4px rgba(0, 0, 0, 0.5)',
+          textShadow: '4px 4px 4px rgba(0, 0, 0, 0.5)',
           maxWidth: '100%',
         }}
       >

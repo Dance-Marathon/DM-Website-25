@@ -202,7 +202,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 }}
               >
                 <IconButton
-                  color="inherit"
+                  color="text.primary"
                   href="https://www.facebook.com/floridaDM/"
                   aria-label="Facebook"
                   sx={{ alignSelf: 'center' }}
@@ -210,7 +210,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   <FacebookIcon />
                 </IconButton>
                 <IconButton
-                  color="inherit"
+                  color="text.primary"
                   href="https://x.com/floridadm?lang=en"
                   aria-label="X"
                   sx={{ alignSelf: 'center' }}
@@ -218,7 +218,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   <TwitterIcon />
                 </IconButton>
                 <IconButton
-                  color="inherit"
+                  color="text.primary"
                   href="https://www.instagram.com/dmatuf/?hl=en"
                   aria-label="Instagram"
                   sx={{ alignSelf: 'center' }}
@@ -227,6 +227,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                 </IconButton>
               </Stack>
             </Box>
+
+            {/* NavBar for Small Screens (Phone) */}
             <Box sx={{ display: { sm: '', md: 'none' } }}>
               <Button
                 variant="text"
