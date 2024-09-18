@@ -5,7 +5,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AppAppBar from '../components/AppAppBar';
 import getLPTheme from '../getLPTheme';
 import Footer from '../components/Footer';
-import GetInvolvedCard from '../components/GetInvolvedCard';
 import { Container, Typography, Card, CardContent, Grid, Button } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
@@ -77,7 +76,7 @@ export default function GetInvolved() {
             overflow: 'hidden',
             textOverflow: 'ellipsis',
             display: 'block',
-            textShadow: '4px 4px 4px rgba(0, 0, 0, 0.5)',
+            textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
           }}
         >
           Applications
@@ -98,7 +97,7 @@ export default function GetInvolved() {
               { image: HeroPic, title: 'Alumni', hoverText: "Our Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate.", link: '/alumni' },
               { image: HeroPic, title: 'Ambassadors', hoverText: "Organization Ambassadors serve as a liaison between Dance Marathon and their respective organization.", link: '/ambassadors' },
               { image: HeroPic, title: 'Captain Teams', hoverText: "Members of our Emerging Leaders Program work alongside the Recruitment Team, providing support to Captain Teams and brainstorming new ideas to ensure a successful future for our organization.", link: '/captains' },
-              { image: HeroPic, title: 'Dancers', hoverText: "Dancers stand on their feet if able for the duration of our Main Event in April to raise funds and awareness for UF Health Shands Children’s Hospital.", link: '/dancers' },
+              { image: HeroPic, title: 'Miracle Makers', hoverText: "Dancers stand on their feet if able for the duration of our Main Event in April to raise funds and awareness for UF Health Shands Children’s Hospital.", link: '/miracle-makers' },
               { image: HeroPic, title: 'Emerging Leaders', hoverText: "Members of our Emerging Leaders Program work alongside the Recruitment Team, providing support to Captain Teams and brainstorming new ideas to ensure a successful future for our organization.", link: '/emerging-leaders' },
               { image: HeroPic, title: 'Organizations', hoverText: "Organization Ambassadors serve as a liaison between Dance Marathon and their respective organization.", link: '/organizations' },
             ].map((card, index) => (

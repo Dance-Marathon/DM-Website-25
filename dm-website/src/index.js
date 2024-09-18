@@ -15,9 +15,11 @@ import '@fontsource/montserrat/300.css';
 import '@fontsource/montserrat/400.css';
 import '@fontsource/montserrat/500.css';
 import '@fontsource/montserrat/700.css';
+
 import GetInvolved from './views/GetInvolved';
 import Donate from './views/Donate';
 import Shop from './views/Shop';
+import About from './views/About';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -30,6 +32,7 @@ root.render(
         <Route path="/get-involved" element={<GetInvolved />} />
         <Route path="/donate" element={<Donate />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   </React.StrictMode>,

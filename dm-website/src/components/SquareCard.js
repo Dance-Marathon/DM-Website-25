@@ -67,7 +67,7 @@ const SquareCard = ({ image, title, hoverText, link, theme }) => {
             overflow: 'hidden',
             textOverflow: 'ellipsis',
             display: 'block',
-            textShadow: '4px 4px 4px rgba(0, 0, 0, 0.5)',
+            textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
           }}
         >
           {title}

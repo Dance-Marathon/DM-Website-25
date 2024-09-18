@@ -1,6 +1,35 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+// import { createTheme } from '@mui/material';
+
+// import CasaPinada from '../assets/fonts/CasaPinada.ttf'
+
+// const casaPinada = {
+//   fontFamily: 'CasaPinada',
+//   fontStyle: 'normal',
+//   fontDisplay: 'swap',
+//   fontWeight: 400,
+//   src: `
+//     local('CasaPinada'),
+//     url(${CasaPinada}) format('truetype')
+//   `,
+// };
+
+// const theme = createTheme({
+//   typography: {
+//     fontFamily: [
+//       'CasaPinada'
+//     ].join(','),
+//   },
+//   overrides: {
+//     MuiCssBaseline: {
+//       '@global': {
+//         '@font-face': [casaPinada],
+//       },
+//     },
+//   },
+// });
 
 export default function Hero() {
   return (
@@ -34,6 +63,7 @@ export default function Hero() {
         variant="h1"
         component="div"
         sx={{
+          //fontFamily: "CasaPinada",
           display: 'flex',
           flexDirection: { xs: 'column', md: 'row' },
           position: 'absolute',

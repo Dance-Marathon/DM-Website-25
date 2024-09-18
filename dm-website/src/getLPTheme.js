@@ -122,6 +122,8 @@ const getDesignTokens = (mode) => ({
     text: {
       primary: brand[200],
       secondary: gray[600],
+      DMprimary: brand[500],
+      DMsecondary: secondary[500],
       ...(mode === 'dark' && { primary: '#fff', secondary: gray[400] }),
     },
     action: {
@@ -178,7 +180,7 @@ const getDesignTokens = (mode) => ({
       fontWeight: 400,
       fontSize: 12,
     },
-  },
+  },  
 });
 
 export default function getLPTheme(mode) {
