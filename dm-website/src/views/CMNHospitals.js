@@ -24,7 +24,7 @@ export default function CMNHospitals() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Our Story'/>
+      <PageHero imageUrl={HeroPic} title='CMN & UF Health'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
