@@ -21,6 +21,7 @@ import Donate from './views/Donate';
 import Shop from './views/Shop';
 import About from './views/About';
 import OurStory from './views/OurStory';
+import CMNHospitals from './views/CMNHospitals';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -35,6 +36,7 @@ root.render(
         <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={<About />} />
         <Route path="/ourstory" element={<OurStory />} />
+        <Route path="/cmnhospitals" element={<CMNHospitals />} />
       </Routes>
     </Router>
   </React.StrictMode>,

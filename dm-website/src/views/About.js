@@ -61,7 +61,7 @@ export default function About() {
           >
             {[
               { image: HeroPic, title: 'Our Story', hoverText: "", link: '/ourstory' },
-              { image: HeroPic, title: 'CMN & UF Health', hoverText: "", link: '/cmn-hospitals' },
+              { image: HeroPic, title: 'CMN & UF Health', hoverText: "", link: '/cmnhospitals' },
               { image: HeroPic, title: 'Miracle Families', hoverText: "", link: '/miracle-families' },
             ].map((card, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
