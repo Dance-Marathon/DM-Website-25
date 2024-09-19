@@ -1,11 +1,10 @@
 import * as React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AppAppBar from '../components/AppAppBar';
 import getLPTheme from '../getLPTheme';
 import Footer from '../components/Footer';
-import { Container, Typography } from '@mui/material';
+import { Container, Typography, Box, List, ListItem, ListItemText } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import Table from '@mui/material/Table';
@@ -112,9 +111,100 @@ export default function OurStory() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography variant="b1" color="black">
-            <p>Dance Marathon at UF is a yearlong philanthropic effort that culminates in our Main Event each spring where students remain awake and on their feet for 26.2 hours to represent the hardships faced by children battling pediatric illness. DM at UF is one of the five founding Dance Marathon programs in the nation, and since our start we have raised more than $31 million for the Miracle Children at UF Health Shands Children’s Hospital, our local CMN Hospital. Today, Dance Marathon at UF involves hundreds of internal members and a variety of sponsors and community partners.</p>
+          <Typography variant="h5" component="h2" gutterBottom sx={{ color: '#000000' }}>
+            Where The Money Goes
           </Typography>
+          <Typography variant="body1" paragraph sx={{ color: '#000000' }}>
+            <strong>100%</strong> of the funds raised by DM at UF go directly to UF Health Shands Children's Hospital, our local Children Miracle Network Hospital. Of these funds, most recently, <strong>48%</strong> goes to research, <strong>10%</strong> to education and <strong>42%</strong> to patient care.
+          </Typography>
+          <Typography variant="body1" paragraph sx={{ color: '#000000' }}>
+            Patient care funding provides necessities such as bandages and patient gowns, as well as life-saving equipment and hospital improvements including the recent expansion of the Neonatal Intensive Care Unit. These funds also provide sleeper sofas for parents, playrooms for children, and Child Life programs, in an effort to make hospital stays more enjoyable for children and their families.
+          </Typography>
+          <Typography variant="body1" paragraph sx={{ color: '#000000' }}>
+            Research funding helps our doctors find solutions for incurable diseases such as diabetes, cystic fibrosis, and cancer, and it allows them to develop new technology and enhanced processes that improve the daily lives of pediatric patients. Education funding supports programs such as Child Life Diversion therapy and goes toward raising funds and awareness for the Children’s Miracle Network.
+          </Typography>
+
+          <Typography variant="h5" component="h2" gutterBottom sx={{ marginTop: 4, color: '#000000' }}>
+            Length of Dance Marathon
+          </Typography>
+          <Typography variant="body1" sx={{ color: '#000000', margin: 0 }}>
+            Before 2008: <strong>32 hours</strong>
+          </Typography>
+          <Typography variant="body1" sx={{ color: '#000000'}}>
+            After 2008: <strong>26.2 hours</strong>
+          </Typography>
+
+          <Typography variant="h5" component="h2" gutterBottom sx={{  marginTop: 4, color: '#000000' }}>
+            Participants
+          </Typography>
+          <ul>
+            <li>
+              <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                Number of Registered Dancers in 2022: <strong>1250</strong>
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                Number of Captains: <strong>467</strong>
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                Number of Emerging Leaders: <strong>160</strong>
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                Number of Kirstyn's Krew: <strong>53</strong>
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                Number of Miracle Families: <strong>56</strong>
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                Number of Sponsors: <strong>74</strong>
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                Most Years as a Dancer: <strong>4 years</strong>
+              </Typography>
+            </li>
+          </ul>
+
+          <Typography variant="h5" component="h2" gutterBottom sx={{ marginTop: 4, color: '#000000' }}>
+            Fundraising
+          </Typography>
+          <ul>
+            <li>
+              <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                <strong>44,899</strong> donations on DonorDrive
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                <strong>2,715</strong> fundraisers raised at least $1
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                Amount raised in 2022: <strong>$2,334,217.21</strong>
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                Total amount raised in past 28 years: over <strong>28 million dollars</strong>
+              </Typography>
+            </li>
+            <li>
+              <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                Alumni Contribution: <strong>$83,235.89</strong>
+              </Typography>
+            </li>
+          </ul>
         </Box>
         <TableContainer component={Paper}>
             <Table sx={{ minWidth: 650 }} aria-label="simple table">
@@ -139,6 +229,279 @@ export default function OurStory() {
                     </TableBody>
                 </Table>
             </TableContainer>
+            <Box sx={{ width: { sm: '100%', md: '100%' }, textAlign: { sm: 'left', md: 'left' }}}>
+              {/* Event Title Section */}
+              <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#000000', marginBottom: 1 }}>
+                Event Title
+              </Typography>
+              <Typography variant="body1" sx={{ color: '#000000' }}>
+                First Reference: Dance Marathon at the University of Florida
+              </Typography>
+              <Typography variant="body1" sx={{ color: '#000000' }}>
+                Second Reference: Dance Marathon at UF
+              </Typography>
+              <Typography variant="body1" sx={{ color: '#000000' }}>
+                Social Media and Marketing Reference: DM at UF
+              </Typography>
+              <Typography variant="body1" sx={{ color: '#000000' }}>
+                Not Acceptable: DM UF, UF DM, DM @ UF
+              </Typography>
+
+              {/* Hospital Title Section */}
+              <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 4, marginBottom: 1 }}>
+                Hospital Title
+              </Typography>
+              <Typography variant="body1" sx={{ color: '#000000' }}>
+                First Reference: UF Health Shands Children’s Hospital
+              </Typography>
+              <Typography variant="body1" sx={{ color: '#000000' }}>
+                Second Reference: UF Health Shands
+              </Typography>
+
+              {/* Children and their Families Section */}
+              <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 4, marginBottom: 1 }}>
+                Children and their Families
+              </Typography>
+              <Typography variant="body1" sx={{ color: '#000000' }}>
+                Miracle Family
+              </Typography>
+              <Typography variant="body1" sx={{ color: '#000000' }}>
+                Miracle Children
+              </Typography>
+              <Typography variant="body1" sx={{ color: '#000000' }}>
+                Miracle Child (0-12)
+              </Typography>
+              <Typography variant="body1" sx={{ color: '#000000' }}>
+                Miracle Teen (13+)
+              </Typography>
+
+              <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 4 }}>
+                Positions
+              </Typography>
+              <ul>
+                <li>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
+                    Overall Directors
+                  </Typography>
+                  <ul style={{ paddingLeft: '20px' }}>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Executive Director
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Operations Manager
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Marketing Manager
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Membership Manager
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Finance Manager
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Dancer Engagement
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Digital Marketing
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Family Relations
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Finance
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Leadership Development
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Marathon Relations
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Merchandise
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Morale
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Multimedia
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Organization Relations
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Outreach
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Partnerships
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Productions
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Public Relations
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Recruitment
+                      </Typography>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 2 }}>
+                    Assistant Directors & Captains
+                  </Typography>
+                  <ul style={{ paddingLeft: '20px' }}>
+                  <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Dancer Engagement
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Digital Marketing
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Family Relations
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Finance
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Leadership Development
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Marathon Relations
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Merchandise
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Morale
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Multimedia
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Organization Relations
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Outreach
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Partnerships
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Productions
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Public Relations
+                      </Typography>
+                    </li>
+                    <li>
+                      <Typography variant="body1" component="span" sx={{ color: '#000000' }}>
+                        Recruitment
+                      </Typography>
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 2 }}>
+                    Emerging Leaders
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
+                    Kirstyn's Krew
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
+                    Ambassadors
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
+                    Dancers
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
+                    Fundraisers
+                  </Typography>
+                </li>
+                <li>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
+                    Dance Marathon Alumni (DMA)
+                  </Typography>
+                </li>
+              </ul>
+            </Box>
         </Container>
       <Footer />
     </ThemeProvider>

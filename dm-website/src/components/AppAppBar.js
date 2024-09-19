@@ -120,7 +120,7 @@ function AppAppBar({ mode, toggleColorMode }) {
               <MenuPopupState 
                 title="About" 
                 submenuItems={[
-                  { label: "Our Story", url: "/our-story" },
+                  { label: "Our Story", url: "/ourstory" },
                   { label: "CMN & UF Health", url: "/cmn-hospitals" },
                   { label: "Meet our Miracle Families", url: "/miracle-families" }
                 ]}
