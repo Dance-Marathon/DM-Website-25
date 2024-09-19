@@ -5,11 +5,10 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AppAppBar from '../components/AppAppBar';
 import getLPTheme from '../getLPTheme';
 import Footer from '../components/Footer';
-import { Container, Typography, Card, CardContent, Grid, Button } from '@mui/material';
+import { Container, Typography, Grid } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import SquareCard from '../components/SquareCard';
-import { Link } from 'react-router-dom';
 
 import HeroPic from "../assets/images/SW.jpg";
 
@@ -61,7 +60,7 @@ export default function About() {
             sx={{ maxWidth: 1200 }}
           >
             {[
-              { image: HeroPic, title: 'Our Story', hoverText: "", link: '/our-story' },
+              { image: HeroPic, title: 'Our Story', hoverText: "", link: '/ourstory' },
               { image: HeroPic, title: 'CMN & UF Health', hoverText: "", link: '/cmn-hospitals' },
               { image: HeroPic, title: 'Miracle Families', hoverText: "", link: '/miracle-families' },
             ].map((card, index) => (

@@ -20,6 +20,7 @@ import GetInvolved from './views/GetInvolved';
 import Donate from './views/Donate';
 import Shop from './views/Shop';
 import About from './views/About';
+import OurStory from './views/OurStory';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -33,6 +34,7 @@ root.render(
         <Route path="/donate" element={<Donate />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={<About />} />
+        <Route path="/ourstory" element={<OurStory />} />
       </Routes>
     </Router>
   </React.StrictMode>,
