@@ -4,7 +4,7 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AppAppBar from '../components/AppAppBar';
 import getLPTheme from '../getLPTheme';
 import Footer from '../components/Footer';
-import { Container, Typography, Box, List, ListItem, ListItemText } from '@mui/material';
+import { Container, Typography, Box } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import Table from '@mui/material/Table';
