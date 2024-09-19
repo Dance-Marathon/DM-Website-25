@@ -122,7 +122,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 submenuItems={[
                   { label: "Our Story", url: "/ourstory" },
                   { label: "CMN & UF Health", url: "/cmnhospitals" },
-                  { label: "Meet our Miracle Families", url: "/miracle-families" }
+                  { label: "Meet our Miracle Families", url: "/miraclefamilies" }
                 ]}
                 menuURL={"/about"}
                 >
@@ -135,7 +135,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   { label: "Ambassadors", url: "/ambassadors" },
                   { label: "Captains", url: "/captains" },
                   { label: "Dancers", url: "/dancers" },
-                  { label: "Emerging Leaders", url: "/emerging-leaders" },
+                  { label: "Emerging Leaders", url: "/emergingleaders" },
                   { label: "Organizations", url: "/organizations" }
                 ]}
                 menuURL={"/get-involved"}
@@ -144,11 +144,11 @@ function AppAppBar({ mode, toggleColorMode }) {
                 <MenuPopupState 
                 title="Events" 
                 submenuItems={[
-                  { label: "Fall Kickoff", url: "/fall-kickoff" },
-                  { label: "Main Event", url: "/main-event" },
-                  { label: "Mini Marathons", url: "/mini-marathons" },
+                  { label: "Fall Kickoff", url: "/fallkickoff" },
+                  { label: "Main Event", url: "/mainevent" },
+                  { label: "Mini Marathons", url: "/minimarathons" },
                   { label: "Moralloween", url: "/moralloween" },
-                  { label: "Transform Today", url: "/transform-today" },
+                  { label: "Transform Today", url: "/transformtoday" },
                 ]}
                 menuURL={"/events"}
                 >
@@ -157,8 +157,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                 title="Fundraising" 
                 submenuItems={[
                   { label: "DonorDrive", url: "/donordrive" },
-                  { label: "Employee Matching", url: "/employee-matching" },
-                  { label: "Fundraising Guide", url: "/fundraising-guide" },
+                  { label: "Employee Matching", url: "/employeematching" },
+                  { label: "Fundraising Guide", url: "/fundraisingguide" },
                   { label: "Sponsors", url: "/sponsors" },
                 ]}
                 menuURL={"/fundraising"}
