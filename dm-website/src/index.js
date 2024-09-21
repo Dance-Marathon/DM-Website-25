@@ -26,6 +26,7 @@ import MiracleFamilies from './views/MiracleFamilies';
 import Applications from './views/Applications';
 import Fundraising from './views/Fundraising';
 import DonorDrive from './views/DonorDrive';
+import Organizations from './views/Organizations';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -45,6 +46,7 @@ root.render(
         <Route path="/applications" element={<Applications />} />
         <Route path="/fundraising" element={<Fundraising />} />
         <Route path="/donordrive" element={<DonorDrive />} />
+        <Route path="/organizations" element={<Organizations />} />
       </Routes>
     </Router>
   </React.StrictMode>,
