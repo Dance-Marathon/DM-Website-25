@@ -166,6 +166,15 @@ function AppAppBar({ mode, toggleColorMode }) {
                 </MenuPopupState>
                 <Button 
                   variant='regular'
+                  onClick={() => navigate('/blog')}
+                  sx={{...menuTheme}}
+                >
+                  <Typography variant="body1" color="text.primary">
+                    Blog
+                  </Typography>
+                </Button>
+                <Button 
+                  variant='regular'
                   onClick={() => navigate('/shop')}
                   sx={{...menuTheme}}
                 >

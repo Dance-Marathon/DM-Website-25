@@ -34,6 +34,8 @@ import Alumni from './views/Alumni';
 import Ambassadors from './views/Ambassadors';
 import MiracleMakers from './views/MiracleMakers';
 import Captains from './views/Captains';
+import BlogDetails from './components/BlogDetails';
+import BlogList from './components/BlogList';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -61,6 +63,8 @@ root.render(
         <Route path="/ambassadors" element={<Ambassadors />} />
         <Route path="/miraclemakers" element={<MiracleMakers />} />
         <Route path="/captains" element={<Captains />} />
+        <Route path="/blog" element={<BlogList />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
       </Routes>
     </Router>
   </React.StrictMode>,
