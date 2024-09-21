@@ -386,19 +386,19 @@ export default function getLPTheme(mode) {
             alignSelf: 'center',
             py: 1.5,
             px: 0.5,
-            background: `linear-gradient(to bottom right, ${brand[50]}, ${brand[100]})`,
+            //background: `linear-gradient(to bottom right, ${brand[100]}, ${brand[200]})`,
             border: '1px solid',
             borderColor: `${alpha(brand[500], 0.3)}`,
             fontWeight: '600',
             '&:hover': {
-              backgroundColor: brand[500],
+              backgroundColor: secondary[400],
             },
             '&:focus-visible': {
               borderColor: brand[800],
               backgroundColor: brand[200],
             },
             '& .MuiChip-label': {
-              color: brand[500],
+              color: gray[600],
             },
             '& .MuiChip-icon': {
               color: brand[500],
