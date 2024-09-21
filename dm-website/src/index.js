@@ -23,6 +23,7 @@ import About from './views/About';
 import OurStory from './views/OurStory';
 import CMNHospitals from './views/CMNHospitals';
 import MiracleFamilies from './views/MiracleFamilies';
+import Applications from './views/Applications';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -39,6 +40,7 @@ root.render(
         <Route path="/ourstory" element={<OurStory />} />
         <Route path="/cmnhospitals" element={<CMNHospitals />} />
         <Route path="/miraclefamilies" element={<MiracleFamilies />} />
+        <Route path="/applications" element={<Applications />} />
       </Routes>
     </Router>
   </React.StrictMode>,
