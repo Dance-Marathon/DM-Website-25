@@ -35,6 +35,7 @@ import Ambassadors from './views/Ambassadors';
 import MiracleMakers from './views/MiracleMakers';
 import Captains from './views/Captains';
 import Events from './views/Events';
+import NotFound from './views/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -63,6 +64,7 @@ root.render(
         <Route path="/miraclemakers" element={<MiracleMakers />} />
         <Route path="/captains" element={<Captains />} />
         <Route path="/events" element={<Events />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   </React.StrictMode>,
