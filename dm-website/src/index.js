@@ -36,6 +36,8 @@ import MiracleMakers from './views/MiracleMakers';
 import Captains from './views/Captains';
 import BlogDetails from './components/BlogDetails';
 import BlogList from './components/BlogList';
+import Events from './views/Events';
+import NotFound from './views/NotFound';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -65,6 +67,8 @@ root.render(
         <Route path="/captains" element={<Captains />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
   </React.StrictMode>,
