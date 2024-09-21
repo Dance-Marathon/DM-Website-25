@@ -43,6 +43,7 @@ import Moralloween from './views/Moralloween';
 import FallKickoff from './views/FallKickoff';
 import MiniMarathons from './views/MiniMarathons';
 import Miracles5k from './views/Miracles5k';
+import TransformToday from './views/TransformToday';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -76,6 +77,7 @@ root.render(
         <Route path="/mainevent" element={<MainEvent />} />
         <Route path="/miracles5k" element={<Miracles5k />} />
         <Route path="/moralloween" element={<Moralloween />} />
+        <Route path="/transformtoday" element={<TransformToday />} />
         <Route path="/fallkickoff" element={<FallKickoff />} />
         <Route path="/minimarathons" element={<MiniMarathons />} />
         <Route path="*" element={<NotFound />} />
