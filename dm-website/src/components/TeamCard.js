@@ -30,7 +30,7 @@ function HorizontalTeamCard({ image, name, position, email }) {
             <Typography variant="h6" color={'primary'} mb={0.5}>
               {position.label}
             </Typography>
-            <Link variant="body2" color="primary">
+            <Link variant="body2" color="secondary">
                 {email}
             </Link>
           </Box>

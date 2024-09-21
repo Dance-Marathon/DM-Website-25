@@ -6,7 +6,6 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
-import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
 import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
@@ -45,20 +44,6 @@ function AppAppBar({ mode, toggleColorMode }) {
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
-  };
-
-  const scrollToSection = (sectionId) => {
-    const sectionElement = document.getElementById(sectionId);
-    const offset = 128;
-    if (sectionElement) {
-      const targetScroll = sectionElement.offsetTop - offset;
-      sectionElement.scrollIntoView({ behavior: 'smooth' });
-      window.scrollTo({
-        top: targetScroll,
-        behavior: 'smooth',
-      });
-      setOpen(false);
-    }
   };
 
   return (
@@ -237,76 +222,45 @@ function AppAppBar({ mode, toggleColorMode }) {
               </Stack>
             </Box>
 
-            {/* NavBar for Small Screens (Phone) */}
-            <Box sx={{ display: { sm: '', md: 'none' } }}>
-              <Button
-                variant="text"
-                color="primary"
-                aria-label="menu"
-                onClick={toggleDrawer(true)}
-                sx={{ minWidth: '30px', p: '4px' }}
+            <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
+            <IconButton
+              edge="end"
+              color="inherit"
+              aria-label="menu"
+              onClick={toggleDrawer(true)}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+              <Box
+                sx={{
+                  minWidth: '60vw',
+                  p: 2,
+                  backgroundColor: 'background.paper',
+                  flexGrow: 1,
+                }}
               >
-                <MenuIcon />
-              </Button>
-              <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
-                <Box
-                  sx={{
-                    minWidth: '60dvw',
-                    p: 2,
-                    backgroundColor: 'background.paper',
-                    flexGrow: 1,
-                  }}
-                >
-                  <Box
-                    sx={{
-                      display: 'flex',
-                      flexDirection: 'column',
-                      alignItems: 'end',
-                      flexGrow: 1,
-                    }}
-                  >
-                    <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
-                  </Box>
-                  <MenuItem onClick={() => scrollToSection('features')}>
-                    Features
+                {/* Add menu items to drawer */}
+                <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+                  <MenuItem onClick={() => navigate('/contact')}>
+                    Contact Us
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('testimonials')}>
-                    Testimonials
+                  <MenuItem onClick={() => navigate('/about')}>
+                    About
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('highlights')}>
-                    Highlights
+                  <MenuItem onClick={() => navigate('/get-involved')}>
+                    Get Involved
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('pricing')}>
-                    Pricing
+                  <MenuItem onClick={() => navigate('/events')}>Events</MenuItem>
+                  <MenuItem onClick={() => navigate('/fundraising')}>
+                    Fundraising
                   </MenuItem>
-                  <MenuItem onClick={() => scrollToSection('faq')}>FAQ</MenuItem>
-                  <Divider />
-                  <MenuItem>
-                    <Button
-                      color="primary"
-                      variant="contained"
-                      component="a"
-                      href="/material-ui/getting-started/templates/sign-up/"
-                      target="_blank"
-                      sx={{ width: '100%' }}
-                    >
-                      Sign up
-                    </Button>
-                  </MenuItem>
-                  <MenuItem>
-                    <Button
-                      color="primary"
-                      variant="outlined"
-                      component="a"
-                      href="/material-ui/getting-started/templates/sign-in/"
-                      target="_blank"
-                      sx={{ width: '100%' }}
-                    >
-                      Sign in
-                    </Button>
-                  </MenuItem>
+                  <MenuItem onClick={() => navigate('/blog')}>Blog</MenuItem>
+                  <MenuItem onClick={() => navigate('/shop')}>Shop</MenuItem>
+                  <MenuItem onClick={() => navigate('/donate')}>Donate</MenuItem>
                 </Box>
-              </Drawer>
+              </Box>
+            </Drawer>
             </Box>
           </Toolbar>
         </Container>

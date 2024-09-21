@@ -48,7 +48,7 @@ export default function Events() {
 
             <Typography variant="body1" gutterBottom sx={{ color: 'text.secondary' }}>
                 Dance Marathon is a{' '}
-                <Typography component="span" sx={{ fontWeight: 'bold', color: 'orange' }}>
+                <Typography component="span" sx={{ fontWeight: 'bold', color: 'secondary' }}>
                 yearlong commitment
                 </Typography >{' '}
                 that includes many fundraising events aimed at reaching University students, businesses, and Gainesville residents. These events help us create a fun and exciting atmosphere while raising awareness about DM, whether it is through social media or inspirational stories from our Miracle Children who speak at the events. DM at UF's community events are all highly anticipated as they build up throughout the year toward the main Event in the spring.

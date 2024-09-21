@@ -107,10 +107,10 @@ const BlogList = () => {
               alt={blog.title}
             />
             <CardContent>
-              <Typography variant="h5" component="div" gutterBottom>
+              <Typography variant="h5" component="div" color="primary" gutterBottom>
                 {blog.title}
               </Typography>
-              <Typography variant="subtitle2" color="text.primary">
+              <Typography variant="subtitle2" color="text.secondary">
                 Author: {blog.author}
               </Typography>
               <Typography variant="subtitle2" color="text.secondary">

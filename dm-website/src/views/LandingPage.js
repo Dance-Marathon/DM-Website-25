@@ -6,7 +6,6 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AppAppBar from '../components/AppAppBar';
 import Hero from '../components/Hero';
 import getLPTheme from '../getLPTheme';
-import LogoCollection from '../components/LogoCollection';
 import { Typography, Container, Grid, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
@@ -118,9 +117,6 @@ export default function LandingPage() {
             </Grid>
           </Grid>
         </Container>
-        <Divider/>
-        <LogoCollection/>
-        <Divider/>
       </Box>
     </ThemeProvider>
   );
