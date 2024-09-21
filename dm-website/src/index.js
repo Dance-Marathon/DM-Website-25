@@ -40,6 +40,7 @@ import Events from './views/Events';
 import NotFound from './views/NotFound';
 import MainEvent from './views/MainEvent';
 import Moralloween from './views/Moralloween';
+import FallKickoff from './views/FallKickoff';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -72,6 +73,7 @@ root.render(
         <Route path="/events" element={<Events />} />
         <Route path="/mainevent" element={<MainEvent />} />
         <Route path="/moralloween" element={<Moralloween />} />
+        <Route path="/fallkickoff" element={<FallKickoff />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
