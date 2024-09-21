@@ -147,6 +147,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   { label: "Fall Kickoff", url: "/fallkickoff" },
                   { label: "Main Event", url: "/mainevent" },
                   { label: "Mini Marathons", url: "/minimarathons" },
+                  { label: "Miracles 5k", url: "/miracles5k" },
                   { label: "Moralloween", url: "/moralloween" },
                   { label: "Transform Today", url: "/transformtoday" },
                 ]}

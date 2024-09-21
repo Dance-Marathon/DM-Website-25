@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './index.css';
 import App from './App';
@@ -42,6 +42,7 @@ import MainEvent from './views/MainEvent';
 import Moralloween from './views/Moralloween';
 import FallKickoff from './views/FallKickoff';
 import MiniMarathons from './views/MiniMarathons';
+import Miracles5k from './views/Miracles5k';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -73,6 +74,7 @@ root.render(
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path="/events" element={<Events />} />
         <Route path="/mainevent" element={<MainEvent />} />
+        <Route path="/miracles5k" element={<Miracles5k />} />
         <Route path="/moralloween" element={<Moralloween />} />
         <Route path="/fallkickoff" element={<FallKickoff />} />
         <Route path="/minimarathons" element={<MiniMarathons />} />

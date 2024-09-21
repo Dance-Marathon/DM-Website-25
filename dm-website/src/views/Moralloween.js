@@ -46,7 +46,7 @@ export default function Moralloween() {
           </Typography>
           <Typography variant="body1" sx={{ color: 'text.secondary' }}>
             For more information, please contact the Morale Overall Director, Dylan Siegel, at {' '}
-              <Link href="mailto:dgeller@floridadm.org" sx={{ color: '#1a73e8' }}>
+              <Link href="mailto:dsiegal@floridadm.org" sx={{ color: '#1a73e8' }}>
                 dsiegal@floridadm.org
               </Link>.
             </Typography>
