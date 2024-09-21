@@ -31,6 +31,7 @@ import EmployeeMatching from './views/EmployeeMatching';
 import FundraisingGuide from './views/FundraisingGuide';
 import Sponsors from './views/Sponsors';
 import Alumni from './views/Alumni';
+import Ambassadors from './views/Ambassadors';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -55,6 +56,7 @@ root.render(
         <Route path="/fundraisingguide" element={<FundraisingGuide />} />
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/alumni" element={<Alumni />} />
+        <Route path="/ambassadors" element={<Ambassadors />} />
       </Routes>
     </Router>
   </React.StrictMode>,
