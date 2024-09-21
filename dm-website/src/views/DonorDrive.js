@@ -59,6 +59,10 @@ export default function DonorDrive() {
         question="What should my billing statement list as the donation charge after I donate online?" 
         answer="Children's Miracle Network - Salt Lake City, UT" 
       />
+      <Typography variant="b2"  color="black" paragraph sx={{ mt: 4 }}>
+      If you have any further questions, please contact our Finance Manager
+        <Link href="mailto:sfinkel@floridadm.org."> Skylar Finkel</Link> at sfinkel@floridadm.org.
+      </Typography>
         </Container>
       <Footer />
     </ThemeProvider>
