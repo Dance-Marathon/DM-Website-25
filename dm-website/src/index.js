@@ -32,6 +32,7 @@ import FundraisingGuide from './views/FundraisingGuide';
 import Sponsors from './views/Sponsors';
 import Alumni from './views/Alumni';
 import Ambassadors from './views/Ambassadors';
+import MiracleMakers from './views/MiracleMakers';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -57,6 +58,7 @@ root.render(
         <Route path="/sponsors" element={<Sponsors />} />
         <Route path="/alumni" element={<Alumni />} />
         <Route path="/ambassadors" element={<Ambassadors />} />
+        <Route path="/miraclemakers" element={<MiracleMakers />} />
       </Routes>
     </Router>
   </React.StrictMode>,

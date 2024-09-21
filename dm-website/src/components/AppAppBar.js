@@ -134,7 +134,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   { label: "Applications", url: "/applications" },
                   { label: "Ambassadors", url: "/ambassadors" },
                   { label: "Captains", url: "/captains" },
-                  { label: "Dancers", url: "/dancers" },
+                  { label: "Miracle Makers", url: "/miraclemakers" },
                   { label: "Emerging Leaders", url: "/emergingleaders" },
                   { label: "Organizations", url: "/organizations" }
                 ]}
