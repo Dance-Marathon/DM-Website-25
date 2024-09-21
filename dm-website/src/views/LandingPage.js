@@ -85,7 +85,7 @@ export default function LandingPage() {
                     DM at UF is one of the five founding Dance Marathon programs in the nation. Since our start, we have raised more than $31 million for the Miracle Families UF Health Shands Children’s Hospital, our local Children’s Miracle Network hospital.
                   </Typography>
                 </Box>
-                <Button variant="outlined" color="primary" component={Link} to="/our-story">Learn More</Button>
+                <Button variant="outlined" color="primary" component={Link} to="/ourstory">Learn More</Button>
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
@@ -99,7 +99,7 @@ export default function LandingPage() {
                     Ranked one of the top 50 pediatric hospitals in the nation in seven categories, UF Health Shands Children’s Hospital and Children’s Miracle Network have created one of the greatest facilities of care for children and young adults.
                   </Typography>
                 </Box>
-                <Button variant="outlined" color="primary" component={Link} to="/cmn-hospitals">Learn More</Button>
+                <Button variant="outlined" color="primary" component={Link} to="/cmnhospitals">Learn More</Button>
               </Box>
             </Grid>
             <Grid item xs={12} md={4}>
@@ -113,7 +113,7 @@ export default function LandingPage() {
                     Take a moment to meet the heart and soul of our movement. We are very fortunate to have 35 Miracle Families who are true inspirations to everyone involved in the organization and are the pinnacle for what we stand for. 
                   </Typography>
                 </Box>
-                <Button variant="outlined" color="primary" component={Link} to="/miracle-families">Learn More</Button>
+                <Button variant="outlined" color="primary" component={Link} to="/miraclefamilies">Learn More</Button>
               </Box>
             </Grid>
           </Grid>
