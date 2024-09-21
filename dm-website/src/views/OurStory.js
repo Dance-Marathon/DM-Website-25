@@ -16,7 +16,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 
-import HeroPic from "../assets/images/SW.jpg";
+import HeroPic from "../assets/images/overalls/SW.jpg";
 
 export default function OurStory() {
   const [mode, setMode] = React.useState('light');

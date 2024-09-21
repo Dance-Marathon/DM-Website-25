@@ -8,7 +8,7 @@ import { Container, Typography, Box, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 
-import HeroPic from "../assets/images/SW.jpg";
+import HeroPic from "../assets/images/overalls/SW.jpg";
 import TriBrand from "../assets/images/TriBrandColors.png";
 
 export default function CMNHospitals() {

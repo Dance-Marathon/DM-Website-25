@@ -12,32 +12,32 @@ import { createTheme } from "@mui/material";
 import LazyLoad from 'react-lazyload';
 import PageHero from '../components/PageHero';
 
-import HeroPic from "../assets/images/CA.jpg"
+import HeroPic from "../assets/images/overalls/CA.jpg"
 
 // Material Kit 2 React examples
 import HorizontalTeamCard from "../components/TeamCard";
 
 // Images
-import OT1 from "../assets/images/RA.jpg";
-import OT2 from "../assets/images/SF.jpg";
-import OT3 from "../assets/images/MT.jpg";
-import OT4 from "../assets/images/SW.jpg";
-import OT5 from "../assets/images/AF.jpg";
-import OT6 from "../assets/images/RD.jpg";
-import OT7 from "../assets/images/CA.jpg";
-import OT8 from "../assets/images/DG.jpg";
-import OT9 from "../assets/images/BEANY.png";
-import OT10 from "../assets/images/SL.jpg";
-import OT11 from "../assets/images/LD.jpg";
-import OT12 from "../assets/images/OK.jpg";
-import OT13 from "../assets/images/DS.png";
-import OT14 from "../assets/images/AD.jpg";
-import OT15 from "../assets/images/CL.jpeg";
-import OT16 from "../assets/images/AE.jpg";
-import OT17 from "../assets/images/JW.jpg";
-import OT18 from "../assets/images/CE.jpg";
-import OT19 from "../assets/images/GC.jpg";
-import OT20 from "../assets/images/AO.jpg";
+import OT1 from "../assets/images/overalls/RA.jpg";
+import OT2 from "../assets/images/overalls/SF.jpg";
+import OT3 from "../assets/images/overalls/MT.jpg";
+import OT4 from "../assets/images/overalls/SW.jpg";
+import OT5 from "../assets/images/overalls/AF.jpg";
+import OT6 from "../assets/images/overalls/RD.jpg";
+import OT7 from "../assets/images/overalls/CA.jpg";
+import OT8 from "../assets/images/overalls/DG.jpg";
+import OT9 from "../assets/images/overalls/BEANY.png";
+import OT10 from "../assets/images/overalls/SL.jpg";
+import OT11 from "../assets/images/overalls/LD.jpg";
+import OT12 from "../assets/images/overalls/OK.jpg";
+import OT13 from "../assets/images/overalls/DS.png";
+import OT14 from "../assets/images/overalls/AD.jpg";
+import OT15 from "../assets/images/overalls/CL.jpeg";
+import OT16 from "../assets/images/overalls/AE.jpg";
+import OT17 from "../assets/images/overalls/JW.jpg";
+import OT18 from "../assets/images/overalls/CE.jpg";
+import OT19 from "../assets/images/overalls/GC.jpg";
+import OT20 from "../assets/images/overalls/AO.jpg";
 import Footer from '../components/Footer';
 
 import ScrollToTop from "../components/ScrollToTop";

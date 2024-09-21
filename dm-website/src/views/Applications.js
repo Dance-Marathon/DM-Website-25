@@ -9,7 +9,7 @@ import { Container, Typography, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 
-import HeroPic from "../assets/images/SW.jpg";
+import HeroPic from "../assets/images/overalls/SW.jpg";
 
 export default function Applications() {
   const [mode, setMode] = React.useState('light');

@@ -10,7 +10,7 @@ import PageHero from '../components/PageHero';
 import AccordionFAQ from '../components/AccordionFAQ';
 import FAQ from '../components/FAQ';
 
-import HeroPic from "../assets/images/SW.jpg";
+import HeroPic from "../assets/images/overalls/SW.jpg";
 
 export default function DonorDrive() {
   const [mode, setMode] = React.useState('light');

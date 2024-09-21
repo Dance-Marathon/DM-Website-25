@@ -5,13 +5,13 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AppAppBar from '../components/AppAppBar';
 import getLPTheme from '../getLPTheme';
 import Footer from '../components/Footer';
-import { Container, Typography, Card, CardContent, Grid, Button } from '@mui/material';
+import { Container, Typography, Grid, Button } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import SquareCard from '../components/SquareCard';
 import { Link } from 'react-router-dom';
 
-import HeroPic from "../assets/images/CA.jpg";
+import HeroPic from "../assets/images/overalls/CA.jpg";
 
 export default function GetInvolved() {
   const [mode, setMode] = React.useState('light');

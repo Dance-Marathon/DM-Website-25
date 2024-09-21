@@ -5,14 +5,12 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AppAppBar from '../components/AppAppBar';
 import getLPTheme from '../getLPTheme';
 import Footer from '../components/Footer';
-import { Container, Typography, Grid, Link, List,
-  ListItem,
-  ListItemText, } from '@mui/material';
+import { Container, Typography, Grid, Link, } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import SquareCardSmall from '../components/SquareCardSmall';
 
-import HeroPic from "../assets/images/SW.jpg";
+import HeroPic from "../assets/images/overalls/SW.jpg";
 import HowToGuide from "../assets/pdfs/how-to-guide.pdf"
 
 export default function Fundraising() {

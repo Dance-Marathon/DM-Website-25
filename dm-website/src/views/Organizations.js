@@ -9,7 +9,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import { styled } from '@mui/material/styles';
 
-import HeroPic from "../assets/images/SW.jpg";
+import HeroPic from "../assets/images/overalls/SW.jpg";
 
 export default function Organizations() {
   const [mode, setMode] = React.useState('light');
