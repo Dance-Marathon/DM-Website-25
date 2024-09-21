@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import '../App.css';
 // import { createTheme } from '@mui/material';
 
 // import CasaPinada from '../assets/fonts/CasaPinada.ttf'
@@ -63,7 +64,7 @@ export default function Hero() {
         variant="h1"
         component="div"
         sx={{
-          //fontFamily: "CasaPinada",
+          fontFamily: "CasaPinada",
           display: 'flex',
           flexDirection: { xs: 'column', md: 'row' },
           position: 'absolute',
@@ -73,7 +74,7 @@ export default function Hero() {
           color: 'white',
           textAlign: 'center',
           zIndex: 1,
-          fontSize: 'clamp(3rem, 4vw, 4rem)',
+          fontSize: 'clamp(3rem, 10vw, 5rem)',
           textShadow: '4px 4px 4px rgba(0, 0, 0, 0.5)',
           maxWidth: '100%',
         }}

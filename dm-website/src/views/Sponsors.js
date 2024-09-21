@@ -150,7 +150,7 @@ export default function Sponsors() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='DonorDrive'/>
+      <PageHero imageUrl={HeroPic} title='Sponsors' sx={{ fontFamily: "CasaPinada"}}/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

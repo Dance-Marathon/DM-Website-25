@@ -32,6 +32,7 @@ function PageHero({ imageUrl, title }) {
         variant="h1"
         component="div"
         sx={{
+          fontFamily: "CasaPinada",
           display: 'flex',
           flexDirection: { xs: 'column', md: 'row' },
           position: 'absolute',
@@ -41,7 +42,7 @@ function PageHero({ imageUrl, title }) {
           color: 'white',
           textAlign: 'center',
           zIndex: 1,
-          fontSize: 'clamp(3rem, 4vw, 4rem)',
+          fontSize: 'clamp(3rem, 10vw, 5rem)',
           textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
           maxWidth: '100%',
         }}
