@@ -44,10 +44,10 @@ export default function GetInvolved() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography component="h2" variant="h4" color="primary">
+          <Typography component="h2" variant="h4" color="text.secondary">
             Get Involved
           </Typography>
-          <Typography variant="body1" color="secondary">
+          <Typography variant="body1" color="text.secondary">
             Take a look at all of the different ways you can get involved with Dance Marathon at UF. Whether you are interested in becoming a Captain, Dancer, Emerging Leader, Ambassador, Fundraiser, or member of Kirstyn’s Krew, this page is your path to getting involved! There are so many ways to give back through DM at UF, and we would love for you to join our Dance Marathon family and help us make miracles.
           </Typography>
         </Box>
@@ -99,7 +99,7 @@ export default function GetInvolved() {
               { image: HeroPic, title: 'Captain Teams', hoverText: "Members of our Emerging Leaders Program work alongside the Recruitment Team, providing support to Captain Teams and brainstorming new ideas to ensure a successful future for our organization.", link: '/captains' },
               { image: HeroPic, title: 'Miracle Makers', hoverText: "Dancers stand on their feet if able for the duration of our Main Event in April to raise funds and awareness for UF Health Shands Children’s Hospital.", link: '/miracle-makers' },
               { image: HeroPic, title: 'Emerging Leaders', hoverText: "Members of our Emerging Leaders Program work alongside the Recruitment Team, providing support to Captain Teams and brainstorming new ideas to ensure a successful future for our organization.", link: '/emerging-leaders' },
-              { image: HeroPic, title: 'Organizations', hoverText: "Organization Ambassadors serve as a liaison between Dance Marathon and their respective organization.", link: '/organizations' },
+              { image: HeroPic, title: 'Organizations', hoverText: "A variety of University of Florida affiliated Organizations participate in Dance Marathon every year!", link: '/organizations' },
             ].map((card, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <SquareCard {...card} />

@@ -60,7 +60,7 @@ export default function CircleModalPopup({ image, title, content }) {
         {/* Title Below the Image, Centered with manual padding */}
         <Typography
           variant="h6"
-          color="black"
+          color="text.secondary"
           sx={{
             marginTop: 2,
             paddingRight: '60px', // Move the text to the left

@@ -6,10 +6,10 @@ const FAQ = ({ question, answer }) => {
   return (
     <Accordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-        <Typography color="black">{question}</Typography>
+        <Typography color="text.secondary">{question}</Typography>
       </AccordionSummary>
       <AccordionDetails>
-        <Typography color="black">{answer}</Typography>
+        <Typography color="text.secondary">{answer}</Typography>
       </AccordionDetails>
     </Accordion>
   );

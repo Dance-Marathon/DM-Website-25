@@ -7,7 +7,7 @@ const AccordionFAQ = () => {
 
   return (
     <Box sx={{ maxWidth: 600, mx: 'auto', mt: 1 }}>
-      <Typography variant="h4" color="black" gutterBottom>
+      <Typography variant="h4" color="text.secondary" gutterBottom>
         FAQ
       </Typography>
       {faqs.map((faq, index) => (

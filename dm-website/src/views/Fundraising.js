@@ -43,45 +43,45 @@ export default function Fundraising() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-      <Typography variant="b1" color="black" paragraph>
+      <Typography variant="b1" color="text.secondary" paragraph>
         Registering to fundraise is pretty easy! Just follow the steps below:
       </Typography>
-      <Typography variant="body1" color="black" paragraph>
+      <Typography variant="body1" color="text.secondary" paragraph>
         1. Follow this{' '}
         <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.event&eventID=6292" target="_blank" rel="noopener noreferrer">
           link
         </Link>{' '}
         to register now!
       </Typography>
-      <Typography variant="body1" color="black" paragraph>
+      <Typography variant="body1" color="text.secondary" paragraph>
         2. Select <b>'Register Now'</b>
       </Typography>
-      <Typography variant="body1" color="black" paragraph>
+      <Typography variant="body1" color="text.secondary" paragraph>
         3. If you have a DonorDrive account from DM at UF 2024, select <b>‘Login to your account’</b>.
       </Typography>
-      <Typography variant="body1" color="black" paragraph>
+      <Typography variant="body1" color="text.secondary" paragraph>
         4. If you do not have a DonorDrive account, then create an account now.
       </Typography>
-      <Typography variant="body1" color="black" paragraph>
+      <Typography variant="body1" color="text.secondary" paragraph>
         5. Next, select your role.
       </Typography>
-      <Typography variant="body1" color="black" paragraph>
+      <Typography variant="body1" color="text.secondary" paragraph>
         6. Select ‘Participant’ then ‘Individual’ or join the team of your choosing!
       </Typography>
-      <Typography variant="body1" color="black" paragraph>
+      <Typography variant="body1" color="text.secondary" paragraph>
         7. After, you will finalize your registration by answering the questions presented.
       </Typography>
-      <Typography variant="body1" color="black" paragraph>
+      <Typography variant="body1" color="text.secondary" paragraph>
         8. Once you have registered on DonorDrive, you can customize your fundraising page by adding a profile picture, editing your story, and updating your fundraising goal. Use this {' '}
         <Link href={HowToGuide} target="_blank" rel="noopener noreferrer">
           How-To Guide
         </Link>{' '}
         for step by step instructions!
       </Typography>
-      <Typography variant="body1" color="black" paragraph>
+      <Typography variant="body1" color="text.secondary" paragraph>
         9. From here, you can use the tools on DonorDrive to send emails from a template, track your fundraising, and share your fundraising link with others!
       </Typography>
-      <Typography variant="b2"  color="black" paragraph sx={{ mt: 4 }}>
+      <Typography variant="b2"  color="text.secondary" paragraph sx={{ mt: 4 }}>
         If you have any questions about DonorDrive, contact the Finance Overall Director, 
         <Link href="mailto:rbeany@floridadm.org"> Ryan Beany</Link> at rbeany@floridadm.org.
       </Typography>
