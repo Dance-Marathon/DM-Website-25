@@ -13,33 +13,42 @@ import { useNavigate } from 'react-router-dom';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
 
-
-
 // Sample data for blogs
 const blogs = [
   {
     id: 1,
-    title: 'The Future of Technology',
-    description: 'Exploring the advancements and innovations in tech.',
-    author: 'John Doe',
-    date: 'September 20, 2024',
-    imageUrl: HeroPic // Image URL
+    title: 'Finding Your DM Family',
+    author: 'Rylie Pryor',
+    date: 'September 6, 2024',
+    imageUrl: HeroPic
   },
   {
     id: 2,
-    title: 'The Power of AI',
-    description: 'How AI is transforming industries across the world.',
-    author: 'Jane Smith',
+    title: 'Beyond This Generation',
+    author: 'Anabella Fernandez',
     date: 'August 14, 2024',
-    imageUrl: 'https://via.placeholder.com/300x200?text=AI+Power', // Image URL
+    imageUrl: HeroPic,
   },
   {
     id: 3,
-    title: 'Sustainability in Business',
-    description: 'Why companies are focusing more on green practices.',
-    author: 'Michael Green',
-    date: 'July 30, 2024',
-    imageUrl: 'https://via.placeholder.com/300x200?text=Sustainability', // Image URL
+    title: 'Beyond This Summer',
+    author: 'Lainey Shapiro',
+    date: 'July 22, 2024',
+    imageUrl: HeroPic,
+  },
+  {
+    id: 4,
+    title: 'Beyond Ourselves',
+    author: 'Rylie Pryor',
+    date: 'July 16, 2024',
+    imageUrl: HeroPic,
+  },
+  {
+    id: 5,
+    title: 'Beyond This Moment',
+    author: 'Rylie Pryor',
+    date: 'June 12, 2024',
+    imageUrl: HeroPic,
   },
 ];
 
@@ -100,9 +109,6 @@ const BlogList = () => {
             <CardContent>
               <Typography variant="h5" component="div" gutterBottom>
                 {blog.title}
-              </Typography>
-              <Typography variant="body2" color="text.secondary" gutterBottom>
-                {blog.description}
               </Typography>
               <Typography variant="subtitle2" color="text.primary">
                 Author: {blog.author}
