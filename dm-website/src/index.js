@@ -38,6 +38,7 @@ import BlogDetails from './components/BlogDetails';
 import BlogList from './components/BlogList';
 import Events from './views/Events';
 import NotFound from './views/NotFound';
+import MainEvent from './views/MainEvent';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -68,6 +69,7 @@ root.render(
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
         <Route path="/events" element={<Events />} />
+        <Route path="/mainevent" element={<MainEvent />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
