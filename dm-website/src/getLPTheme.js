@@ -4,7 +4,7 @@ import { red } from '@mui/material/colors';
 export const brand = {
   50:  '#F0F7FF',
   100: '#CEE5FD',
-  200: '#9CCCFC',
+  200: '#FFFFFF',
   300: '#55A6F6',
   400: '#4965A6', // accent DM navy (light)
   500: '#233563', // primary DM navy (main)
@@ -450,7 +450,7 @@ export default function getLPTheme(mode) {
               height: '1px',
               bottom: 0,
               left: 0,
-              backgroundColor: brand[200],
+              backgroundColor: brand[400],
               opacity: 0.7,
               transition: 'width 0.3s ease, opacity 0.3s ease',
             },

@@ -102,7 +102,7 @@ export default function Fundraising() {
               { image: HeroPic, title: 'Fundraising Guide', hoverText: "", link: '/fundraisingguide' },
               { image: HeroPic, title: 'Sponsors', hoverText: "", link: '/sponsors' },
             ].map((card, index) => (
-              <Grid item xs={6} sm={3} md={3} key={index}>
+              <Grid item xs={12} sm={6} md={3} key={index}>
                 <SquareCardSmall {...card} />
               </Grid>
             ))}
