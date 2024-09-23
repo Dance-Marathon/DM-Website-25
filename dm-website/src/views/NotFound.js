@@ -4,12 +4,13 @@ import { Box, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import CursedCam from "../assets/images/cursedcam.jpg";
 
 const NotFound = () => (
   <Box
     sx={{
       minHeight: '100vh',
-      backgroundImage: `url(${HeroPic})`, // Use the imported image
+      backgroundImage: `url(${CursedCam})`, // Use the imported image
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       display: 'flex',
