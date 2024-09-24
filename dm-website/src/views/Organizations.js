@@ -61,7 +61,7 @@ export default function Organizations() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='About Us'/>
+      <PageHero imageUrl={HeroPic} title='Organizations'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

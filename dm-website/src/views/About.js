@@ -11,6 +11,7 @@ import PageHero from '../components/PageHero';
 import SquareCard from '../components/SquareCard';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import AboutPic from "../assets/images/pagepics/AboutPic.png";
 
 export default function About() {
   const [mode, setMode] = React.useState('light');
@@ -25,7 +26,7 @@ export default function About() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='About Us'/>
+      <PageHero imageUrl={AboutPic} title='About Us'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

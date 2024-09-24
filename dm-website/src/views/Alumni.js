@@ -11,6 +11,7 @@ import AccordionFAQ from '../components/AccordionFAQ';
 import FAQ from '../components/FAQ';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import AlumniPic from "../assets/images/pagepics/AlumniPic.jpg";
 
 export default function Alumni() {
   const [mode, setMode] = React.useState('light');
@@ -25,7 +26,7 @@ export default function Alumni() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Alumni' />
+      <PageHero imageUrl={AlumniPic} title='Alumni' />
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

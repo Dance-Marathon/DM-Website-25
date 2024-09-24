@@ -11,6 +11,7 @@ import PageHero from '../components/PageHero';
 import YoutubeVid from '../components/YoutubeVid';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import FallKickoffPic from "../assets/images/pagepics/FallKickoffPic.jpg";
 
 export default function FallKickoff() {
   const [mode, setMode] = React.useState('light');
@@ -25,7 +26,7 @@ export default function FallKickoff() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Fall Kickoff'/>
+      <PageHero imageUrl={FallKickoffPic} title='Fall Kickoff'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

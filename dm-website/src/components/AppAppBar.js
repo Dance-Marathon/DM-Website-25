@@ -134,6 +134,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   { label: "Mini Marathons", url: "/minimarathons" },
                   { label: "Moralloween", url: "/moralloween" },
                   { label: "Transform Today", url: "/transformtoday" },
+                  { label: "Miracles in Color 5k", url: "/miracles5k" },
                 ]}
                 menuURL={"/events"}
                 >

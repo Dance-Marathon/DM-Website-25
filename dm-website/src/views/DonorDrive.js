@@ -11,6 +11,7 @@ import AccordionFAQ from '../components/AccordionFAQ';
 import FAQ from '../components/FAQ';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import DonorDrivePic from "../assets/images/pagepics/DonorDrivePic.png";
 
 export default function DonorDrive() {
   const [mode, setMode] = React.useState('light');
@@ -25,7 +26,7 @@ export default function DonorDrive() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='DonorDrive'/>
+      <PageHero imageUrl={DonorDrivePic} title='DonorDrive'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -50,7 +51,6 @@ export default function DonorDrive() {
           .
           </Typography>
             </Box>
-            <AccordionFAQ />
       <FAQ 
         question="If I had a fundraising page last year, do I need to create a new account with DonorDrive and a new fundraising page this year?" 
         answer="Yes! Each year that you choose to participate with Dance Marathon, you will need to create a fundraising page."

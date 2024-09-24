@@ -10,6 +10,7 @@ import PageHero from '../components/PageHero';
 import FAQ from '../components/FAQ';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import MiracleMakersPic from "../assets/images/pagepics/MiracleMakersPic.jpg";
 
 export default function MiracleMakers() {
   const [mode, setMode] = React.useState('light');
@@ -24,7 +25,7 @@ export default function MiracleMakers() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Miracle Makers' />
+      <PageHero imageUrl={MiracleMakersPic} title='Miracle Makers' />
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

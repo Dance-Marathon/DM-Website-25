@@ -10,6 +10,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import MainEventPic from "../assets/images/pagepics/MainEventPic.jpg";
 
 export default function MainEvent() {
   const [mode, setMode] = React.useState('light');
@@ -24,7 +25,7 @@ export default function MainEvent() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Main Event'/>
+      <PageHero imageUrl={MainEventPic} title='Main Event'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
