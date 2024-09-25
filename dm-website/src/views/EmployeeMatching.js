@@ -115,7 +115,7 @@ export default function EmployeeMatching() {
         <Link href="mailto:sfinkel@floridadm.org">sfinkel@floridadm.org</Link> whenever a matching gift request has been submitted. The matching gift will be attributed to the individual who received the original donation. Please allow 60 days for the Office of Development to process your donor match before further inquiry as it can often be a lengthy process. Thank you for multiplying your miracles!
       </Typography>
       <Typography color="text.secondary" variant="h6" gutterBottom>
-        Important
+        <b>Important</b>
       </Typography>
       <Typography color="text.secondary" paragraph>
         Please do not fill out any forms sent with checks; instead, turn them in directly into the Finance Manager, reachable at{' '}

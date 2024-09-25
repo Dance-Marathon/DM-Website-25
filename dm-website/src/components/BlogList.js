@@ -73,7 +73,7 @@ const BlogList = () => {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={BlogPic} title='Blogs' />
+      <PageHero imageUrl={BlogPic} title='Blog' />
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

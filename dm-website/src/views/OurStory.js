@@ -17,6 +17,7 @@ import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import '../App.css';
 
 export default function OurStory() {
   const [mode, setMode] = React.useState('light');
@@ -137,7 +138,7 @@ export default function OurStory() {
           <Typography variant="h5" component="h2" gutterBottom sx={{  marginTop: 4, color: '#000000' }}>
             Participants
           </Typography>
-          <ul>
+          <ul className="custom-bullet-points">
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
                 Number of Registered Dancers in 2022: <strong>1250</strong>
@@ -178,7 +179,7 @@ export default function OurStory() {
           <Typography variant="h5" component="h2" gutterBottom sx={{ marginTop: 4, color: '#000000' }}>
             Fundraising
           </Typography>
-          <ul>
+          <ul className="custom-bullet-points">
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
                 <strong>44,899</strong> donations on DonorDrive
@@ -278,7 +279,7 @@ export default function OurStory() {
               <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 4 }}>
                 Positions
               </Typography>
-              <ul>
+              <ul className="custom-bullet-points">
                 <li>
                   <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
                     Overall Directors

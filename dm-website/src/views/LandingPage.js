@@ -64,7 +64,7 @@ export default function LandingPage() {
             <i style={{ color: '#e2883c' }}>
               <b>UF</b>
             </i>
-            , having fundraised over $31,000,000 thus far. This past year, we celebrated our 30th year by raising a historic{' '}
+            , having fundraised over $32,000,000 thus far. This past year, we celebrated our 30th year by raising a historic{' '}
             <i style={{ color: '#233563' }}>
               <b>$1,531,518.24!</b>
             </i>

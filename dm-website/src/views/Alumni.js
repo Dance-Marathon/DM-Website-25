@@ -106,7 +106,10 @@ export default function Alumni() {
           <Typography variant="body2" color="text.secondary">*DMA event t-shirt opt-in includes a direct mailing option for those members unable to attend the event.</Typography>
         </Box>
 
-        <AccordionFAQ />
+
+        <Typography variant="h4" color="text.secondary" sx={{marginTop: 4}}>
+          FAQ
+        </Typography>
         <FAQ
           question="I have never been a part of the DMA before and just registered for the first time. What membership do I have?"
           answer="As a first-time DMA member, your $40 fee makes you a Lifetime Miracle Member and provides you with a complimentary Event Package. The following year, you will have to pay $40 for the Event Package if you so choose."

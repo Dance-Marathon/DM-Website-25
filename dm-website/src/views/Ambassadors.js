@@ -7,6 +7,7 @@ import Footer from '../components/Footer';
 import { Container, Typography, Box, Link, Grid, List, ListItem, ListItemText } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
+import "../App.css";
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
 import AmbassadorGuidelines from "../assets/pdfs/2024 Ambassador Guidelines.pdf"
@@ -102,46 +103,66 @@ export default function Ambassadors() {
         Click here to view the 2024 Ambassador Guidelines
       </Link>
       
-      <Typography variant="h6" color="text.secondary" sx={{ mt: 4}}>
+      <Typography variant="h6" gutterBottom sx={{ marginTop: 4, color: '#000000' }}>
         Responsibilities:
       </Typography>
-      <List sx={{ listStyleType: 'disc', pl: 6 }}>
-        <ListItem sx={{ color: "text.secondary", display: 'list-item' }}>
-          <ListItemText primary="Recruit and motivate members of their Organization to fundraise and participate" />
-        </ListItem>
-        <ListItem sx={{ color: "text.secondary", display: 'list-item' }}>
-          <ListItemText primary="Encourage members to get involved with Dance Marathon" />
-        </ListItem>
-        <ListItem sx={{ color: "text.secondary", display: 'list-item' }}>
-          <ListItemText primary="Inform all Organization members of events, registration dates, fundraising incentives, etc." />
-        </ListItem>
-        <ListItem sx={{ color: "text.secondary", display: 'list-item' }}>
-          <ListItemText primary="Work with the Family Relations Team to engage with their respective Miracle Family throughout the year" />
-        </ListItem>
-        <ListItem sx={{ color: "text.secondary", display: 'list-item' }}>
-          <ListItemText primary="Host a minimum of one Hospitality Night or fundraising event" />
-        </ListItem>
-        <ListItem sx={{ color: "text.secondary", display: 'list-item' }}>
-          <ListItemText primary="Be in attendance at various Dance Marathon events during the year (i.e. Miracles in Color 5K, Moralloween, Miracle Family Events, etc.)" />
-        </ListItem>
-      </List>
-      <Typography variant="h6" color="text.secondary" sx={{ mt: 2 }}>
+      <ul className="custom-bullet-points">
+        <li>
+          <Typography variant="body1" component="span" color="text.secondary">
+            Recruit and motivate members of their Organization to fundraise and participate
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="body1" component="span" color="text.secondary">
+            Encourage members to get involved with Dance Marathon
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="body1" component="span" color="text.secondary">
+            Inform all Organization members of events, registration dates, fundraising incentives, etc.
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="body1" component="span" color="text.secondary">
+            Work with the Family Relations Team to engage with their respective Miracle Family throughout the year
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="body1" component="span" color="text.secondary">
+            Host a minimum of one Hospitality Night or fundraising event
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="body1" component="span" color="text.secondary">
+            Be in attendance at various Dance Marathon events during the year (i.e. Miracles in Color 5K, Moralloween, Miracle Family Events, etc.)
+          </Typography>
+        </li>
+      </ul>
+      <Typography variant="h6" gutterBottom sx={{ marginTop: 4, color: '#000000' }}>
         Responsibilities during the Main Event:
       </Typography>
-      <List sx={{ listStyleType: 'disc', pl: 6 }}>
-        <ListItem sx={{ color: "text.secondary", display: 'list-item' }}>
-          <ListItemText primary="Help assign Miracle Maker buddies prior to the Event for each Miracle Maker" />
-        </ListItem>
-        <ListItem sx={{ color: "text.secondary", display: 'list-item' }}>
-          <ListItemText primary="Work with their Fundraising and Organization Development Captain to encourage and help Miracle Makers fundraise at the Event" />
-        </ListItem>
-        <ListItem sx={{ color: "text.secondary", display: 'list-item' }}>
-          <ListItemText primary="Relay important information to Miracle Makers throughout the Event" />
-        </ListItem>
-        <ListItem sx={{ color: "text.secondary", display: 'list-item' }}>
-          <ListItemText primary="Be available for Miracle Makers in case of emergency" />
-        </ListItem>
-        </List>
+      <ul className="custom-bullet-points">
+        <li>
+          <Typography variant="body1" component="span" color="text.secondary">
+            Help assign Miracle Maker buddies prior to the Event for each Miracle Maker
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="body1" component="span" color="text.secondary">
+            Work with their Fundraising and Organization Development Captain to encourage and help Miracle Makers fundraise at the Event
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="body1" component="span" color="text.secondary">
+            Relay important information to Miracle Makers throughout the Event
+          </Typography>
+        </li>
+        <li>
+          <Typography variant="body1" component="span" color="text.secondary">
+            Be available for Miracle Makers in case of emergency
+          </Typography>
+        </li>
+      </ul>
 
       <Typography variant="h6" color="text.secondary" sx={{ mt: 4 }}>
         2023 Dance Marathon Ambassadors

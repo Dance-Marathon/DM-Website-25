@@ -43,3 +43,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
+ul.custom-bullet-points li::marker {
+  color: black; /* Change the color to whatever you'd like */
+}

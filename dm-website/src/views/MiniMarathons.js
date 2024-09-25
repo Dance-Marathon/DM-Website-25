@@ -26,7 +26,7 @@ export default function MiniMarathons() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={MiniMarathonsPic} title='Mini-Marathons'/>
+      <PageHero imageUrl={MiniMarathonsPic} title='Mini Marathons'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
