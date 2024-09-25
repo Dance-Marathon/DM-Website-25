@@ -50,13 +50,15 @@ export default function MiniMarathons() {
                 </Typography >{' '}
                 , proving that these students are truly one generation fighting for the next. All money raised by Mini Marathons goes toward DM at UF’s total amount raised, which directly benefits the children at UF Health Shands Children’s Hospital.
             </Typography>
+
+          <Typography variant="body1" sx={{ color: '#000000', marginBottom: 6, marginTop: 6 }}>
+          We are always looking for more high schools to join our Dance Marathon family. If you would like to learn more about our Mini-Marathon Programs or would like to get involved, please contact our Marathon Relations Overall Director, Lexi Devescovi, at {' '}
+            <Link href="mailto:dgeller@floridadm.org" sx={{ color: '#1a73e8' }}>
+              adevescovi@floridadm.org
+            </Link>.
+          </Typography>
+
           <YoutubeVid videoId="wDD1GzDla3c"/>
-          <Typography variant="body1" sx={{ color: '#000000', marginBottom: 2, marginTop: 6 }}>
-            We are always looking for more high schools to join our Dance Marathon family. If you would like to learn more about our Mini-Marathon Programs or would like to get involved, please contact our Marathon Relations Overall Director, Lexi Devescovi, at {' '}
-              <Link href="mailto:dgeller@floridadm.org" sx={{ color: '#1a73e8' }}>
-                adevescovi@floridadm.org
-              </Link>.
-            </Typography>
 
             <Typography variant="h5" component="h2" gutterBottom sx={{  marginTop: 4, color: 'text.secondary' }}>
                 Participating Schools

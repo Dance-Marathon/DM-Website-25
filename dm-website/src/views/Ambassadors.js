@@ -109,59 +109,68 @@ export default function Ambassadors() {
       <ul className="custom-bullet-points">
         <li>
           <Typography variant="body1" component="span" color="text.secondary">
-            Recruit and motivate members of their Organization to fundraise and participate
+            <b>Yearlong:</b>
           </Typography>
         </li>
+        <ul className="custom-bullet-points">
+          <li>
+            <Typography variant="body1" component="span" color="text.secondary">
+              Recruit and motivate members of their Organization to fundraise and participate
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body1" component="span" color="text.secondary">
+              Encourage members to get involved with Dance Marathon
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body1" component="span" color="text.secondary">
+              Inform all Organization members of events, registration dates, fundraising incentives, etc.
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body1" component="span" color="text.secondary">
+              Work with the Family Relations Team to engage with their respective Miracle Family throughout the year
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body1" component="span" color="text.secondary">
+              Host a minimum of one Hospitality Night or fundraising event
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body1" component="span" color="text.secondary">
+              Be in attendance at various Dance Marathon events during the year (i.e. Miracles in Color 5K, Moralloween, Miracle Family Events, etc.)
+            </Typography>
+          </li>
+        </ul>
         <li>
           <Typography variant="body1" component="span" color="text.secondary">
-            Encourage members to get involved with Dance Marathon
+            <b>During the Main Event:</b>
           </Typography>
         </li>
-        <li>
-          <Typography variant="body1" component="span" color="text.secondary">
-            Inform all Organization members of events, registration dates, fundraising incentives, etc.
-          </Typography>
-        </li>
-        <li>
-          <Typography variant="body1" component="span" color="text.secondary">
-            Work with the Family Relations Team to engage with their respective Miracle Family throughout the year
-          </Typography>
-        </li>
-        <li>
-          <Typography variant="body1" component="span" color="text.secondary">
-            Host a minimum of one Hospitality Night or fundraising event
-          </Typography>
-        </li>
-        <li>
-          <Typography variant="body1" component="span" color="text.secondary">
-            Be in attendance at various Dance Marathon events during the year (i.e. Miracles in Color 5K, Moralloween, Miracle Family Events, etc.)
-          </Typography>
-        </li>
-      </ul>
-      <Typography variant="h6" gutterBottom sx={{ marginTop: 4, color: '#000000' }}>
-        Responsibilities during the Main Event:
-      </Typography>
-      <ul className="custom-bullet-points">
-        <li>
-          <Typography variant="body1" component="span" color="text.secondary">
-            Help assign Miracle Maker buddies prior to the Event for each Miracle Maker
-          </Typography>
-        </li>
-        <li>
-          <Typography variant="body1" component="span" color="text.secondary">
-            Work with their Fundraising and Organization Development Captain to encourage and help Miracle Makers fundraise at the Event
-          </Typography>
-        </li>
-        <li>
-          <Typography variant="body1" component="span" color="text.secondary">
-            Relay important information to Miracle Makers throughout the Event
-          </Typography>
-        </li>
-        <li>
-          <Typography variant="body1" component="span" color="text.secondary">
-            Be available for Miracle Makers in case of emergency
-          </Typography>
-        </li>
+          <ul className="custom-bullet-points">
+          <li>
+            <Typography variant="body1" component="span" color="text.secondary">
+              Help assign Miracle Maker buddies prior to the Event for each Miracle Maker
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body1" component="span" color="text.secondary">
+              Work with their Fundraising and Organization Development Captain to encourage and help Miracle Makers fundraise at the Event
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body1" component="span" color="text.secondary">
+              Relay important information to Miracle Makers throughout the Event
+            </Typography>
+          </li>
+          <li>
+            <Typography variant="body1" component="span" color="text.secondary">
+              Be available for Miracle Makers in case of emergency
+            </Typography>
+          </li>
+        </ul>
       </ul>
 
       <Typography variant="h6" color="text.secondary" sx={{ mt: 4 }}>

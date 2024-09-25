@@ -36,20 +36,43 @@ export default function MiracleMakers() {
           gap: { xs: 2, sm: 3 },
         }}
       >
-      <Typography variant="body1" color="text.secondary" paragraph>
+      <Typography variant="body1" color="text.secondary" >
         Dance Marathon at the University of Florida is an annual event benefiting the patients of UF Health Shands Children's Hospital in Gainesville, Florida. Each year, students stay awake and on their feet, if able, to raise money and awareness for Children's Miracle Network Hospitals.
       </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
+      <Typography variant="body1" color="text.secondary" >
         As a Miracle Maker, you will experience one of UF’s most adored traditions. Throughout the duration of the Main Event, you will learn our Linedance, enjoy live entertainment, eat delicious food from our local Sponsors, and hear inspiring stories from our Miracle Families.
       </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
+      <Typography variant="body1" color="text.secondary" >
         In addition to standing, if able, for the duration of the Main Event, Miracle Makers will have year-long activities to take part in such as a Miracle Maker Retreat, Registered Miracle Maker Workshops, bonding with their internal Organization, and more!
       </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
+      <Typography variant="body1" color="text.secondary" >
         Please email Raegan DiRenzo, Dancer Engagement Overall Director, at 
         <Link href="mailto:rdirenzo@floridadm.org"> rdirenzo@floridadm.org</Link> with any questions!
       </Typography>
+
+      <Typography variant="h5" color="text.secondary" sx={{ marginTop: 4 }}>
+        Register to be a Miracle Maker
+      </Typography>
+      <Typography variant="body1" color="text.secondary">
+        Follow the link and select “Buy Tickets!” Once you complete your registration, a Dance Marathon Captain will reach out to you with further details.
+      </Typography>
+      <Typography variant="body1" color="text.secondary" >
+        To be a Miracle Maker, participants must be enrolled as students at the University of Florida during the spring semester. This includes students who are enrolled but may have an internship in place of classes.
+      </Typography>
+      <Typography variant="body1" color="text.secondary" >
+        Registering to be a Miracle Maker is not the same thing as registering to fundraise. Miracle Maker Registration is only open for the two-week period in the Fall and in the Spring.
+      </Typography>
+      <Typography variant="body1" color="text.secondary" >
+        You may register to be a Miracle Maker with an Organization team or as an individual.
+      </Typography>
+      <Typography variant="body1" color="text.secondary" >
+        If you have any questions about Miracle Making as an individual or the Gator Aides team, please contact the Recruitment Overall Director, Ava Orlando, at 
+        <Link href="mailto:aorlando@floridadm.org"> aorlando@floridadm.org</Link>.
+      </Typography>
       
+      <Typography variant="h4" color="text.secondary" sx={{marginTop: 4}}>
+        FAQ
+      </Typography>
       <Box component="ul" sx={{ pl: 3 }}>
         <FAQ 
           question="If I register to be a Miracle Maker, am I guaranteed a Miracle Maker spot at DM?" 
@@ -92,26 +115,6 @@ export default function MiracleMakers() {
           answer="You can register as an individual using the link under Miracle Maker Resources; individual Miracle Makers will be placed onto the Gator Aides team."
         />
       </Box>
-
-      <Typography variant="h5" color="text.secondary" sx={{ mt: 4 }}>
-        Register to be a Miracle Maker
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        Follow the link and select “Buy Tickets!” Once you complete your registration, a Dance Marathon Captain will reach out to you with further details.
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        To be a Miracle Maker, participants must be enrolled as students at the University of Florida during the spring semester. This includes students who are enrolled but may have an internship in place of classes.
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        Registering to be a Miracle Maker is not the same thing as registering to fundraise. Miracle Maker Registration is only open for the two-week period in the Fall and in the Spring.
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        You may register to be a Miracle Maker with an Organization team or as an individual.
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        If you have any questions about Miracle Making as an individual or the Gator Aides team, please contact the Recruitment Overall Director, Ava Orlando, at 
-        <Link href="mailto:aorlando@floridadm.org"> aorlando@floridadm.org</Link>.
-      </Typography>
       </Container>
       <Footer />
     </ThemeProvider>

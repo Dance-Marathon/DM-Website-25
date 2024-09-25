@@ -191,8 +191,8 @@ export default function Sponsors() {
       </Typography>
 
       {/* Sponsors Section */}
-      <Typography variant="h3" color="text.secondary" align="center" gutterBottom>
-        Our 2024 Sponsors
+      <Typography variant="h3" color="text.secondary" align="center" gutterBottom sx={{marginTop: 4}}>
+        <b>Our 2024 Sponsors</b>
       </Typography>
 
       {/* Grid of sponsor logos */}

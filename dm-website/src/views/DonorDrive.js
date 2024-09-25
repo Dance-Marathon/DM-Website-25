@@ -51,6 +51,10 @@ export default function DonorDrive() {
           .
           </Typography>
             </Box>
+
+      <Typography variant="h4" color="text.secondary" sx={{marginTop: 4}}>
+        FAQ
+      </Typography>
       <FAQ 
         question="If I had a fundraising page last year, do I need to create a new account with DonorDrive and a new fundraising page this year?" 
         answer="Yes! Each year that you choose to participate with Dance Marathon, you will need to create a fundraising page."
