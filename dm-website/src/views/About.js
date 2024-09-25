@@ -57,7 +57,7 @@ export default function About() {
             spacing={3} 
             justifyContent="center" 
             alignItems="center"
-            sx={{ maxWidth: 1200 }}
+            sx={{ maxWidth: 1200, margin: '0 auto' }}
           >
             {[
               { image: HeroPic, title: 'Our Story', hoverText: "", link: '/ourstory' },

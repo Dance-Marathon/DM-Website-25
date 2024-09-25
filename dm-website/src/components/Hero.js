@@ -65,6 +65,7 @@ export default function Hero() {
         component="div"
         sx={{
           fontFamily: "CasaPinada",
+          fontWeight: 300,
           display: 'flex',
           flexDirection: { xs: 'column', md: 'row' },
           position: 'absolute',

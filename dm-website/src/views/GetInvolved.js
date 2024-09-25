@@ -79,7 +79,7 @@ export default function GetInvolved() {
             textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
           }}
         >
-          Applications
+          Apply Now!
         </Typography>
         </Button>
         </Link>
@@ -91,7 +91,7 @@ export default function GetInvolved() {
             spacing={3} 
             justifyContent="center" 
             alignItems="center"
-            sx={{ maxWidth: 1200 }}
+            sx={{ maxWidth: 1200, margin: '0 auto'}}
           >
             {[
               { image: HeroPic, title: 'Alumni', hoverText: "Our Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate.", link: '/alumni' },

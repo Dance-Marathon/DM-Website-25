@@ -33,6 +33,7 @@ function PageHero({ imageUrl, title }) {
         component="div"
         sx={{
           fontFamily: "CasaPinada",
+          fontWeight: 300,
           display: 'flex',
           flexDirection: { xs: 'column', md: 'row' },
           position: 'absolute',
