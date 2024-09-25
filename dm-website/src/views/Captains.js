@@ -10,6 +10,7 @@ import PageHero from '../components/PageHero';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import CaptainPic from "../assets/images/pagepics/CaptainsPic.jpg";
 
 const teams = [
   {
@@ -351,7 +352,7 @@ export default function Captains() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Captains' />
+      <PageHero imageUrl={CaptainPic} title='Captains' />
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

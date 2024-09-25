@@ -12,6 +12,7 @@ import PageHero from '../components/PageHero';
 import { useNavigate } from 'react-router-dom';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import BlogPic from "../assets/images/pagepics/BlogsPic.png";
 
 // Sample data for blogs
 const blogs = [
@@ -72,7 +73,7 @@ const BlogList = () => {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Blogs' />
+      <PageHero imageUrl={BlogPic} title='Blogs' />
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

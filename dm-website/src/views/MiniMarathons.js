@@ -11,6 +11,7 @@ import PageHero from '../components/PageHero';
 import YoutubeVid from '../components/YoutubeVid';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import MiniMarathonsPic from "../assets/images/pagepics/MiniMarathonsPic.jpg";
 
 export default function MiniMarathons() {
   const [mode, setMode] = React.useState('light');
@@ -25,7 +26,7 @@ export default function MiniMarathons() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Mini-Marathons'/>
+      <PageHero imageUrl={MiniMarathonsPic} title='Mini-Marathons'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

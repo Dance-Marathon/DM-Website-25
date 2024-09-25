@@ -11,6 +11,7 @@ import PageHero from '../components/PageHero';
 import SquareCard from '../components/SquareCard';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import EventsPic from "../assets/images/pagepics/EventsPic.png";
 
 export default function Events() {
   const [mode, setMode] = React.useState('light');
@@ -25,7 +26,7 @@ export default function Events() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Events'/>
+      <PageHero imageUrl={EventsPic} title='Events'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

@@ -134,6 +134,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   { label: "Mini Marathons", url: "/minimarathons" },
                   { label: "Moralloween", url: "/moralloween" },
                   { label: "Transform Today", url: "/transformtoday" },
+                  { label: "Miracles in Color 5k", url: "/miracles5k" },
                 ]}
                 menuURL={"/events"}
                 >
@@ -149,7 +150,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 menuURL={"/fundraising"}
                 >
                 </MenuPopupState>
-                <Button 
+                {/* <Button 
                   variant='regular'
                   onClick={() => navigate('/blog')}
                   sx={{...menuTheme}}
@@ -157,7 +158,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   <Typography variant="body1" color="text.primary">
                     Blog
                   </Typography>
-                </Button>
+                </Button> */}
                 <Button 
                   variant='regular'
                   onClick={() => navigate('/shop')}
