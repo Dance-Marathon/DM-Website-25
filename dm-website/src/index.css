@@ -1,7 +1,14 @@
-@font-face {
+/* @font-face {
   font-family: 'Casa Pinada';
   src: url('assets/fonts/CasaPinada.ttf') format('ttf');
-  font-weight: normal;
+  font-weight: 100;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'Casa Pinada';
+  src: url('assets/fonts/CasaPinada.otf') format('opentype');
+  font-weight: 300;
   font-style: normal;
 }
 
