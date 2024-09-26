@@ -10,6 +10,7 @@ import PageHero from '../components/PageHero';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
 import SponsorshipPacket from "../assets/pdfs/SponsorshipPacket.pdf";
+import SponsorPic from "../assets/images/Sponsors.jpg";
 
 import Sponsor1 from "../assets/images/sponsors/Sponsor1.png";
 import Sponsor2 from "../assets/images/sponsors/Sponsor2.png";
@@ -150,7 +151,7 @@ export default function Sponsors() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Sponsors' sx={{ fontFamily: "CasaPinada"}}/>
+      <PageHero imageUrl={SponsorPic} title='Sponsors' sx={{ fontFamily: "CasaPinada"}}/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

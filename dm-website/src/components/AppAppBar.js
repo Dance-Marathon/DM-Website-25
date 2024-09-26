@@ -197,10 +197,9 @@ function AppAppBar({ mode, toggleColorMode }) {
                 }}
               >
                 <IconButton
-                  color="text.primary"
                   href="https://www.facebook.com/floridaDM/"
                   aria-label="Facebook"
-                  sx={{ alignSelf: 'center' }}
+                  sx={{ alignSelf: 'center', color: 'white' }}
                 >
                   <FacebookIcon />
                 </IconButton>
@@ -208,7 +207,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   color="text.primary"
                   href="https://x.com/floridadm?lang=en"
                   aria-label="X"
-                  sx={{ alignSelf: 'center' }}
+                  sx={{ alignSelf: 'center', color: 'white' }}
                 >
                   <TwitterIcon />
                 </IconButton>
@@ -216,7 +215,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   color="text.primary"
                   href="https://www.instagram.com/dmatuf/?hl=en"
                   aria-label="Instagram"
-                  sx={{ alignSelf: 'center' }}
+                  sx={{ alignSelf: 'center', color: 'white' }}
                 >
                   <InstagramIcon />
                 </IconButton>

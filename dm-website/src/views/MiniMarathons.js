@@ -5,10 +5,11 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AppAppBar from '../components/AppAppBar';
 import getLPTheme from '../getLPTheme';
 import Footer from '../components/Footer';
-import { Container, Typography, Link } from '@mui/material';
+import { Container, Typography, Link, Grid } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import YoutubeVid from '../components/YoutubeVid';
+import "../App.css";
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
 import MiniMarathonsPic from "../assets/images/pagepics/MiniMarathonsPic.jpg";
@@ -58,12 +59,12 @@ export default function MiniMarathons() {
             </Link>.
           </Typography>
 
-          <YoutubeVid videoId="wDD1GzDla3c"/>
-
+          <Grid container alignItems="center">
+            <Grid item xs={4}>
             <Typography variant="h5" component="h2" gutterBottom sx={{  marginTop: 4, color: 'text.secondary' }}>
                 Participating Schools
             </Typography>
-                <ul>
+                <ul className="custom-bullet-points">
                     <li>
                     <Typography variant="body1" component="span" color="text.secondary">
                         Belleview High School
@@ -120,6 +121,13 @@ export default function MiniMarathons() {
                     </Typography>
                     </li>
                 </ul>
+            </Grid>
+            <Grid item xs={8}>
+              <Box>
+                <YoutubeVid videoId="wDD1GzDla3c" />
+              </Box>
+            </Grid>
+          </Grid>
         </Box>
       </Container>
       <Footer />

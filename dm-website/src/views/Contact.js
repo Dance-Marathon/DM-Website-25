@@ -42,6 +42,8 @@ import Footer from '../components/Footer';
 
 import ScrollToTop from "../components/ScrollToTop";
 
+import ContactPic from "../assets/images/Contact Us.jpg";
+
 function Contact() {
   const [mode, setMode] = React.useState('light');
   const LPtheme = createTheme(getLPTheme(mode));
@@ -55,7 +57,7 @@ function Contact() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode}/>
-      <PageHero imageUrl={HeroPic} title='Contact Us'/>
+      <PageHero imageUrl={ContactPic} title='Contact Us'/>
       <Box
         component="section"
         variant="gradient"

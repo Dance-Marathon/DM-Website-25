@@ -11,7 +11,7 @@ import PageHero from '../components/PageHero';
 import SquareCard from '../components/SquareCard';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
-import AboutPic from "../assets/images/pagepics/AboutPic.png";
+import AboutPic from "../assets/images/About Us.jpg";
 
 export default function About() {
   const [mode, setMode] = React.useState('light');

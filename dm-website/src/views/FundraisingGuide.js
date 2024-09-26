@@ -9,6 +9,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import FundraisingGuidePic from "../assets/images/Fundraising Guide.jpg";
 
 export default function FundraisingGuide() {
   const [mode, setMode] = React.useState('light');
@@ -23,7 +24,7 @@ export default function FundraisingGuide() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Fundraising Guide'/>
+      <PageHero imageUrl={FundraisingGuidePic} title='Fundraising Guide'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

@@ -10,6 +10,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import ApplicationsPic from "../assets/images/Applications.jpg";
 
 export default function Applications() {
   const [mode, setMode] = React.useState('light');
@@ -24,7 +25,7 @@ export default function Applications() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Applications'/>
+      <PageHero imageUrl={ApplicationsPic} title='Applications'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

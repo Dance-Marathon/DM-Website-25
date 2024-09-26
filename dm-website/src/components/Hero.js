@@ -39,7 +39,7 @@ export default function Hero() {
       sx={{
         position: 'relative',
         width: '100%',
-        height: '60vh',
+        height: '80vh',
         overflow: 'hidden',
         backgroundColor: 'black',
       }}

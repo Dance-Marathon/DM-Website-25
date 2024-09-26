@@ -11,6 +11,7 @@ import "../App.css";
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
 import AmbassadorGuidelines from "../assets/pdfs/2024 Ambassador Guidelines.pdf"
+import AmbassadorsPic from "../assets/images/Ambassadors.jpg";
 
 export default function Ambassadors() {
   const [mode, setMode] = React.useState('light');
@@ -82,7 +83,7 @@ export default function Ambassadors() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Ambassadors' />
+      <PageHero imageUrl={AmbassadorsPic} title='Ambassadors' />
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

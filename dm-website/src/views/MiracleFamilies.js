@@ -45,6 +45,7 @@ import OwenM from "../assets/images/miraclechildren/OwenM.jpg";
 import SageP from "../assets/images/miraclechildren/SageP.jpg";
 import WyattT from "../assets/images/miraclechildren/WyattT.jpg";
 
+import MiracleFamiliesPic from "../assets/images/Miracle Families.jpg";
 
 export default function MiracleFamilies() {
   const [mode, setMode] = React.useState('light');
@@ -59,7 +60,7 @@ export default function MiracleFamilies() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Meet our Miracle Families'/>
+      <PageHero imageUrl={MiracleFamiliesPic} title='Meet our Miracle Families'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

@@ -10,6 +10,7 @@ import PageHero from '../components/PageHero';
 import { styled } from '@mui/material/styles';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import OrganizationsPic from "../assets/images/Organizations.jpg";
 
 export default function Organizations() {
   const [mode, setMode] = React.useState('light');
@@ -61,7 +62,7 @@ export default function Organizations() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Organizations'/>
+      <PageHero imageUrl={OrganizationsPic} title='Organizations'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
