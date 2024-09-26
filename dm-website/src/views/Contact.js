@@ -18,26 +18,26 @@ import HeroPic from "../assets/images/overalls/CA.jpg"
 import HorizontalTeamCard from "../components/TeamCard";
 
 // Images
-import OT1 from "../assets/images/overalls/RA.jpg";
-import OT2 from "../assets/images/overalls/SF.jpg";
-import OT3 from "../assets/images/overalls/MT.jpg";
-import OT4 from "../assets/images/overalls/SW.jpg";
-import OT5 from "../assets/images/overalls/AF.jpg";
-import OT6 from "../assets/images/overalls/RD.jpg";
-import OT7 from "../assets/images/overalls/CA.jpg";
-import OT8 from "../assets/images/overalls/DG.jpg";
-import OT9 from "../assets/images/overalls/BEANY.png";
-import OT10 from "../assets/images/overalls/SL.jpg";
-import OT11 from "../assets/images/overalls/LD.jpg";
-import OT12 from "../assets/images/overalls/OK.jpg";
-import OT13 from "../assets/images/overalls/DS.png";
-import OT14 from "../assets/images/overalls/AD.jpg";
-import OT15 from "../assets/images/overalls/CL.jpeg";
-import OT16 from "../assets/images/overalls/AE.jpg";
-import OT17 from "../assets/images/overalls/JW.jpg";
-import OT18 from "../assets/images/overalls/CE.jpg";
-import OT19 from "../assets/images/overalls/GC.jpg";
-import OT20 from "../assets/images/overalls/AO.jpg";
+import OT1 from "../assets/images/OTHeadshots/RyanAthay-1.jpg";
+import OT2 from "../assets/images/OTHeadshots/SkylarFinkel-1.jpg";
+import OT3 from "../assets/images/OTHeadshots/MacyThompson-1.jpg";
+import OT4 from "../assets/images/OTHeadshots/SydneyWall-1.jpg";
+import OT5 from "../assets/images/OTHeadshots/AbbyFerrell-1.jpg";
+import OT6 from "../assets/images/OTHeadshots/ReaganDiRenzo-1.jpg";
+import OT7 from "../assets/images/OTHeadshots/CameronAppel-1.jpg";
+import OT8 from "../assets/images/OTHeadshots/DawsonGeller-1.jpg";
+import OT9 from "../assets/images/OTHeadshots/RyanBeany-1.jpg";
+import OT10 from "../assets/images/OTHeadshots/SophieLinale-1.jpg";
+import OT11 from "../assets/images/OTHeadshots/LexiDevescovi-1.jpg";
+import OT12 from "../assets/images/OTHeadshots/OliviaKnier-1.jpg";
+import OT13 from "../assets/images/OTHeadshots/DylanSiegel-1.jpg";
+import OT14 from "../assets/images/OTHeadshots/AvaDinow-1.jpg";
+import OT15 from "../assets/images/OTHeadshots/CarolineLee-1.jpg";
+import OT16 from "../assets/images/OTHeadshots/AverieEngel-1.jpg";
+import OT17 from "../assets/images/OTHeadshots/JessWinograd-1.jpg";
+import OT18 from "../assets/images/OTHeadshots/CarolineEaton-1.jpg";
+import OT19 from "../assets/images/OTHeadshots/GreyChapin-1.jpg";
+import OT20 from "../assets/images/OTHeadshots/AvaOrlando-1.jpg";
 import Footer from '../components/Footer';
 
 import ScrollToTop from "../components/ScrollToTop";
