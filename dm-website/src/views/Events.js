@@ -12,6 +12,8 @@ import SquareCard from '../components/SquareCard';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
 import EventsPic from "../assets/images/pagepics/EventsPic.png";
+import TTBoxPic from "../assets/images/pagepics/TTBoxPic.png";
+import MEBoxPic from "../assets/images/pagepics/MEBoxPicNew.png";
 
 export default function Events() {
   const [mode, setMode] = React.useState('light');
@@ -77,11 +79,11 @@ export default function Events() {
           >
             {[
               { image: HeroPic, title: 'Fall Kickoff', hoverText: "Our annual Fall Kickoff enjoyed by all internal and external memebers.", link: '/fallkickoff' },
-              { image: HeroPic, title: 'Main Event', hoverText: "A celebration for all members and miracles made throughout the year.", link: '/mainevent' },
+              { image: MEBoxPic, title: 'Main Event', hoverText: "A celebration for all members and miracles made throughout the year.", link: '/mainevent' },
               { image: HeroPic, title: 'Mini-Marathons', hoverText: "High schools showing passion for Dance Marathon before their college years.", link: '/minimarathons' },
-              { image: HeroPic, title: 'Miracles in Color 5k', hoverText: "5K benefiting UF Health Shands Children's Hospital, with some color in the mix.", link: '/miracles5k' },
+              { image: EventsPic, title: 'Miracles in Color 5k', hoverText: "5K benefiting UF Health Shands Children's Hospital, with some color in the mix.", link: '/miracles5k' },
               { image: HeroPic, title: 'Moralloween', hoverText: "A great way for everyone to get in the Halloween spirit!", link: '/moralloween' },
-              { image: HeroPic, title: 'Transform Today', hoverText: "Our largest fall fundraising effort lasting 26.2 hours.", link: '/transformtoday' },
+              { image: TTBoxPic, title: 'Transform Today', hoverText: "Our largest fall fundraising effort lasting 26.2 hours.", link: '/transformtoday' },
             ].map((card, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <SquareCard {...card} />

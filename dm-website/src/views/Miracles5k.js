@@ -11,6 +11,7 @@ import PageHero from "../components/PageHero";
 import FAQ from "../components/FAQ";
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
+import EventsPic from "../assets/images/pagepics/EventsPic.png";
 
 export default function Miracles5k() {
   const [mode, setMode] = React.useState("light");
@@ -26,7 +27,7 @@ export default function Miracles5k() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <PageHero
-        imageUrl={HeroPic}
+        imageUrl={EventsPic}
         sx={{
           whiteSpace: "nowrap",
           overflow: "hidden",

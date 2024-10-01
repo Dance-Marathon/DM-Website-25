@@ -12,6 +12,8 @@ import SquareCardSmall from '../components/SquareCardSmall';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
 import HowToGuide from "../assets/pdfs/how-to-guide.pdf"
+import RegisterToFundraise from "../assets/images/RegisterToFundraise.png";
+import FundraisingGuideBox from "../assets/images/pagepics/FundraisingGuideBox.png";
 
 export default function Fundraising() {
   const [mode, setMode] = React.useState('light');
@@ -26,7 +28,7 @@ export default function Fundraising() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Register to Fundraise'/>
+      <PageHero imageUrl={RegisterToFundraise} title='Register to Fundraise'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -99,7 +101,7 @@ export default function Fundraising() {
             {[
               { image: HeroPic, title: 'DonorDrive', hoverText: "", link: '/donordrive' },
               { image: HeroPic, title: 'Employee Matching', hoverText: "", link: '/employeematching' },
-              { image: HeroPic, title: 'Fundraising Guide', hoverText: "", link: '/fundraisingguide' },
+              { image: FundraisingGuideBox, title: 'Fundraising Guide', hoverText: "", link: '/fundraisingguide' },
               { image: HeroPic, title: 'Sponsors', hoverText: "", link: '/sponsors' },
             ].map((card, index) => (
               <Grid item xs={12} sm={6} md={3} key={index}>
