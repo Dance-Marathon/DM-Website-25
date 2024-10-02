@@ -12,6 +12,9 @@ import SquareCard from '../components/SquareCard';
 
 import HeroPic from "../assets/images/overalls/SW.jpg";
 import AboutPic from "../assets/images/pagepics/AboutPicNew.png";
+import CMNBox from "../assets/images/miniboxpics/CMNUFHealthBox.JPG";
+import MFBox from "../assets/images/miniboxpics/MiracleFamiliesBox.JPG";
+import OurStoryBox from "../assets/images/miniboxpics/OurStoryBox.JPG";
 
 export default function About() {
   const [mode, setMode] = React.useState('light');
@@ -61,9 +64,9 @@ export default function About() {
             sx={{ maxWidth: 1200, margin: '0 auto' }}
           >
             {[
-              { image: HeroPic, title: 'Our Story', hoverText: "", link: '/ourstory' },
-              { image: HeroPic, title: 'CMN & UF Health', hoverText: "", link: '/cmnhospitals' },
-              { image: HeroPic, title: 'Miracle Families', hoverText: "", link: '/miraclefamilies' },
+              { image: OurStoryBox, title: 'Our Story', hoverText: "", link: '/ourstory' },
+              { image: CMNBox, title: 'CMN & UF Health', hoverText: "", link: '/cmnhospitals' },
+              { image: MFBox, title: 'Miracle Families', hoverText: "", link: '/miraclefamilies' },
             ].map((card, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <SquareCard {...card} />

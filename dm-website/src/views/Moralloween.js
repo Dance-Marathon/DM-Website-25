@@ -9,7 +9,7 @@ import { Container, Typography, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 
-import HeroPic from "../assets/images/overalls/SW.jpg";
+import MoralloweenPic from "../assets/images/miniboxpics/MoralloweenHero.JPG";
 
 export default function Moralloween() {
   const [mode, setMode] = React.useState('light');
@@ -24,7 +24,7 @@ export default function Moralloween() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title='Moralloween'/>
+      <PageHero imageUrl={MoralloweenPic} title='Moralloween'/>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

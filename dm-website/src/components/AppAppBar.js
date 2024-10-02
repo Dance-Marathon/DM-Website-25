@@ -145,7 +145,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   { label: "DonorDrive", url: "/donordrive" },
                   { label: "Employee Matching", url: "/employeematching" },
                   { label: "Fundraising Guide", url: "/fundraisingguide" },
-                  { label: "Sponsors", url: "/sponsors" },
+                  { label: "Partners", url: "/partners" },
                 ]}
                 menuURL={"/fundraising"}
                 >

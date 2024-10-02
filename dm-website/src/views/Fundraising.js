@@ -10,10 +10,12 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import SquareCardSmall from '../components/SquareCardSmall';
 
-import HeroPic from "../assets/images/overalls/SW.jpg";
 import HowToGuide from "../assets/pdfs/how-to-guide.pdf"
 import RegisterToFundraise from "../assets/images/RegisterToFundraise.png";
 import FundraisingGuideBox from "../assets/images/pagepics/FundraisingGuideBox.png";
+import DDBox from "../assets/images/miniboxpics/DonorDriveBox.JPG";
+import EmployeeBox from "../assets/images/miniboxpics/EmployeeMatchingBox.JPG";
+import PartnersBox from "../assets/images/miniboxpics/PartnersBox.JPG";
 
 export default function Fundraising() {
   const [mode, setMode] = React.useState('light');
@@ -99,10 +101,10 @@ export default function Fundraising() {
             sx={{ maxWidth: 1200, margin: '0 auto'}}
           >
             {[
-              { image: HeroPic, title: 'DonorDrive', hoverText: "", link: '/donordrive' },
-              { image: HeroPic, title: 'Employee Matching', hoverText: "", link: '/employeematching' },
+              { image: DDBox, title: 'DonorDrive', hoverText: "", link: '/donordrive' },
+              { image: EmployeeBox, title: 'Employee Matching', hoverText: "", link: '/employeematching' },
               { image: FundraisingGuideBox, title: 'Fundraising Guide', hoverText: "", link: '/fundraisingguide' },
-              { image: HeroPic, title: 'Sponsors', hoverText: "", link: '/sponsors' },
+              { image: PartnersBox, title: 'Partners', hoverText: "", link: '/partners' },
             ].map((card, index) => (
               <Grid item xs={12} sm={6} md={3} key={index}>
                 <SquareCardSmall {...card} />

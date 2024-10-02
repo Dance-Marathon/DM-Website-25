@@ -15,6 +15,9 @@ import HeroPic from "../assets/images/overalls/CA.jpg";
 import GetInvolvedPic from "../assets/images/pagepics/GetInvolvedPic.jpg";
 import AmbassadorsMiniPic from "../assets/images/pagepics/AmbassadorsMiniPic.jpg";
 import ELPBox from "../assets/images/ELPBox.jpg";
+import CaptainsBox from "../assets/images/miniboxpics/CaptainTeamsBox.JPG";
+import MMBox from "../assets/images/miniboxpics/MiracleMakerBox.JPG";
+import OrgBox from "../assets/images/miniboxpics/OrgBox.JPG";
 
 export default function GetInvolved() {
   const [mode, setMode] = React.useState('light');
@@ -99,10 +102,10 @@ export default function GetInvolved() {
             {[
               { image: HeroPic, title: 'Alumni', hoverText: "Our Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate.", link: '/alumni' },
               { image: AmbassadorsMiniPic, title: 'Ambassadors', hoverText: "Organization Ambassadors serve as a liaison between Dance Marathon and their respective organization.", link: '/ambassadors' },
-              { image: HeroPic, title: 'Captain Teams', hoverText: "Members of our Emerging Leaders Program work alongside the Recruitment Team, providing support to Captain Teams and brainstorming new ideas to ensure a successful future for our organization.", link: '/captains' },
-              { image: HeroPic, title: 'Miracle Makers', hoverText: "Dancers stand on their feet if able for the duration of our Main Event in April to raise funds and awareness for UF Health Shands Children’s Hospital.", link: '/miraclemakers' },
+              { image: CaptainsBox, title: 'Captain Teams', hoverText: "Members of our Emerging Leaders Program work alongside the Recruitment Team, providing support to Captain Teams and brainstorming new ideas to ensure a successful future for our organization.", link: '/captains' },
+              { image: MMBox, title: 'Miracle Makers', hoverText: "Dancers stand on their feet if able for the duration of our Main Event in April to raise funds and awareness for UF Health Shands Children’s Hospital.", link: '/miraclemakers' },
               { image: ELPBox, title: 'Emerging Leaders', hoverText: "Members of our Emerging Leaders Program work alongside the Recruitment Team, providing support to Captain Teams and brainstorming new ideas to ensure a successful future for our organization.", link: '/emergingleaders' },
-              { image: HeroPic, title: 'Organizations', hoverText: "A variety of University of Florida affiliated Organizations participate in Dance Marathon every year!", link: '/organizations' },
+              { image: OrgBox, title: 'Organizations', hoverText: "A variety of University of Florida affiliated Organizations participate in Dance Marathon every year!", link: '/organizations' },
             ].map((card, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <SquareCard {...card} />
