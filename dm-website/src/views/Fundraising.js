@@ -58,10 +58,10 @@ export default function Fundraising() {
         to register now!
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
-        2. Select <b>'Register Now'</b>
+        2. Select <span style={{ color: '#e2883c', fontWeight: 'bold' }}> 'Register Now'</span>
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
-        3. If you have a DonorDrive account from DM at UF 2024, select <b>‘Login to your account’</b>.
+        3. If you have a DonorDrive account from DM at UF 2024, select <span style={{ color: '#e2883c', fontWeight: 'bold' }}> 'Login to your account'</span>.
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
         4. If you do not have a DonorDrive account, then create an account now.
