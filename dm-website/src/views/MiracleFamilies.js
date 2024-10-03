@@ -77,7 +77,7 @@ export default function MiracleFamilies() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-            <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#000000', marginBottom: 2 }}>
+            <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#233563', marginBottom: 2 }}>
               For The Families
             </Typography>
             <Typography variant="body1" sx={{ color: '#000000', marginBottom: 2 }}>
@@ -91,7 +91,7 @@ export default function MiracleFamilies() {
               </Link>.
             </Typography>
 
-            <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 4, marginBottom: 2 }}>
+            <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#233563', marginTop: 4, marginBottom: 2 }}>
               Meet Our Miracle Families
             </Typography>
             <Typography variant="body1" sx={{ color: '#000000', marginBottom: 2 }}>
