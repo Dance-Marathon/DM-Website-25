@@ -58,7 +58,7 @@ export default function Applications() {
                 </li>
                 <li>
                 <Typography variant="body1" color="text.secondary">
-                    Pay the $25 application fee. You only need to pay the application fee <strong>once</strong> even if you are applying for more than one position.
+                    Pay the $25 application fee. You only need to pay the application fee <span style={{ color: '#e2883c', fontWeight: 'bold' }}>once</span> even if you are applying for more than one position.
                     Instructions on how to complete both of these items can be found on the front page of either application.
                 </Typography>
                 </li>
@@ -66,45 +66,45 @@ export default function Applications() {
 
             <Typography variant="body1" gutterBottom color="text.secondary">
                 You can apply for both the Emerging Leaders Program and for Captain Teams. However, your Captain Application will take priority over your Emerging Leader Application.
-                To be eligible to be an Ambassador, you <strong>cannot</strong> hold another position as well.
+                To be eligible to be an Ambassador, you <span style={{ color: '#e2883c', fontWeight: 'bold' }}>cannot</span> hold another position as well.
             </Typography>
 
-            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 4 }} gutterBottom>
+            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563', marginTop: 4 }} gutterBottom>
                 Manager Application
             </Typography>
             <Typography variant="body1" gutterBottom color="text.secondary">
                 Now Closed
             </Typography>
 
-            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }} gutterBottom>
+            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
                 Overall Director Application
             </Typography>
             <Typography variant="body1" gutterBottom color="text.secondary">
                 Now Closed
             </Typography>
 
-            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }} gutterBottom>
+            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
                 Assistant Director Application
             </Typography>
             <Typography variant="body1" gutterBottom color="text.secondary">
                 Now Closed
             </Typography>
 
-            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }} gutterBottom>
+            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
                 Captain Application
             </Typography>
             <Typography variant="body1" gutterBottom color="text.secondary">
                 Now Closed
             </Typography>
 
-            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }} gutterBottom>
+            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
                 Emerging Leaders Application
             </Typography>
             <Typography variant="body1" gutterBottom color="text.secondary">
                 Now Closed
             </Typography>
 
-            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }} gutterBottom>
+            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
                 Ambassador Application
             </Typography>
             <Typography variant="body1" gutterBottom color="text.secondary">
