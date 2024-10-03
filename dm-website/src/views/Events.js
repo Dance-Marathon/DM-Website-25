@@ -48,9 +48,7 @@ export default function Events() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography variant="h4" component="h1" gutterBottom sx={{ color: 'text.secondary' }}>
-                A Yearlong Philanthropy
-            </Typography>
+
 
             <Typography variant="body1" gutterBottom sx={{ color: 'text.secondary' }}>
                 Dance Marathon is a{' '}
