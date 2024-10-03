@@ -44,7 +44,7 @@ export default function Alumni() {
           }}
         >
 
-          <Typography variant="h4" color="text.secondary" gutterBottom>About</Typography>
+          <Typography variant="h4" color='#233563' gutterBottom>About</Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             Since 1995, Dance Marathon at UF has raised over $32 million for UF Health Shands Children's Hospital, our local Children’s Miracle Network Hospital. Thanks to your dedication and support throughout your college years, we have become the most successful student-run philanthropy in the southeastern United States.
           </Typography>
@@ -54,7 +54,7 @@ export default function Alumni() {
         </Box>
 
         <Box mt={4}>
-          <Typography variant="h4" color="text.secondary" gutterBottom>Get Involved!</Typography>
+          <Typography variant="h4" color='#e2883c' gutterBottom>Get Involved!</Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             Our Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate. Join the DMA and stay a member of DM at UF for years to come with exclusive alumni access at the event and the opportunity to continue your involvement beyond your years at UF.
           </Typography>
@@ -67,13 +67,13 @@ export default function Alumni() {
         </Box>
 
         <Box mt={4}>
-          <Typography variant="h4" color="text.secondary" gutterBottom>Lifetime DMA Membership</Typography>
+          <Typography variant="h4" color='#233563' gutterBottom>Lifetime DMA Membership</Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             This lifetime membership provides the following benefits for a one-time fee of $40. If you are signing up for the DMA for the first time, you will receive a complimentary Event Package outlined underneath the membership benefits.{' '}
             <Link href="https://dance-marathon-at-uf-510104.square.site/product/2022-dance-marathon-alumni-lifetime-membership/1?cs=true&cst=custom" target="_blank">Purchase the Lifetime DMA Miracle Membership here.</Link>
           </Typography>
 
-          <Typography variant="h6" color="text.secondary" gutterBottom>Membership Benefits Include:</Typography>
+          <Typography variant="h6" color='#e2883c' gutterBottom>Membership Benefits Include:</Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             - Monthly E-Newsletter updates <br />
             - Preferred Access at the event to the DMA VIP room <br />
@@ -86,7 +86,7 @@ export default function Alumni() {
         </Box>
 
         <Box mt={4}>
-          <Typography variant="h6" color="text.secondary" gutterBottom>Event Package:</Typography>
+          <Typography variant="h6" color='#e2883c' gutterBottom>Event Package:</Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             DMA members can purchase an exclusive event package to enhance their experience during the Dance Marathon weekend in spring. This package is ideal for those who plan to attend Dance Marathon at UF and can be purchased for $40 up to one month before the event. If this is your first year signing up for the DMA, you will automatically receive a complimentary Event Package included in your Lifetime Miracle Membership.{' '}
             <Link href="https://dance-marathon-at-uf-510104.square.site/product/2022-dance-marathon-alumni-lifetime-membership/1?cs=true&cst=custom" target="_blank">Purchase the DMA Event Package here.</Link>
@@ -107,7 +107,7 @@ export default function Alumni() {
         </Box>
 
 
-        <Typography variant="h4" color="text.secondary" sx={{marginTop: 4}}>
+        <Typography variant="h4" color='#233563' sx={{marginTop: 4}}>
           FAQ
         </Typography>
         <FAQ
