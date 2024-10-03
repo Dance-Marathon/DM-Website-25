@@ -109,7 +109,7 @@ export default function Ambassadors() {
       </Typography>
       <ul className="custom-bullet-points">
         <li>
-          <Typography variant="body1" component="span" color="text.secondary">
+          <Typography variant="body1" component="span" color='#233563'>
             <b>Yearlong:</b>
           </Typography>
         </li>
@@ -146,7 +146,7 @@ export default function Ambassadors() {
           </li>
         </ul>
         <li>
-          <Typography variant="body1" component="span" color="text.secondary">
+          <Typography variant="body1" component="span" color='#233563'>
             <b>During the Main Event:</b>
           </Typography>
         </li>
