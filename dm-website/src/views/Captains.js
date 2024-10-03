@@ -363,7 +363,7 @@ export default function Captains() {
           gap: { xs: 2, sm: 3 },
         }}
       >
-      <Typography variant="h4" color="text.secondary" gutterBottom>
+      <Typography variant="h4" color='#233563' gutterBottom>
         Captain Teams
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
@@ -377,14 +377,14 @@ export default function Captains() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body2" color="text.secondary" marginBottom={1}>
-              <strong>Responsibilities: </strong>
+            <span style={{ color: '#233563', fontWeight: 'bold' }}>Responsibilities:</span>
               {team.responsibilities}
             </Typography>
             <Typography variant="body2" color="text.secondary" marginBottom={1}>
-              <strong>Overall Director: </strong> {team.leadership.overallDirector}
+            <span style={{ color: '#233563', fontWeight: 'bold' }}>Overall Director:</span> {team.leadership.overallDirector}
             </Typography>
             <Typography variant="body2" color="text.secondary" gutterBottom>
-              <strong>Assistant Directors:</strong>
+            <span style={{ color: '#233563', fontWeight: 'bold' }}>Assistant Directors:</span>
             </Typography>
             <Grid container spacing={2} justifyContent="center" sx={{ mb: 2 }}>
   {team.leadership.assistantDirectors.map((ad, i) => {
@@ -414,7 +414,7 @@ export default function Captains() {
         })}
             </Grid>
             <Typography variant="body2" color="text.secondary">
-              <strong>Captains:</strong>
+            <span style={{ color: '#233563', fontWeight: 'bold' }}>Captains:</span>
               <Box sx={{display: 'flex', flexWrap: 'wrap', gap: 1, pl: 3, pt: 1 }}>
                 {team.leadership.captains.map((captain, i) => (
                   <Chip key={i} label={captain} variant="outlined" />
