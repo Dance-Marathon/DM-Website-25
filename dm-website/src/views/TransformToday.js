@@ -73,7 +73,7 @@ export default function TransformToday() {
               throughout the day!
             </p>
             Our 2023 total, which was raised in just 26.2 hours for our
-            hospital, was <b>$409,733.63!</b>
+            hospital, was <span style={{ color: '#e2883c', fontWeight: 'bold' }}>$409,733.63!</span>
             <p>
               We are so eager to continue our efforts throughout this year and
               make miracles for the families who need it most! Please feel free
@@ -85,7 +85,7 @@ export default function TransformToday() {
             variant="h5"
             component="h2"
             gutterBottom
-            sx={{ marginTop: 4, color: "text.secondary" }}
+            sx={{ marginTop: 4, color: '#233563' }}
           >
             Why
           </Typography>
@@ -103,7 +103,7 @@ export default function TransformToday() {
             variant="h5"
             component="h2"
             gutterBottom
-            sx={{ marginTop: 4, color: "text.secondary" }}
+            sx={{ marginTop: 4, color: '#233563' }}
           >
             When
           </Typography>
@@ -114,7 +114,7 @@ export default function TransformToday() {
             variant="h5"
             component="h2"
             gutterBottom
-            sx={{ marginTop: 4, color: "text.secondary" }}
+            sx={{ marginTop: 4, color: '#233563' }}
           >
             What
           </Typography>
@@ -131,7 +131,7 @@ export default function TransformToday() {
             variant="h5"
             component="h2"
             gutterBottom
-            sx={{ marginTop: 4, color: "text.secondary" }}
+            sx={{ marginTop: 4, color: '#233563' }}
           >
             How Can I Get Involved
           </Typography>
@@ -161,7 +161,7 @@ export default function TransformToday() {
             variant="h5"
             component="h2"
             gutterBottom
-            sx={{ marginTop: 4, color: "text.secondary" }}
+            sx={{ marginTop: 4, color: '#233563' }}
           >
             Hospitality Nights
           </Typography>
