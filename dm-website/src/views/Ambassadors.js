@@ -104,12 +104,12 @@ export default function Ambassadors() {
         Click here to view the 2024 Ambassador Guidelines
       </Link>
       
-      <Typography variant="h6" gutterBottom sx={{ marginTop: 4, color: '#000000' }}>
+      <Typography variant="h6" gutterBottom sx={{ marginTop: 4, color: '#233563' }}>
         Responsibilities:
       </Typography>
       <ul className="custom-bullet-points">
         <li>
-          <Typography variant="body1" component="span" color='#233563'>
+          <Typography variant="body1" component="span" color='#e2883c'>
             <b>Yearlong:</b>
           </Typography>
         </li>
@@ -146,7 +146,7 @@ export default function Ambassadors() {
           </li>
         </ul>
         <li>
-          <Typography variant="body1" component="span" color='#233563'>
+          <Typography variant="body1" component="span" color='#e2883c'>
             <b>During the Main Event:</b>
           </Typography>
         </li>
@@ -174,7 +174,7 @@ export default function Ambassadors() {
         </ul>
       </ul>
 
-      <Typography variant="h6" color="text.secondary" sx={{ mt: 4 }}>
+      <Typography variant="h6" color='#233563' sx={{ mt: 4 }}>
         2023 Dance Marathon Ambassadors
       </Typography>
       <Grid container spacing={2} justifyContent="center">
