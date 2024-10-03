@@ -50,7 +50,7 @@ export default function GetInvolved() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography component="h2" variant="h4" color="text.secondary">
+          <Typography component="h2" variant="h4" color='#233563'>
             Get Involved
           </Typography>
           <Typography variant="body1" color="text.secondary">
