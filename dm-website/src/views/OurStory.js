@@ -112,11 +112,11 @@ export default function OurStory() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography variant="h5" component="h2" gutterBottom color="text.secondary">
+          <Typography variant="h5" component="h2" gutterBottom style={{color: '#233563'}}>
             Where The Money Goes
           </Typography>
           <Typography variant="body1" paragraph color="text.secondary">
-            <strong>100%</strong> of the funds raised by DM at UF go directly to UF Health Shands Children's Hospital, our local Children Miracle Network Hospital. Of these funds, most recently, <strong>48%</strong> goes to research, <strong>10%</strong> to education and <strong>42%</strong> to patient care.
+          <span style={{ color: '#e2883c', fontWeight: 'bold' }}>100%</span> of the funds raised by DM at UF go directly to UF Health Shands Children's Hospital, our local Children Miracle Network Hospital. Of these funds, most recently, <span style={{ color: '#e2883c', fontWeight: 'bold' }}>48%</span> goes to research, <span style={{ color: '#e2883c', fontWeight: 'bold' }}>10%</span> to education and <span style={{ color: '#e2883c', fontWeight: 'bold' }}>42%</span> to patient care.
           </Typography>
           <Typography variant="body1" paragraph color="text.secondary">
             Patient care funding provides necessities such as bandages and patient gowns, as well as life-saving equipment and hospital improvements including the recent expansion of the Neonatal Intensive Care Unit. These funds also provide sleeper sofas for parents, playrooms for children, and Child Life programs, in an effort to make hospital stays more enjoyable for children and their families.
@@ -125,84 +125,86 @@ export default function OurStory() {
             Research funding helps our doctors find solutions for incurable diseases such as diabetes, cystic fibrosis, and cancer, and it allows them to develop new technology and enhanced processes that improve the daily lives of pediatric patients. Education funding supports programs such as Child Life Diversion therapy and goes toward raising funds and awareness for the Children’s Miracle Network.
           </Typography>
 
-          <Typography variant="h5" component="h2" gutterBottom sx={{ marginTop: 4, color: '#000000' }}>
+          <Typography variant="h5" component="h2" gutterBottom style={{color: '#233563'}}>
             Length of Dance Marathon
           </Typography>
           <Typography variant="body1" sx={{ color: '#000000', margin: 0 }}>
-            Before 2008: <strong>32 hours</strong>
+            Before 2008: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>32 hours</span>
           </Typography>
           <Typography variant="body1" sx={{ color: '#000000'}}>
-            After 2008: <strong>26.2 hours</strong>
+            After 2008: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>26.2 hours</span>
           </Typography>
 
-          <Typography variant="h5" component="h2" gutterBottom sx={{  marginTop: 4, color: '#000000' }}>
+          <Typography variant="h5" component="h2" gutterBottom
+      style={{ color: '#233563', marginTop: '20px', marginBottom: '5px' }}>
             Participants
           </Typography>
           <ul className="custom-bullet-points">
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Number of Registered Dancers in 2022: <strong>1250</strong>
+                Number of Registered Dancers in 2022: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>1250</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Number of Captains: <strong>467</strong>
+                Number of Captains: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>467</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Number of Emerging Leaders: <strong>160</strong>
+                Number of Emerging Leaders: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>160</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Number of Kirstyn's Krew: <strong>53</strong>
+                Number of Kirstyn's Krew: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>53</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Number of Miracle Families: <strong>56</strong>
+                Number of Miracle Families: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>56</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Number of Sponsors: <strong>74</strong>
+                Number of Sponsors: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>74</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Most Years as a Dancer: <strong>4 years</strong>
+                Most Years as a Dancer: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>4 years</span>
               </Typography>
             </li>
           </ul>
 
-          <Typography variant="h5" component="h2" gutterBottom sx={{ marginTop: 4, color: '#000000' }}>
+          <Typography variant="h5" component="h2" gutterBottom
+      style={{ color: '#233563', marginTop: '20px', marginBottom: '5px' }}>
             Fundraising
           </Typography>
           <ul className="custom-bullet-points">
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                <strong>44,899</strong> donations on DonorDrive
+              <span style={{ color: '#e2883c', fontWeight: 'bold' }}>44,899</span> donations on DonorDrive
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                <strong>2,715</strong> fundraisers raised at least $1
+              <span style={{ color: '#e2883c', fontWeight: 'bold' }}>2,715</span> fundraisers raised at least $1
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Amount raised in 2022: <strong>$2,334,217.21</strong>
+                Amount raised in 2022: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>$2,334,217.21</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Total amount raised in past 28 years: over <strong>28 million dollars</strong>
+                Total amount raised in past 28 years: over <span style={{ color: '#e2883c', fontWeight: 'bold' }}>28 million dollars</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Alumni Contribution: <strong>$83,235.89</strong>
+                Alumni Contribution: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>$83,235.89</span>
               </Typography>
             </li>
           </ul>
@@ -232,7 +234,8 @@ export default function OurStory() {
             </TableContainer>
             <Box sx={{ width: { sm: '100%', md: '100%' }, textAlign: { sm: 'left', md: 'left' }}}>
               {/* Event Title Section */}
-              <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#000000', marginBottom: 1 }}>
+              <Typography variant="h5" component="h2" gutterBottom
+      style={{ color: '#233563', marginBottom: '1px' }}>
                 Event Title
               </Typography>
               <Typography variant="body1" color="text.secondary">
@@ -249,7 +252,8 @@ export default function OurStory() {
               </Typography>
 
               {/* Hospital Title Section */}
-              <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 4, marginBottom: 1 }}>
+              <Typography variant="h5" component="h2" gutterBottom
+      style={{ color: '#233563', marginTop: '25px', marginBottom: '1px' }}>
                 Hospital Title
               </Typography>
               <Typography variant="body1" color="text.secondary">
@@ -260,7 +264,8 @@ export default function OurStory() {
               </Typography>
 
               {/* Children and their Families Section */}
-              <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 4, marginBottom: 1 }}>
+              <Typography variant="h5" component="h2" gutterBottom
+      style={{ color: '#233563', marginTop: '25px', marginBottom: '1px' }}>
                 Children and their Families
               </Typography>
               <Typography variant="body1" color="text.secondary">
@@ -276,12 +281,13 @@ export default function OurStory() {
                 Miracle Teen (13+)
               </Typography>
 
-              <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 4 }}>
+              <Typography variant="h5" component="h2" gutterBottom
+      style={{ color: '#233563', marginTop: '25px', marginBottom: '1px' }}>
                 Positions
               </Typography>
               <ul className="custom-bullet-points">
                 <li>
-                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#e2883c' }}>
                     Overall Directors
                   </Typography>
                   <ul style={{ paddingLeft: '20px' }}>
@@ -389,7 +395,7 @@ export default function OurStory() {
                 </li>
 
                 <li>
-                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 2 }}>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#e2883c', marginTop: 2 }}>
                     Assistant Directors & Captains
                   </Typography>
                   <ul style={{ paddingLeft: '20px' }}>
@@ -472,32 +478,32 @@ export default function OurStory() {
                 </li>
 
                 <li>
-                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000', marginTop: 2 }}>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563', marginTop: 2 }}>
                     Emerging Leaders
                   </Typography>
                 </li>
                 <li>
-                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }}>
                     Kirstyn's Krew
                   </Typography>
                 </li>
                 <li>
-                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }}>
                     Ambassadors
                   </Typography>
                 </li>
                 <li>
-                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }}>
                     Dancers
                   </Typography>
                 </li>
                 <li>
-                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }}>
                     Fundraisers
                   </Typography>
                 </li>
                 <li>
-                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#000000' }}>
+                  <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }}>
                     Dance Marathon Alumni (DMA)
                   </Typography>
                 </li>
