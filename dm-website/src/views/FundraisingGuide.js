@@ -48,24 +48,24 @@ export default function FundraisingGuide() {
       </Typography>
 
       {/* Section: Reaching Out */}
-      <Typography variant="h5" color="text.secondary" gutterBottom>
+      <Typography variant="h5" color='#233563' gutterBottom>
         Reaching Out
       </Typography>
-      <Typography variant="h6" color="text.secondary" gutterBottom>
+      <Typography variant="h6" color='#e2883c' gutterBottom>
         Letters and Emails
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
-        <strong>Why?</strong> - Adds a personal touch to your fundraising request.
+      <span style={{ color: '#233563', fontWeight: 'bold' }}>Why?</span> - Adds a personal touch to your fundraising request.
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
-        <strong>Tips to a better response</strong> - Personalize your message and tell the story that brought you into this organization. Follow up! Be persistent! You care about this cause and that devotion will shine through your efforts.
+      <span style={{ color: '#233563', fontWeight: 'bold' }}>Tips to a better response</span> - Personalize your message and tell the story that brought you into this organization. Follow up! Be persistent! You care about this cause and that devotion will shine through your efforts.
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
         A great way to say thanks for becoming part of the DM family!
       </Typography>
 
       {/* Section: Fundraising Tips */}
-      <Typography variant="h5" color="text.secondary" gutterBottom>
+      <Typography variant="h5" color='#233563' gutterBottom>
         Fundraising Tips
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
@@ -78,22 +78,22 @@ export default function FundraisingGuide() {
       </Typography>
 
       {/* Section: Canning */}
-      <Typography variant="h5" color="text.secondary" gutterBottom>
+      <Typography variant="h5" color='#233563' gutterBottom>
         Canning
       </Typography>
-      <Typography variant="h6" color="text.secondary" gutterBottom>
+      <Typography variant="h6" color='#e2883c' gutterBottom>
         What is it?
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
         Soliciting loose change and small dollar donations outside of public places or businesses to benefit Dance Marathon at the University of Florida and UF Health Shands Children’s Hospital.
       </Typography>
-      <Typography variant="h6" color="text.secondary" gutterBottom>
+      <Typography variant="h6" color='#e2883c' gutterBottom>
         How can I benefit?
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
         The money you raise via these efforts can be credited to your personal fundraising page as you look to raise more money and awareness!
       </Typography>
-      <Typography variant="h6" color="text.secondary" gutterBottom>
+      <Typography variant="h6" color='#e2883c' gutterBottom>
         How to do it?
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
