@@ -50,7 +50,7 @@ export default function MiracleMakers() {
         <Link href="mailto:rdirenzo@floridadm.org"> rdirenzo@floridadm.org</Link> with any questions!
       </Typography>
 
-      <Typography variant="h5" color="text.secondary" sx={{ marginTop: 4 }}>
+      <Typography variant="h5" color='#233563' sx={{ marginTop: 4 }}>
         Register to be a Miracle Maker
       </Typography>
       <Typography variant="body1" color="text.secondary">
@@ -70,7 +70,7 @@ export default function MiracleMakers() {
         <Link href="mailto:aorlando@floridadm.org"> aorlando@floridadm.org</Link>.
       </Typography>
       
-      <Typography variant="h4" color="text.secondary" sx={{marginTop: 4}}>
+      <Typography variant="h4" color='#233563' sx={{marginTop: 4}}>
         FAQ
       </Typography>
       <Box component="ul" sx={{ pl: 3 }}>
