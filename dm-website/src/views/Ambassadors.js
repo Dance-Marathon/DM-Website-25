@@ -175,7 +175,7 @@ export default function Ambassadors() {
       </ul>
 
       <Typography variant="h6" color='#233563' sx={{ mt: 4 }}>
-        2023 Dance Marathon Ambassadors
+        2024 Dance Marathon Ambassadors
       </Typography>
       <Grid container spacing={2} justifyContent="center">
         {ambassadors.map((ambassador, index) => (
