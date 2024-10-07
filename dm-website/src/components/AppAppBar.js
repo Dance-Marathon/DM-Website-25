@@ -234,30 +234,30 @@ function AppAppBar({ mode, toggleColorMode }) {
             <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
               <Box
                 sx={{
-                  minWidth: '60vw',
+                  minWidth: '45vw',
                   p: 2,
-                  backgroundColor: 'background.paper',
+                  backgroundColor: 'background.dm',
                   flexGrow: 1,
                 }}
               >
                 {/* Add menu items to drawer */}
                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                  <MenuItem onClick={() => navigate('/contact')}>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/contact')}>
                     Contact Us
                   </MenuItem>
-                  <MenuItem onClick={() => navigate('/about')}>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/about')}>
                     About
                   </MenuItem>
-                  <MenuItem onClick={() => navigate('/get-involved')}>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/get-involved')}>
                     Get Involved
                   </MenuItem>
-                  <MenuItem onClick={() => navigate('/events')}>Events</MenuItem>
-                  <MenuItem onClick={() => navigate('/fundraising')}>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/events')}>Events</MenuItem>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/fundraising')}>
                     Fundraising
                   </MenuItem>
-                  <MenuItem onClick={() => navigate('/blog')}>Blog</MenuItem>
-                  <MenuItem onClick={() => navigate('/shop')}>Shop</MenuItem>
-                  <MenuItem onClick={() => navigate('/donate')}>Donate</MenuItem>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/blog')}>Blog</MenuItem>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/shop')}>Shop</MenuItem>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/donate')}>Donate</MenuItem>
                 </Box>
               </Box>
             </Drawer>

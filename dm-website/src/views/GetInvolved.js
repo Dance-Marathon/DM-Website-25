@@ -50,48 +50,54 @@ export default function GetInvolved() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography component="h2" variant="h4" color='#233563'>
-            Get Involved
-          </Typography>
           <Typography variant="body1" color="text.secondary">
             Take a look at all of the different ways you can get involved with Dance Marathon at UF. Whether you are interested in becoming a Captain, Dancer, Emerging Leader, Ambassador, Fundraiser, or member of Kirstyn’s Krew, this page is your path to getting involved! There are so many ways to give back through DM at UF, and we would love for you to join our Dance Marathon family and help us make miracles.
           </Typography>
         </Box>
 
-        <Link to="/applications">
-        <Button
-          sx={{
-            backgroundColor: (theme) => theme.palette.primary.main,
-            color: (theme) => theme.palette.primary.contrastText,
-            transition: 'background-color 0.3s ease',
-            width: "95%",
-            height: "50px",
-            '&:hover': {
-              backgroundColor: (theme) => theme.palette.secondary.main,
-            },
-          }}
-          >
-        <Typography
-          variant="h4"
-          color="white"
-          fontSize={28}
-          paddingTop="10px"
-          paddingBottom="10px"
-          sx={{
-            whiteSpace: 'nowrap',
-            overflow: 'hidden',
-            textOverflow: 'ellipsis',
-            display: 'block',
-            textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
-          }}
-        >
-          Apply Now!
-        </Typography>
-        </Button>
-        </Link>
+  <Box
+    sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      maxWidth: "100%",
+    }}
+  >
+  <Button
+    component={Link}
+    to="/applications"
+    sx={{
+      backgroundColor: (theme) => theme.palette.primary.main,
+      color: (theme) => theme.palette.primary.contrastText,
+      transition: 'background-color 0.3s ease',
+      width: '100%',
+      height: '100px',
+      '&:hover': {
+        backgroundColor: (theme) => theme.palette.secondary.main,
+      },
+    }}
+  >
+    <Typography
+      variant="h4"
+      fontSize={40}
+      paddingTop="10px"
+      paddingBottom="10px"
+      sx={{
+        whiteSpace: 'nowrap',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+        display: 'block',
+        textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
+        color: 'white', // Ensure the text is white
+      }}
+    >
+      Apply Now!
+    </Typography>
+  </Button>
+  </Box>
       
         {/* Centered Grid for SquareCards */}
-        <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+        <Box sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%' }}>
           <Grid 
             container 
             spacing={3} 

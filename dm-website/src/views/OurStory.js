@@ -125,16 +125,6 @@ export default function OurStory() {
             Research funding helps our doctors find solutions for incurable diseases such as diabetes, cystic fibrosis, and cancer, and it allows them to develop new technology and enhanced processes that improve the daily lives of pediatric patients. Education funding supports programs such as Child Life Diversion therapy and goes toward raising funds and awareness for the Children’s Miracle Network.
           </Typography>
 
-          <Typography variant="h5" component="h2" gutterBottom style={{color: '#233563'}}>
-            Length of Dance Marathon
-          </Typography>
-          <Typography variant="body1" sx={{ color: '#000000', margin: 0 }}>
-            Before 2008: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>32 hours</span>
-          </Typography>
-          <Typography variant="body1" sx={{ color: '#000000'}}>
-            After 2008: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>26.2 hours</span>
-          </Typography>
-
           <Typography variant="h5" component="h2" gutterBottom
       style={{ color: '#233563', marginTop: '20px', marginBottom: '5px' }}>
             Participants

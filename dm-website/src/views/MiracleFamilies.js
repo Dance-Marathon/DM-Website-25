@@ -80,11 +80,11 @@ export default function MiracleFamilies() {
             <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#233563', marginBottom: 2 }}>
               For The Families
             </Typography>
-            <Typography variant="body1" sx={{ color: '#000000', marginBottom: 2 }}>
+            <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
               Dance Marathon at the University of Florida is very fortunate to have 35 Miracle Families who are true inspirations to everyone involved in the organization and are the pinnacle for what we stand for. The birthday parties, end-of-chemotherapy parties, and play dates that we have with the children constantly remind us of the true meaning behind “For All The Right Reasons.” The entire team at Dance Marathon is honored and privileged to have these amazing families attend Dance Marathon every year and support our students.
             </Typography>
 
-            <Typography variant="body1" sx={{ color: '#000000', marginBottom: 2 }}>
+            <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
               If you have any questions about the Family Relations program, or would like to become a Dance Marathon Miracle Family, please contact the Family Relations Overall Director, Dawson Geller, at{' '}
               <Link href="mailto:dgeller@floridadm.org" sx={{ color: '#1a73e8' }}>
                 dgeller@floridadm.org
@@ -94,7 +94,7 @@ export default function MiracleFamilies() {
             <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#233563', marginTop: 4, marginBottom: 2 }}>
               Meet Our Miracle Families
             </Typography>
-            <Typography variant="body1" sx={{ color: '#000000', marginBottom: 2 }}>
+            <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
               Take a moment to meet the heart and soul of our philanthropy. Our Miracle Children are the inspiration for every student who is part of DM at UF.
             </Typography>
             </Box>
