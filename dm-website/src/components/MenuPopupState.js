@@ -45,9 +45,11 @@ const MenuPopupState = ({ title, submenuItems, menuURL }) => {
         <Typography variant="body1">{title}</Typography>
       </Button>
       <HoverMenu
+        disableScrollLock //Added PDN
         {...bindMenu(popupState)}
         anchorOrigin={{ vertical: 'bottom', horizontal: 'left' }}
         transformOrigin={{ vertical: 'top', horizontal: 'left' }}
+        
       >
         {submenuItems.map((item, index) => (
           <MenuItem
