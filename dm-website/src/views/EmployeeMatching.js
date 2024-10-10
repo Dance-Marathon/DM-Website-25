@@ -43,7 +43,7 @@ export default function EmployeeMatching() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-      <Typography variant="h5" color='#233563' gutterBottom>
+      <Typography color='text.secondary' paragraph>
         Have you considered that your company might match your donation and multiply your contribution?
       </Typography>
       <Typography color="text.secondary" paragraph>
