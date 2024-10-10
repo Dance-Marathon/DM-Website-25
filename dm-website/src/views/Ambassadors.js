@@ -93,7 +93,7 @@ export default function Ambassadors() {
         Organization Ambassadors serve as a liaison between Dance Marathon and their respective organization.
       </Typography>
       <Typography variant="body1" color="text.secondary">
-        Organization Ambassadors will attend weekly meetings to receive information to relay to their Organizations and to work on professional and personal development. These meetings will allow Ambassadors to think creatively and brainstorm together to create new ways to incentivize and engage their members in Dance Marathon. Each Organization will be assigned a Fundraising & Organization Development Captain to work with on Organization involvement and fundraising throughout the year.
+        Organization Ambassadors will attend weekly meetings to receive information to relay to their Organizations and to work on professional and personal development. These meetings will allow Ambassadors to think creatively and brainstorm together to create new ways to incentivize and engage their members in Dance Marathon. Each Organization will be assigned an Organization Relations Captain to work with on Organization involvement and fundraising throughout the year.
       </Typography>
       <Typography variant="body1" sx={{ color: '#000000'}}>
                 <Link href={AmbassadorGuidelines} sx={{ display: 'inline' }}>
@@ -101,18 +101,15 @@ export default function Ambassadors() {
                 </Link>
             </Typography>
       
-      <Typography variant="h6" gutterBottom sx={{color: '#233563' }}>
-        Responsibilities:
+      <Typography variant="h5" gutterBottom sx={{color: '#233563', pb: "0", mb: "0"}}>
+        Responsibilities
       </Typography>
-      <ul className="custom-bullet-points">
-        <li>
-          <Typography variant="body1" component="span" color='#e2883c'>
-            <b>Yearlong:</b>
+          <Typography variant="body1" component="span" color='#e2883c' >
+          <b>Yearlong:</b>
           </Typography>
-        </li>
-        <ul className="custom-bullet-points">
+        <ul className="custom-bullet-points" style={{ margin: '0' }}>
           <li>
-            <Typography variant="body1" component="span" color="text.secondary">
+            <Typography variant="body1" component="span" color="text.secondary" sx={{ margin: 0 }}>
               Recruit and motivate members of their Organization to fundraise and participate
             </Typography>
           </li>
@@ -142,14 +139,12 @@ export default function Ambassadors() {
             </Typography>
           </li>
         </ul>
-        <li>
           <Typography variant="body1" component="span" color='#e2883c'>
             <b>During the Main Event:</b>
           </Typography>
-        </li>
-          <ul className="custom-bullet-points">
+          <ul className="custom-bullet-points" style={{ margin: '0' }}>
           <li>
-            <Typography variant="body1" component="span" color="text.secondary">
+            <Typography variant="body1" component="span" color="text.secondary" sx={{ margin: 0 }}>
               Help assign Miracle Maker buddies prior to the Event for each Miracle Maker
             </Typography>
           </li>
@@ -169,9 +164,9 @@ export default function Ambassadors() {
             </Typography>
           </li>
         </ul>
-      </ul>
+      
 
-      <Typography variant="h6" color='#233563' sx={{ mt: 4 }}>
+      <Typography variant="h5" color='#233563' sx={{ mt: 4 }}>
         2025 Dance Marathon Ambassadors
       </Typography>
       <Grid container spacing={2} justifyContent="center">
