@@ -1,13 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Donate = () => {
+const Register = () => {
   const hasRedirected = useRef(false);
   const navigate = useNavigate();
 
   useEffect(() => {
     if (!hasRedirected.current) {
-      const newWindow = window.open('https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.donate&eventID=6292', '_blank');
+      const newWindow = window.open('https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=6292', '_blank');
       if (newWindow) {
         newWindow.opener = null;
       }
@@ -19,4 +19,4 @@ const Donate = () => {
   return <p>Redirecting to donate page...</p>;
 };
 
-export default Donate;
+export default Register;

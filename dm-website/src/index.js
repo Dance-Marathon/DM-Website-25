@@ -18,6 +18,7 @@ import '@fontsource/montserrat/700.css';
 
 import GetInvolved from './views/GetInvolved';
 import Donate from './views/Donate';
+import Register from './views/Register';
 import Shop from './views/Shop';
 import About from './views/About';
 import OurStory from './views/OurStory';
@@ -56,6 +57,7 @@ root.render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/get-involved" element={<GetInvolved />} />
         <Route path="/donate" element={<Donate />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/shop" element={<Shop />} />
         <Route path="/about" element={<About />} />
         <Route path="/ourstory" element={<OurStory />} />

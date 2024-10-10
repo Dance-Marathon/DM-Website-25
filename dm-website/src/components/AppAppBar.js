@@ -150,7 +150,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 menuURL={"/fundraising"}
                 >
                 </MenuPopupState>
-                {/* <Button 
+                <Button 
                   variant='regular'
                   onClick={() => navigate('/blog')}
                   sx={{...menuTheme}}
@@ -158,7 +158,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   <Typography variant="body1" color="text.primary">
                     Blog
                   </Typography>
-                </Button> */}
+                </Button>
                 <Button 
                   variant='regular'
                   onClick={() => navigate('/shop')}
@@ -171,12 +171,41 @@ function AppAppBar({ mode, toggleColorMode }) {
                 <Button 
                   variant='regular'
                   onClick={() => navigate('/donate')}
-                  sx={{...menuTheme}}
+                  sx={{
+                    ...menuTheme,
+                    ml: 1.5,
+                    bgcolor: 'rgba(226, 136, 60, 0.7)', 
+                    color: 'white', 
+                    fontWeight: 'bold',
+                    px: 2, 
+                    '&:hover': {
+                      bgcolor: 'rgba(226, 136, 60, 0.9)', 
+                    },
+                  }}
                 >
-                  <Typography variant="body1" color="text.primary">
-                    Donate
-                  </Typography>
-                </Button>
+            <Typography variant="body1" color="inherit">
+              Donate
+            </Typography>
+            </Button>
+            <Button 
+                  variant='regular'
+                  onClick={() => navigate('/register')}
+                  sx={{
+                    ...menuTheme,
+                    ml: 1.5,
+                    bgcolor: 'rgba(226, 136, 60, 0.7)', 
+                    color: 'white', 
+                    fontWeight: 'bold',
+                    px: 2, 
+                    '&:hover': {
+                      bgcolor: 'rgba(226, 136, 60, 0.9)', 
+                    },
+                  }}
+                >
+            <Typography variant="body1" color="inherit">
+              Register
+            </Typography>
+            </Button>
               </Box>
             </Box>
             <Box
@@ -257,7 +286,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </MenuItem>
                   <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/blog')}>Blog</MenuItem>
                   <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/shop')}>Shop</MenuItem>
-                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/donate')}>Donate</MenuItem>
+                  <MenuItem sx={{color: "secondary.main", fontSize: '2rem',}} onClick={() => navigate('/donate')}>Donate</MenuItem>
                 </Box>
               </Box>
             </Drawer>
