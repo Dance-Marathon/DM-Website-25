@@ -22,61 +22,56 @@ export default function Ambassadors() {
   };
 
   const ambassadors = [
-    { organization: "Alpha Chi Omega", names: ["Louisina Morancy", "Hailey Hood"] },
-    { organization: "Alpha Delta Pi", names: ["Lola Accardi"] },
-    { organization: "Alpha Epsilon Phi", names: ["Maggie Goldenberg", "Sophie Gaer"] },
-    { organization: "Alpha Epsilon Pi", names: ["Joshua Levin", "Jason Snytte"] },
-    { organization: "Alpha Gamma Rho", names: ["Cole Verano"] },
-    { organization: "Alpha Omicron Pi", names: ["Madison Baker", "Nicole Gigliotti"] },
-    { organization: "Alpha Phi", names: ["Casey Strauss", "Kelsey Reader"] },
-    { organization: "AMSA", names: ["Taylor Tompkins", "Hayley Makowski"] },
-    { organization: "Alpha Tau Omega", names: ["Cameron Alvarez", "James Wachter"] },
-    { organization: "Beta Theta Pi", names: ["Paul Kolsun"] },
-    { organization: "Black Student Union", names: ["Louisina Morancy", "Desrae Morris"] },
-    { organization: "Chi Omega", names: ["Riley Rhoden"] },
-    { organization: "Chi Phi", names: ["Jacob Bravo", "Cole Carpinteri"] },
-    { organization: "Delta Chi", names: ["Tor Moncrieff"] },
-    { organization: "Delta Delta Delta", names: ["Jennifer Berthy", "Lainey Shapiro"] },
-    { organization: "Delta Gamma", names: ["Gabriela Torres de Navarra", "Tyller Bauer"] },
-    { organization: "Delta Nu Zeta", names: ["Kyra Kimball", "Sparsha Padi"] },
-    { organization: "Delta Phi Epsilon", names: ["Emma Glech", "Rachel Lerner"] },
-    { organization: "Delta Sigma Phi", names: ["Jack Ziegler", "Elijah Bloyer"] },
-    { organization: "Delta Tau Delta", names: ["Michael Buzzeo"] },
-    { organization: "Delta Zeta", names: ["Brielle Serovich", "Ariana Martinez"] },
-    { organization: "Gamma Eta", names: ["Angelyn Castano Caicedo"] },
-    { organization: "Gamma Phi Beta", names: ["Alexis Pullos", "Lauren Klein"] },
-    { organization: "Gator Diplomats", names: ["Andrew Han"] },
-    { organization: "Hispanic Student Association", names: ["Paula Gonzalez"] },
-    { organization: "Innovation Academy", names: ["Amelia Enciso-Mesa", "Shreya Shah"] },
-    { organization: "Kappa Alpha Order", names: ["Nolan Carpenter", "Robert Noble"] },
-    { organization: "Kappa Alpha Theta", names: ["Alexa Diamond"] },
-    { organization: "Kappa Delta", names: ["Kshama Shetty", "Madeline Browy"] },
-    { organization: "Kappa Kappa Gamma", names: ["Ava Jones"] },
-    { organization: "Kappa Phi Epsilon", names: ["Paul McKenzie", "Aidan Hall"] },
-    { organization: "Kappa Sigma", names: ["Nolan Hensley"] },
-    { organization: "Lambda Chi Alpha", names: ["Nickolas Powers"] },
-    { organization: "Omega Phi Alpha", names: ["Rachel Farmer", "Kristen Rifenberg"] },
-    { organization: "Phi Delta Theta", names: ["Answer Langer"] },
-    { organization: "Phi Eta Sigma Honor Society", names: ["Cade Ferguson"] },
-    { organization: "Phi Kappa Tau", names: ["Brian Beckman"] },
-    { organization: "Phi Mu", names: ["Samantha Butler"] },
-    { organization: "Pi Beta Phi", names: ["Elly Rogers", "Ashlyn Sullivan"] },
-    { organization: "Pi Kappa Alpha", names: ["Noah Sastoque", "Kruze Peacock"] },
-    { organization: "Pre-Legal Honor Society", names: ["Freedom Scholes"] },
-    { organization: "Sigma Chi", names: ["Brogan Tagman", "William Galleher"] },
-    { organization: "Sigma Kappa", names: ["Danielle DePaul"] },
-    { organization: "Sigma Nu", names: ["Zachary Terwilliger"] },
-    { organization: "Sigma Phi Epsilon", names: ["Benjamin Lang", "Liam Farrell"] },
-    { organization: "Society of Women Engineers", names: ["Elena Rollins", "Alessandra Andreozzi"] },
-    { organization: "The Gator Aides", names: ["Arianna Lowther"] },
-    { organization: "Theta Alpha", names: ["Kyla Clewis"] },
-    { organization: "Theta Chi", names: ["Sazzad Mabud"] },
-    { organization: "Theta Tau", names: ["Rebecca Merwin", "Katherine Walsh"] },
+    { organization: "Alpha Chi Omega", names: ["Kayla Maher", "Jordan Guarneri"] },
+    { organization: "Alpha Delta Pi", names: ["Emma Geohagan", "Ava Avera"] },
+    { organization: "Alpha Epsilon Phi", names: ["Jordyn Klein", "Leah King"] },
+    { organization: "Alpha Omicron Pi", names: ["Olivia Torre"] },
+    { organization: "Alpha Phi", names: ["Lilly Daxon", "Samantha Elmer"] },
+    { organization: "Alpha Tau Omega", names: ["Ryan McCracken"] },
+    { organization: "AMSA", names: ["Jimmy Davis"] },
+    { organization: "Beta Theta Pi", names: ["Jackson Driggers", "Parker Ayer"] },
+    { organization: "Chi Omega", names: ["Louise Vann"] },
+    { organization: "Chi Phi", names: ["Owen McAdams", "Mark Michna"] },
+    { organization: "Delta Chi", names: ["Andrew Salk", "Drew Bartram"] },
+    { organization: "Delta Delta Delta", names: ["Ella Martin", "Kylah Hill"] },
+    { organization: "Delta Gamma", names: ["Chiara Bell", "Anabel De la Hoz"] },
+    { organization: "Delta Nu Zeta", names: ["Adriana Figueroa"] },
+    { organization: "Delta Phi Epsilon", names: ["Emma Gelch", "Michelle Anders"] },
+    { organization: "Delta Sigma Phi", names: ["Jason Drucker", "Julian Morgan"] },
+    { organization: "Delta Tau Delta", names: ["Eric Ewalt", "James Malone"] },
+    { organization: "Delta Upsilon", names: ["Oden Dillenkoffer"] },
+    { organization: "Delta Zeta", names: ["Ellen Mulgrew", "Lauren Prangley"] },
+    { organization: "Footprints", names: ["Nadia Shahin", "Desiree Haghgoo"] },
+    { organization: "Gamma Eta", names: ["Daniela Martinez", "Lianny Propest"] },
+    { organization: "Gamma Phi Beta", names: ["Madeline Walsh", "Aishwarya Nagpal"] },
+    { organization: "Hispanic Student Association", names: ["Vianca Gonzalez", "Johanna Rizo"] },
+    { organization: "Kappa Alpha Order", names: ["Brian Schlidt"] },
+    { organization: "Kappa Alpha Theta", names: ["Gabrielle Condon", "Logan Freiberg"] },
+    { organization: "Kappa Delta", names: ["Melody McAfee", "Macy Meis"] },
+    { organization: "Kappa Kappa Gamma", names: ["Anna Timko", "Sarah Watson"] },
+    { organization: "Kappa Phi Epsilon", names: ["Anthony Soehnlein", "Carson Sumner"] },
+    { organization: "Kappa Sigma", names: ["Leandro Rodriguez"] },
+    { organization: "Phi Delta Theta", names: ["Mason Wong", "Ethan Schwartz"] },
+    { organization: "Phi Eta Sigma Honor Society", names: ["Sherry Habib", "Tamara Bhardwaj"] },
+    { organization: "Phi Kappa Tau", names: ["Alex Paul", "Lucian Yodh"] },
+    { organization: "Phi Mu", names: ["Ansley Reeves", "Abby McCaskill"] },
+    { organization: "Pi Beta Phi", names: ["Ashley Camargo", "Lily DiFranco"] },
+    { organization: "Pi Kappa Alpha", names: ["Amor Agic", "Rocco Tammone"] },
+    { organization: "Pi Kappa Phi", names: ["Alex De Dios", "Willem Kelley"] },
+    { organization: "Sigma Alpha Epsilon", names: ["Jack Pryor", "Jacob Zager"] },
+    { organization: "Sigma Chi", names: ["Ryan Tucci"] },
+    { organization: "Sigma Kappa", names: ["Sydney Ramsey"] },
+    { organization: "Sigma Nu", names: ["Sebastian Botero"] },
+    { organization: "Sigma Phi Epsilon", names: ["Matthew Anderson", "Luis Carranza"] },
     { organization: "UF Honors Program", names: ["Claudia Elena Johnson Cuellar"] },
-    { organization: "UF Pre-Physician Assistant Association", names: ["Isabella Clem"] },
-    { organization: "Zeta Beta Tau", names: ["Brendan Kligerman", "Coby Farhi"] },
-    { organization: "Zeta Tau Alpha", names: ["Caitlin Gregory"] },
-  ];
+    { organization: "UF Innovation Academy", names: ["Seth Haber"] },
+    { organization: "UF Pre-Professional Services Organization", names: ["Sophia Magdalein"] },
+    { organization: "UFAA: Florida Cicerones", names: ["MB Garrison"] },
+    { organization: "William and Grace Dial Center Ambassador Leadership Program", names: ["Layah Singh"] },
+    { organization: "Zeta Beta Tau", names: ["Zack Bogis", "Nicholas Lysek"] },
+    { organization: "Zeta Tau Alpha", names: ["Roselyn Almora", "Alexa Orozco"] },
+];
+
 
   return (
     <ThemeProvider theme={LPtheme}>
@@ -94,17 +89,19 @@ export default function Ambassadors() {
           gap: { xs: 2, sm: 3 },
         }}  
       >
-      <Typography variant="body1" color="text.secondary" paragraph>
+      <Typography variant="body1" color="text.secondary">
         Organization Ambassadors serve as a liaison between Dance Marathon and their respective organization.
       </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
+      <Typography variant="body1" color="text.secondary">
         Organization Ambassadors will attend weekly meetings to receive information to relay to their Organizations and to work on professional and personal development. These meetings will allow Ambassadors to think creatively and brainstorm together to create new ways to incentivize and engage their members in Dance Marathon. Each Organization will be assigned a Fundraising & Organization Development Captain to work with on Organization involvement and fundraising throughout the year.
       </Typography>
-      <Link href={AmbassadorGuidelines} target="_blank">
-        Click here to view the 2024 Ambassador Guidelines
-      </Link>
+      <Typography variant="body1" sx={{ color: '#000000'}}>
+                <Link href={AmbassadorGuidelines} sx={{ display: 'inline' }}>
+                Click here to view the 2025 Ambassador Guidelines
+                </Link>
+            </Typography>
       
-      <Typography variant="h6" gutterBottom sx={{ marginTop: 4, color: '#233563' }}>
+      <Typography variant="h6" gutterBottom sx={{color: '#233563' }}>
         Responsibilities:
       </Typography>
       <ul className="custom-bullet-points">
@@ -175,7 +172,7 @@ export default function Ambassadors() {
       </ul>
 
       <Typography variant="h6" color='#233563' sx={{ mt: 4 }}>
-        2023 Dance Marathon Ambassadors
+        2025 Dance Marathon Ambassadors
       </Typography>
       <Grid container spacing={2} justifyContent="center">
         {ambassadors.map((ambassador, index) => (
