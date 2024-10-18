@@ -64,9 +64,9 @@ export default function About() {
             sx={{ maxWidth: 1200, margin: '0 auto' }}
           >
             {[
-              { image: OurStoryBox, title: 'Our Story', hoverText: "", link: '/ourstory' },
-              { image: CMNBox, title: 'CMN & UF Health', hoverText: "", link: '/cmnhospitals' },
-              { image: MFBox, title: 'Miracle Families', hoverText: "", link: '/miraclefamilies' },
+              { image: OurStoryBox, title: 'Our Story', hoverText: "Discover how DM at UF supports UF Health Shands Children's Hospital, funding research, education, and essential patient care to enhance the lives of pediatric patients and their families.", link: '/ourstory' },
+              { image: CMNBox, title: 'CMN & UF Health', hoverText: "UF Health Shands Children’s Hospital, a Children's Miracle Network partner, provides high-quality pediatric care supported by community donations.", link: '/cmnhospitals' },
+              { image: MFBox, title: 'Miracle Families', hoverText: "Discover the heart of Dance Marathon at UF through our 35 Miracle Families, who inspire us with their stories and remind us of our mission.", link: '/miraclefamilies' },
             ].map((card, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <SquareCard {...card} />
