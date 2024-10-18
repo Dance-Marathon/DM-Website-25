@@ -1,4 +1,3 @@
-// MuiCarousel.js
 import React, { useState } from 'react';
 import { Box, Button, Typography } from '@mui/material';
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
@@ -142,10 +141,10 @@ const LandingCarousel = () => {
         <Box
           sx={{
             display: 'inline-flex',
-            animation: 'scroll 30s linear infinite'
+            animation: 'scroll 120s linear infinite',
+            minWidth: `${images.length * 20}%`,
           }}
         >
-          {/* Loop images twice for seamless scrolling */}
           {images.concat(images).map((image, index) => (
             <Box
               component="img"
@@ -153,9 +152,9 @@ const LandingCarousel = () => {
               src={image.src}
               alt={image.alt}
               sx={{
-                width: '100%', // 5 images at a time
-                height: 200,
-                borderRadius: '8px',
+                width: '16.66%', // 5 images at a time
+                height: 150,
+                borderRadius: '12px',
                 marginRight: '15px',
                 marginLeft: '15px',
               }}
