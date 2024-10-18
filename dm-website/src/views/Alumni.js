@@ -46,27 +46,36 @@ export default function Alumni() {
 
           <Typography variant="h4" color='#233563' gutterBottom>About</Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Since 1995, Dance Marathon at UF has raised over $32 million for UF Health Shands Children's Hospital, our local Children’s Miracle Network Hospital. Thanks to your dedication and support throughout your college years, we have become the most successful student-run philanthropy in the southeastern United States.
+            Since 1995, Dance Marathon at UF has raised over $31 million for UF Health Shands Children's Hospital, our local Children’s Miracle Network Hospital. Thanks to your dedication and support throughout your college years, we have become the most successful student-run philanthropy in the southeastern United States.
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Dance Marathon at UF knows that the Gator Nation is everywhere. Formed in 2013, Dance Marathon at UF Alumni gives alumni across the country the opportunity to continue to give back and stay involved with their alma mater. Membership is only $40 per year and offers a variety of benefits.
+            Dance Marathon at UF knows that the Gator Nation is everywhere. Formed in 2013, Dance Marathon at UF Alumni gives alumni across the country the opportunity to continue to give back and stay involved with their alma mater.
           </Typography>
         </Box>
 
         <Box mt={4}>
           <Typography variant="h4" color='#e2883c' gutterBottom>Get Involved!</Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Our Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate. Join the DMA and stay a member of DM at UF for years to come with exclusive alumni access at the event and the opportunity to continue your involvement beyond your years at UF.
+            Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate. 
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Become a member today!
-          </Typography>
-          <Typography variant="body1" color="text.secondary" paragraph>
-            Follow us on <Link href="https://www.instagram.com/dmatufalumni" target="_blank">Instagram</Link>, and be sure to like the official page for Dance Marathon at UF Alumni on <Link href="https://www.facebook.com/dmatufalumni" target="_blank">Facebook</Link> to stay connected with the rest of your DM at UF Alumni family.
+            Follow us on <Link href="https://www.instagram.com/dmatufalumni" target="_blank">Instagram</Link>, and be sure to like the official page for <Link href="https://www.facebook.com/dmatufalumni" target="_blank">Dance Marathon at UF Alumni on Facebook</Link> to stay connected with the rest of your DM at UF Alumni family.
           </Typography>
         </Box>
 
-        <Box mt={4}>
+        <Box mt={1}>
+          <Typography variant="body1" color="text.secondary" paragraph>
+            Join or support the <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.team&teamID=70397" target="_blank">Dance Marathon Alumni fundraising team</Link>.
+          </Typography>
+          <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
+          If you have any questions, please feel free to email them to {' '}
+              <Link href="mailto:alumni@floridadm.org" sx={{ color: '#1a73e8' }}>
+                alumni@floridadm.org
+              </Link>.
+            </Typography>
+        </Box>
+
+        {/* <Box mt={4}>
           <Typography variant="h4" color='#233563' gutterBottom>Lifetime DMA Membership</Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             This lifetime membership provides the following benefits for a one-time fee of $40. If you are signing up for the DMA for the first time, you will receive a complimentary Event Package outlined underneath the membership benefits.{' '}
@@ -123,8 +132,8 @@ export default function Alumni() {
                 here
               </Link>.
             </>
-  }
-/>
+          }
+        /> */}
 
       </Container>
       <Footer />
