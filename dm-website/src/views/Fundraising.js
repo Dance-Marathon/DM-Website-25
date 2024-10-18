@@ -101,10 +101,10 @@ export default function Fundraising() {
             sx={{ maxWidth: 1200, margin: '0 auto'}}
           >
             {[
-              { image: DDBox, title: 'DonorDrive', hoverText: "", link: '/donordrive' },
-              { image: EmployeeBox, title: 'Employee Matching', hoverText: "", link: '/employeematching' },
-              { image: FundraisingGuideBox, title: 'Fundraising Guide', hoverText: "", link: '/fundraisingguide' },
-              { image: PartnersBox, title: 'Partners', hoverText: "", link: '/partners' },
+              { image: DDBox, title: 'DonorDrive', hoverText: "Learn how UF Health Shands Children's Hospital is using DonorDrive for fundraising.", link: '/donordrive' },
+              { image: EmployeeBox, title: 'Employee Matching', hoverText: "See how your company can increase your contributions.", link: '/employeematching' },
+              { image: FundraisingGuideBox, title: 'Fundraising Guide', hoverText: "Take a look at all the different ways you can fundraise with Dance Marathon at UF!", link: '/fundraisingguide' },
+              { image: PartnersBox, title: 'Partners', hoverText: "Discover our partners!", link: '/partners' },
             ].map((card, index) => (
               <Grid item xs={12} sm={6} md={3} key={index}>
                 <SquareCardSmall {...card} />
