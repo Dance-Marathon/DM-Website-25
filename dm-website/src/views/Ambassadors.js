@@ -150,7 +150,7 @@ export default function Ambassadors() {
           </li>
           <li>
             <Typography variant="body1" component="span" color="text.secondary">
-              Work with their Fundraising and Organization Development Captain to encourage and help Miracle Makers fundraise at the Event
+              Work with their Organization Relations Captain to encourage and help Miracle Makers fundraise at the Event
             </Typography>
           </li>
           <li>
