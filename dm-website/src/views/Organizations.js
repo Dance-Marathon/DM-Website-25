@@ -44,17 +44,15 @@ export default function Organizations() {
     ['Alpha Delta Pi', 'Delta Gamma', 'Kappa Delta', 'Sigma Kappa'],
     ['Alpha Epsilon Phi', 'Delta Nu Zeta', 'Kappa Kappa Gamma', 'Sigma Nu'],
     ['Alpha Epsilon Pi', 'Delta Phi Epsilon', 'Kappa Phi Epsilon', 'Sigma Phi Epsilon'],
-    ['Alpha Gamma Rho', 'Delta Sigma Phi', 'Kappa Sigma', 'Society of Women Engineers'],
-    ['Alpha Omicron Pi', 'Delta Tau Delta', 'Lambda Chi Alpha', 'Tau Epsilon Phi'],
-    ['Alpha Phi', 'Delta Zeta', 'Omega Phi Alpha', 'Tau Kappa Epsilon'],
-    ['Alpha Tau Omega', 'Florida Cicerones', 'Phi Delta Theta', 'The Gator Aides'],
-    ['Beta Theta Pi', 'Footprints: Buddy and Support Program', 'Phi Eta Sigma Honor Society', 'Theta Alpha'],
-    ['Black Student Union', 'Gamma Eta', 'Phi Kappa Tau', 'Theta Chi'],
-    ['Brazilian Student Association (BRASA)', 'Gamma Phi Beta', 'Phi Mu', 'Theta Tau'],
-    ['Catholic Gators', 'Gator E Sports', 'Pi Beta Phi', 'UF Honors Program'],
-    ['Chi Omega', 'Hispanic Student Association', 'Pi Kappa Alpha', 'UF Pre-Physician Assistant Association'],
-    ['Chi Phi', 'Innovation Academy', 'Pi Lambda Phi', 'Zeta Beta Tau'],
-    ['College of Pharmacy', 'Kappa Alpha Order', 'Pre-Legal Honor Society', 'Zeta Tau Alpha'],
+    ['Alpha Gamma Rho', 'Delta Sigma Phi', 'Kappa Sigma', 'Alpha Omicron Pi'],
+    ['Delta Tau Delta', 'Lambda Chi Alpha', 'Tau Epsilon Phi', 'Alpha Phi'],
+    ['Delta Zeta', 'Sigma Alpha Episolon', 'Tau Kappa Epsilon', 'Alpha Tau Omega'],
+    ['Florida Cicerones', 'Phi Delta Theta', 'The Gator Aides', 'Beta Theta Pi'],
+    ['Footprints: Buddy and Support Program', 'Phi Eta Sigma Honor Society', 'Gamma Eta', 'Phi Kappa Tau'],
+    ['Theta Chi', 'UF Innovation', 'Gamma Phi Beta', 'Phi Mu'],
+    ['Pi Beta Phi', 'UF Honors Program', 'Chi Omega', 'Hispanic Student Association'],
+    ['Pi Kappa Alpha', 'UF Pre-Professional Services Organization', 'Chi Phi', 'Innovation Academy'],
+    ['Kappa Alpha Order', 'Zeta Beta Tau', 'Zeta Tau Alpha', 'William and Grace Dial Center Ambassador Leadership Program']
   ];
 
   return (
