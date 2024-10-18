@@ -112,7 +112,7 @@ export default function OurStory() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography variant="h5" component="h2" gutterBottom style={{color: '#233563'}}>
+          <Typography variant="h5" component="h2" gutterBottom style={{color: '#233563'}} >
             Where The Money Goes
           </Typography>
           <Typography variant="body1" paragraph color="text.secondary">
@@ -126,7 +126,7 @@ export default function OurStory() {
           </Typography>
 
           <Typography variant="h5" component="h2" gutterBottom
-      style={{ color: '#233563', marginTop: '20px', marginBottom: '5px' }}>
+      style={{ color: '#233563', marginTop: '40px', marginBottom: '5px' }} >
             Participants
           </Typography>
           <ul className="custom-bullet-points">
@@ -163,7 +163,7 @@ export default function OurStory() {
           </ul>
 
           <Typography variant="h5" component="h2" gutterBottom
-      style={{ color: '#233563', marginTop: '20px', marginBottom: '5px' }}>
+      style={{ color: '#233563', marginTop: '40px', marginBottom: '5px' }}>
             Fundraising
           </Typography>
           <ul className="custom-bullet-points">
@@ -250,7 +250,7 @@ export default function OurStory() {
 
               {/* Children and their Families Section */}
               <Typography variant="h5" component="h2" gutterBottom
-      style={{ color: '#233563', marginTop: '25px', marginBottom: '1px' }}>
+      style={{ color: '#233563', marginTop: '40px', marginBottom: '1px' }}>
                 Children and their Families
               </Typography>
               <Typography variant="body1" color="text.secondary">
@@ -270,7 +270,7 @@ export default function OurStory() {
               </Typography>
 
               <Typography variant="h5" component="h2" gutterBottom
-      style={{ color: '#233563', marginTop: '25px', marginBottom: '1px' }}>
+      style={{ color: '#233563', marginTop: '40px', marginBottom: '1px' }}>
                 Positions
               </Typography>
               <ul className="custom-bullet-points">

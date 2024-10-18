@@ -48,10 +48,10 @@ export default function FundraisingGuide() {
       </Typography>
 
       {/* Section: Reaching Out */}
-      <Typography variant="h5" color='#233563' gutterBottom>
+      <Typography variant="h5" color='#233563' gutterBottom marginTop={4}>
         Reaching Out
       </Typography>
-      <Typography variant="h6" color='#e2883c' gutterBottom>
+      <Typography variant="h6" color='#e2883c' gutterBottom >
         Letters and Emails
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
@@ -65,7 +65,7 @@ export default function FundraisingGuide() {
       </Typography>
 
       {/* Section: Fundraising Tips */}
-      <Typography variant="h5" color='#233563' gutterBottom>
+      <Typography variant="h5" color='#233563' gutterBottom marginTop={4}>
         Fundraising Tips
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
@@ -78,7 +78,7 @@ export default function FundraisingGuide() {
       </Typography>
 
       {/* Section: Canning */}
-      <Typography variant="h5" color='#233563' gutterBottom>
+      <Typography variant="h5" color='#233563' gutterBottom marginTop={4}>
         Canning
       </Typography>
       <Typography variant="h6" color='#e2883c' gutterBottom>

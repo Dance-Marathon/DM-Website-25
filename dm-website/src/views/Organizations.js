@@ -77,10 +77,10 @@ export default function Organizations() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography variant="body1" gutterBottom sx={{ color: '#000000', marginBottom: 2 }}>
+          <Typography variant="body1" gutterBottom sx={{ marginBottom: 2 }} color="text.secondary">
                 A variety of University of Florida affiliated Organizations participate in Dance Marathon every year!
             </Typography>
-            <Typography variant="body1" gutterBottom sx={{ color: '#000000', marginBottom: 2 }}>
+            <Typography variant="body1" gutterBottom sx={{ marginBottom: 2 }} color="text.secondary">
                 Organizations are the backbone of our philanthropy, and we are always looking for more people to join our family!
                 If you would like to get your organization involved with Dance Marathon, please contact the Recruitment Overall, Ava Orlando, at{' '}
                 <Link href="mailto:aorlando@floridadm.org" sx={{ color: '#1a73e8' }}>
@@ -88,7 +88,7 @@ export default function Organizations() {
                 </Link>.
             </Typography>
 
-            <Typography variant="body1" gutterBottom sx={{ color: '#000000', marginBottom: 4 }}>
+            <Typography variant="body1" gutterBottom sx={{ marginBottom: 4 }} color="text.secondary">
                 Below are the Organizations currently involved in Dance Marathon at UF 2025:
             </Typography>
 
@@ -99,7 +99,7 @@ export default function Organizations() {
                     <StyledTableRow key={rowIndex}>
                         {row.map((org, colIndex) => (
                         <StyledTableCell key={colIndex}>
-                            <Typography variant="body2">{org}</Typography>
+                            <Typography variant="body">{org}</Typography>
                         </StyledTableCell>
                         ))}
                     </StyledTableRow>

@@ -42,8 +42,8 @@ export default function Applications() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-            <Typography variant="body1" gutterBottom sx={{ color: '#000000', marginBottom: 2 }}>
-                Thank you for your interest in Dance Marathon at the University of Florida 2025.
+            <Typography variant="body1" gutterBottom sx={{ color: '#e2883c', fontWeight: 'bold', marginBottom: 2 }} >
+                Thank you for your interest in Dance Marathon at the University of Florida 2025!
             </Typography>
             <Typography variant="body1" gutterBottom color="text.secondary">
                 The online application forms are linked below. In order to be considered for a Captain, the Emerging Leaders Program, or Ambassador position, you must:
@@ -118,7 +118,7 @@ export default function Applications() {
                 No formal application, you can sign up to be a Miracle Maker <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.event&eventID=6292" target="_blank">here</Link>, and someone from Dancer Engagement will reach out to you.
             </Typography>
 
-            <Typography variant="body1" gutterBottom sx={{ color: '#000000', marginTop: 4 }}>
+            <Typography variant="body1" gutterBottom sx={{ marginTop: 4 }} color="text.secondary">
                 If you have any questions regarding applications, please reach out to our Membership Manager, Abby Ferrell, at{' '}
                 <Link href="mailto:aferrell@floridadm.org" sx={{ color: '#1a73e8' }}>
                 aferrell@floridadm.org

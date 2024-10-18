@@ -87,7 +87,7 @@ export default function TransformToday() {
             gutterBottom
             sx={{ marginTop: 4, color: '#233563' }}
           >
-            Why
+            Why?
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
@@ -105,7 +105,7 @@ export default function TransformToday() {
             gutterBottom
             sx={{ marginTop: 4, color: '#233563' }}
           >
-            When
+            When?
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>October 29-30</p>
@@ -116,7 +116,7 @@ export default function TransformToday() {
             gutterBottom
             sx={{ marginTop: 4, color: '#233563' }}
           >
-            What
+            What?
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
@@ -133,7 +133,7 @@ export default function TransformToday() {
             gutterBottom
             sx={{ marginTop: 4, color: '#233563' }}
           >
-            How Can I Get Involved
+            How Can I Get Involved?
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
