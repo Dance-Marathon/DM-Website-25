@@ -64,7 +64,7 @@ export default function LandingPage() {
             <i style={{ color: '#e2883c' }}>
               <b>UF</b>
             </i>
-            , having fundraised over $32,000,000 thus far. This past year, we celebrated our 30th year by raising a historic{' '}
+            , having fundraised over $32,000,000 thus far. This past year, we celebrated our 30th year by raising{' '}
             <i style={{ color: '#233563' }}>
               <b>$1,531,518.24!</b>
             </i>
@@ -109,7 +109,7 @@ export default function LandingPage() {
                     Miracle Families
                   </Typography>
                   <Typography variant="body1" color="primary" paragraph>
-                    Take a moment to meet the heart and soul of our movement. We are very fortunate to have 35 Miracle Families who are true inspirations to everyone involved in the organization and are the pinnacle for what we stand for. 
+                    Take a moment to meet the heart and soul of our movement. We are very fortunate to have 32 Miracle Families who are true inspirations to everyone involved in the organization and are the pinnacle for what we stand for. 
                   </Typography>
                 </Box>
                 <Button variant="outlined" color="primary" component={Link} to="/miraclefamilies">Learn More</Button>
