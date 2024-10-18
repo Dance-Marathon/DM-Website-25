@@ -363,9 +363,9 @@ export default function Captains() {
           gap: { xs: 2, sm: 3 },
         }}
       >
-      <Typography variant="h4" color='#233563' gutterBottom>
+      {/* <Typography variant="h4" color='#233563' gutterBottom>
         Captain Teams
-      </Typography>
+      </Typography> */}
       <Typography variant="body1" color="text.secondary" paragraph>
         Each Captain Team is composed of an Overall Director, Assistant Directors, and Captains. Assistant Directors work year-long with their respective Overall Directors to ensure steady growth and management within their Captain Team. Captains are leaders within our organization who have specific duties throughout the year depending on their teams. Click each tab below to learn more about each team and its responsibilities.
       </Typography>

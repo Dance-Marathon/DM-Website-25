@@ -67,7 +67,7 @@ export default function MiracleMakers() {
         <Link href="mailto:aorlando@floridadm.org"> aorlando@floridadm.org</Link>.
       </Typography>
       
-      <Typography variant="h4" color='#233563' sx={{marginTop: 4}}>
+      <Typography variant="h5" color='#233563' sx={{marginTop: 4}}>
         FAQ
       </Typography>
       <Box component="ul" sx={{ pl: 3 }}>

@@ -44,7 +44,7 @@ export default function Alumni() {
           }}
         >
 
-          <Typography variant="h4" color='#233563' gutterBottom>About</Typography>
+          {/* <Typography variant="h4" color='#233563' gutterBottom>About</Typography> */}
           <Typography variant="body1" color="text.secondary" paragraph>
             Since 1995, Dance Marathon at UF has raised over $31 million for UF Health Shands Children's Hospital, our local Children’s Miracle Network Hospital. Thanks to your dedication and support throughout your college years, we have become the most successful student-run philanthropy in the southeastern United States.
           </Typography>
@@ -54,7 +54,7 @@ export default function Alumni() {
         </Box>
 
         <Box mt={4}>
-          <Typography variant="h4" color='#e2883c' gutterBottom>Get Involved!</Typography>
+          <Typography variant="h5" color='#e2883c' gutterBottom>Get Involved!</Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate. 
           </Typography>
