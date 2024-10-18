@@ -132,27 +132,22 @@ export default function OurStory() {
           <ul className="custom-bullet-points">
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Number of Registered Dancers in 2022: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>1250</span>
+                Number of Registered Miracle Makers in 2024: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>483</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Number of Captains: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>467</span>
+                Number of Captains: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>395</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Number of Emerging Leaders: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>160</span>
+                Number of Emerging Leaders: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>176</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Number of Kirstyn's Krew: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>53</span>
-              </Typography>
-            </li>
-            <li>
-              <Typography variant="body1" component="span" color="text.secondary">
-                Number of Miracle Families: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>56</span>
+                Number of Miracle Families: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>32</span>
               </Typography>
             </li>
             <li>
@@ -174,27 +169,27 @@ export default function OurStory() {
           <ul className="custom-bullet-points">
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-              <span style={{ color: '#e2883c', fontWeight: 'bold' }}>44,899</span> donations on DonorDrive
+              <span style={{ color: '#e2883c', fontWeight: 'bold' }}>26,147</span> donations on DonorDrive
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-              <span style={{ color: '#e2883c', fontWeight: 'bold' }}>2,715</span> fundraisers raised at least $1
+              <span style={{ color: '#e2883c', fontWeight: 'bold' }}>1,363</span> fundraisers raised at least $1
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Amount raised in 2022: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>$2,334,217.21</span>
+                Amount raised in 2024: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>$1,531,518.24</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Total amount raised in past 28 years: over <span style={{ color: '#e2883c', fontWeight: 'bold' }}>28 million dollars</span>
+                Total amount raised in past 31 years: over <span style={{ color: '#e2883c', fontWeight: 'bold' }}>32 million dollars</span>
               </Typography>
             </li>
             <li>
               <Typography variant="body1" component="span" color="text.secondary">
-                Alumni Contribution: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>$83,235.89</span>
+                Alumni Contribution: <span style={{ color: '#e2883c', fontWeight: 'bold' }}>$124,904.76</span>
               </Typography>
             </li>
           </ul>
@@ -223,8 +218,8 @@ export default function OurStory() {
                 </Table>
             </TableContainer>
             <Box sx={{ width: { sm: '100%', md: '100%' }, textAlign: { sm: 'left', md: 'left' }}}>
-              {/* Event Title Section */}
-              <Typography variant="h5" component="h2" gutterBottom
+
+              {/* <Typography variant="h5" component="h2" gutterBottom
       style={{ color: '#233563', marginBottom: '1px' }}>
                 Event Title
               </Typography>
@@ -239,7 +234,7 @@ export default function OurStory() {
               </Typography>
               <Typography variant="body1" color="text.secondary">
                 Not Acceptable: DM UF, UF DM, DM @ UF
-              </Typography>
+              </Typography> */}
 
               {/* Hospital Title Section */}
               <Typography variant="h5" component="h2" gutterBottom
@@ -269,6 +264,9 @@ export default function OurStory() {
               </Typography>
               <Typography variant="body1" color="text.secondary">
                 Miracle Teen (13+)
+              </Typography>
+              <Typography variant="body1" color="text.secondary">
+                CMN Ambassador (18+)
               </Typography>
 
               <Typography variant="h5" component="h2" gutterBottom
@@ -484,7 +482,7 @@ export default function OurStory() {
                 </li>
                 <li>
                   <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }}>
-                    Dancers
+                    Miracle Makers
                   </Typography>
                 </li>
                 <li>
