@@ -54,7 +54,7 @@ export default function Alumni() {
         </Box>
 
         <Box mt={4}>
-          <Typography variant="h5" color='#e2883c' gutterBottom>Get Involved!</Typography>
+          <Typography variant="h5" color='#233563' gutterBottom>Get Involved!</Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate. 
           </Typography>
