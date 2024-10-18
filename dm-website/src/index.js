@@ -47,6 +47,15 @@ import TransformToday from './views/TransformToday';
 import Miracles5k from './views/Miracles5k';
 import ELP from './views/ELP';
 
+import BeyondThisMoment from './views/blogs/BeyondThisMoment';
+import BeyondOurselves from './views/blogs/BeyondOurselves';
+import BeyondThisSummer from './views/blogs/BeyondThisSummer';
+import BeyondThisGeneration from './views/blogs/BeyondThisGeneration';
+import FindingYourDMFamily from './views/blogs/FindingYourDMFamily';
+import CampusClash from './views/blogs/CampusClash';
+import ChildHealthDay from './views/blogs/ChildHealthDay';
+import MiracleMaker from './views/blogs/MiracleMaker';
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -75,7 +84,14 @@ root.render(
         <Route path="/miraclemakers" element={<MiracleMakers />} />
         <Route path="/captains" element={<Captains />} />
         <Route path="/blog" element={<BlogList />} />
-        <Route path="/blog/:id" element={<BlogDetails />} />
+        <Route path="/blog/beyondthismoment" element={<BeyondThisMoment />} />
+        <Route path="/blog/beyondourselves" element={<BeyondOurselves />} />
+        <Route path="/blog/beyondthissummer" element={<BeyondThisSummer />} />
+        <Route path="/blog/beyondthisgeneration" element={<BeyondThisGeneration />} />
+        <Route path="/blog/findingyourdmfamily" element={<FindingYourDMFamily />} />
+        <Route path="/blog/campusclash" element={<CampusClash />} />
+        <Route path="/blog/childhealthday" element={<ChildHealthDay />} />
+        <Route path="/blog/miraclemaker" element={<MiracleMaker />} />
         <Route path="/events" element={<Events />} />
         <Route path="/mainevent" element={<MainEvent />} />
         <Route path="/moralloween" element={<Moralloween />} />
