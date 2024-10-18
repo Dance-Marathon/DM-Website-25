@@ -377,7 +377,7 @@ export default function Captains() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body2" color="text.secondary" marginBottom={1}>
-            <span style={{ color: '#233563', fontWeight: 'bold' }}>Responsibilities:</span>
+            <span style={{ color: '#233563', fontWeight: 'bold' }}>Responsibilities: </span>
               {team.responsibilities}
             </Typography>
             <Typography variant="body2" color="text.secondary" marginBottom={1}>
