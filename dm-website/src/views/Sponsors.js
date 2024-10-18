@@ -193,7 +193,7 @@ export default function Sponsors() {
 
       {/* Sponsors Section */}
       <Typography variant="h3" color="text.secondary" align="center" gutterBottom sx={{marginTop: 4}}>
-        <b>Our 2024 Partners</b>
+      <span style={{ color: '#233563', fontWeight: 'bold' }}>Our 2024 Partners</span>
       </Typography>
 
       {/* Grid of sponsor logos */}
