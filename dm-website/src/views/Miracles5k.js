@@ -65,7 +65,7 @@ export default function Miracles5k() {
             <p>
               The course runs through the University of Florida campus and will
               have color stations throughout the course as well as at the finish
-              line. At each color station, runners will be doused in color.*{" "}
+              line. At each color station, runners will be doused in color powder.*{" "}
               <u>
                 All participants will be provided with a Miracles In Color 5k
                 white shirt with registration.
