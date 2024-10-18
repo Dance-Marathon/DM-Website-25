@@ -62,7 +62,7 @@ export default function EmployeeMatching() {
         2. Obtain a matching gift verification form from your Human Resources Department. Complete the form and list our organization name below. If you directed your donation to Children’s Miracle Network, please email our Executive Director, Ryan Athay, at{' '}
         <Link href="mailto:rathay@floridadm.org">rathay@floridadm.org</Link> with a copy of the matching gift verification form.
       </Typography>
-      <Typography color='#233563' variant="h5" gutterBottom>
+      <Typography color='#233563' variant="h5" gutterBottom marginTop={4}>
         Primary Donation Location
       </Typography>
       <Typography color='#e2883c' paragraph>
@@ -85,7 +85,7 @@ export default function EmployeeMatching() {
         * PLEASE NOTE: If you are selecting this preferred donation location, please do not list Dance Marathon at the University of Florida or CMN as the matching entity. Many companies will not accept this request, as our tax-exempt status is included under the larger umbrella of Shands Teaching Hospital and Clinics, Inc. If you have any questions about this process, please reach out to Tara Tovkach, Development Associate for Children’s Miracle Network, for clarification at{' '}
         <Link href="mailto:ttov0002@shands.ufl.edu">ttov0002@shands.ufl.edu</Link>.
       </Typography>
-      <Typography variant="h5" color='#233563' gutterBottom>
+      <Typography variant="h5" color='#233563' gutterBottom marginTop={4}>
         Alternative Donation Location
       </Typography>
       <Typography color="text.secondary" paragraph>
@@ -115,7 +115,7 @@ export default function EmployeeMatching() {
       <span style={{ color: '#e2883c', fontWeight: 'bold' }}>PLEASE NOTE:</span> Notify our Finance Manager, Skylar Finkel, at{' '}
         <Link href="mailto:sfinkel@floridadm.org">sfinkel@floridadm.org</Link> whenever a matching gift request has been submitted. The matching gift will be attributed to the individual who received the original donation. Please allow 60 days for the Office of Development to process your donor match before further inquiry as it can often be a lengthy process. Thank you for multiplying your miracles!
       </Typography>
-      <Typography color="text.secondary" variant="h5" gutterBottom>
+      <Typography color="text.secondary" variant="h5" gutterBottom marginTop={4}>
       <span style={{ color: '#233563', fontWeight: 'bold' }}>Important</span>
       </Typography>
       <Typography color="text.secondary" paragraph>

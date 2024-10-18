@@ -53,7 +53,7 @@ export default function Alumni() {
           </Typography>
         </Box>
 
-        <Box mt={4}>
+        <Box mt={0}>
           <Typography variant="h5" color='#233563' gutterBottom>Get Involved!</Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate. 
@@ -63,7 +63,7 @@ export default function Alumni() {
           </Typography>
         </Box>
 
-        <Box mt={1}>
+        <Box mt={0}>
           <Typography variant="body1" color="text.secondary" paragraph>
             Join or support the <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.team&teamID=70397" target="_blank">Dance Marathon Alumni fundraising team</Link>.
           </Typography>

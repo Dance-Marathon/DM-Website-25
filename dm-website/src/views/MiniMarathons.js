@@ -44,7 +44,7 @@ export default function MiniMarathons() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography variant="body1" gutterBottom sx={{ color: 'text.secondary', marginBottom: 6 }}>
+          <Typography variant="body1" gutterBottom sx={{ color: 'text.secondary', marginBottom: 2 }}>
           12 high schools around the state of Florida participate each year in our Mini Marathon program. High school students at these schools show an enthusiastic passion for Dance Marathon even before their college years begin and play a vital role in our movement. This past year, our Mini Marathon programs raised a total of {' '}
                 <Typography component="span" sx={{ fontWeight: 'bold', color: '#e2883c' }}>
                 $205,897.99
@@ -52,7 +52,7 @@ export default function MiniMarathons() {
                 , proving that these students are truly one generation fighting for the next. All money raised by Mini Marathons goes toward DM at UF’s total amount raised, which directly benefits the children at UF Health Shands Children’s Hospital.
             </Typography>
 
-          <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 6, marginTop: 6 }} >
+          <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 6, marginTop: 2 }} >
           <Typography component="span" sx={{ fontWeight: 'bold', color: '#e2883c' }}>
           We are always looking for more high schools to join our Dance Marathon family.
                 </Typography >{' '}

@@ -179,7 +179,7 @@ export default function About() {
             </Typography>
         </Box>
       
-        <Typography variant="h5" align="center" gutterBottom color='#233563' marginTop={4}>
+        <Typography variant="h5" align="center" gutterBottom color='#233563' marginTop={2}>
           2025 Emerging Leaders
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
