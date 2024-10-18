@@ -111,6 +111,13 @@ export default function Applications() {
                 Now Closed
             </Typography>
 
+            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
+                Miracle Maker Application
+            </Typography>
+            <Typography variant="body1" color="text.secondary" gutterBottom>
+                No formal application, you can sign up to be a Miracle Maker <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.event&eventID=6292" target="_blank">here</Link>, and someone from Dancer Engagement will reach out to you.
+            </Typography>
+
             <Typography variant="body1" gutterBottom sx={{ color: '#000000', marginTop: 4 }}>
                 If you have any questions regarding applications, please reach out to our Membership Manager, Abby Ferrell, at{' '}
                 <Link href="mailto:aferrell@floridadm.org" sx={{ color: '#1a73e8' }}>
