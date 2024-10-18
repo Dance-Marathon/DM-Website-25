@@ -45,7 +45,7 @@ export default function MiniMarathons() {
           }}
         >
           <Typography variant="body1" gutterBottom sx={{ color: 'text.secondary', marginBottom: 6 }}>
-          10 high schools around the state of Florida participate each year in our Mini Marathon program. High school students at these schools show an enthusiastic passion for Dance Marathon even before their college years begin and play a vital role in our movement. This past year, our Mini Marathon programs raised a total of {' '}
+          12 high schools around the state of Florida participate each year in our Mini Marathon program. High school students at these schools show an enthusiastic passion for Dance Marathon even before their college years begin and play a vital role in our movement. This past year, our Mini Marathon programs raised a total of {' '}
                 <Typography component="span" sx={{ fontWeight: 'bold', color: '#e2883c' }}>
                 $205,897.99
                 </Typography >{' '}
@@ -88,6 +88,11 @@ export default function MiniMarathons() {
                     <li>
                     <Typography variant="body1" component="span" color="text.secondary">
                         Gainesville High School
+                    </Typography>
+                    </li>
+                    <li>
+                    <Typography variant="body1" component="span" color="text.secondary">
+                      Lake Minneola High School
                     </Typography>
                     </li>
                     <li>
