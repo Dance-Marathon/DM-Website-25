@@ -91,7 +91,7 @@ export default function Organizations() {
             </Typography>
 
             <Typography variant="body1" gutterBottom sx={{ color: '#000000', marginBottom: 4 }}>
-                Below are the Organizations currently involved in Dance Marathon at UF 2023:
+                Below are the Organizations currently involved in Dance Marathon at UF 2025:
             </Typography>
 
             <TableContainer component={Paper}>

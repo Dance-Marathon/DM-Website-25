@@ -172,12 +172,12 @@ export default function Sponsors() {
 
       {/* Description */}
       <Typography variant="body1" color="text.secondary" paragraph>
-        Dance Marathon at UF is so thankful for the support of our generous Sponsors! DM at UF offers many different ways to get involved as a Sponsor for our cause, each with various benefits to show our appreciation for your support. Our Partnership Team will connect your company with our Organization, along with access to an extensive network of supporters of all ages and demographics.
+        Dance Marathon at UF is so thankful for the support of our generous Partners! DM at UF offers many different ways to get involved as a Partner for our cause, each with various benefits to show our appreciation for your support. Our Partnership Team will connect your company with our Organization, along with access to an extensive network of supporters of all ages and demographics.
       </Typography>
 
       {/* Link to sponsorship opportunities */}
       <Typography variant="body1" color="text.secondary" paragraph>
-        For more information, view our sponsorship opportunities{' '}
+        For more information, view our partnership opportunities{' '}
         <Link href={SponsorshipPacket} underline="always">
           here
         </Link>.
@@ -193,7 +193,7 @@ export default function Sponsors() {
 
       {/* Sponsors Section */}
       <Typography variant="h3" color="text.secondary" align="center" gutterBottom sx={{marginTop: 4}}>
-        <b>Our 2024 Sponsors</b>
+        <b>Our 2024 Partners</b>
       </Typography>
 
       {/* Grid of sponsor logos */}
