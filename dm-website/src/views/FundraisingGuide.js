@@ -23,7 +23,7 @@ export default function FundraisingGuide() {
 
   const handleToggle = (sectionId) => {
     setVisibleSection((prev) => (prev === sectionId ? null : sectionId)); // Toggle visibility
-    setSelectedSection(sectionId); // Set selected section
+    setSelectedSection(prev => (prev === sectionId ? null : sectionId)); // Toggle selected section
   };
 
   return (
@@ -72,9 +72,8 @@ export default function FundraisingGuide() {
                 borderRadius: '5px',
                 padding: 2,
                 transition: 'border-color 0.3s',
-                width: '100%',
-                maxWidth: 300,
-                marginBottom: 2,
+                width: '30%',
+                flexDirection: 'row'
               }}
             >
               <img
