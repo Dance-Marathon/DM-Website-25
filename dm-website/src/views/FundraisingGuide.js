@@ -85,6 +85,7 @@ export default function FundraisingGuide() {
               <Typography variant="h5" color='#233563'>
                 {title}
               </Typography>
+
             </Box>
           ))}
         </Box>

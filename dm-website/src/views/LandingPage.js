@@ -8,6 +8,7 @@ import Hero from '../components/Hero';
 import getLPTheme from '../getLPTheme';
 import { Typography, Container, Grid, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import LandingCarousel from '../components/LandingCarousel';
 
 import BookIcon from '@mui/icons-material/MenuBook';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospitalOutlined';
@@ -117,6 +118,10 @@ export default function LandingPage() {
             </Grid>
           </Grid>
         </Container>
+        <Divider/>
+        {/* <Typography variant="h3" color="primary" align="center" gutterBottom sx={{marginTop: 4}}>Our 2025 Partners</Typography> */}
+        <LandingCarousel />
+        <Divider/>
       </Box>
     </ThemeProvider>
   );

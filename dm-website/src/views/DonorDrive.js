@@ -52,7 +52,7 @@ export default function DonorDrive() {
           </Typography>
             </Box>
 
-      <Typography variant="h4" color='#233563' sx={{marginTop: 2}}>
+      <Typography variant="h5" color='#233563' sx={{marginTop: 2}}>
         FAQ
       </Typography>
       <FAQ 
