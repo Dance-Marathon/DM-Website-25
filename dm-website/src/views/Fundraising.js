@@ -18,18 +18,11 @@ import EmployeeBox from "../assets/images/miniboxpics/EmployeeMatchingBox.JPG";
 import PartnersBox from "../assets/images/miniboxpics/PartnersBox.JPG";
 
 export default function Fundraising() {
-  const [mode, setMode] = React.useState(() => {
-    // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem('theme') || 'light';
-  });
+  const [mode, setMode] = React.useState('light');
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
-      return newMode;
-    });
+    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
 
   return (

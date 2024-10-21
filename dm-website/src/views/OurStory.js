@@ -20,20 +20,8 @@ import HeroPic from "../assets/images/overalls/SW.jpg";
 import '../App.css';
 
 export default function OurStory() {
-  const [mode, setMode] = React.useState(() => {
-    // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem('theme') || 'light';
-  });
+  const [mode, setMode] = React.useState('light');
   const LPtheme = createTheme(getLPTheme(mode));
-
-  const toggleColorMode = () => {
-    setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
-      return newMode;
-    });
-  };
-
 
   const StyledTableHeadCell = styled(TableCell)(({ theme }) => ({
     fontSize: 14,
@@ -60,6 +48,10 @@ export default function OurStory() {
         border: 0,
     },
   }));
+
+  const toggleColorMode = () => {
+    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
 
   function createData(year, total) {
     return { year, total };

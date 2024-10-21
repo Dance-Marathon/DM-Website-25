@@ -19,19 +19,13 @@ import MMBox from "../assets/images/miniboxpics/MiniMarathonBox.JPG";
 import MWeenBox from "../assets/images/miniboxpics/MWeenBox.JPG";
 
 export default function Events() {
-  const [mode, setMode] = React.useState(() => {
-    // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem('theme') || 'light';
-  });
+  const [mode, setMode] = React.useState('light');
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
-      return newMode;
-    });
+    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
+
   return (
     <ThemeProvider theme={LPtheme}>
       <ScrollToTop />

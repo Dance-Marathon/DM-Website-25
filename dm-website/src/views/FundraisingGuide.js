@@ -12,19 +12,13 @@ import HeroPic from "../assets/images/overalls/SW.jpg";
 import FundraisingGuidePic from "../assets/images/Fundraising Guide.jpg";
 
 export default function FundraisingGuide() {
-  const [mode, setMode] = React.useState(() => {
-    // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem('theme') || 'light';
-  });
+  const [mode, setMode] = React.useState('light');
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
-      return newMode;
-    });
+    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
+
   return (
     <ThemeProvider theme={LPtheme}>
       <ScrollToTop />
