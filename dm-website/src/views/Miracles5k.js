@@ -14,11 +14,18 @@ import HeroPic from "../assets/images/overalls/SW.jpg";
 import EventsPic from "../assets/images/pagepics/EventsPic.png";
 
 export default function Miracles5k() {
-  const [mode, setMode] = React.useState("light");
+  const [mode, setMode] = React.useState(() => {
+    // Retrieve the stored theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === "dark" ? "light" : "dark"));
+    setMode((prev) => {
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      return newMode;
+    });
   };
 
   return (
@@ -65,7 +72,7 @@ export default function Miracles5k() {
             <p>
               The course runs through the University of Florida campus and will
               have color stations throughout the course as well as at the finish
-              line. At each color station, runners will be doused in color.*{" "}
+              line. At each color station, runners will be doused in color powder.*{" "}
               <u>
                 All participants will be provided with a Miracles In Color 5k
                 white shirt with registration.

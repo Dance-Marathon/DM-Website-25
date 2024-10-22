@@ -18,12 +18,20 @@ import EmployeeBox from "../assets/images/miniboxpics/EmployeeMatchingBox.JPG";
 import PartnersBox from "../assets/images/miniboxpics/PartnersBox.JPG";
 
 export default function Fundraising() {
-  const [mode, setMode] = React.useState('light');
+  const [mode, setMode] = React.useState(() => {
+    // Retrieve the stored theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setMode((prev) => {
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      return newMode;
+    });
   };
+
 
   return (
     <ThemeProvider theme={LPtheme}>
@@ -101,10 +109,10 @@ export default function Fundraising() {
             sx={{ maxWidth: 1200, margin: '0 auto'}}
           >
             {[
-              { image: DDBox, title: 'DonorDrive', hoverText: "", link: '/donordrive' },
-              { image: EmployeeBox, title: 'Employee Matching', hoverText: "", link: '/employeematching' },
-              { image: FundraisingGuideBox, title: 'Fundraising Guide', hoverText: "", link: '/fundraisingguide' },
-              { image: PartnersBox, title: 'Partners', hoverText: "", link: '/partners' },
+              { image: DDBox, title: 'DonorDrive', hoverText: "Learn how UF Health Shands Children's Hospital is using DonorDrive for fundraising.", link: '/donordrive' },
+              { image: EmployeeBox, title: 'Employee Matching', hoverText: "See how your company can increase your contributions.", link: '/employeematching' },
+              { image: FundraisingGuideBox, title: 'Fundraising Guide', hoverText: "Take a look at all the different ways you can fundraise with Dance Marathon at UF!", link: '/fundraisingguide' },
+              { image: PartnersBox, title: 'Partners', hoverText: "Discover our partners!", link: '/partners' },
             ].map((card, index) => (
               <Grid item xs={12} sm={6} md={3} key={index}>
                 <SquareCardSmall {...card} />

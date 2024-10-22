@@ -69,6 +69,7 @@ function AppAppBar({ mode, toggleColorMode }) {
               bgcolor: '#23356370',
               backdropFilter: 'blur(24px)',
               maxHeight: 40,
+              minWidth: 1152,
               border: '1px solid',
               borderColor: 'divider',
               boxShadow:
@@ -150,7 +151,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 menuURL={"/fundraising"}
                 >
                 </MenuPopupState>
-                {/* <Button 
+                <Button 
                   variant='regular'
                   onClick={() => navigate('/blog')}
                   sx={{...menuTheme}}
@@ -158,7 +159,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   <Typography variant="body1" color="text.primary">
                     Blog
                   </Typography>
-                </Button> */}
+                </Button>
                 <Button 
                   variant='regular'
                   onClick={() => navigate('/shop')}
@@ -171,12 +172,41 @@ function AppAppBar({ mode, toggleColorMode }) {
                 <Button 
                   variant='regular'
                   onClick={() => navigate('/donate')}
-                  sx={{...menuTheme}}
+                  sx={{
+                    ...menuTheme,
+                    ml: 1.5,
+                    bgcolor: 'rgba(226, 136, 60, 0.7)', 
+                    color: 'white', 
+                    fontWeight: 'bold',
+                    px: 2, 
+                    '&:hover': {
+                      bgcolor: 'rgba(226, 136, 60, 0.9)', 
+                    },
+                  }}
                 >
-                  <Typography variant="body1" color="text.primary">
-                    Donate
-                  </Typography>
-                </Button>
+            <Typography variant="body1" color="inherit">
+              Donate
+            </Typography>
+            </Button>
+            <Button 
+                  variant='regular'
+                  onClick={() => navigate('/register')}
+                  sx={{
+                    ...menuTheme,
+                    ml: 1.5,
+                    bgcolor: 'rgba(226, 136, 60, 0.7)', 
+                    color: 'white', 
+                    fontWeight: 'bold',
+                    px: 2, 
+                    '&:hover': {
+                      bgcolor: 'rgba(226, 136, 60, 0.9)', 
+                    },
+                  }}
+                >
+            <Typography variant="body1" color="inherit">
+              Register
+            </Typography>
+            </Button>
               </Box>
             </Box>
             <Box
@@ -234,30 +264,30 @@ function AppAppBar({ mode, toggleColorMode }) {
             <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
               <Box
                 sx={{
-                  minWidth: '60vw',
+                  minWidth: '45vw',
                   p: 2,
-                  backgroundColor: 'background.paper',
+                  backgroundColor: 'background.dm',
                   flexGrow: 1,
                 }}
               >
                 {/* Add menu items to drawer */}
                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                  <MenuItem onClick={() => navigate('/contact')}>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/contact')}>
                     Contact Us
                   </MenuItem>
-                  <MenuItem onClick={() => navigate('/about')}>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/about')}>
                     About
                   </MenuItem>
-                  <MenuItem onClick={() => navigate('/get-involved')}>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/get-involved')}>
                     Get Involved
                   </MenuItem>
-                  <MenuItem onClick={() => navigate('/events')}>Events</MenuItem>
-                  <MenuItem onClick={() => navigate('/fundraising')}>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/events')}>Events</MenuItem>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/fundraising')}>
                     Fundraising
                   </MenuItem>
-                  <MenuItem onClick={() => navigate('/blog')}>Blog</MenuItem>
-                  <MenuItem onClick={() => navigate('/shop')}>Shop</MenuItem>
-                  <MenuItem onClick={() => navigate('/donate')}>Donate</MenuItem>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/blog')}>Blog</MenuItem>
+                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/shop')}>Shop</MenuItem>
+                  <MenuItem sx={{color: "secondary.main", fontSize: '2rem',}} onClick={() => navigate('/donate')}>Donate</MenuItem>
                 </Box>
               </Box>
             </Drawer>

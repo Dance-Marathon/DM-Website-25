@@ -139,11 +139,18 @@ const sponsors = [
 
 
 export default function Sponsors() {
-  const [mode, setMode] = React.useState('light');
+  const [mode, setMode] = React.useState(() => {
+    // Retrieve the stored theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setMode((prev) => {
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      return newMode;
+    });
   };
 
   return (
@@ -171,20 +178,20 @@ export default function Sponsors() {
       </Box>
 
       {/* Description */}
-      <Typography variant="body1" color="text.secondary" paragraph>
-        Dance Marathon at UF is so thankful for the support of our generous Sponsors! DM at UF offers many different ways to get involved as a Sponsor for our cause, each with various benefits to show our appreciation for your support. Our Partnership Team will connect your company with our Organization, along with access to an extensive network of supporters of all ages and demographics.
+      <Typography variant="body1" color="text.secondary"  marginTop={-2}>
+        Dance Marathon at UF is so thankful for the support of our generous Partners! DM at UF offers many different ways to get involved as a Partner for our cause, each with various benefits to show our appreciation for your support. Our Partnership Team will connect your company with our Organization, along with access to an extensive network of supporters of all ages and demographics.
       </Typography>
 
       {/* Link to sponsorship opportunities */}
-      <Typography variant="body1" color="text.secondary" paragraph>
-        For more information, view our sponsorship opportunities{' '}
+      <Typography variant="body1" color="text.secondary"  marginTop={0}>
+        For more information, view our partnership opportunities{' '}
         <Link href={SponsorshipPacket} underline="always">
           here
         </Link>.
       </Typography>
 
       {/* Contact Information */}
-      <Typography variant="body1" color="text.secondary" paragraph>
+      <Typography variant="body1" color="text.secondary"  marginTop={0}>
         If you have any questions, please contact our Partnership Overall Director,{' '}
         <Link href="mailto:jwinograd@floridadm.org" underline="always">
           Jessica Winograd
@@ -193,7 +200,7 @@ export default function Sponsors() {
 
       {/* Sponsors Section */}
       <Typography variant="h3" color="text.secondary" align="center" gutterBottom sx={{marginTop: 4}}>
-        <b>Our 2024 Sponsors</b>
+      <span style={{ color: '#233563', fontWeight: 'bold' }}>Our 2024 Partners</span>
       </Typography>
 
       {/* Grid of sponsor logos */}

@@ -13,13 +13,20 @@ import HeroPic from "../assets/images/overalls/SW.jpg";
 import ApplicationsPic from "../assets/images/Applications.jpg";
 
 export default function Applications() {
-  const [mode, setMode] = React.useState('light');
-  const LPtheme = createTheme(getLPTheme(mode));
-
-  const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
-  };
-
+    const [mode, setMode] = React.useState(() => {
+        // Retrieve the stored theme from localStorage or default to 'dark'
+        return localStorage.getItem('theme') || 'dark';
+      });
+      const LPtheme = createTheme(getLPTheme(mode));
+    
+      const toggleColorMode = () => {
+        setMode((prev) => {
+          const newMode = prev === 'dark' ? 'light' : 'dark';
+          localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+          return newMode;
+        });
+      };
+    
   return (
     <ThemeProvider theme={LPtheme}>
       <ScrollToTop />
@@ -42,8 +49,8 @@ export default function Applications() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-            <Typography variant="body1" gutterBottom sx={{ color: '#000000', marginBottom: 2 }}>
-                Thank you for your interest in Dance Marathon at the University of Florida 2025.
+            <Typography variant="body1" gutterBottom sx={{ color: '#e2883c', fontWeight: 'bold', marginBottom: 2 }} >
+                Thank you for your interest in Dance Marathon at the University of Florida 2025!
             </Typography>
             <Typography variant="body1" gutterBottom color="text.secondary">
                 The online application forms are linked below. In order to be considered for a Captain, the Emerging Leaders Program, or Ambassador position, you must:
@@ -111,7 +118,14 @@ export default function Applications() {
                 Now Closed
             </Typography>
 
-            <Typography variant="body1" gutterBottom sx={{ color: '#000000', marginTop: 4 }}>
+            <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
+                Miracle Maker Application
+            </Typography>
+            <Typography variant="body1" color="text.secondary" gutterBottom>
+                No formal application, you can sign up to be a Miracle Maker <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.event&eventID=6292" target="_blank">here</Link>, and someone from Dancer Engagement will reach out to you.
+            </Typography>
+
+            <Typography variant="body1" gutterBottom sx={{ marginTop: 4 }} color="text.secondary">
                 If you have any questions regarding applications, please reach out to our Membership Manager, Abby Ferrell, at{' '}
                 <Link href="mailto:aferrell@floridadm.org" sx={{ color: '#1a73e8' }}>
                 aferrell@floridadm.org

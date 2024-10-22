@@ -340,11 +340,18 @@ const teams = [
     ];
 
 export default function Captains() {
-  const [mode, setMode] = React.useState('light');
+  const [mode, setMode] = React.useState(() => {
+    // Retrieve the stored theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setMode((prev) => {
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      return newMode;
+    });
   };
 
   return (
@@ -363,9 +370,9 @@ export default function Captains() {
           gap: { xs: 2, sm: 3 },
         }}
       >
-      <Typography variant="h4" color='#233563' gutterBottom>
+      {/* <Typography variant="h4" color='#233563' gutterBottom>
         Captain Teams
-      </Typography>
+      </Typography> */}
       <Typography variant="body1" color="text.secondary" paragraph>
         Each Captain Team is composed of an Overall Director, Assistant Directors, and Captains. Assistant Directors work year-long with their respective Overall Directors to ensure steady growth and management within their Captain Team. Captains are leaders within our organization who have specific duties throughout the year depending on their teams. Click each tab below to learn more about each team and its responsibilities.
       </Typography>
@@ -377,7 +384,7 @@ export default function Captains() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body2" color="text.secondary" marginBottom={1}>
-            <span style={{ color: '#233563', fontWeight: 'bold' }}>Responsibilities:</span>
+            <span style={{ color: '#233563', fontWeight: 'bold' }}>Responsibilities: </span>
               {team.responsibilities}
             </Typography>
             <Typography variant="body2" color="text.secondary" marginBottom={1}>

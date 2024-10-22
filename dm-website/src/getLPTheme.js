@@ -118,6 +118,7 @@ const getDesignTokens = (mode) => ({
       default: '#fff',
       paper: gray[50],
       ...(mode === 'dark' && { default: gray[900], paper: gray[900] }),
+      dm: "#233563",
     },
     text: {
       primary: brand[200],

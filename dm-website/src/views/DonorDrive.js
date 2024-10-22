@@ -14,11 +14,18 @@ import HeroPic from "../assets/images/overalls/SW.jpg";
 import DonorDrivePic from "../assets/images/pagepics/DonorDrivePic.png";
 
 export default function DonorDrive() {
-  const [mode, setMode] = React.useState('light');
+  const [mode, setMode] = React.useState(() => {
+    // Retrieve the stored theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setMode((prev) => {
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      return newMode;
+    });
   };
 
   return (
@@ -52,7 +59,7 @@ export default function DonorDrive() {
           </Typography>
             </Box>
 
-      <Typography variant="h4" color='#233563' sx={{marginTop: 4}}>
+      <Typography variant="h5" color='#233563' sx={{marginTop: 2}}>
         FAQ
       </Typography>
       <FAQ 

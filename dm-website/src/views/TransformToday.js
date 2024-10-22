@@ -13,12 +13,20 @@ import YoutubeVid from "../components/YoutubeVid";
 import HeroPic from "../assets/images/overalls/SW.jpg";
 
 export default function TransformToday() {
-  const [mode, setMode] = React.useState("light");
+  const [mode, setMode] = React.useState(() => {
+    // Retrieve the stored theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === "dark" ? "light" : "dark"));
+    setMode((prev) => {
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      return newMode;
+    });
   };
+
 
   return (
     <ThemeProvider theme={LPtheme}>
@@ -87,7 +95,7 @@ export default function TransformToday() {
             gutterBottom
             sx={{ marginTop: 4, color: '#233563' }}
           >
-            Why
+            Why?
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
@@ -105,10 +113,10 @@ export default function TransformToday() {
             gutterBottom
             sx={{ marginTop: 4, color: '#233563' }}
           >
-            When
+            When?
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
-            <p>TBA</p>
+            <p>October 29-30</p>
           </Typography>
           <Typography
             variant="h5"
@@ -116,7 +124,7 @@ export default function TransformToday() {
             gutterBottom
             sx={{ marginTop: 4, color: '#233563' }}
           >
-            What
+            What?
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
@@ -133,7 +141,7 @@ export default function TransformToday() {
             gutterBottom
             sx={{ marginTop: 4, color: '#233563' }}
           >
-            How Can I Get Involved
+            How Can I Get Involved?
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
@@ -163,11 +171,11 @@ export default function TransformToday() {
             gutterBottom
             sx={{ marginTop: 4, color: '#233563' }}
           >
-            Hospitality Nights
+            Spirit Nights
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
-              Hospitality Nights serve as an opportunity for the local
+              Spirit Nights serve as an opportunity for the local
               Gainesville community can support Dance Marathon at UF's
               fundraising efforts. On Transform Today, hospitality nights will
               be occurring in select locations. Make sure to mention Dance

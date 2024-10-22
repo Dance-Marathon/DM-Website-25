@@ -19,12 +19,20 @@ import MMBox from "../assets/images/miniboxpics/MiniMarathonBox.JPG";
 import MWeenBox from "../assets/images/miniboxpics/MWeenBox.JPG";
 
 export default function Events() {
-  const [mode, setMode] = React.useState('light');
+  const [mode, setMode] = React.useState(() => {
+    // Retrieve the stored theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setMode((prev) => {
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      return newMode;
+    });
   };
+
 
   return (
     <ThemeProvider theme={LPtheme}>
@@ -58,11 +66,11 @@ export default function Events() {
                 that includes many fundraising events aimed at reaching University students, businesses, and Gainesville residents. These events help us create a fun and exciting atmosphere while raising awareness about DM, whether it is through social media or inspirational stories from our Miracle Children who speak at the events. DM at UF's community events are all highly anticipated as they build up throughout the year toward the main Event in the spring.
             </Typography>
 
-            <Typography variant="body1" gutterBottom sx={{ color: '#e2883c', fontWeight: 'bold', marginTop: 4 }}>
+            <Typography variant="body1" gutterBottom sx={{ color: '#e2883c', fontWeight: 'bold', marginTop: 2 }}>
                 Your involvement in these events is what makes them successful!
             </Typography>
 
-            <Typography variant="body1" gutterBottom sx={{ color: 'text.secondary', marginTop: 4 }}>
+            <Typography variant="body1" gutterBottom sx={{ color: 'text.secondary', marginTop: 2 }}>
                 Reaching out for the support of the entire community is vital for the continued success of Gainesville's local Children's Miracle Network Hospital. For more information about how to get involved in these events, please contact us at{' '}
                 <Link href="mailto:floridadm@floridadm.org" sx={{ color: '#1a73e8' }}>
                 floridadm@floridadm.org

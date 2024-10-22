@@ -13,12 +13,20 @@ import HeroPic from "../assets/images/overalls/SW.jpg";
 import MainEventPic from "../assets/images/pagepics/MainEventPic.jpg";
 
 export default function MainEvent() {
-  const [mode, setMode] = React.useState('light');
+  const [mode, setMode] = React.useState(() => {
+    // Retrieve the stored theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setMode((prev) => {
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      return newMode;
+    });
   };
+
 
   return (
     <ThemeProvider theme={LPtheme}>
@@ -42,10 +50,10 @@ export default function MainEvent() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
+          <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
             <p>Our Main Event is a 26.2-hour event held in the Stephen O’Connell Center, or as we like to call it, the O’Dome! During the Main Event, we celebrate all of our members and miracles made throughout the year. It is jam-packed full of entertainment, fundraising pushes, stories from Miracle Families, ceremonies, theme hours, a rave, and of course, the Linedance! Our Dancers will stand for the entire duration to symbolize our cause and the impact that we are making on the lives of children with pediatric illnesses at UF Health Shands Children’s Hospital. At the end of our event we will get to witness the reveal of the total amount raised by Dance Marathon over the whole year.</p>
           </Typography>
-          <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
+          <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
             <p>Follow us on social media for event updates!</p>
           </Typography>
           <Typography variant="body1" sx={{ color: 'text.secondary' }}>

@@ -12,12 +12,20 @@ import PageHero from '../components/PageHero';
 import MoralloweenPic from "../assets/images/miniboxpics/MoralloweenHero.JPG";
 
 export default function Moralloween() {
-  const [mode, setMode] = React.useState('light');
+  const [mode, setMode] = React.useState(() => {
+    // Retrieve the stored theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setMode((prev) => {
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      return newMode;
+    });
   };
+
 
   return (
     <ThemeProvider theme={LPtheme}>
@@ -41,7 +49,7 @@ export default function Moralloween() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
+          <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
             <p>Moralloween is an annual fall fundraiser put on by Dance Marathon at UF, a student-run philanthropy that raises funds and awareness year-round at UF Health Shands Children’s Hospital! Organizations across campus participate by creating booths with activities, candy, and ways to bond with attendees and Miracle Families. Moralloween has a DJ, great food, and is a great way for everyone to get in the Halloween spirit!</p>
           </Typography>
           <Typography variant="body1" sx={{ color: 'text.secondary' }}>

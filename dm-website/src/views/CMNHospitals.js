@@ -12,12 +12,20 @@ import HeroPic from "../assets/images/overalls/SW.jpg";
 import TriBrand from "../assets/images/TriBrandColors.png";
 
 export default function CMNHospitals() {
-  const [mode, setMode] = React.useState('light');
+  const [mode, setMode] = React.useState(() => {
+    // Retrieve the stored theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setMode((prev) => {
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      return newMode;
+    });
   };
+
 
   return (
     <ThemeProvider theme={LPtheme}>
@@ -41,18 +49,18 @@ export default function CMNHospitals() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-            <Typography variant="body1" sx={{ color: '#000000', marginBottom: 2 }}>
+            <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
                 UF Health Shands Children’s Hospital is the local Children's Miracle Network participating hospital for the North Central Florida, South Georgia, and West Palm Beach areas. Children's Miracle Network is an international non-profit organization dedicated to raising funds and awareness for children's hospitals. CMN's founding pledge, to keep all donations in the area in which they were raised, remains at the core of its philosophy.
             </Typography>
-            <Typography variant="body1" sx={{ color: '#000000', marginBottom: 2 }}>
+            <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
                 As the state's premier pediatric health center, UF Health Shands Children's Hospital provides innovative and comprehensive care at the highest standards of quality and service in partnership with patient families, healthcare teams, and communities. Community contributions support pediatric research and help to purchase the latest technology and equipment. Donations also help make hospital stays more comfortable and enjoyable for pediatric patients and their families.
             </Typography>
 
-            <Typography variant="body1" sx={{ color: '#000000', marginBottom: 2 }}>
+            <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
                 Ranked one of the top 50 pediatric hospitals in the nation in seven categories, UF Health Shands Children's Hospital and Children's Miracle Network have created one of the greatest facilities of care for children and young adults.
             </Typography>
 
-            <Typography variant="body1" sx={{ color: '#000000', marginBottom: 2 }}>
+            <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
                 For more information, please visit:{' '}
                 <Link href="https://ufhealth.org/shands-hospital-children-uf" target="_blank" rel="noopener" sx={{ color: '#1a73e8' }}>
                 https://ufhealth.org/shands-hospital-children-uf

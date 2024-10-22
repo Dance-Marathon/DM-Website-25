@@ -15,12 +15,20 @@ import HeroPic from "../assets/images/overalls/SW.jpg";
 import MiniMarathonsPic from "../assets/images/pagepics/MiniMarathonsPic.jpg";
 
 export default function MiniMarathons() {
-  const [mode, setMode] = React.useState('light');
+  const [mode, setMode] = React.useState(() => {
+    // Retrieve the stored theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setMode((prev) => {
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      return newMode;
+    });
   };
+
 
   return (
     <ThemeProvider theme={LPtheme}>
@@ -44,16 +52,19 @@ export default function MiniMarathons() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography variant="body1" gutterBottom sx={{ color: 'text.secondary', marginBottom: 6 }}>
-          10 high schools around the state of Florida participate each year in our Mini Marathon program. High school students at these schools show an enthusiastic passion for Dance Marathon even before their college years begin and play a vital role in our movement. This past year, our Mini Marathon programs raised a total of {' '}
+          <Typography variant="body1" gutterBottom sx={{ color: 'text.secondary', marginBottom: 2 }}>
+          12 high schools around the state of Florida participate each year in our Mini Marathon program. High school students at these schools show an enthusiastic passion for Dance Marathon even before their college years begin and play a vital role in our movement. This past year, our Mini Marathon programs raised a total of {' '}
                 <Typography component="span" sx={{ fontWeight: 'bold', color: '#e2883c' }}>
                 $205,897.99
                 </Typography >{' '}
                 , proving that these students are truly one generation fighting for the next. All money raised by Mini Marathons goes toward DM at UF’s total amount raised, which directly benefits the children at UF Health Shands Children’s Hospital.
             </Typography>
 
-          <Typography variant="body1" sx={{ color: '#000000', marginBottom: 6, marginTop: 6 }}>
-          We are always looking for more high schools to join our Dance Marathon family. If you would like to learn more about our Mini-Marathon Programs or would like to get involved, please contact our Marathon Relations Overall Director, Lexi Devescovi, at {' '}
+          <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 6, marginTop: 2 }} >
+          <Typography component="span" sx={{ fontWeight: 'bold', color: '#e2883c' }}>
+          We are always looking for more high schools to join our Dance Marathon family.
+                </Typography >{' '}
+           If you would like to learn more about our Mini-Marathon Programs or would like to get involved, please contact our Marathon Relations Overall Director, Lexi Devescovi, at {' '}
             <Link href="mailto:dgeller@floridadm.org" sx={{ color: '#1a73e8' }}>
               adevescovi@floridadm.org
             </Link>.
@@ -88,6 +99,11 @@ export default function MiniMarathons() {
                     <li>
                     <Typography variant="body1" component="span" color="text.secondary">
                         Gainesville High School
+                    </Typography>
+                    </li>
+                    <li>
+                    <Typography variant="body1" component="span" color="text.secondary">
+                      Lake Minneola High School
                     </Typography>
                     </li>
                     <li>

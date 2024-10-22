@@ -13,11 +13,18 @@ import HeroPic from "../assets/images/overalls/SW.jpg";
 import OrganizationsPic from "../assets/images/Organizations.jpg";
 
 export default function Organizations() {
-  const [mode, setMode] = React.useState('light');
+  const [mode, setMode] = React.useState(() => {
+    // Retrieve the stored theme from localStorage or default to 'dark'
+    return localStorage.getItem('theme') || 'dark';
+  });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
-    setMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+    setMode((prev) => {
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      return newMode;
+    });
   };
 
   const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -44,17 +51,15 @@ export default function Organizations() {
     ['Alpha Delta Pi', 'Delta Gamma', 'Kappa Delta', 'Sigma Kappa'],
     ['Alpha Epsilon Phi', 'Delta Nu Zeta', 'Kappa Kappa Gamma', 'Sigma Nu'],
     ['Alpha Epsilon Pi', 'Delta Phi Epsilon', 'Kappa Phi Epsilon', 'Sigma Phi Epsilon'],
-    ['Alpha Gamma Rho', 'Delta Sigma Phi', 'Kappa Sigma', 'Society of Women Engineers'],
-    ['Alpha Omicron Pi', 'Delta Tau Delta', 'Lambda Chi Alpha', 'Tau Epsilon Phi'],
-    ['Alpha Phi', 'Delta Zeta', 'Omega Phi Alpha', 'Tau Kappa Epsilon'],
-    ['Alpha Tau Omega', 'Florida Cicerones', 'Phi Delta Theta', 'The Gator Aides'],
-    ['Beta Theta Pi', 'Footprints: Buddy and Support Program', 'Phi Eta Sigma Honor Society', 'Theta Alpha'],
-    ['Black Student Union', 'Gamma Eta', 'Phi Kappa Tau', 'Theta Chi'],
-    ['Brazilian Student Association (BRASA)', 'Gamma Phi Beta', 'Phi Mu', 'Theta Tau'],
-    ['Catholic Gators', 'Gator E Sports', 'Pi Beta Phi', 'UF Honors Program'],
-    ['Chi Omega', 'Hispanic Student Association', 'Pi Kappa Alpha', 'UF Pre-Physician Assistant Association'],
-    ['Chi Phi', 'Innovation Academy', 'Pi Lambda Phi', 'Zeta Beta Tau'],
-    ['College of Pharmacy', 'Kappa Alpha Order', 'Pre-Legal Honor Society', 'Zeta Tau Alpha'],
+    ['Alpha Gamma Rho', 'Delta Sigma Phi', 'Kappa Sigma', 'Alpha Omicron Pi'],
+    ['Delta Tau Delta', 'Lambda Chi Alpha', 'Tau Epsilon Phi', 'Alpha Phi'],
+    ['Delta Zeta', 'Sigma Alpha Episolon', 'Tau Kappa Epsilon', 'Alpha Tau Omega'],
+    ['Florida Cicerones', 'Phi Delta Theta', 'The Gator Aides', 'Beta Theta Pi'],
+    ['Footprints: Buddy and Support Program', 'Phi Eta Sigma Honor Society', 'Gamma Eta', 'Phi Kappa Tau'],
+    ['Theta Chi', 'UF Innovation', 'Gamma Phi Beta', 'Phi Mu'],
+    ['Pi Beta Phi', 'UF Honors Program', 'Chi Omega', 'Hispanic Student Association'],
+    ['Pi Kappa Alpha', 'UF Pre-Professional Services Organization', 'Chi Phi', 'Innovation Academy'],
+    ['Kappa Alpha Order', 'Zeta Beta Tau', 'Zeta Tau Alpha', 'William and Grace Dial Center Ambassador Leadership Program']
   ];
 
   return (
@@ -79,10 +84,10 @@ export default function Organizations() {
             textAlign: { sm: 'left', md: 'left' },
           }}
         >
-          <Typography variant="body1" gutterBottom sx={{ color: '#000000', marginBottom: 2 }}>
+          <Typography variant="body1" gutterBottom sx={{ marginBottom: 2 }} color="text.secondary">
                 A variety of University of Florida affiliated Organizations participate in Dance Marathon every year!
             </Typography>
-            <Typography variant="body1" gutterBottom sx={{ color: '#000000', marginBottom: 2 }}>
+            <Typography variant="body1" gutterBottom sx={{ marginBottom: 2 }} color="text.secondary">
                 Organizations are the backbone of our philanthropy, and we are always looking for more people to join our family!
                 If you would like to get your organization involved with Dance Marathon, please contact the Recruitment Overall, Ava Orlando, at{' '}
                 <Link href="mailto:aorlando@floridadm.org" sx={{ color: '#1a73e8' }}>
@@ -90,8 +95,8 @@ export default function Organizations() {
                 </Link>.
             </Typography>
 
-            <Typography variant="body1" gutterBottom sx={{ color: '#000000', marginBottom: 4 }}>
-                Below are the Organizations currently involved in Dance Marathon at UF 2023:
+            <Typography variant="body1" gutterBottom sx={{ marginBottom: 4 }} color="text.secondary">
+                Below are the Organizations currently involved in Dance Marathon at UF 2025:
             </Typography>
 
             <TableContainer component={Paper}>
@@ -101,7 +106,7 @@ export default function Organizations() {
                     <StyledTableRow key={rowIndex}>
                         {row.map((org, colIndex) => (
                         <StyledTableCell key={colIndex}>
-                            <Typography variant="body2">{org}</Typography>
+                            <Typography variant="body">{org}</Typography>
                         </StyledTableCell>
                         ))}
                     </StyledTableRow>
