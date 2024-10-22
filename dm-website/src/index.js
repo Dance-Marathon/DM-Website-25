@@ -35,7 +35,6 @@ import Alumni from './views/Alumni';
 import Ambassadors from './views/Ambassadors';
 import MiracleMakers from './views/MiracleMakers';
 import Captains from './views/Captains';
-import BlogDetails from './components/BlogDetails';
 import BlogList from './components/BlogList';
 import Events from './views/Events';
 import NotFound from './views/NotFound';
