@@ -70,6 +70,7 @@ export default function Ambassadors() {
     { organization: "Sigma Kappa", names: ["Sydney Ramsey"] },
     { organization: "Sigma Nu", names: ["Sebastian Botero"] },
     { organization: "Sigma Phi Epsilon", names: ["Matthew Anderson", "Luis Carranza"] },
+    { organization: "Tau Kappa Epsilon", names: ["Matthew Carmona"] },
     { organization: "UF Honors Program", names: ["Claudia Elena Johnson Cuellar"] },
     { organization: "UF Innovation Academy", names: ["Seth Haber"] },
     { organization: "UF Pre-Professional Services Organization", names: ["Sophia Magdalein"] },
@@ -191,7 +192,7 @@ export default function Ambassadors() {
                 padding: 2,
                 textAlign: 'center',
               }}>
-              <Typography variant="h6" color="text.secondary">
+              <Typography variant="h6" color="text.secondary" fontWeight={'bold'}>
                 {ambassador.organization}
               </Typography>
               {ambassador.names.map((name, idx) => (
