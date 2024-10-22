@@ -4,9 +4,7 @@ import PropTypes from "prop-types";
 
 // @mui material components
 import Card from "@mui/material/Card";
-import Grid from "@mui/material/Grid";
-import { Box, Typography, Link } from "@mui/material";
-import getLPTheme from "../getLPTheme";
+import { Typography} from "@mui/material";
 import CardContent from '@mui/material/CardContent';
 
 function GetInvolvedCard({ name, description }) {

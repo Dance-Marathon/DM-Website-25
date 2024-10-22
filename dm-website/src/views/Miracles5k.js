@@ -9,8 +9,6 @@ import { Container, Typography, Link } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import FAQ from "../components/FAQ";
-
-import HeroPic from "../assets/images/overalls/SW.jpg";
 import EventsPic from "../assets/images/pagepics/EventsPic.png";
 
 export default function Miracles5k() {

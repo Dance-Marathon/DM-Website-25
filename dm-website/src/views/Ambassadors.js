@@ -4,12 +4,10 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AppAppBar from '../components/AppAppBar';
 import getLPTheme from '../getLPTheme';
 import Footer from '../components/Footer';
-import { Container, Typography, Box, Link, Grid, List, ListItem, ListItemText } from '@mui/material';
+import { Container, Typography, Box, Link, Grid } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import "../App.css";
-
-import HeroPic from "../assets/images/overalls/SW.jpg";
 import AmbassadorGuidelines from "../assets/pdfs/2024 Ambassador Guidelines.pdf"
 import AmbassadorsPic from "../assets/images/Ambassadors.jpg";
 

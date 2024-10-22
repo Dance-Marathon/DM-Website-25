@@ -5,13 +5,7 @@ import Footer from './components/Footer';
 import getLPTheme from './getLPTheme';
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
-import Highlights from './components/Highlights';
-import Hero from './components/Hero';
-import ToggleButton from '@mui/material/ToggleButton';
-import ToggleButtonGroup from '@mui/material/ToggleButtonGroup';
-import AutoAwesomeRoundedIcon from '@mui/icons-material/AutoAwesomeRounded';
 import LandingPage from './views/LandingPage';
-
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {

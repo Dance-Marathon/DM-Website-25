@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
+import React from 'react';
 import CssBaseline from '@mui/material/CssBaseline';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AppAppBar from '../components/AppAppBar';
 import getLPTheme from '../getLPTheme';
 import Footer from '../components/Footer';
-import { Container, Typography, Box, Link } from '@mui/material';
+import { Container, Typography, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
-import HeroPic from "../assets/images/overalls/SW.jpg";
 import FundraisingGuidePic from "../assets/images/Fundraising Guide.jpg";
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';

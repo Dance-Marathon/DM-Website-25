@@ -12,8 +12,6 @@ import { createTheme } from "@mui/material";
 import LazyLoad from 'react-lazyload';
 import PageHero from '../components/PageHero';
 
-import HeroPic from "../assets/images/overalls/CA.jpg"
-
 // Material Kit 2 React examples
 import HorizontalTeamCard from "../components/TeamCard";
 

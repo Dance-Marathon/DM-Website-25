@@ -7,10 +7,7 @@ import Footer from '../components/Footer';
 import { Container, Typography, Box, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
-import AccordionFAQ from '../components/AccordionFAQ';
 import FAQ from '../components/FAQ';
-
-import HeroPic from "../assets/images/overalls/SW.jpg";
 import DonorDrivePic from "../assets/images/pagepics/DonorDrivePic.png";
 
 export default function DonorDrive() {

@@ -9,8 +9,6 @@ import { Container, Typography, Link, Grid } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import SquareCard from '../components/SquareCard';
-
-import HeroPic from "../assets/images/overalls/SW.jpg";
 import EventsPic from "../assets/images/pagepics/EventsPic.png";
 import TTBoxPic from "../assets/images/pagepics/TTBoxPic.png";
 import MEBoxPic from "../assets/images/pagepics/MEBoxPicNew.png";

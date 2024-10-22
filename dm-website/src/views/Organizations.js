@@ -8,8 +8,6 @@ import { Typography, Box, Link, TableContainer, Table, TableBody, TableRow, Tabl
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import { styled } from '@mui/material/styles';
-
-import HeroPic from "../assets/images/overalls/SW.jpg";
 import OrganizationsPic from "../assets/images/Organizations.jpg";
 
 export default function Organizations() {

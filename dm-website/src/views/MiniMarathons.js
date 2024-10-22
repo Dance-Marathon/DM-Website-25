@@ -10,8 +10,6 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import YoutubeVid from '../components/YoutubeVid';
 import "../App.css";
-
-import HeroPic from "../assets/images/overalls/SW.jpg";
 import MiniMarathonsPic from "../assets/images/pagepics/MiniMarathonsPic.jpg";
 
 export default function MiniMarathons() {

@@ -7,8 +7,6 @@ import Footer from '../components/Footer';
 import { Container, Typography, Box, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
-
-import HeroPic from "../assets/images/overalls/SW.jpg";
 import ShandsW9 from "../assets/pdfs/W-9_Shands_HealthCare.pdf"
 import CMNW9 from "../assets/pdfs/CMNW-9.pdf"
 import EmployeeMatchingPic from "../assets/images/Employee Matching.jpg";

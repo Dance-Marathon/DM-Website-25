@@ -70,6 +70,7 @@ function AppAppBar({ mode, toggleColorMode }) {
               backdropFilter: 'blur(24px)',
               maxHeight: 40,
               minWidth: 1152,
+              width: '100%',
               border: '1px solid',
               borderColor: 'divider',
               boxShadow:

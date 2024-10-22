@@ -8,8 +8,6 @@ import { Container, Typography, Box, Accordion, AccordionSummary, AccordionDetai
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
-import HeroPic from "../assets/images/overalls/SW.jpg";
 import CaptainPic from "../assets/images/pagepics/CaptainsPic.jpg";
 
 const teams = [

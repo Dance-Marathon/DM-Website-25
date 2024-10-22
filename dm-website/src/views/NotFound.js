@@ -2,8 +2,6 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
-
-import HeroPic from "../assets/images/overalls/SW.jpg";
 import CursedCam from "../assets/images/cursedcam.jpg";
 
 const NotFound = () => (

@@ -9,7 +9,6 @@ import getLPTheme from '../getLPTheme';
 import Footer from '../components/Footer';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
-import HeroPic from "../assets/images/overalls/SW.jpg"
 
 const blogData = [];
 

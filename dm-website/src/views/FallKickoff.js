@@ -9,8 +9,6 @@ import { Container, Typography } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import YoutubeVid from '../components/YoutubeVid';
-
-import HeroPic from "../assets/images/overalls/SW.jpg";
 import FallKickoffPic from "../assets/images/pagepics/FallKickoffPic.jpg";
 
 export default function FallKickoff() {

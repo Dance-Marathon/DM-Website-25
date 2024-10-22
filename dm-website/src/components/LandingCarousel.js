@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import { Box, Button, Typography } from '@mui/material';
-import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
+import React from 'react';
+import { Box} from '@mui/material';
 
 import Sponsor1 from '../assets/images/sponsors/Sponsor1.png';
 import Sponsor2 from '../assets/images/sponsors/Sponsor2.png';

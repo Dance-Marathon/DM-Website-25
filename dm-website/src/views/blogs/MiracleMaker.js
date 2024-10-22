@@ -2,7 +2,7 @@ import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { Container, Typography, Grid, Link, Divider } from "@mui/material";
+import { Container, Typography, Grid } from "@mui/material";
 import AppAppBar from "../../components/AppAppBar";
 import Footer from "../../components/Footer";
 import ScrollToTop from "../../components/ScrollToTop";
