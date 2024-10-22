@@ -69,7 +69,6 @@ const teams = [
         "Jennifer Gardner",
         "Marina Cheema",
         "Mia Tunon",
-        "Casey Vargas",
         "Rachel Glew",
         "Phillip-Dylan Ndwiga",
         "Alicia Grant",

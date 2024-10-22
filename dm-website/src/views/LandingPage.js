@@ -118,7 +118,7 @@ export default function LandingPage() {
                     Miracle Families
                   </Typography>
                   <Typography variant="body1" color="primary" paragraph>
-                    Take a moment to meet the heart and soul of our movement. We are very fortunate to have 32 Miracle Families who are true inspirations to everyone involved in the organization and are the pinnacle for what we stand for. 
+                    Take a moment to meet the heart and soul of our movement. We are very fortunate to have 31 Miracle Families who are true inspirations to everyone involved in the organization and are the pinnacle for what we stand for. 
                   </Typography>
                 </Box>
                 <Button variant="outlined" color="primary" component={Link} to="/miraclefamilies">Learn More</Button>

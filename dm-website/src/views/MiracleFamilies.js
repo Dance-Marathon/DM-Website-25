@@ -85,7 +85,7 @@ export default function MiracleFamilies() {
               For The Families
             </Typography>
             <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
-              Dance Marathon at the University of Florida is very fortunate to have 32 Miracle Families who are true inspirations to everyone involved in the organization and are the pinnacle for what we stand for. The birthday parties, end-of-chemotherapy parties, and play dates that we have with the children constantly remind us of the true meaning behind “For All The Right Reasons.” The entire team at Dance Marathon is honored and privileged to have these amazing families attend Dance Marathon every year and support our students.
+              Dance Marathon at the University of Florida is very fortunate to have 31 Miracle Families who are true inspirations to everyone involved in the organization and are the pinnacle for what we stand for. The birthday parties, end-of-chemotherapy parties, and play dates that we have with the children constantly remind us of the true meaning behind “For All The Right Reasons.” The entire team at Dance Marathon is honored and privileged to have these amazing families attend Dance Marathon every year and support our students.
             </Typography>
 
             <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>

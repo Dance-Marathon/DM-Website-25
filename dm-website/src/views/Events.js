@@ -88,7 +88,7 @@ export default function Events() {
           >
             {[
               { image: KickoffBoxPic, title: 'Fall Kickoff', hoverText: "Our annual Fall Kickoff enjoyed by all internal and external memebers.", link: '/fallkickoff' },
-              { image: MEBoxPic, title: 'Main Event', hoverText: "A celebration for all members and miracles made throughout the year.", link: '/mainevent' },
+              { image: MEBoxPic, title: 'Main Event', hoverText: "A 26.2-hour celebration for all members and miracles made throughout the year.", link: '/mainevent' },
               { image: MMBox, title: 'Mini-Marathons', hoverText: "High schools showing passion for Dance Marathon before their college years.", link: '/minimarathons' },
               { image: EventsPic, title: 'Miracles in Color 5k', hoverText: "5K benefiting UF Health Shands Children's Hospital, with some color in the mix.", link: '/miracles5k' },
               { image: MWeenBox, title: 'Moralloween', hoverText: "A great way for everyone to get in the Halloween spirit!", link: '/moralloween' },

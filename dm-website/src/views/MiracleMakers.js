@@ -54,7 +54,7 @@ export default function MiracleMakers() {
         In addition to standing, if able, for the duration of the Main Event, Miracle Makers will have year-long activities to take part in such as a Miracle Maker Retreat, Registered Miracle Maker Workshops, bonding with their internal Organization, and more!
       </Typography>
       <Typography variant="body1" color="text.secondary" >
-        Please email Raegan DiRenzo, Dancer Engagement Overall Director, at 
+        Please email Raegan DiRenzo, the Dancer Engagement Overall Director, at 
         <Link href="mailto:rdirenzo@floridadm.org"> rdirenzo@floridadm.org</Link> with any questions!
       </Typography>
 

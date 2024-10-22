@@ -116,7 +116,7 @@ export default function TransformToday() {
             When?
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
-            <p>October 29-30</p>
+            <p>October 29th - 30th</p>
           </Typography>
           <Typography
             variant="h5"
