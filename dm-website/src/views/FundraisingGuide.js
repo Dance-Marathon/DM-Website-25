@@ -27,14 +27,6 @@ export default function FundraisingGuide() {
     });
   };
 
-  const [visibleSection, setVisibleSection] = useState(null); // Track which item is visible
-  const [selectedSection, setSelectedSection] = useState(null); // Track selected section
-
-  const handleToggle = (sectionId) => {
-    setVisibleSection((prev) => (prev === sectionId ? null : sectionId)); // Toggle visibility
-    setSelectedSection(prev => (prev === sectionId ? null : sectionId)); // Toggle selected section
-  };
-
   return (
     <ThemeProvider theme={LPtheme}>
       <ScrollToTop />
