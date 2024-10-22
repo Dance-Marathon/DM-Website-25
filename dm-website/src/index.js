@@ -82,7 +82,7 @@ root.render(
         <Route path="/alumni" element={<Alumni />} />
         <Route path="/ambassadors" element={<Ambassadors />} />
         <Route path="/miraclemakers" element={<MiracleMakers />} />
-        <Route path="/captains" element={<Captains />} />
+        <Route path="/captainteams" element={<Captains />} />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/beyondthismoment" element={<BeyondThisMoment />} />
         <Route path="/blog/beyondourselves" element={<BeyondOurselves />} />

@@ -115,7 +115,7 @@ export default function GetInvolved() {
             {[
               { image: HeroPic, title: 'Alumni', hoverText: "Our Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate.", link: '/alumni' },
               { image: AmbassadorsMiniPic, title: 'Ambassadors', hoverText: "Organization Ambassadors serve as a liaison between Dance Marathon and their respective organization.", link: '/ambassadors' },
-              { image: CaptainsBox, title: 'Captain Teams', hoverText: "Members of our Emerging Leaders Program work alongside the Recruitment Team, providing support to Captain Teams and brainstorming new ideas to ensure a successful future for our organization.", link: '/captains' },
+              { image: CaptainsBox, title: 'Captain Teams', hoverText: "Members of our Emerging Leaders Program work alongside the Recruitment Team, providing support to Captain Teams and brainstorming new ideas to ensure a successful future for our organization.", link: '/captainteams' },
               { image: MMBox, title: 'Miracle Makers', hoverText: "Dancers stand on their feet if able for the duration of our Main Event in April to raise funds and awareness for UF Health Shands Children’s Hospital.", link: '/miraclemakers' },
               { image: ELPBox, title: 'Emerging Leaders', hoverText: "Members of our Emerging Leaders Program work alongside the Recruitment Team, providing support to Captain Teams and brainstorming new ideas to ensure a successful future for our organization.", link: '/emergingleaders' },
               { image: OrgBox, title: 'Organizations', hoverText: "A variety of University of Florida affiliated Organizations participate in Dance Marathon every year!", link: '/organizations' },

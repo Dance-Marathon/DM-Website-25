@@ -356,7 +356,7 @@ export default function Captains() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={CaptainPic} title='Captains' />
+      <PageHero imageUrl={CaptainPic} title='Captain Teams' />
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

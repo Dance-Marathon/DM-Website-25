@@ -120,7 +120,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   { label: "Alumni", url: "/alumni" },
                   { label: "Applications", url: "/applications" },
                   { label: "Ambassadors", url: "/ambassadors" },
-                  { label: "Captains", url: "/captains" },
+                  { label: "Captain Teams", url: "/captainteams" },
                   { label: "Miracle Makers", url: "/miraclemakers" },
                   { label: "Emerging Leaders", url: "/emergingleaders" },
                   { label: "Organizations", url: "/organizations" }
