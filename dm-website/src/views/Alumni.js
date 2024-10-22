@@ -68,7 +68,7 @@ export default function Alumni() {
 
         <Box mt={0}>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Join or support the <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.team&teamID=70397" target="_blank">Dance Marathon Alumni fundraising team</Link>.
+            Join or support the <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.team&teamID=70397" target="_blank">Dance Marathon Alumni Fundraising Team</Link>.
           </Typography>
           <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
           If you have any questions, please feel free to email them to {' '}

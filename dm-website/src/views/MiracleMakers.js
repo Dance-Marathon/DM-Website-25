@@ -60,7 +60,7 @@ export default function MiracleMakers() {
         Register to be a Miracle Maker
       </Typography>
       <Typography variant="body1" color="text.secondary">
-        Follow the link <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.event&eventID=6292" target="_blank">here</Link> to register, and a Dance Engagement Captain will reach out to you with further details.
+        Follow the link <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.event&eventID=6292" target="_blank"><strong>here</strong></Link> to register, and a Dance Engagement Captain will reach out to you with further details.
       </Typography>
       <Typography variant="body1" color="text.secondary" >
         To be a Miracle Maker, participants must be enrolled as students at the University of Florida during the spring semester. This includes students who are enrolled but may have an internship in place of classes.
