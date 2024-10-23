@@ -2,12 +2,14 @@ import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { Container, Typography, Grid } from "@mui/material";
+import { Container, Typography, Grid, Button } from "@mui/material";
 import AppAppBar from "../../components/AppAppBar";
 import Footer from "../../components/Footer";
 import ScrollToTop from "../../components/ScrollToTop";
 import PageHero from "../../components/PageHero";
 import getLPTheme from "../../getLPTheme";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 import Image1 from "../../assets/images/blogpics/miraclemakerhero.jpeg";
 import Image2 from "../../assets/images/blogpics/miraclemakerblog1.jpeg";
@@ -122,8 +124,21 @@ export default function BeyondThisMoment() {
             Public Relations, Captain
           </Typography>
         </Box>
+        <Box sx={{ display: "flex", justifyContent: "left", mt: 4 }}>
+          <Button
+            variant="outlined"
+            startIcon={<ArrowBackIcon />}
+            onClick={() => window.location.href = "/blog/childhealthday"}
+            sx={{
+              color: "primary.main",
+              borderColor: "white",
+              "&:hover": { borderColor: "primary.main", color: "primary.main" },
+            }}
+          >
+            Previous Blog
+          </Button>
+        </Box>
       </Container>
-
       <Footer />
     </ThemeProvider>
   );

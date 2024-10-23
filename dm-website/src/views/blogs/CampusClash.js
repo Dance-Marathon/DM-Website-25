@@ -2,12 +2,14 @@ import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
-import { Container, Typography, Grid} from "@mui/material";
+import { Container, Typography, Grid, Button } from "@mui/material";
 import AppAppBar from "../../components/AppAppBar";
 import Footer from "../../components/Footer";
 import ScrollToTop from "../../components/ScrollToTop";
 import PageHero from "../../components/PageHero";
 import getLPTheme from "../../getLPTheme";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 
 import Image1 from "../../assets/images/blogpics/CampusClashPic1.jpeg";
 import Image2 from "../../assets/images/blogpics/CampusClashSmallPic.jpeg";
@@ -133,8 +135,43 @@ export default function BeyondThisMoment() {
             Public Relations, Assistant Director of External Communication
           </Typography>
         </Box>
-      </Container>
+        <Grid
+            container
+            alignItems="center"
+            justifyContent="space-between"
+            sx={{ mt: 4 }}
+          >
+            <Grid item>
+              <Button
+                variant="outlined"
+                startIcon={<ArrowBackIcon />}
+                onClick={() => window.location.href = "/blog/findingyourdmfamily"}
+                sx={{
+                  color: "primary.main",
+                  borderColor: "white",
+                  "&:hover": { borderColor: "primary.main", color: "primary.main" },
+                }}
+              >
+                Previous Blog
+              </Button>
+            </Grid>
 
+            <Grid item>
+              <Button
+                variant="outlined"
+                endIcon={<ArrowForwardIcon />}
+                onClick={() => window.location.href = "/blog/childhealthday"}
+                sx={{
+                  color: "primary.main",
+                  borderColor: "white",
+                  "&:hover": { borderColor: "primary.main", color: "primary.main" },
+                }}
+              >
+                Next Blog
+              </Button>
+            </Grid>
+          </Grid>
+      </Container>
       <Footer />
     </ThemeProvider>
   );
