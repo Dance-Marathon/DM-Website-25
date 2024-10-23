@@ -157,7 +157,7 @@ export default function GetInvolved() {
                 image: ELPBox,
                 title: "Emerging Leaders",
                 hoverText:
-                  "Members of our Emerging Leaders Program work alongside the Recruitment Team, providing support to Captain Teams and brainstorming new ideas to ensure a successful future for our organization.",
+                  "Emerging Leaders Program members assist the Recruitment Team, support Captain Teams, and brainstorm ideas for our organization's future success.",
                 link: "/emergingleaders",
               },
               {

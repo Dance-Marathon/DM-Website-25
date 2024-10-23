@@ -77,10 +77,12 @@ const SquareCard = ({ image, title, hoverText, link, theme }) => {
         <Typography
           variant="h6"
           sx={{
-            height: "63%",
+            height: "65%",
             overflow: "auto",
             textOverflow: "ellipsis",
-
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
           }}
         >
           {hoverText}
