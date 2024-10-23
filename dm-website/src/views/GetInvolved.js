@@ -150,7 +150,7 @@ export default function GetInvolved() {
                 image: MMBox,
                 title: "Miracle Makers",
                 hoverText:
-                  "Dancers stand on their feet if able for the duration of our Main Event in April to raise funds and awareness for UF Health Shands Children’s Hospital.",
+                  "Miracle Makers breathe life into all of our events, fundraising pushes, and ultimately the Main Event",
                 link: "/miraclemakers",
               },
               {
