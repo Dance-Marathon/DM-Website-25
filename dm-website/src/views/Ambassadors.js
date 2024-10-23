@@ -110,7 +110,7 @@ export default function Ambassadors() {
       <Typography variant="h5" gutterBottom sx={{color: '#233563', pb: "0", mb: "0", mt: 2}}>
         Responsibilities
       </Typography>
-          <Typography variant="body1" component="span" color='#e2883c'  marginTop={-2}>
+          <Typography variant="body1" component="span" color='#e2883c' marginBottom={-2}>
           <b>Yearlong:</b>
           </Typography>
         <ul className="custom-bullet-points" style={{ margin: '0' }}>
@@ -145,7 +145,7 @@ export default function Ambassadors() {
             </Typography>
           </li>
         </ul>
-          <Typography variant="body1" component="span" color='#e2883c'>
+          <Typography variant="body1" component="span" color='#e2883c' marginBottom={-2}>
             <b>During the Main Event:</b>
           </Typography>
           <ul className="custom-bullet-points" style={{ margin: '0' }}>
