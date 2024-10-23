@@ -6,7 +6,7 @@ const FAQ = ({ question, answer }) => {
   return (
     <Accordion>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-        <Typography color="text.secondary">{question}</Typography>
+        <Typography color="text.secondary" fontWeight={'bold'}>{question}</Typography>
       </AccordionSummary>
       <AccordionDetails>
         <Typography color="text.secondary">{answer}</Typography>
