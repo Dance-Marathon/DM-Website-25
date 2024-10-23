@@ -372,11 +372,76 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                   variant="h5"
                   component="h2"
                   gutterBottom
-                  style={{ color: "#233563", marginTop: "40px", marginBottom: "1px" }}
+                  style={{ color: "#233563", marginTop: "40px" }}
                 >
-                  Positions
+                  Levels of Involvement
                 </Typography>
                 <ul className="custom-bullet-points">
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Managers
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Executive Team (Overall Directors)
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Assistant Directors
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Captains
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Emerging Leaders
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Ambassadors
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Miracle Makers
+                    </Typography>
+                  </li><li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Dance Marathon Alumni (DMA)
+                    </Typography>
+                  </li>
+                </ul>
+                {/* <ul className="custom-bullet-points">
                   <li>
                     <Typography
                       variant="body1"
@@ -751,18 +816,10 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                       variant="body1"
                       sx={{ fontWeight: "bold", color: "#233563" }}
                     >
-                      Fundraisers
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      variant="body1"
-                      sx={{ fontWeight: "bold", color: "#233563" }}
-                    >
                       Dance Marathon Alumni (DMA)
                     </Typography>
                   </li>
-                </ul>
+                </ul> */}
               </Grid>
               <Grid item xs={12} sm={6}>
                 <TableContainer component={Paper}>
