@@ -97,17 +97,24 @@ export default function MiracleMakers() {
           question="How do I register to be a Miracle Maker?" 
           answer="Scroll down to 'Register to be a Miracle Maker' for instructions."
         /> */}
-        <FAQ 
-          question="How do I register to fundraise?" 
-          answer="See the Fundraising for instructions."
+        <FAQ
+          question="How do I register to fundraise?"
+          answer={
+            <>
+              See the Fundraising tab for instructions, or click{' '}
+              <Link href="/fundraising" color="primary">
+                here
+              </Link>.
+            </>
+          }
         />
-        <FAQ 
+        {/* <FAQ 
           question="Can I still be a Miracle Maker if I am the Ambassador for my Organization’s team?" 
           answer="Yes!"
-        />
+        /> */}
         <FAQ 
           question="Who can come to the Event?" 
-          answer="Anyone!"
+          answer="Anyone! Guests are allowed to stop in by at various time slots throughout the Main Event. This includes opportunities to watch the Linedance, hear from Miracle Families, and enjoy the entertainment."
         />
         {/* <FAQ 
           question="What happens when someone registers to be a Miracle Maker and isn’t given a spot?" 
