@@ -51,13 +51,13 @@ export default function Organizations() {
     ['Alpha Epsilon Pi', 'Delta Phi Epsilon', 'Kappa Phi Epsilon', 'Sigma Phi Epsilon'],
     ['Alpha Gamma Rho', 'Delta Sigma Phi', 'Kappa Sigma', 'Alpha Omicron Pi'],
     ['Delta Tau Delta', 'Lambda Chi Alpha', 'Tau Epsilon Phi', 'Alpha Phi'],
-    ['Delta Zeta', 'Sigma Alpha Episolon', 'Tau Kappa Epsilon', 'Alpha Tau Omega'],
+    ['Delta Zeta', 'Sigma Alpha Epsilon', 'Tau Kappa Epsilon', 'Alpha Tau Omega'],
     ['Florida Cicerones', 'Phi Delta Theta', 'The Gator Aides', 'Beta Theta Pi'],
     ['Footprints: Buddy and Support Program', 'Phi Eta Sigma Honor Society', 'Gamma Eta', 'Phi Kappa Tau'],
-    ['Theta Chi', 'UF Innovation', 'Gamma Phi Beta', 'Phi Mu'],
-    ['Pi Beta Phi', 'UF Honors Program', 'Chi Omega', 'Hispanic Student Association'],
-    ['Pi Kappa Alpha', 'UF Pre-Professional Services Organization', 'Chi Phi', 'Innovation Academy'],
-    ['Kappa Alpha Order', 'Zeta Beta Tau', 'Zeta Tau Alpha', 'William and Grace Dial Center Ambassador Leadership Program']
+    ['UF Innovation', 'Gamma Phi Beta', 'Phi Mu', 'Pi Beta Phi'],
+    ['UF Honors Program', 'Chi Omega', 'Hispanic Student Association', 'Pi Kappa Alpha'],
+    ['UF Pre-Professional Services Organization', 'Chi Phi', 'Innovation Academy', 'Kappa Alpha Order'],
+    ['Zeta Beta Tau', 'Zeta Tau Alpha', 'William and Grace Dial Center Ambassador Leadership Program']
   ];
 
   return (
