@@ -228,6 +228,14 @@ function AppAppBar({ mode, toggleColorMode }) {
                 }}
               >
                 <IconButton
+                  color="text.primary"
+                  href="https://www.instagram.com/dmatuf/?hl=en"
+                  aria-label="Instagram"
+                  sx={{ alignSelf: 'center', color: 'white' }}
+                >
+                  <InstagramIcon />
+                </IconButton>
+                <IconButton
                   href="https://www.facebook.com/floridaDM/"
                   aria-label="Facebook"
                   sx={{ alignSelf: 'center', color: 'white' }}
@@ -241,14 +249,6 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{ alignSelf: 'center', color: 'white' }}
                 >
                   <TwitterIcon />
-                </IconButton>
-                <IconButton
-                  color="text.primary"
-                  href="https://www.instagram.com/dmatuf/?hl=en"
-                  aria-label="Instagram"
-                  sx={{ alignSelf: 'center', color: 'white' }}
-                >
-                  <InstagramIcon />
                 </IconButton>
               </Stack>
             </Box>
