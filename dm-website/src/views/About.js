@@ -69,9 +69,9 @@ export default function About() {
             sx={{ maxWidth: 1200, margin: '0 auto' }}
           >
             {[
-              { image: OurStoryBox, title: 'Our Story', hoverText: "DM at UF is one of the five founding Dance Marathon programs in the nation. Since our start, we have raised more than $32 million for the Miracle Families UF Health Shands Children’s Hospital, our local Children’s Miracle Network hospital.", link: '/ourstory' },
-              { image: CMNBox, title: 'CMN & UF Health', hoverText: "Ranked one of the top 50 pediatric hospitals in the nation in seven categories, UF Health Shands Children’s Hospital and Children’s Miracle Network have created one of the greatest facilities of care for children and young adults.", link: '/cmnhospitals' },
-              { image: MFBox, title: 'Miracle Families', hoverText: "Take a moment to meet the heart and soul of our movement. We are very fortunate to have 31 Miracle Families who are true inspirations to everyone involved in the organization and are the pinnacle for what we stand for.", link: '/miraclefamilies' },
+              { image: OurStoryBox, title: 'Our Story', hoverText: "As one of the five founding Dance Marathon programs, DM at UF has raised over $32 million for Miracle Families at UF Health Shands Children’s Hospital", link: '/ourstory' },
+              { image: CMNBox, title: 'CMN & UF Health', hoverText: "Ranked among the nation’s top 50 pediatric hospitals, UF Health Shands and Children’s Miracle Network offer exceptional care for children and young adults", link: '/cmnhospitals' },
+              { image: MFBox, title: 'Miracle Families', hoverText: "Meet the heart of our movement: 31 inspiring Miracle Families who are true inspirations to everyone involved and embody everything we stand for", link: '/miraclefamilies' },
             ].map((card, index) => (
               <Grid item xs={12} sm={6} md={4} key={index}>
                 <SquareCard {...card} />
