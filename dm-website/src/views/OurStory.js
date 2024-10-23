@@ -32,6 +32,7 @@ export default function OurStory() {
     fontSize: 14,
     borderBottom: "1px solid rgba(224, 224, 224, 1)",
     color: "#000000",
+    borderRight: '2px solid rgba(224, 224, 224, 1)'
   }));
 
   const StyledTableRow = styled(TableRow)(({ theme }) => ({
@@ -42,7 +43,7 @@ export default function OurStory() {
       backgroundColor: "#ffffff",
     },
     "&:last-child td, &:last-child th": {
-      border: 0,
+      borderBottom: 0,
     },
   }));
 
@@ -165,7 +166,7 @@ export default function OurStory() {
                   variant="h5"
                   component="h2"
                   gutterBottom
-                  style={{ color: "#233563", marginTop: "40px", marginBottom: "5px" }}
+                  style={{ color: "#233563", marginTop: "40px" }}
                 >
                   Participants
                 </Typography>
@@ -244,7 +245,7 @@ export default function OurStory() {
                   variant="h5"
                   component="h2"
                   gutterBottom
-                  style={{ color: "#233563", marginTop: "40px", marginBottom: "5px" }}
+                  style={{ color: "#233563", marginTop: "40px" }}
                 >
                   Fundraising
                 </Typography>
@@ -822,36 +823,52 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                 </ul> */}
               </Grid>
               <Grid item xs={12} sm={6}>
-                <TableContainer component={Paper}>
-                  <Table sx={{ minWidth: 650 }} aria-label="simple table">
-                    <TableHead>
-                      <TableRow>
-                        <StyledTableHeadCell>Year</StyledTableHeadCell>
-                        <StyledTableHeadCell>Total Raised</StyledTableHeadCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      {rows.map((row) => (
-                        <StyledTableRow
-                          key={row.name}
-                          sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
-                        >
-                          <StyledTableCell component="th" scope="row">
-                            {row.year}
-                          </StyledTableCell>
-                          <StyledTableCell>{row.total}</StyledTableCell>
-                        </StyledTableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-                {/* <Box
-      sx={{
-        width: { sm: "100%", md: "100%" },
-        textAlign: { sm: "left", md: "left" },
-      }}
-    > */}
-            </Grid>
+  <TableContainer 
+    component={Paper} 
+    sx={{ 
+      width: '100%', 
+      overflowX: 'auto' 
+    }}
+  >
+    <Table sx={{ width: '100%', borderCollapse: 'collapse' }} aria-label="simple table">
+      <TableHead>
+        <TableRow>
+          <StyledTableHeadCell 
+            sx={{ 
+              width: '50%', 
+              borderRight: '2px solid rgba(224, 224, 224, 1)'  // Vertical divider
+            }}
+          >
+            Year
+          </StyledTableHeadCell>
+          <StyledTableHeadCell sx={{ width: '50%' }}>
+            Total Raised
+          </StyledTableHeadCell>
+        </TableRow>
+      </TableHead>
+      <TableBody>
+        {rows.map((row) => (
+          <StyledTableRow key={row.year}>
+            <StyledTableCell 
+              component="th" 
+              scope="row" 
+              sx={{ 
+                width: '50%'
+              }}
+            >
+              {row.year}
+            </StyledTableCell>
+            <StyledTableCell sx={{ width: '50%' }}>
+              {row.total}
+            </StyledTableCell>
+          </StyledTableRow>
+        ))}
+      </TableBody>
+    </Table>
+  </TableContainer>
+</Grid>
+
+
           </Grid>
         </Box>
       </Box>
