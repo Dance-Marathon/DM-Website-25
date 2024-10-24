@@ -3,14 +3,14 @@ import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 const Container = styled(Box)(({ theme }) => ({
-  position: "relative",
-  width: "300px",
-  height: "300px",
-  overflow: "hidden",
-  borderRadius: "15px",
-  boxShadow: "2px 2px 2px rgba(0, 0, 0, 0.5)",
-  cursor: "pointer",
-  "&:hover .overlay": {
+  position: 'relative',
+  width: '300px',
+  height: '300px',
+  overflow: 'hidden',
+  borderRadius: '50px',
+  boxShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
+  cursor: 'pointer',
+  '&:hover .overlay': {
     opacity: 1,
   },
 }));
@@ -52,7 +52,7 @@ const SquareCard = ({ image, title, hoverText, link, theme }) => {
         left="0px"
         width="100%"
         height="20%"
-        backgroundColor="primary.main"
+        backgroundColor="rgba(35, 53, 99, 0.75)"
         padding="5px 10px"
         display="flex"
         justifyContent="center"
@@ -62,12 +62,13 @@ const SquareCard = ({ image, title, hoverText, link, theme }) => {
           variant="h4"
           color="white"
           fontSize={28}
+          fontWeight={500}
           sx={{
-            whiteSpace: "nowrap",
-            overflow: "hidden",
-            textOverflow: "ellipsis",
-            display: "block",
-            textShadow: "2px 2px 2px rgba(0, 0, 0, 0.5)",
+            whiteSpace: 'nowrap',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            display: 'block',
+            //textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
           }}
         >
           {title}

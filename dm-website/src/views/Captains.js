@@ -385,7 +385,11 @@ export default function Captains() {
               {team.responsibilities}
             </Typography>
             <Typography variant="body2" color="text.secondary" marginBottom={1}>
-            <span style={{ color: '#233563', fontWeight: 'bold' }}>Overall Director:</span> {team.leadership.overallDirector}
+            <span style={{ color: '#233563', fontWeight: 'bold' }}>Overall Director: </span>
+              <Chip 
+                label={`${team.leadership.overallDirector}`} 
+                style={{ variant:"outlined" }} 
+              />
             </Typography>
             <Typography variant="body2" color="text.secondary" gutterBottom>
             <span style={{ color: '#233563', fontWeight: 'bold' }}>Assistant Directors:</span>

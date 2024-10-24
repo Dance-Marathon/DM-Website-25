@@ -67,47 +67,48 @@ export default function GetInvolved() {
           </Typography>
         </Box>
 
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            maxWidth: "100%",
-          }}
-        >
-          <Button
-            component={Link}
-            to="/applications"
-            sx={{
-              backgroundColor: (theme) => theme.palette.primary.main,
-              color: (theme) => theme.palette.primary.contrastText,
-              transition: "background-color 0.3s ease",
-              width: "100%",
-              height: "100px",
-              "&:hover": {
-                backgroundColor: (theme) => theme.palette.secondary.main,
-              },
-            }}
-          >
-            <Typography
-              variant="h4"
-              fontSize={40}
-              paddingTop="10px"
-              paddingBottom="10px"
-              sx={{
-                whiteSpace: "nowrap",
-                overflow: "hidden",
-                textOverflow: "ellipsis",
-                display: "block",
-                textShadow: "2px 2px 2px rgba(0, 0, 0, 0.5)",
-                color: "white", // Ensure the text is white
-              }}
-            >
-              Apply Now!
-            </Typography>
-          </Button>
-        </Box>
-
+  <Box
+    sx={{
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      maxWidth: "100%",
+    }}
+  >
+  <Button
+    component={Link}
+    to="/applications"
+    sx={{
+      backgroundColor: "rgba(35, 53, 99, 0.75)",
+      color: (theme) => theme.palette.primary.contrastText,
+      borderRadius: '50px',
+      transition: 'background-color 0.3s ease',
+      width: '100%',
+      height: '100px',
+      '&:hover': {
+        backgroundColor: (theme) => theme.palette.secondary.main,
+      },
+    }}
+  >
+    <Typography
+      variant="h4"
+      fontSize={40}
+      paddingTop="10px"
+      paddingBottom="10px"
+      sx={{
+        whiteSpace: 'nowrap',
+        overflow: 'hidden',
+        textOverflow: 'ellipsis',
+        display: 'block',
+        //textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
+        color: 'white', // Ensure the text is white
+      }}
+    >
+      Apply Now!
+    </Typography>
+  </Button>
+  </Box>
+      
         {/* Centered Grid for SquareCards */}
         <Box
           sx={{
