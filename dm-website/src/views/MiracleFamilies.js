@@ -41,7 +41,7 @@ import SamuelN from "../assets/images/miraclechildren/Samuel.jpeg";
 import SuzanneL from "../assets/images/miraclechildren/Suzanne.JPG";
 import WyattT from "../assets/images/miraclechildren/Wyatt.JPG";
 
-import MiracleFamiliesPic from "../assets/images/Miracle Families.jpg";
+import MiracleFamiliesPic from "../assets/images/pagepics/Miracle Families.jpg";
 
 export default function MiracleFamilies() {
   const [mode, setMode] = React.useState(() => {

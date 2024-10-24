@@ -13,8 +13,8 @@ import { Link } from "react-router-dom";
 
 import HeroPic from "../assets/images/overalls/CA.jpg";
 import GetInvolvedPic from "../assets/images/pagepics/GetInvolvedPic.jpg";
-import AmbassadorsMiniPic from "../assets/images/pagepics/AmbassadorsMiniPic.jpg";
-import ELPBox from "../assets/images/ELPBox.jpg";
+import AmbassadorsMiniPic from "../assets/images/miniboxpics/AmbassadorsMiniPic.jpg";
+import ELPBox from "../assets/images/miniboxpics/ELPBox.jpg";
 import CaptainsBox from "../assets/images/miniboxpics/CaptainTeamsBox.JPG";
 import MMBox from "../assets/images/miniboxpics/MiracleMakerBox.JPG";
 import OrgBox from "../assets/images/miniboxpics/OrgBox.JPG";

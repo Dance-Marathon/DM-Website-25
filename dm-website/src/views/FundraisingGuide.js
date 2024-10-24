@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import { Container, Typography, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
-import FundraisingGuidePic from "../assets/images/Fundraising Guide.jpg";
+import FundraisingGuidePic from "../assets/images/pagepics/Fundraising Guide.jpg";
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 

@@ -9,7 +9,7 @@ import { Container, Typography, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 
-import ApplicationsPic from "../assets/images/Applications.jpg";
+import ApplicationsPic from "../assets/images/pagepics/Applications.jpg";
 
 export default function Applications() {
     const [mode, setMode] = React.useState(() => {

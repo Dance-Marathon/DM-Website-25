@@ -40,7 +40,7 @@ import Footer from '../components/Footer';
 
 import ScrollToTop from "../components/ScrollToTop";
 
-import ContactPic from "../assets/images/Contact Us.jpg";
+import ContactPic from "../assets/images/pagepics/Contact Us.jpg";
 
 function Contact() {
   const [mode, setMode] = React.useState(() => {

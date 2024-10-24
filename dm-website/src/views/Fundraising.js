@@ -11,8 +11,8 @@ import PageHero from '../components/PageHero';
 import SquareCardSmall from '../components/SquareCardSmall';
 
 import HowToGuide from "../assets/pdfs/how-to-guide.pdf"
-import RegisterToFundraise from "../assets/images/RegisterToFundraise.png";
-import FundraisingGuideBox from "../assets/images/pagepics/FundraisingGuideBox.png";
+import RegisterToFundraise from "../assets/images/pagepics/RegisterToFundraise.png";
+import FundraisingGuideBox from "../assets/images/miniboxpics/FundraisingGuideBox.png";
 import DDBox from "../assets/images/miniboxpics/DonorDriveBox.JPG";
 import EmployeeBox from "../assets/images/miniboxpics/EmployeeMatchingBox.JPG";
 import PartnersBox from "../assets/images/miniboxpics/PartnersBox.JPG";

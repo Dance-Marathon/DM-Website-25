@@ -8,7 +8,7 @@ import { Typography, Box, Link, TableContainer, Table, TableBody, TableRow, Tabl
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import { styled } from '@mui/material/styles';
-import OrganizationsPic from "../assets/images/Organizations.jpg";
+import OrganizationsPic from "../assets/images/pagepics/Organizations.jpg";
 
 export default function Organizations() {
   const [mode, setMode] = React.useState(() => {
