@@ -60,8 +60,7 @@ export default function GetInvolved() {
           <Typography variant="body1" color="text.secondary">
             Take a look at all of the different ways you can get involved with
             Dance Marathon at UF. Whether you are interested in becoming a
-            Captain, Dancer, Emerging Leader, Ambassador, Fundraiser, or member
-            of Kirstyn’s Krew, this page is your path to getting involved! There
+            Captain, Miracle Maker, Emerging Leader, Ambassador, Fundraiser, this page is your path to getting involved! There
             are so many ways to give back through DM at UF, and we would love
             for you to join our Dance Marathon family and help us make miracles.
           </Typography>
@@ -79,14 +78,14 @@ export default function GetInvolved() {
     component={Link}
     to="/applications"
     sx={{
-      backgroundColor: "rgba(35, 53, 99, 0.75)",
+      backgroundColor: "rgba(35, 53, 99, 0.85)",
       color: (theme) => theme.palette.primary.contrastText,
       borderRadius: '50px',
       transition: 'background-color 0.3s ease',
       width: '100%',
-      height: '100px',
+      height: '80px',
       '&:hover': {
-        backgroundColor: (theme) => theme.palette.secondary.main,
+        backgroundColor: "rgba(226, 136, 60, 0.85)",
       },
     }}
   >

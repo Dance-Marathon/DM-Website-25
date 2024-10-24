@@ -52,7 +52,7 @@ const SquareCardSmall = ({ image, title, hoverText, link, theme }) => {
         left="0px"
         width="100%"
         height="20%"
-        backgroundColor="primary.main"
+        backgroundColor="rgba(35, 53, 99, 0.75)"
         padding="5px 10px"
         display="flex"
         justifyContent="center"
@@ -62,12 +62,13 @@ const SquareCardSmall = ({ image, title, hoverText, link, theme }) => {
           variant="h4"
           color="white"
           fontSize={22}
+          fontWeight={500}
           sx={{
             whiteSpace: 'nowrap',
             overflow: 'hidden',
             textOverflow: 'ellipsis',
             display: 'block',
-            textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
+            //textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
           }}
         >
           {title}
