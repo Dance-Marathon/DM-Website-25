@@ -46,7 +46,7 @@ export default function MiracleMakers() {
         Dance Marathon at the University of Florida is an annual event benefiting the patients of UF Health Shands Children's Hospital in Gainesville, Florida. Each year, students stay awake and pledge to stay to raise money and awareness for Children's Miracle Network Hospitals.
       </Typography>
       <Typography variant="body1" color="text.secondary" >
-        As a Miracle Maker, you will experience one of UF’s most adored traditions. Throughout the duration of the Main Event, you will learn our Linedance, enjoy live entertainment, eat delicious food from our local Sponsors, and hear inspiring stories from our Miracle Families.
+        As a <span style={{color: '#233563', fontWeight: 'bold'}}>Miracle Maker</span>, you will experience one of UF’s most adored traditions. Throughout the duration of the Main Event, you will learn our Linedance, enjoy live entertainment, eat delicious food from our local Sponsors, and hear inspiring stories from our Miracle Families.
       </Typography>
       <Typography variant="body1" color="text.secondary" >
         In addition to standing, if able, for the duration of the Main Event, Miracle Makers will have year-long activities to take part in such as a Miracle Maker Retreat, Registered Miracle Maker Workshops, bonding with their internal Organization, and more!
