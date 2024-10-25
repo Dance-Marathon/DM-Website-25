@@ -63,7 +63,7 @@ export default function TransformToday() {
         >
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
-              Transform Today is our largest fall fundraising effort which lasts
+            <span style={{color: '#233563', fontWeight: 'bold'}}>Transform Today</span> is our largest fall fundraising effort which lasts
               26.2 hours and will take place during the fall this year! Our
               movement spread throughout our organization, campus and community
               as our different teams' colored polos flooded the University of

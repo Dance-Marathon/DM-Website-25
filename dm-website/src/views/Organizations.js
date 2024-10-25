@@ -83,7 +83,7 @@ export default function Organizations() {
           }}
         >
           <Typography variant="body1" gutterBottom sx={{ marginBottom: 2 }} color="text.secondary">
-                A variety of University of Florida affiliated Organizations participate in Dance Marathon every year!
+                A variety of University of Florida affiliated <span style={{color: '#233563', fontWeight: 'bold'}}>Organizations</span> participate in Dance Marathon every year!
             </Typography>
             <Typography variant="body1" gutterBottom sx={{ marginBottom: 2 }} color="text.secondary">
                 Organizations are the backbone of our philanthropy, and we are always looking for more people to join our family!

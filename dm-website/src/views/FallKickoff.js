@@ -50,7 +50,7 @@ export default function FallKickoff() {
           }}
         >
           <Typography color="text.secondary" sx={{ marginBottom: 6 }}>
-            <p>DM at UF hosted its first annual Kickoff Event in 2021! We are excited to continue this event for many years to come. It is the first event of the year for all of our internal and external members, Miracle Families, and more to enjoy. The event is held at Flavet Field including music, fun games, Miracle Stories, food, merchandise, and more!</p>
+            <p>DM at UF hosted its first annual <span style={{color: '#233563', fontWeight: 'bold'}}>Kickoff Event</span> in 2021! We are excited to continue this event for many years to come. It is the first event of the year for all of our internal and external members, Miracle Families, and more to enjoy. The event is held at Flavet Field including music, fun games, Miracle Stories, food, merchandise, and more!</p>
           </Typography>
           <YoutubeVid videoId="fTElQSBr9bU"/>
         </Box>

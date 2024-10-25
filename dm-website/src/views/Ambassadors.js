@@ -97,7 +97,7 @@ export default function Ambassadors() {
         }}  
       >
       <Typography variant="body1" color="text.secondary">
-        Organization Ambassadors serve as a liaison between Dance Marathon and their respective organization.
+      <span style={{color: '#233563', fontWeight: 'bold'}}>Organization Ambassadors</span> serve as a liaison between Dance Marathon and their respective organization.
       </Typography>
       <Typography variant="body1" color="text.secondary" marginTop={0}>
         Organization Ambassadors will attend weekly meetings to receive information to relay to their Organizations and to work on professional and personal development. These meetings will allow Ambassadors to think creatively and brainstorm together to create new ways to incentivize and engage their members in Dance Marathon. Each Organization will be assigned an Organization Relations Captain to work with on Organization involvement and fundraising throughout the year.
