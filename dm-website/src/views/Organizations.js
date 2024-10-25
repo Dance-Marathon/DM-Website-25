@@ -23,7 +23,9 @@ export default function Organizations() {
     });
   };
 
+  // Updated organizations array
   const organizations = [
+    // Organizations with shorter names
     'Alpha Chi Omega', 'Delta Delta Delta', 'Kappa Alpha Theta', 'Sigma Chi',
     'Alpha Delta Pi', 'Delta Gamma', 'Kappa Delta', 'Sigma Kappa',
     'Alpha Epsilon Phi', 'Delta Nu Zeta', 'Kappa Kappa Gamma', 'Sigma Nu',
@@ -32,11 +34,17 @@ export default function Organizations() {
     'Delta Tau Delta', 'Lambda Chi Alpha', 'Tau Epsilon Phi', 'Alpha Phi',
     'Delta Zeta', 'Sigma Alpha Epsilon', 'Tau Kappa Epsilon', 'Alpha Tau Omega',
     'Florida Cicerones', 'Phi Delta Theta', 'The Gator Aides', 'Beta Theta Pi',
-    'Footprints: Buddy and Support Program', 'Phi Eta Sigma Honor Society', 'Gamma Eta', 'Phi Kappa Tau',
-    'UF Innovation', 'Gamma Phi Beta', 'Phi Mu', 'Pi Beta Phi',
-    'UF Honors Program', 'Chi Omega', 'Hispanic Student Association', 'Pi Kappa Alpha',
-    'UF Pre-Professional Services Organization', 'Chi Phi', 'Innovation Academy', 'Kappa Alpha Order',
-    'Zeta Beta Tau', 'Zeta Tau Alpha', 'William and Grace Dial Center Ambassador Leadership Program'
+    'Gamma Eta', 'Phi Kappa Tau', 'UF Innovation', 'Gamma Phi Beta',
+    'Phi Mu', 'Pi Beta Phi', 'UF Honors Program', 'Chi Omega',
+    'Pi Kappa Alpha', 'Chi Phi', 'Innovation Academy', 'Kappa Alpha Order',
+    'Zeta Beta Tau', 'Zeta Tau Alpha',
+
+    // Organizations with longer names moved to the bottom
+    'Footprints: Buddy and Support Program',
+    'Phi Eta Sigma Honor Society',
+    'Hispanic Student Association',
+    'UF Pre-Professional Services Organization',
+    'William and Grace Dial Center Ambassador Leadership Program'
   ];
 
   return (
