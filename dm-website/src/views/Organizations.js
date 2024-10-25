@@ -23,7 +23,7 @@ export default function Organizations() {
     });
   };
 
-  // Updated organizations array
+  // Updated organizations array with longer names at the bottom
   const organizations = [
     // Organizations with shorter names
     'Alpha Chi Omega', 'Delta Delta Delta', 'Kappa Alpha Theta', 'Sigma Chi',
@@ -82,8 +82,9 @@ export default function Organizations() {
             Below are the Organizations currently involved in Dance Marathon at UF 2025:
           </Typography>
 
+          {/* Adjusted Box and Grid */}
           <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-            <Grid container spacing={2} justifyContent="center">
+            <Grid container spacing={2} justifyContent="flex-start" sx={{ maxWidth: 1200 }}>
               {organizations.map((org, index) => (
                 <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
                   <Chip
