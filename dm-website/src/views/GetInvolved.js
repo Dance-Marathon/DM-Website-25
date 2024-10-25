@@ -11,8 +11,8 @@ import PageHero from "../components/PageHero";
 import SquareCard from "../components/SquareCard";
 import { Link } from "react-router-dom";
 
-import HeroPic from "../assets/images/overalls/CA.jpg";
 import GetInvolvedPic from "../assets/images/pagepics/GetInvolvedPic.jpg";
+import AlumniBox from "../assets/images/miniboxpics/AlumniMini.jpg"
 import AmbassadorsMiniPic from "../assets/images/miniboxpics/AmbassadorsMiniPic.jpg";
 import ELPBox from "../assets/images/miniboxpics/ELPBox.jpg";
 import CaptainsBox from "../assets/images/miniboxpics/CaptainTeamsBox.JPG";
@@ -126,7 +126,7 @@ export default function GetInvolved() {
           >
             {[
               {
-                image: HeroPic,
+                image: AlumniBox,
                 title: "Alumni",
                 hoverText:
                   "Our Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate.",

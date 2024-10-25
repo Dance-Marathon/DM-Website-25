@@ -9,7 +9,7 @@ import { Container, Typography, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 
-import MoralloweenPic from "../assets/images/pagepics/MoralloweenHero.JPG";
+import MoralloweenPic from "../assets/images/pagepics/MoralloweenHero.jpeg";
 
 export default function Moralloween() {
   const [mode, setMode] = React.useState(() => {

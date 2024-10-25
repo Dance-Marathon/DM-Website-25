@@ -16,7 +16,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 
-import HeroPic from "../assets/images/overalls/SW.jpg";
+import OurStoryHero from "../assets/images/pagepics/OurStoryHero.JPG"
 import "../App.css";
 
 export default function OurStory() {
@@ -84,6 +84,8 @@ export default function OurStory() {
     createData("2024", "$1,531,518.24"),
   ];
 
+  const reversedRows = [...rows].reverse();
+
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'dark'
     return localStorage.getItem("theme") || "dark";
@@ -103,7 +105,7 @@ export default function OurStory() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title="Our Story" />
+      <PageHero imageUrl={OurStoryHero} title="Our Story" />
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -847,7 +849,7 @@ style={{ color: '#233563', marginBottom: '1px' }}>
         </TableRow>
       </TableHead>
       <TableBody>
-        {rows.map((row) => (
+        {reversedRows.map((row) => (
           <StyledTableRow key={row.year}>
             <StyledTableCell 
               component="th" 

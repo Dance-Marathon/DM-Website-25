@@ -10,7 +10,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import YoutubeVid from "../components/YoutubeVid";
 
-import HeroPic from "../assets/images/overalls/SW.jpg";
+import TTHero from "../assets/images/pagepics/TTHero.png";
 
 export default function TransformToday() {
   const [mode, setMode] = React.useState(() => {
@@ -34,7 +34,7 @@ export default function TransformToday() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <PageHero
-        imageUrl={HeroPic}
+        imageUrl={TTHero}
         sx={{
           whiteSpace: "nowrap",
           overflow: "hidden",

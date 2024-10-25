@@ -8,7 +8,7 @@ import { Container, Typography, Box, Link, Grid } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import SponsorshipPacket from "../assets/pdfs/SponsorshipPacket.pdf";
-import SponsorPic from "../assets/images/pagepics/Sponsors.jpg";
+import SponsorPic from "../assets/images/pagepics/SponsorsHero.JPG";
 
 import Sponsor1 from "../assets/images/sponsors/Sponsor1.png";
 import Sponsor2 from "../assets/images/sponsors/Sponsor2.png";

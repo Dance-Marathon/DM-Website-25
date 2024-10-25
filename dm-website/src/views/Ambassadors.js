@@ -9,7 +9,8 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import "../App.css";
 import AmbassadorGuidelines from "../assets/pdfs/2024 Ambassador Guidelines.pdf"
-import AmbassadorsPic from "../assets/images/pagepics/Ambassadors.jpg";
+import AmbassadorsPic from "../assets/images/pagepics/AmbassadorsHero.JPG";
+
 
 export default function Ambassadors() {
   const [mode, setMode] = React.useState(() => {

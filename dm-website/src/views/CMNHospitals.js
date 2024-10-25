@@ -8,7 +8,7 @@ import { Container, Typography, Box, Link } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 
-import HeroPic from "../assets/images/overalls/SW.jpg";
+import CMNHero from "../assets/images/pagepics/CMNHero.jpg";
 import TriBrand from "../assets/images/TriBrandColors.png";
 
 export default function CMNHospitals() {
@@ -31,7 +31,7 @@ export default function CMNHospitals() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
-      <PageHero imageUrl={HeroPic} title="CMN & UF Health" />
+      <PageHero imageUrl={CMNHero} title="CMN & UF Health" />
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
