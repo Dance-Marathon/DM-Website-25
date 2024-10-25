@@ -87,15 +87,15 @@ export default function OurStory() {
   const reversedRows = [...rows].reverse();
 
   const [mode, setMode] = React.useState(() => {
-    // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem("theme") || "dark";
+    // Retrieve the stored theme from localStorage or default to 'light'
+    return localStorage.getItem('theme') || 'light';
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
     setMode((prev) => {
-      const newMode = prev === "dark" ? "light" : "dark";
-      localStorage.setItem("theme", newMode); // Store the new mode in localStorage
+      const newMode = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
       return newMode;
     });
   };

@@ -13,8 +13,8 @@ import EmployeeMatchingPic from "../assets/images/pagepics/Employee Matching.jpg
 
 export default function EmployeeMatching() {
   const [mode, setMode] = React.useState(() => {
-    // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem('theme') || 'dark';
+    // Retrieve the stored theme from localStorage or default to 'light'
+    return localStorage.getItem('theme') || 'light';
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
@@ -25,7 +25,6 @@ export default function EmployeeMatching() {
       return newMode;
     });
   };
-
 
   return (
     <ThemeProvider theme={LPtheme}>

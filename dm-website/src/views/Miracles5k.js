@@ -13,8 +13,8 @@ import EventsPic from "../assets/images/pagepics/EventsPic.png";
 
 export default function Miracles5k() {
   const [mode, setMode] = React.useState(() => {
-    // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem('theme') || 'dark';
+    // Retrieve the stored theme from localStorage or default to 'light'
+    return localStorage.getItem('theme') || 'light';
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
