@@ -77,43 +77,46 @@ export default function Applications() {
             <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563', marginTop: 4 }} gutterBottom>
                 Manager Application
             </Typography>
-            <Typography variant="body1" gutterBottom color="text.secondary">
+            <Typography variant="body1" gutterBottom color="text.secondary" marginBottom={3.5}>
                 Now Closed
             </Typography>
 
             <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
                 Overall Director Application
             </Typography>
-            <Typography variant="body1" gutterBottom color="text.secondary">
+            <Typography variant="body1" gutterBottom color="text.secondary" marginBottom={3.5}>
                 Now Closed
             </Typography>
 
             <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
                 Assistant Director Application
             </Typography>
-            <Typography variant="body1" gutterBottom color="text.secondary">
+            <Typography variant="body1" gutterBottom color="text.secondary" marginBottom={3.5}>
                 Now Closed
             </Typography>
 
             <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
                 Captain Application
             </Typography>
-            <Typography variant="body1" gutterBottom color="text.secondary">
+            <Typography variant="body1" gutterBottom color="text.secondary" marginBottom={3.5}>
                 Now Closed
             </Typography>
 
             <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
                 Emerging Leaders Application
             </Typography>
-            <Typography variant="body1" gutterBottom color="text.secondary">
+            <Typography variant="body1" gutterBottom color="text.secondary" marginBottom={3.5}>
                 Now Closed
             </Typography>
 
             <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
                 Ambassador Application
             </Typography>
-            <Typography variant="body1" gutterBottom color="text.secondary">
-                Now Closed
+            <Typography variant="body1" gutterBottom color="text.secondary" marginBottom={3.5}>
+                If you are interested in becoming an Ambassador, you can join the organization at any time! For more information, please contact our Organization Relations Overall Director, Caroline Lee, at {' '} 
+                <Link href="mailto:clee@floridadm.org" sx={{ color: '#1a73e8' }}>
+                    clee@floridadm.org
+                </Link>.
             </Typography>
 
             <Typography variant="body1" sx={{ fontWeight: 'bold', color: '#233563' }} gutterBottom>
