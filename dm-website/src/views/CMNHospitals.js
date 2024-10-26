@@ -9,7 +9,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 
 import CMNHero from "../assets/images/pagepics/CMNHero.jpg";
-import TriBrand from "../assets/images/TriBrandColors.png";
+import TriBrand from "../assets/images/TriBrand_Color.png";
 
 export default function CMNHospitals() {
   const [mode, setMode] = React.useState(() => {
@@ -61,13 +61,13 @@ export default function CMNHospitals() {
             </Box>{" "}
             participating hospital for the{" "}
             <Box component="span" sx={{ color: "#e2883c", fontWeight: "Bold" }}>
-              North Central Florida, South Georgia, and West Palm Beach
+              North Central Florida and South Georgia areas
             </Box>{" "}
             areas. Children's Miracle Network is an international non-profit
             organization dedicated to raising funds and awareness for children's
             hospitals.{" "}
             <Box component="span" sx={{ fontStyle: "italic" }}>
-              CMN's founding pledge
+              CMN Hospitals's founding pledge
             </Box>
             , to keep all donations in the area in which they were raised,
             remains at the core of its philosophy.
@@ -110,17 +110,16 @@ export default function CMNHospitals() {
             variant="body1"
             sx={{ color: "text.secondary", marginBottom: 2 }}
           >
-            Ranked one of the{" "}
-            <Box component="span" sx={{ color: "#e2883c", fontWeight: "Bold" }}>
-              top 50
-            </Box>{" "}
-            pediatric hospitals in the nation in seven categories,{" "}
+            Ranked one of the {" "}
+            <Box component="span" sx={{ color: "#e2883c", fontWeight: "bold" }}>
+            top pediatric hospitals in the nation in five categories
+            </Box>
             <Box component="span" sx={{ fontStyle: "italic" }}>
-              UF Health Shands Children's Hospital
+              , UF Health Shands Children's Hospital
             </Box>{" "}
             and{" "}
             <Box component="span" sx={{ fontStyle: "italic" }}>
-              Children's Miracle Network
+              Children's Miracle Network Hospitals
             </Box>{" "}
             have created one of the greatest facilities of care for children and
             young adults.

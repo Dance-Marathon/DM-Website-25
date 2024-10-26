@@ -52,7 +52,7 @@ export default function DonorDrive() {
             DonorDrive, an online fundraising platform used widely by Children’s
             Miracle Network Hospitals, for its Dance Marathon programs. Dance
             Marathon at the University of Florida’s Fundraisers will be creating
-            DonorDrive accounts to begin fundraising for DM at UF 2024.
+            DonorDrive accounts to begin fundraising for DM at UF 2025.
             DonorDrive is safe and easy to use, and was utilized by UF Health
             Shands Children’s Hospital this past year. To create a fundraising
             page, register using this {""}

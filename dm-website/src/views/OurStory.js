@@ -368,7 +368,7 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                   Miracle Teen (13+)
                 </Typography>
                 <Typography variant="body1" color="text.secondary">
-                  CMN Ambassador (18+)
+                  CMN Hospital(s) Ambassador (18+)
                 </Typography>
 
                 <Typography
