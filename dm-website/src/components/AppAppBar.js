@@ -33,6 +33,7 @@ const menuTheme = {
   flexShrink: 0,
   borderRadius: '999px',
   maxHeight: 40,
+  variant: "text",
   //border: '1px solid',
   //borderColor: 'transparent',
 }
@@ -231,14 +232,23 @@ function AppAppBar({ mode, toggleColorMode }) {
                   color="text.primary"
                   href="https://www.instagram.com/dmatuf/?hl=en"
                   aria-label="Instagram"
-                  sx={{ alignSelf: 'center', color: 'white' }}
+                  sx={{ alignSelf: 'center', color: 'white',
+                  '&:hover': {
+                    backgroundColor: 'rgba(255, 255, 255, 0.04)', 
+                    textDecoration: 'none',
+                  },
+                }}
                 >
                   <InstagramIcon />
                 </IconButton>
                 <IconButton
                   href="https://www.facebook.com/floridaDM/"
                   aria-label="Facebook"
-                  sx={{ alignSelf: 'center', color: 'white' }}
+                  sx={{ alignSelf: 'center', color: 'white',
+                  '&:hover': {
+                    backgroundColor: 'rgba(255, 255, 255, 0.04)', 
+                    textDecoration: 'none',
+                  }, }}
                 >
                   <FacebookIcon />
                 </IconButton>
@@ -246,7 +256,11 @@ function AppAppBar({ mode, toggleColorMode }) {
                   color="text.primary"
                   href="https://x.com/floridadm?lang=en"
                   aria-label="X"
-                  sx={{ alignSelf: 'center', color: 'white' }}
+                  sx={{ alignSelf: 'center', color: 'white',
+                  '&:hover': {
+                    backgroundColor: 'rgba(255, 255, 255, 0.04)', 
+                    textDecoration: 'none',
+                  }, }}
                 >
                   <TwitterIcon />
                 </IconButton>

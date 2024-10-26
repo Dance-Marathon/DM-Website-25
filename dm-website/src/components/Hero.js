@@ -2,35 +2,6 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import '../App.css';
-// import { createTheme } from '@mui/material';
-
-// import CasaPinada from '../assets/fonts/CasaPinada.ttf'
-
-// const casaPinada = {
-//   fontFamily: 'CasaPinada',
-//   fontStyle: 'normal',
-//   fontDisplay: 'swap',
-//   fontWeight: 400,
-//   src: `
-//     local('CasaPinada'),
-//     url(${CasaPinada}) format('truetype')
-//   `,
-// };
-
-// const theme = createTheme({
-//   typography: {
-//     fontFamily: [
-//       'CasaPinada'
-//     ].join(','),
-//   },
-//   overrides: {
-//     MuiCssBaseline: {
-//       '@global': {
-//         '@font-face': [casaPinada],
-//       },
-//     },
-//   },
-// });
 
 export default function Hero() {
   return (
@@ -58,30 +29,54 @@ export default function Hero() {
           objectFit: 'cover',
         }}
       >
-        <source src="/home_video.mp4" type='video/mp4'/>
+        <source src="/home_video.mp4" type='video/mp4' />
       </video>
-      <Typography
-        variant="h1"
-        component="div"
+      {/* Centered text container */}
+      <Box
         sx={{
-          fontFamily: "CasaPinada",
-          fontWeight: 300,
-          display: 'flex',
-          flexDirection: { xs: 'column', md: 'row' },
           position: 'absolute',
           top: '50%',
           left: '50%',
           transform: 'translate(-50%, -50%)',
-          color: 'white',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
           textAlign: 'center',
+          color: 'white',
           zIndex: 1,
-          fontSize: 'clamp(3rem, 10vw, 5rem)',
-          textShadow: '4px 4px 4px rgba(0, 0, 0, 0.5)',
-          maxWidth: '100%',
         }}
       >
-        Dance Marathon at the University of Florida
-      </Typography>
+        <Box sx={{ marginBottom: '0.2em' }}>
+          <Typography
+            variant="h1"
+            component="div"
+            sx={{
+              fontFamily: "CasaPinada",
+              fontWeight: 300,
+              fontSize: 'clamp(3rem, 10vw, 5rem)',
+              textShadow: '4px 4px 4px rgba(0, 0, 0, 0.5)',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            Dance Marathon at the
+          </Typography>
+        </Box>
+        <Box>
+          <Typography
+            variant="h1"
+            component="div"
+            sx={{
+              fontFamily: "CasaPinada",
+              fontWeight: 300,
+              fontSize: 'clamp(3rem, 10vw, 5rem)',
+              textShadow: '4px 4px 4px rgba(0, 0, 0, 0.5)',
+            }}
+          >
+            University of Florida
+          </Typography>
+        </Box>
+      </Box>
+      {/* Bottom bar */}
       <Box
         sx={{
           position: 'absolute',

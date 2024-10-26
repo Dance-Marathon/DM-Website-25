@@ -10,10 +10,13 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 
 import MoralloweenPic from "../assets/images/pagepics/MoralloweenHero.jpeg";
+import MWeen1 from "../assets/images/pagepics/MWeen1.jpg";
+import MWeen2 from "../assets/images/pagepics/MWeen2.jpg";
+import MWeen3 from "../assets/images/pagepics/MWeen3.jpg";
+import MWeen4 from "../assets/images/pagepics/MWeen4.jpg";
 
 export default function Moralloween() {
   const [mode, setMode] = React.useState(() => {
-    // Retrieve the stored theme from localStorage or default to 'light'
     return localStorage.getItem('theme') || 'light';
   });
   const LPtheme = createTheme(getLPTheme(mode));
@@ -21,11 +24,10 @@ export default function Moralloween() {
   const toggleColorMode = () => {
     setMode((prev) => {
       const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      localStorage.setItem('theme', newMode);
       return newMode;
     });
   };
-
 
   return (
     <ThemeProvider theme={LPtheme}>
@@ -58,6 +60,23 @@ export default function Moralloween() {
                 dsiegel@floridadm.org
               </Link>.
             </Typography>
+        </Box>
+        <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', justifyContent: 'center' }}>
+          {[MWeen1, MWeen2, MWeen3, MWeen4].map((image, index) => (
+            <Box
+              component="img"
+              key={index}
+              src={image}
+              alt={`Moralloween ${index + 1}`}
+              sx={{
+                width: 275,
+                height: 250,
+                objectFit: 'cover',
+                borderRadius: 2,
+                boxShadow: 3,
+              }}
+            />
+          ))}
         </Box>
       </Container>
       <Footer />
