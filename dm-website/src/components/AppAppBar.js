@@ -1,18 +1,22 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 
-import Box from '@mui/material/Box';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Button from '@mui/material/Button';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import MenuItem from '@mui/material/MenuItem';
-import Drawer from '@mui/material/Drawer';
+import {
+  AppBar,
+  Toolbar,
+  Button,
+  Container,
+  Typography,
+  Drawer,
+  IconButton,
+  Box,
+  Stack,
+  MenuItem,
+  useTheme,
+  useMediaQuery,
+} from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import ToggleColorMode from './ToggleColorMode';
-import IconButton from '@mui/material/IconButton';
-import { Stack } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/X';
@@ -29,23 +33,23 @@ const menuTheme = {
   color: 'text.primary',
   display: 'flex',
   alignItems: 'center',
-  justifyContent: 'space-between',
-  flexShrink: 0,
+  justifyContent: 'center',
   borderRadius: '999px',
   maxHeight: 40,
-  variant: "text",
-  //border: '1px solid',
-  //borderColor: 'transparent',
-}
+  minWidth: 0,
+  flexShrink: 0,
+};
 
 function AppAppBar({ mode, toggleColorMode }) {
   const [open, setOpen] = React.useState(false);
-
   const navigate = useNavigate();
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
+
+  const theme = useTheme();
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up('md')); // 'md' breakpoint is 960px
 
   return (
     <div>
@@ -65,12 +69,11 @@ function AppAppBar({ mode, toggleColorMode }) {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
-              flexShrink: 0,
+              flexWrap: 'nowrap',
               borderRadius: '999px',
               bgcolor: '#23356370',
               backdropFilter: 'blur(24px)',
               maxHeight: 40,
-              minWidth: 1152,
               width: '100%',
               border: '1px solid',
               borderColor: 'divider',
@@ -80,236 +83,407 @@ function AppAppBar({ mode, toggleColorMode }) {
                   : '0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)',
             })}
           >
+            {/* Left Side: Logo, About, and Donate/Register Buttons on small screens */}
             <Box
               sx={{
-                flexGrow: 1,
                 display: 'flex',
                 alignItems: 'center',
                 ml: '0px',
                 px: 0,
+                flexGrow: 1,
               }}
             >
-              <img
+              {/* Logo */}
+              <Box
+                component="img"
                 src={'/logo2024.png'}
                 style={logoStyle}
                 alt="Dance Marathon at UF Logo"
                 onClick={() => navigate('/')}
+                sx={{
+                  width: { xs: '30px', md: '40px' },
+                  height: { xs: '30px', md: '40px' },
+                  cursor: 'pointer',
+                  flexShrink: 0,
+                }}
               />
-              <Box sx={{ display: { xs: 'none', md: 'flex' }, ml: '10px' }}>
-              <Button 
-                  variant='regular'
+              {/* About, Donate, and Register Buttons on small screens */}
+              {!isLargeScreen && (
+                <Box
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    ml: 1,
+                  }}
+                >
+                  <MenuPopupState
+                    title="About"
+                    submenuItems={[
+                      { label: 'Our Story', url: '/ourstory' },
+                      { label: 'CMN & UF Health', url: '/cmnhospitals' },
+                      { label: 'Meet our Miracle Families', url: '/miraclefamilies' },
+                    ]}
+                    menuURL={'/about'}
+                    sx={{
+                      ...menuTheme,
+                      ml: 1,
+                    }}
+                  />
+                  <Button
+                    variant="regular"
+                    onClick={() => navigate('/donate')}
+                    sx={{
+                      ...menuTheme,
+                      bgcolor: 'rgba(226, 136, 60, 0.7)',
+                      color: 'white',
+                      fontWeight: 'bold',
+                      px: 1,
+                      ml: 1,
+                      '&:hover': {
+                        bgcolor: 'rgba(226, 136, 60, 0.9)',
+                      },
+                      minWidth: 0,
+                      flexShrink: 1,
+                    }}
+                  >
+                    <Typography variant="body1" color="inherit" noWrap>
+                      Donate
+                    </Typography>
+                  </Button>
+                  <Button
+                    variant="regular"
+                    onClick={() => navigate('/register')}
+                    sx={{
+                      ...menuTheme,
+                      bgcolor: 'rgba(226, 136, 60, 0.7)',
+                      color: 'white',
+                      fontWeight: 'bold',
+                      px: 1,
+                      ml: 1,
+                      '&:hover': {
+                        bgcolor: 'rgba(226, 136, 60, 0.9)',
+                      },
+                      minWidth: 0,
+                      flexShrink: 1,
+                    }}
+                  >
+                    <Typography variant="body1" color="inherit" noWrap>
+                      Register
+                    </Typography>
+                  </Button>
+                </Box>
+              )}
+            </Box>
+
+            {/* Center: Navigation Items (only on large screens) */}
+            {isLargeScreen && (
+              <Box
+                sx={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  flexGrow: 1,
+                  overflow: 'hidden',
+                }}
+              >
+                <Button
+                  variant="regular"
                   onClick={() => navigate('/contact')}
-                  sx={{...menuTheme}}
+                  sx={{
+                    ...menuTheme,
+                  }}
                 >
                   <Typography variant="body1" color="text.primary">
                     Contact Us
                   </Typography>
                 </Button>
-              <MenuPopupState 
-                title="About" 
-                submenuItems={[
-                  { label: "Our Story", url: "/ourstory" },
-                  { label: "CMN & UF Health", url: "/cmnhospitals" },
-                  { label: "Meet our Miracle Families", url: "/miraclefamilies" }
-                ]}
-                menuURL={"/about"}
-                >
-                </MenuPopupState>
-                <MenuPopupState 
-                title="Get Involved" 
-                submenuItems={[
-                  { label: "Alumni", url: "/alumni" },
-                  { label: "Applications", url: "/applications" },
-                  { label: "Ambassadors", url: "/ambassadors" },
-                  { label: "Captain Teams", url: "/captainteams" },
-                  { label: "Miracle Makers", url: "/miraclemakers" },
-                  { label: "Emerging Leaders", url: "/emergingleaders" },
-                  { label: "Organizations", url: "/organizations" }
-                ]}
-                menuURL={"/get-involved"}
-                >
-                </MenuPopupState>
-                <MenuPopupState 
-                title="Events" 
-                submenuItems={[
-                  { label: "Fall Kickoff", url: "/fallkickoff" },
-                  { label: "Main Event", url: "/mainevent" },
-                  { label: "Mini Marathons", url: "/minimarathons" },
-                  { label: "Moralloween", url: "/moralloween" },
-                  { label: "Transform Today", url: "/transformtoday" },
-                  { label: "Miracles in Color 5k", url: "/miracles5k" },
-                ]}
-                menuURL={"/events"}
-                >
-                </MenuPopupState>
-                <MenuPopupState 
-                title="Fundraising" 
-                submenuItems={[
-                  { label: "DonorDrive", url: "/donordrive" },
-                  { label: "Employee Matching", url: "/employeematching" },
-                  { label: "Fundraising Guide", url: "/fundraisingguide" },
-                  { label: "Partners", url: "/partners" },
-                ]}
-                menuURL={"/fundraising"}
-                >
-                </MenuPopupState>
-                <Button 
-                  variant='regular'
+                <MenuPopupState
+                  title="About"
+                  submenuItems={[
+                    { label: 'Our Story', url: '/ourstory' },
+                    { label: 'CMN & UF Health', url: '/cmnhospitals' },
+                    { label: 'Meet our Miracle Families', url: '/miraclefamilies' },
+                  ]}
+                  menuURL={'/about'}
+                  sx={{
+                    ...menuTheme,
+                  }}
+                />
+                <MenuPopupState
+                  title="Get Involved"
+                  submenuItems={[
+                    { label: 'Alumni', url: '/alumni' },
+                    { label: 'Applications', url: '/applications' },
+                    { label: 'Ambassadors', url: '/ambassadors' },
+                    { label: 'Captain Teams', url: '/captainteams' },
+                    { label: 'Miracle Makers', url: '/miraclemakers' },
+                    { label: 'Emerging Leaders', url: '/emergingleaders' },
+                    { label: 'Organizations', url: '/organizations' },
+                  ]}
+                  menuURL={'/get-involved'}
+                  sx={{
+                    ...menuTheme,
+                  }}
+                />
+                <MenuPopupState
+                  title="Events"
+                  submenuItems={[
+                    { label: 'Fall Kickoff', url: '/fallkickoff' },
+                    { label: 'Main Event', url: '/mainevent' },
+                    { label: 'Mini Marathons', url: '/minimarathons' },
+                    { label: 'Moralloween', url: '/moralloween' },
+                    { label: 'Transform Today', url: '/transformtoday' },
+                    { label: 'Miracles in Color 5k', url: '/miracles5k' },
+                  ]}
+                  menuURL={'/events'}
+                  sx={{
+                    ...menuTheme,
+                  }}
+                />
+                <MenuPopupState
+                  title="Fundraising"
+                  submenuItems={[
+                    { label: 'DonorDrive', url: '/donordrive' },
+                    { label: 'Employee Matching', url: '/employeematching' },
+                    { label: 'Fundraising Guide', url: '/fundraisingguide' },
+                    { label: 'Partners', url: '/partners' },
+                  ]}
+                  menuURL={'/fundraising'}
+                  sx={{
+                    ...menuTheme,
+                  }}
+                />
+                <Button
+                  variant="regular"
                   onClick={() => navigate('/blog')}
-                  sx={{...menuTheme}}
+                  sx={{
+                    ...menuTheme,
+                  }}
                 >
                   <Typography variant="body1" color="text.primary">
                     Blog
                   </Typography>
                 </Button>
-                <Button 
-                  variant='regular'
+                <Button
+                  variant="regular"
                   onClick={() => navigate('/shop')}
-                  sx={{...menuTheme}}
+                  sx={{
+                    ...menuTheme,
+                  }}
                 >
                   <Typography variant="body1" color="text.primary">
                     Shop
                   </Typography>
                 </Button>
-                <Button 
-                  variant='regular'
+                {/* Spacer to push Donate and Register to the right */}
+                <Box sx={{ flexGrow: 1 }} />
+                {/* Donate and Register Buttons */}
+                <Button
+                  variant="regular"
                   onClick={() => navigate('/donate')}
                   sx={{
                     ...menuTheme,
-                    ml: 1.5,
-                    bgcolor: 'rgba(226, 136, 60, 0.7)', 
-                    color: 'white', 
+                    bgcolor: 'rgba(226, 136, 60, 0.7)',
+                    color: 'white',
                     fontWeight: 'bold',
-                    px: 2, 
+                    px: 2,
+                    ml: 1.5,
                     '&:hover': {
-                      bgcolor: 'rgba(226, 136, 60, 0.9)', 
+                      bgcolor: 'rgba(226, 136, 60, 0.9)',
                     },
+                    minWidth: 0,
+                    flexShrink: 1,
                   }}
                 >
-            <Typography variant="body1" color="inherit">
-              Donate
-            </Typography>
-            </Button>
-            <Button 
-                  variant='regular'
+                  <Typography variant="body1" color="inherit" noWrap>
+                    Donate
+                  </Typography>
+                </Button>
+                <Button
+                  variant="regular"
                   onClick={() => navigate('/register')}
                   sx={{
                     ...menuTheme,
-                    ml: 1.5,
-                    bgcolor: 'rgba(226, 136, 60, 0.7)', 
-                    color: 'white', 
+                    bgcolor: 'rgba(226, 136, 60, 0.7)',
+                    color: 'white',
                     fontWeight: 'bold',
-                    px: 2, 
+                    px: 2,
+                    ml: 1.5,
                     '&:hover': {
-                      bgcolor: 'rgba(226, 136, 60, 0.9)', 
+                      bgcolor: 'rgba(226, 136, 60, 0.9)',
                     },
+                    minWidth: 0,
+                    flexShrink: 1,
                   }}
                 >
-            <Typography variant="body1" color="inherit">
-              Register
-            </Typography>
-            </Button>
+                  <Typography variant="body1" color="inherit" noWrap>
+                    Register
+                  </Typography>
+                </Button>
               </Box>
-            </Box>
+            )}
+
+            {/* Right Side: Icons and Hamburger Menu */}
             <Box
               sx={{
-                display: { xs: 'none', md: 'flex' },
-                gap: 0.5,
+                display: 'flex',
                 alignItems: 'center',
               }}
             >
-              <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
-              <Stack
-                direction="row"
-                justifyContent="left"
-                spacing={1}
-                useFlexGap
-                sx={{
-                  color: 'text.secondary',
-                }}
-              >
-                <IconButton
-                  color="text.primary"
-                  href="https://www.instagram.com/dmatuf/?hl=en"
-                  aria-label="Instagram"
-                  sx={{ alignSelf: 'center', color: 'white',
-                  '&:hover': {
-                    backgroundColor: 'rgba(255, 255, 255, 0.04)', 
-                    textDecoration: 'none',
-                  },
-                }}
+              {/* Icons and ToggleColorMode - Only on Large Screens */}
+              {isLargeScreen && (
+                <Box
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    ml: 1,
+                  }}
                 >
-                  <InstagramIcon />
-                </IconButton>
-                <IconButton
-                  href="https://www.facebook.com/floridaDM/"
-                  aria-label="Facebook"
-                  sx={{ alignSelf: 'center', color: 'white',
-                  '&:hover': {
-                    backgroundColor: 'rgba(255, 255, 255, 0.04)', 
-                    textDecoration: 'none',
-                  }, }}
-                >
-                  <FacebookIcon />
-                </IconButton>
-                <IconButton
-                  color="text.primary"
-                  href="https://x.com/floridadm?lang=en"
-                  aria-label="X"
-                  sx={{ alignSelf: 'center', color: 'white',
-                  '&:hover': {
-                    backgroundColor: 'rgba(255, 255, 255, 0.04)', 
-                    textDecoration: 'none',
-                  }, }}
-                >
-                  <TwitterIcon />
-                </IconButton>
-              </Stack>
-            </Box>
-
-            <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
-              edge="end"
-              color="inherit"
-              aria-label="menu"
-              onClick={toggleDrawer(true)}
-            >
-              <MenuIcon />
-            </IconButton>
-            <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
-              <Box
-                sx={{
-                  minWidth: '45vw',
-                  p: 2,
-                  backgroundColor: 'background.dm',
-                  flexGrow: 1,
-                }}
-              >
-                {/* Add menu items to drawer */}
-                <Box sx={{ display: 'flex', flexDirection: 'column' }}>
-                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/contact')}>
-                    Contact Us
-                  </MenuItem>
-                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/about')}>
-                    About
-                  </MenuItem>
-                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/get-involved')}>
-                    Get Involved
-                  </MenuItem>
-                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/events')}>Events</MenuItem>
-                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/fundraising')}>
-                    Fundraising
-                  </MenuItem>
-                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/blog')}>Blog</MenuItem>
-                  <MenuItem sx={{color: "white", fontSize: '2rem',}} onClick={() => navigate('/shop')}>Shop</MenuItem>
-                  <MenuItem sx={{color: "secondary.main", fontSize: '2rem',}} onClick={() => navigate('/donate')}>Donate</MenuItem>
+                  <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
+                  <Stack
+                    direction="row"
+                    justifyContent="left"
+                    spacing={1}
+                    sx={{
+                      color: 'text.secondary',
+                    }}
+                  >
+                    <IconButton
+                      href="https://www.instagram.com/dmatuf/?hl=en"
+                      aria-label="Instagram"
+                      sx={{ color: 'white' }}
+                    >
+                      <InstagramIcon />
+                    </IconButton>
+                    <IconButton
+                      href="https://www.facebook.com/floridaDM/"
+                      aria-label="Facebook"
+                      sx={{ color: 'white' }}
+                    >
+                      <FacebookIcon />
+                    </IconButton>
+                    <IconButton
+                      href="https://x.com/floridadm?lang=en"
+                      aria-label="X"
+                      sx={{ color: 'white' }}
+                    >
+                      <TwitterIcon />
+                    </IconButton>
+                  </Stack>
                 </Box>
-              </Box>
-            </Drawer>
+              )}
+              {/* Hamburger Menu - Visible on Small Screens */}
+              {!isLargeScreen && (
+                <Box sx={{ display: 'flex', ml: 1 }}>
+                  <IconButton
+                    edge="end"
+                    color="inherit"
+                    aria-label="menu"
+                    onClick={toggleDrawer(true)}
+                  >
+                    <MenuIcon />
+                  </IconButton>
+                </Box>
+              )}
             </Box>
           </Toolbar>
         </Container>
       </AppBar>
+      {/* Drawer Menu */}
+      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+        <Box
+          sx={{
+            minWidth: '45vw',
+            p: 2,
+            backgroundColor: 'background.dm',
+            flexGrow: 1,
+          }}
+        >
+          <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+            {/* Include all navigation items in the Drawer */}
+            <MenuItem
+              sx={{ color: 'white', fontSize: '2rem' }}
+              onClick={() => {
+                navigate('/contact');
+                toggleDrawer(false)();
+              }}
+            >
+              Contact Us
+            </MenuItem>
+            <MenuItem
+              sx={{ color: 'white', fontSize: '2rem' }}
+              onClick={() => {
+                navigate('/about');
+                toggleDrawer(false)();
+              }}
+            >
+              About
+            </MenuItem>
+            <MenuItem
+              sx={{ color: 'white', fontSize: '2rem' }}
+              onClick={() => {
+                navigate('/get-involved');
+                toggleDrawer(false)();
+              }}
+            >
+              Get Involved
+            </MenuItem>
+            <MenuItem
+              sx={{ color: 'white', fontSize: '2rem' }}
+              onClick={() => {
+                navigate('/events');
+                toggleDrawer(false)();
+              }}
+            >
+              Events
+            </MenuItem>
+            <MenuItem
+              sx={{ color: 'white', fontSize: '2rem' }}
+              onClick={() => {
+                navigate('/fundraising');
+                toggleDrawer(false)();
+              }}
+            >
+              Fundraising
+            </MenuItem>
+            <MenuItem
+              sx={{ color: 'white', fontSize: '2rem' }}
+              onClick={() => {
+                navigate('/blog');
+                toggleDrawer(false)();
+              }}
+            >
+              Blog
+            </MenuItem>
+            <MenuItem
+              sx={{ color: 'white', fontSize: '2rem' }}
+              onClick={() => {
+                navigate('/shop');
+                toggleDrawer(false)();
+              }}
+            >
+              Shop
+            </MenuItem>
+            <MenuItem
+              sx={{ color: 'secondary.main', fontSize: '2rem' }}
+              onClick={() => {
+                navigate('/donate');
+                toggleDrawer(false)();
+              }}
+            >
+              Donate
+            </MenuItem>
+            <MenuItem
+              sx={{ color: 'secondary.main', fontSize: '2rem' }}
+              onClick={() => {
+                navigate('/register');
+                toggleDrawer(false)();
+              }}
+            >
+              Register
+            </MenuItem>
+          </Box>
+        </Box>
+      </Drawer>
     </div>
   );
 }
