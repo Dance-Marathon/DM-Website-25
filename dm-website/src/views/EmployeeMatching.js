@@ -87,7 +87,7 @@ export default function EmployeeMatching() {
         Gainesville, FL 32610-0386
       </Typography>
       <Typography color="text.secondary" paragraph>
-        * PLEASE NOTE: If you are selecting this preferred donation location, please do not list Dance Marathon at the University of Florida or CMN as the matching entity. Many companies will not accept this request, as our tax-exempt status is included under the larger umbrella of Shands Teaching Hospital and Clinics, Inc. If you have any questions about this process, please reach out to Tara Tovkach, Development Associate for Children’s Miracle Network, for clarification at{' '}
+        * PLEASE NOTE: If you are selecting this preferred donation location, please do not list Dance Marathon at the University of Florida or CMN Hospital(s) as the matching entity. Many companies will not accept this request, as our tax-exempt status is included under the larger umbrella of Shands Teaching Hospital and Clinics, Inc. If you have any questions about this process, please reach out to Tara Tovkach, Development Associate for Children’s Miracle Network, for clarification at{' '}
         <Link href="mailto:ttov0002@shands.ufl.edu">ttov0002@shands.ufl.edu</Link>.
       </Typography>
       <Typography variant="h5" color='#233563' gutterBottom marginTop={4}>

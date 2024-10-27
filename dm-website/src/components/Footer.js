@@ -15,7 +15,7 @@ import TwitterIcon from '@mui/icons-material/X';
 import getLPTheme from '../getLPTheme';
 
 // Images
-import Footer_Image from "../assets/images/footer_image.png";
+import Footer_Image from "../assets/images/TriBrand_White.png";
 
 function Copyright() {
   return (
@@ -126,7 +126,7 @@ export default function Footer() {
             justifyContent: 'center',
             width: '100%',
           }}>
-            <img src={Footer_Image} alt="Footer Image" style={{ width: '400px', height: 'auto' }} />
+            <img src={Footer_Image} alt="Footer Image" style={{ width: '600px', height: 'auto' }} />
         </Box>      
         {/* <Stack
           direction="row"
