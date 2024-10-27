@@ -11,9 +11,7 @@ import {
   IconButton,
   Box,
   Stack,
-  MenuItem,
   List,
-  ListItem,
   ListItemText,
   ListItemButton,
   Collapse,
@@ -64,7 +62,8 @@ function AppAppBar({ mode, toggleColorMode }) {
   };
 
   const theme = useTheme();
-  const isLargeScreen = useMediaQuery(theme.breakpoints.up('md')); // 'md' breakpoint is 960px
+  // Breakpoint set at 'lg' (1280px)
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up('lg')); // 'lg' breakpoint is 1280px
 
   return (
     <div>
@@ -99,7 +98,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   : '0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)',
             })}
           >
-            {/* Left Side: Logo, About, and Donate/Register Buttons on small screens */}
+            {/* Left Side: Logo, About, Donate, and Register Buttons on medium and small screens */}
             <Box
               sx={{
                 display: 'flex',
@@ -122,7 +121,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   flexShrink: 0,
                 }}
               />
-              {/* About, Donate, and Register Buttons on small screens */}
+              {/* About, Donate, and Register Buttons on medium and small screens */}
               {!isLargeScreen && (
                 <Box
                   sx={{
@@ -132,6 +131,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                     overflow: 'hidden',
                   }}
                 >
+                  {/* About Button */}
                   <Button
                     variant="regular"
                     onClick={() => navigate('/about')}
@@ -145,6 +145,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                       About
                     </Typography>
                   </Button>
+                  {/* Donate Button */}
                   <Button
                     variant="regular"
                     onClick={() => navigate('/donate')}
@@ -166,6 +167,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                       Donate
                     </Typography>
                   </Button>
+                  {/* Register Button */}
                   <Button
                     variant="regular"
                     onClick={() => navigate('/register')}
@@ -390,7 +392,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </Stack>
                 </Box>
               )}
-              {/* Hamburger Menu - Visible on Small Screens */}
+              {/* Hamburger Menu - Visible on Small and Medium Screens */}
               {!isLargeScreen && (
                 <Box sx={{ display: 'flex', ml: 1, flexShrink: 0 }}>
                   <IconButton
@@ -431,7 +433,11 @@ function AppAppBar({ mode, toggleColorMode }) {
             {/* About */}
             <ListItemButton onClick={() => handleToggle('about')}>
               <ListItemText primary="About" sx={{ color: 'white', fontSize: '1.5rem' }} />
-              {drawerState.about ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
+              {drawerState.about ? (
+                <ExpandLess sx={{ color: 'white' }} />
+              ) : (
+                <ExpandMore sx={{ color: 'white' }} />
+              )}
             </ListItemButton>
             <Collapse in={drawerState.about} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
@@ -468,7 +474,11 @@ function AppAppBar({ mode, toggleColorMode }) {
             {/* Get Involved */}
             <ListItemButton onClick={() => handleToggle('getInvolved')}>
               <ListItemText primary="Get Involved" sx={{ color: 'white', fontSize: '1.5rem' }} />
-              {drawerState.getInvolved ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
+              {drawerState.getInvolved ? (
+                <ExpandLess sx={{ color: 'white' }} />
+              ) : (
+                <ExpandMore sx={{ color: 'white' }} />
+              )}
             </ListItemButton>
             <Collapse in={drawerState.getInvolved} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
@@ -499,7 +509,11 @@ function AppAppBar({ mode, toggleColorMode }) {
             {/* Events */}
             <ListItemButton onClick={() => handleToggle('events')}>
               <ListItemText primary="Events" sx={{ color: 'white', fontSize: '1.5rem' }} />
-              {drawerState.events ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
+              {drawerState.events ? (
+                <ExpandLess sx={{ color: 'white' }} />
+              ) : (
+                <ExpandMore sx={{ color: 'white' }} />
+              )}
             </ListItemButton>
             <Collapse in={drawerState.events} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
@@ -529,7 +543,11 @@ function AppAppBar({ mode, toggleColorMode }) {
             {/* Fundraising */}
             <ListItemButton onClick={() => handleToggle('fundraising')}>
               <ListItemText primary="Fundraising" sx={{ color: 'white', fontSize: '1.5rem' }} />
-              {drawerState.fundraising ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
+              {drawerState.fundraising ? (
+                <ExpandLess sx={{ color: 'white' }} />
+              ) : (
+                <ExpandMore sx={{ color: 'white' }} />
+              )}
             </ListItemButton>
             <Collapse in={drawerState.fundraising} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
@@ -581,7 +599,10 @@ function AppAppBar({ mode, toggleColorMode }) {
                 toggleDrawer(false)();
               }}
             >
-              <ListItemText primary="Donate" sx={{ color: 'secondary.main', fontSize: '1.5rem' }} />
+              <ListItemText
+                primary="Donate"
+                sx={{ color: 'secondary.main', fontSize: '1.5rem' }}
+              />
             </ListItemButton>
 
             {/* Register */}
@@ -591,7 +612,10 @@ function AppAppBar({ mode, toggleColorMode }) {
                 toggleDrawer(false)();
               }}
             >
-              <ListItemText primary="Register" sx={{ color: 'secondary.main', fontSize: '1.5rem' }} />
+              <ListItemText
+                primary="Register"
+                sx={{ color: 'secondary.main', fontSize: '1.5rem' }}
+              />
             </ListItemButton>
           </List>
         </Box>
