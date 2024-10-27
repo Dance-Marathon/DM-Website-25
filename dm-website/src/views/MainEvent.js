@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import { Container, Typography, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
+import YoutubeVid from "../components/YoutubeVid";
 
 import MainEventPic from "../assets/images/pagepics/MainEventPic.jpg";
 
@@ -49,8 +50,12 @@ export default function MainEvent() {
           }}
         >
           <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
-            <p>Our <span style={{color: '#233563', fontWeight: 'bold'}}>Main Event</span> is a 26.2-hour event held in the Stephen O’Connell Center, or as we like to call it, the O’Dome! During the Main Event, we celebrate all of our members and miracles made throughout the year. It is jam-packed full of entertainment, fundraising pushes, stories from Miracle Families, ceremonies, theme hours, a rave, and of course, the Linedance! Our Dancers will stand for the entire duration to symbolize our cause and the impact that we are making on the lives of children with pediatric illnesses at UF Health Shands Children’s Hospital. At the end of our event we will get to witness the reveal of the total amount raised by Dance Marathon over the whole year.</p>
+            <p>Our <span style={{color: '#233563', fontWeight: 'bold'}}>Main Event is a 26.2-hour event held in the Stephen O’Connell Center, or as we like to call it, the O’Dome!</span> During the Main Event, we celebrate all of our members and miracles made throughout the year. It is jam-packed full of entertainment, fundraising pushes, stories from Miracle Families, ceremonies, theme hours, a rave, and of course, the Linedance! <span style={{color: '#e2883c', fontWeight: 'bold'}}>Our Dancers will stand for the entire duration to symbolize our cause and the impact that we are making on the lives of children with pediatric illnesses at UF Health Shands Children’s Hospital.</span> At the end of our event we will get to witness the reveal of the total amount raised by Dance Marathon over the whole year.</p>
           </Typography>
+          <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
+            <p>We’re excited to keep building on our efforts this year, creating meaningful miracles for the families who need them most. Catch a glimpse of last year’s impact by watching our <span style={{ color: '#e2883c', fontWeight: 'bold' }}>Main Event closing ceremonies video</span> here!</p>
+          </Typography>
+          <YoutubeVid videoId="BlBmUrjDoMw" />
           <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
             <p>Follow us on social media for event updates!</p>
           </Typography>
