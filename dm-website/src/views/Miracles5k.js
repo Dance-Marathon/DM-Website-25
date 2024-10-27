@@ -61,7 +61,7 @@ export default function Miracles5k() {
         >
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
-              Welcome to the <span style={{color: '#233563', fontWeight: 'bold'}}>Miracles in Color 5K</span> benefiting UF Health Shands
+              Welcome to the <span style={{color: '#e2883c', fontWeight: 'bold'}}>Miracles in Color 5K</span> benefiting UF Health Shands
               Children's Hospital! It is open to anyone who wants to support our
               cause and have a great time. We couldn't think of a better way for
               you to spend your Sunday morning than with paint and by supporting
