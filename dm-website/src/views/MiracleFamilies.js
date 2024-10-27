@@ -108,6 +108,15 @@ export default function MiracleFamilies() {
               Take a moment to meet the heart and soul of our philanthropy. Our Miracle Children are the inspiration for every student who is part of DM at UF.
             </Typography>
             </Box>
+            <Container
+            sx={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center', 
+              textAlign: 'center',
+            }}
+          >
+            <Box sx={{ width: '100%', display: 'flex', justifyContent: 'center' }}>
             <Grid 
               container 
               spacing={3} 
@@ -173,6 +182,8 @@ export default function MiracleFamilies() {
                 </Grid>
               ))}
             </Grid>
+            </Box>
+            </Container>
         </Container>
       <Footer />
     </ThemeProvider>
