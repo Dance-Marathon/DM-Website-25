@@ -1,5 +1,6 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
+import { alpha } from '@mui/material/styles';
 
 import {
   AppBar,
@@ -371,21 +372,21 @@ function AppAppBar({ mode, toggleColorMode }) {
                     <IconButton
                       href="https://www.instagram.com/dmatuf/?hl=en"
                       aria-label="Instagram"
-                      sx={{ color: 'white' }}
+                      sx={{ color: 'white', '&:hover': {background: alpha('#4965A6', 0.3)} }}
                     >
                       <InstagramIcon />
                     </IconButton>
                     <IconButton
                       href="https://www.facebook.com/floridaDM/"
                       aria-label="Facebook"
-                      sx={{ color: 'white' }}
+                      sx={{ color: 'white', '&:hover': {background: alpha('#4965A6', 0.3)} }}
                     >
                       <FacebookIcon />
                     </IconButton>
                     <IconButton
                       href="https://x.com/floridadm?lang=en"
                       aria-label="X"
-                      sx={{ color: 'white' }}
+                      sx={{ color: 'white', '&:hover': {background: alpha('#4965A6', 0.3)} }}
                     >
                       <TwitterIcon />
                     </IconButton>
