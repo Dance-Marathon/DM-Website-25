@@ -829,6 +829,8 @@ style={{ color: '#233563', marginBottom: '1px' }}>
     component={Paper} 
     sx={{ 
       width: '100%', 
+      maxHeight: '975px', // Set a specific height as needed
+      overflowY: 'auto', 
       overflowX: 'auto' 
     }}
   >
