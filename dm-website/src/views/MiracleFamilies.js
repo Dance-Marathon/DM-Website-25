@@ -8,6 +8,7 @@ import { Container, Typography, Box, Link, Grid } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import CircleModalPopup from '../components/CircleModalPopup';
+import LazyLoad from 'react-lazyload';
 
 import AlyssaM from "../assets/images/miraclechildren/Alyssa.jpg";
 import AydenM from "../assets/images/miraclechildren/Ayden.jpeg";
@@ -63,7 +64,9 @@ export default function MiracleFamilies() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={MiracleFamiliesPic} title='Meet our Miracle Families'/>
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -108,6 +111,7 @@ export default function MiracleFamilies() {
               Take a moment to meet the heart and soul of our philanthropy. Our Miracle Children are the inspiration for every student who is part of DM at UF.
             </Typography>
             </Box>
+            <LazyLoad height={200} offset={100} once>
             <Grid 
               container 
               spacing={3} 
@@ -173,6 +177,7 @@ export default function MiracleFamilies() {
                 </Grid>
               ))}
             </Grid>
+            </LazyLoad>
         </Container>
       <Footer />
     </ThemeProvider>

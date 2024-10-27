@@ -9,6 +9,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import CaptainPic from "../assets/images/pagepics/CaptainsPic.jpg";
+import LazyLoad from 'react-lazyload';
 
 const teams = [
   {
@@ -355,7 +356,9 @@ export default function Captains() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={CaptainPic} title='Captain Teams' />
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

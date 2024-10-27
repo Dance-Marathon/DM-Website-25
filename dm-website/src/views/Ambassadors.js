@@ -10,6 +10,7 @@ import PageHero from '../components/PageHero';
 import "../App.css";
 import AmbassadorGuidelines from "../assets/pdfs/2024 Ambassador Guidelines.pdf"
 import AmbassadorsPic from "../assets/images/pagepics/AmbassadorsHero.JPG";
+import LazyLoad from 'react-lazyload';
 
 
 export default function Ambassadors() {
@@ -85,7 +86,9 @@ export default function Ambassadors() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={AmbassadorsPic} title='Ambassadors' />
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

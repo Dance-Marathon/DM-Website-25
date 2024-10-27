@@ -10,6 +10,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import YoutubeVid from '../components/YoutubeVid';
 import FallKickoffPic from "../assets/images/pagepics/FallKickoffPic.jpg";
+import LazyLoad from 'react-lazyload';
 
 export default function FallKickoff() {
   const [mode, setMode] = React.useState(() => {
@@ -32,7 +33,9 @@ export default function FallKickoff() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={FallKickoffPic} title='Fall Kickoff'/>
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -52,7 +55,9 @@ export default function FallKickoff() {
           <Typography color="text.secondary" sx={{ marginBottom: 6 }}>
             <p>DM at UF hosted its first annual <span style={{color: '#233563', fontWeight: 'bold'}}>Kickoff Event</span> in 2021! We are excited to continue this event for many years to come. It is the first event of the year for all of our internal and external members, Miracle Families, and more to enjoy. The event is held at Flavet Field including music, fun games, Miracle Stories, food, merchandise, and more!</p>
           </Typography>
+          <LazyLoad height={200} offset={100} once>
           <YoutubeVid videoId="fTElQSBr9bU"/>
+          </LazyLoad>
         </Box>
       </Container>
       <Footer />

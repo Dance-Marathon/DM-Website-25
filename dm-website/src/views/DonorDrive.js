@@ -9,6 +9,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import FAQ from "../components/FAQ";
 import DonorDrivePic from "../assets/images/pagepics/DonorDrivePic.png";
+import LazyLoad from 'react-lazyload';
 
 export default function DonorDrive() {
   const [mode, setMode] = React.useState(() => {
@@ -30,7 +31,9 @@ export default function DonorDrive() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={DonorDrivePic} title="DonorDrive" />
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

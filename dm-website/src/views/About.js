@@ -13,6 +13,7 @@ import AboutPic from "../assets/images/pagepics/AboutPicNew.png";
 import CMNBox from "../assets/images/miniboxpics/CMNUFHealthBox.JPG";
 import MFBox from "../assets/images/miniboxpics/MiracleFamiliesBox.JPG";
 import OurStoryBox from "../assets/images/miniboxpics/OurStoryBox.JPG";
+import LazyLoad from 'react-lazyload';
 
 export default function About() {
   const [mode, setMode] = React.useState(() => {
@@ -34,7 +35,9 @@ export default function About() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={AboutPic} title='About Us'/>
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -60,6 +63,7 @@ export default function About() {
         </Box>
       
         {/* Centered Grid for SquareCards */}
+        <LazyLoad height={200} offset={100} once>
         <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
           <Grid 
             container 
@@ -79,6 +83,7 @@ export default function About() {
             ))}
           </Grid>
         </Box>
+        </LazyLoad>
       </Container>
       <Footer />
     </ThemeProvider>

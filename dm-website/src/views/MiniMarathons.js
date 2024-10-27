@@ -11,6 +11,7 @@ import PageHero from '../components/PageHero';
 import YoutubeVid from '../components/YoutubeVid';
 import "../App.css";
 import MiniMarathonsPic from "../assets/images/pagepics/MiniMarathonsPic.jpg";
+import LazyLoad from 'react-lazyload';
 
 export default function MiniMarathons() {
   const [mode, setMode] = React.useState(() => {
@@ -33,7 +34,9 @@ export default function MiniMarathons() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={MiniMarathonsPic} title='Mini Marathons'/>
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -138,7 +141,9 @@ export default function MiniMarathons() {
             </Grid>
             <Grid item xs={8}>
               <Box>
+              <LazyLoad height={200} offset={100} once>
                 <YoutubeVid videoId="wDD1GzDla3c" />
+              </LazyLoad>
               </Box>
             </Grid>
           </Grid>

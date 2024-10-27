@@ -15,6 +15,7 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
+import LazyLoad from 'react-lazyload';
 
 import OurStoryHero from "../assets/images/pagepics/OurStoryHero.JPG"
 import "../App.css";
@@ -105,7 +106,9 @@ export default function OurStory() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={OurStoryHero} title="Our Story" />
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

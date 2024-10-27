@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import { Container, Typography, Grid, Chip } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
+import LazyLoad from 'react-lazyload';
 
 import ELPPic from "../assets/images/pagepics/ELPPic.jpg";
 
@@ -158,7 +159,9 @@ export default function About() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={ELPPic} title='Emerging Leaders'/>
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

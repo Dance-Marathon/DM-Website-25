@@ -61,7 +61,9 @@ function Contact() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode}/>
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={ContactPic} title='Contact Us'/>
+      </LazyLoad>
       <Box
         component="section"
         variant="gradient"

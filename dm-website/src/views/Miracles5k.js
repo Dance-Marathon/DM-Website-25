@@ -10,6 +10,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import FAQ from "../components/FAQ";
 import EventsPic from "../assets/images/pagepics/EventsPic.png";
+import LazyLoad from 'react-lazyload';
 
 export default function Miracles5k() {
   const [mode, setMode] = React.useState(() => {
@@ -31,6 +32,7 @@ export default function Miracles5k() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero
         imageUrl={EventsPic}
         sx={{
@@ -42,6 +44,7 @@ export default function Miracles5k() {
         }}
         title="Miracles In Color 5k"
       />
+      </LazyLoad>
 
       <Container
         sx={{

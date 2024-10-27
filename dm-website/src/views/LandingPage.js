@@ -9,6 +9,7 @@ import getLPTheme from '../getLPTheme';
 import { Typography, Container, Grid, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import LandingCarousel from '../components/LandingCarousel';
+import LazyLoad from 'react-lazyload';
 
 import BookIcon from '@mui/icons-material/MenuBook';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospitalOutlined';
@@ -39,7 +40,9 @@ export default function LandingPage() {
     <ThemeProvider theme={LPtheme}>
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <Hero />
+      </LazyLoad>
       <Box sx={{ 
         bgcolor: 'background.paper',
         }}>
@@ -128,7 +131,9 @@ export default function LandingPage() {
         </Container>
         <Divider/>
         {/* <Typography variant="h3" color="primary" align="center" gutterBottom sx={{marginTop: 4}}>Our 2025 Partners</Typography> */}
+        <LazyLoad height={200} offset={100} once>
         <LandingCarousel />
+        </LazyLoad>
         <Divider/>
       </Box>
     </ThemeProvider>

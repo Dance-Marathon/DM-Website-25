@@ -9,6 +9,7 @@ import { Container, Typography, Link } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import YoutubeVid from "../components/YoutubeVid";
+import LazyLoad from 'react-lazyload';
 
 import TTHero from "../assets/images/pagepics/TTHero.png";
 
@@ -33,6 +34,7 @@ export default function TransformToday() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero
         imageUrl={TTHero}
         sx={{
@@ -44,6 +46,7 @@ export default function TransformToday() {
         }}
         title="Transform Today"
       />
+      </LazyLoad>
 
       <Container
         sx={{
@@ -86,7 +89,9 @@ export default function TransformToday() {
               to watch our <span style={{ color: '#233563', fontWeight: 'bold' }}>Transform Today recap video</span> from last year here.
             </p>
           </Typography>
+          <LazyLoad height={200} offset={100} once>
           <YoutubeVid videoId="oI5xXmr9hDY" />
+          </LazyLoad>
           <Typography
             variant="h5"
             component="h2"

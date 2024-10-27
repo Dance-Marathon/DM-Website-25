@@ -9,6 +9,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import FAQ from '../components/FAQ';
 import MiracleMakersPic from "../assets/images/pagepics/MiracleMakersPic.jpg";
+import LazyLoad from 'react-lazyload';
 
 export default function MiracleMakers() {
   const [mode, setMode] = React.useState(() => {
@@ -31,7 +32,9 @@ export default function MiracleMakers() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={MiracleMakersPic} title='Miracle Makers' />
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

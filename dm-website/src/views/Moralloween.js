@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import { Container, Typography, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
+import LazyLoad from 'react-lazyload';
 
 import MoralloweenPic from "../assets/images/pagepics/MoralloweenHero.jpeg";
 import MWeen1 from "../assets/images/pagepics/MWeen1.jpg";
@@ -34,7 +35,9 @@ export default function Moralloween() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={MoralloweenPic} title='Moralloween'/>
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -61,6 +64,7 @@ export default function Moralloween() {
               </Link>.
             </Typography>
         </Box>
+        <LazyLoad height={200} offset={100} once>
         <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap', justifyContent: 'center' }}>
           {[MWeen1, MWeen2, MWeen3, MWeen4].map((image, index) => (
             <Box
@@ -78,6 +82,7 @@ export default function Moralloween() {
             />
           ))}
         </Box>
+        </LazyLoad>
       </Container>
       <Footer />
     </ThemeProvider>
