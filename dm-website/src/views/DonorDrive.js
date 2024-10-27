@@ -49,11 +49,11 @@ export default function DonorDrive() {
         >
           <Typography variant="body1" gutterBottom color="text.secondary">
             UF Health Shands Children’s Hospital is continuing to use
-            DonorDrive, an online fundraising platform used widely by Children’s
-            Miracle Network Hospitals, for its Dance Marathon programs. Dance
+            <span style={{ color: '#233563', fontWeight: 'bold' }}> DonorDrive</span><span style={{ color: '#233563', fontWeight: 'bold' }}>, an online fundraising platform used widely by Children’s
+            Miracle Network Hospitals, for its Dance Marathon programs.</span> Dance
             Marathon at the University of Florida’s Fundraisers will be creating
             DonorDrive accounts to begin fundraising for DM at UF 2025.
-            DonorDrive is safe and easy to use, and was utilized by UF Health
+            <span style={{ color: '#e2883c', fontWeight: 'bold' }}> DonorDrive is safe and easy to use</span>, and was utilized by UF Health
             Shands Children’s Hospital this past year. To create a fundraising
             page, register using this {""}
             <Link
