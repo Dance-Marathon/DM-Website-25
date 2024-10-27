@@ -41,7 +41,7 @@ export default function FundraisingGuide() {
         }}
       >
         <Typography variant="body1" color="text.secondary" paragraph>
-          Take a look at all the different ways you can fundraise with Dance Marathon at UF! Whether you ask friends and family to support you, showcase your passion on social media, participate in canning, or volunteer your time for donations, there are so many ways to fundraise for DM at UF. Read more about all of these options below!
+          Take a look at all the different ways you can fundraise with Dance Marathon at UF! <span style={{ color: '#e2883c', fontWeight: 'bold' }}>Whether you ask friends and family to support you, showcase your passion on social media, participate in canning, or volunteer your time for donations, there are so many ways to fundraise for DM at UF.</span> Read more about all of these options below!
         </Typography>
 
         <Accordion>
@@ -61,7 +61,7 @@ export default function FundraisingGuide() {
         <span style={{ color: '#233563', fontWeight: 'bold' }}>Tips to a better response</span> - Personalize your message and tell the story that brought you into this organization. Follow up! Be persistent! You care about this cause and that devotion will shine through your efforts.
         </Typography>
         <Typography variant="body1" color="text.secondary" paragraph>
-          A great way to say thanks for becoming part of the DM family!
+        <span style={{ color: '#233563', fontWeight: 'bold' }}>A great way to say thanks for becoming part of the DM family!</span>
         </Typography>
       </AccordionDetails>
     </Accordion>
