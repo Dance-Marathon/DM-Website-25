@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import { Container, Typography, Box, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
-import AlumniPic from "../assets/images/pagepics/AlumniPic.jpg";
+import AlumniPic from "../assets/images/pagepics/AlumniPic-min.jpg";
 
 export default function Alumni() {
   const [mode, setMode] = React.useState(() => {
