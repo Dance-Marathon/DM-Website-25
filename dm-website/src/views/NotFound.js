@@ -8,7 +8,7 @@ const NotFound = () => (
   <Box
     sx={{
       minHeight: '100vh',
-      backgroundImage: `url(${CursedCam})`, // Use the imported image
+      //backgroundImage: `url(${CursedCam})`, // Use the imported image
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       display: 'flex',

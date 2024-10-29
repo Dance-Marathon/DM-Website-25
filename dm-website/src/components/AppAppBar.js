@@ -132,64 +132,6 @@ function AppAppBar({ mode, toggleColorMode }) {
                     overflow: 'hidden',
                   }}
                 >
-                  {/* About Button */}
-                  <Button
-                    variant="regular"
-                    onClick={() => navigate('/about')}
-                    sx={{
-                      ...menuTheme,
-                      ml: 1,
-                      flexShrink: 0,
-                    }}
-                  >
-                    <Typography variant="body1" color="text.primary" noWrap>
-                      About
-                    </Typography>
-                  </Button>
-                  {/* Donate Button */}
-                  <Button
-                    variant="regular"
-                    onClick={() => navigate('/donate')}
-                    sx={{
-                      ...menuTheme,
-                      bgcolor: 'rgba(226, 136, 60, 0.7)',
-                      color: 'white',
-                      fontWeight: 'bold',
-                      px: 1,
-                      ml: 1,
-                      '&:hover': {
-                        bgcolor: 'rgba(226, 136, 60, 0.9)',
-                      },
-                      minWidth: 0,
-                      flexShrink: 0,
-                    }}
-                  >
-                    <Typography variant="body1" color="inherit" noWrap>
-                      Donate
-                    </Typography>
-                  </Button>
-                  {/* Register Button */}
-                  <Button
-                    variant="regular"
-                    onClick={() => navigate('/register')}
-                    sx={{
-                      ...menuTheme,
-                      bgcolor: 'rgba(226, 136, 60, 0.7)',
-                      color: 'white',
-                      fontWeight: 'bold',
-                      px: 1,
-                      ml: 1,
-                      '&:hover': {
-                        bgcolor: 'rgba(226, 136, 60, 0.9)',
-                      },
-                      minWidth: 0,
-                      flexShrink: 0,
-                    }}
-                  >
-                    <Typography variant="body1" color="inherit" noWrap>
-                      Register
-                    </Typography>
-                  </Button>
                 </Box>
               )}
             </Box>
@@ -230,8 +172,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                 <MenuPopupState
                   title="Get Involved"
                   submenuItems={[
-                    { label: 'Alumni', url: '/alumni' },
                     { label: 'Applications', url: '/applications' },
+                    { label: 'Alumni', url: '/alumni' },
                     { label: 'Ambassadors', url: '/ambassadors' },
                     { label: 'Captain Teams', url: '/captainteams' },
                     { label: 'Miracle Makers', url: '/miraclemakers' },
@@ -266,7 +208,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                     { label: 'Fundraising Guide', url: '/fundraisingguide' },
                     { label: 'Partners', url: '/partners' },
                   ]}
-                  menuURL={'/fundraising'}
+                  menuURL={'/register-to-fundraise'}
                   sx={{
                     ...menuTheme,
                   }}
@@ -411,216 +353,179 @@ function AppAppBar({ mode, toggleColorMode }) {
         </Container>
       </AppBar>
       {/* Drawer Menu */}
-      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
-        <Box
-          sx={{
-            width: 250,
-            p: 2,
-            backgroundColor: 'background.dm',
-            flexGrow: 1,
-          }}
+<Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+  <Box
+    sx={{
+      width: 250,
+      height: '100%',
+      display: 'flex',
+      flexDirection: 'column',
+      backgroundColor: 'background.dm',
+    }}
+  >
+    <List component="nav" sx={{ flexGrow: 1 }}>
+      {/* Contact Us */}
+      <ListItemButton
+        onClick={() => {
+          navigate('/contact');
+          toggleDrawer(false)();
+        }}
+      >
+        <ListItemText primary="Contact Us" sx={{ color: 'white', fontSize: '1.5rem' }} />
+      </ListItemButton>
+
+      {/* About */}
+      <ListItemButton onClick={() => {
+        navigate('/about');
+        handleToggle('about');
+      }}>
+        <ListItemText primary="About" sx={{ color: 'white', fontSize: '1.5rem' }} />
+        {drawerState.about ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
+      </ListItemButton>
+      <Collapse in={drawerState.about} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          <ListItemButton sx={{ pl: 4 }} onClick={() => { navigate('/ourstory'); toggleDrawer(false)(); }}>
+            <ListItemText primary="Our Story" sx={{ color: 'white' }} />
+          </ListItemButton>
+          <ListItemButton sx={{ pl: 4 }} onClick={() => { navigate('/cmnhospitals'); toggleDrawer(false)(); }}>
+            <ListItemText primary="CMN & UF Health" sx={{ color: 'white' }} />
+          </ListItemButton>
+          <ListItemButton sx={{ pl: 4 }} onClick={() => { navigate('/miraclefamilies'); toggleDrawer(false)(); }}>
+            <ListItemText primary="Meet our Miracle Families" sx={{ color: 'white' }} />
+          </ListItemButton>
+        </List>
+      </Collapse>
+
+      {/* Get Involved */}
+      <ListItemButton onClick={() => {
+        navigate('/get-involved');
+        handleToggle('getInvolved');
+      }}>
+        <ListItemText primary="Get Involved" sx={{ color: 'white', fontSize: '1.5rem' }} />
+        {drawerState.getInvolved ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
+      </ListItemButton>
+      <Collapse in={drawerState.getInvolved} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          {[{ label: 'Applications', url: '/applications' }, { label: 'Alumni', url: '/alumni' }, { label: 'Ambassadors', url: '/ambassadors' }, { label: 'Captain Teams', url: '/captainteams' }, { label: 'Miracle Makers', url: '/miraclemakers' }, { label: 'Emering Leaders', url: '/emergingleaders' }, { label: 'Organizations', url: '/organizations' }].map((item) => (
+            <ListItemButton
+              key={item.label}
+              sx={{ pl: 4 }}
+              onClick={() => {
+                navigate(item.url);
+                toggleDrawer(false)();
+              }}
+            >
+              <ListItemText primary={item.label} sx={{ color: 'white' }} />
+            </ListItemButton>
+          ))}
+        </List>
+      </Collapse>
+
+      {/* Events */}
+      <ListItemButton onClick={() => {
+        navigate('/events');
+        handleToggle('events');
+      }}>
+        <ListItemText primary="Events" sx={{ color: 'white', fontSize: '1.5rem' }} />
+        {drawerState.events ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
+      </ListItemButton>
+      <Collapse in={drawerState.events} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          {[{ label: 'Fall Kickoff', url: '/fallkickoff' }, { label: 'Main Event', url: '/mainevent' }, { label: 'Mini-Marathons', url: '/minimarathons' }, { label: 'Miracles in Color 5k', url: '/miracles5k' }, { label: 'Moralloween', url: '/moralloween' }, { label: 'Transform Today', url: '/transformtoday' }].map((item) => (
+            <ListItemButton
+              key={item.label}
+              sx={{ pl: 4 }}
+              onClick={() => {
+                navigate(item.url);
+                toggleDrawer(false)();
+              }}
+            >
+              <ListItemText primary={item.label} sx={{ color: 'white' }} />
+            </ListItemButton>
+          ))}
+        </List>
+      </Collapse>
+
+      {/* Fundraising */}
+      <ListItemButton onClick={() => {
+        navigate('/fundraising');
+        handleToggle('fundraising');
+      }}>
+        <ListItemText primary="Fundraising" sx={{ color: 'white', fontSize: '1.5rem' }} />
+        {drawerState.fundraising ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
+      </ListItemButton>
+      <Collapse in={drawerState.fundraising} timeout="auto" unmountOnExit>
+        <List component="div" disablePadding>
+          {[{ label: 'DonorDrive', url: '/donordrive' }, { label: 'Employee Matching', url: '/employeematching' }, { label: 'Fundraising Guide', url: '/fundraisingguide' }, { label: 'Partners', url: '/partners' }].map((item) => (
+            <ListItemButton
+              key={item.label}
+              sx={{ pl: 4 }}
+              onClick={() => {
+                navigate(item.url);
+                toggleDrawer(false)();
+              }}
+            >
+              <ListItemText primary={item.label} sx={{ color: 'white' }} />
+            </ListItemButton>
+          ))}
+        </List>
+      </Collapse>
+
+      {/* Blog */}
+      <ListItemButton onClick={() => {
+        navigate('/blog');
+        toggleDrawer(false)();
+      }}>
+        <ListItemText primary="Blog" sx={{ color: 'white', fontSize: '1.5rem' }} />
+      </ListItemButton>
+
+      {/* Shop */}
+      <ListItemButton onClick={() => {
+        navigate('/shop');
+        toggleDrawer(false)();
+      }}>
+        <ListItemText primary="Shop" sx={{ color: 'white', fontSize: '1.5rem' }} />
+      </ListItemButton>
+
+    </List>
+
+
+      {/* Social Media Icons at the Bottom */}
+    <Box
+      sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        p: 2,
+      }}
+    >
+      <Stack direction="row" spacing={1}>
+        <IconButton
+          href="https://www.instagram.com/dmatuf/?hl=en"
+          aria-label="Instagram"
+          sx={{ color: 'white', '&:hover': { background: alpha('#4965A6', 0.3) } }}
         >
-          <List component="nav">
-            {/* Contact Us */}
-            <ListItemButton
-              onClick={() => {
-                navigate('/contact');
-                toggleDrawer(false)();
-              }}
-            >
-              <ListItemText primary="Contact Us" sx={{ color: 'white', fontSize: '1.5rem' }} />
-            </ListItemButton>
+          <InstagramIcon />
+        </IconButton>
+        <IconButton
+          href="https://www.facebook.com/floridaDM/"
+          aria-label="Facebook"
+          sx={{ color: 'white', '&:hover': { background: alpha('#4965A6', 0.3) } }}
+        >
+          <FacebookIcon />
+        </IconButton>
+        <IconButton
+          href="https://x.com/floridadm?lang=en"
+          aria-label="X"
+          sx={{ color: 'white', '&:hover': { background: alpha('#4965A6', 0.3) } }}
+        >
+          <TwitterIcon />
+        </IconButton>
+      </Stack>
+    </Box>
+  </Box>
+</Drawer>
 
-            {/* About */}
-            <ListItemButton onClick={() => handleToggle('about')}>
-              <ListItemText primary="About" sx={{ color: 'white', fontSize: '1.5rem' }} />
-              {drawerState.about ? (
-                <ExpandLess sx={{ color: 'white' }} />
-              ) : (
-                <ExpandMore sx={{ color: 'white' }} />
-              )}
-            </ListItemButton>
-            <Collapse in={drawerState.about} timeout="auto" unmountOnExit>
-              <List component="div" disablePadding>
-                <ListItemButton
-                  sx={{ pl: 4 }}
-                  onClick={() => {
-                    navigate('/ourstory');
-                    toggleDrawer(false)();
-                  }}
-                >
-                  <ListItemText primary="Our Story" sx={{ color: 'white' }} />
-                </ListItemButton>
-                <ListItemButton
-                  sx={{ pl: 4 }}
-                  onClick={() => {
-                    navigate('/cmnhospitals');
-                    toggleDrawer(false)();
-                  }}
-                >
-                  <ListItemText primary="CMN & UF Health" sx={{ color: 'white' }} />
-                </ListItemButton>
-                <ListItemButton
-                  sx={{ pl: 4 }}
-                  onClick={() => {
-                    navigate('/miraclefamilies');
-                    toggleDrawer(false)();
-                  }}
-                >
-                  <ListItemText primary="Meet our Miracle Families" sx={{ color: 'white' }} />
-                </ListItemButton>
-              </List>
-            </Collapse>
-
-            {/* Get Involved */}
-            <ListItemButton onClick={() => handleToggle('getInvolved')}>
-              <ListItemText primary="Get Involved" sx={{ color: 'white', fontSize: '1.5rem' }} />
-              {drawerState.getInvolved ? (
-                <ExpandLess sx={{ color: 'white' }} />
-              ) : (
-                <ExpandMore sx={{ color: 'white' }} />
-              )}
-            </ListItemButton>
-            <Collapse in={drawerState.getInvolved} timeout="auto" unmountOnExit>
-              <List component="div" disablePadding>
-                {/* Submenu Items */}
-                {[
-                  { label: 'Alumni', url: '/alumni' },
-                  { label: 'Applications', url: '/applications' },
-                  { label: 'Ambassadors', url: '/ambassadors' },
-                  { label: 'Captain Teams', url: '/captainteams' },
-                  { label: 'Miracle Makers', url: '/miraclemakers' },
-                  { label: 'Emerging Leaders', url: '/emergingleaders' },
-                  { label: 'Organizations', url: '/organizations' },
-                ].map((item) => (
-                  <ListItemButton
-                    key={item.label}
-                    sx={{ pl: 4 }}
-                    onClick={() => {
-                      navigate(item.url);
-                      toggleDrawer(false)();
-                    }}
-                  >
-                    <ListItemText primary={item.label} sx={{ color: 'white' }} />
-                  </ListItemButton>
-                ))}
-              </List>
-            </Collapse>
-
-            {/* Events */}
-            <ListItemButton onClick={() => handleToggle('events')}>
-              <ListItemText primary="Events" sx={{ color: 'white', fontSize: '1.5rem' }} />
-              {drawerState.events ? (
-                <ExpandLess sx={{ color: 'white' }} />
-              ) : (
-                <ExpandMore sx={{ color: 'white' }} />
-              )}
-            </ListItemButton>
-            <Collapse in={drawerState.events} timeout="auto" unmountOnExit>
-              <List component="div" disablePadding>
-                {/* Submenu Items */}
-                {[
-                  { label: 'Fall Kickoff', url: '/fallkickoff' },
-                  { label: 'Main Event', url: '/mainevent' },
-                  { label: 'Mini Marathons', url: '/minimarathons' },
-                  { label: 'Moralloween', url: '/moralloween' },
-                  { label: 'Transform Today', url: '/transformtoday' },
-                  { label: 'Miracles in Color 5k', url: '/miracles5k' },
-                ].map((item) => (
-                  <ListItemButton
-                    key={item.label}
-                    sx={{ pl: 4 }}
-                    onClick={() => {
-                      navigate(item.url);
-                      toggleDrawer(false)();
-                    }}
-                  >
-                    <ListItemText primary={item.label} sx={{ color: 'white' }} />
-                  </ListItemButton>
-                ))}
-              </List>
-            </Collapse>
-
-            {/* Fundraising */}
-            <ListItemButton onClick={() => handleToggle('fundraising')}>
-              <ListItemText primary="Fundraising" sx={{ color: 'white', fontSize: '1.5rem' }} />
-              {drawerState.fundraising ? (
-                <ExpandLess sx={{ color: 'white' }} />
-              ) : (
-                <ExpandMore sx={{ color: 'white' }} />
-              )}
-            </ListItemButton>
-            <Collapse in={drawerState.fundraising} timeout="auto" unmountOnExit>
-              <List component="div" disablePadding>
-                {/* Submenu Items */}
-                {[
-                  { label: 'DonorDrive', url: '/donordrive' },
-                  { label: 'Employee Matching', url: '/employeematching' },
-                  { label: 'Fundraising Guide', url: '/fundraisingguide' },
-                  { label: 'Partners', url: '/partners' },
-                ].map((item) => (
-                  <ListItemButton
-                    key={item.label}
-                    sx={{ pl: 4 }}
-                    onClick={() => {
-                      navigate(item.url);
-                      toggleDrawer(false)();
-                    }}
-                  >
-                    <ListItemText primary={item.label} sx={{ color: 'white' }} />
-                  </ListItemButton>
-                ))}
-              </List>
-            </Collapse>
-
-            {/* Blog */}
-            <ListItemButton
-              onClick={() => {
-                navigate('/blog');
-                toggleDrawer(false)();
-              }}
-            >
-              <ListItemText primary="Blog" sx={{ color: 'white', fontSize: '1.5rem' }} />
-            </ListItemButton>
-
-            {/* Shop */}
-            <ListItemButton
-              onClick={() => {
-                navigate('/shop');
-                toggleDrawer(false)();
-              }}
-            >
-              <ListItemText primary="Shop" sx={{ color: 'white', fontSize: '1.5rem' }} />
-            </ListItemButton>
-
-            {/* Donate */}
-            <ListItemButton
-              onClick={() => {
-                navigate('/donate');
-                toggleDrawer(false)();
-              }}
-            >
-              <ListItemText
-                primary="Donate"
-                sx={{ color: 'secondary.main', fontSize: '1.5rem' }}
-              />
-            </ListItemButton>
-
-            {/* Register */}
-            <ListItemButton
-              onClick={() => {
-                navigate('/register');
-                toggleDrawer(false)();
-              }}
-            >
-              <ListItemText
-                primary="Register"
-                sx={{ color: 'secondary.main', fontSize: '1.5rem' }}
-              />
-            </ListItemButton>
-          </List>
-        </Box>
-      </Drawer>
     </div>
   );
 }
