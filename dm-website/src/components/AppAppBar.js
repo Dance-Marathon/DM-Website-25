@@ -448,8 +448,8 @@ function AppAppBar({ mode, toggleColorMode }) {
 
       {/* Fundraising */}
       <ListItemButton onClick={() => {
-        navigate('/fundraising');
-        handleToggle('fundraising');
+        navigate('/register-to-fundraise');
+        handleToggle('register-to-fundraise');
       }}>
         <ListItemText primary="Fundraising" sx={{ color: 'white', fontSize: '1.5rem' }} />
         {drawerState.fundraising ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
