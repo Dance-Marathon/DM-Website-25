@@ -487,6 +487,32 @@ function AppAppBar({ mode, toggleColorMode }) {
         <ListItemText primary="Shop" sx={{ color: 'white', fontSize: '1.5rem' }} />
       </ListItemButton>
 
+       {/* Donate */}
+       <ListItemButton
+              onClick={() => {
+                navigate('/donate');
+                toggleDrawer(false)();
+              }}
+            >
+              <ListItemText
+                primary="Donate"
+                sx={{ color: 'secondary.main', fontSize: '1.5rem' }}
+              />
+            </ListItemButton>
+
+            {/* Register */}
+            <ListItemButton
+              onClick={() => {
+                navigate('/register');
+                toggleDrawer(false)();
+              }}
+            >
+              <ListItemText
+                primary="Register"
+                sx={{ color: 'secondary.main', fontSize: '1.5rem' }}
+              />
+            </ListItemButton>
+
     </List>
 
 
