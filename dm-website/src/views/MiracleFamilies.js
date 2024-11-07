@@ -88,7 +88,7 @@ export default function MiracleFamilies() {
             </Typography>
 
             <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
-              If you would like to become a Children's Miracle Nerwork Hospital Ambassador, please fill out the{' '}
+              If you would like to become a Children's Miracle Network Hospital Ambassador, please fill out the{' '}
               <Link href="https://giving.ufhealth.org/cmn/ambassadors/" sx={{ color: '#1a73e8' }}>
                 form
               </Link>.
