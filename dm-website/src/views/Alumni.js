@@ -10,6 +10,7 @@ import PageHero from '../components/PageHero';
 import AlumniPic from "../assets/images/pagepics/AlumniPic.jpg";
 import LazyLoad from 'react-lazyload';
 
+
 export default function Alumni() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'light'

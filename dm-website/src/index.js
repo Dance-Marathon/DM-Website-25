@@ -72,7 +72,7 @@ root.render(
         <Route path="/cmnhospitals" element={<CMNHospitals />} />
         <Route path="/miraclefamilies" element={<MiracleFamilies />} />
         <Route path="/applications" element={<Applications />} />
-        <Route path="/fundraising" element={<Fundraising />} />
+        <Route path="/register-to-fundraise" element={<Fundraising />} />
         <Route path="/donordrive" element={<DonorDrive />} />
         <Route path="/organizations" element={<Organizations />} />
         <Route path="/employeematching" element={<EmployeeMatching />} />
