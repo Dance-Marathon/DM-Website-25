@@ -10,6 +10,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import SquareCard from "../components/SquareCard";
 import { Link } from "react-router-dom";
+import LazyLoad from 'react-lazyload';
 
 import GetInvolvedPic from "../assets/images/pagepics/GetInvolvedPic.jpg";
 import AlumniBox from "../assets/images/miniboxpics/AlumniMini.jpg"
@@ -39,7 +40,9 @@ export default function GetInvolved() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={GetInvolvedPic} title="Get Involved" />
+      </LazyLoad>
       <Container
         id="registertofundraise"
         sx={{
@@ -117,6 +120,7 @@ export default function GetInvolved() {
             width: "100%",
           }}
         >
+          <LazyLoad height={200} offset={100} once>
           <Grid
             container
             spacing={3}
@@ -175,6 +179,7 @@ export default function GetInvolved() {
               </Grid>
             ))}
           </Grid>
+          </LazyLoad>
         </Box>
       </Container>
       <Footer />

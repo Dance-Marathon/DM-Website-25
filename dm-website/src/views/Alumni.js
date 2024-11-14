@@ -7,7 +7,9 @@ import Footer from '../components/Footer';
 import { Container, Typography, Box, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
-import AlumniPic from "../assets/images/pagepics/AlumniPic-min.jpg";
+import AlumniPic from "../assets/images/pagepics/AlumniPic.jpg";
+import LazyLoad from 'react-lazyload';
+
 
 export default function Alumni() {
   const [mode, setMode] = React.useState(() => {
@@ -28,7 +30,9 @@ export default function Alumni() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={AlumniPic} title='Alumni' />
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

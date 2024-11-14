@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import { Container, Typography, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
+import LazyLoad from 'react-lazyload';
 
 import ApplicationsPic from "../assets/images/pagepics/Applications.jpg";
 
@@ -30,7 +31,9 @@ export default function Applications() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={ApplicationsPic} title='Applications'/>
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

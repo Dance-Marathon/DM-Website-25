@@ -10,6 +10,7 @@ import PageHero from '../components/PageHero';
 import ShandsW9 from "../assets/pdfs/W-9_Shands_HealthCare.pdf"
 import CMNW9 from "../assets/pdfs/CMNW-9.pdf"
 import EmployeeMatchingPic from "../assets/images/pagepics/Employee Matching.jpg";
+import LazyLoad from 'react-lazyload';
 
 export default function EmployeeMatching() {
   const [mode, setMode] = React.useState(() => {
@@ -31,7 +32,9 @@ export default function EmployeeMatching() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={EmployeeMatchingPic} title='Employee Matching'/>
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

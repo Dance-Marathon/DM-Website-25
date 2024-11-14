@@ -9,6 +9,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import SponsorshipPacket from "../assets/pdfs/SponsorshipPacket.pdf";
 import SponsorPic from "../assets/images/pagepics/SponsorsHero.JPG";
+import LazyLoad from 'react-lazyload';
 
 import Sponsor1 from "../assets/images/sponsors/Sponsor1.png";
 import Sponsor2 from "../assets/images/sponsors/Sponsor2.png";
@@ -155,7 +156,9 @@ export default function Sponsors() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={SponsorPic} title='Partners' sx={{ fontFamily: "CasaPinada"}}/>
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -199,7 +202,7 @@ export default function Sponsors() {
       <Typography variant="h3" color="text.secondary" align="center" gutterBottom sx={{marginTop: 4}}>
       <span style={{ color: '#233563', fontWeight: 'bold' }}>Our 2024 Partners</span>
       </Typography>
-
+      <LazyLoad height={200} offset={100} once>
       {/* Grid of sponsor logos */}
       <Grid container spacing={2} justifyContent="center" alignItems="center">
         {sponsors.map((sponsor, index) => (
@@ -212,6 +215,7 @@ export default function Sponsors() {
           </Grid>
         ))}
       </Grid>
+      </LazyLoad>
         </Container>
       <Footer />
     </ThemeProvider>

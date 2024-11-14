@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 import { Container, Typography, Box, Link } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
+import LazyLoad from 'react-lazyload';
 
 import CMNHero from "../assets/images/pagepics/CMNHero.jpg";
 import TriBrand from "../assets/images/TriBrand_Color.png";
@@ -31,7 +32,9 @@ export default function CMNHospitals() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={CMNHero} title="CMN & UF Health" />
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -139,6 +142,7 @@ export default function CMNHospitals() {
               https://ufhealth.org/shands-hospital-children-uf
             </Link>
           </Typography>
+          <LazyLoad height={200} offset={100} once>
           <Box sx={{ display: "flex", justifyContent: "center", marginTop: 4 }}>
             <img
               src={TriBrand}
@@ -146,6 +150,7 @@ export default function CMNHospitals() {
               style={{ maxWidth: "100%", height: "auto" }}
             />
           </Box>
+          </LazyLoad>
         </Box>
       </Container>
       <Footer />

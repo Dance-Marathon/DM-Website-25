@@ -9,6 +9,7 @@ import { Container, Typography, Grid, Link, } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import SquareCardSmall from '../components/SquareCardSmall';
+import LazyLoad from 'react-lazyload';
 
 import HowToGuide from "../assets/pdfs/how-to-guide.pdf"
 import RegisterToFundraise from "../assets/images/pagepics/RegisterToFundraise.png";
@@ -37,7 +38,9 @@ export default function Fundraising() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={RegisterToFundraise} title='Register to Fundraise'/>
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -100,6 +103,7 @@ export default function Fundraising() {
       
         {/* Centered Grid for SquareCards */}
         <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+        <LazyLoad height={200} offset={100} once>
           <Grid 
             container 
             spacing={3} 
@@ -118,6 +122,7 @@ export default function Fundraising() {
               </Grid>
             ))}
           </Grid>
+          </LazyLoad>
         </Box>
       </Container>
       <Footer />

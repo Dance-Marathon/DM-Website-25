@@ -10,6 +10,7 @@ import PageHero from '../components/PageHero';
 import FundraisingGuidePic from "../assets/images/pagepics/Fundraising Guide.jpg";
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import LazyLoad from 'react-lazyload';
 
 export default function FundraisingGuide() {
   const [mode, setMode] = React.useState(() => {
@@ -30,7 +31,9 @@ export default function FundraisingGuide() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={FundraisingGuidePic} title='Fundraising Guide' />
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

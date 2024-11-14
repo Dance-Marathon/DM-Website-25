@@ -15,6 +15,7 @@ import MEBoxPic from "../assets/images/miniboxpics/MEBoxPicNew.png";
 import KickoffBoxPic from "../assets/images/miniboxpics/Kickoff.jpeg";
 import MMBox from "../assets/images/miniboxpics/MiniMarathonBox.JPG";
 import MWeenBox from "../assets/images/miniboxpics/MWeenBox.JPG";
+import LazyLoad from 'react-lazyload';
 
 export default function Events() {
   const [mode, setMode] = React.useState(() => {
@@ -37,7 +38,9 @@ export default function Events() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={EventsPic} title='Events'/>
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -77,6 +80,7 @@ export default function Events() {
             </Typography>
         </Box>
         <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
+        <LazyLoad height={200} offset={100} once>
           <Grid 
             container 
             spacing={3} 
@@ -84,6 +88,7 @@ export default function Events() {
             alignItems="center"
             sx={{ maxWidth: 1200 }}
           >
+
             {[
               { image: KickoffBoxPic, title: 'Fall Kickoff', hoverText: "Our annual Fall Kickoff enjoyed by all internal and external memebers.", link: '/fallkickoff' },
               { image: MEBoxPic, title: 'Main Event', hoverText: "A 26.2-hour celebration for all members and miracles made throughout the year.", link: '/mainevent' },
@@ -97,6 +102,7 @@ export default function Events() {
               </Grid>
             ))}
           </Grid>
+          </LazyLoad>
         </Box>
       </Container>
       <Footer />

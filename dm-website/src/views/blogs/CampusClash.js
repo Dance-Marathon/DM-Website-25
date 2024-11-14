@@ -10,6 +10,7 @@ import PageHero from "../../components/PageHero";
 import getLPTheme from "../../getLPTheme";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import LazyLoad from 'react-lazyload';
 
 import Image1 from "../../assets/images/blogpics/CampusClashPic1.jpeg";
 import Image2 from "../../assets/images/blogpics/CampusClashSmallPic.jpeg";
@@ -34,7 +35,9 @@ export default function BeyondThisMoment() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={Image1} title="As Our Campuses Clash, Our Causes Unite" />
+      </LazyLoad>
 
       <Container
         sx={{
@@ -87,6 +90,7 @@ export default function BeyondThisMoment() {
             >
             {/* Left Image */}
             <Grid item>
+            <LazyLoad height={200} offset={100} once>
                 <Box
                 component="img"
                 src={Image2}
@@ -98,10 +102,12 @@ export default function BeyondThisMoment() {
                     display: "block", // Ensures image behaves like a block element
                 }}
                 />
+            </LazyLoad>
             </Grid>
 
             {/* Right Image */}
             <Grid item>
+            <LazyLoad height={200} offset={100} once>
                 <Box
                 component="img"
                 src={Image3}
@@ -113,6 +119,7 @@ export default function BeyondThisMoment() {
                     display: "block",
                 }}
                 />
+            </LazyLoad>    
             </Grid>
             </Grid>
 

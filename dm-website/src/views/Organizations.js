@@ -8,6 +8,7 @@ import { Typography, Box, Link, Container, Grid, Chip } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import OrganizationsPic from "../assets/images/pagepics/Organizations.jpg";
+import LazyLoad from 'react-lazyload';
 
 export default function Organizations() {
   const [mode, setMode] = React.useState(() => {
@@ -52,7 +53,9 @@ export default function Organizations() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={OrganizationsPic} title='Organizations' />
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },

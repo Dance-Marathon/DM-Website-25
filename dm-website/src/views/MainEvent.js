@@ -9,6 +9,7 @@ import { Container, Typography, Link } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import YoutubeVid from "../components/YoutubeVid";
+import LazyLoad from 'react-lazyload';
 
 import MainEventPic from "../assets/images/pagepics/MainEventPic.jpg";
 
@@ -32,7 +33,9 @@ export default function MainEvent() {
       <ScrollToTop />
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
+      <LazyLoad height={200} offset={100} once>
       <PageHero imageUrl={MainEventPic} title='Main Event'/>
+      </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
@@ -55,7 +58,9 @@ export default function MainEvent() {
           <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
             <p>We’re excited to keep building on our efforts this year, creating meaningful miracles for the families who need them most. Catch a glimpse of last year’s impact by watching our <span style={{ color: '#e2883c', fontWeight: 'bold' }}>Main Event closing ceremonies video</span> here!</p>
           </Typography>
+          <LazyLoad height={200} offset={100} once>
           <YoutubeVid videoId="BlBmUrjDoMw" />
+          </LazyLoad>
           <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
             <p>Follow us on social media for event updates!</p>
           </Typography>
