@@ -126,7 +126,7 @@ export default function Footer() {
             justifyContent: 'center',
             width: '100%',
           }}>
-            <img src={Footer_Image} alt="Footer Image" style={{ width: '600px', height: 'auto' }} />
+            <img src={Footer_Image} alt="Footer Image" style={{ width: '100%', maxWidth: '600px', height: 'auto' }} />
         </Box>      
         {/* <Stack
           direction="row"
