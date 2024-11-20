@@ -61,7 +61,7 @@ export default function MiniMarathons() {
                 , proving that these students are truly one generation fighting for the next. All money raised by Mini Marathons goes toward DM at UF’s total amount raised, which directly benefits the children at UF Health Shands Children’s Hospital.
             </Typography>
 
-          <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 6, marginTop: 2 }} >
+          <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: {xs : 0, sm : 6}, marginTop: 2 }} >
           <Typography component="span" sx={{ fontWeight: 'bold', color: '#e2883c' }}>
           We are always looking for more high schools to join our Dance Marathon family.
                 </Typography >{' '}
@@ -72,7 +72,8 @@ export default function MiniMarathons() {
           </Typography>
 
           <Grid container alignItems="center">
-            <Grid item xs={4}>
+            <Grid item xs={12} sm={4}>
+              
             <Typography variant="h5" component="h2" gutterBottom sx={{  marginTop: 4, color: '#233563' }}>
                 Participating Schools
             </Typography>
@@ -139,7 +140,7 @@ export default function MiniMarathons() {
                     </li>
                 </ul>
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={8}>
               <Box>
               <LazyLoad height={200} offset={100} once>
                 <YoutubeVid videoId="wDD1GzDla3c" />
