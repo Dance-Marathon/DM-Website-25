@@ -130,6 +130,7 @@ export default function OurStory() {
             component="h2"
             gutterBottom
             style={{ color: "#233563" }}
+            sx = {{marginTop: {xs : 2, sm : 0}}}
           >
             Where The Money Goes
           </Typography>
