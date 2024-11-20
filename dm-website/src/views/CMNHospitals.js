@@ -53,7 +53,7 @@ export default function CMNHospitals() {
         >
           <Typography
             variant="body1"
-            sx={{ color: "text.secondary", marginBottom: 2 }}
+            sx={{ color: "text.secondary", marginTop: {xs : 2, sm : 0}, marginBottom: 2 }}
           >
             <Box component="span" sx={{ color: "#e2883c", fontWeight: "Bold" }}>
               UF Health Shands Children’s Hospital
