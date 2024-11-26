@@ -54,6 +54,7 @@ import FindingYourDMFamily from './views/blogs/FindingYourDMFamily';
 import CampusClash from './views/blogs/CampusClash';
 import ChildHealthDay from './views/blogs/ChildHealthDay';
 import MiracleMaker from './views/blogs/MiracleMaker';
+import Thankfulness from './views/blogs/Thankfulness';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -91,6 +92,7 @@ root.render(
         <Route path="/blog/campusclash" element={<CampusClash />} />
         <Route path="/blog/childhealthday" element={<ChildHealthDay />} />
         <Route path="/blog/miraclemaker" element={<MiracleMaker />} />
+        <Route path="/blog/thankfulness" element={<Thankfulness />} />
         <Route path="/events" element={<Events />} />
         <Route path="/mainevent" element={<MainEvent />} />
         <Route path="/moralloween" element={<Moralloween />} />

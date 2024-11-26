@@ -21,6 +21,7 @@ import FindingYourDMFamily from "../assets/images/blogpics/IMG_4402.jpg";
 import CampusClash from "../assets/images/blogpics/CampusClashPic1.jpeg";
 import ChildHealthDay from "../assets/images/blogpics/09C69520-7583-433B-894D-5D86EC5453FB.jpeg";
 import MiracleMaker from "../assets/images/blogpics/miraclemaker.jpeg";
+import Thankfulness from "../assets/images/blogpics/KM Album 1-200.jpg";
 
 // Sample data for blogs
 const blogs = [
@@ -66,7 +67,7 @@ const blogs = [
   },
   {
     id: 6,
-    title: 'As Our Campuses CLash, Our Causes Unite',
+    title: 'As Our Campuses Clash, Our Causes Unite',
     author: 'Rylie Pryor',
     date: 'October 4, 2024',
     imageUrl: CampusClash,
@@ -87,6 +88,14 @@ const blogs = [
     date: 'October 16, 2024',
     imageUrl: MiracleMaker,
     linkName: 'miraclemaker',
+  },
+  {
+    id: 9,
+    title: 'Thankfulness in Times of Transformation',
+    author: 'Elizabeth Mallard',
+    date: 'November 26, 2024',
+    imageUrl: Thankfulness,
+    linkName: 'thankfulness',
   },
 ];
 
