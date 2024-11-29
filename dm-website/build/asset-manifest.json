@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.7f35e09f.js",
+    "main.js": "/static/js/main.c1c720b7.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/MEBoxPicNew.png": "/static/media/MEBoxPicNew.ef580d33f55e1b9c10a1.png",
@@ -14,6 +14,7 @@
     "static/media/Gemme_Madilyn_ME_9239.jpg": "/static/media/Gemme_Madilyn_ME_9239.18dfa830ed5de7054d3d.jpg",
     "static/media/Gemme_Madilyn_ME_0836.jpg": "/static/media/Gemme_Madilyn_ME_0836.4a5a91bdf9d304e85a71.jpg",
     "static/media/Lauren.jpg": "/static/media/Lauren.072897f26d6192e06931.jpg",
+    "static/media/AlumniPic.jpg": "/static/media/AlumniPic.ef4103050a258ab35bb2.jpg",
     "static/media/MWeenBox.JPG": "/static/media/MWeenBox.2450ba6bd0453b2ee972.JPG",
     "static/media/Brooks And Broward.jpg": "/static/media/Brooks And Broward.71c27c1c20de2ae51357.jpg",
     "static/media/AD_Buchholz-106.jpg": "/static/media/AD_Buchholz-106.fed1e665851c1bc87236.jpg",
@@ -26,10 +27,13 @@
     "static/media/AlumniMini.jpg": "/static/media/AlumniMini.95291006e3f141ba883e.jpg",
     "static/media/CaptainTeamsBox.JPG": "/static/media/CaptainTeamsBox.6826395890d048753c82.JPG",
     "static/media/SydneyC_Closing-7.jpg": "/static/media/SydneyC_Closing-7.8593ed2fe30dfd170e3e.jpg",
+    "static/media/KM Album 1-200.jpg": "/static/media/KM Album 1-200.fd7afcd0a5e6c6970e1b.jpg",
     "static/media/Eleanor.JPEG": "/static/media/Eleanor.df2b0c81933e371549e5.JPEG",
     "static/media/DonorDrivePic.png": "/static/media/DonorDrivePic.ef310d6013c186f1fee2.png",
     "static/media/DonorDriveBox.JPG": "/static/media/DonorDriveBox.75a371f2919cf2e77dd7.JPG",
+    "static/media/IMG_1005.JPG": "/static/media/IMG_1005.5de29df97d3ef4f5a685.JPG",
     "static/media/09C69520-7583-433B-894D-5D86EC5453FB.jpeg": "/static/media/09C69520-7583-433B-894D-5D86EC5453FB.d1fee8d4311a70060cb1.jpeg",
+    "static/media/IMG_1006.JPG": "/static/media/IMG_1006.9e2cc7998f56af350e10.JPG",
     "static/media/Fundraising Guide.jpg": "/static/media/Fundraising Guide.4f11d0602e06901b162f.jpg",
     "static/media/Contact Us.jpg": "/static/media/Contact Us.50c5e76937098996e18f.jpg",
     "static/media/ELPPic.jpg": "/static/media/ELPPic.82f568981899e5b71ca3.jpg",
@@ -79,11 +83,11 @@
     "static/media/TTHero.png": "/static/media/TTHero.a04dcd832d758652a244.png",
     "static/media/CarolineEaton-1.jpg": "/static/media/CarolineEaton-1.db9c04afbdb847caf8f7.jpg",
     "static/media/CarolineLee-1.jpg": "/static/media/CarolineLee-1.5a5c29043d1effbadc80.jpg",
-    "static/media/AlumniPic-min.jpg": "/static/media/AlumniPic-min.16b2802afbdb823cc72f.jpg",
     "static/media/RyanAthay-1.jpg": "/static/media/RyanAthay-1.2d4a132b9f1113e93228.jpg",
     "static/media/CMNUFHealthBox.JPG": "/static/media/CMNUFHealthBox.e06ea200fa1772cd81a2.JPG",
     "static/media/GreyChapin-1.jpg": "/static/media/GreyChapin-1.23de783c86eba6a66864.jpg",
     "static/media/EventsPic.png": "/static/media/EventsPic.232c15562b373fdfdb8a.png",
+    "static/media/KM Album 1-200_cropped.jpg": "/static/media/KM Album 1-200_cropped.617b0058b4045dce2c83.jpg",
     "static/media/Kendall.jpg": "/static/media/Kendall.2cd451aea534e52156c6.jpg",
     "static/media/USE 2.jpeg": "/static/media/USE 2.8404dc3237319b59c86c.jpeg",
     "static/media/FallKickoffPic.jpg": "/static/media/FallKickoffPic.b17e707d786bd484a15c.jpg",
@@ -286,11 +290,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.7f35e09f.js.map": "/static/js/main.7f35e09f.js.map",
+    "main.c1c720b7.js.map": "/static/js/main.c1c720b7.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.7f35e09f.js"
+    "static/js/main.c1c720b7.js"
   ]
 }
