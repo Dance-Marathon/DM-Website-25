@@ -22,6 +22,7 @@ import CampusClash from "../assets/images/blogpics/CampusClashPic1.jpeg";
 import ChildHealthDay from "../assets/images/blogpics/09C69520-7583-433B-894D-5D86EC5453FB.jpeg";
 import MiracleMaker from "../assets/images/blogpics/miraclemaker.jpeg";
 import Thankfulness from "../assets/images/blogpics/KM Album 1-200.jpg";
+import GiftOfHope from '../assets/images/blogpics/GiftOfHope/GiftOfHope1.jpg';
 
 // Sample data for blogs
 const blogs = [
@@ -96,6 +97,14 @@ const blogs = [
     date: 'November 26, 2024',
     imageUrl: Thankfulness,
     linkName: 'thankfulness',
+  },
+  {
+    id: 10,
+    title: 'Giving the Gift Of Hope',
+    author: 'Rylie Pryor',
+    date: 'December 4, 2024',
+    imageUrl: GiftOfHope,
+    linkName: 'giftofhope',
   },
 ];
 

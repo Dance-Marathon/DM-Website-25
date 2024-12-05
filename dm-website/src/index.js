@@ -55,6 +55,7 @@ import CampusClash from './views/blogs/CampusClash';
 import ChildHealthDay from './views/blogs/ChildHealthDay';
 import MiracleMaker from './views/blogs/MiracleMaker';
 import Thankfulness from './views/blogs/Thankfulness';
+import GiftOfHope from './views/blogs/GiftOfHope';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -93,6 +94,7 @@ root.render(
         <Route path="/blog/childhealthday" element={<ChildHealthDay />} />
         <Route path="/blog/miraclemaker" element={<MiracleMaker />} />
         <Route path="/blog/thankfulness" element={<Thankfulness />} />
+        <Route path="/blog/giftofhope" element={<GiftOfHope />} />
         <Route path="/events" element={<Events />} />
         <Route path="/mainevent" element={<MainEvent />} />
         <Route path="/moralloween" element={<Moralloween />} />
