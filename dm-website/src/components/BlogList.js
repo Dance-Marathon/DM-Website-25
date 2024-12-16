@@ -23,8 +23,8 @@ import ChildHealthDay from "../assets/images/blogpics/09C69520-7583-433B-894D-5D
 import MiracleMaker from "../assets/images/blogpics/miraclemaker.jpeg";
 import Thankfulness from "../assets/images/blogpics/KM Album 1-200.jpg";
 import GiftOfHope from '../assets/images/blogpics/GiftOfHope/GiftOfHope1.jpg';
+import BehingTheScenes from "../assets/images/blogpics/BehindTheScenes/IMG_5625_box.jpg";
 
-// Sample data for blogs
 const blogs = [
   {
     id: 1,
@@ -105,6 +105,14 @@ const blogs = [
     date: 'December 4, 2024',
     imageUrl: GiftOfHope,
     linkName: 'giftofhope',
+  },
+  {
+    id: 11,
+    title: 'Behind the Scenes Magic: How Miracles Happen',
+    author: 'Taylor Dean',
+    date: 'December 16, 2024',
+    imageUrl: BehingTheScenes,
+    linkName: 'behindthescenes',
   },
 ];
 
