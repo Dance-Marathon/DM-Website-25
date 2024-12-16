@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.6da6d4b4.js",
+    "main.js": "/static/js/main.96ad7d2e.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/MEBoxPicNew.png": "/static/media/MEBoxPicNew.ef580d33f55e1b9c10a1.png",
@@ -50,10 +50,12 @@
     "static/media/Ella Grace.jpeg": "/static/media/Ella Grace.3bf27164081aff1f121b.jpeg",
     "static/media/EmployeeMatchingBox.JPG": "/static/media/EmployeeMatchingBox.24740a8c37459104efc7.JPG",
     "static/media/childhealthdayhero.jpeg": "/static/media/childhealthdayhero.f23ceedfe5ce59a46b06.jpeg",
+    "static/media/IMG_5625_box.jpg": "/static/media/IMG_5625_box.70ddd749b3aa1caf2e18.jpg",
     "static/media/Kinsey.jpg": "/static/media/Kinsey.165e533c4eebb9d6ec0b.jpg",
     "static/media/MiniMarathonsPic.jpg": "/static/media/MiniMarathonsPic.ed106e7aa6bfba49c572.jpg",
     "static/media/Nate.jpg": "/static/media/Nate.310c34f6d37c84d68d18.jpg",
     "static/media/CameronAppel-1.jpg": "/static/media/CameronAppel-1.8f5b1395e48f0412bc2e.jpg",
+    "static/media/IMG_5625.jpg": "/static/media/IMG_5625.f081c878b0752f9d51d0.jpg",
     "static/media/AmbassadorsHero.JPG": "/static/media/AmbassadorsHero.10d2de0144482e848e45.JPG",
     "static/media/Samuel.jpeg": "/static/media/Samuel.66e2a78e21e3aaf44391.jpeg",
     "static/media/Jude and Oliver.jpeg": "/static/media/Jude and Oliver.e06bd6fbb47a1f3aa56d.jpeg",
@@ -74,6 +76,7 @@
     "static/media/ELPBox.jpg": "/static/media/ELPBox.8e6efd27057fcf86d8a1.jpg",
     "static/media/Claire.jpeg": "/static/media/Claire.de87ff89f5ee49445e64.jpeg",
     "static/media/Haley.png": "/static/media/Haley.20e41bcca8ddf665eac1.png",
+    "static/media/IMG_5624.jpg": "/static/media/IMG_5624.8cf90b7ec3c6ef4d2ec6.jpg",
     "static/media/LexiDevescovi-1.jpg": "/static/media/LexiDevescovi-1.dcffe75276b1a6f81edc.jpg",
     "static/media/CampusClashPic1.jpeg": "/static/media/CampusClashPic1.787a27e499036ae1e3c9.jpeg",
     "static/media/DawsonGeller-1.jpg": "/static/media/DawsonGeller-1.17e57815ddecbb8a9923.jpg",
@@ -117,6 +120,7 @@
     "static/media/Ayden.jpeg": "/static/media/Ayden.f16ffd2c80063fbec5c5.jpeg",
     "static/media/DeBoerL_Closing-44.jpg": "/static/media/DeBoerL_Closing-44.b5dbda8f132848148a15.jpg",
     "static/media/MiracleMakersPic.jpg": "/static/media/MiracleMakersPic.7b5935315bf001db7576.jpg",
+    "static/media/IMG_5623.jpg": "/static/media/IMG_5623.8d17a8b07cf8d9ea4d31.jpg",
     "static/media/Sponsor4.png": "/static/media/Sponsor4.8f19ce26c6445724bb08.png",
     "static/media/Sponsor10.png": "/static/media/Sponsor10.873870919c15331f19fa.png",
     "static/media/Sponsor48.png": "/static/media/Sponsor48.e3fc7d1e5218182f31f4.png",
@@ -293,11 +297,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.6da6d4b4.js.map": "/static/js/main.6da6d4b4.js.map",
+    "main.96ad7d2e.js.map": "/static/js/main.96ad7d2e.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.6da6d4b4.js"
+    "static/js/main.96ad7d2e.js"
   ]
 }
