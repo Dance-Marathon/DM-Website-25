@@ -24,6 +24,7 @@ import MiracleMaker from "../assets/images/blogpics/miraclemaker.jpeg";
 import Thankfulness from "../assets/images/blogpics/KM Album 1-200.jpg";
 import GiftOfHope from '../assets/images/blogpics/GiftOfHope/GiftOfHope1.jpg';
 import BehingTheScenes from "../assets/images/blogpics/BehindTheScenes/IMG_5625_box.jpg";
+import YesToMiracles from "../assets/images/blogpics/YesToMiracles/Yes4.jpg"
 
 const blogs = [
   {
@@ -113,6 +114,14 @@ const blogs = [
     date: 'December 16, 2024',
     imageUrl: BehingTheScenes,
     linkName: 'behindthescenes',
+  },
+  {
+    id: 12,
+    title: 'Say Yes to Making Miracles',
+    author: 'Taylor Dean',
+    date: 'January 28, 2025',
+    imageUrl: YesToMiracles,
+    linkName: 'yestomiracles',
   },
 ];
 
