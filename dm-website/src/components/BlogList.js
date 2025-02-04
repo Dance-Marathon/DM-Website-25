@@ -24,6 +24,7 @@ import MiracleMaker from "../assets/images/blogpics/miraclemaker.jpeg";
 import Thankfulness from "../assets/images/blogpics/KM Album 1-200.jpg";
 import GiftOfHope from '../assets/images/blogpics/GiftOfHope/GiftOfHope1.jpg';
 import BehingTheScenes from "../assets/images/blogpics/BehindTheScenes/IMG_5625_box.jpg";
+import YesToMiracles from "../assets/images/blogpics/YesToMiracles/Yes4.jpg"
 import LifetimeOfLaughter from "../assets/images/blogpics/LifetimeOfLaughter/Photo3_large.jpg";
 
 const blogs = [
@@ -117,6 +118,14 @@ const blogs = [
   },
   {
     id: 12,
+    title: 'Say Yes to Making Miracles',
+    author: 'Taylor Dean',
+    date: 'January 28, 2025',
+    imageUrl: YesToMiracles,
+    linkName: 'yestomiracles',
+  },
+  {
+    id: 13,
     title: 'The Lifeline of Laughter',
     author: 'Grey Chapin',
     date: 'February 4, 2025',

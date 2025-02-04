@@ -58,6 +58,7 @@ import Thankfulness from './views/blogs/Thankfulness';
 import GiftOfHope from './views/blogs/GiftOfHope';
 import BehindTheScenes from './views/blogs/BehindTheScenes';
 import LifetimeOfLaughter from './views/blogs/LifetimeOfLaughter';
+import YesToMiracles from './views/blogs/YesToMiracles';
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -99,6 +100,7 @@ root.render(
         <Route path="/blog/giftofhope" element={<GiftOfHope />} />
         <Route path="/blog/behindthescenes" element={<BehindTheScenes />} />
         <Route path="/blog/lifetimeoflaughter" element={<LifetimeOfLaughter />} />
+        <Route path="/blog/yestomiracles" element={<YesToMiracles />} />
         <Route path="/events" element={<Events />} />
         <Route path="/mainevent" element={<MainEvent />} />
         <Route path="/moralloween" element={<Moralloween />} />

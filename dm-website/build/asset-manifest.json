@@ -1,11 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.5d487f74.js",
+    "main.js": "/static/js/main.96ad7d2e.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/MEBoxPicNew.png": "/static/media/MEBoxPicNew.ef580d33f55e1b9c10a1.png",
     "static/media/Gemme_Madilyn_ME_6011.jpg": "/static/media/Gemme_Madilyn_ME_6011.9b6191d5b122aa43524c.jpg",
+    "static/media/Yes4.jpg": "/static/media/Yes4.1a82196eb2fe62bce061.jpg",
     "static/media/Gemme_Madilyn_ME_0951.jpg": "/static/media/Gemme_Madilyn_ME_0951.efe4f2821fdbfdefaeeb.jpg",
     "static/media/MiracleMakerBox.JPG": "/static/media/MiracleMakerBox.49376f318ed564273f14.JPG",
     "static/media/TTBoxPic.png": "/static/media/TTBoxPic.ac30a125ae0a4fcb732a.png",
@@ -25,6 +26,7 @@
     "static/media/AmbassadorsMiniPic.jpg": "/static/media/AmbassadorsMiniPic.0241ce19e039698a609f.jpg",
     "static/media/BlogsPic.png": "/static/media/BlogsPic.5b3c49539461753b6e6b.png",
     "static/media/AboutPicNew.png": "/static/media/AboutPicNew.21958598e3e27554e27e.png",
+    "static/media/Yes2.jpg": "/static/media/Yes2.35d359605b82788064e6.jpg",
     "static/media/AlumniMini.jpg": "/static/media/AlumniMini.95291006e3f141ba883e.jpg",
     "static/media/CaptainTeamsBox.JPG": "/static/media/CaptainTeamsBox.6826395890d048753c82.JPG",
     "static/media/SydneyC_Closing-7.jpg": "/static/media/SydneyC_Closing-7.8593ed2fe30dfd170e3e.jpg",
@@ -34,6 +36,7 @@
     "static/media/GiftOfHope2.jpg": "/static/media/GiftOfHope2.79eea11b2f8074c4e87f.jpg",
     "static/media/DonorDriveBox.JPG": "/static/media/DonorDriveBox.75a371f2919cf2e77dd7.JPG",
     "static/media/IMG_1005.JPG": "/static/media/IMG_1005.5de29df97d3ef4f5a685.JPG",
+    "static/media/Yes1.jpg": "/static/media/Yes1.77f9f90f839982945df2.jpg",
     "static/media/09C69520-7583-433B-894D-5D86EC5453FB.jpeg": "/static/media/09C69520-7583-433B-894D-5D86EC5453FB.d1fee8d4311a70060cb1.jpeg",
     "static/media/IMG_1006.JPG": "/static/media/IMG_1006.9e2cc7998f56af350e10.JPG",
     "static/media/Fundraising Guide.jpg": "/static/media/Fundraising Guide.4f11d0602e06901b162f.jpg",
@@ -301,10 +304,12 @@
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
     "main.5d487f74.js.map": "/static/js/main.5d487f74.js.map",
+    "main.f1e9e640.js.map": "/static/js/main.f1e9e640.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
+    "static/js/main.f1e9e640.js"
     "static/js/main.5d487f74.js"
   ]
 }
