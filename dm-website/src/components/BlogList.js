@@ -126,7 +126,7 @@ const blogs = [
   },
   {
     id: 13,
-    title: 'The Lifeline of Laughter',
+    title: 'The Lifetime of Laughter',
     author: 'Grey Chapin',
     date: 'February 4, 2025',
     imageUrl: LifetimeOfLaughter,
