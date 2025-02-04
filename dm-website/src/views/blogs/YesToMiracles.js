@@ -153,11 +153,11 @@ export default function YesToMiracles() {
             </Button>
           </Grid>
 
-          {/* <Grid item>
+           <Grid item>
             <Button
               variant="outlined"
               endIcon={<ArrowForwardIcon />}
-              onClick={() => window.location.href = "/blog/giftofhope"}
+              onClick={() => window.location.href = "/blog/lifetimeoflaughter"}
               sx={{
                 color: "primary.main",
                 borderColor: "white",
@@ -166,7 +166,7 @@ export default function YesToMiracles() {
             >
               Next Blog
             </Button>
-          </Grid> */}
+          </Grid>
         </Grid>
       </Container>
       <Footer />

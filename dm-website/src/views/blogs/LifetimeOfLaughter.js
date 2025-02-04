@@ -112,7 +112,7 @@ export default function LifetimeOfLaughter() {
           <Button
             variant="outlined"
             startIcon={<ArrowBackIcon />}
-            onClick={() => window.location.href = "/blog/behindthescenes"}
+            onClick={() => window.location.href = "/blog/yestomiracles"}
             sx={{
               color: "primary.main",
               borderColor: "white",

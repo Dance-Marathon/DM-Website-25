@@ -158,7 +158,7 @@ export default function GiftOfHope() {
             <Button
               variant="outlined"
               endIcon={<ArrowForwardIcon />}
-              onClick={() => window.location.href = "/blog/lifetimeoflaughter"}
+              onClick={() => window.location.href = "/blog/yestomiracles"}
               sx={{
                 color: "primary.main",
                 borderColor: "white",
