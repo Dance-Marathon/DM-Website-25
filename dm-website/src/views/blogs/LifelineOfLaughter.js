@@ -12,10 +12,10 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LazyLoad from 'react-lazyload';
 
-import Image1 from "../../assets/images/blogpics/LifetimeOfLaughter/Photo1.jpg";
-import Image2 from "../../assets/images/blogpics/LifetimeOfLaughter/Photo3.jpg";
+import Image1 from "../../assets/images/blogpics/LifelineOfLaughter/Photo1.jpg";
+import Image2 from "../../assets/images/blogpics/LifelineOfLaughter/Photo3.jpg";
 
-export default function LifetimeOfLaughter() {
+export default function LifelineOfLaughter() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'dark'
     return localStorage.getItem('theme') || 'dark';
@@ -36,7 +36,7 @@ export default function LifetimeOfLaughter() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-      <PageHero imageUrl={Image2} title="The Lifetime of Laughter" />
+      <PageHero imageUrl={Image2} title="The Lifeline of Laughter" />
       </LazyLoad>
 
       <Container

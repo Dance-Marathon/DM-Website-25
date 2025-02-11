@@ -157,7 +157,7 @@ export default function YesToMiracles() {
             <Button
               variant="outlined"
               endIcon={<ArrowForwardIcon />}
-              onClick={() => window.location.href = "/blog/lifetimeoflaughter"}
+              onClick={() => window.location.href = "/blog/lifelineoflaughter"}
               sx={{
                 color: "primary.main",
                 borderColor: "white",
