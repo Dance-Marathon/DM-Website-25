@@ -108,20 +108,42 @@ export default function LifelineOfLaughter() {
             Public Relations, Overall Director
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", justifyContent: "left", mt: 4 }}>
-          <Button
-            variant="outlined"
-            startIcon={<ArrowBackIcon />}
-            onClick={() => window.location.href = "/blog/yestomiracles"}
-            sx={{
-              color: "primary.main",
-              borderColor: "white",
-              "&:hover": { borderColor: "primary.main", color: "primary.main" },
-            }}
-          >
-            Previous Blog
-          </Button>
-        </Box>
+        <Grid
+          container
+          alignItems="center"
+          justifyContent="space-between"
+          sx={{ mt: 4 }}
+        >
+          <Grid item>
+            <Button
+              variant="outlined"
+              startIcon={<ArrowBackIcon />}
+              onClick={() => window.location.href = "/blog/yestomiracles"}
+              sx={{
+                color: "primary.main",
+                borderColor: "white",
+                "&:hover": { borderColor: "primary.main", color: "primary.main" },
+              }}
+            >
+              Previous Blog
+            </Button>
+          </Grid>
+
+           <Grid item>
+            <Button
+              variant="outlined"
+              endIcon={<ArrowForwardIcon />}
+              onClick={() => window.location.href = "/blog/beyondtomorrow"}
+              sx={{
+                color: "primary.main",
+                borderColor: "white",
+                "&:hover": { borderColor: "primary.main", color: "primary.main" },
+              }}
+            >
+              Next Blog
+            </Button>
+          </Grid>
+        </Grid>
       </Container>
       <Footer />
     </ThemeProvider>

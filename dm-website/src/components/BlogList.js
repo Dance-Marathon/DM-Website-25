@@ -26,6 +26,7 @@ import GiftOfHope from '../assets/images/blogpics/GiftOfHope/GiftOfHope1.jpg';
 import BehingTheScenes from "../assets/images/blogpics/BehindTheScenes/IMG_5625_box.jpg";
 import YesToMiracles from "../assets/images/blogpics/YesToMiracles/Yes4.jpg"
 import LifelineOfLaughter from "../assets/images/blogpics/LifelineOfLaughter/Photo3_large.jpg";
+import BeyondTomorrow from "../assets/images/blogpics/BeyondTomorrow/RB-099.jpg";
 
 const blogs = [
   {
@@ -131,6 +132,14 @@ const blogs = [
     date: 'February 4, 2025',
     imageUrl: LifelineOfLaughter,
     linkName: 'lifelineoflaughter',
+  },
+  {
+    id: 14,
+    title: 'Beyond Tomorrow',
+    author: 'Rylie Pryor',
+    date: 'February 18, 2025',
+    imageUrl: BeyondTomorrow,
+    linkName: 'beyondtomorrow',
   },
 ];
 
