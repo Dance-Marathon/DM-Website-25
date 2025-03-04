@@ -10,7 +10,7 @@ import PageHero from "../components/PageHero";
 import LazyLoad from 'react-lazyload';
 
 import CMNHero from "../assets/images/pagepics/CMNHero.jpg";
-import TriBrand from "../assets/images/TriBrand_Color.png";
+import TriBrand from "../assets/images/footer/TriBrand_Color.png";
 
 export default function CMNHospitals() {
   const [mode, setMode] = React.useState(() => {

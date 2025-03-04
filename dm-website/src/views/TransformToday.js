@@ -11,7 +11,7 @@ import PageHero from "../components/PageHero";
 import YoutubeVid from "../components/YoutubeVid";
 import LazyLoad from 'react-lazyload';
 
-import TTHero from "../assets/images/pagepics/TTHero.png";
+import TTHero from "../assets/images/pagepics/TTHero.jpg";
 
 export default function TransformToday() {
   const [mode, setMode] = React.useState(() => {

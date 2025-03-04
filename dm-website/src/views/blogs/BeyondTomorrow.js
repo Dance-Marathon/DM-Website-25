@@ -12,9 +12,9 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LazyLoad from 'react-lazyload';
 
-import Image1 from "../../assets/images/blogpics/BeyondTomorrow/RB-099.jpg";
-import Image2 from "../../assets/images/blogpics/BeyondTomorrow/RB-055.jpg";
-import Image3 from "../../assets/images/blogpics/BeyondTomorrow/RB-128.jpg";
+import Image1 from "../../assets/images/blogpics/BeyondTomorrow/BT1.jpg";
+import Image2 from "../../assets/images/blogpics/BeyondTomorrow/BT2.jpg";
+import Image3 from "../../assets/images/blogpics/BeyondTomorrow/BT3.jpg";
 
 export default function BeyondTomorrow() {
   const [mode, setMode] = React.useState(() => {

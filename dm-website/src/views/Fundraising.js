@@ -12,11 +12,11 @@ import SquareCardSmall from '../components/SquareCardSmall';
 import LazyLoad from 'react-lazyload';
 
 import HowToGuide from "../assets/pdfs/how-to-guide.pdf"
-import RegisterToFundraise from "../assets/images/pagepics/RegisterToFundraise.png";
-import FundraisingGuideBox from "../assets/images/miniboxpics/FundraisingGuideMini.JPG";
-import DDBox from "../assets/images/miniboxpics/DonorDriveBox.JPG";
-import EmployeeBox from "../assets/images/miniboxpics/EmployeeMatchingBox.JPG";
-import PartnersBox from "../assets/images/miniboxpics/PartnersBox.JPG";
+import RegisterToFundraise from "../assets/images/pagepics/RegisterToFundraise.jpg";
+import FundraisingGuideBox from "../assets/images/miniboxpics/FundraisingGuideMini.jpg";
+import DDBox from "../assets/images/miniboxpics/DonorDriveBox.jpg";
+import EmployeeBox from "../assets/images/miniboxpics/EmployeeMatchingBox.jpg";
+import PartnersBox from "../assets/images/miniboxpics/PartnersBox.jpg";
 
 export default function Fundraising() {
   const [mode, setMode] = React.useState(() => {

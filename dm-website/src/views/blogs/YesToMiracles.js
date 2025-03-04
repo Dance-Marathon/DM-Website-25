@@ -12,9 +12,9 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LazyLoad from 'react-lazyload';
 
-import Image1 from "../../assets/images/blogpics/YesToMiracles/Yes4.jpg";
-import Image2 from "../../assets/images/blogpics/YesToMiracles/Yes1.jpg";
-import Image3 from "../../assets/images/blogpics/YesToMiracles/Yes2.jpg";
+import Image1 from "../../assets/images/blogpics/YesToMiracles/Yes1.jpg";
+import Image2 from "../../assets/images/blogpics/YesToMiracles/Yes2.jpg";
+import Image3 from "../../assets/images/blogpics/YesToMiracles/Yes3.jpg";
 
 export default function YesToMiracles() {
   const [mode, setMode] = React.useState(() => {

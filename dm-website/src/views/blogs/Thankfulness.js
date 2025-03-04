@@ -12,9 +12,9 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LazyLoad from 'react-lazyload';
 
-import Image1 from "../../assets/images/blogpics/KM Album 1-200_cropped.jpg";
-import Image2 from "../../assets/images/blogpics/IMG_1005.JPG";
-import Image3 from "../../assets/images/blogpics/IMG_1006.JPG";
+import Image1 from "../../assets/images/blogpics/Thankfulness/Thankfulness1.jpg";
+import Image2 from "../../assets/images/blogpics/Thankfulness/Thankfulness2.jpg";
+import Image3 from "../../assets/images/blogpics/Thankfulness/Thankfulness3.jpg";
 
 export default function BeyondThisMoment() {
   const [mode, setMode] = React.useState(() => {

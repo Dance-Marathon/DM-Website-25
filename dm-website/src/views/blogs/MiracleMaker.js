@@ -12,9 +12,9 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LazyLoad from 'react-lazyload';
 
-import Image1 from "../../assets/images/blogpics/miraclemakerhero.jpeg";
-import Image2 from "../../assets/images/blogpics/miraclemakerblog1.jpeg";
-import Image3 from "../../assets/images/blogpics/01HDC709VZ4B4VP1VXGMKV2PDH-low-res-branded-.jpeg";
+import Image1 from "../../assets/images/blogpics/MiracleMaker/MM1.jpg";
+import Image2 from "../../assets/images/blogpics/MiracleMaker/MM2.jpg";
+import Image3 from "../../assets/images/blogpics/MiracleMaker/MM3.jpg";
 
 export default function BeyondThisMoment() {
   const [mode, setMode] = React.useState(() => {

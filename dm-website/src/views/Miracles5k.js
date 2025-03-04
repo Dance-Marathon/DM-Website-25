@@ -9,7 +9,7 @@ import { Container, Typography, Link } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import FAQ from "../components/FAQ";
-import EventsPic from "../assets/images/pagepics/EventsPic.png";
+import EventsPic from "../assets/images/pagepics/EventsPic.jpg";
 import LazyLoad from 'react-lazyload';
 
 export default function Miracles5k() {

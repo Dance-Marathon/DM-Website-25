@@ -10,7 +10,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import LazyLoad from 'react-lazyload';
 
-import MoralloweenPic from "../assets/images/pagepics/MoralloweenHero.jpeg";
+import MoralloweenPic from "../assets/images/pagepics/MoralloweenHero.jpg";
 import MWeen1 from "../assets/images/pagepics/MWeen1.jpg";
 import MWeen2 from "../assets/images/pagepics/MWeen2.jpg";
 import MWeen3 from "../assets/images/pagepics/MWeen3.jpg";

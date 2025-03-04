@@ -12,9 +12,9 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LazyLoad from 'react-lazyload';
 
-import Image1 from "../../assets/images/blogpics/BehindTheScenes/IMG_5625.jpg";
-import Image2 from "../../assets/images/blogpics/BehindTheScenes/IMG_5624.jpg";
-import Image3 from "../../assets/images/blogpics/BehindTheScenes/IMG_5623.jpg";
+import Image1 from "../../assets/images/blogpics/BehindTheScenes/BehindTheScenes1.jpg";
+import Image2 from "../../assets/images/blogpics/BehindTheScenes/BehindTheScenes2.jpg";
+import Image3 from "../../assets/images/blogpics/BehindTheScenes/BehindTheScenes3.jpg";
 
 export default function GiftOfHope() {
   const [mode, setMode] = React.useState(() => {

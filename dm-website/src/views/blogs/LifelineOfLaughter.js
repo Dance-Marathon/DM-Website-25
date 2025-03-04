@@ -12,8 +12,8 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LazyLoad from 'react-lazyload';
 
-import Image1 from "../../assets/images/blogpics/LifelineOfLaughter/Photo1.jpg";
-import Image2 from "../../assets/images/blogpics/LifelineOfLaughter/Photo3.jpg";
+import Image1 from "../../assets/images/blogpics/LifelineOfLaughter/Lifeline1.jpg";
+import Image2 from "../../assets/images/blogpics/LifelineOfLaughter/Lifeline2.jpg";
 
 export default function LifelineOfLaughter() {
   const [mode, setMode] = React.useState(() => {

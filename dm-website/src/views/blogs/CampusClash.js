@@ -12,9 +12,9 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LazyLoad from 'react-lazyload';
 
-import Image1 from "../../assets/images/blogpics/CampusClashPic1.jpeg";
-import Image2 from "../../assets/images/blogpics/CampusClashSmallPic.jpeg";
-import Image3 from "../../assets/images/blogpics/CampusClashPic2.jpeg";
+import Image1 from "../../assets/images/blogpics/CampusClash/CampusClash1.jpg";
+import Image2 from "../../assets/images/blogpics/CampusClash/CampusClash2.jpg";
+import Image3 from "../../assets/images/blogpics/CampusClash/CampusClash3.jpg";
 
 export default function BeyondThisMoment() {
   const [mode, setMode] = React.useState(() => {

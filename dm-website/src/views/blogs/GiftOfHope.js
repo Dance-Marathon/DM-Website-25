@@ -14,7 +14,7 @@ import LazyLoad from 'react-lazyload';
 
 import Image1 from "../../assets/images/blogpics/GiftOfHope/GiftOfHope1.jpg";
 import Image2 from "../../assets/images/blogpics/GiftOfHope/GiftOfHope2.jpg";
-import Image3 from "../../assets/images/blogpics/GiftOfHope/GiftOfHope3.jpeg";
+import Image3 from "../../assets/images/blogpics/GiftOfHope/GiftOfHope3.jpg";
 
 export default function GiftOfHope() {
   const [mode, setMode] = React.useState(() => {

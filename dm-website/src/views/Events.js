@@ -9,12 +9,12 @@ import { Container, Typography, Link, Grid } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import SquareCard from '../components/SquareCard';
-import EventsPic from "../assets/images/pagepics/EventsPic.png";
-import TTBoxPic from "../assets/images/miniboxpics/TTBoxPic.png";
-import MEBoxPic from "../assets/images/miniboxpics/MEBoxPicNew.png";
-import KickoffBoxPic from "../assets/images/miniboxpics/Kickoff.jpeg";
-import MMBox from "../assets/images/miniboxpics/MiniMarathonBox.JPG";
-import MWeenBox from "../assets/images/miniboxpics/MWeenBox.JPG";
+import EventsPic from "../assets/images/pagepics/EventsPic.jpg";
+import TTBoxPic from "../assets/images/miniboxpics/TTBoxPic.jpg";
+import MEBoxPic from "../assets/images/miniboxpics/MEBoxPicNew.jpg";
+import KickoffBoxPic from "../assets/images/miniboxpics/Kickoff.jpg";
+import MMBox from "../assets/images/miniboxpics/MiniMarathonBox.jpg";
+import MWeenBox from "../assets/images/miniboxpics/MWeenBox.jpg";
 import LazyLoad from 'react-lazyload';
 
 export default function Events() {

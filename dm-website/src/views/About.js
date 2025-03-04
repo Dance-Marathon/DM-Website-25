@@ -9,10 +9,10 @@ import { Container, Typography, Grid } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import SquareCard from '../components/SquareCard';
-import AboutPic from "../assets/images/pagepics/AboutPicNew.png";
-import CMNBox from "../assets/images/miniboxpics/CMNUFHealthBox.JPG";
-import MFBox from "../assets/images/miniboxpics/MiracleFamiliesBox.JPG";
-import OurStoryBox from "../assets/images/miniboxpics/OurStoryBox.JPG";
+import AboutPic from "../assets/images/pagepics/AboutPicNew.jpg";
+import CMNBox from "../assets/images/miniboxpics/CMNUFHealthBox.jpg";
+import MFBox from "../assets/images/miniboxpics/MiracleFamiliesBox.jpg";
+import OurStoryBox from "../assets/images/miniboxpics/OurStoryBox.jpg";
 import LazyLoad from 'react-lazyload';
 
 export default function About() {

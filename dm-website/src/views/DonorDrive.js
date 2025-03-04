@@ -8,7 +8,7 @@ import { Container, Typography, Box, Link } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import FAQ from "../components/FAQ";
-import DonorDrivePic from "../assets/images/pagepics/DonorDrivePic.png";
+import DonorDrivePic from "../assets/images/pagepics/DonorDrivePic.jpg";
 import LazyLoad from 'react-lazyload';
 
 export default function DonorDrive() {

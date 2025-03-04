@@ -11,22 +11,22 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import { useNavigate } from 'react-router-dom';
 
-import BlogPic from "../assets/images/pagepics/BlogsPic.png";
+import BlogPic from "../assets/images/pagepics/BlogsPic.jpg";
 
-import BeyondThisMoment from "../assets/images/blogpics/DeBoerL_Closing-44.jpg";
-import BeyondOurselves from "../assets/images/blogpics/Gemme_Madilyn_ME_9239.jpg";
-import BeyondThisSummer from "../assets/images/blogpics/IMG_3478.jpg";
-import BeyondThisGeneration from "../assets/images/blogpics/Gemme_Madilyn_ME_0951.jpg";
-import FindingYourDMFamily from "../assets/images/blogpics/IMG_4402.jpg";
-import CampusClash from "../assets/images/blogpics/CampusClashPic1.jpeg";
-import ChildHealthDay from "../assets/images/blogpics/09C69520-7583-433B-894D-5D86EC5453FB.jpeg";
-import MiracleMaker from "../assets/images/blogpics/miraclemaker.jpeg";
-import Thankfulness from "../assets/images/blogpics/KM Album 1-200.jpg";
+import BeyondThisMoment from "../assets/images/blogpics/BeyondThisMoment/BeyondThisMoment1.jpg";
+import BeyondOurselves from "../assets/images/blogpics/BeyondOurselves/BeyondOurselves1.jpg";
+import BeyondThisSummer from "../assets/images/blogpics/BeyondThisSummer/BeyondSummer1.jpg";
+import BeyondThisGeneration from "../assets/images/blogpics/BeyondThisGeneration/BeyondThisGen1.jpg";
+import FindingYourDMFamily from "../assets/images/blogpics/DMFamily/DMFamily1.jpg";
+import CampusClash from "../assets/images/blogpics/CampusClash/CampusClash1.jpg";
+import ChildHealthDay from "../assets/images/blogpics/ChildHealthDay/CHDBox.jpg";
+import MiracleMaker from "../assets/images/blogpics/MiracleMaker/MMBox.jpg";
+import Thankfulness from "../assets/images/blogpics/Thankfulness/ThankfulnessBox.jpg";
 import GiftOfHope from '../assets/images/blogpics/GiftOfHope/GiftOfHope1.jpg';
-import BehingTheScenes from "../assets/images/blogpics/BehindTheScenes/IMG_5625_box.jpg";
-import YesToMiracles from "../assets/images/blogpics/YesToMiracles/Yes4.jpg"
-import LifelineOfLaughter from "../assets/images/blogpics/LifelineOfLaughter/Photo3_large.jpg";
-import BeyondTomorrow from "../assets/images/blogpics/BeyondTomorrow/RB-099.jpg";
+import BehingTheScenes from "../assets/images/blogpics/BehindTheScenes/BehindTheScenesBox.jpg";
+import YesToMiracles from "../assets/images/blogpics/YesToMiracles/Yes1.jpg"
+import LifelineOfLaughter from "../assets/images/blogpics/LifelineOfLaughter/LifelineBox.jpg";
+import BeyondTomorrow from "../assets/images/blogpics/BeyondTomorrow/BT1.jpg";
 
 const blogs = [
   {
