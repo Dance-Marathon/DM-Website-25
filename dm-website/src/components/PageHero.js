@@ -18,7 +18,7 @@ function PageHero({ imageUrl, title }) {
       <Box
         component="img"
         src={imageUrl}
-        alt="Page Hero"
+        alt={title}
         sx={{
           position: 'absolute',
           top: 0,
