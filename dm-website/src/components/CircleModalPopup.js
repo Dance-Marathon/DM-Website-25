@@ -10,18 +10,22 @@ export default function CircleModalPopup({ image, title, content, learnMoreLink 
 
   const Container = styled(Box)(({ theme }) => ({
     position: 'relative',
-    width: '200px',
+    maxWidth: '200px',
+    width: '100%',
     height: '200px',
     overflow: 'hidden',
     borderRadius: '50%',
     boxShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
     cursor: 'pointer',
+    margin: '0 auto',
     '&:hover .overlay': {
       opacity: 1,
     },
   }));
 
   const Image = styled('img')({
+    display: 'block',
+    margin: '0 auto',
     width: '100%',
     height: '100%',
     objectFit: 'cover',
@@ -47,8 +51,15 @@ export default function CircleModalPopup({ image, title, content, learnMoreLink 
 
   return (
     <>
-      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
-        <Container onClick={handleOpen} sx={{ mx: 'auto' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center', width: '100%' }}>
+        <Container
+          onClick={handleOpen}
+          sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
+        >
           <Image src={image} alt={title} />
           <Overlay className="overlay">
             <Typography variant="h6">{/* Optional hover text */}</Typography>
@@ -106,8 +117,8 @@ export default function CircleModalPopup({ image, title, content, learnMoreLink 
               variant="contained"
               sx={{
                 mt: 3,
-                alignSelf: 'start', // Left align the button
-                padding: '10px 20px',  // Adjust padding for larger appearance
+                alignSelf: 'start', 
+                padding: '10px 20px',  
                 fontWeight: 'bold', 
                 color: '#000000',
               }}

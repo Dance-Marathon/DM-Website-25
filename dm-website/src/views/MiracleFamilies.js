@@ -172,9 +172,29 @@ export default function MiracleFamilies() {
                 { image: SuzanneL, title: 'Suzanne L.', learnMoreLink: "https://docs.google.com/document/d/1lWgi4eD22ycB-oi9HLQqDpDPh9S_QIAZ/edit?usp=share_link&ouid=105348677387594982475&rtpof=true&sd=true", content: "Suzanne was diagnosed with Crohn’s disease after concerns about her digestion, leading to treatment at UF Health Shands Children’s Hospital. After a severe flare in 2022, Suzanne was hospitalized for a week and now receives weekly Humira injections to manage her condition. Thanks to the care at Shands, Suzanne’s Crohn’s is well-managed, allowing her to enjoy school, dance, gymnastics, and Cub Scouts." },
                 { image: WyattT, title: 'Wyatt T.', learnMoreLink: "https://docs.google.com/document/d/1vHczjGgFFO1fLqvqiZ1FFIDIN-qqVw41A4SAMVV56a0/edit?usp=share_link", content: "Wyatt was born with five heart defects, suffered a stroke at 3 months old, and received a heart transplant at 9.5 months old. Thanks to the incredible treatment at UF Health Shands Children’s Hospital, Wyatt is now a happy 15-year-old who loves hunting, fishing, swimming, and all things outdoors. His favorite colors are camo and pink, and he enjoys watching Heartland and Duck Dynasty." },
               ].map((card, index) => (
-                <Grid item xs={12} sm={6} md={3} key={index}>
-                    <CircleModalPopup {...card} />
-                  </Grid>
+                <Grid
+                  item
+                  xs={12}
+                  sm={6}
+                  md={3}
+                  key={index}
+                  sx={{ display: 'flex', justifyContent: 'center' }}
+                >
+                <Box
+    sx={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      textAlign: 'center',
+      width: '100%',
+      maxWidth: 300,
+      margin: '0 auto',
+    }}
+  >
+    <CircleModalPopup {...card} />
+  </Box>
+</Grid>
               ))}
             </Grid>
             </LazyLoad>
