@@ -9,7 +9,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import "../App.css";
 import AmbassadorGuidelines from "../assets/pdfs/2024 Ambassador Guidelines.pdf"
-import AmbassadorsPic from "../assets/images/pagepics/AmbassadorsHero.jpg";
+import AmbassadorsPic from "../assets/images/pagepics/AmbassadorsHero.JPG";
 import LazyLoad from 'react-lazyload';
 
 
@@ -78,7 +78,7 @@ export default function Ambassadors() {
     { organization: "William and Grace Dial Center Ambassador Leadership Program", names: ["Layah Singh"] },
     { organization: "Zeta Beta Tau", names: ["Zack Bogis", "Nicholas Lysek"] },
     { organization: "Zeta Tau Alpha", names: ["Roselyn Almora", "Alexa Orozco"] },
-];
+  ];
 
 
   return (
@@ -90,12 +90,13 @@ export default function Ambassadors() {
       <PageHero imageUrl={AmbassadorsPic} title='Ambassadors' />
       </LazyLoad>
       <Container
+        maxWidth="lg"
         sx={{
           pt: { xs: 2, sm: 6 },
           pb: { xs: 2, sm: 8 },
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'left',
+          alignItems: 'center',
           gap: { xs: 2, sm: 3 },
         }}  
       >
@@ -179,12 +180,19 @@ export default function Ambassadors() {
       <Typography variant="h5" color='#233563' sx={{ mt: 2 }}>
         2025 Dance Marathon Ambassadors
       </Typography>
-      <Grid container spacing={2} justifyContent="end">
+      <Grid
+        container
+        spacing={2}
+        justifyContent="center"
+        alignItems="center"
+        sx={{ marginX: 'auto' }}
+      >
         {ambassadors.map((ambassador, index) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
             <Box sx={{
                 height: 125,
-                width: 250,
+                width: { xs: '100%', sm: 250 },
+                maxWidth: 250,
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'center',

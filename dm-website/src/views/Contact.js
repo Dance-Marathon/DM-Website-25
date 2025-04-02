@@ -1,4 +1,3 @@
-
 // @mui material components
 import * as React from 'react'
 import Container from "@mui/material/Container";
@@ -56,6 +55,21 @@ function Contact() {
       return newMode;
     });
   };
+  async function centerSectionWithMargins() {
+    try {
+      const section = document.querySelector('section.MuiBox-root.css-xl5k1b');
+      if (section) {
+        section.style.margin = '0 auto';
+        console.log('Section centered using margin: 0 auto;');
+      } else {
+        console.error('Section not found.');
+      }
+    } catch (error) {
+      console.error('An error occurred while centering the section:', error);
+    }
+  }
+  
+  centerSectionWithMargins();
   return (
     <ThemeProvider theme={LPtheme}>
       <ScrollToTop />
@@ -70,9 +84,10 @@ function Contact() {
         bgColor="background.paper"
         position="relative"
         py={6}
-        px={{ xs: 2, lg: 0 }}
-        mx={-2}
-        maxWidth="100%"
+        px={{ xs: 2, sm: 3, md: 4 }}
+        mx="auto"
+        width="100%"
+        maxWidth={1200}
       >
         <Container>
           <Grid container>

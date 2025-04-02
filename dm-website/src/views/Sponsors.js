@@ -8,7 +8,7 @@ import { Container, Typography, Box, Link, Grid } from '@mui/material';
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import SponsorshipPacket from "../assets/pdfs/SponsorshipPacket.pdf";
-import SponsorPic from "../assets/images/pagepics/SponsorsHero.jpg";
+import SponsorPic from "../assets/images/pagepics/SponsorsHero.JPG";
 import LazyLoad from 'react-lazyload';
 
 import Sponsor1 from "../assets/images/sponsors/Sponsor1.png";
@@ -71,7 +71,7 @@ import Sponsor57 from "../assets/images/sponsors/Sponsor57.png";
 import Sponsor58 from "../assets/images/sponsors/Sponsor58.png";
 import Sponsor59 from "../assets/images/sponsors/Sponsor59.png";
 import Sponsor60 from "../assets/images/sponsors/Sponsor60.png";
-
+import Sponsor61 from "../assets/images/sponsors/Sponsor61.png";
 
 const sponsors = [
   { logo: Sponsor1 },
@@ -134,6 +134,7 @@ const sponsors = [
   { logo: Sponsor58 },
   { logo: Sponsor59 },
   { logo: Sponsor60 },
+  { logo: Sponsor61 },
 ];
 
 
