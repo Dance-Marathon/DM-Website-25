@@ -61,6 +61,7 @@ import Sponsor57 from '../assets/images/sponsors/Sponsor57.png';
 import Sponsor58 from '../assets/images/sponsors/Sponsor58.png';
 import Sponsor59 from '../assets/images/sponsors/Sponsor59.png';
 import Sponsor60 from '../assets/images/sponsors/Sponsor60.png';
+import Sponsor61 from '../assets/images/sponsors/Sponsor61.png';
 
 const images = [
   { src: Sponsor1, alt: 'Sponsor 1' },
@@ -123,6 +124,7 @@ const images = [
   { src: Sponsor58, alt: 'Sponsor 58' },
   { src: Sponsor59, alt: 'Sponsor 59' },
   { src: Sponsor60, alt: 'Sponsor 60' },
+  { src: Sponsor61, alt: 'Sponsor 61' },
 ];
   
 const LandingCarousel = () => {
