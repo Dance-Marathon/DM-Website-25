@@ -47,8 +47,8 @@ export default function CircleModalPopup({ image, title, content, learnMoreLink 
 
   return (
     <>
-      <Box sx={{ textAlign: 'center' }}>
-        <Container onClick={handleOpen}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textAlign: 'center' }}>
+        <Container onClick={handleOpen} sx={{ mx: 'auto' }}>
           <Image src={image} alt={title} />
           <Overlay className="overlay">
             <Typography variant="h6">{/* Optional hover text */}</Typography>
@@ -58,7 +58,7 @@ export default function CircleModalPopup({ image, title, content, learnMoreLink 
         <Typography
           variant="h6"
           color="text.secondary"
-          sx={{ marginTop: 2, paddingRight: '60px' }}
+          sx={{ marginTop: 2 }}
         >
           {title}
         </Typography>

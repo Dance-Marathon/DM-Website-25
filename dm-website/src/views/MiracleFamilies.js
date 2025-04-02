@@ -68,21 +68,21 @@ export default function MiracleFamilies() {
       <PageHero imageUrl={MiracleFamiliesPic} title='Meet our Miracle Families'/>
       </LazyLoad>
       <Container
-        sx={{
-          pt: { xs: 2, sm: 6 },
-          pb: { xs: 2, sm: 8 },
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'left',
-          gap: { xs: 2, sm: 3 },
-        }}
-      >
-        <Box
-          sx={{
-            width: { sm: '100%', md: '100%' },
-            textAlign: { sm: 'left', md: 'left' },
-          }}
-        >
+  sx={{
+    pt: { xs: 2, sm: 6 },
+    pb: { xs: 2, sm: 8 },
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: { xs: 2, sm: 3 },
+  }}
+>
+<Box
+  sx={{
+    width: { sm: '100%', md: '100%' },
+    textAlign: { xs: 'center', sm: 'left', md: 'left' },
+  }}
+>
             <Typography variant="h5" component="h2" sx={{ fontWeight: 'bold', color: '#233563', marginTop: {xs : 2, sm : 0}, marginBottom: 2 }}>
               For The Families
             </Typography>
@@ -117,8 +117,8 @@ export default function MiracleFamilies() {
               spacing={3} 
               justifyContent="center" 
               alignItems="center"
-              sx={{ maxWidth: 1200 }}
-            >
+              sx={{ maxWidth: 1200, mx: 'auto' }}
+>
               {[
                 // { image: AdrienneW, title: 'Adrienne W.', content: "Adrienne Williams was born a healthy 8 pounds and 2 ounces in Ohio. She had been examined prior to birth because of her brother's heart defect, and all seemed well. Little did her family know her issues would be completely different from her brother's, but just as difficult. Adrienne was diagnosed with hydrocephalus and Arnold Chiari type 1. In 2007, she had a VP Shunt put in and in 2008, her first posterior fossa decompression. In 2010, Adrienne had her second posterior fossa decompression. In between her posterior fossa decompressions, she had a mic-key put in. Adrienne has always enjoyed life and is happy, stays active, and is gifted in academics." },
                 { image: AlyssaM, title: 'Alyssa M.', learnMoreLink: "https://docs.google.com/document/d/10DkrvOWnQylkOh7PupXusY_voxHAB6zNb_qqTuuYjF0/edit?usp=sharing", content: "Born at 26 weeks, weighing just 1 pound 4 ounces, Alyssa was not expected to survive, but she defied the odds. She developed hydrocephalus and has cerebral palsy, requiring continuous treatment and monitoring, but today she is 28 years old and thriving. Alyssa uses sign language to communicate, walks with the help of a walker, and loves riding horses, swimming, watching movies, and athletic events." },
@@ -173,8 +173,8 @@ export default function MiracleFamilies() {
                 { image: WyattT, title: 'Wyatt T.', learnMoreLink: "https://docs.google.com/document/d/1vHczjGgFFO1fLqvqiZ1FFIDIN-qqVw41A4SAMVV56a0/edit?usp=share_link", content: "Wyatt was born with five heart defects, suffered a stroke at 3 months old, and received a heart transplant at 9.5 months old. Thanks to the incredible treatment at UF Health Shands Children’s Hospital, Wyatt is now a happy 15-year-old who loves hunting, fishing, swimming, and all things outdoors. His favorite colors are camo and pink, and he enjoys watching Heartland and Duck Dynasty." },
               ].map((card, index) => (
                 <Grid item xs={12} sm={6} md={3} key={index}>
-                  <CircleModalPopup {...card} />
-                </Grid>
+                    <CircleModalPopup {...card} />
+                  </Grid>
               ))}
             </Grid>
             </LazyLoad>
