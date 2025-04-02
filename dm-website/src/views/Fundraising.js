@@ -118,7 +118,7 @@ export default function Fundraising() {
               { image: PartnersBox, title: 'Partners', hoverText: "Discover our partners!", link: '/partners' },
             ].map((card, index) => (
               <Grid item xs={12} sm={6} md={3} key={index}>
-                <SquareCardSmall {...card} />
+                <SquareCardSmall {...card} sx={{ margin: '0 auto'}} />
               </Grid>
             ))}
           </Grid>

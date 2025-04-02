@@ -179,7 +179,7 @@ export default function Ambassadors() {
       <Typography variant="h5" color='#233563' sx={{ mt: 2 }}>
         2025 Dance Marathon Ambassadors
       </Typography>
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={2} justifyContent="end">
         {ambassadors.map((ambassador, index) => (
           <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
             <Box sx={{
@@ -193,6 +193,7 @@ export default function Ambassadors() {
                 borderRadius: '8px',
                 padding: 2,
                 textAlign: 'center',
+                margin: '0 auto'
               }}>
               <Typography variant="h6" color="text.secondary" fontWeight={'bold'}>
                 {ambassador.organization}

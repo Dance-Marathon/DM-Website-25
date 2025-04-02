@@ -212,6 +212,7 @@ export default function About() {
             display: 'flex',  // Use flexbox to allow content to expand
             justifyContent: 'center',  // Center content in the chip
             overflow: 'hidden',  // Hide overflow text if necessary
+            margin: '0 auto',
             '&:hover': {
             backgroundColor: 'transparent',  // Disable hover background change
             boxShadow: 'none',  // Prevent shadow on hover
