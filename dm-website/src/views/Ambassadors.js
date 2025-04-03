@@ -201,6 +201,7 @@ export default function Ambassadors() {
                 borderRadius: '8px',
                 padding: 2,
                 textAlign: 'center',
+                margin: '0 auto'
               }}>
               <Typography variant="h6" color="text.secondary" fontWeight={'bold'}>
                 {ambassador.organization}
