@@ -13,8 +13,8 @@ import EventsPic from "../assets/images/pagepics/EventsPic.jpg";
 import TTBoxPic from "../assets/images/miniboxpics/TTBoxPic.jpg";
 import MEBoxPic from "../assets/images/miniboxpics/MEBoxPicNew.jpg";
 import KickoffBoxPic from "../assets/images/miniboxpics/Kickoff.jpg";
-import MMBox from "../assets/images/miniboxpics/MiniMarathonBox.JPG";
-import MWeenBox from "../assets/images/miniboxpics/MWeenBox.JPG";
+import MMBox from "../assets/images/miniboxpics/MiniMarathonBox.jpg";
+import MWeenBox from "../assets/images/miniboxpics/MWeenBox.jpg";
 import LazyLoad from 'react-lazyload';
 
 export default function Events() {
