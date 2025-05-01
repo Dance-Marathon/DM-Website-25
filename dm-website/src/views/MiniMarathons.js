@@ -67,7 +67,7 @@ export default function MiniMarathons() {
                 </Typography >{' '}
            If you would like to learn more about our Mini-Marathon Programs or would like to get involved, please contact our Marathon Relations Overall Director, Gabriella Petillo, at {' '}
             <Link href="mailto:gpetillo@floridadm.org" sx={{ color: '#1a73e8' }}>
-              adevescovi@floridadm.org
+              gpetillo@floridadm.org
             </Link>.
           </Typography>
 

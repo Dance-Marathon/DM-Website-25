@@ -97,7 +97,7 @@ export default function Fundraising() {
       </Typography>
       <Typography variant="b2"  color="text.secondary" paragraph sx={{ mt: 4 }}>
         If you have any questions about DonorDrive, contact the Finance Overall Director, 
-        <Link href="mailto:rbeany@floridadm.org"> Ryan Beany</Link> at rbeany@floridadm.org.
+        <Link href="mailto:tbonnoront@floridadm.org"> Tyler Bonnoront</Link> at tbonnoront@floridadm.org.
       </Typography>
         </Box>
       
