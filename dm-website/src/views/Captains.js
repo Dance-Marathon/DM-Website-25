@@ -13,7 +13,7 @@ import LazyLoad from 'react-lazyload';
 
 const teams = [
   {
-    name: "Communications and Public Relations",
+    name: "Communications and Public Relations Team",
     responsibilities: (
       <>
         The Communications and Public Relations Team is responsible for expanding Dance Marathon’s reach beyond the student body by engaging with faculty, staff, families, and the Gainesville community. This team also maintains the organization’s public reputation through strategic outreach and communication.
@@ -30,7 +30,7 @@ const teams = [
     },
   },
   {
-    name: "Digital Marketing",
+    name: "Digital Marketing Team",
     responsibilities: (
       <>
         The Digital Marketing Team is composed of graphic designers and software developers responsible for making the Dance Marathon at UF brand come to life. Technology Captains are responsible for either the development/maintenance of the website or mobile iOS/Android applications, and Design Captains are responsible for the creation of all print/web design needs (merchandise, social media graphics, newsletters, calendars, etc.). Throughout the year, Captains work together to create high-tech, portfolio-quality materials that showcase Dance Marathon as a professional student-run movement. During the Main Event, Captains run the tech booth, which includes managing multiple screens inside the O’Dome, sending app notifications, coordinating audio/visual feeds, and creating in-event graphics.
@@ -50,7 +50,7 @@ const teams = [
     },
   },
   {
-    name: "Event Management",
+    name: "Event Management Team",
     responsibilities: (
       <>
         The Event Management Team is responsible for all logistics and entertainment throughout the year and during the 26.2-hour Main Event.
@@ -132,7 +132,7 @@ const teams = [
       }
     },
     {
-      name: "Member Advancement",
+      name: "Member Advancement Team",
       //responsibilities: "The Merchandise Team is responsible for creating and distributing all official Dance Marathon at the University of Florida merchandise, including clothing, accessories, and fundraising incentives.",
       leadership: {
         overallDirector: "Alexandra Polo",
