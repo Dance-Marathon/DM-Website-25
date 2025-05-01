@@ -53,7 +53,7 @@ export default function BeyondThisMoment() {
       >
         <Box sx={{ textAlign: "left" }}>
           <Typography variant="body1" color='text.secondary' paragraph>
-            With the help of the Miracle Makers here at The University of Florida, we are embarking on our 31st year of making miracles by supporting UF Health Shands Children's Hospital. Miracle Makers play a vital role in helping our organization #WriteTheStory. Our Miracle Makers help in fundraising, supporting, and raising awareness in our fight to end childhood illness.          
+            With the help of the Miracle Makers here at The University of Florida, we are embarking on our 32nd year of making miracles by supporting UF Health Shands Children's Hospital. Miracle Makers play a vital role in helping our organization #WriteTheStory. Our Miracle Makers help in fundraising, supporting, and raising awareness in our fight to end childhood illness.          
           </Typography>
           <Typography variant="body1" color='text.secondary' paragraph>
             As someone who started their journey in DM at UF as a Miracle Maker, I can certainly say that this role changed my life and helped me find my passion for this organization on a more personal level. At my first Main Event my freshman year, I was greeted by the most amazing and wonderful members who made me feel like I was a part of something much bigger than I could have ever imagined.

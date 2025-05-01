@@ -91,7 +91,7 @@ function Contact() {
           <Grid container>
             <Grid item xs={12} md={8} sx={{ mb: 3 }}>
               <Typography variant="h3" color="primary">
-                The 2025 Overall Team
+                The 2026 Overall Team
               </Typography>
               <Typography variant="body2" color="secondary" opacity={0.8}>
                 <i>Meet the Overalls</i>
