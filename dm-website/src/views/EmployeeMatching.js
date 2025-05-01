@@ -67,8 +67,8 @@ export default function EmployeeMatching() {
         1. If your company uses an online platform for gift matching, submit an online gift matching verification form through your company’s portal and use the information listed below as the destination for your contribution. To be appropriately matched in the most efficient manner, we encourage matching through our preferred donation location listed below. Shands Teaching Hospital and Clinics, Inc. is our local Children’s Miracle Network Hospital and it is easiest to complete your employee match through this local option.
       </Typography>
       <Typography color="text.secondary" paragraph>
-        2. Obtain a matching gift verification form from your Human Resources Department. Complete the form and list our organization name below. If you directed your donation to Children’s Miracle Network, please email our Executive Director, Ryan Athay, at{' '}
-        <Link href="mailto:rathay@floridadm.org">rathay@floridadm.org</Link> with a copy of the matching gift verification form.
+        2. Obtain a matching gift verification form from your Human Resources Department. Complete the form and list our organization name below. If you directed your donation to Children’s Miracle Network, please email our Executive Director, Abby Ferrell, at{' '}
+        <Link href="mailto:aferrell@floridadm.org">aferrell@floridadm.org</Link> with a copy of the matching gift verification form.
       </Typography>
       <Typography color='#233563' variant="h5" gutterBottom marginTop={4}>
         Primary Donation Location
@@ -120,15 +120,15 @@ export default function EmployeeMatching() {
         <Link href={CMNW9} target="_blank" rel="noopener">Children's Miracle Network</Link>
       </Typography>
       <Typography color="text.secondary" paragraph>
-      <span style={{ color: '#e2883c', fontWeight: 'bold' }}>PLEASE NOTE:</span> Notify our Finance Manager, Skylar Finkel, at{' '}
-        <Link href="mailto:sfinkel@floridadm.org">sfinkel@floridadm.org</Link> whenever a matching gift request has been submitted. The matching gift will be attributed to the individual who received the original donation. Please allow 60 days for the Office of Development to process your donor match before further inquiry as it can often be a lengthy process. Thank you for multiplying your miracles!
+      <span style={{ color: '#e2883c', fontWeight: 'bold' }}>PLEASE NOTE:</span> Notify our Finance Manager, Olivia Knier, at{' '}
+        <Link href="mailto:oknier@floridadm.org">oknier@floridadm.org</Link> whenever a matching gift request has been submitted. The matching gift will be attributed to the individual who received the original donation. Please allow 60 days for the Office of Development to process your donor match before further inquiry as it can often be a lengthy process. Thank you for multiplying your miracles!
       </Typography>
       <Typography color="text.secondary" variant="h5" gutterBottom marginTop={4}>
       <span style={{ color: '#233563', fontWeight: 'bold' }}>Important</span>
       </Typography>
       <Typography color="text.secondary" paragraph>
         Please do not fill out any forms sent with checks; instead, turn them in directly into the Finance Manager, reachable at{' '}
-        <Link href="mailto:sfinkel@floridadm.org">sfinkel@floridadm.org</Link>.
+        <Link href="mailto:oknier@floridadm.org">oknier@floridadm.org</Link>.
       </Typography>
             </Box>
         </Container>

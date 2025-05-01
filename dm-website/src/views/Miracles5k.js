@@ -94,13 +94,12 @@ export default function Miracles5k() {
             </p>
           </Typography>
           <Typography variant="body1" sx={{ color: "text.secondary" }}>
-            For more information, please contact the Operations Manager, Macy
-            Thompson, at{" "}
+            For more information, please contact the Operations Manager, Alyssa Fennen, at{" "}
             <Link
-              href="mailto:mthompson@floridadm.org"
+              href="mailto:afennen@floridadm.org"
               sx={{ color: "#1a73e8" }}
             >
-              mthompson@floridadm.org
+              afennen@floridadm.org
             </Link>
             .
           </Typography>

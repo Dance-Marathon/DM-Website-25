@@ -59,7 +59,7 @@ export default function Applications() {
             sx={{ color: "#e2883c", fontWeight: "bold", marginBottom: 2 }}
           >
             Thank you for your interest in Dance Marathon at the University of
-            Florida 2025!
+            Florida 2026!
           </Typography>
           <Typography variant="body1" gutterBottom color="text.secondary">
             The online application forms are linked below. In order to be
@@ -249,9 +249,9 @@ export default function Applications() {
           >
             If you are interested in becoming an Ambassador, you can join the
             organization at any time! For more information, please contact our
-            Organization Relations Overall Director, Caroline Lee, at{" "}
-            <Link href="mailto:clee@floridadm.org" sx={{ color: "#1a73e8" }}>
-              clee@floridadm.org
+            Organization Relations Overall Director, Kelsey Reader, at{" "}
+            <Link href="mailto:kreader@floridadm.org" sx={{ color: "#1a73e8" }}>
+              kreader@floridadm.org
             </Link>
             .
           </Typography>
@@ -281,12 +281,12 @@ export default function Applications() {
             color="text.secondary"
           >
             If you have any questions regarding applications, please reach out
-            to our Membership Manager, Abby Ferrell, at{" "}
+            to our Membership Manager, Samantha Guerrero, at{" "}
             <Link
-              href="mailto:aferrell@floridadm.org"
+              href="mailto:sguerrero@floridadm.org"
               sx={{ color: "#1a73e8" }}
             >
-              aferrell@floridadm.org
+              sguerrero@floridadm.org
             </Link>
             .
           </Typography>

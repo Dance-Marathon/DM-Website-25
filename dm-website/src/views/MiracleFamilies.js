@@ -98,9 +98,9 @@ export default function MiracleFamilies() {
             </Typography>
 
             <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
-              If you have any questions about the Family Relations program, please contact the Family Relations Overall Director, Dawson Geller, at{' '}
-              <Link href="mailto:dgeller@floridadm.org" sx={{ color: '#1a73e8' }}>
-                dgeller@floridadm.org
+              If you have any questions about the Family Relations program, please contact the Family Relations Overall Director, Chloe Claxton, at{' '}
+              <Link href="mailto:cclaxton@floridadm.org" sx={{ color: '#1a73e8' }}>
+                cclaxton@floridadm.org
               </Link>.
             </Typography>
 

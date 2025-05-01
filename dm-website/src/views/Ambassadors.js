@@ -108,7 +108,7 @@ export default function Ambassadors() {
       </Typography>
       <Typography variant="body1" sx={{ color: '#000000'}}  marginTop={0}>
                 <Link href={AmbassadorGuidelines} sx={{ display: 'inline' }}>
-                Click here to view the 2025 Ambassador Guidelines
+                Click here to view the 2026 Ambassador Guidelines
                 </Link>
             </Typography>
       
@@ -178,7 +178,7 @@ export default function Ambassadors() {
       
 
       <Typography variant="h5" color='#233563' sx={{ mt: 2 }}>
-        2025 Dance Marathon Ambassadors
+        2026 Dance Marathon Ambassadors
       </Typography>
       <Grid
         container

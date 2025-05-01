@@ -76,8 +76,8 @@ export default function DonorDrive() {
           >
             If you have any further questions, please contact our Finance
             Manager
-            <Link href="mailto:sfinkel@floridadm.org."> Skylar Finkel</Link> at
-            sfinkel@floridadm.org.
+            <Link href="mailto:sfinkel@floridadm.org."> Olivia Knier</Link> at
+            oknier@floridadm.org.
           </Typography>
         </Box>
 

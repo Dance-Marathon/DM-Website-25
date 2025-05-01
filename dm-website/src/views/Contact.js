@@ -15,26 +15,24 @@ import PageHero from '../components/PageHero';
 import HorizontalTeamCard from "../components/TeamCard";
 
 // Images
-import OT1 from "../assets/images/OTHeadshots/RyanAthay-1.jpg";
-import OT2 from "../assets/images/OTHeadshots/SkylarFinkel-1.jpg";
-import OT3 from "../assets/images/OTHeadshots/MacyThompson-1.jpg";
-import OT4 from "../assets/images/OTHeadshots/SydneyWall-1.jpg";
-import OT5 from "../assets/images/OTHeadshots/AbbyFerrell-1.jpg";
-import OT6 from "../assets/images/OTHeadshots/ReaganDiRenzo-1.jpg";
-import OT7 from "../assets/images/OTHeadshots/CameronAppel-1.jpg";
-import OT8 from "../assets/images/OTHeadshots/DawsonGeller-1.jpg";
-import OT9 from "../assets/images/OTHeadshots/RyanBeany-1.jpg";
-import OT10 from "../assets/images/OTHeadshots/SophieLinale-1.jpg";
-import OT11 from "../assets/images/OTHeadshots/LexiDevescovi-1.jpg";
-import OT12 from "../assets/images/OTHeadshots/OliviaKnier-1.jpg";
-import OT13 from "../assets/images/OTHeadshots/DylanSiegel-1.jpg";
-import OT14 from "../assets/images/OTHeadshots/AvaDinow-1.jpg";
-import OT15 from "../assets/images/OTHeadshots/CarolineLee-1.jpg";
-import OT16 from "../assets/images/OTHeadshots/AverieEngel-1.jpg";
-import OT17 from "../assets/images/OTHeadshots/JessWinograd-1.jpg";
-import OT18 from "../assets/images/OTHeadshots/CarolineEaton-1.jpg";
-import OT19 from "../assets/images/OTHeadshots/GreyChapin-1.jpg";
-import OT20 from "../assets/images/OTHeadshots/AvaOrlando-1.jpg";
+import OT1 from "../assets/images/OTHeadshots/AbbyFerrell-1.jpg";
+import OT2 from "../assets/images/OTHeadshots/OliviaKnier-1.jpg";
+import OT3 from "../assets/images/OTHeadshots/Copy of AlyssaFennen.jpg";
+import OT4 from "../assets/images/OTHeadshots/Copy of MayaVaidya Headshot.jpg";
+import OT5 from "../assets/images/OTHeadshots/SamanthaGurrerro.-Edit-2.jpg";
+import OT6 from "../assets/images/OTHeadshots/Copy of SophiaAmaroso.png";
+import OT7 from "../assets/images/OTHeadshots/Copy of marinamarketing.jpg";
+import OT8 from "../assets/images/OTHeadshots/Copy of ashley paek editted.png";
+import OT9 from "../assets/images/OTHeadshots/Copy of ADChloeClaxton-Edit.jpg";
+import OT10 from "../assets/images/OTHeadshots/Copy of TylerBonnoront.-Edit.jpg";
+import OT11 from "../assets/images/OTHeadshots/Copy of Emily Brundage Headshot.jpg";
+import OT12 from "../assets/images/OTHeadshots/Copy of GabbyPetillo-Edit.jpg";
+import OT13 from "../assets/images/OTHeadshots/Copy of Alexandra Polo (OUT)-Edit.jpg";
+import OT14 from "../assets/images/OTHeadshots/abbythibodeau.jpg";
+import OT15 from "../assets/images/OTHeadshots/Copy of KylieFinkelstein-Edit.jpg";
+import OT16 from "../assets/images/OTHeadshots/Copy of RebeccaSalamon.png";
+import OT17 from "../assets/images/OTHeadshots/Copy of Kelsey Reader.jpg";
+import OT18 from "../assets/images/OTHeadshots/Copy of Jaxen Ranson Headshot.jpg";
 import Footer from '../components/Footer';
 
 import ScrollToTop from "../components/ScrollToTop";
@@ -106,56 +104,8 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT1}
-                    name="Ryan Athay"
-                    position={{ color: "primary", label: "Executive Director" }}
-                    email="rathay@floridadm.org"
-                  />
-                </LazyLoad>
-              </Box>
-            </Grid>
-            <Grid item xs={12} lg={6} md={4}>
-              <Box mb={1}>
-                <LazyLoad height={200} offset={100} once>
-                  <HorizontalTeamCard
-                    image={OT2}
-                    name="Skylar Finkel"
-                    position={{ color: "info", label: "Finance Manager" }}
-                    email="sfinkel@floridadm.org"
-                  />
-                </LazyLoad>
-              </Box>
-            </Grid>
-            <Grid item xs={12} lg={6} md={4}>
-              <Box mb={{ xs: 1, lg: 0 }}>
-                <LazyLoad height={200} offset={100} once>
-                  <HorizontalTeamCard
-                    image={OT3}
-                    name="Macy Thompson"
-                    position={{ color: "primary-light", label: "Operations Manager" }}
-                    email="mthompson@floridadm.org"
-                  />
-                </LazyLoad>
-              </Box>
-            </Grid>
-            <Grid item xs={12} lg={6} md={4}>
-              <Box mb={{ xs: 1, lg: 0 }}>
-                <LazyLoad height={200} offset={100} once>
-                  <HorizontalTeamCard
-                    image={OT4}
-                    name="Sydney Wall"
-                    position={{ color: "info", label: "Marketing Manager" }}
-                    email="swall@floridadm.org"
-                  />
-                </LazyLoad>
-              </Box>
-            </Grid>
-            <Grid item xs={12} lg={6} md={4}>
-              <Box mb={1}>
-                <LazyLoad height={200} offset={100} once>
-                  <HorizontalTeamCard
-                    image={OT5}
                     name="Abby Ferrell"
-                    position={{ color: "info", label: "Membership Manager" }}
+                    position={{ color: "primary", label: "Executive Director" }}
                     email="aferrell@floridadm.org"
                   />
                 </LazyLoad>
@@ -165,10 +115,58 @@ function Contact() {
               <Box mb={1}>
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
+                    image={OT2}
+                    name="Olivia Knier"
+                    position={{ color: "info", label: "Finance Manager" }}
+                    email="oknier@floridadm.org"
+                  />
+                </LazyLoad>
+              </Box>
+            </Grid>
+            <Grid item xs={12} lg={6} md={4}>
+              <Box mb={{ xs: 1, lg: 0 }}>
+                <LazyLoad height={200} offset={100} once>
+                  <HorizontalTeamCard
+                    image={OT3}
+                    name="Alyssa Fennen"
+                    position={{ color: "primary-light", label: "Operations Manager" }}
+                    email="afennen@floridadm.org"
+                  />
+                </LazyLoad>
+              </Box>
+            </Grid>
+            <Grid item xs={12} lg={6} md={4}>
+              <Box mb={{ xs: 1, lg: 0 }}>
+                <LazyLoad height={200} offset={100} once>
+                  <HorizontalTeamCard
+                    image={OT4}
+                    name="Maya Vaidya"
+                    position={{ color: "info", label: "Marketing Manager" }}
+                    email="mvaidya@floridadm.org"
+                  />
+                </LazyLoad>
+              </Box>
+            </Grid>
+            <Grid item xs={12} lg={6} md={4}>
+              <Box mb={1}>
+                <LazyLoad height={200} offset={100} once>
+                  <HorizontalTeamCard
+                    image={OT5}
+                    name="Samantha Guerrero"
+                    position={{ color: "info", label: "Membership Manager" }}
+                    email="sguerrero@floridadm.org"
+                  />
+                </LazyLoad>
+              </Box>
+            </Grid>
+            <Grid item xs={12} lg={6} md={4}>
+              <Box mb={1}>
+                <LazyLoad height={200} offset={100} once>
+                  <HorizontalTeamCard
                     image={OT6}
-                    name="Raegan DiRenzo"
-                    position={{ color: "info", label: "Dancer Engagement Overall" }}
-                    email="rdirenzo@floridadm.org"
+                    name="Sofia Amoroso"
+                    position={{ color: "info", label: "Communications and Public Relations Overall" }}
+                    email="samoroso@floridadm.org"
                   />
                 </LazyLoad>
               </Box>
@@ -178,9 +176,9 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT7}
-                    name="Cameron Appel"
+                    name="Marina Cheema"
                     position={{ color: "info", label: "Digital Marketing Overall" }}
-                    email="cappel@floridadm.org"
+                    email="mcheema@floridadm.org"
                   />
                 </LazyLoad>
               </Box>
@@ -190,9 +188,9 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT8}
-                    name="Dawson Geller"
-                    position={{ color: "info", label: "Family Relations Overall" }}
-                    email="dgeller@floridadm.org"
+                    name="Ashley Paek"
+                    position={{ color: "info", label: "Event Management Overall" }}
+                    email="apaek@floridadm.org"
                   />
                 </LazyLoad>
               </Box>
@@ -202,9 +200,9 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT9}
-                    name="Ryan Beany"
-                    position={{ color: "info", label: "Finance Overall" }}
-                    email="rbeany@floridadm.org"
+                    name="Chloe Claxton"
+                    position={{ color: "info", label: "Family Relations Overall" }}
+                    email="cclaxton@floridadm.org"
                   />
                 </LazyLoad>
               </Box>
@@ -214,9 +212,9 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT10}
-                    name="Sophie Linale"
-                    position={{ color: "info", label: "Leadership Development Overall" }}
-                    email="slinale@floridadm.org"
+                    name="Tyler Bonnoront"
+                    position={{ color: "info", label: "Finance Overall" }}
+                    email="tbonnoront@floridadm.org"
                   />
                 </LazyLoad>
               </Box>
@@ -226,9 +224,9 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT11}
-                    name="Lexi Devescovi"
-                    position={{ color: "info", label: "Marathon Relations Overall" }}
-                    email="adevescovi@floridadm.org"
+                    name="Emily Brundage"
+                    position={{ color: "info", label: "Leadership Development Overall" }}
+                    email="ebrundage@floridadm.org"
                   />
                 </LazyLoad>
               </Box>
@@ -238,9 +236,9 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT12}
-                    name="Olivia Knier"
-                    position={{ color: "info", label: "Merchandise Overall" }}
-                    email="oknier@floridadm.org"
+                    name="Gabriella Petillo"
+                    position={{ color: "info", label: "Marathon Relations Overall" }}
+                    email="gpetillo@floridadm.org"
                   />
                 </LazyLoad>
               </Box>
@@ -250,9 +248,9 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT13}
-                    name="Dylan Siegel"
-                    position={{ color: "info", label: "Morale Overall" }}
-                    email="dsiegel@floridadm.org"
+                    name="Alexandra Polo"
+                    position={{ color: "info", label: "Member Advancement Overall" }}
+                    email="apolo@floridadm.org"
                   />
                 </LazyLoad>
               </Box>
@@ -262,9 +260,9 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT14}
-                    name="Ava Dinow"
-                    position={{ color: "info", label: "Multimedia Overall" }}
-                    email="adinow@floridadm.org"
+                    name="Abby Thibodeau"
+                    position={{ color: "info", label: "Merchandise Overall" }}
+                    email="athibodeau@floridadm.org"
                   />
                 </LazyLoad>
               </Box>
@@ -274,9 +272,9 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT15}
-                    name="Caroline Lee"
-                    position={{ color: "info", label: "Organization Relations Overall" }}
-                    email="clee@floridadm.org"
+                    name="Kylie Finkelstein"
+                    position={{ color: "info", label: "Morale Overall" }}
+                    email="kfinkelstein@floridadm.org"
                   />
                 </LazyLoad>
               </Box>
@@ -286,9 +284,9 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT16}
-                    name="Averie Engel"
-                    position={{ color: "info", label: "Outreach Overall" }}
-                    email="aengel@floridadm.org"
+                    name="Rebecca Salamon"
+                    position={{ color: "info", label: "Multimedia Overall" }}
+                    email="rsalamon@floridadm.org"
                   />
                 </LazyLoad>
               </Box>
@@ -298,9 +296,9 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT17}
-                    name="Jessica Winograd"
-                    position={{ color: "info", label: "Partnerships Overall" }}
-                    email="jwinograd@floridadm.org"
+                    name="Kelsey Reader"
+                    position={{ color: "info", label: "Organization Relations Overall" }}
+                    email="kreader@floridadm.org"
                   />
                 </LazyLoad>
               </Box>
@@ -310,33 +308,9 @@ function Contact() {
                 <LazyLoad height={200} offset={100} once>
                   <HorizontalTeamCard
                     image={OT18}
-                    name="Caroline Eaton"
-                    position={{ color: "info", label: "Productions Overall" }}
-                    email="ceaton@floridadm.org"
-                  />
-                </LazyLoad>
-              </Box>
-            </Grid>
-            <Grid item xs={12} lg={6} md={4}>
-              <Box mb={1}>
-                <LazyLoad height={200} offset={100} once>
-                  <HorizontalTeamCard
-                    image={OT19}
-                    name="Grey Chapin"
-                    position={{ color: "info", label: "Public Relations Overall" }}
-                    email="gchapin@floridadm.org"
-                  />
-                </LazyLoad>
-              </Box>
-            </Grid>
-            <Grid item xs={12} lg={6} md={4}>
-              <Box mb={1}>
-                <LazyLoad height={200} offset={100} once>
-                  <HorizontalTeamCard
-                    image={OT20}
-                    name="Ava Orlando"
-                    position={{ color: "info", label: "Recruitment Overall" }}
-                    email="aorlando@floridadm.org"
+                    name="Jaxen Ranson"
+                    position={{ color: "info", label: "Partnerships Overall" }}
+                    email="jranson@floridadm.org"
                   />
                 </LazyLoad>
               </Box>

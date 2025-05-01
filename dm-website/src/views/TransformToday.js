@@ -81,8 +81,8 @@ export default function TransformToday() {
               to our participants, Alumni and donors for your continuous support
               throughout the day!
             </p>
-            Our 2023 total, which was raised in just 26.2 hours for our
-            hospital, was <span style={{ color: '#e2883c', fontWeight: 'bold' }}>$409,733.63!</span>
+            Our 2024 total, which was raised in just 26.2 hours for our
+            hospital, was <span style={{ color: '#e2883c', fontWeight: 'bold' }}>$365,131.79!</span>
             <p>
               We are so eager to continue our efforts throughout this year and
               make miracles for the families who need it most! Please feel free
@@ -90,7 +90,7 @@ export default function TransformToday() {
             </p>
           </Typography>
           <LazyLoad height={200} offset={100} once>
-          <YoutubeVid videoId="oI5xXmr9hDY" />
+          <YoutubeVid videoId="1mRhkA--yew" />
           </LazyLoad>
           <Typography
             variant="h5"

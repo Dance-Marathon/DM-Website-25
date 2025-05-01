@@ -55,8 +55,8 @@ export default function MiracleMakers() {
         In addition to standing, if able, for the duration of the Main Event, Miracle Makers will have year-long activities to take part in such as a Miracle Maker Retreat, Registered Miracle Maker Workshops, bonding with their internal Organization, and more!
       </Typography>
       <Typography variant="body1" color="text.secondary" >
-        Please email Raegan DiRenzo, the Dancer Engagement Overall Director, at 
-        <Link href="mailto:rdirenzo@floridadm.org"> rdirenzo@floridadm.org</Link> with any questions!
+        Please email Alexandra Polo, the Member Advancement Overall Director, at 
+        <Link href="mailto:apolo@floridadm.org"> apolo@floridadm.org</Link> with any questions!
       </Typography>
 
       <Typography variant="h5" color='#233563' sx={{ marginTop: 2 }}>
@@ -72,8 +72,8 @@ export default function MiracleMakers() {
         You may register to be a Miracle Maker with an Organization team or as an individual.
       </Typography>
       <Typography variant="body1" color="text.secondary" >
-        If you have any questions about being a Miracle Maker as an individual or part of the Gator Aides team, please contact the Recruitment Overall Director, Ava Orlando, at 
-        <Link href="mailto:aorlando@floridadm.org"> aorlando@floridadm.org</Link>.
+        If you have any questions about being a Miracle Maker as an individual or part of the Gator Aides team, please contact the Member Advancement Overall Director, Alexandra Polo, at 
+        <Link href="mailto:apolo@floridadm.org"> apolo@floridadm.org</Link>.
       </Typography>
       
       <Typography variant="h5" color='#233563' sx={{marginTop: 2}}>

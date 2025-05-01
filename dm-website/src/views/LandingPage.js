@@ -76,9 +76,9 @@ export default function LandingPage() {
             <i style={{ color: '#e2883c' }}>
               <b>UF</b>
             </i>
-            , having fundraised over $32,000,000 thus far. This past year, we celebrated our 30th year by raising{' '}
+            , having fundraised over $33,000,000 thus far. This past year, we celebrated our 31st year by raising{' '}
             <i style={{ color: '#233563' }}>
-              <b>$1,531,518.24!</b>
+              <b>$1,351,566.99!</b>
             </i>
           </Typography>
         </Box>
@@ -93,7 +93,7 @@ export default function LandingPage() {
                     Our Story
                   </Typography>
                   <Typography variant="body1" color="primary" paragraph>
-                    DM at UF is one of the five founding Dance Marathon programs in the nation. Since our start, we have raised more than $32 million for the Miracle Families at UF Health Shands Children’s Hospital, our local Children’s Miracle Network hospital.
+                    DM at UF is one of the five founding Dance Marathon programs in the nation. Since our start, we have raised more than $33 million for the Miracle Families at UF Health Shands Children’s Hospital, our local Children’s Miracle Network hospital.
                   </Typography>
                 </Box>
                 <Button variant="outlined" color="primary" component={Link} to="/ourstory">Learn More</Button>

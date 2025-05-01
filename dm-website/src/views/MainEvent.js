@@ -61,7 +61,7 @@ export default function MainEvent() {
             <p>We’re excited to keep building on our efforts this year, creating meaningful miracles for the families who need them most. Catch a glimpse of last year’s impact by watching our <span style={{ color: '#e2883c', fontWeight: 'bold' }}>Main Event closing ceremonies video</span> here!</p>
           </Typography>
           <LazyLoad height={200} offset={100} once>
-          <YoutubeVid videoId="BlBmUrjDoMw" />
+          <YoutubeVid videoId="DF0LQNO86Bc" />
           </LazyLoad>
           <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
             <p>Follow us on social media for event updates!</p>
@@ -70,25 +70,8 @@ export default function MainEvent() {
           <Typography variant="h4" sx={{ color: '#e2883c', marginBottom: 2 }}>
             FAQ
           </Typography>
-          <FAQ question="When are visiting hours for the Main Event?"answer={ <Typography color="text.secondary">
-                  <user__selection>
-                    <ul>
-                      <li>
-                        Saturday, April 5th from 10:00am-12:00am (doors close for Opening Ceremonies at 10:45am and reopen at 12:20pm)
-                      </li>
-                      <li>
-                        Sunday, April 6th from 6:00am-12:45pm
-                      </li>
-                    </ul>
-                  </user__selection>
-                </Typography>
-              }
-            />
             <FAQ question="Where is Dance Marathon" answer={<Typography color="text.secondary">
               Dance Marathon will be taking place in the Stephen O’Connell Center on UF’s Campus, you can enter our event through Gate 1. 
-            </Typography>} />
-            <FAQ question="Did you know it’s Final Four Weekend?" answer={<Typography color="text.secondary">
-              Yes, and we are excited to celebrate the Gators in the O’Dome, the home of Florida Basketball!
             </Typography>} />
             <FAQ question="Where do I park if visiting?" answer={<Typography color="text.secondary">
               Parking will be available in the O’Connell Center Parking Lot and Garage 
@@ -100,7 +83,7 @@ export default function MainEvent() {
               You can receive a tour of our event from our Recruitment Team and have the opportunity to join Miracle Makers on the floor for programming like the Linedance, Miracle Stories, and even Dueling Pianos.
             </Typography>} />
             <FAQ question="Can I visit outside of visitor hours?" answer={<Typography color="text.secondary">
-              You can pay to attend our Rave from 1:30am-2:30am, but that is the only time outside of visiting hours that outside guests are allowed in. You can purchase {" "}
+              You can pay to attend our Rave, but that is the only time outside of visiting hours that outside guests are allowed in. You can purchase {" "}
               <a
                 href="https://dance-marathon-at-uf-510104.square.site/product/2025-rave-ticket/808"
                 target="_blank"
@@ -133,14 +116,7 @@ export default function MainEvent() {
               .
             </Typography>} />
             <FAQ question="What is the Rave?" answer={<Typography color="text.secondary">
-              The Rave will take place in the O’Dome from 1:30am-2:30am, with doors opening at 1:00am. This is an opportunity to come into the O’Dome and rave with DM at UF and our amazing guest DJ’s. Tickets are $10 in advance and $15 at the door! You can purchase {" "}
-              <a
-                href="https://dance-marathon-at-uf-510104.square.site/product/2025-rave-ticket/808"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                HERE!
-              </a>
+              The Rave is an opportunity to come into the O’Dome and rave with DM at UF and our amazing guest DJ’s.
             </Typography>} />
 
           <Typography variant="body1" sx={{ color: 'text.secondary' }}>

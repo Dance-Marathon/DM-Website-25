@@ -194,9 +194,9 @@ export default function Sponsors() {
       {/* Contact Information */}
       <Typography variant="body1" color="text.secondary"  marginTop={0}>
         If you have any questions, please contact our Partnership Overall Director,{' '}
-        <Link href="mailto:jwinograd@floridadm.org" underline="always">
-          Jessica Winograd
-        </Link>, at jwinograd@floridadm.org.
+        <Link href="mailto:jranson@floridadm.org" underline="always">
+          Jaxen Ranson
+        </Link>, at jranson@floridadm.org.
       </Typography>
 
       {/* Sponsors Section */}

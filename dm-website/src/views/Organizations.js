@@ -76,9 +76,9 @@ export default function Organizations() {
             A variety of University of Florida affiliated <span style={{color: 'primary', fontWeight: 'bold'}}>Organizations</span> participate in Dance Marathon every year!
           </Typography>
           <Typography variant="body1" gutterBottom sx={{ marginBottom: 2 }} color="text.secondary">
-            Organizations are the backbone of our philanthropy, and we are always looking for more people to join our family! If you would like to get your organization involved with Dance Marathon, please contact the Recruitment Overall, Ava Orlando, at{' '}
+            Organizations are the backbone of our philanthropy, and we are always looking for more people to join our family! If you would like to get your organization involved with Dance Marathon, please contact the Member Advancement Overall, Alexandra Polo, at{' '}
             <Link href="mailto:aorlando@floridadm.org" sx={{ color: '#1a73e8' }}>
-              aorlando@floridadm.org
+              apolo@floridadm.org
             </Link>.
           </Typography>
           <Typography variant="body1" gutterBottom sx={{ marginBottom: 4 }} color="text.secondary">

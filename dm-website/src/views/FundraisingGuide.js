@@ -109,7 +109,7 @@ export default function FundraisingGuide() {
         </Typography>
         <Typography variant="body1" color="text.secondary" paragraph>
           First, obtain specially designed canning buckets from our Partnerships Team (contact{' '}
-          <Link href="mailto:jwinograd@floridadm.org">jwinograd@floridadm.org</Link> for further information). Email, call, or go inside a local business in your hometown and request to speak to the General Manager regarding canning donations. They will inform you of all the necessary regulations, and allow you to coordinate a time that works for both you and the business.
+          <Link href="mailto:jranson@floridadm.org">jranson@floridadm.org</Link> for further information). Email, call, or go inside a local business in your hometown and request to speak to the General Manager regarding canning donations. They will inform you of all the necessary regulations, and allow you to coordinate a time that works for both you and the business.
         </Typography>
         <Typography variant="body1" color="text.secondary" paragraph>
           Be sure to show up promptly and dressed in Dance Marathon at UF attire to help spread your message! From there, talk to customers as they leave the business about donating to your cause. No donation is too small and every amount helps make miracles!
