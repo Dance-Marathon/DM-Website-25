@@ -68,7 +68,7 @@ export default function LandingPage() {
             <i style={{ color: '#233563' }}>
               <b>UF Health Shands Children's Hospital</b>
             </i>
-            . We are going into our 31st year of{' '}
+            . We are going into our 32nd year of{' '}
             <i style={{ color: '#e2883c' }}>
               <b>Dance Marathon</b>
             </i>{' '}
