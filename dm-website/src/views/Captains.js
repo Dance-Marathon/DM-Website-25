@@ -133,7 +133,7 @@ const teams = [
     },
     {
       name: "Member Advancement Team",
-      //responsibilities: "The Merchandise Team is responsible for creating and distributing all official Dance Marathon at the University of Florida merchandise, including clothing, accessories, and fundraising incentives.",
+      responsibilities: "The Member Advancement Team is responsible for overseeing the Miracle Maker lifecycle from recruitment to attendance at Dance Marathon at UF events. This team also represents Dance Marathon at UF at student events such as club fairs and involvement expos to further our recruitment efforts. This team will execute all Miracle Maker specific events including weekly check-ins, engagement/ fundraising activation plans, as well as Main Event programming (Swim + shower, Zen room, etc.).",
       leadership: {
         overallDirector: "Alexandra Polo",
         assistantDirectors: [
