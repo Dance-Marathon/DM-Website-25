@@ -114,33 +114,7 @@ export default function Applications() {
             color="text.secondary"
             marginBottom={3.5}
           >
-            Manager Applications are due by Sunday, April 13th at 5:00 p.m. via
-            email to{" "}
-            <Link
-              href="mailto:aferrell@floridadm.org"
-              sx={{ color: "#1a73e8" }}
-            >
-              rathay@floridadm.org
-            </Link>
-            . Please ensure all required information is included, along with any
-            additional details you feel may support your application. Interview
-            sign-up links will be sent out on Sunday, April 13th at 7:00 p.m.,
-            and the sign-up period will close on Monday, April 14th at 12:00
-            p.m. Interviews will take place at the Reitz Union on Monday, April
-            14th beginning at 4:00 p.m. If you have any conflicts with the
-            interview schedule, please note them in your application email. A
-            $25 non-refundable application fee must be paid via the{" "}
-            <Link
-              href="https://dance-marathon-at-uf-510104.square.site/product/2025-manager-overall-director-application-fee/767?cs=true&cst=custom"
-              sx={{ display: "inline" }}
-            >
-              online store
-            </Link>{" "}
-            prior to your interview. Please click{" "}
-            <Link href={ManagerApplication} sx={{ display: "inline" }}>
-              here
-            </Link>{" "}
-            to view detailed position descriptions and the application.
+            Closed
           </Typography>
 
           <Typography
@@ -156,34 +130,7 @@ export default function Applications() {
             color="text.secondary"
             marginBottom={3.5}
           >
-            Overall Team (OT) Applications are due by Tuesday, April 15th at
-            5:00 p.m. via email to{" "}
-            <Link
-              href="mailto:aferrell@floridadm.org"
-              sx={{ color: "#1a73e8" }}
-            >
-              rathay@floridadm.org
-            </Link>
-            . As with Manager applications, please include all requested
-            materials and any relevant additional information. Interview sign-up
-            links will be sent on Tuesday, April 15th at 7:00 p.m., and sign-ups
-            will close at 12:00 p.m. on Wednesday, April 16th. Interviews will
-            be held at the Reitz Union on Wednesday, April 16th and Thursday,
-            April 17th beginning at 4:00 p.m. Selected applicants must also
-            attend a mandatory Transitions Meeting on Tuesday, April 22nd from
-            6:00 to 8:00 p.m. As with Manager applications, a $25 non-refundable
-            application fee must be submitted via the{" "}
-            <Link
-              href="https://dance-marathon-at-uf-510104.square.site/product/2025-manager-overall-director-application-fee/767?cs=true&cst=custom"
-              sx={{ display: "inline" }}
-            >
-              online store
-            </Link>{" "}
-            prior to the interview. Please click{" "}
-            <Link href={OverallApplication} sx={{ display: "inline" }}>
-              here
-            </Link>{" "}
-            to view detailed position descriptions and the application.
+            Closed
           </Typography>
 
           <Typography
@@ -271,7 +218,7 @@ export default function Applications() {
             >
               here
             </Link>
-            , and someone from Dancer Engagement will reach out to you.
+            , and someone from Member Advancement will reach out to you.
           </Typography>
 
           <Typography

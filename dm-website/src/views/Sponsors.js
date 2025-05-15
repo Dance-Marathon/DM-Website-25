@@ -201,7 +201,7 @@ export default function Sponsors() {
 
       {/* Sponsors Section */}
       <Typography variant="h3" color="text.secondary" align="center" gutterBottom sx={{marginTop: 4}}>
-      <span style={{ color: '#233563', fontWeight: 'bold' }}>Our 2024 Partners</span>
+      <span style={{ color: '#233563', fontWeight: 'bold' }}>Our 2025 Partners</span>
       </Typography>
       <LazyLoad height={200} offset={100} once>
       {/* Grid of sponsor logos */}

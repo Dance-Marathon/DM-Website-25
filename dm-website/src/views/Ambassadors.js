@@ -96,7 +96,7 @@ export default function Ambassadors() {
           pb: { xs: 2, sm: 8 },
           display: 'flex',
           flexDirection: 'column',
-          alignItems: 'center',
+          //alignItems: 'center',
           gap: { xs: 2, sm: 3 },
         }}  
       >
@@ -177,7 +177,7 @@ export default function Ambassadors() {
         </ul>
       
 
-      <Typography variant="h5" color='#233563' sx={{ mt: 2 }}>
+      {/* <Typography variant="h5" color='#233563' sx={{ mt: 2 }}>
         2026 Dance Marathon Ambassadors
       </Typography>
       <Grid
@@ -212,7 +212,7 @@ export default function Ambassadors() {
               </Box>
           </Grid>
         ))}
-      </Grid>
+      </Grid> */}
       </Container>
       <Footer />
     </ThemeProvider>

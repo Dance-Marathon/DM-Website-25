@@ -300,7 +300,7 @@ export default function OurStory() {
                     >
                       Total amount raised in past 31 years: over{" "}
                       <span style={{ color: "#e2883c", fontWeight: "bold" }}>
-                        32 million dollars
+                        33 million dollars
                       </span>
                     </Typography>
                   </li>

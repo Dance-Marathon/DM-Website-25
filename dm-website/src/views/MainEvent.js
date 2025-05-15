@@ -70,7 +70,7 @@ export default function MainEvent() {
           <Typography variant="h4" sx={{ color: '#e2883c', marginBottom: 2 }}>
             FAQ
           </Typography>
-            <FAQ question="Where is Dance Marathon" answer={<Typography color="text.secondary">
+            <FAQ question="Where is Dance Marathon?" answer={<Typography color="text.secondary">
               Dance Marathon will be taking place in the Stephen O’Connell Center on UF’s Campus, you can enter our event through Gate 1. 
             </Typography>} />
             <FAQ question="Where do I park if visiting?" answer={<Typography color="text.secondary">
