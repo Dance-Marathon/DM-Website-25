@@ -22,7 +22,9 @@ const teams = [
     leadership: {
       overallDirector: "Sofia Amoroso",
       assistantDirectors: [
-        
+        " - Assistant Director of Social Media",
+        " - Assistant Director of Communications",
+        " - Assistant Director of Internal Affairs"
       ],
       captains: [
         
@@ -76,9 +78,9 @@ const teams = [
         overallDirector: "Chloe Claxton",
         assistantDirectors: [
           " - Assistant Director of Family Events",
-          " - Assistant Director of Tracking",
-          " - Assistant Director of Internal Outreach",
-          " - Assistant Director of External Outreach"
+          " - Assistant Director of Captain Engagement",
+          " - Assistant Director of Outreach",
+          " - Assistant Director of Cause Connection"
         ],
         captains: [
           
@@ -106,9 +108,9 @@ const teams = [
         overallDirector: "Emily Brundage",
         assistantDirectors: [
           " - Assistant Director of Development",
-          " - Assistant Director of Engagement",
-          " - Assistant Director of Outreach",
-          " - Assistant Director of Tracking"
+          " - Assistant Director of Logistics",
+          " - Assistant Director of Impact Advancement",
+          " - Assistant Director of Internal Relations"
         ],
         captains: [
           
@@ -124,7 +126,8 @@ const teams = [
           " - Assistant Director of Established Programs",
           " - Assistant Director of Evolving Programs",
           " - Assistant Director of New Programs",
-          " - Assistant Director of Operations"
+          " - Assistant Director of Finance and Sponsorships",
+          " - Assistant Director of Marketing and Engagement"
         ],
         captains: [
           
@@ -137,7 +140,9 @@ const teams = [
       leadership: {
         overallDirector: "Alexandra Polo",
         assistantDirectors: [
-          
+          " - Assistant Director of Internal Relations",
+          " - Assistant Director of Recruitment",
+          " - Assistant Director of External Relations",
         ],
         captains: [
           
@@ -150,10 +155,10 @@ const teams = [
       leadership: {
         overallDirector: "Abby Thibodeau",
         assistantDirectors: [
-          " - Assistant Director of Incentives and Inventory",
+          " - Assistant Director of Stores and Incentives",
           " - Assistant Director of Fundraising",
-          " - Assistant Director of Internal Operations",
-          " - Assistant Director of Stores and Mini Marathons"
+          " - Assistant Director of Inventory and Mini Marathons",
+          " - Assistant Director of Internal Operations"
         ],
         captains: [
           
@@ -198,9 +203,10 @@ const teams = [
         leadership: {
           overallDirector: "Kelsey Reader",
           assistantDirectors: [
-            " - Assistant Director of Internal Relations",
-            " - Assistant Director of External Relations",
-            " - Assistant Director of Tracking"
+            " - Assistant Director of IFC Relations",
+            " - Assistant Director of Panhellenic Relations",
+            " - Assistant Director of Student Organizations",
+            " - Assistant Director of Operations"
           ],
           captains: [
             
@@ -213,8 +219,7 @@ const teams = [
         leadership: {
           overallDirector: "Jaxen Ranson",
           assistantDirectors: [
-            " - Assistant Director of Monetary Donations",
-            " - Assistant Director of In-Kind Donations",
+            " - Assistant Director of Development",
             " - Assistant Director of Stewardship",
             " - Assistant Director of Events",
             " - Assistant Director of Logistics"
