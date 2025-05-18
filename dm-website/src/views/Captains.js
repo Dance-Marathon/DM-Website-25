@@ -22,9 +22,9 @@ const teams = [
     leadership: {
       overallDirector: "Sofia Amoroso",
       assistantDirectors: [
-        " - Assistant Director of Social Media",
-        " - Assistant Director of Communications",
-        " - Assistant Director of Internal Affairs"
+        "Alyza Dooley - Assistant Director of Social Media",
+        "Tori Kitchens - Assistant Director of Communications",
+        "Sarah Abisror - Assistant Director of Internal Affairs"
       ],
       captains: [
         
@@ -41,10 +41,10 @@ const teams = [
     leadership: {
       overallDirector: "Marina Cheema",
       assistantDirectors: [
-        " - Assistant Director of Internal Design",
-        " - Assistant Director of External Design",
-        " - Assistant Director of Technology",
-        " - Assistant Director of Internal Affairs",
+        "Brendan Kenny - Assistant Director of Internal Design",
+        "Sydney Barnett - Assistant Director of External Design",
+        "Eric Hengber - Assistant Director of Technology",
+        "Philip-Dylan Ndwiga - Assistant Director of Internal Affairs",
       ],
       captains: [
         
@@ -61,10 +61,10 @@ const teams = [
     leadership: {
       overallDirector: "Ashley Paek",
       assistantDirectors: [
-        " - Assistant Director of Talent Relations",
-        " - Assistant Director of External Logistics",
-        " - Assistant Director of Internal Logistics",
-        " - Assistant Director of Fundraising"
+        "Kristina Guerra - Assistant Director of Talent Relations",
+        "Daniela San Martin - Assistant Director of External Logistics",
+        "Meagan Long  - Assistant Director of Internal Logistics",
+        "Vivian Lopez - Assistant Director of Fundraising"
       ],
       captains: [
         
@@ -77,10 +77,10 @@ const teams = [
       leadership: {
         overallDirector: "Chloe Claxton",
         assistantDirectors: [
-          " - Assistant Director of Family Events",
-          " - Assistant Director of Captain Engagement",
-          " - Assistant Director of Outreach",
-          " - Assistant Director of Cause Connection"
+          "Emma Sugarman - Assistant Director of Family Events",
+          "Ashlin Cannella - Assistant Director of Captain Engagement",
+          "Madelyn Avergonzado - Assistant Director of Outreach",
+          "Victoria Poliak - Assistant Director of Cause Connection"
         ],
         captains: [
           
@@ -93,8 +93,8 @@ const teams = [
       leadership: {
         overallDirector: "Tyler Bonnoront",
         assistantDirectors: [
-          " - Assistant Director of Fundraising Development",
-          " - Assistant Director of Finance Tracking"
+          "Miray Eser - Assistant Director of Fundraising Development",
+          "Alejandra Gomez-Pina - Assistant Director of Finance Tracking"
         ],
         captains: [
           
@@ -107,10 +107,10 @@ const teams = [
       leadership: {
         overallDirector: "Emily Brundage",
         assistantDirectors: [
-          " - Assistant Director of Development",
-          " - Assistant Director of Logistics",
-          " - Assistant Director of Impact Advancement",
-          " - Assistant Director of Internal Relations"
+          "Surleen Sahni - Assistant Director of Development",
+          "Rebekah Zuckerman - Assistant Director of Logistics",
+          "Bruna Pereira - Assistant Director of Impact Advancement",
+          "Sabrina Gomez  - Assistant Director of Internal Relations"
         ],
         captains: [
           
@@ -123,11 +123,11 @@ const teams = [
       leadership: {
         overallDirector: "Gabriella Petillo",
         assistantDirectors: [
-          " - Assistant Director of Established Programs",
-          " - Assistant Director of Evolving Programs",
-          " - Assistant Director of New Programs",
-          " - Assistant Director of Finance and Sponsorships",
-          " - Assistant Director of Marketing and Engagement"
+          "Grace Nelson  - Assistant Director of Established Programs",
+          "Marisa Ricks - Assistant Director of Evolving Programs",
+          "Lucy Eichler - Assistant Director of New Programs",
+          "Inara Drainville - Assistant Director of Finance and Sponsorships",
+          "Madelyn Scaringe - Assistant Director of Marketing and Engagement"
         ],
         captains: [
           
@@ -140,9 +140,9 @@ const teams = [
       leadership: {
         overallDirector: "Alexandra Polo",
         assistantDirectors: [
-          " - Assistant Director of Internal Relations",
-          " - Assistant Director of Recruitment",
-          " - Assistant Director of External Relations",
+          "Kaitlyn Koviak - Assistant Director of Internal Relations",
+          "Avery McCormmak  - Assistant Director of Recruitment",
+          "Isabella Diaz Figueroa - Assistant Director of External Relations",
         ],
         captains: [
           
@@ -155,10 +155,10 @@ const teams = [
       leadership: {
         overallDirector: "Abby Thibodeau",
         assistantDirectors: [
-          " - Assistant Director of Stores and Incentives",
-          " - Assistant Director of Fundraising",
-          " - Assistant Director of Inventory and Mini Marathons",
-          " - Assistant Director of Internal Operations"
+          "Kenya Jarrett - Assistant Director of Stores and Incentives",
+          "Lauren Klein - Assistant Director of Fundraising",
+          "Taylor Barrett - Assistant Director of Inventory and Mini Marathons",
+          "Camile Robinson - Assistant Director of Internal Operations"
         ],
         captains: [
           
@@ -171,10 +171,10 @@ const teams = [
       leadership: {
         overallDirector: "Kylie Finkelstein",
         assistantDirectors: [
-          " - Assistant Director of Captain Relations",
-          " - Assistant Director of Event Planning",
-          " - Assistant Director of Fundraising",
-          " - Assistant Director of Mini Marathon Coordination"
+          "Raina Khanna - Assistant Director of Captain Relations",
+          "Katie East - Assistant Director of Event Planning",
+          "Becca Harkins - Assistant Director of Fundraising",
+          "Jessica Perez - Assistant Director of Mini Marathon Coordination"
         ],
         captains: [
           
@@ -187,10 +187,10 @@ const teams = [
       leadership: {
         overallDirector: "Rebecca Salamon",
         assistantDirectors: [
-          " - Assistant Director of Logistics",
-          " - Assistant Director of Photography",
-          " - Assistant Director of Social Media",
-          " - Assistant Director of Videography"
+          "Kathryn Burke - Assistant Director of Logistics",
+          "Kieran McAteer - Assistant Director of Photography",
+          "Alexa Freedman - Assistant Director of Social Media",
+          "Marissa Haberlin - Assistant Director of Videography"
         ],
         captains: [
           
@@ -203,10 +203,10 @@ const teams = [
         leadership: {
           overallDirector: "Kelsey Reader",
           assistantDirectors: [
-            " - Assistant Director of IFC Relations",
-            " - Assistant Director of Panhellenic Relations",
-            " - Assistant Director of Student Organizations",
-            " - Assistant Director of Operations"
+            "Ryan LaLiberty - Assistant Director of IFC Relations",
+            "Kaylee Wesner - Assistant Director of Panhellenic Relations",
+            "Suki Sidhu - Assistant Director of Student Organizations",
+            "Harmon Klein - Assistant Director of Operations"
           ],
           captains: [
             
@@ -219,10 +219,10 @@ const teams = [
         leadership: {
           overallDirector: "Jaxen Ranson",
           assistantDirectors: [
-            " - Assistant Director of Development",
-            " - Assistant Director of Stewardship",
-            " - Assistant Director of Events",
-            " - Assistant Director of Logistics"
+            "Joshua Yaciuk - Assistant Director of Development",
+            "Natalie Mann - Assistant Director of Stewardship",
+            "Courtney Carter  - Assistant Director of Events",
+            "River Koile - Assistant Director of Logistics"
           ],
           captains: [
             
