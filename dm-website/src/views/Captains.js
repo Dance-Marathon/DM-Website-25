@@ -140,7 +140,7 @@ const teams = [
       leadership: {
         overallDirector: "Alexandra Polo",
         assistantDirectors: [
-          "Kaitlyn Koviak - Assistant Director of Internal Relations",
+          "Kaitlyn Koviack - Assistant Director of Internal Relations",
           "Avery McCormack  - Assistant Director of Recruitment",
           "Isabella Diaz-Figueroa - Assistant Director of External Relations",
         ],
