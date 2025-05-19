@@ -44,7 +44,7 @@ const teams = [
         "Brendan Kenny - Assistant Director of Internal Design",
         "Sydney Barnett - Assistant Director of External Design",
         "Eric Hengber - Assistant Director of Technology",
-        "Philip-Dylan Ndwiga - Assistant Director of Internal Affairs",
+        "Phillip-Dylan Ndwiga - Assistant Director of Internal Affairs",
       ],
       captains: [
         
@@ -109,8 +109,8 @@ const teams = [
         assistantDirectors: [
           "Surleen Sahni - Assistant Director of Development",
           "Rebekah Zuckerman - Assistant Director of Logistics",
-          "Bruna Pereira - Assistant Director of Impact Advancement",
-          "Sabrina Gomez  - Assistant Director of Internal Relations"
+          "Sabrina Gomez - Assistant Director of Impact Advancement",
+          "Bruna Pereira - Assistant Director of Internal Relations"
         ],
         captains: [
           
@@ -141,8 +141,8 @@ const teams = [
         overallDirector: "Alexandra Polo",
         assistantDirectors: [
           "Kaitlyn Koviak - Assistant Director of Internal Relations",
-          "Avery McCormmak  - Assistant Director of Recruitment",
-          "Isabella Diaz Figueroa - Assistant Director of External Relations",
+          "Avery McCormack  - Assistant Director of Recruitment",
+          "Isabella Diaz-Figueroa - Assistant Director of External Relations",
         ],
         captains: [
           
