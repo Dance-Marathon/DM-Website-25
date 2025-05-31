@@ -54,15 +54,15 @@ export default function MiniMarathons() {
           }}
         >
           <Typography variant="body1" gutterBottom sx={{ color: 'text.secondary', marginBottom: 2 }}>
-          12 high schools around the state of Florida participate each year in our <span style={{color: '#233563', fontWeight: 'bold'}}>Mini Marathon</span> program. High school students at these schools show an enthusiastic passion for Dance Marathon even before their college years begin and play a vital role in our movement. This past year, our Mini Marathon programs raised a total of {' '}
-                <Typography component="span" sx={{ fontWeight: 'bold', color: '#e2883c' }}>
+          12 high schools around the state of Florida participate each year in our <span style={{color: '#7E31C8', fontWeight: 'bold'}}>Mini Marathon</span> program. High school students at these schools show an enthusiastic passion for Dance Marathon even before their college years begin and play a vital role in our movement. This past year, our Mini Marathon programs raised a total of {' '}
+                <Typography component="span" sx={{ fontWeight: 'bold', color: '#FFC46E' }}>
                 $190,190.99
                 </Typography >{' '}
                 , proving that these students are truly one generation fighting for the next. All money raised by Mini Marathons goes toward DM at UF’s total amount raised, which directly benefits the children at UF Health Shands Children’s Hospital.
             </Typography>
 
           <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: {xs : 0, sm : 6}, marginTop: 2 }} >
-          <Typography component="span" sx={{ fontWeight: 'bold', color: '#e2883c' }}>
+          <Typography component="span" sx={{ fontWeight: 'bold', color: '#FFC46E' }}>
           We are always looking for more high schools to join our Dance Marathon family.
                 </Typography >{' '}
            If you would like to learn more about our Mini-Marathon Programs or would like to get involved, please contact our Marathon Relations Overall Director, Gabriella Petillo, at {' '}
@@ -74,7 +74,7 @@ export default function MiniMarathons() {
           <Grid container alignItems="center">
             <Grid item xs={12} sm={4}>
               
-            <Typography variant="h5" component="h2" gutterBottom sx={{  marginTop: 4, color: '#233563' }}>
+            <Typography variant="h5" component="h2" gutterBottom sx={{  marginTop: 4, color: '#7E31C8' }}>
                 Participating Schools
             </Typography>
                 <ul className="custom-bullet-points">

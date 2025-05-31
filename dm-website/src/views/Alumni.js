@@ -55,12 +55,12 @@ export default function Alumni() {
             Since 1995, Dance Marathon at UF has raised over $33 million for UF Health Shands Children's Hospital, our local Children’s Miracle Network Hospital. Thanks to your dedication and support throughout your college years, we have become the most successful student-run philanthropy in the southeastern United States.
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Dance Marathon at UF knows that the Gator Nation is everywhere. Formed in 2013, <span style={{color: '#233563', fontWeight: 'bold'}}>Dance Marathon at UF Alumni</span> gives alumni across the country the opportunity to continue to give back and stay involved with their alma mater.
+            Dance Marathon at UF knows that the Gator Nation is everywhere. Formed in 2013, <span style={{color: '#7E31C8', fontWeight: 'bold'}}>Dance Marathon at UF Alumni</span> gives alumni across the country the opportunity to continue to give back and stay involved with their alma mater.
           </Typography>
         </Box>
 
         <Box mt={0}>
-          <Typography variant="h5" color='#233563' gutterBottom>Get Involved!</Typography>
+          <Typography variant="h5" color='#7E31C8' gutterBottom>Get Involved!</Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate. 
           </Typography>

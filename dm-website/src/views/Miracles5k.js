@@ -64,7 +64,7 @@ export default function Miracles5k() {
         >
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
-              Welcome to the <span style={{color: '#e2883c', fontWeight: 'bold'}}>Miracles in Color 5K</span> benefiting UF Health Shands
+              Welcome to the <span style={{color: '#FFC46E', fontWeight: 'bold'}}>Miracles in Color 5K</span> benefiting UF Health Shands
               Children's Hospital! It is open to anyone who wants to support our
               cause and have a great time. We couldn't think of a better way for
               you to spend your Sunday morning than with paint and by supporting
@@ -82,7 +82,7 @@ export default function Miracles5k() {
             The 5k course will be split into 2 shifts. When registering, you
             will be able to choose which shift you would like to run at. Shift
             options include 8:00 a.m. or 9:00 a.m.{" "}
-            <span style={{ color: '#e2883c', fontWeight: 'bold' }}> On the day of the event, please arrive at least 15 minutes prior to your start time.</span>
+            <span style={{ color: '#FFC46E', fontWeight: 'bold' }}> On the day of the event, please arrive at least 15 minutes prior to your start time.</span>
             <p>
               All proceeds will be donated to UF Health Shands Children's
               Hospital, our local Children's Miracle Network Hospital, from
@@ -107,7 +107,7 @@ export default function Miracles5k() {
             variant="h5"
             component="h2"
             gutterBottom
-            sx={{ marginTop: 4, color: '#233563' }}
+            sx={{ marginTop: 4, color: '#7E31C8' }}
           >
             Race Day Info
           </Typography>

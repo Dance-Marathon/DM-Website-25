@@ -53,6 +53,45 @@ export const green = {
   900: '#021D02',
 };
 
+export const purple = {
+  50: '#F9F0FF',
+  100: '#E9CEFD',
+  200: '#DCBBFA',
+  300: '#B355F6',
+  400: '#DCBBFA', // light purple
+  500: '#7E31C8', // main purple
+  600: '#6B1FB3',
+  700: '#4A1A75',
+  800: '#3A125D',
+  900: '#2B0B46', // dark purple
+};
+
+export const teal = {
+  50: '#E6FFFF',
+  100: '#C6FFFF',
+  200: '#B8FFFF',
+  300: '#88F1F1',
+  400: '#4ADADA',
+  500: '#1AC1C1',
+  600: '#159E9E',
+  700: '#0F7F7F',
+  800: '#0B5F5F',
+  900: '#063F3F',
+};
+
+export const gold = {
+  50: '#FFF8E6',
+  100: '#FFEDC6',
+  200: '#FFE9C2',
+  300: '#FFDFA8',
+  400: '#FFE9C2',
+  500: '#FFC46E',
+  600: '#E6A950',
+  700: '#B57F35',
+  800: '#8D5E1D',
+  900: '#5C3D0F',
+};
+
 const getDesignTokens = (mode) => ({
   palette: {
     mode,
@@ -70,14 +109,38 @@ const getDesignTokens = (mode) => ({
       }),
     },
     secondary: {
-      light: secondary[400],
-      main: secondary[500],
-      dark: secondary[800],
-      accent: secondary[400],
+      light: gold[400],
+      main: gold[500],
+      dark: gold[800],
+      accent: gold[400],
       ...(mode === 'dark' && {
-        light: secondary[400],
-        main: secondary[500],
-        dark: secondary[900],
+        light: gold[400],
+        main: gold[500],
+        dark: gold[900],
+      }),
+    },
+    special_primary: {
+      light: purple[400],
+      main: purple[500],
+      dark: purple[800],
+      accent: purple[400],
+      contrastText: purple[50],
+      ...(mode === 'dark' && {
+        contrastText: purple[100],
+        light: purple[300],
+        main: purple[400],
+        dark: purple[800],
+      }),
+    },
+    special_secondary: {
+      light: gold[400],
+      main: gold[500],
+      dark: gold[800],
+      accent: gold[400],
+      ...(mode === 'dark' && {
+        light: gold[400],
+        main: gold[500],
+        dark: gold[900],
       }),
     },
     warning: {

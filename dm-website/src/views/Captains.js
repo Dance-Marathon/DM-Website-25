@@ -267,7 +267,7 @@ export default function Captains() {
         Captain Teams
       </Typography> */}
       <Typography variant="body1" color="text.secondary" paragraph>
-        Each <span style={{color: '#233563', fontWeight: 'bold'}}>Captain Team</span> is composed of an Overall Director, Assistant Directors, and Captains. Assistant Directors work year-long with their respective Overall Directors to ensure steady growth and management within their Captain Team. Captains are leaders within our organization who have specific duties throughout the year depending on their teams. Click each tab below to learn more about each team and its responsibilities.
+        Each <span style={{color: '#7E31C8', fontWeight: 'bold'}}>Captain Team</span> is composed of an Overall Director, Assistant Directors, and Captains. Assistant Directors work year-long with their respective Overall Directors to ensure steady growth and management within their Captain Team. Captains are leaders within our organization who have specific duties throughout the year depending on their teams. Click each tab below to learn more about each team and its responsibilities.
       </Typography>
 
       {teams.map((team, index) => (
@@ -277,18 +277,18 @@ export default function Captains() {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body2" color="text.secondary" marginBottom={1}>
-            <span style={{ color: '#233563', fontWeight: 'bold' }}>Responsibilities: </span>
+            <span style={{ color: '#7E31C8', fontWeight: 'bold' }}>Responsibilities: </span>
               {team.responsibilities}
             </Typography>
             <Typography variant="body2" color="text.secondary" marginBottom={1}>
-            <span style={{ color: '#233563', fontWeight: 'bold' }}>Overall Director:  </span>
+            <span style={{ color: '#7E31C8', fontWeight: 'bold' }}>Overall Director:  </span>
               <Chip 
                 label={`${team.leadership.overallDirector}`} 
                 style={{ variant:"outlined" }} 
               />
             </Typography>
             <Typography variant="body2" color="text.secondary" gutterBottom>
-            <span style={{ color: '#233563', fontWeight: 'bold' }}>Assistant Directors:</span>
+            <span style={{ color: '#7E31C8', fontWeight: 'bold' }}>Assistant Directors:</span>
             </Typography>
             <Grid container spacing={2} justifyContent="center" sx={{ mb: 2 }}>
   {team.leadership.assistantDirectors.map((ad, i) => {
@@ -318,7 +318,7 @@ export default function Captains() {
         })}
             </Grid>
             <Typography variant="body2" color="text.secondary">
-            <span style={{ color: '#233563', fontWeight: 'bold' }}>Captains:</span>
+            <span style={{ color: '#7E31C8', fontWeight: 'bold' }}>Captains:</span>
               <Box sx={{display: 'flex', flexWrap: 'wrap', gap: 1, pl: 3, pt: 1 }}>
                 {team.leadership.captains.map((captain, i) => (
                   <Chip key={i} label={captain} variant="outlined" />

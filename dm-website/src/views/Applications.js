@@ -56,7 +56,7 @@ export default function Applications() {
           <Typography
             variant="body1"
             gutterBottom
-            sx={{ color: "#e2883c", fontWeight: "bold", marginBottom: 2 }}
+            sx={{ color: "#FFC46E", fontWeight: "bold", marginBottom: 2 }}
           >
             Thank you for your interest in Dance Marathon at the University of
             Florida 2026!
@@ -82,7 +82,7 @@ export default function Applications() {
               <Typography variant="body1" color="text.secondary">
                 Pay the $25 application fee. You only need to pay the
                 application fee{" "}
-                <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+                <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
                   once
                 </span>{" "}
                 even if you are applying for more than one position.
@@ -97,13 +97,13 @@ export default function Applications() {
             Teams. However, your Captain Application will take priority over
             your Emerging Leader Application. To be eligible to be an
             Ambassador, you{" "}
-            <span style={{ color: "#e2883c", fontWeight: "bold" }}>cannot</span>{" "}
+            <span style={{ color: "#FFC46E", fontWeight: "bold" }}>cannot</span>{" "}
             hold another position as well.
           </Typography>
 
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563", marginTop: 4 }}
+            sx={{ fontWeight: "bold", color: "#7E31C8", marginTop: 4 }}
             gutterBottom
           >
             Manager Application
@@ -119,7 +119,7 @@ export default function Applications() {
 
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563" }}
+            sx={{ fontWeight: "bold", color: "#7E31C8" }}
             gutterBottom
           >
             Overall Director Application
@@ -135,7 +135,7 @@ export default function Applications() {
 
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563" }}
+            sx={{ fontWeight: "bold", color: "#7E31C8" }}
             gutterBottom
           >
             Assistant Director Application
@@ -151,7 +151,7 @@ export default function Applications() {
 
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563" }}
+            sx={{ fontWeight: "bold", color: "#7E31C8" }}
             gutterBottom
           >
             Captain Application
@@ -167,7 +167,7 @@ export default function Applications() {
 
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563" }}
+            sx={{ fontWeight: "bold", color: "#7E31C8" }}
             gutterBottom
           >
             Emerging Leaders Application
@@ -183,7 +183,7 @@ export default function Applications() {
 
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563" }}
+            sx={{ fontWeight: "bold", color: "#7E31C8" }}
             gutterBottom
           >
             Ambassador Application
@@ -205,7 +205,7 @@ export default function Applications() {
 
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563" }}
+            sx={{ fontWeight: "bold", color: "#7E31C8" }}
             gutterBottom
           >
             Miracle Maker Application

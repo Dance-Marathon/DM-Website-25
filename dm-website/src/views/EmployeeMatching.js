@@ -70,22 +70,22 @@ export default function EmployeeMatching() {
         2. Obtain a matching gift verification form from your Human Resources Department. Complete the form and list our organization name below. If you directed your donation to Children’s Miracle Network, please email our Executive Director, Abby Ferrell, at{' '}
         <Link href="mailto:aferrell@floridadm.org">aferrell@floridadm.org</Link> with a copy of the matching gift verification form.
       </Typography>
-      <Typography color='#233563' variant="h5" gutterBottom marginTop={4}>
+      <Typography color='#7E31C8' variant="h5" gutterBottom marginTop={4}>
         Primary Donation Location
       </Typography>
-      <Typography color='#e2883c' paragraph>
+      <Typography color='#FFC46E' paragraph>
         <strong>UF Health Shands - Your Local Children's Miracle Network Hospital</strong>
       </Typography>
       <Typography color="text.secondary" paragraph>
-      <span style={{ color: '#e2883c', fontWeight: 'bold' }}>EIN/TIN:</span> 59-1943502
+      <span style={{ color: '#FFC46E', fontWeight: 'bold' }}>EIN/TIN:</span> 59-1943502
       </Typography>
       <Typography color="text.secondary" paragraph>
-      <span style={{ color: '#e2883c', fontWeight: 'bold' }}>Charitable Organization Section:</span><br />
+      <span style={{ color: '#FFC46E', fontWeight: 'bold' }}>Charitable Organization Section:</span><br />
         Shands Teaching Hospital and Clinics, Inc. d/b/a Children’s Miracle Network at Shands<br />
         ATTN: Dance Marathon at the University of Florida
       </Typography>
       <Typography color="text.secondary" paragraph>
-      <span style={{ color: '#e2883c', fontWeight: 'bold' }}>Address Field:</span><br />
+      <span style={{ color: '#FFC46E', fontWeight: 'bold' }}>Address Field:</span><br />
         PO BOX 100386<br />
         Gainesville, FL 32610-0386
       </Typography>
@@ -93,22 +93,22 @@ export default function EmployeeMatching() {
         * PLEASE NOTE: If you are selecting this preferred donation location, please do not list Dance Marathon at the University of Florida or CMN Hospital(s) as the matching entity. Many companies will not accept this request, as our tax-exempt status is included under the larger umbrella of Shands Teaching Hospital and Clinics, Inc. If you have any questions about this process, please reach out to Tara Tovkach, Development Associate for Children’s Miracle Network, for clarification at{' '}
         <Link href="mailto:ttov0002@shands.ufl.edu">ttov0002@shands.ufl.edu</Link>.
       </Typography>
-      <Typography variant="h5" color='#233563' gutterBottom marginTop={4}>
+      <Typography variant="h5" color='#7E31C8' gutterBottom marginTop={4}>
         Alternative Donation Location
       </Typography>
       <Typography color="text.secondary" paragraph>
-      <span style={{ color: '#e2883c', fontWeight: 'bold' }}>Children's Miracle Network National Office</span>
+      <span style={{ color: '#FFC46E', fontWeight: 'bold' }}>Children's Miracle Network National Office</span>
       </Typography>
       <Typography color="text.secondary" paragraph>
-      <span style={{ color: '#e2883c', fontWeight: 'bold' }}>EIN/TIN:</span> 87-0387205
+      <span style={{ color: '#FFC46E', fontWeight: 'bold' }}>EIN/TIN:</span> 87-0387205
       </Typography>
       <Typography color="text.secondary" paragraph>
-      <span style={{ color: '#e2883c', fontWeight: 'bold' }}>Charitable Organization Section:</span><br />
+      <span style={{ color: '#FFC46E', fontWeight: 'bold' }}>Charitable Organization Section:</span><br />
         Children's Miracle Network<br />
         ATTN: Dance Marathon at the University of Florida
       </Typography>
       <Typography color="text.secondary" paragraph>
-      <span style={{ color: '#e2883c', fontWeight: 'bold' }}>Address Field:</span><br />
+      <span style={{ color: '#FFC46E', fontWeight: 'bold' }}>Address Field:</span><br />
         205 W 700 S<br />
         Salt Lake City, Utah 84101-2715
       </Typography>
@@ -120,11 +120,11 @@ export default function EmployeeMatching() {
         <Link href={CMNW9} target="_blank" rel="noopener">Children's Miracle Network</Link>
       </Typography>
       <Typography color="text.secondary" paragraph>
-      <span style={{ color: '#e2883c', fontWeight: 'bold' }}>PLEASE NOTE:</span> Notify our Finance Manager, Olivia Knier, at{' '}
+      <span style={{ color: '#FFC46E', fontWeight: 'bold' }}>PLEASE NOTE:</span> Notify our Finance Manager, Olivia Knier, at{' '}
         <Link href="mailto:oknier@floridadm.org">oknier@floridadm.org</Link> whenever a matching gift request has been submitted. The matching gift will be attributed to the individual who received the original donation. Please allow 60 days for the Office of Development to process your donor match before further inquiry as it can often be a lengthy process. Thank you for multiplying your miracles!
       </Typography>
       <Typography color="text.secondary" variant="h5" gutterBottom marginTop={4}>
-      <span style={{ color: '#233563', fontWeight: 'bold' }}>Important</span>
+      <span style={{ color: '#7E31C8', fontWeight: 'bold' }}>Important</span>
       </Typography>
       <Typography color="text.secondary" paragraph>
         Please do not fill out any forms sent with checks; instead, turn them in directly into the Finance Manager, reachable at{' '}

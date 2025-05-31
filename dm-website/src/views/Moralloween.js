@@ -55,7 +55,7 @@ export default function Moralloween() {
           }}
         >
           <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
-            <p><span style={{color: '#233563', fontWeight: 'bold'}}>Moralloween</span> is an annual fall fundraiser put on by Dance Marathon at UF, a student-run philanthropy that raises funds and awareness year-round at UF Health Shands Children’s Hospital! <span style={{color: '#e2883c', fontWeight: 'bold'}}>Organizations across campus participate by creating booths with activities, candy, and ways to bond with attendees and Miracle Families.</span> Moralloween has a DJ, great food, and is a great way for everyone to get in the Halloween spirit!</p>
+            <p><span style={{color: '#7E31C8', fontWeight: 'bold'}}>Moralloween</span> is an annual fall fundraiser put on by Dance Marathon at UF, a student-run philanthropy that raises funds and awareness year-round at UF Health Shands Children’s Hospital! <span style={{color: '#FFC46E', fontWeight: 'bold'}}>Organizations across campus participate by creating booths with activities, candy, and ways to bond with attendees and Miracle Families.</span> Moralloween has a DJ, great food, and is a great way for everyone to get in the Halloween spirit!</p>
           </Typography>
           <Typography variant="body1" sx={{ color: 'text.secondary' }}>
             For more information, please contact the Morale Overall Director, Kylie Finkelstein, at {' '}

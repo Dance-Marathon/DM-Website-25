@@ -55,15 +55,15 @@ export default function CMNHospitals() {
             variant="body1"
             sx={{ color: "text.secondary", marginTop: {xs : 2, sm : 0}, marginBottom: 2 }}
           >
-            <Box component="span" sx={{ color: "#e2883c", fontWeight: "Bold" }}>
+            <Box component="span" sx={{ color: "#FFC46E", fontWeight: "Bold" }}>
               UF Health Shands Children’s Hospital
             </Box>{" "}
             is the local{" "}
-            <Box component="span" sx={{ color: "#233563", fontWeight: "bold" }}>
+            <Box component="span" sx={{ color: "#7E31C8", fontWeight: "bold" }}>
               Children's Miracle Network
             </Box>{" "}
             participating hospital for the{" "}
-            <Box component="span" sx={{ color: "#e2883c", fontWeight: "Bold" }}>
+            <Box component="span" sx={{ color: "#FFC46E", fontWeight: "Bold" }}>
               North Central Florida and South Georgia areas
             </Box>{" "}
             areas. Children's Miracle Network is an international non-profit
@@ -85,16 +85,16 @@ export default function CMNHospitals() {
               premier pediatric health center
             </Box>
             ,{" "}
-            <Box component="span" sx={{ color: "#e2883c", fontWeight: "Bold" }}>
+            <Box component="span" sx={{ color: "#FFC46E", fontWeight: "Bold" }}>
               UF Health Shands Children's Hospital
             </Box>{" "}
             provides{" "}
-            <Box component="span" sx={{ color: "#233563", fontWeight: "Bold" }}>
+            <Box component="span" sx={{ color: "#7E31C8", fontWeight: "Bold" }}>
               innovative and comprehensive care
             </Box>{" "}
             at the highest standards of quality and service in partnership with
             patient families, healthcare teams, and communities.{" "}
-            <Box component="span" sx={{ color: "#e2883c", fontWeight: "Bold" }}>
+            <Box component="span" sx={{ color: "#FFC46E", fontWeight: "Bold" }}>
               Community contributions
             </Box>{" "}
             support{" "}
@@ -103,7 +103,7 @@ export default function CMNHospitals() {
             </Box>{" "}
             and help to purchase the latest technology and equipment. Donations
             also help make hospital stays{" "}
-            <Box component="span" sx={{ color: "#233563", fontWeight: "bold" }}>
+            <Box component="span" sx={{ color: "#7E31C8", fontWeight: "bold" }}>
               more comfortable and enjoyable
             </Box>{" "}
             for pediatric patients and their families.
@@ -114,7 +114,7 @@ export default function CMNHospitals() {
             sx={{ color: "text.secondary", marginBottom: 2 }}
           >
             Ranked one of the {" "}
-            <Box component="span" sx={{ color: "#e2883c", fontWeight: "bold" }}>
+            <Box component="span" sx={{ color: "#FFC46E", fontWeight: "bold" }}>
             top pediatric hospitals in the nation in five categories
             </Box>
             <Box component="span" sx={{ fontStyle: "italic" }}>

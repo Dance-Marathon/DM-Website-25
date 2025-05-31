@@ -57,7 +57,7 @@ export default function About() {
           }}
         >
             <Typography variant="body1" paragraph color="text.secondary">
-            <span style={{ color: '#233563', fontWeight: 'bold' }}>The Emerging Leaders Program</span> aims to cultivate the leadership skills of new members of the Dance Marathon community by providing hands-on activities, shadowing opportunities with other captain teams, and education about Dance Marathon at the University of Florida and Children's Miracle Network. The program strives to engage students who have a passion for helping others and who are passionate in our fight for a future without childhood illness.            
+            <span style={{ color: '#7E31C8', fontWeight: 'bold' }}>The Emerging Leaders Program</span> aims to cultivate the leadership skills of new members of the Dance Marathon community by providing hands-on activities, shadowing opportunities with other captain teams, and education about Dance Marathon at the University of Florida and Children's Miracle Network. The program strives to engage students who have a passion for helping others and who are passionate in our fight for a future without childhood illness.            
             </Typography>
             <Typography variant="body1" paragraph color="text.secondary">
               Members of the Emerging Leaders Program will attend weekly small group meetings and semesterly general body meetings. Throughout their small group meetings, Emerging Leaders will focus on completing diverse projects that inspire the Dance Marathon community, expanding their knowledge, leadership, and personal fundraising efforts, and participating in bonding with like-minded peers. At general body meetings, Emerging Leaders will have the opportunity to learn more about the goals and efforts of Dance Marathon, hear inspiring stories from our Miracle Families, and gain exposure to prominent speakers from the University of Florida and the Gainesville community.            
@@ -67,7 +67,7 @@ export default function About() {
             </Typography>
         </Box>
       
-        <Typography variant="h5" align="center" gutterBottom color='#233563' marginTop={2}>
+        <Typography variant="h5" align="center" gutterBottom color='#7E31C8' marginTop={2}>
           2026 Emerging Leaders
         </Typography>
         <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>

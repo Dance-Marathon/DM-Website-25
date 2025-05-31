@@ -55,29 +55,29 @@ export default function LandingPage() {
             component="p"
             variant="subtitle2"
             align="center"
-            color="text.secondary"
+            color="primary"
           >
-            <i style={{ color: '#e2883c' }}>
+            <i style={{ color: '#FFC46E' }}>
               <b>Dance Marathon</b>
             </i>{' '}
             at the{' '}
-            <i style={{ color: '#e2883c' }}>
+            <i style={{ color: '#FFC46E' }}>
               <b>University of Florida</b>
             </i>{' '}
             is the largest student-run and highest fundraising philanthropy in the Southeast United States. Our mission is to strive to bring together the campus and community to raise funds and awareness for our local Children's Miracle Network Hospital,{' '}
-            <i style={{ color: '#233563' }}>
+            <i style={{ color: '#7E31C8' }}>
               <b>UF Health Shands Children's Hospital</b>
             </i>
             . We are going into our 32nd year of{' '}
-            <i style={{ color: '#e2883c' }}>
+            <i style={{ color: '#FFC46E' }}>
               <b>Dance Marathon</b>
             </i>{' '}
             at{' '}
-            <i style={{ color: '#e2883c' }}>
+            <i style={{ color: '#FFC46E' }}>
               <b>UF</b>
             </i>
             , having fundraised over $33,000,000 thus far. This past year, we celebrated our 31st year by raising{' '}
-            <i style={{ color: '#233563' }}>
+            <i style={{ color: '#7E31C8' }}>
               <b>$1,351,566.99!</b>
             </i>
           </Typography>
@@ -88,7 +88,7 @@ export default function LandingPage() {
             <Grid item xs={12} md={4}>
               <Box display="flex" flexDirection="column" justifyContent="space-between" alignItems="center" height="100%" textAlign="center">
                 <Box mb={2}>
-                  <BookIcon style={{ fontSize: 50, color: '#e2883c' }} />
+                  <BookIcon style={{ fontSize: 50, color: '#FFC46E' }} />
                   <Typography variant="h5" color="secondary" gutterBottom>
                     Our Story
                   </Typography>
@@ -102,7 +102,7 @@ export default function LandingPage() {
             <Grid item xs={12} md={4}>
               <Box display="flex" flexDirection="column" justifyContent="space-between" alignItems="center" height="100%" textAlign="center">
                 <Box mb={2}>
-                  <LocalHospitalIcon style={{ fontSize: 50, color: '#e2883c' }} />
+                  <LocalHospitalIcon style={{ fontSize: 50, color: '#FFC46E' }} />
                   <Typography variant="h5" color="secondary" gutterBottom>
                     CMN Hospitals & UF Health
                   </Typography>
@@ -116,7 +116,7 @@ export default function LandingPage() {
             <Grid item xs={12} md={4}>
               <Box display="flex" flexDirection="column" justifyContent="space-between" alignItems="center" height="100%" textAlign="center">
                 <Box mb={2}>
-                  <FavoriteIcon style={{ fontSize: 50, color: '#e2883c' }} />
+                  <FavoriteIcon style={{ fontSize: 50, color: '#FFC46E' }} />
                   <Typography variant="h5" color="secondary" gutterBottom>
                     Miracle Families
                   </Typography>

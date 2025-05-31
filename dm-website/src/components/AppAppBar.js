@@ -87,7 +87,7 @@ function AppAppBar({ mode, toggleColorMode }) {
               flexWrap: 'nowrap',
               overflow: 'hidden', // Prevent horizontal overflow
               borderRadius: '999px',
-              bgcolor: '#23356370',
+              bgcolor: '#7E31C870',
               backdropFilter: 'blur(24px)',
               maxHeight: 40,
               width: '100%',
@@ -243,7 +243,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   onClick={() => navigate('/donate')}
                   sx={{
                     ...menuTheme,
-                    bgcolor: 'rgba(226, 136, 60, 0.7)',
+                    bgcolor: '#FFC46E', /*rgba(226, 136, 60, 0.7) */
                     color: 'white',
                     fontWeight: 'bold',
                     px: 2,
@@ -264,7 +264,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   onClick={() => navigate('/register')}
                   sx={{
                     ...menuTheme,
-                    bgcolor: 'rgba(226, 136, 60, 0.7)',
+                    bgcolor: '#FFC46E', /*rgba(226, 136, 60, 0.7) */
                     color: 'white',
                     fontWeight: 'bold',
                     px: 2,
