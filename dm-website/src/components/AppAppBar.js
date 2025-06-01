@@ -360,7 +360,7 @@ function AppAppBar({ mode, toggleColorMode }) {
       height: '100%',
       display: 'flex',
       flexDirection: 'column',
-      backgroundColor: 'background.dm',
+      backgroundColor: '#7E31C8', /*background.dm*/
     }}
   >
     <List component="nav" sx={{ flexGrow: 1 }}>
