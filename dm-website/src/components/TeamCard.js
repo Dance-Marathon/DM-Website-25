@@ -26,8 +26,8 @@ function HorizontalTeamCard({ image, name, position, email }) {
         </Grid>
         <Grid item xs={12} md={6} lg={8} sx={{ my: "auto" }}>
           <Box pt={{ xs: 1, lg: 2.5 }} pb={2.5} pr={4} pl={{ xs: 4, lg: 1 }} lineHeight={1}>
-            <Typography variant="h5" color="primary">{name}</Typography>
-            <Typography variant="h6" color={'primary'} mb={0.5}>
+            <Typography variant="h5" color="#7E31C8">{name}</Typography>
+            <Typography variant="h6" color={'#7E31C8'} mb={0.5}>
               {position.label}
             </Typography>
             <Link href={`mailto:${email}`} variant="body2" color="secondary">

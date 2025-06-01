@@ -119,30 +119,6 @@ const getDesignTokens = (mode) => ({
         dark: gold[900],
       }),
     },
-    special_primary: {
-      light: purple[400],
-      main: purple[500],
-      dark: purple[800],
-      accent: purple[400],
-      contrastText: purple[50],
-      ...(mode === 'dark' && {
-        contrastText: purple[100],
-        light: purple[300],
-        main: purple[400],
-        dark: purple[800],
-      }),
-    },
-    special_secondary: {
-      light: gold[400],
-      main: gold[500],
-      dark: gold[800],
-      accent: gold[400],
-      ...(mode === 'dark' && {
-        light: gold[400],
-        main: gold[500],
-        dark: gold[900],
-      }),
-    },
     warning: {
       main: '#F7B538',
       dark: '#F79F00',
