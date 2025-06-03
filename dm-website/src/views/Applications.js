@@ -146,7 +146,7 @@ export default function Applications() {
             color="text.secondary"
             marginBottom={3.5}
           >
-            Opening Soon
+            Closed
           </Typography>
 
           <Typography
@@ -188,7 +188,7 @@ export default function Applications() {
           >
             Ambassador Application
           </Typography>
-          <Typography
+          {/* <Typography
             variant="body1"
             gutterBottom
             color="text.secondary"
@@ -201,6 +201,18 @@ export default function Applications() {
               kreader@floridadm.org
             </Link>
             .
+          </Typography> */}
+          <Typography
+            variant="body1"
+            gutterBottom
+            color="text.secondary"
+            marginBottom={3.5}
+          >
+            Apply{" "}
+            <Link href="https://ufl.qualtrics.com/jfe/form/SV_afwHoRhmLToPESa" sx={{ color: "#1a73e8" }}>
+              here
+            </Link>
+            !
           </Typography>
 
           <Typography
