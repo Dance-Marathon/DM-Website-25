@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.df49acc8.js",
+    "main.js": "/static/js/main.c9fc1a15.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -119,7 +119,6 @@
     "static/media/SponsorsHero.jpg": "/static/media/SponsorsHero.6b0031ad66478b77007a.jpg",
     "static/media/BT2.jpg": "/static/media/BT2.0cd8c6031614aac5f3d8.jpg",
     "static/media/BeyondSummer1.jpg": "/static/media/BeyondSummer1.370f5089ea1f32808e3e.jpg",
-    "static/media/AmbassadorsMiniPic.jpg": "/static/media/AmbassadorsMiniPic.de350da04501793ff867.jpg",
     "static/media/CMNHero.jpg": "/static/media/CMNHero.fec7f4369bc7cf64ca05.jpg",
     "static/media/CampusClash2.jpg": "/static/media/CampusClash2.3a516f16d2f3923cd326.jpg",
     "static/media/Kickoff.jpg": "/static/media/Kickoff.e8291d7738fd17b4dc8e.jpg",
@@ -129,7 +128,6 @@
     "static/media/GiftOfHope3.jpg": "/static/media/GiftOfHope3.9022511d6888926a12c0.jpg",
     "static/media/GetInvolvedPic.jpg": "/static/media/GetInvolvedPic.aa21455129d67be8a5fa.jpg",
     "static/media/Thankfulness2.jpg": "/static/media/Thankfulness2.83534cb0eec6aec3c7fc.jpg",
-    "static/media/AlumniMini.jpg": "/static/media/AlumniMini.46bda3c7dd3b1012f210.jpg",
     "static/media/Thankfulness3.jpg": "/static/media/Thankfulness3.d7e17fdeab2d8670b9b2.jpg",
     "static/media/Applications.jpg": "/static/media/Applications.30b09d11a7ac0e37ab02.jpg",
     "static/media/FundraisingGuideMini.jpg": "/static/media/FundraisingGuideMini.7653c7ba9fe011ff0aaa.jpg",
@@ -142,6 +140,7 @@
     "static/media/MWeen3.jpg": "/static/media/MWeen3.ec8533f67973222ba647.jpg",
     "static/media/BehindTheScenesBox.jpg": "/static/media/BehindTheScenesBox.8338f66c4426a8e74374.jpg",
     "static/media/Thankfulness1.jpg": "/static/media/Thankfulness1.ef7d3a497d5306769351.jpg",
+    "static/media/AmbassadorsMiniPic.jpg": "/static/media/AmbassadorsMiniPic.63f1caa6909e623a389a.jpg",
     "static/media/Sponsor (72).png": "/static/media/Sponsor (72).9c0131a46fbeda6646f4.png",
     "static/media/ThankfulnessBox.jpg": "/static/media/ThankfulnessBox.73bb5cde2769ca8b3924.jpg",
     "static/media/Owen.jpg": "/static/media/Owen.5733ba7931a82a9171f9.jpg",
@@ -153,6 +152,7 @@
     "static/media/Sponsor (53).png": "/static/media/Sponsor (53).63901161b5eba30b23e8.png",
     "static/media/Lifeline1.jpg": "/static/media/Lifeline1.ebb6c56d4c9d306ac227.jpg",
     "static/media/Sponsor (17).png": "/static/media/Sponsor (17).0dd2e386fb82418fbff1.png",
+    "static/media/AlumniMini.jpg": "/static/media/AlumniMini.f0e77cf32a4550bfb2a3.jpg",
     "static/media/BlogsPic.jpg": "/static/media/BlogsPic.d0b2d5dec5d0b2db610d.jpg",
     "static/media/BeyondThisGen1.jpg": "/static/media/BeyondThisGen1.45c3e90beebe93e35435.jpg",
     "static/media/AlumniPic.jpg": "/static/media/AlumniPic.8b2eceb6db367bd69cea.jpg",
@@ -327,11 +327,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.df49acc8.js.map": "/static/js/main.df49acc8.js.map",
+    "main.c9fc1a15.js.map": "/static/js/main.c9fc1a15.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.df49acc8.js"
+    "static/js/main.c9fc1a15.js"
   ]
 }
