@@ -29,7 +29,7 @@ export default function Hero() {
           objectFit: 'cover',
         }}
       >
-        <source src="/home_video.mp4" type='video/mp4' />
+        <source src="/home_video_summer25.mp4" type='video/mp4' />
       </video>
       {/* Centered text container */}
       <Box
