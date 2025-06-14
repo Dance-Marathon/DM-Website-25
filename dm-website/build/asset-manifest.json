@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.c9fc1a15.js",
+    "main.js": "/static/js/main.6c2016e0.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -167,6 +167,7 @@
     "static/media/Sponsor (32).png": "/static/media/Sponsor (32).26f46d5ae9e7e7847cf3.png",
     "static/media/Bella.jpg": "/static/media/Bella.d703530c29c8f0eb57a8.jpg",
     "static/media/BehindTheScenes2.jpg": "/static/media/BehindTheScenes2.795f1199e9f8f7425fed.jpg",
+    "static/media/FTM1.jpg": "/static/media/FTM1.635fafa46711f66d5156.jpg",
     "static/media/Lauren.jpg": "/static/media/Lauren.88057e46abfe82c727f9.jpg",
     "static/media/BehindTheScenes3.jpg": "/static/media/BehindTheScenes3.4762956f4f328c3c0ff3.jpg",
     "static/media/CasaPinada.otf": "/static/media/CasaPinada.6852a39649a353af4285.otf",
@@ -177,6 +178,7 @@
     "static/media/Sponsor (46).png": "/static/media/Sponsor (46).ad3c9cf980717390f174.png",
     "static/media/TriBrand_Color.png": "/static/media/TriBrand_Color.5275d5fa118b4e63649c.png",
     "static/media/Caden.jpg": "/static/media/Caden.b1eb3d4e06325750a0b0.jpg",
+    "static/media/FTM2.jpg": "/static/media/FTM2.fea519d6df1aac5954f6.jpg",
     "static/media/2024 Ambassador Guidelines.pdf": "/static/media/2024 Ambassador Guidelines.6f29928dcd8adf5bd1c2.pdf",
     "static/media/Sponsor (56).png": "/static/media/Sponsor (56).31e4b5077c5839303fe4.png",
     "static/media/Sponsor (60).png": "/static/media/Sponsor (60).1b1930f4908c5b2eea9c.png",
@@ -327,11 +329,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.c9fc1a15.js.map": "/static/js/main.c9fc1a15.js.map",
+    "main.6c2016e0.js.map": "/static/js/main.6c2016e0.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.c9fc1a15.js"
+    "static/js/main.6c2016e0.js"
   ]
 }
