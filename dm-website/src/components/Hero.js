@@ -75,6 +75,20 @@ export default function Hero() {
             University of Florida
           </Typography>
         </Box>
+        <Box>
+          <Typography
+            variant="h1"
+            component="div"
+            sx={{
+              fontFamily: "CasaPinada",
+              fontWeight: 300,
+              fontSize: 'clamp(3rem, 8vw, 4rem)',
+              textShadow: '4px 4px 4px rgba(0, 0, 0, 0.5)',
+            }}
+          >
+            @FeelTheMagic
+          </Typography>
+        </Box>
       </Box>
       {/* Bottom bar */}
       <Box

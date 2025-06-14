@@ -27,6 +27,7 @@ import BehingTheScenes from "../assets/images/blogpics/BehindTheScenes/BehindThe
 import YesToMiracles from "../assets/images/blogpics/YesToMiracles/Yes1.jpg"
 import LifelineOfLaughter from "../assets/images/blogpics/LifelineOfLaughter/LifelineBox.jpg";
 import BeyondTomorrow from "../assets/images/blogpics/BeyondTomorrow/BT1.jpg";
+import FeelTheMagic from '../assets/images/blogpics/FeelTheMagic/FTM1.jpg';
 
 const blogs = [
   {
@@ -140,6 +141,14 @@ const blogs = [
     date: 'February 18, 2025',
     imageUrl: BeyondTomorrow,
     linkName: 'beyondtomorrow',
+  },
+  {
+    id: 15,
+    title: 'Feel The Magic',
+    author: 'Tori Kitchens',
+    date: 'June 14, 2025',
+    imageUrl: FeelTheMagic,
+    linkName: 'feelthemagic',
   },
 ];
 
