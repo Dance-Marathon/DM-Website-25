@@ -82,7 +82,7 @@ export default function Hero() {
             sx={{
               fontFamily: "CasaPinada",
               fontWeight: 300,
-              fontSize: 'clamp(3rem, 8vw, 4rem)',
+              fontSize: 'clamp(2rem, 4vw, 5rem)',
               textShadow: '4px 4px 4px rgba(0, 0, 0, 0.5)',
             }}
           >
