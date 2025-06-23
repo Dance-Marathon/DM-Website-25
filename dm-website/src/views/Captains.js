@@ -222,7 +222,7 @@ const teams = [
             "Joshua Yaciuk - Assistant Director of Development",
             "Natalie Mann - Assistant Director of Stewardship",
             "Courtney Carter  - Assistant Director of Events",
-            "River Koile - Assistant Director of Logistics"
+            "Zachary Myton - Assistant Director of Logistics"
           ],
           captains: [
             

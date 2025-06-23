@@ -7,7 +7,7 @@ const Register = () => {
 
   useEffect(() => {
     if (!hasRedirected.current) {
-      const newWindow = window.open('https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=6292', '_blank');
+      const newWindow = window.open('https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=6756', '_blank');
       if (newWindow) {
         newWindow.opener = null;
       }

@@ -62,7 +62,7 @@ export default function Fundraising() {
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
         1. Follow this{' '}
-        <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.event&eventID=6292" target="_blank" rel="noopener noreferrer">
+        <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=6756" target="_blank" rel="noopener noreferrer">
           link
         </Link>{' '}
         to register now!
@@ -71,7 +71,7 @@ export default function Fundraising() {
         2. Select <span style={{ color: '#FFC46E', fontWeight: 'bold' }}> 'Register Now'</span>
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
-        3. If you have a DonorDrive account from DM at UF 2024, select <span style={{ color: '#FFC46E', fontWeight: 'bold' }}> 'Login to your account'</span>.
+        3. If you have a DonorDrive account from DM at UF 2025, select <span style={{ color: '#FFC46E', fontWeight: 'bold' }}> 'Login to your account'</span>.
       </Typography>
       <Typography variant="body1" color="text.secondary" paragraph>
         4. If you do not have a DonorDrive account, then create an account now.

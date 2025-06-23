@@ -7,7 +7,7 @@ const Donate = () => {
 
   useEffect(() => {
     if (!hasRedirected.current) {
-      const newWindow = window.open('https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.donate&eventID=6292', '_blank');
+      const newWindow = window.open('https://events.dancemarathon.com/index.cfm?fuseaction=donordrive.donate&eventID=6756', '_blank');
       if (newWindow) {
         newWindow.opener = null;
       }

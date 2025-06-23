@@ -14,6 +14,7 @@ import LazyLoad from 'react-lazyload';
 import BookIcon from '@mui/icons-material/MenuBook';
 import LocalHospitalIcon from '@mui/icons-material/LocalHospitalOutlined';
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import RegisterIcon from '@mui/icons-material/EscalatorWarning';
 
 export const brand = {
   accentNavy: '#4965A6', // accent DM navy (light)
@@ -84,51 +85,76 @@ export default function LandingPage() {
         </Box>
         <Divider />
         <Container>
-          <Grid container spacing={4} justifyContent="center" paddingTop={8} paddingBottom={8}>
-            <Grid item xs={12} md={4}>
-              <Box display="flex" flexDirection="column" justifyContent="space-between" alignItems="center" height="100%" textAlign="center">
-                <Box mb={2}>
-                  <BookIcon style={{ fontSize: 50, color: '#FFC46E' }} />
-                  <Typography variant="h5" color="secondary" gutterBottom>
-                    Our Story
-                  </Typography>
-                  <Typography variant="body1" color="primary" paragraph>
-                    DM at UF is one of the five founding Dance Marathon programs in the nation. Since our start, we have raised more than $33 million for the Miracle Families at UF Health Shands Children’s Hospital, our local Children’s Miracle Network hospital.
-                  </Typography>
-                </Box>
-                <Button variant="outlined" color="primary" component={Link} to="/ourstory">Learn More</Button>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Box display="flex" flexDirection="column" justifyContent="space-between" alignItems="center" height="100%" textAlign="center">
-                <Box mb={2}>
-                  <LocalHospitalIcon style={{ fontSize: 50, color: '#FFC46E' }} />
-                  <Typography variant="h5" color="secondary" gutterBottom>
-                    CMN Hospitals & UF Health
-                  </Typography>
-                  <Typography variant="body1" color="primary" paragraph>
-                    Ranked one of the top 50 pediatric hospitals in the nation in seven categories, UF Health Shands Children’s Hospital and Children’s Miracle Network have created one of the greatest facilities of care for children and young adults.
-                  </Typography>
-                </Box>
-                <Button variant="outlined" color="primary" component={Link} to="/cmnhospitals">Learn More</Button>
-              </Box>
-            </Grid>
-            <Grid item xs={12} md={4}>
-              <Box display="flex" flexDirection="column" justifyContent="space-between" alignItems="center" height="100%" textAlign="center">
-                <Box mb={2}>
-                  <FavoriteIcon style={{ fontSize: 50, color: '#FFC46E' }} />
-                  <Typography variant="h5" color="secondary" gutterBottom>
-                    Miracle Families
-                  </Typography>
-                  <Typography variant="body1" color="primary" paragraph>
-                    Take a moment to meet the heart and soul of our movement. We are very fortunate to have 31 Miracle Families who are true inspirations to everyone involved in the organization and are the pinnacle for what we stand for. 
-                  </Typography>
-                </Box>
-                <Button variant="outlined" color="primary" component={Link} to="/miraclefamilies">Learn More</Button>
-              </Box>
-            </Grid>
-          </Grid>
-        </Container>
+  <Grid
+    container
+    spacing={10}
+    justifyContent="center"
+    paddingTop={8}
+    paddingBottom={8}
+    wrap="nowrap"
+  >
+    <Grid item xs={12} sm={6} md={3}>
+      <Box display="flex" flexDirection="column" justifyContent="space-between" alignItems="center" height="100%" textAlign="center">
+        <Box mb={2}>
+          <BookIcon style={{ fontSize: 50, color: '#FFC46E' }} />
+          <Typography variant="h5" color="secondary" gutterBottom>
+            Our Story
+          </Typography>
+          <Typography variant="body1" color="primary" paragraph>
+            DM at UF is one of the five founding Dance Marathon programs in the nation. Since our start, we have raised more than $33 million for the Miracle Families at UF Health Shands Children’s Hospital, our local Children’s Miracle Network hospital.
+          </Typography>
+        </Box>
+        <Button variant="outlined" color="primary" component={Link} to="/ourstory">Learn More</Button>
+      </Box>
+    </Grid>
+
+        <Grid item xs={12} sm={6} md={3}>
+          <Box display="flex" flexDirection="column" justifyContent="space-between" alignItems="center" height="100%" textAlign="center">
+            <Box mb={2}>
+              <LocalHospitalIcon style={{ fontSize: 50, color: '#FFC46E' }} />
+              <Typography variant="h5" color="secondary" gutterBottom>
+                CMN Hospitals & UF Health
+              </Typography>
+              <Typography variant="body1" color="primary" paragraph>
+                Ranked one of the top 50 pediatric hospitals in the nation in seven categories, UF Health Shands Children’s Hospital and Children’s Miracle Network have created one of the greatest facilities of care for children and young adults.
+              </Typography>
+            </Box>
+            <Button variant="outlined" color="primary" component={Link} to="/cmnhospitals">Learn More</Button>
+          </Box>
+        </Grid>
+
+        <Grid item xs={12} sm={6} md={3}>
+          <Box display="flex" flexDirection="column" justifyContent="space-between" alignItems="center" height="100%" textAlign="center">
+            <Box mb={2}>
+              <FavoriteIcon style={{ fontSize: 50, color: '#FFC46E' }} />
+              <Typography variant="h5" color="secondary" gutterBottom>
+                Miracle Families
+              </Typography>
+              <Typography variant="body1" color="primary" paragraph>
+                Take a moment to meet the heart and soul of our movement. We are very fortunate to have 31 Miracle Families who are true inspirations to everyone involved in the organization and are the pinnacle for what we stand for. 
+              </Typography>
+            </Box>
+            <Button variant="outlined" color="primary" component={Link} to="/miraclefamilies">Learn More</Button>
+          </Box>
+        </Grid>
+
+        <Grid item xs={12} sm={6} md={3}>
+          <Box display="flex" flexDirection="column" justifyContent="space-between" alignItems="center" height="100%" textAlign="center">
+            <Box mb={2}>
+              <RegisterIcon style={{ fontSize: 50, color: '#FFC46E' }} />
+              <Typography variant="h5" color="secondary" gutterBottom>
+                Register to Fundraise
+              </Typography>
+              <Typography variant="body1" color="primary" paragraph>
+                Join our fight against pediatric illness. Every dollar raised is another miracle for the patients at UF Health Shands Children’s Hospital. By registering to fundraise on DonorDrive, you are taking the first steps to changing the world and Changing Kids’ Health.
+              </Typography>
+            </Box>
+            <Button variant="outlined" color="primary" component={Link} to="/register">Learn More</Button>
+          </Box>
+        </Grid>
+      </Grid>
+    </Container>
+
         <Divider/>
         {/* <Typography variant="h3" color="primary" align="center" gutterBottom sx={{marginTop: 4}}>Our 2025 Partners</Typography> */}
         <LazyLoad height={200} offset={100} once>

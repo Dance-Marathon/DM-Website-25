@@ -202,7 +202,7 @@ export default function Applications() {
             </Link>
             .
           </Typography> */}
-          <Typography
+          {/* <Typography
             variant="body1"
             gutterBottom
             color="text.secondary"
@@ -213,6 +213,14 @@ export default function Applications() {
               here
             </Link>
             !
+          </Typography> */}
+          <Typography
+            variant="body1"
+            gutterBottom
+            color="text.secondary"
+            marginBottom={3.5}
+          >
+            Closed
           </Typography>
 
           <Typography
