@@ -11,6 +11,10 @@ import FundraisingGuidePic from "../assets/images/pagepics/Fundraising Guide.jpg
 import { Accordion, AccordionSummary, AccordionDetails } from '@mui/material';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import LazyLoad from 'react-lazyload';
+import Box from '@mui/material/Box';
+
+import SummerIncentives1 from '../assets/images/pagepics/SummerIncentives1.png';
+import SummerIncentives2 from '../assets/images/pagepics/SummerIncentives2.png';
 
 export default function FundraisingGuide() {
   const [mode, setMode] = React.useState(() => {
@@ -45,6 +49,31 @@ export default function FundraisingGuide() {
       >
         <Typography variant="body1" color="text.secondary" paragraph>
           Take a look at all the different ways you can fundraise with Dance Marathon at UF! <span style={{ color: '#FFC46E', fontWeight: 'bold' }}>Whether you ask friends and family to support you, showcase your passion on social media, participate in canning, or volunteer your time for donations, there are so many ways to fundraise for DM at UF.</span> Read more about all of these options below!
+        <Box mt={2} width="100%" display="flex" justifyContent="center">
+        {/* Desktop Image */}
+        <Box
+          component="img"
+          src={SummerIncentives1}
+          alt="Summer Incentives Desktop"
+          sx={{
+            display: { xs: 'none', sm: 'block' },
+            maxWidth: '100%',
+            height: 'auto',
+          }}
+        />
+
+        {/* Mobile Image */}
+        <Box
+          component="img"
+          src={SummerIncentives2}
+          alt="Summer Incentives Mobile"
+          sx={{
+            display: { xs: 'block', sm: 'none' },
+            maxWidth: '100%',
+            height: 'auto',
+          }}
+        />
+      </Box>
         </Typography>
 
         <Accordion>
