@@ -13,11 +13,11 @@ import { Link } from "react-router-dom";
 import LazyLoad from 'react-lazyload';
 
 import GetInvolvedPic from "../assets/images/pagepics/GetInvolvedPic.jpg";
-import AlumniBox from "../assets/images/miniboxpics/AlumniMini.jpg"
-import AmbassadorsMiniPic from "../assets/images/miniboxpics/AmbassadorsMiniPic.jpg";
+import AlumniBox from "../assets/images/miniboxpics/AlumniBox.jpg"
+import AmbassadorsMiniPic from "../assets/images/miniboxpics/AmbassadorsBox.jpg";
 import ELPBox from "../assets/images/miniboxpics/ELPBox.jpg";
 import CaptainsBox from "../assets/images/miniboxpics/CaptainTeamsBox.jpg";
-import MMBox from "../assets/images/miniboxpics/MiracleMakerBox.jpg";
+import MMBox from "../assets/images/miniboxpics/MiracleMakersBox.jpg";
 import OrgBox from "../assets/images/miniboxpics/OrgBox.jpg";
 
 export default function GetInvolved() {

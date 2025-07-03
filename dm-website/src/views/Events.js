@@ -10,10 +10,10 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from '../components/PageHero';
 import SquareCard from '../components/SquareCard';
 import EventsPic from "../assets/images/pagepics/EventsPic.jpg";
-import TTBoxPic from "../assets/images/miniboxpics/TTBoxPic.jpg";
-import MEBoxPic from "../assets/images/miniboxpics/MEBoxPicNew.jpg";
-import KickoffBoxPic from "../assets/images/miniboxpics/Kickoff.jpg";
-import MMBox from "../assets/images/miniboxpics/MiniMarathonBox.jpg";
+import TTBoxPic from "../assets/images/miniboxpics/TTBox.jpg";
+import MEBoxPic from "../assets/images/miniboxpics/MEBox.jpg";
+import KickoffBoxPic from "../assets/images/miniboxpics/KickoffBox.jpg";
+import MMBox from "../assets/images/miniboxpics/MiniMarathonsBox.jpg";
 import MWeenBox from "../assets/images/miniboxpics/MWeenBox.jpg";
 import LazyLoad from 'react-lazyload';
 

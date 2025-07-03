@@ -12,7 +12,7 @@ import SquareCardSmall from '../components/SquareCardSmall';
 import LazyLoad from 'react-lazyload';
 
 import HowToGuide from "../assets/pdfs/how-to-guide.pdf"
-import RegisterToFundraise from "../assets/images/pagepics/RegisterToFundraise.jpg";
+import RegisterToFundraise from "../assets/images/pagepics/RegisterToFundraisePic.jpg";
 import FundraisingGuideBox from "../assets/images/miniboxpics/FundraisingGuideMini.jpg";
 import DDBox from "../assets/images/miniboxpics/DonorDriveBox.jpg";
 import EmployeeBox from "../assets/images/miniboxpics/EmployeeMatchingBox.jpg";
