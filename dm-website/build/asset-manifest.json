@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.dfd57bee.js",
+    "main.js": "/static/js/main.033f714f.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -24,6 +24,7 @@
     "static/media/Copy of MayaVaidya Headshot.jpg": "/static/media/Copy of MayaVaidya Headshot.9c49a50629c5e75ca249.jpg",
     "static/media/Copy of Jaxen Ranson Headshot.jpg": "/static/media/Copy of Jaxen Ranson Headshot.2d493ad29d2caefe7ff7.jpg",
     "static/media/SummerIncentives2.png": "/static/media/SummerIncentives2.803999991b0e5fed00db.png",
+    "static/media/SummerSpellbook2.png": "/static/media/SummerSpellbook2.79d04be1892386cc8129.png",
     "static/media/how-to-guide.pdf": "/static/media/how-to-guide.6a410f804c228a2204e3.pdf",
     "static/media/CMNW-9.pdf": "/static/media/CMNW-9.b433bffe759581bd14d7.pdf",
     "static/media/W-9_Shands_HealthCare.pdf": "/static/media/W-9_Shands_HealthCare.98820ebe7c6862afbf81.pdf",
@@ -129,11 +130,13 @@
     "static/media/AmbassadorsHero.jpg": "/static/media/AmbassadorsHero.63f1caa6909e623a389a.jpg",
     "static/media/CaptainTeamsBox.jpg": "/static/media/CaptainTeamsBox.5c7e14e4635a9cd9faf1.jpg",
     "static/media/Sponsor (72).png": "/static/media/Sponsor (72).9c0131a46fbeda6646f4.png",
+    "static/media/CanningBox.jpg": "/static/media/CanningBox.c932e46879728c5bac00.jpg",
     "static/media/FundraisingGuideMini.jpg": "/static/media/FundraisingGuideMini.df5092c60819223ba9b1.jpg",
     "static/media/KickoffBox.jpg": "/static/media/KickoffBox.5868d8149ff874bf7b9d.jpg",
     "static/media/BlogsPic.jpg": "/static/media/BlogsPic.d5bf9ad0c7799c3e1a48.jpg",
     "static/media/TTBox.jpg": "/static/media/TTBox.f2a2a362296cce89a989.jpg",
     "static/media/ThankfulnessBox.jpg": "/static/media/ThankfulnessBox.73bb5cde2769ca8b3924.jpg",
+    "static/media/CanningPic.jpg": "/static/media/CanningPic.bfaba288fcbae6786ed1.jpg",
     "static/media/Owen.jpg": "/static/media/Owen.5733ba7931a82a9171f9.jpg",
     "static/media/Dani Lynn.jpg": "/static/media/Dani Lynn.f9e0e01ca8a4b5310d9d.jpg",
     "static/media/MWeenBox.jpg": "/static/media/MWeenBox.6d36b6cf71a6dd2c246f.jpg",
@@ -172,6 +175,7 @@
     "static/media/Lauren.jpg": "/static/media/Lauren.88057e46abfe82c727f9.jpg",
     "static/media/BehindTheScenes3.jpg": "/static/media/BehindTheScenes3.4762956f4f328c3c0ff3.jpg",
     "static/media/CasaPinada.otf": "/static/media/CasaPinada.6852a39649a353af4285.otf",
+    "static/media/SummerSpellbook1.png": "/static/media/SummerSpellbook1.398efa69897a85f4e6af.png",
     "static/media/Sponsor (65).png": "/static/media/Sponsor (65).70dc0902dda407876c88.png",
     "static/media/Sponsor (5).png": "/static/media/Sponsor (5).9f37a7ee329548fbbe6e.png",
     "static/media/Sponsor (66).png": "/static/media/Sponsor (66).d2c31c76bf52e4bdeaac.png",
@@ -331,11 +335,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.dfd57bee.js.map": "/static/js/main.dfd57bee.js.map",
+    "main.033f714f.js.map": "/static/js/main.033f714f.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.dfd57bee.js"
+    "static/js/main.033f714f.js"
   ]
 }

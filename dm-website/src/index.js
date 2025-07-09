@@ -45,6 +45,7 @@ import MiniMarathons from './views/MiniMarathons';
 import TransformToday from './views/TransformToday';
 import Miracles5k from './views/Miracles5k';
 import ELP from './views/ELP';
+import Canning from './views/Canning';
 
 import BeyondThisMoment from './views/blogs/BeyondThisMoment';
 import BeyondOurselves from './views/blogs/BeyondOurselves';
@@ -84,6 +85,7 @@ root.render(
         <Route path="/organizations" element={<Organizations />} />
         <Route path="/employeematching" element={<EmployeeMatching />} />
         <Route path="/fundraisingguide" element={<FundraisingGuide />} />
+        <Route path="/canning" element={<Canning />} />
         <Route path="/partners" element={<Sponsors />} />
         <Route path="/alumni" element={<Alumni />} />
         <Route path="/ambassadors" element={<Ambassadors />} />

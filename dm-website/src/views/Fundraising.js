@@ -17,6 +17,7 @@ import FundraisingGuideBox from "../assets/images/miniboxpics/FundraisingGuideMi
 import DDBox from "../assets/images/miniboxpics/DonorDriveBox.jpg";
 import EmployeeBox from "../assets/images/miniboxpics/EmployeeMatchingBox.jpg";
 import PartnersBox from "../assets/images/miniboxpics/PartnersBox.jpg";
+import CanningBox from "../assets/images/miniboxpics/CanningBox.jpg";
 
 export default function Fundraising() {
   const [mode, setMode] = React.useState(() => {
@@ -107,17 +108,19 @@ export default function Fundraising() {
           <Grid 
             container 
             spacing={3} 
+            columns={20}
             justifyContent="center" 
-            alignItems="center"
-            sx={{ maxWidth: 1200, margin: '0 auto'}}
+            // alignItems="center"
+            // sx={{ maxWidth: 1200, margin: '0 auto'}}
           >
             {[
               { image: DDBox, title: 'DonorDrive', hoverText: "Learn how UF Health Shands Children's Hospital is using DonorDrive for fundraising.", link: '/donordrive' },
               { image: EmployeeBox, title: 'Employee Matching', hoverText: "See how your company can increase your contributions.", link: '/employeematching' },
               { image: FundraisingGuideBox, title: 'Fundraising Guide', hoverText: "Take a look at all the different ways you can fundraise with Dance Marathon at UF!", link: '/fundraisingguide' },
               { image: PartnersBox, title: 'Partners', hoverText: "Discover our partners!", link: '/partners' },
+              { image: CanningBox, title: 'Canning', hoverText: "Learn how to can!", link: '/canning' },
             ].map((card, index) => (
-              <Grid item xs={12} sm={6} md={3} key={index}>
+              <Grid item xs={4} key={index}>
                 <SquareCardSmall {...card} sx={{ margin: '0 auto'}} />
               </Grid>
             ))}

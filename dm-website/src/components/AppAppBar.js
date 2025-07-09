@@ -206,6 +206,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                     { label: 'DonorDrive', url: '/donordrive' },
                     { label: 'Employee Matching', url: '/employeematching' },
                     { label: 'Fundraising Guide', url: '/fundraisingguide' },
+                    { label: 'Canning', url: '/canning' },
                     { label: 'Partners', url: '/partners' },
                   ]}
                   menuURL={'/register-to-fundraise'}

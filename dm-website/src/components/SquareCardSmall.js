@@ -4,8 +4,8 @@ import { styled } from '@mui/system';
 
 const Container = styled(Box)(({ theme }) => ({
   position: 'relative',
-  width: '250px',
-  height: '250px',
+  width: '215px',
+  height: '215px',
   overflow: 'hidden',
   borderRadius: '15px',
   boxShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
@@ -61,7 +61,7 @@ const SquareCardSmall = ({ image, title, hoverText, link, theme }) => {
         <Typography
           variant="h4"
           color="white"
-          fontSize={22}
+          fontSize={19}
           fontWeight={500}
           sx={{
             whiteSpace: 'nowrap',
