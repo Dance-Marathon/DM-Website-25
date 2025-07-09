@@ -1,17 +1,17 @@
-import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import Box from '@mui/material/Box';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import AppAppBar from '../components/AppAppBar';
-import getLPTheme from '../getLPTheme';
-import Footer from '../components/Footer';
-import { Container, Typography, Grid, Link, } from '@mui/material';
+import * as React from "react";
+import CssBaseline from "@mui/material/CssBaseline";
+import Box from "@mui/material/Box";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import AppAppBar from "../components/AppAppBar";
+import getLPTheme from "../getLPTheme";
+import Footer from "../components/Footer";
+import { Container, Typography, Link } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
-import PageHero from '../components/PageHero';
-import SquareCardSmall from '../components/SquareCardSmall';
-import LazyLoad from 'react-lazyload';
+import PageHero from "../components/PageHero";
+import SquareCardSmall from "../components/SquareCardSmall";
+import LazyLoad from "react-lazyload";
 
-import HowToGuide from "../assets/pdfs/how-to-guide.pdf"
+import HowToGuide from "../assets/pdfs/how-to-guide.pdf";
 import RegisterToFundraise from "../assets/images/pagepics/RegisterToFundraisePic.jpg";
 import FundraisingGuideBox from "../assets/images/miniboxpics/FundraisingGuideMini.jpg";
 import DDBox from "../assets/images/miniboxpics/DonorDriveBox.jpg";
@@ -22,14 +22,14 @@ import CanningBox from "../assets/images/miniboxpics/CanningBox.jpg";
 export default function Fundraising() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'light'
-    return localStorage.getItem('theme') || 'light';
+    return localStorage.getItem("theme") || "light";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
     setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      const newMode = prev === "dark" ? "light" : "dark";
+      localStorage.setItem("theme", newMode); // Store the new mode in localStorage
       return newMode;
     });
   };
@@ -40,92 +40,156 @@ export default function Fundraising() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-      <PageHero imageUrl={RegisterToFundraise} title='Register to Fundraise'/>
+        <PageHero
+          imageUrl={RegisterToFundraise}
+          title="Register to Fundraise"
+        />
       </LazyLoad>
       <Container
         sx={{
           pt: { xs: 2, sm: 6 },
           pb: { xs: 2, sm: 8 },
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'left',
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "left",
           gap: { xs: 2, sm: 3 },
         }}
       >
         <Box
           sx={{
-            width: { sm: '100%', md: '100%' },
-            textAlign: { sm: 'left', md: 'left' },
+            width: { sm: "100%", md: "100%" },
+            textAlign: { sm: "left", md: "left" },
           }}
         >
-      <Typography variant="b1" color="text.secondary" paragraph>
-        Registering to fundraise is pretty easy! Just follow the steps below:
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        1. Follow this{' '}
-        <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=6756" target="_blank" rel="noopener noreferrer">
-          link
-        </Link>{' '}
-        to register now!
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        2. Select <span style={{ color: '#FFC46E', fontWeight: 'bold' }}> 'Register Now'</span>
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        3. If you have a DonorDrive account from DM at UF 2025, select <span style={{ color: '#FFC46E', fontWeight: 'bold' }}> 'Login to your account'</span>.
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        4. If you do not have a DonorDrive account, then create an account now.
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        5. Next, select your role.
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        6. Select ‘Participant’ then ‘Individual’ or join the team of your choosing!
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        7. After, you will finalize your registration by answering the questions presented.
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        8. Once you have registered on DonorDrive, you can customize your fundraising page by adding a profile picture, editing your story, and updating your fundraising goal. Use this {' '}
-        <Link href={HowToGuide} target="_blank" rel="noopener noreferrer">
-          How-To Guide
-        </Link>{' '}
-        for step by step instructions!
-      </Typography>
-      <Typography variant="body1" color="text.secondary" paragraph>
-        9. From here, you can use the tools on DonorDrive to send emails from a template, track your fundraising, and share your fundraising link with others!
-      </Typography>
-      <Typography variant="b2"  color="text.secondary" paragraph sx={{ mt: 4 }}>
-        If you have any questions about DonorDrive, contact the Finance Overall Director, 
-        <Link href="mailto:tbonnoront@floridadm.org"> Tyler Bonnoront</Link> at tbonnoront@floridadm.org.
-      </Typography>
-        </Box>
-      
-        {/* Centered Grid for SquareCards */}
-        <Box sx={{ display: 'flex', justifyContent: 'center', width: '100%' }}>
-        <LazyLoad height={200} offset={100} once>
-          <Grid 
-            container 
-            spacing={3} 
-            columns={20}
-            justifyContent="center" 
-            // alignItems="center"
-            // sx={{ maxWidth: 1200, margin: '0 auto'}}
+          <Typography variant="b1" color="text.secondary" paragraph>
+            Registering to fundraise is pretty easy! Just follow the steps
+            below:
+          </Typography>
+          <Typography variant="body1" color="text.secondary" paragraph>
+            1. Follow this{" "}
+            <Link
+              href="https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=6756"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              link
+            </Link>{" "}
+            to register now!
+          </Typography>
+          <Typography variant="body1" color="text.secondary" paragraph>
+            2. Select{" "}
+            <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+              {" "}
+              'Register Now'
+            </span>
+          </Typography>
+          <Typography variant="body1" color="text.secondary" paragraph>
+            3. If you have a DonorDrive account from DM at UF 2025, select{" "}
+            <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+              {" "}
+              'Login to your account'
+            </span>
+            .
+          </Typography>
+          <Typography variant="body1" color="text.secondary" paragraph>
+            4. If you do not have a DonorDrive account, then create an account
+            now.
+          </Typography>
+          <Typography variant="body1" color="text.secondary" paragraph>
+            5. Next, select your role.
+          </Typography>
+          <Typography variant="body1" color="text.secondary" paragraph>
+            6. Select ‘Participant’ then ‘Individual’ or join the team of your
+            choosing!
+          </Typography>
+          <Typography variant="body1" color="text.secondary" paragraph>
+            7. After, you will finalize your registration by answering the
+            questions presented.
+          </Typography>
+          <Typography variant="body1" color="text.secondary" paragraph>
+            8. Once you have registered on DonorDrive, you can customize your
+            fundraising page by adding a profile picture, editing your story,
+            and updating your fundraising goal. Use this{" "}
+            <Link href={HowToGuide} target="_blank" rel="noopener noreferrer">
+              How-To Guide
+            </Link>{" "}
+            for step by step instructions!
+          </Typography>
+          <Typography variant="body1" color="text.secondary" paragraph>
+            9. From here, you can use the tools on DonorDrive to send emails
+            from a template, track your fundraising, and share your fundraising
+            link with others!
+          </Typography>
+          <Typography
+            variant="b2"
+            color="text.secondary"
+            paragraph
+            sx={{ mt: 4 }}
           >
-            {[
-              { image: DDBox, title: 'DonorDrive', hoverText: "Learn how UF Health Shands Children's Hospital is using DonorDrive for fundraising.", link: '/donordrive' },
-              { image: EmployeeBox, title: 'Employee Matching', hoverText: "See how your company can increase your contributions.", link: '/employeematching' },
-              { image: FundraisingGuideBox, title: 'Fundraising Guide', hoverText: "Take a look at all the different ways you can fundraise with Dance Marathon at UF!", link: '/fundraisingguide' },
-              { image: PartnersBox, title: 'Partners', hoverText: "Discover our partners!", link: '/partners' },
-              { image: CanningBox, title: 'Canning', hoverText: "Learn how to can!", link: '/canning' },
-            ].map((card, index) => (
-              <Grid item xs={4} key={index}>
-                <SquareCardSmall {...card} sx={{ margin: '0 auto'}} />
-              </Grid>
-            ))}
-          </Grid>
-          </LazyLoad>
+            If you have any questions about DonorDrive, contact the Finance
+            Overall Director, Tyler Bonnoront, at{" "}
+            <Link href="mailto:tbonnoront@floridadm.org">
+              tbonnoront@floridadm.org
+            </Link>
+            .
+          </Typography>
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center", // centers the row horizontally
+            flexWrap: "wrap", // wraps on smaller screens
+            gap: 4, // spacing between cards
+            width: "100%",
+            maxWidth: "1200px",
+            margin: "0 auto",
+          }}
+        >
+          {[
+            {
+              image: DDBox,
+              title: "DonorDrive",
+              hoverText:
+                "Learn how UF Health Shands Children's Hospital is using DonorDrive for fundraising.",
+              link: "/donordrive",
+            },
+            {
+              image: EmployeeBox,
+              title: "Employee Matching",
+              hoverText:
+                "See how your company can increase your contributions.",
+              link: "/employeematching",
+            },
+            {
+              image: FundraisingGuideBox,
+              title: "Fundraising Guide",
+              hoverText:
+                "Take a look at all the different ways you can fundraise with Dance Marathon at UF!",
+              link: "/fundraisingguide",
+            },
+            {
+              image: PartnersBox,
+              title: "Partners",
+              hoverText: "Discover our partners!",
+              link: "/partners",
+            },
+            {
+              image: CanningBox,
+              title: "Canning",
+              hoverText: "Learn how to can!",
+              link: "/canning",
+            },
+          ].map((card, index) => (
+            <Box
+              key={index}
+              sx={{
+                flex: "1 0 180px",
+                maxWidth: 200,
+              }}
+            >
+              <SquareCardSmall {...card} />
+            </Box>
+          ))}
         </Box>
       </Container>
       <Footer />

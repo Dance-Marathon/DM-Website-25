@@ -10,10 +10,10 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import SquareCard from "../components/SquareCard";
 import { Link } from "react-router-dom";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 
 import GetInvolvedPic from "../assets/images/pagepics/GetInvolvedPic.jpg";
-import AlumniBox from "../assets/images/miniboxpics/AlumniBox.jpg"
+import AlumniBox from "../assets/images/miniboxpics/AlumniBox.jpg";
 import AmbassadorsMiniPic from "../assets/images/miniboxpics/AmbassadorsBox.jpg";
 import ELPBox from "../assets/images/miniboxpics/ELPBox.jpg";
 import CaptainsBox from "../assets/images/miniboxpics/CaptainTeamsBox.jpg";
@@ -23,14 +23,14 @@ import OrgBox from "../assets/images/miniboxpics/OrgBox.jpg";
 export default function GetInvolved() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'light'
-    return localStorage.getItem('theme') || 'light';
+    return localStorage.getItem("theme") || "light";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
     setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      const newMode = prev === "dark" ? "light" : "dark";
+      localStorage.setItem("theme", newMode); // Store the new mode in localStorage
       return newMode;
     });
   };
@@ -41,7 +41,7 @@ export default function GetInvolved() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-      <PageHero imageUrl={GetInvolvedPic} title="Get Involved" />
+        <PageHero imageUrl={GetInvolvedPic} title="Get Involved" />
       </LazyLoad>
       <Container
         id="registertofundraise"
@@ -63,70 +63,73 @@ export default function GetInvolved() {
           <Typography variant="body1" color="text.secondary">
             Take a look at all of the different ways you can get involved with
             Dance Marathon at UF. Whether you are interested in becoming a
-            Captain, Miracle Maker, Emerging Leader, Ambassador, Fundraiser, this page is your path to getting involved! There
-            are so many ways to give back through DM at UF, and we would love
-            for you to join our Dance Marathon family and help us make miracles.
+            Captain, Miracle Maker, Emerging Leader, Ambassador, Fundraiser,
+            this page is your path to getting involved! There are so many ways
+            to give back through DM at UF, and we would love for you to join our
+            Dance Marathon family and help us make miracles.
           </Typography>
         </Box>
 
-  <Box
-    sx={{
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      maxWidth: "100%",
-    }}
-  >
-  <Button
-    component={Link}
-    to="/applications"
-    sx={{
-      backgroundColor: "#7E31C8", // rgba(35, 53, 99, 0.85)
-      color: (theme) => theme.palette.primary.contrastText,
-      borderRadius: '50px',
-      transition: 'background-color 0.3s ease',
-      width: '100%',
-      height: '80px',
-      '&:hover': {
-        backgroundColor: "#FFC46E" , // rgba(226, 136, 60, 0.85)
-      },
-    }}
-  >
-    <Typography
-      variant="h4"
-      fontSize={40}
-      paddingTop="10px"
-      paddingBottom="10px"
-      sx={{
-        whiteSpace: 'nowrap',
-        overflow: 'hidden',
-        textOverflow: 'ellipsis',
-        display: 'block',
-        //textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
-        color: 'white', // Ensure the text is white
-      }}
-    >
-      Apply Now!
-    </Typography>
-  </Button>
-  </Box>
-      
-        {/* Centered Grid for SquareCards */}
         <Box
           sx={{
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            width: "100%",
+            maxWidth: "100%",
           }}
         >
-          <LazyLoad height={200} offset={100} once>
-          <Grid
-            container
-            spacing={3}
-            justifyContent="center"
-            alignItems="center"
-            sx={{ maxWidth: 1200, margin: "0 auto" }}
+          <Button
+            component={Link}
+            to="/applications"
+            sx={{
+              backgroundColor: "#7E31C8", // rgba(35, 53, 99, 0.85)
+              color: (theme) => theme.palette.primary.contrastText,
+              borderRadius: "50px",
+              transition: "background-color 0.3s ease",
+              width: "100%",
+              height: "80px",
+              "&:hover": {
+                backgroundColor: "#FFC46E", // rgba(226, 136, 60, 0.85)
+              },
+            }}
+          >
+            <Typography
+              variant="h4"
+              fontSize={40}
+              paddingTop="10px"
+              paddingBottom="10px"
+              sx={{
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                display: "block",
+                //textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
+                color: "white", // Ensure the text is white
+              }}
+            >
+              Apply Now!
+            </Typography>
+          </Button>
+        </Box>
+
+        {/* Centered Grid for SquareCards */}
+        <Box
+          sx={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Box
+            sx={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: 3,
+              width: "100%",
+              maxWidth: 960, // 3 cards * 300px + gaps
+              margin: "0 auto",
+            }}
           >
             {[
               {
@@ -172,14 +175,17 @@ export default function GetInvolved() {
                 link: "/organizations",
               },
             ].map((card, index) => (
-              <Grid item xs={12} sm={6} md={4} key={index}>
-                <SquareCard
-                  {...card}
-                />
-              </Grid>
+              <Box
+                key={index}
+                sx={{
+                  flex: "0 0 300px",
+                  boxSizing: "border-box",
+                }}
+              >
+                <SquareCard {...card} />
+              </Box>
             ))}
-          </Grid>
-          </LazyLoad>
+          </Box>
         </Box>
       </Container>
       <Footer />
