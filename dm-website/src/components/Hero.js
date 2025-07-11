@@ -41,7 +41,12 @@ export default function Hero() {
       <Box
         sx={{
           position: "absolute",
-          top: "50%",
+          // Adjusted 'top' property for more top padding on mobile
+          top: {
+            xs: "55%", // Pushes text down for more top padding on extra small screens
+            sm: "50%", // Resets to center for small screens and up
+            md: "50%",
+          },
           left: "50%",
           transform: "translate(-50%, -50%)",
           display: "flex",

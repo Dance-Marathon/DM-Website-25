@@ -53,7 +53,7 @@ const BlogDetails = () => {
           alignItems: "center",
         }}
       >
-        <Box sx={{ textAlign: "left" }}>
+        <Box sx={{ my: 5, textAlign: "left" }}>
           <Typography variant="h3" gutterBottom>
             {blog.title}
           </Typography>

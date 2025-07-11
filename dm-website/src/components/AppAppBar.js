@@ -54,11 +54,17 @@ function AppAppBar({ mode, toggleColorMode }) {
   };
 
   const handleToggle = (item) => (event) => {
-    event.stopPropagation();
+    event.stopPropagation(); // Prevent the click from bubbling up to parent ListItemButton
     setDrawerState((prevState) => ({
       ...prevState,
       [`${item}`]: !prevState[`${item}`],
     }));
+  };
+
+  // Helper function to handle navigation and close drawer
+  const handleNavigationAndCloseDrawer = (path) => () => {
+    navigate(path);
+    setOpen(false); // Close the drawer
   };
 
   return (
@@ -412,7 +418,7 @@ function AppAppBar({ mode, toggleColorMode }) {
             <ListItemButton
               component={Link}
               to="/contact"
-              onClick={toggleDrawer(false)}
+              onClick={handleNavigationAndCloseDrawer("/contact")}
             >
               <ListItemText
                 primary="Contact Us"
@@ -420,30 +426,27 @@ function AppAppBar({ mode, toggleColorMode }) {
               />
             </ListItemButton>
 
-            <ListItemButton sx={{ p: 0 }}>
-              <Box
+            {/* About Section */}
+            <ListItemButton
+              onClick={handleNavigationAndCloseDrawer("/about")} // Navigate on ListItemButton click
+              sx={{ p: 0 }} // Remove default padding for control
+            >
+              <ListItemText
+                primary="About"
                 sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  width: "100%",
-                  p: "8px 16px",
+                  color: "white",
+                  fontSize: "1.5rem",
+                  flexGrow: 1, // Allow text to take space
+                  px: 2, // Padding for the text area
+                  py: "8px", // Vertical padding to match standard list item height
                 }}
+              />
+              <IconButton
+                onClick={handleToggle("about")} // Only toggle collapse
+                sx={{ color: "white", p: 0.5, mr: 1 }}
               >
-                <ListItemText
-                  primary="About"
-                  sx={{ color: "white", fontSize: "1.5rem", flexGrow: 1 }}
-                  component={Link}
-                  to="/about"
-                  onClick={toggleDrawer(false)}
-                />
-                <IconButton
-                  onClick={handleToggle("about")}
-                  sx={{ color: "white", p: 0.5 }}
-                >
-                  {drawerState.about ? <ExpandLess /> : <ExpandMore />}
-                </IconButton>
-              </Box>
+                {drawerState.about ? <ExpandLess /> : <ExpandMore />}
+              </IconButton>
             </ListItemButton>
             <Collapse in={drawerState.about} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
@@ -451,7 +454,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{ pl: 4 }}
                   component={Link}
                   to="/ourstory"
-                  onClick={toggleDrawer(false)}
+                  onClick={handleNavigationAndCloseDrawer("/ourstory")}
                 >
                   <ListItemText primary="Our Story" sx={{ color: "white" }} />
                 </ListItemButton>
@@ -459,7 +462,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{ pl: 4 }}
                   component={Link}
                   to="/cmnhospitals"
-                  onClick={toggleDrawer(false)}
+                  onClick={handleNavigationAndCloseDrawer("/cmnhospitals")}
                 >
                   <ListItemText
                     primary="CMN & UF Health"
@@ -470,7 +473,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   sx={{ pl: 4 }}
                   component={Link}
                   to="/miraclefamilies"
-                  onClick={toggleDrawer(false)}
+                  onClick={handleNavigationAndCloseDrawer("/miraclefamilies")}
                 >
                   <ListItemText
                     primary="Meet our Miracle Families"
@@ -480,30 +483,27 @@ function AppAppBar({ mode, toggleColorMode }) {
               </List>
             </Collapse>
 
-            <ListItemButton sx={{ p: 0 }}>
-              <Box
+            {/* Get Involved Section */}
+            <ListItemButton
+              onClick={handleNavigationAndCloseDrawer("/get-involved")}
+              sx={{ p: 0 }}
+            >
+              <ListItemText
+                primary="Get Involved"
                 sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  width: "100%",
-                  p: "8px 16px",
+                  color: "white",
+                  fontSize: "1.5rem",
+                  flexGrow: 1,
+                  px: 2,
+                  py: "8px",
                 }}
+              />
+              <IconButton
+                onClick={handleToggle("getInvolved")}
+                sx={{ color: "white", p: 0.5, mr: 1 }}
               >
-                <ListItemText
-                  primary="Get Involved"
-                  sx={{ color: "white", fontSize: "1.5rem", flexGrow: 1 }}
-                  component={Link}
-                  to="/get-involved"
-                  onClick={toggleDrawer(false)}
-                />
-                <IconButton
-                  onClick={handleToggle("getInvolved")}
-                  sx={{ color: "white", p: 0.5 }}
-                >
-                  {drawerState.getInvolved ? <ExpandLess /> : <ExpandMore />}
-                </IconButton>
-              </Box>
+                {drawerState.getInvolved ? <ExpandLess /> : <ExpandMore />}
+              </IconButton>
             </ListItemButton>
             <Collapse in={drawerState.getInvolved} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
@@ -521,7 +521,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                     sx={{ pl: 4 }}
                     component={Link}
                     to={item.url}
-                    onClick={toggleDrawer(false)}
+                    onClick={handleNavigationAndCloseDrawer(item.url)}
                   >
                     <ListItemText
                       primary={item.label}
@@ -532,30 +532,27 @@ function AppAppBar({ mode, toggleColorMode }) {
               </List>
             </Collapse>
 
-            <ListItemButton sx={{ p: 0 }}>
-              <Box
+            {/* Events Section */}
+            <ListItemButton
+              onClick={handleNavigationAndCloseDrawer("/events")}
+              sx={{ p: 0 }}
+            >
+              <ListItemText
+                primary="Events"
                 sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  width: "100%",
-                  p: "8px 16px",
+                  color: "white",
+                  fontSize: "1.5rem",
+                  flexGrow: 1,
+                  px: 2,
+                  py: "8px",
                 }}
+              />
+              <IconButton
+                onClick={handleToggle("events")}
+                sx={{ color: "white", p: 0.5, mr: 1 }}
               >
-                <ListItemText
-                  primary="Events"
-                  sx={{ color: "white", fontSize: "1.5rem", flexGrow: 1 }}
-                  component={Link}
-                  to="/events"
-                  onClick={toggleDrawer(false)}
-                />
-                <IconButton
-                  onClick={handleToggle("events")}
-                  sx={{ color: "white", p: 0.5 }}
-                >
-                  {drawerState.events ? <ExpandLess /> : <ExpandMore />}
-                </IconButton>
-              </Box>
+                {drawerState.events ? <ExpandLess /> : <ExpandMore />}
+              </IconButton>
             </ListItemButton>
             <Collapse in={drawerState.events} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
@@ -572,7 +569,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                     sx={{ pl: 4 }}
                     component={Link}
                     to={item.url}
-                    onClick={toggleDrawer(false)}
+                    onClick={handleNavigationAndCloseDrawer(item.url)}
                   >
                     <ListItemText
                       primary={item.label}
@@ -583,30 +580,27 @@ function AppAppBar({ mode, toggleColorMode }) {
               </List>
             </Collapse>
 
-            <ListItemButton sx={{ p: 0 }}>
-              <Box
+            {/* Fundraising Section */}
+            <ListItemButton
+              onClick={handleNavigationAndCloseDrawer("/register-to-fundraise")}
+              sx={{ p: 0 }}
+            >
+              <ListItemText
+                primary="Fundraising"
                 sx={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  width: "100%",
-                  p: "8px 16px",
+                  color: "white",
+                  fontSize: "1.5rem",
+                  flexGrow: 1,
+                  px: 2,
+                  py: "8px",
                 }}
+              />
+              <IconButton
+                onClick={handleToggle("fundraising")}
+                sx={{ color: "white", p: 0.5, mr: 1 }}
               >
-                <ListItemText
-                  primary="Fundraising"
-                  sx={{ color: "white", fontSize: "1.5rem", flexGrow: 1 }}
-                  component={Link}
-                  to="/register-to-fundraise"
-                  onClick={toggleDrawer(false)}
-                />
-                <IconButton
-                  onClick={handleToggle("fundraising")}
-                  sx={{ color: "white", p: 0.5 }}
-                >
-                  {drawerState.fundraising ? <ExpandLess /> : <ExpandMore />}
-                </IconButton>
-              </Box>
+                {drawerState.fundraising ? <ExpandLess /> : <ExpandMore />}
+              </IconButton>
             </ListItemButton>
             <Collapse in={drawerState.fundraising} timeout="auto" unmountOnExit>
               <List component="div" disablePadding>
@@ -622,7 +616,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                     sx={{ pl: 4 }}
                     component={Link}
                     to={item.url}
-                    onClick={toggleDrawer(false)}
+                    onClick={handleNavigationAndCloseDrawer(item.url)}
                   >
                     <ListItemText
                       primary={item.label}
@@ -636,7 +630,7 @@ function AppAppBar({ mode, toggleColorMode }) {
             <ListItemButton
               component={Link}
               to="/blog"
-              onClick={toggleDrawer(false)}
+              onClick={handleNavigationAndCloseDrawer("/blog")}
             >
               <ListItemText
                 primary="Blog"
@@ -647,7 +641,7 @@ function AppAppBar({ mode, toggleColorMode }) {
             <ListItemButton
               component={Link}
               to="/shop"
-              onClick={toggleDrawer(false)}
+              onClick={handleNavigationAndCloseDrawer("/shop")}
             >
               <ListItemText
                 primary="Shop"
@@ -658,7 +652,7 @@ function AppAppBar({ mode, toggleColorMode }) {
             <ListItemButton
               component={Link}
               to="/donate"
-              onClick={toggleDrawer(false)}
+              onClick={handleNavigationAndCloseDrawer("/donate")}
             >
               <ListItemText
                 primary="Donate"
@@ -669,7 +663,7 @@ function AppAppBar({ mode, toggleColorMode }) {
             <ListItemButton
               component={Link}
               to="/register"
-              onClick={toggleDrawer(false)}
+              onClick={handleNavigationAndCloseDrawer("/register")}
             >
               <ListItemText
                 primary="Register"
