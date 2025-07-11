@@ -1,14 +1,14 @@
 import * as React from "react";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
-import { ThemeProvider, createTheme } from "@mui/material/styles";
+import { ThemeProvider, createTheme } from "@mui/material/styles"; // Removed useTheme as it's not needed here anymore
 import AppAppBar from "../components/AppAppBar";
 import getLPTheme from "../getLPTheme";
 import Footer from "../components/Footer";
-import { Container, Typography, Grid, Button } from "@mui/material";
+import { Container, Typography, Button } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
-import SquareCard from "../components/SquareCard";
+import SquareCard from "../components/SquareCard"; // Your updated SquareCard
 import { Link } from "react-router-dom";
 import LazyLoad from "react-lazyload";
 
@@ -22,15 +22,15 @@ import OrgBox from "../assets/images/miniboxpics/OrgBox.jpg";
 
 export default function GetInvolved() {
   const [mode, setMode] = React.useState(() => {
-    // Retrieve the stored theme from localStorage or default to 'light'
     return localStorage.getItem("theme") || "light";
   });
   const LPtheme = createTheme(getLPTheme(mode));
+  // const theme = useTheme(); // No longer needed here as SquareCard handles its own sizing based on breakpoints
 
   const toggleColorMode = () => {
     setMode((prev) => {
       const newMode = prev === "dark" ? "light" : "dark";
-      localStorage.setItem("theme", newMode); // Store the new mode in localStorage
+      localStorage.setItem("theme", newMode);
       return newMode;
     });
   };
@@ -46,8 +46,8 @@ export default function GetInvolved() {
       <Container
         id="registertofundraise"
         sx={{
-          pt: { xs: 2, sm: 6 },
-          pb: { xs: 2, sm: 8 },
+          pt: { xs: 4, sm: 6 },
+          pb: { xs: 4, sm: 8 },
           display: "flex",
           flexDirection: "column",
           alignItems: "left",
@@ -82,14 +82,14 @@ export default function GetInvolved() {
             component={Link}
             to="/applications"
             sx={{
-              backgroundColor: "#7E31C8", // rgba(35, 53, 99, 0.85)
+              backgroundColor: "#7E31C8",
               color: (theme) => theme.palette.primary.contrastText,
               borderRadius: "50px",
               transition: "background-color 0.3s ease",
               width: "100%",
               height: "80px",
               "&:hover": {
-                backgroundColor: "#FFC46E", // rgba(226, 136, 60, 0.85)
+                backgroundColor: "#FFC46E",
               },
             }}
           >
@@ -103,8 +103,7 @@ export default function GetInvolved() {
                 overflow: "hidden",
                 textOverflow: "ellipsis",
                 display: "block",
-                //textShadow: '2px 2px 2px rgba(0, 0, 0, 0.5)',
-                color: "white", // Ensure the text is white
+                color: "white",
               }}
             >
               Apply Now!
@@ -127,7 +126,10 @@ export default function GetInvolved() {
               justifyContent: "center",
               gap: 3,
               width: "100%",
-              maxWidth: 960, // 3 cards * 300px + gaps
+              // Max width for the container of cards.
+              // On mobile, let the cards define their own fluid width.
+              // On desktop, keep it to 3 cards (3*300px + 2*24px gap = 948px)
+              maxWidth: { xs: "100%", sm: 648, md: 948 }, // Adjusted max width for desktop
               margin: "0 auto",
             }}
           >
@@ -178,8 +180,11 @@ export default function GetInvolved() {
               <Box
                 key={index}
                 sx={{
-                  flex: "0 0 300px",
-                  boxSizing: "border-box",
+                  // On mobile, the card itself will determine its width with vw units.
+                  // This flexBasis ensures the container allocates space for 2 cards.
+                  flexBasis: { xs: "calc(50% - 12px)", sm: "300px" },
+                  display: "flex", // Ensure this box also acts as a flex container for the card
+                  justifyContent: "center", // Center the card if it's smaller than flexBasis
                 }}
               >
                 <SquareCard {...card} />

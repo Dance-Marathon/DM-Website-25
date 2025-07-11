@@ -15,9 +15,9 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 
-import OurStoryHero from "../assets/images/pagepics/OurStoryHero.jpg"
+import OurStoryHero from "../assets/images/pagepics/OurStoryHero.jpg";
 import "../App.css";
 
 export default function OurStory() {
@@ -33,7 +33,7 @@ export default function OurStory() {
     fontSize: 14,
     borderBottom: "1px solid rgba(224, 224, 224, 1)",
     color: "#000000",
-    borderRight: '2px solid rgba(224, 224, 224, 1)'
+    borderRight: "2px solid rgba(224, 224, 224, 1)",
   }));
 
   const StyledTableRow = styled(TableRow)(({ theme }) => ({
@@ -89,14 +89,14 @@ export default function OurStory() {
 
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'light'
-    return localStorage.getItem('theme') || 'light';
+    return localStorage.getItem("theme") || "light";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
     setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      const newMode = prev === "dark" ? "light" : "dark";
+      localStorage.setItem("theme", newMode); // Store the new mode in localStorage
       return newMode;
     });
   };
@@ -107,12 +107,12 @@ export default function OurStory() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-      <PageHero imageUrl={OurStoryHero} title="Our Story" />
+        <PageHero imageUrl={OurStoryHero} title="Our Story" />
       </LazyLoad>
       <Container
         sx={{
-          pt: { xs: 2, sm: 6 },
-          pb: { xs: 2, sm: 8 },
+          pt: { xs: 4, sm: 6 },
+          pb: { xs: 4, sm: 8 },
           display: "flex",
           flexDirection: "column",
           alignItems: "left",
@@ -130,7 +130,7 @@ export default function OurStory() {
             component="h2"
             gutterBottom
             style={{ color: "#7E31C8" }}
-            sx = {{marginTop: {xs : 2, sm : 0}}}
+            sx={{ marginTop: { xs: 2, sm: 0 } }}
           >
             Where The Money Goes
           </Typography>
@@ -220,7 +220,9 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Number of Miracle Families:{" "}
-                      <span style={{ color: "#FFC46E", fontWeight: "bold" }}>32</span>
+                      <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+                        32
+                      </span>
                     </Typography>
                   </li>
                   <li>
@@ -230,7 +232,9 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Number of Sponsors:{" "}
-                      <span style={{ color: "#FFC46E", fontWeight: "bold" }}>74</span>
+                      <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+                        74
+                      </span>
                     </Typography>
                   </li>
                   <li>
@@ -339,7 +343,11 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                   variant="h5"
                   component="h2"
                   gutterBottom
-                  style={{ color: "#7E31C8", marginTop: "25px", marginBottom: "1px" }}
+                  style={{
+                    color: "#7E31C8",
+                    marginTop: "25px",
+                    marginBottom: "1px",
+                  }}
                 >
                   Hospital Title
                 </Typography>
@@ -355,7 +363,11 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                   variant="h5"
                   component="h2"
                   gutterBottom
-                  style={{ color: "#7E31C8", marginTop: "40px", marginBottom: "1px" }}
+                  style={{
+                    color: "#7E31C8",
+                    marginTop: "40px",
+                    marginBottom: "1px",
+                  }}
                 >
                   Children and their Families
                 </Typography>
@@ -439,7 +451,8 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                     >
                       Miracle Makers
                     </Typography>
-                  </li><li>
+                  </li>
+                  <li>
                     <Typography
                       variant="body1"
                       sx={{ color: "text.secondary" }}
@@ -829,58 +842,60 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                 </ul> */}
               </Grid>
               <Grid item xs={12} sm={6}>
-  <TableContainer 
-    component={Paper} 
-    sx={{ 
-      width: '100%', 
-      maxHeight: '975px', // Set a specific height as needed
-      overflowY: 'auto', 
-      overflowX: 'auto' 
-    }}
-  >
-    <Table sx={{ width: '100%', borderCollapse: 'collapse' }} aria-label="simple table">
-      <TableHead>
-        <TableRow>
-          <StyledTableHeadCell 
-            sx={{ 
-              width: '50%', 
-              borderRight: '2px solid rgba(224, 224, 224, 1)'  // Vertical divider
-            }}
-          >
-            Year
-          </StyledTableHeadCell>
-          <StyledTableHeadCell sx={{ width: '50%' }}>
-            Total Raised
-          </StyledTableHeadCell>
-        </TableRow>
-      </TableHead>
-      <TableBody>
-        {reversedRows.map((row) => (
-          <StyledTableRow key={row.year}>
-            <StyledTableCell 
-              component="th" 
-              scope="row" 
-              sx={{ 
-                width: '50%'
-              }}
-            >
-              {row.year}
-            </StyledTableCell>
-            <StyledTableCell sx={{ width: '50%' }}>
-              {row.total}
-            </StyledTableCell>
-          </StyledTableRow>
-        ))}
-      </TableBody>
-    </Table>
-  </TableContainer>
-</Grid>
-
-
-          </Grid>
+                <TableContainer
+                  component={Paper}
+                  sx={{
+                    width: "100%",
+                    maxHeight: "975px", // Set a specific height as needed
+                    overflowY: "auto",
+                    overflowX: "auto",
+                  }}
+                >
+                  <Table
+                    sx={{ width: "100%", borderCollapse: "collapse" }}
+                    aria-label="simple table"
+                  >
+                    <TableHead>
+                      <TableRow>
+                        <StyledTableHeadCell
+                          sx={{
+                            width: "50%",
+                            borderRight: "2px solid rgba(224, 224, 224, 1)", // Vertical divider
+                          }}
+                        >
+                          Year
+                        </StyledTableHeadCell>
+                        <StyledTableHeadCell sx={{ width: "50%" }}>
+                          Total Raised
+                        </StyledTableHeadCell>
+                      </TableRow>
+                    </TableHead>
+                    <TableBody>
+                      {reversedRows.map((row) => (
+                        <StyledTableRow key={row.year}>
+                          <StyledTableCell
+                            component="th"
+                            scope="row"
+                            sx={{
+                              width: "50%",
+                            }}
+                          >
+                            {row.year}
+                          </StyledTableCell>
+                          <StyledTableCell sx={{ width: "50%" }}>
+                            {row.total}
+                          </StyledTableCell>
+                        </StyledTableRow>
+                      ))}
+                    </TableBody>
+                  </Table>
+                </TableContainer>
+              </Grid>
+            </Grid>
+          </Box>
         </Box>
-      </Box>
-    </Container><Footer />
+      </Container>
+      <Footer />
     </ThemeProvider>
   );
 }

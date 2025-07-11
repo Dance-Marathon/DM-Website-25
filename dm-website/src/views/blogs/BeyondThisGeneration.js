@@ -10,7 +10,7 @@ import PageHero from "../../components/PageHero";
 import getLPTheme from "../../getLPTheme";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 
 import Image1 from "../../assets/images/blogpics/BeyondThisGeneration/BeyondThisGen1.jpg";
 import Image2 from "../../assets/images/blogpics/BeyondThisGeneration/BeyondThisGen2.jpg";
@@ -19,14 +19,14 @@ import Image3 from "../../assets/images/blogpics/BeyondThisGeneration/BeyondThis
 export default function BeyondThisMoment() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem('theme') || 'dark';
+    return localStorage.getItem("theme") || "dark";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
     setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      const newMode = prev === "dark" ? "light" : "dark";
+      localStorage.setItem("theme", newMode); // Store the new mode in localStorage
       return newMode;
     });
   };
@@ -36,13 +36,13 @@ export default function BeyondThisMoment() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-      <PageHero imageUrl={Image1} title="Beyond This Generation" />
+        <PageHero imageUrl={Image1} title="Beyond This Generation" />
       </LazyLoad>
 
       <Container
         sx={{
-          pt: { xs: 2, sm: 6 },
-          pb: { xs: 2, sm: 8 },
+          pt: { xs: 4, sm: 6 },
+          pb: { xs: 4, sm: 8 },
           width: "50%",
           display: "flex",
           flexDirection: "column",
@@ -51,64 +51,82 @@ export default function BeyondThisMoment() {
         }}
       >
         <Box sx={{ textAlign: "left" }}>
-          <Typography variant="body1" color='text.secondary' paragraph>
-            When reflecting on what makes Dance Marathon at the University of Florida unique, one word should instinctively come to mind — “Generational.” An organization that has been standing for over three decades and that will, without a doubt, continue to stand #BeyondThisGeneration.        
+          <Typography variant="body1" color="text.secondary" paragraph>
+            When reflecting on what makes Dance Marathon at the University of
+            Florida unique, one word should instinctively come to mind —
+            “Generational.” An organization that has been standing for over
+            three decades and that will, without a doubt, continue to stand
+            #BeyondThisGeneration.
           </Typography>
-          <Typography variant="body1" color='text.secondary' paragraph>
-            As we begin Year 31, let's take a moment to look back at the generations that came before us. We will find ourselves appreciating the life-changing impacts that have been made by past members of DM at UF, who paved the way for us to be standing here right now fighting for this cause.        
-          </Typography>
-
-          <Typography variant="body1" color='text.secondary' paragraph>
-            The beauty of our organization ultimately lies in being able to use the sum of our efforts for the greater good — that is, a life free from pediatric illness, where no child is forced to face a battle they did not choose to fight.
-          </Typography>
-
-          <Typography variant="body1" color='text.secondary' paragraph>
-            Whether you are fulfilling your “Why DM” in high school, college, or as an alum, each of these generations remain connected to the profound nature of this cause as they have one thing in common: being the heartbeat of our organization.            
-          </Typography>
-
-          <Typography variant="body1" color='text.secondary' paragraph>
-            Past, present, and future DM at UF members, be proud of yourselves for having already made an immense difference in the lives of our pediatric patients by raising over 31 million dollars for UF Health Shands Children's Hospital. Your generational efforts have contributed to the saving of so many lives and will continue to do so #BeyondThisGeneration.
+          <Typography variant="body1" color="text.secondary" paragraph>
+            As we begin Year 31, let's take a moment to look back at the
+            generations that came before us. We will find ourselves appreciating
+            the life-changing impacts that have been made by past members of DM
+            at UF, who paved the way for us to be standing here right now
+            fighting for this cause.
           </Typography>
 
-          <Grid 
-            container 
-            alignItems="center"  // Aligns items vertically centered
-            justifyContent="center"  // Pushes images to left and right
-            sx={{ marginTop: 5, marginBottom: 5, gap: 10 }}  // Adjust gap and height
-            >
+          <Typography variant="body1" color="text.secondary" paragraph>
+            The beauty of our organization ultimately lies in being able to use
+            the sum of our efforts for the greater good — that is, a life free
+            from pediatric illness, where no child is forced to face a battle
+            they did not choose to fight.
+          </Typography>
+
+          <Typography variant="body1" color="text.secondary" paragraph>
+            Whether you are fulfilling your “Why DM” in high school, college, or
+            as an alum, each of these generations remain connected to the
+            profound nature of this cause as they have one thing in common:
+            being the heartbeat of our organization.
+          </Typography>
+
+          <Typography variant="body1" color="text.secondary" paragraph>
+            Past, present, and future DM at UF members, be proud of yourselves
+            for having already made an immense difference in the lives of our
+            pediatric patients by raising over 31 million dollars for UF Health
+            Shands Children's Hospital. Your generational efforts have
+            contributed to the saving of so many lives and will continue to do
+            so #BeyondThisGeneration.
+          </Typography>
+
+          <Grid
+            container
+            alignItems="center" // Aligns items vertically centered
+            justifyContent="center" // Pushes images to left and right
+            sx={{ marginTop: 5, marginBottom: 5, gap: 10 }} // Adjust gap and height
+          >
             {/* Left Image */}
             <Grid item>
-            <LazyLoad height={200} offset={100} once>
+              <LazyLoad height={200} offset={100} once>
                 <Box
-                component="img"
-                src={Image2}
-                alt="Miracle Families"
-                sx={{
+                  component="img"
+                  src={Image2}
+                  alt="Miracle Families"
+                  sx={{
                     maxWidth: 400, // Control image size
                     borderRadius: 4,
                     display: "block", // Ensures image behaves like a block element
-                }}
+                  }}
                 />
-            </LazyLoad>
+              </LazyLoad>
             </Grid>
 
             {/* Right Image */}
             <Grid item>
-            <LazyLoad height={200} offset={100} once>
+              <LazyLoad height={200} offset={100} once>
                 <Box
-                component="img"
-                src={Image3}
-                alt="Hospital Renovation"
-                sx={{
+                  component="img"
+                  src={Image3}
+                  alt="Hospital Renovation"
+                  sx={{
                     maxWidth: 400, // Control image size
                     borderRadius: 4,
                     display: "block",
-                }}
+                  }}
                 />
-            </LazyLoad>
+              </LazyLoad>
             </Grid>
-            </Grid>
-
+          </Grid>
 
           <Typography
             variant="h6"
@@ -124,46 +142,54 @@ export default function BeyondThisMoment() {
             Dance Marathon at The University of Florida
           </Typography>
 
-          <Typography variant="body2" color='text.secondary'>
+          <Typography variant="body2" color="text.secondary">
             Public Relations, Assistant Director of Internal Communications
           </Typography>
         </Box>
         <Grid
-            container
-            alignItems="center"
-            justifyContent="space-between"
-            sx={{ mt: 4 }}
-          >
-            <Grid item>
-              <Button
-                variant="outlined"
-                startIcon={<ArrowBackIcon />}
-                onClick={() => window.location.href = "/blog/beyondthissummer"}
-                sx={{
+          container
+          alignItems="center"
+          justifyContent="space-between"
+          sx={{ mt: 4 }}
+        >
+          <Grid item>
+            <Button
+              variant="outlined"
+              startIcon={<ArrowBackIcon />}
+              onClick={() => (window.location.href = "/blog/beyondthissummer")}
+              sx={{
+                color: "primary.main",
+                borderColor: "white",
+                "&:hover": {
+                  borderColor: "primary.main",
                   color: "primary.main",
-                  borderColor: "white",
-                  "&:hover": { borderColor: "primary.main", color: "primary.main" },
-                }}
-              >
-                Previous Blog
-              </Button>
-            </Grid>
-
-            <Grid item>
-              <Button
-                variant="outlined"
-                endIcon={<ArrowForwardIcon />}
-                onClick={() => window.location.href = "/blog/findingyourdmfamily"}
-                sx={{
-                  color: "primary.main",
-                  borderColor: "white",
-                  "&:hover": { borderColor: "primary.main", color: "primary.main" },
-                }}
-              >
-                Next Blog
-              </Button>
-            </Grid>
+                },
+              }}
+            >
+              Previous Blog
+            </Button>
           </Grid>
+
+          <Grid item>
+            <Button
+              variant="outlined"
+              endIcon={<ArrowForwardIcon />}
+              onClick={() =>
+                (window.location.href = "/blog/findingyourdmfamily")
+              }
+              sx={{
+                color: "primary.main",
+                borderColor: "white",
+                "&:hover": {
+                  borderColor: "primary.main",
+                  color: "primary.main",
+                },
+              }}
+            >
+              Next Blog
+            </Button>
+          </Grid>
+        </Grid>
       </Container>
       <Footer />
     </ThemeProvider>

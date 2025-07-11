@@ -39,8 +39,8 @@ export default function Applications() {
       </LazyLoad>
       <Container
         sx={{
-          pt: { xs: 2, sm: 6 },
-          pb: { xs: 2, sm: 8 },
+          pt: { xs: 4, sm: 6 },
+          pb: { xs: 4, sm: 8 },
           display: "flex",
           flexDirection: "column",
           alignItems: "left",

@@ -8,7 +8,7 @@ import Footer from "../components/Footer";
 import { Container, Typography, Link } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
-import SquareCardSmall from "../components/SquareCardSmall";
+import SquareCardSmall from "../components/SquareCardSmall"; // Your updated SquareCardSmall
 import LazyLoad from "react-lazyload";
 
 import HowToGuide from "../assets/pdfs/how-to-guide.pdf";
@@ -47,8 +47,8 @@ export default function Fundraising() {
       </LazyLoad>
       <Container
         sx={{
-          pt: { xs: 2, sm: 6 },
-          pb: { xs: 2, sm: 8 },
+          pt: { xs: 4, sm: 6 },
+          pb: { xs: 4, sm: 8 },
           display: "flex",
           flexDirection: "column",
           alignItems: "left",
@@ -139,9 +139,12 @@ export default function Fundraising() {
             display: "flex",
             justifyContent: "center", // centers the row horizontally
             flexWrap: "wrap", // wraps on smaller screens
-            gap: 4, // spacing between cards
+            gap: 4, // spacing between cards (32px)
             width: "100%",
-            maxWidth: "1200px",
+            // Max width for the container of cards based on SquareCardSmall size
+            // For desktop, 5 cards * 215px + 4 gaps * 32px = 1075 + 128 = 1203px
+            // For mobile, we want 2 cards per row.
+            maxWidth: { xs: "100%", sm: 462, md: 708, lg: 954, xl: 1200 }, // Adjusted max widths for responsive columns
             margin: "0 auto",
           }}
         >
@@ -183,8 +186,12 @@ export default function Fundraising() {
             <Box
               key={index}
               sx={{
-                flex: "1 0 180px",
-                maxWidth: 200,
+                // On mobile, the card itself will determine its width with vw units.
+                // This flexBasis ensures the container allocates space for 2 cards.
+                flexBasis: { xs: "calc(50% - 16px)", sm: "215px" }, // Accounts for gap: 4 (32px / 2 = 16px)
+                display: "flex", // Ensure this box also acts as a flex container for the card
+                justifyContent: "center", // Center the card if it's smaller than flexBasis
+                // We no longer need maxWidth on this wrapper Box, as SquareCardSmall handles its own width
               }}
             >
               <SquareCardSmall {...card} />

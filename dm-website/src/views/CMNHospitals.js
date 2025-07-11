@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import { Container, Typography, Box, Link } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 
 import CMNHero from "../assets/images/pagepics/CMNHero.jpg";
 import TriBrand from "../assets/images/footer/TriBrand_Color.png";
@@ -15,14 +15,14 @@ import TriBrand from "../assets/images/footer/TriBrand_Color.png";
 export default function CMNHospitals() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'light'
-    return localStorage.getItem('theme') || 'light';
+    return localStorage.getItem("theme") || "light";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
     setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      const newMode = prev === "dark" ? "light" : "dark";
+      localStorage.setItem("theme", newMode); // Store the new mode in localStorage
       return newMode;
     });
   };
@@ -33,12 +33,12 @@ export default function CMNHospitals() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-      <PageHero imageUrl={CMNHero} title="CMN & UF Health" />
+        <PageHero imageUrl={CMNHero} title="CMN & UF Health" />
       </LazyLoad>
       <Container
         sx={{
-          pt: { xs: 2, sm: 6 },
-          pb: { xs: 2, sm: 8 },
+          pt: { xs: 4, sm: 6 },
+          pb: { xs: 4, sm: 8 },
           display: "flex",
           flexDirection: "column",
           alignItems: "left",
@@ -53,7 +53,11 @@ export default function CMNHospitals() {
         >
           <Typography
             variant="body1"
-            sx={{ color: "text.secondary", marginTop: {xs : 2, sm : 0}, marginBottom: 2 }}
+            sx={{
+              color: "text.secondary",
+              marginTop: { xs: 2, sm: 0 },
+              marginBottom: 2,
+            }}
           >
             <Box component="span" sx={{ color: "#FFC46E", fontWeight: "Bold" }}>
               UF Health Shands Children’s Hospital
@@ -113,9 +117,9 @@ export default function CMNHospitals() {
             variant="body1"
             sx={{ color: "text.secondary", marginBottom: 2 }}
           >
-            Ranked one of the {" "}
+            Ranked one of the{" "}
             <Box component="span" sx={{ color: "#FFC46E", fontWeight: "bold" }}>
-            top pediatric hospitals in the nation in five categories
+              top pediatric hospitals in the nation in five categories
             </Box>
             <Box component="span" sx={{ fontStyle: "italic" }}>
               , UF Health Shands Children's Hospital
@@ -143,13 +147,15 @@ export default function CMNHospitals() {
             </Link>
           </Typography>
           <LazyLoad height={200} offset={100} once>
-          <Box sx={{ display: "flex", justifyContent: "center", marginTop: 4 }}>
-            <img
-              src={TriBrand}
-              alt="UF Health Shands Children's Hospital"
-              style={{ maxWidth: "100%", height: "auto" }}
-            />
-          </Box>
+            <Box
+              sx={{ display: "flex", justifyContent: "center", marginTop: 4 }}
+            >
+              <img
+                src={TriBrand}
+                alt="UF Health Shands Children's Hospital"
+                style={{ maxWidth: "100%", height: "auto" }}
+              />
+            </Box>
           </LazyLoad>
         </Box>
       </Container>

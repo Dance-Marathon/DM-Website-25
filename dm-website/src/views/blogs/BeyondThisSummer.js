@@ -10,7 +10,7 @@ import PageHero from "../../components/PageHero";
 import getLPTheme from "../../getLPTheme";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 
 import Image1 from "../../assets/images/blogpics/BeyondThisSummer/BeyondSummer1.jpg";
 import Image2 from "../../assets/images/blogpics/BeyondThisSummer/BeyondSummer2.jpg";
@@ -19,14 +19,14 @@ import Image3 from "../../assets/images/blogpics/BeyondThisSummer/BeyondSummer3.
 export default function BeyondThisMoment() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem('theme') || 'dark';
+    return localStorage.getItem("theme") || "dark";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
     setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      const newMode = prev === "dark" ? "light" : "dark";
+      localStorage.setItem("theme", newMode); // Store the new mode in localStorage
       return newMode;
     });
   };
@@ -37,13 +37,13 @@ export default function BeyondThisMoment() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-      <PageHero imageUrl={Image1} title="Beyond This Summer" />
+        <PageHero imageUrl={Image1} title="Beyond This Summer" />
       </LazyLoad>
 
       <Container
         sx={{
-          pt: { xs: 2, sm: 6 },
-          pb: { xs: 2, sm: 8 },
+          pt: { xs: 4, sm: 6 },
+          pb: { xs: 4, sm: 8 },
           width: "50%",
           display: "flex",
           flexDirection: "column",
@@ -52,60 +52,84 @@ export default function BeyondThisMoment() {
         }}
       >
         <Box sx={{ textAlign: "left" }}>
-          <Typography variant="body1" color='text.secondary' paragraph>
-            This summer, you may have graduated, studied abroad, worked a job or an internship, or relaxed and read a book. Summer is a time to reset. For Dance Marathon at the University of Florida, we view summer as a transition period. We have returning members reflecting on the past year and how they can take the best moments and make them even better. We have newly promoted members lending their skills and talents to the team, helping over the summer to plan for the year ahead. Incoming freshmen begin to think about what they want their UF experience to look like. Some have been involved in Dance Marathon at their high schools or heard of it through older siblings and friends. And many more will learn about Dance Marathon for the first time as they enter college.
+          <Typography variant="body1" color="text.secondary" paragraph>
+            This summer, you may have graduated, studied abroad, worked a job or
+            an internship, or relaxed and read a book. Summer is a time to
+            reset. For Dance Marathon at the University of Florida, we view
+            summer as a transition period. We have returning members reflecting
+            on the past year and how they can take the best moments and make
+            them even better. We have newly promoted members lending their
+            skills and talents to the team, helping over the summer to plan for
+            the year ahead. Incoming freshmen begin to think about what they
+            want their UF experience to look like. Some have been involved in
+            Dance Marathon at their high schools or heard of it through older
+            siblings and friends. And many more will learn about Dance Marathon
+            for the first time as they enter college.
           </Typography>
-          <Typography variant="body1" color='text.secondary' paragraph>
-            As you take the time this season to reset, think about how you want your year to look #BeyondThisSummer. What are your goals? Learn a new skill? Make more friends? Help more people? 
+          <Typography variant="body1" color="text.secondary" paragraph>
+            As you take the time this season to reset, think about how you want
+            your year to look #BeyondThisSummer. What are your goals? Learn a
+            new skill? Make more friends? Help more people?
           </Typography>
 
-          <Typography variant="body1" color='text.secondary' paragraph>
-            By joining Dance Marathon, you become part of a community that can give you all of this and even more than you can imagine. It is a place where you can find your best friends and make memories that last a lifetime. Use or learn a new skill while working with friends to raise money to change children’s lives. Your efforts, no matter how small, contribute to our collective goal of helping as many families as possible. 
+          <Typography variant="body1" color="text.secondary" paragraph>
+            By joining Dance Marathon, you become part of a community that can
+            give you all of this and even more than you can imagine. It is a
+            place where you can find your best friends and make memories that
+            last a lifetime. Use or learn a new skill while working with friends
+            to raise money to change children’s lives. Your efforts, no matter
+            how small, contribute to our collective goal of helping as many
+            families as possible.
           </Typography>
 
-          <Typography variant="body1" color='text.secondary' paragraph>
-            Our Miracle Families continue their fight every single day. While we may take a break from school, pediatric illness doesn’t take vacations. We must think about them while we take our time off of school and know that in the Fall semester, our efforts go beyond, with big moments such as Transform Today. Our Miracle Families continue to inspire us as our ongoing efforts and triumphs make an impact #BeyondThisSummer. 
+          <Typography variant="body1" color="text.secondary" paragraph>
+            Our Miracle Families continue their fight every single day. While we
+            may take a break from school, pediatric illness doesn’t take
+            vacations. We must think about them while we take our time off of
+            school and know that in the Fall semester, our efforts go beyond,
+            with big moments such as Transform Today. Our Miracle Families
+            continue to inspire us as our ongoing efforts and triumphs make an
+            impact #BeyondThisSummer.
           </Typography>
 
-          <Grid 
-            container 
-            alignItems="center"  // Aligns items vertically centered
-            justifyContent="center"  // Pushes images to left and right
-            sx={{ marginTop: 5, marginBottom: 5, gap: 10 }}  // Adjust gap and height
-            >
+          <Grid
+            container
+            alignItems="center" // Aligns items vertically centered
+            justifyContent="center" // Pushes images to left and right
+            sx={{ marginTop: 5, marginBottom: 5, gap: 10 }} // Adjust gap and height
+          >
             {/* Left Image */}
             <Grid item>
-            <LazyLoad height={200} offset={100} once>
+              <LazyLoad height={200} offset={100} once>
                 <Box
-                component="img"
-                src={Image2}
-                alt="Miracle Families"
-                sx={{
+                  component="img"
+                  src={Image2}
+                  alt="Miracle Families"
+                  sx={{
                     maxWidth: 400, // Control image size
                     borderRadius: 4,
                     display: "block", // Ensures image behaves like a block element
-                }}
+                  }}
                 />
-            </LazyLoad>
+              </LazyLoad>
             </Grid>
 
             {/* Right Image */}
             <Grid item>
-            <LazyLoad height={200} offset={100} once>
+              <LazyLoad height={200} offset={100} once>
                 <Box
-                component="img"
-                src={Image3}
-                alt="Hospital Renovation"
-                sx={{
+                  component="img"
+                  src={Image3}
+                  alt="Hospital Renovation"
+                  sx={{
                     maxWidth: 400, // Control image size
                     borderRadius: 4,
                     display: "block",
-                }}
+                  }}
                 />
-            </LazyLoad>
+              </LazyLoad>
             </Grid>
-            </Grid>
-
+          </Grid>
 
           <Typography
             variant="h6"
@@ -121,7 +145,7 @@ export default function BeyondThisMoment() {
             Dance Marathon at The University of Florida
           </Typography>
 
-          <Typography variant="body2" color='text.secondary'>
+          <Typography variant="body2" color="text.secondary">
             Public Relations, Assistant Director of Social Media
           </Typography>
         </Box>
@@ -135,11 +159,14 @@ export default function BeyondThisMoment() {
             <Button
               variant="outlined"
               startIcon={<ArrowBackIcon />}
-              onClick={() => window.location.href = "/blog/beyondourselves"}
+              onClick={() => (window.location.href = "/blog/beyondourselves")}
               sx={{
                 color: "primary.main",
                 borderColor: "white",
-                "&:hover": { borderColor: "primary.main", color: "primary.main" },
+                "&:hover": {
+                  borderColor: "primary.main",
+                  color: "primary.main",
+                },
               }}
             >
               Previous Blog
@@ -150,11 +177,16 @@ export default function BeyondThisMoment() {
             <Button
               variant="outlined"
               endIcon={<ArrowForwardIcon />}
-              onClick={() => window.location.href = "/blog/beyondthisgeneration"}
+              onClick={() =>
+                (window.location.href = "/blog/beyondthisgeneration")
+              }
               sx={{
                 color: "primary.main",
                 borderColor: "white",
-                "&:hover": { borderColor: "primary.main", color: "primary.main" },
+                "&:hover": {
+                  borderColor: "primary.main",
+                  color: "primary.main",
+                },
               }}
             >
               Next Blog

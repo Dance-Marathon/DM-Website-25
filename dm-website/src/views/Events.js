@@ -5,10 +5,10 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AppAppBar from "../components/AppAppBar";
 import getLPTheme from "../getLPTheme";
 import Footer from "../components/Footer";
-import { Container, Typography, Link, Grid } from "@mui/material";
+import { Container, Typography, Link } from "@mui/material"; // Removed Grid as it's not directly used for card layout
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
-import SquareCard from "../components/SquareCard";
+import SquareCard from "../components/SquareCard"; // Ensure this is your updated responsive SquareCard
 import EventsPic from "../assets/images/pagepics/EventsPic.jpg";
 import TTBoxPic from "../assets/images/miniboxpics/TTBox.jpg";
 import MEBoxPic from "../assets/images/miniboxpics/MEBox.jpg";
@@ -42,8 +42,8 @@ export default function Events() {
       </LazyLoad>
       <Container
         sx={{
-          pt: { xs: 2, sm: 6 },
-          pb: { xs: 2, sm: 8 },
+          pt: { xs: 4, sm: 6 },
+          pb: { xs: 4, sm: 8 },
           display: "flex",
           flexDirection: "column",
           alignItems: "left",
@@ -115,9 +115,12 @@ export default function Events() {
               display: "flex",
               flexWrap: "wrap",
               justifyContent: "center",
-              gap: 3,
+              gap: 3, // This is 24px
               width: "100%",
-              maxWidth: 960, // 3 cards * 300px + gaps
+              // Max width for the container of cards.
+              // On mobile, let the cards define their own fluid width.
+              // On desktop, keep it to 3 cards (3*300px + 2*24px gap = 948px)
+              maxWidth: { xs: "100%", sm: 648, md: 948 },
               margin: "0 auto",
             }}
           >
@@ -168,8 +171,11 @@ export default function Events() {
               <Box
                 key={index}
                 sx={{
-                  flex: "0 0 300px",
-                  boxSizing: "border-box",
+                  // On mobile, the card itself will determine its width with vw units.
+                  // This flexBasis ensures the container allocates space for 2 cards.
+                  flexBasis: { xs: "calc(50% - 12px)", sm: "300px" },
+                  display: "flex", // Ensure this box also acts as a flex container for the card
+                  justifyContent: "center", // Center the card if it's smaller than flexBasis
                 }}
               >
                 <SquareCard {...card} />

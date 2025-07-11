@@ -1,6 +1,6 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import { alpha } from '@mui/material/styles';
+import * as React from "react";
+import PropTypes from "prop-types";
+import { alpha } from "@mui/material/styles";
 
 import {
   AppBar,
@@ -18,32 +18,27 @@ import {
   Collapse,
   useTheme,
   useMediaQuery,
-} from '@mui/material';
-import MenuIcon from '@mui/icons-material/Menu';
-import ExpandLess from '@mui/icons-material/ExpandLess';
-import ExpandMore from '@mui/icons-material/ExpandMore';
-import ToggleColorMode from './ToggleColorMode';
-import FacebookIcon from '@mui/icons-material/FacebookOutlined';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/X';
-import { useNavigate } from 'react-router-dom';
-import MenuPopupState from './MenuPopupState';
-
-const logoStyle = {
-  width: '40px',
-  height: '40px',
-  cursor: 'pointer',
-};
+} from "@mui/material";
+import MenuIcon from "@mui/icons-material/Menu";
+import ExpandLess from "@mui/icons-material/ExpandLess";
+import ExpandMore from "@mui/icons-material/ExpandMore";
+import ToggleColorMode from "./ToggleColorMode";
+import FacebookIcon from "@mui/icons-material/FacebookOutlined";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import TwitterIcon from "@mui/icons-material/X";
+import { useNavigate, Link } from "react-router-dom";
+import MenuPopupState from "./MenuPopupState";
 
 const menuTheme = {
-  color: 'text.primary',
-  display: 'flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  borderRadius: '999px',
+  color: "text.primary",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+  borderRadius: "999px",
   maxHeight: 40,
   minWidth: 0,
   flexShrink: 0,
+  px: 2, // Standard padding for buttons
 };
 
 function AppAppBar({ mode, toggleColorMode }) {
@@ -51,20 +46,20 @@ function AppAppBar({ mode, toggleColorMode }) {
   const [drawerState, setDrawerState] = React.useState({});
   const navigate = useNavigate();
 
+  const theme = useTheme();
+  const isLargeScreen = useMediaQuery(theme.breakpoints.up("lg"));
+
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
   };
 
-  const handleToggle = (item) => {
+  const handleToggle = (item) => (event) => {
+    event.stopPropagation();
     setDrawerState((prevState) => ({
       ...prevState,
-      [item]: !prevState[item],
+      [`${item}`]: !prevState[`${item}`],
     }));
   };
-
-  const theme = useTheme();
-  // Breakpoint set at 'lg' (1280px)
-  const isLargeScreen = useMediaQuery(theme.breakpoints.up('lg')); // 'lg' breakpoint is 1280px
 
   return (
     <div>
@@ -72,8 +67,8 @@ function AppAppBar({ mode, toggleColorMode }) {
         position="fixed"
         sx={{
           boxShadow: 0,
-          bgcolor: 'transparent',
-          backgroundImage: 'none',
+          bgcolor: "transparent",
+          backgroundImage: "none",
           mt: 2,
         }}
       >
@@ -81,74 +76,105 @@ function AppAppBar({ mode, toggleColorMode }) {
           <Toolbar
             variant="regular"
             sx={(theme) => ({
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'space-between',
-              flexWrap: 'nowrap',
-              overflow: 'hidden', // Prevent horizontal overflow
-              borderRadius: '999px',
-              bgcolor: '#7E31C870',
-              backdropFilter: 'blur(24px)',
+              display: "flex",
+              alignItems: "center",
+              // Revert to original or implicit justify-content if not explicitly space-between
+              justifyContent: "space-between", // Often useful here if there are 3 main sections
+              flexWrap: "nowrap",
+              overflow: "hidden",
+              borderRadius: "999px",
+              bgcolor: "#7E31C870",
+              backdropFilter: "blur(24px)",
               maxHeight: 40,
-              width: '100%',
-              border: '1px solid',
-              borderColor: 'divider',
+              width: "100%",
+              border: "1px solid",
+              borderColor: "divider",
+              pl: 1.5,
+              pr: 2,
               boxShadow:
-                theme.palette.mode === 'light'
+                theme.palette.mode === "light"
                   ? `0 0 1px rgba(85, 166, 246, 0.1), 1px 1.5px 2px -1px rgba(85, 166, 246, 0.15), 4px 4px 12px -2.5px rgba(85, 166, 246, 0.15)`
-                  : '0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)',
+                  : "0 0 1px rgba(2, 31, 59, 0.7), 1px 1.5px 2px -1px rgba(2, 31, 59, 0.65), 4px 4px 12px -2.5px rgba(2, 31, 59, 0.65)",
             })}
           >
-            {/* Left Side: Logo, About, Donate, and Register Buttons on medium and small screens */}
+            {/* Logo Section */}
             <Box
               sx={{
-                display: 'flex',
-                alignItems: 'center',
+                display: "flex",
+                alignItems: "center",
                 flexShrink: 0,
-                overflow: 'hidden',
+                mr: 1.5, // Keep margin-right for separation from the next item (navigation)
               }}
             >
-              {/* Logo */}
               <Box
-                component="img"
-                src={'/logo2024.png'}
-                style={logoStyle}
-                alt="Dance Marathon at UF Logo"
-                onClick={() => navigate('/')}
-                sx={{
-                  width: { xs: '30px', md: '40px' },
-                  height: { xs: '30px', md: '40px' },
-                  cursor: 'pointer',
+                onClick={() => navigate("/")}
+                sx={(theme) => ({
+                  position: "relative",
+                  cursor: "pointer",
+                  width: { xs: "30px", md: "40px" },
+                  height: { xs: "30px", md: "40px" },
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
                   flexShrink: 0,
-                }}
-              />
-              {/* About, Donate, and Register Buttons on medium and small screens */}
+                  "&::after": {
+                    content: '""',
+                    position: "absolute",
+                    top: "-17.5%",
+                    left: "-17.5%",
+                    width: "135%",
+                    height: "135%",
+                    backgroundColor: "rgba(255, 255, 255, 0.04)",
+                    borderRadius: "30%",
+                    opacity: 0,
+                    transition: "opacity 0.2s ease-in-out",
+                    pointerEvents: "none",
+                    zIndex: -1,
+                  },
+                  "&:hover::after": {
+                    opacity: 1,
+                  },
+                })}
+              >
+                <Box
+                  component="img"
+                  src={"/logo2024.png"}
+                  alt="Dance Marathon at UF Logo"
+                  sx={{
+                    width: "100%",
+                    height: "100%",
+                    display: "block",
+                    objectFit: "contain",
+                    position: "relative",
+                    zIndex: 1,
+                  }}
+                />
+              </Box>
               {!isLargeScreen && (
                 <Box
                   sx={{
-                    display: 'flex',
-                    alignItems: 'center',
+                    display: "flex",
+                    alignItems: "center",
                     ml: 1,
-                    overflow: 'hidden',
+                    overflow: "hidden",
                   }}
-                >
-                </Box>
+                />
               )}
             </Box>
 
-            {/* Center: Navigation Items (only on large screens) */}
+            {/* Navigation Buttons Section */}
             {isLargeScreen && (
               <Box
                 sx={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  flexGrow: 1,
-                  overflow: 'hidden',
+                  display: "flex",
+                  alignItems: "center",
+                  flexGrow: 1, // This Box needs to grow to push the rightmost elements
                 }}
               >
                 <Button
                   variant="regular"
-                  onClick={() => navigate('/contact')}
+                  component={Link}
+                  to="/contact"
                   sx={{
                     ...menuTheme,
                   }}
@@ -160,11 +186,14 @@ function AppAppBar({ mode, toggleColorMode }) {
                 <MenuPopupState
                   title="About"
                   submenuItems={[
-                    { label: 'Our Story', url: '/ourstory' },
-                    { label: 'CMN & UF Health', url: '/cmnhospitals' },
-                    { label: 'Meet our Miracle Families', url: '/miraclefamilies' },
+                    { label: "Our Story", url: "/ourstory" },
+                    { label: "CMN & UF Health", url: "/cmnhospitals" },
+                    {
+                      label: "Meet our Miracle Families",
+                      url: "/miraclefamilies",
+                    },
                   ]}
-                  menuURL={'/about'}
+                  menuURL={"/about"}
                   sx={{
                     ...menuTheme,
                   }}
@@ -172,15 +201,15 @@ function AppAppBar({ mode, toggleColorMode }) {
                 <MenuPopupState
                   title="Get Involved"
                   submenuItems={[
-                    { label: 'Applications', url: '/applications' },
-                    { label: 'Alumni', url: '/alumni' },
-                    { label: 'Ambassadors', url: '/ambassadors' },
-                    { label: 'Captain Teams', url: '/captainteams' },
-                    { label: 'Miracle Makers', url: '/miraclemakers' },
-                    { label: 'Emerging Leaders', url: '/emergingleaders' },
-                    { label: 'Organizations', url: '/organizations' },
+                    { label: "Applications", url: "/applications" },
+                    { label: "Alumni", url: "/alumni" },
+                    { label: "Ambassadors", url: "/ambassadors" },
+                    { label: "Captain Teams", url: "/captainteams" },
+                    { label: "Miracle Makers", url: "/miraclemakers" },
+                    { label: "Emerging Leaders", url: "/emergingleaders" },
+                    { label: "Organizations", url: "/organizations" },
                   ]}
-                  menuURL={'/get-involved'}
+                  menuURL={"/get-involved"}
                   sx={{
                     ...menuTheme,
                   }}
@@ -188,14 +217,14 @@ function AppAppBar({ mode, toggleColorMode }) {
                 <MenuPopupState
                   title="Events"
                   submenuItems={[
-                    { label: 'Fall Kickoff', url: '/fallkickoff' },
-                    { label: 'Main Event', url: '/mainevent' },
-                    { label: 'Mini Marathons', url: '/minimarathons' },
-                    { label: 'Moralloween', url: '/moralloween' },
-                    { label: 'Transform Today', url: '/transformtoday' },
-                    { label: 'Miracles in Color 5k', url: '/miracles5k' },
+                    { label: "Fall Kickoff", url: "/fallkickoff" },
+                    { label: "Main Event", url: "/mainevent" },
+                    { label: "Mini Marathons", url: "/minimarathons" },
+                    { label: "Moralloween", url: "/moralloween" },
+                    { label: "Transform Today", url: "/transformtoday" },
+                    { label: "Miracles in Color 5k", url: "/miracles5k" },
                   ]}
-                  menuURL={'/events'}
+                  menuURL={"/events"}
                   sx={{
                     ...menuTheme,
                   }}
@@ -203,20 +232,21 @@ function AppAppBar({ mode, toggleColorMode }) {
                 <MenuPopupState
                   title="Fundraising"
                   submenuItems={[
-                    { label: 'DonorDrive', url: '/donordrive' },
-                    { label: 'Employee Matching', url: '/employeematching' },
-                    { label: 'Fundraising Guide', url: '/fundraisingguide' },
-                    { label: 'Canning', url: '/canning' },
-                    { label: 'Partners', url: '/partners' },
+                    { label: "DonorDrive", url: "/donordrive" },
+                    { label: "Employee Matching", url: "/employeematching" },
+                    { label: "Fundraising Guide", url: "/fundraisingguide" },
+                    { label: "Canning", url: "/canning" },
+                    { label: "Partners", url: "/partners" },
                   ]}
-                  menuURL={'/register-to-fundraise'}
+                  menuURL={"/register-to-fundraising"}
                   sx={{
                     ...menuTheme,
                   }}
                 />
                 <Button
                   variant="regular"
-                  onClick={() => navigate('/blog')}
+                  component={Link}
+                  to="/blog"
                   sx={{
                     ...menuTheme,
                   }}
@@ -227,7 +257,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                 </Button>
                 <Button
                   variant="regular"
-                  onClick={() => navigate('/shop')}
+                  component={Link}
+                  to="/shop"
                   sx={{
                     ...menuTheme,
                   }}
@@ -236,21 +267,18 @@ function AppAppBar({ mode, toggleColorMode }) {
                     Shop
                   </Typography>
                 </Button>
-                {/* Spacer to push Donate and Register to the right */}
-                <Box sx={{ flexGrow: 1 }} />
-                {/* Donate and Register Buttons */}
                 <Button
                   variant="regular"
-                  onClick={() => navigate('/donate')}
+                  component={Link}
+                  to="/donate"
                   sx={{
                     ...menuTheme,
-                    bgcolor: '#FFC46E', /*rgba(226, 136, 60, 0.7) */
-                    color: 'white',
-                    fontWeight: 'bold',
-                    px: 2,
+                    bgcolor: "#FFC46E",
+                    color: "white",
+                    fontWeight: "bold",
                     ml: 1.5,
-                    '&:hover': {
-                      bgcolor: 'rgba(226, 136, 60, 0.9)',
+                    "&:hover": {
+                      bgcolor: "rgba(226, 136, 60, 0.9)",
                     },
                     minWidth: 0,
                     flexShrink: 0,
@@ -262,16 +290,16 @@ function AppAppBar({ mode, toggleColorMode }) {
                 </Button>
                 <Button
                   variant="regular"
-                  onClick={() => navigate('/register')}
+                  component={Link}
+                  to="/register"
                   sx={{
                     ...menuTheme,
-                    bgcolor: '#FFC46E', /*rgba(226, 136, 60, 0.7) */
-                    color: 'white',
-                    fontWeight: 'bold',
-                    px: 2,
+                    bgcolor: "#FFC46E",
+                    color: "white",
+                    fontWeight: "bold",
                     ml: 1.5,
-                    '&:hover': {
-                      bgcolor: 'rgba(226, 136, 60, 0.9)',
+                    "&:hover": {
+                      bgcolor: "rgba(226, 136, 60, 0.9)",
                     },
                     minWidth: 0,
                     flexShrink: 0,
@@ -281,64 +309,81 @@ function AppAppBar({ mode, toggleColorMode }) {
                     Register
                   </Typography>
                 </Button>
+                {/* NEW: Dedicated spacer Box *inside* the flexGrow:1 navigation Box */}
+                <Box sx={{ minWidth: "40px" }} />{" "}
+                {/* Adjust minWidth for desired space */}
               </Box>
             )}
 
-            {/* Right Side: Icons and Hamburger Menu */}
+            {/* Toggle and Social Icons Section (Right) */}
             <Box
               sx={{
-                display: 'flex',
-                alignItems: 'center',
-                flexShrink: 0,
-                overflow: 'hidden',
+                display: "flex",
+                alignItems: "center",
+                flexShrink: 0, // Ensure this doesn't shrink
               }}
             >
-              {/* Icons and ToggleColorMode - Only on Large Screens */}
               {isLargeScreen && (
                 <Box
                   sx={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    ml: 1,
+                    display: "flex",
+                    alignItems: "center",
                     flexShrink: 0,
                   }}
                 >
-                  <ToggleColorMode mode={mode} toggleColorMode={toggleColorMode} />
+                  <ToggleColorMode
+                    mode={mode}
+                    toggleColorMode={toggleColorMode}
+                  />
                   <Stack
                     direction="row"
                     justifyContent="left"
                     spacing={1}
                     sx={{
-                      color: 'text.secondary',
+                      color: "text.secondary",
                     }}
                   >
                     <IconButton
                       href="https://www.instagram.com/dmatuf/?hl=en"
                       aria-label="Instagram"
-                      sx={{ color: 'white', '&:hover': {background: alpha('#4965A6', 0.3)} }}
+                      sx={{
+                        color: "white",
+                        "&:hover": { background: alpha("#4965A6", 0.3) },
+                      }}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <InstagramIcon />
                     </IconButton>
                     <IconButton
                       href="https://www.facebook.com/floridaDM/"
                       aria-label="Facebook"
-                      sx={{ color: 'white', '&:hover': {background: alpha('#4965A6', 0.3)} }}
+                      sx={{
+                        color: "white",
+                        "&:hover": { background: alpha("#4965A6", 0.3) },
+                      }}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <FacebookIcon />
                     </IconButton>
                     <IconButton
                       href="https://x.com/floridadm?lang=en"
                       aria-label="X"
-                      sx={{ color: 'white', '&:hover': {background: alpha('#4965A6', 0.3)} }}
+                      sx={{
+                        color: "white",
+                        "&:hover": { background: alpha("#4965A6", 0.3) },
+                      }}
+                      target="_blank"
+                      rel="noopener noreferrer"
                     >
                       <TwitterIcon />
                     </IconButton>
                   </Stack>
                 </Box>
               )}
-              {/* Hamburger Menu - Visible on Small and Medium Screens */}
               {!isLargeScreen && (
-                <Box sx={{ display: 'flex', ml: 1, flexShrink: 0 }}>
+                <Box sx={{ display: "flex", ml: 1, flexShrink: 0 }}>
                   <IconButton
                     edge="end"
                     color="inherit"
@@ -353,212 +398,341 @@ function AppAppBar({ mode, toggleColorMode }) {
           </Toolbar>
         </Container>
       </AppBar>
-      {/* Drawer Menu */}
-<Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
-  <Box
-    sx={{
-      width: 250,
-      height: '100%',
-      display: 'flex',
-      flexDirection: 'column',
-      backgroundColor: '#7E31C8', /*background.dm*/
-    }}
-  >
-    <List component="nav" sx={{ flexGrow: 1 }}>
-      {/* Contact Us */}
-      <ListItemButton
-        onClick={() => {
-          navigate('/contact');
-          toggleDrawer(false)();
-        }}
-      >
-        <ListItemText primary="Contact Us" sx={{ color: 'white', fontSize: '1.5rem' }} />
-      </ListItemButton>
-
-      {/* About */}
-      <ListItemButton onClick={() => {
-        navigate('/about');
-        handleToggle('about');
-      }}>
-        <ListItemText primary="About" sx={{ color: 'white', fontSize: '1.5rem' }} />
-        {drawerState.about ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
-      </ListItemButton>
-      <Collapse in={drawerState.about} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          <ListItemButton sx={{ pl: 4 }} onClick={() => { navigate('/ourstory'); toggleDrawer(false)(); }}>
-            <ListItemText primary="Our Story" sx={{ color: 'white' }} />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }} onClick={() => { navigate('/cmnhospitals'); toggleDrawer(false)(); }}>
-            <ListItemText primary="CMN & UF Health" sx={{ color: 'white' }} />
-          </ListItemButton>
-          <ListItemButton sx={{ pl: 4 }} onClick={() => { navigate('/miraclefamilies'); toggleDrawer(false)(); }}>
-            <ListItemText primary="Meet our Miracle Families" sx={{ color: 'white' }} />
-          </ListItemButton>
-        </List>
-      </Collapse>
-
-      {/* Get Involved */}
-      <ListItemButton onClick={() => {
-        navigate('/get-involved');
-        handleToggle('getInvolved');
-      }}>
-        <ListItemText primary="Get Involved" sx={{ color: 'white', fontSize: '1.5rem' }} />
-        {drawerState.getInvolved ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
-      </ListItemButton>
-      <Collapse in={drawerState.getInvolved} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          {[{ label: 'Applications', url: '/applications' }, { label: 'Alumni', url: '/alumni' }, { label: 'Ambassadors', url: '/ambassadors' }, { label: 'Captain Teams', url: '/captainteams' }, { label: 'Miracle Makers', url: '/miraclemakers' }, { label: 'Emering Leaders', url: '/emergingleaders' }, { label: 'Organizations', url: '/organizations' }].map((item) => (
+      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+        <Box
+          sx={{
+            width: 250,
+            height: "100%",
+            display: "flex",
+            flexDirection: "column",
+            backgroundColor: "#7E31C8",
+          }}
+        >
+          <List component="nav" sx={{ flexGrow: 1 }}>
             <ListItemButton
-              key={item.label}
-              sx={{ pl: 4 }}
-              onClick={() => {
-                navigate(item.url);
-                toggleDrawer(false)();
-              }}
+              component={Link}
+              to="/contact"
+              onClick={toggleDrawer(false)}
             >
-              <ListItemText primary={item.label} sx={{ color: 'white' }} />
+              <ListItemText
+                primary="Contact Us"
+                sx={{ color: "white", fontSize: "1.5rem" }}
+              />
             </ListItemButton>
-          ))}
-        </List>
-      </Collapse>
 
-      {/* Events */}
-      <ListItemButton onClick={() => {
-        navigate('/events');
-        handleToggle('events');
-      }}>
-        <ListItemText primary="Events" sx={{ color: 'white', fontSize: '1.5rem' }} />
-        {drawerState.events ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
-      </ListItemButton>
-      <Collapse in={drawerState.events} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          {[{ label: 'Fall Kickoff', url: '/fallkickoff' }, { label: 'Main Event', url: '/mainevent' }, { label: 'Mini-Marathons', url: '/minimarathons' }, { label: 'Miracles in Color 5k', url: '/miracles5k' }, { label: 'Moralloween', url: '/moralloween' }, { label: 'Transform Today', url: '/transformtoday' }].map((item) => (
+            <ListItemButton sx={{ p: 0 }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  width: "100%",
+                  p: "8px 16px",
+                }}
+              >
+                <ListItemText
+                  primary="About"
+                  sx={{ color: "white", fontSize: "1.5rem", flexGrow: 1 }}
+                  component={Link}
+                  to="/about"
+                  onClick={toggleDrawer(false)}
+                />
+                <IconButton
+                  onClick={handleToggle("about")}
+                  sx={{ color: "white", p: 0.5 }}
+                >
+                  {drawerState.about ? <ExpandLess /> : <ExpandMore />}
+                </IconButton>
+              </Box>
+            </ListItemButton>
+            <Collapse in={drawerState.about} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                <ListItemButton
+                  sx={{ pl: 4 }}
+                  component={Link}
+                  to="/ourstory"
+                  onClick={toggleDrawer(false)}
+                >
+                  <ListItemText primary="Our Story" sx={{ color: "white" }} />
+                </ListItemButton>
+                <ListItemButton
+                  sx={{ pl: 4 }}
+                  component={Link}
+                  to="/cmnhospitals"
+                  onClick={toggleDrawer(false)}
+                >
+                  <ListItemText
+                    primary="CMN & UF Health"
+                    sx={{ color: "white" }}
+                  />
+                </ListItemButton>
+                <ListItemButton
+                  sx={{ pl: 4 }}
+                  component={Link}
+                  to="/miraclefamilies"
+                  onClick={toggleDrawer(false)}
+                >
+                  <ListItemText
+                    primary="Meet our Miracle Families"
+                    sx={{ color: "white" }}
+                  />
+                </ListItemButton>
+              </List>
+            </Collapse>
+
+            <ListItemButton sx={{ p: 0 }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  width: "100%",
+                  p: "8px 16px",
+                }}
+              >
+                <ListItemText
+                  primary="Get Involved"
+                  sx={{ color: "white", fontSize: "1.5rem", flexGrow: 1 }}
+                  component={Link}
+                  to="/get-involved"
+                  onClick={toggleDrawer(false)}
+                />
+                <IconButton
+                  onClick={handleToggle("getInvolved")}
+                  sx={{ color: "white", p: 0.5 }}
+                >
+                  {drawerState.getInvolved ? <ExpandLess /> : <ExpandMore />}
+                </IconButton>
+              </Box>
+            </ListItemButton>
+            <Collapse in={drawerState.getInvolved} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                {[
+                  { label: "Applications", url: "/applications" },
+                  { label: "Alumni", url: "/alumni" },
+                  { label: "Ambassadors", url: "/ambassadors" },
+                  { label: "Captain Teams", url: "/captainteams" },
+                  { label: "Miracle Makers", url: "/miraclemakers" },
+                  { label: "Emerging Leaders", url: "/emergingleaders" },
+                  { label: "Organizations", url: "/organizations" },
+                ].map((item) => (
+                  <ListItemButton
+                    key={item.label}
+                    sx={{ pl: 4 }}
+                    component={Link}
+                    to={item.url}
+                    onClick={toggleDrawer(false)}
+                  >
+                    <ListItemText
+                      primary={item.label}
+                      sx={{ color: "white" }}
+                    />
+                  </ListItemButton>
+                ))}
+              </List>
+            </Collapse>
+
+            <ListItemButton sx={{ p: 0 }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  width: "100%",
+                  p: "8px 16px",
+                }}
+              >
+                <ListItemText
+                  primary="Events"
+                  sx={{ color: "white", fontSize: "1.5rem", flexGrow: 1 }}
+                  component={Link}
+                  to="/events"
+                  onClick={toggleDrawer(false)}
+                />
+                <IconButton
+                  onClick={handleToggle("events")}
+                  sx={{ color: "white", p: 0.5 }}
+                >
+                  {drawerState.events ? <ExpandLess /> : <ExpandMore />}
+                </IconButton>
+              </Box>
+            </ListItemButton>
+            <Collapse in={drawerState.events} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                {[
+                  { label: "Fall Kickoff", url: "/fallkickoff" },
+                  { label: "Main Event", url: "/mainevent" },
+                  { label: "Mini-Marathons", url: "/minimarathons" },
+                  { label: "Miracles in Color 5k", url: "/miracles5k" },
+                  { label: "Moralloween", url: "/moralloween" },
+                  { label: "Transform Today", url: "/transformtoday" },
+                ].map((item) => (
+                  <ListItemButton
+                    key={item.label}
+                    sx={{ pl: 4 }}
+                    component={Link}
+                    to={item.url}
+                    onClick={toggleDrawer(false)}
+                  >
+                    <ListItemText
+                      primary={item.label}
+                      sx={{ color: "white" }}
+                    />
+                  </ListItemButton>
+                ))}
+              </List>
+            </Collapse>
+
+            <ListItemButton sx={{ p: 0 }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  width: "100%",
+                  p: "8px 16px",
+                }}
+              >
+                <ListItemText
+                  primary="Fundraising"
+                  sx={{ color: "white", fontSize: "1.5rem", flexGrow: 1 }}
+                  component={Link}
+                  to="/register-to-fundraise"
+                  onClick={toggleDrawer(false)}
+                />
+                <IconButton
+                  onClick={handleToggle("fundraising")}
+                  sx={{ color: "white", p: 0.5 }}
+                >
+                  {drawerState.fundraising ? <ExpandLess /> : <ExpandMore />}
+                </IconButton>
+              </Box>
+            </ListItemButton>
+            <Collapse in={drawerState.fundraising} timeout="auto" unmountOnExit>
+              <List component="div" disablePadding>
+                {[
+                  { label: "DonorDrive", url: "/donordrive" },
+                  { label: "Employee Matching", url: "/employeematching" },
+                  { label: "Fundraising Guide", url: "/fundraisingguide" },
+                  { label: "Canning", url: "/canning" },
+                  { label: "Partners", url: "/partners" },
+                ].map((item) => (
+                  <ListItemButton
+                    key={item.label}
+                    sx={{ pl: 4 }}
+                    component={Link}
+                    to={item.url}
+                    onClick={toggleDrawer(false)}
+                  >
+                    <ListItemText
+                      primary={item.label}
+                      sx={{ color: "white" }}
+                    />
+                  </ListItemButton>
+                ))}
+              </List>
+            </Collapse>
+
             <ListItemButton
-              key={item.label}
-              sx={{ pl: 4 }}
-              onClick={() => {
-                navigate(item.url);
-                toggleDrawer(false)();
-              }}
+              component={Link}
+              to="/blog"
+              onClick={toggleDrawer(false)}
             >
-              <ListItemText primary={item.label} sx={{ color: 'white' }} />
+              <ListItemText
+                primary="Blog"
+                sx={{ color: "white", fontSize: "1.5rem" }}
+              />
             </ListItemButton>
-          ))}
-        </List>
-      </Collapse>
 
-      {/* Fundraising */}
-      <ListItemButton onClick={() => {
-        navigate('/register-to-fundraise');
-        handleToggle('fundraising');
-      }}>
-        <ListItemText primary="Fundraising" sx={{ color: 'white', fontSize: '1.5rem' }} />
-        {drawerState.fundraising ? <ExpandLess sx={{ color: 'white' }} /> : <ExpandMore sx={{ color: 'white' }} />}
-      </ListItemButton>
-      <Collapse in={drawerState.fundraising} timeout="auto" unmountOnExit>
-        <List component="div" disablePadding>
-          {[{ label: 'DonorDrive', url: '/donordrive' }, { label: 'Employee Matching', url: '/employeematching' }, { label: 'Fundraising Guide', url: '/fundraisingguide' }, { label: 'Partners', url: '/partners' }].map((item) => (
             <ListItemButton
-              key={item.label}
-              sx={{ pl: 4 }}
-              onClick={() => {
-                navigate(item.url);
-                toggleDrawer(false)();
-              }}
+              component={Link}
+              to="/shop"
+              onClick={toggleDrawer(false)}
             >
-              <ListItemText primary={item.label} sx={{ color: 'white' }} />
+              <ListItemText
+                primary="Shop"
+                sx={{ color: "white", fontSize: "1.5rem" }}
+              />
             </ListItemButton>
-          ))}
-        </List>
-      </Collapse>
 
-      {/* Blog */}
-      <ListItemButton onClick={() => {
-        navigate('/blog');
-        toggleDrawer(false)();
-      }}>
-        <ListItemText primary="Blog" sx={{ color: 'white', fontSize: '1.5rem' }} />
-      </ListItemButton>
-
-      {/* Shop */}
-      <ListItemButton onClick={() => {
-        navigate('/shop');
-        toggleDrawer(false)();
-      }}>
-        <ListItemText primary="Shop" sx={{ color: 'white', fontSize: '1.5rem' }} />
-      </ListItemButton>
-
-       {/* Donate */}
-       <ListItemButton
-              onClick={() => {
-                navigate('/donate');
-                toggleDrawer(false)();
-              }}
+            <ListItemButton
+              component={Link}
+              to="/donate"
+              onClick={toggleDrawer(false)}
             >
               <ListItemText
                 primary="Donate"
-                sx={{ color: 'secondary.main', fontSize: '1.5rem' }}
+                sx={{ color: "secondary.main", fontSize: "1.5rem" }}
               />
             </ListItemButton>
 
-            {/* Register */}
             <ListItemButton
-              onClick={() => {
-                navigate('/register');
-                toggleDrawer(false)();
-              }}
+              component={Link}
+              to="/register"
+              onClick={toggleDrawer(false)}
             >
               <ListItemText
                 primary="Register"
-                sx={{ color: 'secondary.main', fontSize: '1.5rem' }}
+                sx={{ color: "secondary.main", fontSize: "1.5rem" }}
               />
             </ListItemButton>
+          </List>
 
-    </List>
-
-
-      {/* Social Media Icons at the Bottom */}
-    <Box
-      sx={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        p: 2,
-      }}
-    >
-      <Stack direction="row" spacing={1}>
-        <IconButton
-          href="https://www.instagram.com/dmatuf/?hl=en"
-          aria-label="Instagram"
-          sx={{ color: 'white', '&:hover': { background: alpha('#4965A6', 0.3) } }}
-        >
-          <InstagramIcon />
-        </IconButton>
-        <IconButton
-          href="https://www.facebook.com/floridaDM/"
-          aria-label="Facebook"
-          sx={{ color: 'white', '&:hover': { background: alpha('#4965A6', 0.3) } }}
-        >
-          <FacebookIcon />
-        </IconButton>
-        <IconButton
-          href="https://x.com/floridadm?lang=en"
-          aria-label="X"
-          sx={{ color: 'white', '&:hover': { background: alpha('#4965A6', 0.3) } }}
-        >
-          <TwitterIcon />
-        </IconButton>
-      </Stack>
-    </Box>
-  </Box>
-</Drawer>
-
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              p: 2,
+            }}
+          >
+            <Stack direction="row" spacing={1}>
+              <IconButton
+                href="https://www.instagram.com/dmatuf/?hl=en"
+                aria-label="Instagram"
+                sx={{
+                  color: "white",
+                  "&:hover": { background: alpha("#4965A6", 0.3) },
+                }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <InstagramIcon />
+              </IconButton>
+              <IconButton
+                href="https://www.facebook.com/floridaDM/"
+                aria-label="Facebook"
+                sx={{
+                  color: "white",
+                  "&:hover": { background: alpha("#4965A6", 0.3) },
+                }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FacebookIcon />
+              </IconButton>
+              <IconButton
+                href="https://x.com/floridadm?lang=en"
+                aria-label="X"
+                sx={{
+                  color: "white",
+                  "&:hover": { background: alpha("#4965A6", 0.3) },
+                }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <TwitterIcon />
+              </IconButton>
+            </Stack>
+          </Box>
+        </Box>
+      </Drawer>
     </div>
   );
 }
 
 AppAppBar.propTypes = {
-  mode: PropTypes.oneOf(['dark', 'light']).isRequired,
+  mode: PropTypes.oneOf(["dark", "light"]).isRequired,
   toggleColorMode: PropTypes.func.isRequired,
 };
 

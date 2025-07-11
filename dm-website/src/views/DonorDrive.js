@@ -9,19 +9,19 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import FAQ from "../components/FAQ";
 import DonorDrivePic from "../assets/images/pagepics/DonorDrivePic.jpg";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 
 export default function DonorDrive() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'light'
-    return localStorage.getItem('theme') || 'light';
+    return localStorage.getItem("theme") || "light";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
     setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      const newMode = prev === "dark" ? "light" : "dark";
+      localStorage.setItem("theme", newMode); // Store the new mode in localStorage
       return newMode;
     });
   };
@@ -32,12 +32,12 @@ export default function DonorDrive() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-      <PageHero imageUrl={DonorDrivePic} title="DonorDrive" />
+        <PageHero imageUrl={DonorDrivePic} title="DonorDrive" />
       </LazyLoad>
       <Container
         sx={{
-          pt: { xs: 2, sm: 6 },
-          pb: { xs: 2, sm: 8 },
+          pt: { xs: 4, sm: 6 },
+          pb: { xs: 4, sm: 8 },
           display: "flex",
           flexDirection: "column",
           alignItems: "left",
@@ -52,13 +52,22 @@ export default function DonorDrive() {
         >
           <Typography variant="body1" gutterBottom color="text.secondary">
             UF Health Shands Children’s Hospital is continuing to use
-            <span style={{ color: '#7E31C8', fontWeight: 'bold' }}> DonorDrive</span><span style={{ color: '#7E31C8', fontWeight: 'bold' }}>, an online fundraising platform used widely by Children’s
-            Miracle Network Hospitals, for its Dance Marathon programs.</span> Dance
-            Marathon at the University of Florida’s Fundraisers will be creating
-            DonorDrive accounts to begin fundraising for DM at UF 2026.
-            <span style={{ color: '#FFC46E', fontWeight: 'bold' }}> DonorDrive is safe and easy to use</span>, and was utilized by UF Health
-            Shands Children’s Hospital this past year. To create a fundraising
-            page, register using this {""}
+            <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+              {" "}
+              DonorDrive
+            </span>
+            <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+              , an online fundraising platform used widely by Children’s Miracle
+              Network Hospitals, for its Dance Marathon programs.
+            </span>{" "}
+            Dance Marathon at the University of Florida’s Fundraisers will be
+            creating DonorDrive accounts to begin fundraising for DM at UF 2026.
+            <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+              {" "}
+              DonorDrive is safe and easy to use
+            </span>
+            , and was utilized by UF Health Shands Children’s Hospital this past
+            year. To create a fundraising page, register using this {""}
             <Link
               href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.event&eventID=6292"
               target="_blank"

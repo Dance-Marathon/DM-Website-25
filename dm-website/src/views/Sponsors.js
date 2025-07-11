@@ -1,15 +1,15 @@
-import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import AppAppBar from '../components/AppAppBar';
-import getLPTheme from '../getLPTheme';
-import Footer from '../components/Footer';
-import { Container, Typography, Box, Link, Grid } from '@mui/material';
+import * as React from "react";
+import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import AppAppBar from "../components/AppAppBar";
+import getLPTheme from "../getLPTheme";
+import Footer from "../components/Footer";
+import { Container, Typography, Box, Link, Grid } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
-import PageHero from '../components/PageHero';
+import PageHero from "../components/PageHero";
 import SponsorshipPacket from "../assets/pdfs/SponsorshipPacket.pdf";
 import SponsorPic from "../assets/images/pagepics/PartnersHero.jpg";
-import LazyLoad from 'react-lazyload';
+import LazyLoad from "react-lazyload";
 
 import Sponsor1 from "../assets/images/sponsors/Sponsor (1).png";
 import Sponsor2 from "../assets/images/sponsors/Sponsor (2).png";
@@ -164,14 +164,14 @@ const sponsors = [
 export default function Sponsors() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'light'
-    return localStorage.getItem('theme') || 'light';
+    return localStorage.getItem("theme") || "light";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
     setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      const newMode = prev === "dark" ? "light" : "dark";
+      localStorage.setItem("theme", newMode); // Store the new mode in localStorage
       return newMode;
     });
   };
@@ -181,66 +181,104 @@ export default function Sponsors() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-      <PageHero imageUrl={SponsorPic} title='Partners' sx={{ fontFamily: "CasaPinada"}}/>
+        <PageHero
+          imageUrl={SponsorPic}
+          title="Partners"
+          sx={{ fontFamily: "CasaPinada" }}
+        />
       </LazyLoad>
       <Container
         sx={{
-          pt: { xs: 2, sm: 6 },
-          pb: { xs: 2, sm: 8 },
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'left',
+          pt: { xs: 4, sm: 6 },
+          pb: { xs: 4, sm: 8 },
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "left",
           gap: { xs: 2, sm: 3 },
         }}
       >
         <Box
           sx={{
-            width: { sm: '100%', md: '100%' },
-            textAlign: { sm: 'left', md: 'left' },
+            width: { sm: "100%", md: "100%" },
+            textAlign: { sm: "left", md: "left" },
           }}
-       >
-      </Box>
+        ></Box>
 
-      {/* Description */}
-      <Typography variant="body1" color="text.secondary"  marginTop={-2}>
-      <span style={{ color: '#FFC46E', fontWeight: 'bold' }}>Dance Marathon at UF is so thankful for the support of our generous Partners!</span> DM at UF offers many different ways to get involved as a Partner for our cause, each with various benefits to show our appreciation for your support. <span style={{ color: '#7E31C8', fontWeight: 'bold' }}>Our Partnerships Team will connect your company with our Organization</span>, along with access to an extensive network of supporters of all ages and demographics.
-      </Typography>
+        {/* Description */}
+        <Typography variant="body1" color="text.secondary" marginTop={-2}>
+          <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+            Dance Marathon at UF is so thankful for the support of our generous
+            Partners!
+          </span>{" "}
+          DM at UF offers many different ways to get involved as a Partner for
+          our cause, each with various benefits to show our appreciation for
+          your support.{" "}
+          <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+            Our Partnerships Team will connect your company with our
+            Organization
+          </span>
+          , along with access to an extensive network of supporters of all ages
+          and demographics.
+        </Typography>
 
-      {/* Link to sponsorship opportunities */}
-      <Typography variant="body1" color="text.secondary"  marginTop={0}>
-        For more information, view our partnership opportunities{' '}
-        <Link href={SponsorshipPacket} underline="always">
-          here
-        </Link>.
-      </Typography>
+        {/* Link to sponsorship opportunities */}
+        <Typography variant="body1" color="text.secondary" marginTop={0}>
+          For more information, view our partnership opportunities{" "}
+          <Link href={SponsorshipPacket} underline="always">
+            here
+          </Link>
+          .
+        </Typography>
 
-      {/* Contact Information */}
-      <Typography variant="body1" color="text.secondary"  marginTop={0}>
-        If you have any questions, please contact our Partnership Overall Director,{' '}
-        <Link href="mailto:jranson@floridadm.org" underline="always">
-          Jaxen Ranson
-        </Link>, at jranson@floridadm.org.
-      </Typography>
+        {/* Contact Information */}
+        <Typography variant="body1" color="text.secondary" marginTop={0}>
+          If you have any questions, please contact our Partnership Overall
+          Director,{" "}
+          <Link href="mailto:jranson@floridadm.org" underline="always">
+            Jaxen Ranson
+          </Link>
+          , at jranson@floridadm.org.
+        </Typography>
 
-      {/* Sponsors Section */}
-      <Typography variant="h3" color="text.secondary" align="center" gutterBottom sx={{marginTop: 4}}>
-      <span style={{ color: '#7E31C8', fontWeight: 'bold' }}>Our 2025 Partners</span>
-      </Typography>
-      <LazyLoad height={200} offset={100} once>
-      {/* Grid of sponsor logos */}
-      <Grid container spacing={2} justifyContent="center" alignItems="center">
-        {sponsors.map((sponsor, index) => (
-          <Grid item xs={12} sm={6} md={3} key={index} sx={{ textAlign: 'center' }}>
-            <Box
-              component="img"
-              src={sponsor.logo}
-              sx={{ maxWidth: '75%', height: 'auto', mb: 2 }}
-            />
+        {/* Sponsors Section */}
+        <Typography
+          variant="h3"
+          color="text.secondary"
+          align="center"
+          gutterBottom
+          sx={{ marginTop: 4 }}
+        >
+          <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+            Our 2025 Partners
+          </span>
+        </Typography>
+        <LazyLoad height={200} offset={100} once>
+          {/* Grid of sponsor logos */}
+          <Grid
+            container
+            spacing={2}
+            justifyContent="center"
+            alignItems="center"
+          >
+            {sponsors.map((sponsor, index) => (
+              <Grid
+                item
+                xs={12}
+                sm={6}
+                md={3}
+                key={index}
+                sx={{ textAlign: "center" }}
+              >
+                <Box
+                  component="img"
+                  src={sponsor.logo}
+                  sx={{ maxWidth: "75%", height: "auto", mb: 2 }}
+                />
+              </Grid>
+            ))}
           </Grid>
-        ))}
-      </Grid>
-      </LazyLoad>
-        </Container>
+        </LazyLoad>
+      </Container>
       <Footer />
     </ThemeProvider>
   );

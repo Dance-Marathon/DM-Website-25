@@ -1,27 +1,26 @@
-import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import AppAppBar from '../components/AppAppBar';
-import getLPTheme from '../getLPTheme';
-import Footer from '../components/Footer';
-import { Container, Typography, Box, Link } from '@mui/material';
+import * as React from "react";
+import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
+import AppAppBar from "../components/AppAppBar";
+import getLPTheme from "../getLPTheme";
+import Footer from "../components/Footer";
+import { Container, Typography, Box, Link } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
-import PageHero from '../components/PageHero';
+import PageHero from "../components/PageHero";
 import AlumniPic from "../assets/images/pagepics/AlumniPic.jpg";
-import LazyLoad from 'react-lazyload';
-
+import LazyLoad from "react-lazyload";
 
 export default function Alumni() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'light'
-    return localStorage.getItem('theme') || 'light';
+    return localStorage.getItem("theme") || "light";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
   const toggleColorMode = () => {
     setMode((prev) => {
-      const newMode = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('theme', newMode); // Store the new mode in localStorage
+      const newMode = prev === "dark" ? "light" : "dark";
+      localStorage.setItem("theme", newMode); // Store the new mode in localStorage
       return newMode;
     });
   };
@@ -31,54 +30,85 @@ export default function Alumni() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-      <PageHero imageUrl={AlumniPic} title='Alumni' />
+        <PageHero imageUrl={AlumniPic} title="Alumni" />
       </LazyLoad>
       <Container
         sx={{
-          pt: { xs: 2, sm: 6 },
-          pb: { xs: 2, sm: 8 },
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'left',
+          pt: { xs: 4, sm: 6 },
+          pb: { xs: 4, sm: 8 },
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "left",
           gap: { xs: 2, sm: 3 },
         }}
       >
         <Box
           sx={{
-            width: { sm: '100%', md: '100%' },
-            textAlign: { sm: 'left', md: 'left' },
+            width: { sm: "100%", md: "100%" },
+            textAlign: { sm: "left", md: "left" },
           }}
         >
-
           {/* <Typography variant="h4" color='#233563' gutterBottom>About</Typography> */}
           <Typography variant="body1" color="text.secondary" paragraph>
-            Since 1995, Dance Marathon at UF has raised over $33 million for UF Health Shands Children's Hospital, our local Children’s Miracle Network Hospital. Thanks to your dedication and support throughout your college years, we have become the most successful student-run philanthropy in the southeastern United States.
+            Since 1995, Dance Marathon at UF has raised over $33 million for UF
+            Health Shands Children's Hospital, our local Children’s Miracle
+            Network Hospital. Thanks to your dedication and support throughout
+            your college years, we have become the most successful student-run
+            philanthropy in the southeastern United States.
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Dance Marathon at UF knows that the Gator Nation is everywhere. Formed in 2013, <span style={{color: '#7E31C8', fontWeight: 'bold'}}>Dance Marathon at UF Alumni</span> gives alumni across the country the opportunity to continue to give back and stay involved with their alma mater.
+            Dance Marathon at UF knows that the Gator Nation is everywhere.
+            Formed in 2013,{" "}
+            <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+              Dance Marathon at UF Alumni
+            </span>{" "}
+            gives alumni across the country the opportunity to continue to give
+            back and stay involved with their alma mater.
           </Typography>
         </Box>
 
         <Box mt={0}>
-          <Typography variant="h5" color='#7E31C8' gutterBottom>Get Involved!</Typography>
-          <Typography variant="body1" color="text.secondary" paragraph>
-            Dance Marathon at UF Alumni continue to support our cause and spread our movement, even after they graduate. 
+          <Typography variant="h5" color="#7E31C8" gutterBottom>
+            Get Involved!
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Follow us on <Link href="https://www.instagram.com/dmatufalumni" target="_blank">Instagram</Link>, and be sure to like the official page for <Link href="https://www.facebook.com/dmatufalumni" target="_blank">Dance Marathon at UF Alumni on Facebook</Link> to stay connected with the rest of your DM at UF Alumni family.
+            Dance Marathon at UF Alumni continue to support our cause and spread
+            our movement, even after they graduate.
+          </Typography>
+          <Typography variant="body1" color="text.secondary" paragraph>
+            Follow us on{" "}
+            <Link href="https://www.instagram.com/dmatufalumni" target="_blank">
+              Instagram
+            </Link>
+            , and be sure to like the official page for{" "}
+            <Link href="https://www.facebook.com/dmatufalumni" target="_blank">
+              Dance Marathon at UF Alumni on Facebook
+            </Link>{" "}
+            to stay connected with the rest of your DM at UF Alumni family.
           </Typography>
         </Box>
 
         <Box mt={0}>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Join or support the <Link href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.team&teamID=70397" target="_blank">Dance Marathon Alumni Fundraising Team</Link>.
+            Join or support the{" "}
+            <Link
+              href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.team&teamID=70397"
+              target="_blank"
+            >
+              Dance Marathon Alumni Fundraising Team
+            </Link>
+            .
           </Typography>
-          <Typography variant="body1" sx={{ color: 'text.secondary', marginBottom: 2 }}>
-          If you have any questions, please feel free to email them to {' '}
-              <Link href="mailto:alumni@floridadm.org" sx={{ color: '#1a73e8' }}>
-                alumni@floridadm.org
-              </Link>.
-            </Typography>
+          <Typography
+            variant="body1"
+            sx={{ color: "text.secondary", marginBottom: 2 }}
+          >
+            If you have any questions, please feel free to email them to{" "}
+            <Link href="mailto:alumni@floridadm.org" sx={{ color: "#1a73e8" }}>
+              alumni@floridadm.org
+            </Link>
+            .
+          </Typography>
         </Box>
 
         {/* <Box mt={4}>
@@ -140,7 +170,6 @@ export default function Alumni() {
             </>
           }
         /> */}
-
       </Container>
       <Footer />
     </ThemeProvider>
