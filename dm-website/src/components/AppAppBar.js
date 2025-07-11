@@ -238,7 +238,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                     { label: "Canning", url: "/canning" },
                     { label: "Partners", url: "/partners" },
                   ]}
-                  menuURL={"/register-to-fundraising"}
+                  menuURL={"/register-to-fundraise"}
                   sx={{
                     ...menuTheme,
                   }}
