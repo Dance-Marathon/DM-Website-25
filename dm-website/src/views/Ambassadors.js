@@ -8,7 +8,7 @@ import { Container, Typography, Box, Link, Grid } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import "../App.css";
-import AmbassadorGuidelines from "../assets/pdfs/2024 Ambassador Guidelines.pdf";
+import AmbassadorGuidelines from "../assets/pdfs/2026 Ambassador Guidelines.pdf";
 import AmbassadorsPic from "../assets/images/pagepics/AmbassadorsHero.jpg";
 import LazyLoad from "react-lazyload";
 
