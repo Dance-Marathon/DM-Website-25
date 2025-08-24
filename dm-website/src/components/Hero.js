@@ -35,7 +35,7 @@ export default function Hero() {
           pointerEvents: "none",
         }}
       >
-        <source src="/home_video_summer25.mp4" type="video/mp4" />
+        <source src="/home_video.mp4" type="video/mp4" />
       </video>
       {/* Centered text container */}
       <Box
@@ -92,20 +92,6 @@ export default function Hero() {
             }}
           >
             University of Florida
-          </Typography>
-        </Box>
-        <Box>
-          <Typography
-            variant="h1"
-            component="div"
-            sx={{
-              fontFamily: "CasaPinada",
-              fontWeight: 300,
-              fontSize: "clamp(2rem, 4vw, 5rem)",
-              textShadow: "4px 4px 4px rgba(0, 0, 0, 0.5)",
-            }}
-          >
-            @FeelTheMagic
           </Typography>
         </Box>
       </Box>

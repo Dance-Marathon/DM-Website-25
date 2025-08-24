@@ -50,9 +50,9 @@ export default function FundraisingGuide() {
           alignItems: "center",
         }}
       >
-        <Box mt={2} width="100%" display="flex" justifyContent="center">
+        {/* <Box mt={2} width="100%" display="flex" justifyContent="center"> */}
           {/* Desktop Image */}
-          <Box
+          {/* <Box
             component="img"
             src={SummerSpellbook1}
             alt="Summer Spellbook Desktop"
@@ -62,10 +62,10 @@ export default function FundraisingGuide() {
               height: "auto",
               mb: 2,
             }}
-          />
+          /> */}
 
           {/* Mobile Image */}
-          <Box
+          {/* <Box
             component="img"
             src={SummerSpellbook2}
             alt="Summer Spellbook Mobile"
@@ -76,7 +76,7 @@ export default function FundraisingGuide() {
               mb: 2,
             }}
           />
-        </Box>
+        </Box> */}
         <Typography variant="body1" color="text.secondary" paragraph>
           Take a look at all the different ways you can fundraise with Dance
           Marathon at UF!{" "}
@@ -235,9 +235,9 @@ export default function FundraisingGuide() {
             </AccordionDetails>
           </Accordion>
         </Box>
-        <Box mt={2} width="100%" display="flex" justifyContent="center">
+        {/* <Box mt={2} width="100%" display="flex" justifyContent="center"> */}
           {/* Desktop Image */}
-          <Box
+          {/* <Box
             component="img"
             src={SummerIncentives1}
             alt="Summer Incentives Desktop"
@@ -246,10 +246,10 @@ export default function FundraisingGuide() {
               maxWidth: "100%",
               height: "auto",
             }}
-          />
+          /> */}
 
           {/* Mobile Image */}
-          <Box
+          {/* <Box
             component="img"
             src={SummerIncentives2}
             alt="Summer Incentives Mobile"
@@ -259,7 +259,7 @@ export default function FundraisingGuide() {
               height: "auto",
             }}
           />
-        </Box>
+        </Box> */}
       </Container>
       <Footer />
     </ThemeProvider>
