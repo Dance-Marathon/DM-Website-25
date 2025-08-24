@@ -12,6 +12,7 @@ import LazyLoad from "react-lazyload";
 
 import ManagerApplication from "../assets/pdfs/2026 Manager Application.pdf";
 import OverallApplication from "../assets/pdfs/2026 Overall Director Application.pdf";
+import CaptainApplication from "../assets/pdfs/2026 Captain Application.pdf"
 
 import ApplicationsPic from "../assets/images/pagepics/Applications.jpg";
 
@@ -156,15 +157,25 @@ export default function Applications() {
           >
             Captain Application
           </Typography>
-          <Typography
+         <Typography
             variant="body1"
             gutterBottom
             color="text.secondary"
             marginBottom={3.5}
           >
-            Opening Soon
+            Apply{" "}
+            <Link href="https://ufl.qualtrics.com/jfe/form/SV_3R9Ww4ZdgfkIqaO" target="_blank">
+              here
+            </Link>
+            ! Applications are open until September 6th at 5pm.
+            <Typography paddingTop={1}>
+            See{" "}
+            <Link href={CaptainApplication} target="_blank">
+              here 
+            </Link>
+             {" "} for application questions.
+            </Typography>
           </Typography>
-
           <Typography
             variant="body1"
             sx={{ fontWeight: "bold", color: "#7E31C8" }}
@@ -178,7 +189,11 @@ export default function Applications() {
             color="text.secondary"
             marginBottom={3.5}
           >
-            Opening Soon
+            Apply{" "}
+            <Link href="https://ufl.qualtrics.com/jfe/form/SV_6RPQoQv67KBdFFc" target="_blank">
+              here
+            </Link>
+            ! Applications are open until September 13th at 5pm.
           </Typography>
 
           <Typography
@@ -202,26 +217,26 @@ export default function Applications() {
             </Link>
             .
           </Typography> */}
-          {/* <Typography
-            variant="body1"
-            gutterBottom
-            color="text.secondary"
-            marginBottom={3.5}
-          >
-            Apply{" "}
-            <Link href="https://ufl.qualtrics.com/jfe/form/SV_afwHoRhmLToPESa" sx={{ color: "#1a73e8" }}>
-              here
-            </Link>
-            !
-          </Typography> */}
           <Typography
             variant="body1"
             gutterBottom
             color="text.secondary"
             marginBottom={3.5}
           >
-            Closed
+            Apply{" "}
+            <Link href="https://ufl.qualtrics.com/jfe/form/SV_afwHoRhmLToPESa">
+              here
+            </Link>
+            ! Applications are open until September 13th at 5pm.
           </Typography>
+          {/* <Typography
+            variant="body1"
+            gutterBottom
+            color="text.secondary"
+            marginBottom={3.5}
+          >
+            Closed
+          </Typography> */}
 
           <Typography
             variant="body1"

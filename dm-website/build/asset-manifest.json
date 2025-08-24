@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.76817d2f.js",
+    "main.js": "/static/js/main.942ae35b.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -26,6 +26,7 @@
     "static/media/SummerIncentives2.png": "/static/media/SummerIncentives2.803999991b0e5fed00db.png",
     "static/media/SummerSpellbook2.png": "/static/media/SummerSpellbook2.79d04be1892386cc8129.png",
     "static/media/how-to-guide.pdf": "/static/media/how-to-guide.6a410f804c228a2204e3.pdf",
+    "static/media/2026 Captain Application.pdf": "/static/media/2026 Captain Application.d8c6c7b4153989438ade.pdf",
     "static/media/CMNW-9.pdf": "/static/media/CMNW-9.b433bffe759581bd14d7.pdf",
     "static/media/W-9_Shands_HealthCare.pdf": "/static/media/W-9_Shands_HealthCare.98820ebe7c6862afbf81.pdf",
     "static/media/Sponsor (35).png": "/static/media/Sponsor (35).c1d8ae71b4d6ab33f86d.png",
@@ -335,11 +336,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.76817d2f.js.map": "/static/js/main.76817d2f.js.map",
+    "main.942ae35b.js.map": "/static/js/main.942ae35b.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.76817d2f.js"
+    "static/js/main.942ae35b.js"
   ]
 }
