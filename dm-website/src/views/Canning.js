@@ -42,7 +42,7 @@ export default function Canning() {
           alignItems: "left",
         }}
       >
-        <Typography variant="h6" color="#FFC46E" gutterBottom>
+        <Typography variant="h6" color="#e2883c" gutterBottom>
           What is it?
         </Typography>
         <Typography variant="body1" color="text.secondary" paragraph>
@@ -50,14 +50,14 @@ export default function Canning() {
           places or businesses to benefit Dance Marathon at the University of
           Florida and UF Health Shands Children’s Hospital.
         </Typography>
-        <Typography variant="h6" color="#FFC46E" gutterBottom>
+        <Typography variant="h6" color="#e2883c" gutterBottom>
           How can I benefit?
         </Typography>
         <Typography variant="body1" color="text.secondary" paragraph>
           The money you raise via these efforts can be credited to your personal
           fundraising page as you look to raise more money and awareness!
         </Typography>
-        <Typography variant="h6" color="#FFC46E" gutterBottom>
+        <Typography variant="h6" color="#e2883c" gutterBottom>
           How to do it?
         </Typography>
         <Typography variant="body1" color="text.secondary" paragraph>
@@ -76,7 +76,7 @@ export default function Canning() {
           leave the business about donating to your cause. No donation is too
           small and every amount helps make miracles!
         </Typography>
-        <Typography variant="h6" color="#FFC46E" gutterBottom>
+        <Typography variant="h6" color="#e2883c" gutterBottom>
           What's next?
         </Typography>
         <Typography variant="body1" color="text.secondary" paragraph>

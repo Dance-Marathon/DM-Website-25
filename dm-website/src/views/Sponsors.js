@@ -206,14 +206,14 @@ export default function Sponsors() {
 
         {/* Description */}
         <Typography variant="body1" color="text.secondary" marginTop={-2}>
-          <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+          <span style={{ color: "#e2883c", fontWeight: "bold" }}>
             Dance Marathon at UF is so thankful for the support of our generous
             Partners!
           </span>{" "}
           DM at UF offers many different ways to get involved as a Partner for
           our cause, each with various benefits to show our appreciation for
           your support.{" "}
-          <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+          <span style={{ color: "#233563", fontWeight: "bold" }}>
             Our Partnerships Team will connect your company with our
             Organization
           </span>
@@ -248,7 +248,7 @@ export default function Sponsors() {
           gutterBottom
           sx={{ marginTop: 4 }}
         >
-          <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+          <span style={{ color: "#233563", fontWeight: "bold" }}>
             Our 2025 Partners
           </span>
         </Typography>

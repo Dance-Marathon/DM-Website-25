@@ -89,7 +89,7 @@ function AppAppBar({ mode, toggleColorMode }) {
               flexWrap: "nowrap",
               overflow: "hidden",
               borderRadius: "999px",
-              bgcolor: "#7E31C870",
+              bgcolor: "#23356370",
               backdropFilter: "blur(24px)",
               maxHeight: 40,
               width: "100%",
@@ -279,12 +279,12 @@ function AppAppBar({ mode, toggleColorMode }) {
                   to="/donate"
                   sx={{
                     ...menuTheme,
-                    bgcolor: "#FFC46E",
+                    bgcolor: "#e2883c",
                     color: "white",
                     fontWeight: "bold",
                     ml: 1.5,
                     "&:hover": {
-                      bgcolor: "rgba(226, 136, 60, 0.9)",
+                      bgcolor: "rgba(226, 136, 60, 0.4)",
                     },
                     minWidth: 0,
                     flexShrink: 0,
@@ -300,12 +300,12 @@ function AppAppBar({ mode, toggleColorMode }) {
                   to="/register"
                   sx={{
                     ...menuTheme,
-                    bgcolor: "#FFC46E",
+                    bgcolor: "#e2883c",
                     color: "white",
                     fontWeight: "bold",
                     ml: 1.5,
                     "&:hover": {
-                      bgcolor: "rgba(226, 136, 60, 0.9)",
+                      bgcolor: "rgba(226, 136, 60, 0.4)",
                     },
                     minWidth: 0,
                     flexShrink: 0,
@@ -411,7 +411,7 @@ function AppAppBar({ mode, toggleColorMode }) {
             height: "100%",
             display: "flex",
             flexDirection: "column",
-            backgroundColor: "#7E31C8",
+            backgroundColor: "background.dm",
           }}
         >
           <List component="nav" sx={{ flexGrow: 1 }}>

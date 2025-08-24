@@ -154,7 +154,7 @@ export default function Ambassadors() {
         }}
       >
         <Typography variant="body1" color="text.secondary">
-          <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+          <span style={{ color: "#233563", fontWeight: "bold" }}>
             Organization Ambassadors
           </span>{" "}
           serve as a liaison between Dance Marathon and their respective
@@ -179,14 +179,14 @@ export default function Ambassadors() {
         <Typography
           variant="h5"
           gutterBottom
-          sx={{ color: "#7E31C8", pb: "0", mb: "0", mt: 2 }}
+          sx={{ color: "#233563", pb: "0", mb: "0", mt: 2 }}
         >
           Responsibilities
         </Typography>
         <Typography
           variant="body1"
           component="span"
-          color="#FFC46E"
+          color="#e2883c"
           marginBottom={-2}
         >
           <b>Yearlong:</b>
@@ -236,7 +236,7 @@ export default function Ambassadors() {
         <Typography
           variant="body1"
           component="span"
-          color="#FFC46E"
+          color="#e2883c"
           marginBottom={-2}
         >
           <b>During the Main Event:</b>

@@ -64,33 +64,33 @@ export default function LandingPage() {
             component="p"
             variant="subtitle2"
             align="center"
-            color="primary"
+            color="text.secondary"
           >
-            <i style={{ color: "#FFC46E" }}>
+            <i style={{ color: "#e2883c" }}>
               <b>Dance Marathon</b>
             </i>{" "}
             at the{" "}
-            <i style={{ color: "#FFC46E" }}>
+            <i style={{ color: "#e2883c" }}>
               <b>University of Florida</b>
             </i>{" "}
             is the largest student-run and highest fundraising philanthropy in
             the Southeast United States. Our mission is to strive to bring
             together the campus and community to raise funds and awareness for
             our local Children's Miracle Network Hospital,{" "}
-            <i style={{ color: "#7E31C8" }}>
+            <i style={{ color: "#233563" }}>
               <b>UF Health Shands Children's Hospital</b>
             </i>
             . We are going into our 32nd year of{" "}
-            <i style={{ color: "#FFC46E" }}>
+            <i style={{ color: "#e2883c" }}>
               <b>Dance Marathon</b>
             </i>{" "}
             at{" "}
-            <i style={{ color: "#FFC46E" }}>
+            <i style={{ color: "#e2883c" }}>
               <b>UF</b>
             </i>
             , having fundraised over $33,000,000 thus far. This past year, we
             celebrated our 31st year by raising{" "}
-            <i style={{ color: "#7E31C8" }}>
+            <i style={{ color: "#233563" }}>
               <b>$1,351,566.99!</b>
             </i>
           </Typography>
@@ -114,7 +114,7 @@ export default function LandingPage() {
                 textAlign="center"
               >
                 <Box mb={2}>
-                  <BookIcon style={{ fontSize: 50, color: "#FFC46E" }} />
+                  <BookIcon style={{ fontSize: 50, color: "#e2883c" }} />
                   <Typography variant="h5" color="secondary" gutterBottom>
                     Our Story
                   </Typography>
@@ -148,7 +148,7 @@ export default function LandingPage() {
               >
                 <Box mb={2}>
                   <LocalHospitalIcon
-                    style={{ fontSize: 50, color: "#FFC46E" }}
+                    style={{ fontSize: 50, color: "#e2883c" }}
                   />
                   <Typography variant="h5" color="secondary" gutterBottom>
                     CMN Hospitals & UF Health
@@ -181,7 +181,7 @@ export default function LandingPage() {
                 textAlign="center"
               >
                 <Box mb={2}>
-                  <FavoriteIcon style={{ fontSize: 50, color: "#FFC46E" }} />
+                  <FavoriteIcon style={{ fontSize: 50, color: "#e2883c" }} />
                   <Typography variant="h5" color="secondary" gutterBottom>
                     Miracle Families
                   </Typography>
@@ -213,7 +213,7 @@ export default function LandingPage() {
                 textAlign="center"
               >
                 <Box mb={2}>
-                  <RegisterIcon style={{ fontSize: 50, color: "#FFC46E" }} />
+                  <RegisterIcon style={{ fontSize: 50, color: "#e2883c" }} />
                   <Typography variant="h5" color="secondary" gutterBottom>
                     Register to Fundraise
                   </Typography>

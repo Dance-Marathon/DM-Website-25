@@ -54,7 +54,7 @@ export default function About() {
           }}
         >
           <Typography variant="body1" paragraph color="text.secondary">
-            <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+            <span style={{ color: "#233563", fontWeight: "bold" }}>
               The Emerging Leaders Program
             </span>{" "}
             aims to cultivate the leadership skills of new members of the Dance
@@ -90,7 +90,7 @@ export default function About() {
           variant="h5"
           align="center"
           gutterBottom
-          color="#7E31C8"
+          color="#233563"
           marginTop={2}
         >
           2026 Emerging Leaders

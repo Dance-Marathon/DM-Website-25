@@ -54,7 +54,7 @@ export default function FallKickoff() {
           <Typography color="text.secondary" sx={{ marginBottom: 6 }}>
             <p>
               DM at UF hosted its first annual{" "}
-              <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+              <span style={{ color: "#233563", fontWeight: "bold" }}>
                 Kickoff Event
               </span>{" "}
               in 2021! We are excited to continue this event for many years to

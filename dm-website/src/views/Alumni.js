@@ -59,7 +59,7 @@ export default function Alumni() {
           <Typography variant="body1" color="text.secondary" paragraph>
             Dance Marathon at UF knows that the Gator Nation is everywhere.
             Formed in 2013,{" "}
-            <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+            <span style={{ color: "#233563", fontWeight: "bold" }}>
               Dance Marathon at UF Alumni
             </span>{" "}
             gives alumni across the country the opportunity to continue to give
@@ -68,7 +68,7 @@ export default function Alumni() {
         </Box>
 
         <Box mt={0}>
-          <Typography variant="h5" color="#7E31C8" gutterBottom>
+          <Typography variant="h5" color="#233563" gutterBottom>
             Get Involved!
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>

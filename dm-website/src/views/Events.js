@@ -64,7 +64,7 @@ export default function Events() {
             Dance Marathon is a{" "}
             <Typography
               component="span"
-              sx={{ fontWeight: "bold", color: "#FFC46E" }}
+              sx={{ fontWeight: "bold", color: "#e2883c" }}
             >
               yearlong commitment
             </Typography>{" "}
@@ -80,7 +80,7 @@ export default function Events() {
           <Typography
             variant="body1"
             gutterBottom
-            sx={{ color: "#FFC46E", fontWeight: "bold", marginTop: 2 }}
+            sx={{ color: "#e2883c", fontWeight: "bold", marginTop: 2 }}
           >
             Your involvement in these events is what makes them successful!
           </Typography>

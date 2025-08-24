@@ -109,14 +109,14 @@ const getDesignTokens = (mode) => ({
       }),
     },
     secondary: {
-      light: gold[400],
-      main: gold[500],
-      dark: gold[800],
-      accent: gold[400],
+      light: secondary[400],
+      main: secondary[500],
+      dark: secondary[800],
+      accent: secondary[400],
       ...(mode === 'dark' && {
-        light: gold[400],
-        main: gold[500],
-        dark: gold[900],
+        light: secondary[400],
+        main: secondary[500],
+        dark: secondary[900],
       }),
     },
     warning: {

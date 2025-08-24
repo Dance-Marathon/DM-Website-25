@@ -80,7 +80,7 @@ export default function FundraisingGuide() {
         <Typography variant="body1" color="text.secondary" paragraph>
           Take a look at all the different ways you can fundraise with Dance
           Marathon at UF!{" "}
-          <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+          <span style={{ color: "#e2883c", fontWeight: "bold" }}>
             Whether you ask friends and family to support you, showcase your
             passion on social media, participate in canning, or volunteer your
             time for donations, there are so many ways to fundraise for DM at
@@ -93,7 +93,7 @@ export default function FundraisingGuide() {
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography
                 variant="h5"
-                color="#7E31C8"
+                color="#233563"
                 gutterBottom
                 marginTop={1}
               >
@@ -176,22 +176,22 @@ export default function FundraisingGuide() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography variant="h5" color="#7E31C8" gutterBottom>
+              <Typography variant="h5" color="#233563" gutterBottom>
                 Reaching Out
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography variant="h6" color="#FFC46E" gutterBottom>
+              <Typography variant="h6" color="#e2883c" gutterBottom>
                 Letters and Emails
               </Typography>
               <Typography variant="body1" color="text.secondary" paragraph>
-                <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+                <span style={{ color: "#233563", fontWeight: "bold" }}>
                   Why?
                 </span>{" "}
                 - Adds a personal touch to your fundraising request.
               </Typography>
               <Typography variant="body1" color="text.secondary" paragraph>
-                <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+                <span style={{ color: "#233563", fontWeight: "bold" }}>
                   Tips to a better response
                 </span>{" "}
                 - Personalize your message and tell the story that brought you
@@ -199,7 +199,7 @@ export default function FundraisingGuide() {
                 this cause and that devotion will shine through your efforts.
               </Typography>
               <Typography variant="body1" color="text.secondary" paragraph>
-                <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+                <span style={{ color: "#233563", fontWeight: "bold" }}>
                   A great way to say thanks for becoming part of the DM family!
                 </span>
               </Typography>
@@ -209,7 +209,7 @@ export default function FundraisingGuide() {
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography
                 variant="h5"
-                color="#7E31C8"
+                color="#233563"
                 gutterBottom
                 marginTop={1}
               >

@@ -49,12 +49,12 @@ function HorizontalTeamCard({ image, name, position, email }) {
           justifyContent: "center",
         }}
       >
-        <Typography variant="h6" color="#7E31C8" fontWeight="bold">
+        <Typography variant="h6" color="primary" fontWeight="bold">
           {name}
         </Typography>
         <Typography
           variant="body2"
-          color="#7E31C8"
+          color="primary"
           sx={{ fontSize: "0.8rem", mb: 0.5 }}
         >
           {position.label}
@@ -65,7 +65,7 @@ function HorizontalTeamCard({ image, name, position, email }) {
           variant="caption"
           sx={{
             fontSize: "0.6rem",
-            color: "#7E31C8",
+            color: "secondary",
             whiteSpace: "nowrap", // Keep text on a single line
             overflow: "hidden", // Hide any overflowing text
             textOverflow: "ellipsis", // Add "..." for truncated text

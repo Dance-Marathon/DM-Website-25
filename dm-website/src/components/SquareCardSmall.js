@@ -64,7 +64,7 @@ const SquareCardSmall = ({ image, title, hoverText, link }) => {
         left="0px"
         width="100%"
         height="20%"
-        backgroundColor="#7E31C880" /*rgba(35, 53, 99, 0.75)*/
+        backgroundColor="rgba(35, 53, 99, 0.75)"
         padding="5px 10px"
         display="flex"
         justifyContent="center"

@@ -63,14 +63,14 @@ export default function About() {
             funds and awareness for Children's Miracle Network Hospitals for the
             duration of the event. In the 31 years of Dance Marathon at UF's
             existence, we have{" "}
-            <b style={{ color: "#FFC46E" }}>raised more than $33 million</b>,
+            <b style={{ color: "#e2883c" }}>raised more than $33 million</b>,
             making it{" "}
-            <b style={{ color: "#7E31C8" }}>
+            <b style={{ color: "#233563" }}>
               the most successful student-run philanthropy in the Southeastern
               United States
             </b>
             . In 2024, DM at UF raised a grand total of{" "}
-            <b style={{ color: "#FFC46E" }}>$1,351,566.99</b> for UF Health
+            <b style={{ color: "#e2883c" }}>$1,351,566.99</b> for UF Health
             Shands Children's Hospital, our local Children’s Miracle Network
             Hospital.
           </Typography>
@@ -80,7 +80,7 @@ export default function About() {
             66 counties in Florida, 49 other states, and 7 other countries.
             There were 18,586 telehealth visits, 40,408 ER visits, and 359,419
             clinic visits.{" "}
-            <b style={{ color: "#7E31C8" }}>
+            <b style={{ color: "#233563" }}>
               All of the funds raised by DM at UF go directly to purchasing
               state-of-the-art medical equipment, enhancements to make the
               children’s stay at the hospital more enjoyable, and funding for
@@ -102,8 +102,8 @@ export default function About() {
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            <b style={{ color: "#7E31C8" }}>
-              As we head into our <b style={{ color: "#FFC46E" }}>32nd year</b>,
+            <b style={{ color: "#233563" }}>
+              As we head into our <b style={{ color: "#e2883c" }}>32nd year</b>,
               Dance Marathon at UF is excited to make even more miracles!
             </b>
           </Typography>

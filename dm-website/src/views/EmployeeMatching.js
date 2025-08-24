@@ -92,22 +92,22 @@ export default function EmployeeMatching() {
             </Link>{" "}
             with a copy of the matching gift verification form.
           </Typography>
-          <Typography color="#7E31C8" variant="h5" gutterBottom marginTop={4}>
+          <Typography color="#233563" variant="h5" gutterBottom marginTop={4}>
             Primary Donation Location
           </Typography>
-          <Typography color="#FFC46E" paragraph>
+          <Typography color="#e2883c" paragraph>
             <strong>
               UF Health Shands - Your Local Children's Miracle Network Hospital
             </strong>
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+            <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               EIN/TIN:
             </span>{" "}
             59-1943502
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+            <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               Charitable Organization Section:
             </span>
             <br />
@@ -117,7 +117,7 @@ export default function EmployeeMatching() {
             ATTN: Dance Marathon at the University of Florida
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+            <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               Address Field:
             </span>
             <br />
@@ -139,22 +139,22 @@ export default function EmployeeMatching() {
             </Link>
             .
           </Typography>
-          <Typography variant="h5" color="#7E31C8" gutterBottom marginTop={4}>
+          <Typography variant="h5" color="#233563" gutterBottom marginTop={4}>
             Alternative Donation Location
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+            <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               Children's Miracle Network National Office
             </span>
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+            <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               EIN/TIN:
             </span>{" "}
             87-0387205
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+            <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               Charitable Organization Section:
             </span>
             <br />
@@ -163,7 +163,7 @@ export default function EmployeeMatching() {
             ATTN: Dance Marathon at the University of Florida
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+            <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               Address Field:
             </span>
             <br />
@@ -184,7 +184,7 @@ export default function EmployeeMatching() {
             </Link>
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+            <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               PLEASE NOTE:
             </span>{" "}
             Notify our Finance Manager, Olivia Knier, at{" "}
@@ -201,7 +201,7 @@ export default function EmployeeMatching() {
             gutterBottom
             marginTop={4}
           >
-            <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+            <span style={{ color: "#233563", fontWeight: "bold" }}>
               Important
             </span>
           </Typography>

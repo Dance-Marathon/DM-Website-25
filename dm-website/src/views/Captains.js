@@ -277,7 +277,7 @@ export default function Captains() {
       </Typography> */}
         <Typography variant="body1" color="text.secondary" paragraph>
           Each{" "}
-          <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+          <span style={{ color: "#233563", fontWeight: "bold" }}>
             Captain Team
           </span>{" "}
           is composed of an Overall Director, Assistant Directors, and Captains.
@@ -301,7 +301,7 @@ export default function Captains() {
                 color="text.secondary"
                 marginBottom={1}
               >
-                <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+                <span style={{ color: "#233563", fontWeight: "bold" }}>
                   Responsibilities:{" "}
                 </span>
                 {team.responsibilities}
@@ -311,7 +311,7 @@ export default function Captains() {
                 color="text.secondary"
                 marginBottom={1}
               >
-                <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+                <span style={{ color: "#233563", fontWeight: "bold" }}>
                   Overall Director:{" "}
                 </span>
                 <Chip
@@ -320,7 +320,7 @@ export default function Captains() {
                 />
               </Typography>
               <Typography variant="body2" color="text.secondary" gutterBottom>
-                <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+                <span style={{ color: "#233563", fontWeight: "bold" }}>
                   Assistant Directors:
                 </span>
               </Typography>
@@ -363,7 +363,7 @@ export default function Captains() {
                 })}
               </Grid>
               <Typography variant="body2" color="text.secondary">
-                <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+                <span style={{ color: "#233563", fontWeight: "bold" }}>
                   Captains:
                 </span>
                 <Box

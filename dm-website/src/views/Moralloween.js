@@ -56,13 +56,13 @@ export default function Moralloween() {
         >
           <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
             <p>
-              <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+              <span style={{ color: "#233563", fontWeight: "bold" }}>
                 Moralloween
               </span>{" "}
               is an annual fall fundraiser put on by Dance Marathon at UF, a
               student-run philanthropy that raises funds and awareness
               year-round at UF Health Shands Children’s Hospital!{" "}
-              <span style={{ color: "#FFC46E", fontWeight: "bold" }}>
+              <span style={{ color: "#e2883c", fontWeight: "bold" }}>
                 Organizations across campus participate by creating booths with
                 activities, candy, and ways to bond with attendees and Miracle
                 Families.

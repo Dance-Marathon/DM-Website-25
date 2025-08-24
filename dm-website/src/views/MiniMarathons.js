@@ -59,7 +59,7 @@ export default function MiniMarathons() {
           >
             12 high schools around the state of Florida participate each year in
             our{" "}
-            <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+            <span style={{ color: "#233563", fontWeight: "bold" }}>
               Mini Marathon
             </span>{" "}
             program. High school students at these schools show an enthusiastic
@@ -68,7 +68,7 @@ export default function MiniMarathons() {
             programs raised a total of{" "}
             <Typography
               component="span"
-              sx={{ fontWeight: "bold", color: "#FFC46E" }}
+              sx={{ fontWeight: "bold", color: "#e2883c" }}
             >
               $190,190.99
             </Typography>{" "}
@@ -88,7 +88,7 @@ export default function MiniMarathons() {
           >
             <Typography
               component="span"
-              sx={{ fontWeight: "bold", color: "#FFC46E" }}
+              sx={{ fontWeight: "bold", color: "#e2883c" }}
             >
               We are always looking for more high schools to join our Dance
               Marathon family.
@@ -111,7 +111,7 @@ export default function MiniMarathons() {
                 variant="h5"
                 component="h2"
                 gutterBottom
-                sx={{ marginTop: 4, color: "#7E31C8" }}
+                sx={{ marginTop: 4, color: "#233563" }}
               >
                 Participating Schools
               </Typography>

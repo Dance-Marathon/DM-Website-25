@@ -82,14 +82,14 @@ export default function GetInvolved() {
             component={Link}
             to="/applications"
             sx={{
-              backgroundColor: "#7E31C8",
+              backgroundColor: "rgba(35, 53, 99, 0.85)",
               color: (theme) => theme.palette.primary.contrastText,
               borderRadius: "50px",
               transition: "background-color 0.3s ease",
               width: "100%",
               height: "80px",
               "&:hover": {
-                backgroundColor: "#FFC46E",
+                backgroundColor: "rgba(226, 136, 60, 0.85)",
               },
             }}
           >

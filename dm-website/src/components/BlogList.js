@@ -208,7 +208,7 @@ const BlogList = () => {
                 <Typography
                   variant="h5"
                   component="div"
-                  color="#7E31C8"
+                  color="primary"
                   gutterBottom
                 >
                   {blog.title}

@@ -53,7 +53,7 @@ export default function MiracleMakers() {
         </Typography>
         <Typography variant="body1" color="text.secondary">
           As a{" "}
-          <span style={{ color: "#7E31C8", fontWeight: "bold" }}>
+          <span style={{ color: "#233563", fontWeight: "bold" }}>
             Miracle Maker
           </span>
           , you will experience one of UF’s most adored traditions. Throughout
@@ -77,7 +77,7 @@ export default function MiracleMakers() {
           with any questions!
         </Typography>
 
-        <Typography variant="h5" color="#7E31C8" sx={{ marginTop: 2 }}>
+        <Typography variant="h5" color="#233563" sx={{ marginTop: 2 }}>
           Register to be a Miracle Maker
         </Typography>
         <Typography variant="body1" color="text.secondary">
@@ -108,7 +108,7 @@ export default function MiracleMakers() {
           <Link href="mailto:apolo@floridadm.org"> apolo@floridadm.org</Link>.
         </Typography>
 
-        <Typography variant="h5" color="#7E31C8" sx={{ marginTop: 2 }}>
+        <Typography variant="h5" color="#233563" sx={{ marginTop: 2 }}>
           FAQ
         </Typography>
         <Box component="ul" sx={{ pl: 3 }}>
