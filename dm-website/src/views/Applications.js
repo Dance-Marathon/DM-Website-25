@@ -248,7 +248,7 @@ export default function Applications() {
           <Typography variant="body1" color="text.secondary" gutterBottom>
             No formal application, you can sign up to be a Miracle Maker{" "}
             <Link
-              href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.event&eventID=6292"
+              href="https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=6756"
               target="_blank"
             >
               here
