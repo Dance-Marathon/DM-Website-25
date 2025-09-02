@@ -18,7 +18,7 @@ import Image2 from "../../assets/images/blogpics/FeelTheMagic/FTM2.jpg";
 export default function FeelTheMagic() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem("theme") || "dark";
+    return localStorage.getItem("theme") || "light";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
@@ -134,20 +134,50 @@ export default function FeelTheMagic() {
             Assistant Director of Communications
           </Typography>
         </Box>
-        <Box sx={{ display: "flex", justifyContent: "left", mt: 4 }}>
-          <Button
-            variant="outlined"
-            startIcon={<ArrowBackIcon />}
-            onClick={() => (window.location.href = "/blog/beyondtomorrow")}
-            sx={{
-              color: "primary.main",
-              borderColor: "white",
-              "&:hover": { borderColor: "primary.main", color: "primary.main" },
-            }}
-          >
-            Previous Blog
-          </Button>
-        </Box>
+         <Grid
+          container
+          alignItems="center"
+          justifyContent="space-between"
+          sx={{ mt: 4 }}
+        >
+          <Grid item>
+            <Button
+              variant="outlined"
+              startIcon={<ArrowBackIcon />}
+              onClick={() =>
+                (window.location.href = "/blog/beyondtomorrow")
+              }
+              sx={{
+                color: "primary.main",
+                borderColor: "white",
+                "&:hover": {
+                  borderColor: "primary.main",
+                  color: "primary.main",
+                },
+              }}
+            >
+              Previous Blog
+            </Button>
+          </Grid>
+
+          <Grid item>
+            <Button
+              variant="outlined"
+              endIcon={<ArrowForwardIcon />}
+              onClick={() => (window.location.href = "/blog/a-spark")}
+              sx={{
+                color: "primary.main",
+                borderColor: "white",
+                "&:hover": {
+                  borderColor: "primary.main",
+                  color: "primary.main",
+                },
+              }}
+            >
+              Next Blog
+            </Button>
+          </Grid>
+        </Grid>
       </Container>
       <Footer />
     </ThemeProvider>

@@ -28,6 +28,7 @@ import YesToMiracles from "../assets/images/blogpics/YesToMiracles/Yes1.jpg";
 import LifelineOfLaughter from "../assets/images/blogpics/LifelineOfLaughter/LifelineBox.jpg";
 import BeyondTomorrow from "../assets/images/blogpics/BeyondTomorrow/BT1.jpg";
 import FeelTheMagic from "../assets/images/blogpics/FeelTheMagic/FTM1.jpg";
+import Spark from "../assets/images/blogpics/Spark/Spark1.jpg";
 
 const blogs = [
   {
@@ -150,6 +151,15 @@ const blogs = [
     imageUrl: FeelTheMagic,
     linkName: "feelthemagic",
   },
+  {
+    id: 16,
+    title: "A Spark: The Beginning for Olivia Knier",
+    author: "Tori Kitchens",
+    date: "September 2, 2025",
+    imageUrl: Spark,
+    linkName: "a-spark",
+  },
+
 ];
 
 const reversedBlogs = [...blogs].reverse();

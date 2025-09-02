@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.20d561de.js",
+    "main.js": "/static/js/main.3f1efc24.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -38,6 +38,9 @@
     "static/media/Sponsor (49).png": "/static/media/Sponsor (49).dfae5c153d7cd18bb774.png",
     "static/media/cursedcam.jpg": "/static/media/cursedcam.f79085955b14778ddfc8.jpg",
     "static/media/2026 Overall Director Application.pdf": "/static/media/2026 Overall Director Application.5ad3ce6d70be5a09d2b6.pdf",
+    "static/media/Spark1.jpg": "/static/media/Spark1.421c62c36240f93009e7.jpg",
+    "static/media/Spark3.jpg": "/static/media/Spark3.4794d40e6d81c16d8fe8.jpg",
+    "static/media/Spark4.jpg": "/static/media/Spark4.c82c5c864416aa65f9eb.jpg",
     "static/media/2026 Manager Application.pdf": "/static/media/2026 Manager Application.1a5f2380ca1b49cd0fbc.pdf",
     "static/media/Kinsey.jpg": "/static/media/Kinsey.738b546761c1c25dc26e.jpg",
     "static/media/CampusClash3.jpg": "/static/media/CampusClash3.6fa36031af37656127e9.jpg",
@@ -99,6 +102,7 @@
     "static/media/BT2.jpg": "/static/media/BT2.0cd8c6031614aac5f3d8.jpg",
     "static/media/BeyondSummer1.jpg": "/static/media/BeyondSummer1.370f5089ea1f32808e3e.jpg",
     "static/media/CampusClash2.jpg": "/static/media/CampusClash2.3a516f16d2f3923cd326.jpg",
+    "static/media/Spark2.jpg": "/static/media/Spark2.e2a090b17affd764fc3f.jpg",
     "static/media/BT1.jpg": "/static/media/BT1.425fac5ca4a0a7156b22.jpg",
     "static/media/RegisterToFundraisePic.jpg": "/static/media/RegisterToFundraisePic.9a879f5bc07b034fd515.jpg",
     "static/media/GiftOfHope3.jpg": "/static/media/GiftOfHope3.9022511d6888926a12c0.jpg",
@@ -336,11 +340,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.20d561de.js.map": "/static/js/main.20d561de.js.map",
+    "main.3f1efc24.js.map": "/static/js/main.3f1efc24.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.20d561de.js"
+    "static/js/main.3f1efc24.js"
   ]
 }
