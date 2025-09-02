@@ -108,7 +108,7 @@ root.render(
         <Route path="/blog/yestomiracles" element={<YesToMiracles />} />
         <Route path="/blog/beyondtomorrow" element={<BeyondTomorrow />} />
         <Route path="/blog/feelthemagic" element={<FeelTheMagic />} />
-        <Route path="/blog/a-spark" element={<Spark />} />
+        <Route path="/blog/spark" element={<Spark />} />
         <Route path="/events" element={<Events />} />
         <Route path="/mainevent" element={<MainEvent />} />
         <Route path="/moralloween" element={<Moralloween />} />

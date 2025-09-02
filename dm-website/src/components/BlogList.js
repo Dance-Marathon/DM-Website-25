@@ -154,10 +154,10 @@ const blogs = [
   {
     id: 16,
     title: "A Spark: The Beginning for Olivia Knier",
-    author: "Tori Kitchens",
+    author: "Sofia Amoroso",
     date: "September 2, 2025",
     imageUrl: Spark,
-    linkName: "a-spark",
+    linkName: "spark",
   },
 
 ];

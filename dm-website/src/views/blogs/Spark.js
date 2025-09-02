@@ -114,7 +114,7 @@ export default function Spark() {
             variant="h6"
             sx={{ fontStyle: "italic", mt: 2, color: "text.secondary" }}
           >
-            Tori Kitchens
+            Sofia Amoroso
           </Typography>
 
           <Typography
@@ -127,7 +127,7 @@ export default function Spark() {
             Communications and Public Relations
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Assistant Director of Communications
+            Overall Director
           </Typography>
         </Box>
         <Box sx={{ display: "flex", justifyContent: "left", mt: 4 }}>
