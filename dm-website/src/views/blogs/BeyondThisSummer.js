@@ -19,7 +19,7 @@ import Image3 from "../../assets/images/blogpics/BeyondThisSummer/BeyondSummer3.
 export default function BeyondThisMoment() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem("theme") || "dark";
+    return localStorage.getItem("theme") || "light";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 

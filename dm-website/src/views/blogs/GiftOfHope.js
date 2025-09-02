@@ -19,7 +19,7 @@ import Image3 from "../../assets/images/blogpics/GiftOfHope/GiftOfHope3.jpg";
 export default function GiftOfHope() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem("theme") || "dark";
+    return localStorage.getItem("theme") || "light";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 

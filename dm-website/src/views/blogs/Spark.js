@@ -20,7 +20,7 @@ import Image4 from "../../assets/images/blogpics/Spark/Spark4.jpg";
 export default function Spark() {
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'dark'
-    return localStorage.getItem("theme") || "dark";
+    return localStorage.getItem("theme") || "light";
   });
   const LPtheme = createTheme(getLPTheme(mode));
 
