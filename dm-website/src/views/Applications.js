@@ -235,7 +235,7 @@ export default function Applications() {
             <Link href="https://ufl.qualtrics.com/jfe/form/SV_afwHoRhmLToPESa">
               here
             </Link>
-            ! Applications are open until September 15th at 12pm.
+            ! Applications are open until September 15th at 5pm.
           </Typography>
           {/* <Typography
             variant="body1"
