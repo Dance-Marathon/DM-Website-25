@@ -157,7 +157,7 @@ export default function Applications() {
           >
             Captain Application
           </Typography>
-         <Typography
+         {/* <Typography
             variant="body1"
             gutterBottom
             color="text.secondary"
@@ -175,6 +175,14 @@ export default function Applications() {
             </Link>
              {" "} for application questions.
             </Typography>
+          </Typography> */}
+            <Typography
+            variant="body1"
+            gutterBottom
+            color="text.secondary"
+            marginBottom={3.5}
+          >
+            Closed
           </Typography>
           <Typography
             variant="body1"
@@ -193,7 +201,7 @@ export default function Applications() {
             <Link href="https://ufl.qualtrics.com/jfe/form/SV_6RPQoQv67KBdFFc" target="_blank">
               here
             </Link>
-            ! Applications are open until September 13th at 5pm.
+            ! Applications are open until September 15th at 12pm.
           </Typography>
 
           <Typography
@@ -227,7 +235,7 @@ export default function Applications() {
             <Link href="https://ufl.qualtrics.com/jfe/form/SV_afwHoRhmLToPESa">
               here
             </Link>
-            ! Applications are open until September 13th at 5pm.
+            ! Applications are open until September 15th at 12pm.
           </Typography>
           {/* <Typography
             variant="body1"

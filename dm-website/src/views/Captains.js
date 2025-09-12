@@ -39,7 +39,7 @@ const teams = [
         "Tori Kitchens - Assistant Director of Communications",
         "Sarah Abisror - Assistant Director of Internal Affairs",
       ],
-      captains: [],
+      captains: ["Emma Golub","Kayla Birkenmeyer","Alexa Gingold","Keagan Miller","Isabella Bach","Shae Helmer","Abigail Buckley","Kate Wagner","Josephine Barsky","Chloe Czop","Rachel Levy","Melina Gyftopoulos","Lily Peskin","Sylvia Arguello","Molly Freeburg"],
     },
   },
   {
@@ -68,7 +68,7 @@ const teams = [
         "Eric Hengber - Assistant Director of Technology",
         "Phillip-Dylan Ndwiga - Assistant Director of Internal Affairs",
       ],
-      captains: [],
+      captains: ["Nicole Main","Joseph Laratro","Brooke Lee","Lindsey Kash","Ashley Diez","James Bruder","Ariana Brodows","Danny Gleeson","Savana Pham","Riley Floyd","Amey Dewangan","Hannah Chen","Brooke Telchin","Matthew Krusch", "Matt Greenspan"],
     },
   },
   {
@@ -87,7 +87,7 @@ const teams = [
         "Meagan Long  - Assistant Director of Internal Logistics",
         "Vivian Lopez - Assistant Director of Fundraising",
       ],
-      captains: [],
+      captains: ["Azlin Edwards","Lilia Silveira","Rebecca Weigle","Dani Primerano","Hanh (Brooke) Pham","Sarah Broe","Layna Hood","Olivia Rodriguez","Isabella Ward","Manuel-Alejandro Oquendo","Victoria Garvey","Luna Llano","Meryn Rubenstein","Avery Hearshman","Riley Gold","Oliver Hegarty","Kelli Martin","Rylee Haugh","Victoria Higuera","Ashley Erwin","Anjali Venkataraman","Kayleigh Kasinger","Brooke Tuttle","Mia Jimenez","Rowan Griese"],
     },
   },
   {
@@ -102,7 +102,7 @@ const teams = [
         "Madelyn Avergonzado - Assistant Director of Outreach",
         "Victoria Poliak - Assistant Director of Cause Connection",
       ],
-      captains: [],
+      captains: ["Riley Hearn","Hadassah Sternfeld","Emily Rodriguez","Haven Copeland","Lilly Smith","Gabriella Paredes","Stella Hurwitz","Gabrielle Monk","Mya Forbes","Addie Sptaru","Jackie Bernstein","Mollie Kron","London Taylor","Mary Grace Butler","Sara Sonnenblick","Parker Brown","Hailey Flynn","Rachel Yavner","Emma Shellard","Emma Bergren","Catherine Hanania","Sammi Leon","Jordan Smith","Haley Will","Lexi Chenven","Ava Cohen","Kaya Hall","Joshua Brandt","Amanda Grossman","Madison Daire","Elizabeth Batista","Ava Weitz","Tristan Swain","Rebecca Beer","Elle Lentz","Sophia Diaz","Shreya Shah","Avery Elofsson","Matthew Strogach","Arie Eitani"],
     },
   },
   {
@@ -115,7 +115,7 @@ const teams = [
         "Miray Eser - Assistant Director of Fundraising Development",
         "Alejandra Gomez-Pina - Assistant Director of Finance Tracking",
       ],
-      captains: [],
+      captains: ["Ashlee Thomas","Alana Shapiro","Samantha Mirer","Lindsay Nattis","Ava Fisher","Shanee Hamami","Simran Mani","Alexandra Kaye","Samantha Diamond","Mark Michna","Addison Barno","Myla Wollman","Thatcher Davis","James Bonerb"],
     },
   },
   {
@@ -130,7 +130,7 @@ const teams = [
         "Sabrina Gomez - Assistant Director of Impact Advancement",
         "Bruna Pereira - Assistant Director of Internal Relations",
       ],
-      captains: [],
+      captains: ["Sophia Pablos","Laynee Plawa","Sophia Cuna","Dana Schechter","Joshua Song","Hailey Rudman","Devan Adair","Cristyl Rodriguez","Elena Castelino","Haley Black","Olivia Murphy","Jamie Schlaen","Amelia Eipper","Eden Rothstein","Grace Nesbit","Aj Hamil","Mackenzie Gale","Piper Miller","Stella Monforte","Michayla Rinaldi","Zoe Licata","Samantha Schmid","Marella Quesnell","Gabriela Perez","Ally Mcgill","Rosselin Vera","Angela Montana","Rachel Shein"],
     },
   },
   {
@@ -146,7 +146,7 @@ const teams = [
         "Inara Drainville - Assistant Director of Finance and Sponsorships",
         "Madelyn Scaringe - Assistant Director of Marketing and Engagement",
       ],
-      captains: [],
+      captains: ["Adam Ahmad","Larah Moreira","Jacob Giambalvo","Alyssa Gottesman","Faith Giambalvo","Lindsay Hersh","Lauren Clark","Haven Wilson","Maria Victoria Sacchi","Jenna Hentrich","Kyley Holder","Kenlee Ammons","Priya Kalaria","Kaylin Djoko","Kayleigh Mccord","Ariana Bautro","Whitfield Brice","Seth Edwards","Julia Paulsen","Elizabeth Chapman","Braylee Dempsey","Sam Burghardt"],
     },
   },
   {
@@ -160,7 +160,7 @@ const teams = [
         "Avery McCormack  - Assistant Director of Recruitment",
         "Isabella Diaz-Figueroa - Assistant Director of External Relations",
       ],
-      captains: [],
+      captains: ["Amaana Quadir","Alexis Arnoldi","Kendall Mehlenbacher","Alexis Zanella","Rae Weinstein","Genesys Negroni","Francesca Abarno","Kylie Zimelman","Danielle Work","Catherine Morris","Maria Vittoria Rutherford","Rebecca Beer","Brooke Fatone","Fabiana Gorre","Abhilasha Kadel","Melanie Seremet","Raquel Christie"],
     },
   },
   {
@@ -175,7 +175,7 @@ const teams = [
         "Taylor Barrett - Assistant Director of Inventory and Mini Marathons",
         "Camile Robinson - Assistant Director of Internal Operations",
       ],
-      captains: [],
+      captains: ["Elana Gabbay","Ava Morin","Maizy Sadlo","Melina Kehres","Suhani Nihalani","Maya Digeronimo","Lauren Silva","Isabella Simon","Sofia Durante","Lillian Della Porta","Desiree Haghgoo","Alexandra Saclayan"],
     },
   },
   {
@@ -190,7 +190,7 @@ const teams = [
         "Becca Harkins - Assistant Director of Fundraising",
         "Jessica Perez - Assistant Director of Mini Marathon Coordination",
       ],
-      captains: [],
+      captains: ["Madison Slosberg","River Koile","Jimmy Davis","Lily Darnell","Emma Liss","Lily Galkin","Makenzie Cole","Emily Sanz","Carson Duke","Abbie Grace Flohr","Sophie Fakhouri","Ethan Ricahrds","Anna Timko","Reese Tierney","Janie Akers","Cassandra Musca","Hailey Turtz","Annalee Watts","Nika Forouzannia","Abigail Hennessee","Kayla Flores","Ava Esmond","Claire Fox","Sammy Miret","Liliana Remillard","Genesis Rodriguez","Ava Schulz","Emily Celestrin","Sophia Esmond","Zoe Donohoe","Alexa Levine","Gabriela Pirtea","Nina Rico","Emma Liss","Samantha Peitz","Olivia Martinez","Sasha Crowe","Emma Stein","Anagha Mathur","Meghan Wilbrett","Cecilia Coleman","Lainey Hansen"],
     },
   },
   {
@@ -205,7 +205,7 @@ const teams = [
         "Alexa Freedman - Assistant Director of Social Media",
         "Marissa Haberlin - Assistant Director of Videography",
       ],
-      captains: [],
+      captains: ["Abby Brady","Christopher Tran","Huy Doan","Mariapaz Sandoval","Dahlia Harris","Sydney Crenshaw","Lorenzo Castillo-Rios","Katie Apolo","Kayla Smith","Evan Ellis","Breanne Dinow","Miles Kamp","Sky Augusta","Victoria Noguera"],
     },
   },
   {
@@ -220,7 +220,7 @@ const teams = [
         "Suki Sidhu - Assistant Director of Student Organizations",
         "Harmon Klein - Assistant Director of Operations",
       ],
-      captains: [],
+      captains: ["Julian Morgan","Samantha Elmer","Maya Sakellarios","Corey Schwartz","Gabrielle Proulx","Abby Mccaskill","Sydney Ramsey","Sofia Smith","Jiya Bhatt","Lilly Daxon","Sean Gebert","Aishwarya Nagpal","Jeremy Simon","Alex Paul","Ella Galjanich","Brady Reis","Samantha Santo","Angelica Mir","Holly Kaplan","Mailee Minitello","Julia Glacer","Roselyn Almora","Hadassah Gusma Gusmao","Luis Carranza"],
     },
   },
   {
@@ -235,7 +235,7 @@ const teams = [
         "Courtney Carter  - Assistant Director of Events",
         "Zachary Myton - Assistant Director of Logistics",
       ],
-      captains: [],
+      captains: ["Samuel Abrams","Kayla Bigelman","Abby Chaiet","Cooper Neel","Gaven Ranson","Preston Frisch","Ciara O’Grady","Eden Gabbai","Daniel Wang","Robert Buonpastore","Jay Nemec","Violet Collins","Ari Spiegel","Amanda Demouey","Terren Smith"],
     },
   },
 ];
