@@ -191,7 +191,7 @@ export default function Applications() {
           >
             Emerging Leaders Application
           </Typography>
-          <Typography
+          {/* <Typography
             variant="body1"
             gutterBottom
             color="text.secondary"
@@ -201,7 +201,15 @@ export default function Applications() {
             <Link href="https://ufl.qualtrics.com/jfe/form/SV_6RPQoQv67KBdFFc" target="_blank">
               here
             </Link>
-            ! Applications are open until September 15th at 5pm.
+            ! Applications are open until September 15th at 12pm.
+          </Typography> */}
+                    <Typography
+            variant="body1"
+            gutterBottom
+            color="text.secondary"
+            marginBottom={3.5}
+          >
+            Closed
           </Typography>
 
           <Typography
@@ -225,7 +233,7 @@ export default function Applications() {
             </Link>
             .
           </Typography> */}
-          <Typography
+          {/* <Typography
             variant="body1"
             gutterBottom
             color="text.secondary"
@@ -235,16 +243,16 @@ export default function Applications() {
             <Link href="https://ufl.qualtrics.com/jfe/form/SV_afwHoRhmLToPESa">
               here
             </Link>
-            ! Applications are open until September 15th at 5pm.
-          </Typography>
-          {/* <Typography
+<<<<<<< HEAD
+            ! Applications are open until September 15th at 12pm. */}
+          <Typography
             variant="body1"
             gutterBottom
             color="text.secondary"
             marginBottom={3.5}
           >
             Closed
-          </Typography> */}
+          </Typography>
 
           <Typography
             variant="body1"

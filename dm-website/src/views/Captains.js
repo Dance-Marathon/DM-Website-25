@@ -160,7 +160,7 @@ const teams = [
         "Avery McCormack  - Assistant Director of Recruitment",
         "Isabella Diaz-Figueroa - Assistant Director of External Relations",
       ],
-      captains: ["Amaana Quadir","Alexis Arnoldi","Kendall Mehlenbacher","Alexis Zanella","Rae Weinstein","Genesys Negroni","Francesca Abarno","Kylie Zimelman","Danielle Work","Catherine Morris","Maria Vittoria Rutherford","Rebecca Beer","Brooke Fatone","Fabiana Gorre","Abhilasha Kadel","Melanie Seremet","Raquel Christie"],
+      captains: ["Amaana Quadir","Alexis Arnoldi","Kendall Mehlenbacher","Alexis Zanella","Rae Weinstein","Genesys Negroni","Francesca Abarno","Kylie Zimelman","Danielle Work","Catherine Morris","Maria Vittoria Rutherford","Rebecca Beer","Brooke Fatone","Fabiana Gorre","Abhilasha Kadel","Melanie Seremet","Raquel Christie","Reva Sedhain","Leah Krawczuk"],
     },
   },
   {
