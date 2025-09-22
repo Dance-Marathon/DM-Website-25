@@ -219,7 +219,7 @@ export default function Applications() {
           >
             Ambassador Application
           </Typography>
-          {/* <Typography
+          <Typography
             variant="body1"
             gutterBottom
             color="text.secondary"
@@ -232,27 +232,15 @@ export default function Applications() {
               kreader@floridadm.org
             </Link>
             .
-          </Typography> */}
+          </Typography>
           {/* <Typography
             variant="body1"
             gutterBottom
             color="text.secondary"
             marginBottom={3.5}
           >
-            Apply{" "}
-            <Link href="https://ufl.qualtrics.com/jfe/form/SV_afwHoRhmLToPESa">
-              here
-            </Link>
-<<<<<<< HEAD
-            ! Applications are open until September 15th at 12pm. */}
-          <Typography
-            variant="body1"
-            gutterBottom
-            color="text.secondary"
-            marginBottom={3.5}
-          >
             Closed
-          </Typography>
+          </Typography> */}
 
           <Typography
             variant="body1"
