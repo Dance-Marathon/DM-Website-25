@@ -28,7 +28,93 @@ export default function Ambassadors() {
   };
 
   const ambassadors = [
-    { organization: "Alpha Chi Omega", names: ["Reese Van Hoecke", "Anahi Lopez"] }, { organization: "Alpha Delta Pi", names: ["Ava Pierzynski"] }, { organization: "Alpha Epsilon Phi", names: ["Molly Marcus"] }, { organization: "Alpha Epsilon Pi ", names: ["Zachary El-Assad"] }, { organization: "Alpha Phi", names: ["Juliana Buckley", "Isabella Colosimo"] }, { organization: "AMSA", names: ["Isabella Fernandez"] }, { organization: "Catholic Gators", names: ["Angela Trinh"] }, { organization: "Chi Omega", names: ["Kylie Godino", "Katelyn Slaveski"] }, { organization: "Delta Chi", names: ["Will Curran"] }, { organization: "Delta Delta Delta", names: ["Sophia Stavrou", "Logan Mills"] }, { organization: "Delta Gamma", names: ["Madeline Clark", "Avery Donaghue"] }, { organization: "Delta Nu Zeta", names: ["Nina Hughes", "Sarah Nalley"] }, { organization: "Delta Sigma Phi", names: ["Jason Benezra", "Damir Karimov"] }, { organization: "Delta Tau Delta", names: ["Trace Movic"] }, { organization: "Delta Zeta", names: ["Talya Moorman", "Sophie Roland"] }, { organization: "Footprints", names: ["Yadelin Lopez", "Vansh Devarashetty"] }, { organization: "Gamma Eta", names: ["Lianny Propest", "Valeria Palacio"] }, { organization: "Gamma Phi Beta", names: ["Rena Eberhardt", "Peyton Ressler"] }, { organization: "Hispanic Student Association", names: ["Adrianna Lizana", "Mia Martinez"] }, { organization: "Innovation Academy", names: ["Seth Haber"] }, { organization: "Kappa Alpha Order", names: ["Edward Neff"] }, { organization: "Kappa Alpha Theta", names: ["orli clarin", "Lana Kostic"] }, { organization: "Kappa Delta", names: ["Rachel Carter", "Gabrielle Mackenzie"] }, { organization: "Kappa Kappa Gamma", names: ["Kaylie Strom", "Sadie Steuterman"] }, { organization: "Kappa Phi Epsilon", names: ["Zachary Quattrocchi", "Robert Howland"] }, { organization: "Kappa Sigma", names: ["Christian Labellman", "Gonzalo Cabeza"] }, { organization: "Lambda Chi Alpha", names: ["Christian Tardivo"] }, { organization: "Phi Delta Theta", names: ["Alejandro Fernandez", "Eduardo Cabrera"] }, { organization: "Phi Kappa Tau", names: ["Beckett Papa"] }, { organization: "Phi Mu", names: ["Sarah Abreu", "Kiera Blum"] }, { organization: "Pi Beta Phi", names: ["Emi Varghese"] }, { organization: "Pi Kappa Alpha", names: ["Robert Schuckel"] }, { organization: "Sigma Kappa", names: ["Emily DiPeri"] }, { organization: "Sigma Phi Epsilon", names: ["Taylor Ciolek", "Matthew Anderson"] }, { organization: "Tau Epsilon Phi", names: ["Benjamin Cheser"] }, { organization: "Tau Kappa Epsilon", names: ["Zavier Hanson"] }, { organization: "Theta Chi Fraternity ", names: ["Austin Lessmann"] }, { organization: "UF Honors Program", names: ["Sofia Plata Delgado"] }, { organization: "UF Law", names: ["Bailey Hershinow"] }, { organization: "UF PaCE", names: ["Kiara Becerra Reymundo"] }, { organization: "Zeta Beta Tau", names: ["Ryan Shimony", "Tyler Bellew"] }, { organization: "Zeta Tau Alpha", names: ["Kate Bjorn"] }
+    {
+      organization: "Alpha Chi Omega",
+      names: ["Reese Van Hoecke", "Anahi Lopez"],
+    },
+    { organization: "Alpha Delta Pi", names: ["Ava Pierzynski"] },
+    { organization: "Alpha Epsilon Phi", names: ["Molly Marcus"] },
+    { organization: "Alpha Epsilon Pi ", names: ["Zachary El-Assad"] },
+    {
+      organization: "Alpha Phi",
+      names: ["Juliana Buckley", "Isabella Colosimo"],
+    },
+    { organization: "AMSA", names: ["Isabella Fernandez"] },
+    { organization: "Catholic Gators", names: ["Angela Trinh"] },
+    { organization: "Chi Omega", names: ["Kylie Godino", "Katelyn Slaveski"] },
+    { organization: "Delta Chi", names: ["Will Curran"] },
+    {
+      organization: "Delta Delta Delta",
+      names: ["Sophia Stavrou", "Logan Mills"],
+    },
+    {
+      organization: "Delta Gamma",
+      names: ["Madeline Clark", "Avery Donaghue"],
+    },
+    { organization: "Delta Nu Zeta", names: ["Nina Hughes", "Sarah Nalley"] },
+    {
+      organization: "Delta Sigma Phi",
+      names: ["Jason Benezra", "Damir Karimov"],
+    },
+    { organization: "Delta Tau Delta", names: ["Trace Movic"] },
+    { organization: "Delta Zeta", names: ["Talya Moorman", "Sophie Roland"] },
+    {
+      organization: "Footprints",
+      names: ["Yadelin Lopez", "Vansh Devarashetty"],
+    },
+    { organization: "Gamma Eta", names: ["Lianny Propest", "Valeria Palacio"] },
+    {
+      organization: "Gamma Phi Beta",
+      names: ["Rena Eberhardt", "Peyton Ressler"],
+    },
+    {
+      organization: "Hispanic Student Association",
+      names: ["Adrianna Lizana", "Mia Martinez"],
+    },
+    { organization: "Innovation Academy", names: ["Seth Haber"] },
+    { organization: "Kappa Alpha Order", names: ["Edward Neff"] },
+    {
+      organization: "Kappa Alpha Theta",
+      names: ["orli clarin", "Lana Kostic"],
+    },
+    {
+      organization: "Kappa Delta",
+      names: ["Rachel Carter", "Gabrielle Mackenzie"],
+    },
+    {
+      organization: "Kappa Kappa Gamma",
+      names: ["Kaylie Strom", "Sadie Steuterman"],
+    },
+    {
+      organization: "Kappa Phi Epsilon",
+      names: ["Zachary Quattrocchi", "Robert Howland"],
+    },
+    {
+      organization: "Kappa Sigma",
+      names: ["Christian Labellman", "Gonzalo Cabeza"],
+    },
+    { organization: "Lambda Chi Alpha", names: ["Christian Tardivo"] },
+    {
+      organization: "Phi Delta Theta",
+      names: ["Alejandro Fernandez", "Eduardo Cabrera"],
+    },
+    { organization: "Phi Kappa Tau", names: ["Beckett Papa"] },
+    { organization: "Phi Mu", names: ["Sarah Abreu", "Kiera Blum"] },
+    { organization: "Pi Beta Phi", names: ["Emi Varghese"] },
+    { organization: "Pi Kappa Alpha", names: ["Robert Schuckel"] },
+    { organization: "Sigma Kappa", names: ["Emily DiPeri"] },
+    {
+      organization: "Sigma Phi Epsilon",
+      names: ["Taylor Ciolek", "Matthew Anderson"],
+    },
+    { organization: "Tau Epsilon Phi", names: ["Benjamin Cheser"] },
+    { organization: "Tau Kappa Epsilon", names: ["Zavier Hanson"] },
+    { organization: "Theta Chi Fraternity ", names: ["Austin Lessmann"] },
+    { organization: "UF Honors Program", names: ["Sofia Plata Delgado"] },
+    { organization: "UF Law", names: ["Bailey Hershinow"] },
+    { organization: "UF PaCE", names: ["Kiara Becerra Reymundo"] },
+    { organization: "Zeta Beta Tau", names: ["Ryan Shimony", "Tyler Bellew"] },
+    { organization: "Zeta Tau Alpha", names: ["Kate Bjorn"] },
   ];
 
   return (
@@ -168,42 +254,50 @@ export default function Ambassadors() {
           </li>
         </ul>
 
-        <Typography variant="h5" color='#233563' sx={{ mt: 2 }}>
-        2026 Dance Marathon Ambassadors
-      </Typography>
-      <Grid
-        container
-        spacing={2}
-        justifyContent="center"
-        alignItems="center"
-        sx={{ marginX: 'auto' }}
-      >
-        {ambassadors.map((ambassador, index) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-            <Box sx={{
-                height: 125,
-                width: { xs: '100%', sm: 250 },
-                maxWidth: 250,
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'center',
-                alignItems: 'center',
-                border: '1px solid #ccc',
-                borderRadius: '8px',
-                padding: 2,
-                textAlign: 'center',
-                margin: '0 auto'
-              }}>
-              <Typography variant="h6" color="text.secondary" fontWeight={'bold'}>
-                {ambassador.organization}
-              </Typography>
-              {ambassador.names.map((name, idx) => (
-                <Typography color="text.secondary" key={idx}>{name}</Typography>
-              ))}
+        <Typography variant="h5" color="#233563" sx={{ mt: 2 }}>
+          2026 Dance Marathon Ambassadors
+        </Typography>
+        <Grid
+          container
+          spacing={2}
+          justifyContent="center"
+          alignItems="center"
+          sx={{ marginX: "auto" }}
+        >
+          {ambassadors.map((ambassador, index) => (
+            <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
+              <Box
+                sx={{
+                  height: 125,
+                  width: { xs: "100%", sm: 250 },
+                  maxWidth: 250,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  border: "1px solid #ccc",
+                  borderRadius: "8px",
+                  padding: 2,
+                  textAlign: "center",
+                  margin: "0 auto",
+                }}
+              >
+                <Typography
+                  variant="h6"
+                  color="text.secondary"
+                  fontWeight={"bold"}
+                >
+                  {ambassador.organization}
+                </Typography>
+                {ambassador.names.map((name, idx) => (
+                  <Typography color="text.secondary" key={idx}>
+                    {name}
+                  </Typography>
+                ))}
               </Box>
-          </Grid>
-        ))}
-      </Grid>
+            </Grid>
+          ))}
+        </Grid>
       </Container>
       <Footer />
     </ThemeProvider>

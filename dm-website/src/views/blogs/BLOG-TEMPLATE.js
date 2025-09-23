@@ -14,9 +14,10 @@ import LazyLoad from "react-lazyload";
 
 // How to Add a Blog
 // 1. Change all comments in here with text from blog
-// 2. Go to /src/components/BlogList.js and add blog to list with same formatting as above
-// 3. Go to /src/index.js and add <Route> with path to the blog like the others
+// 2. Go to /src/index.js and add <Route> with path to the blog like the others
+// 3. Go to /src/components/BlogList.js and add blog to list with same formatting as above
 
+// Add all images to dm-website/src/assets/images/blogpics in a new folder with the title of the blog
 // Import images here and add any more if needed
 import Image1 from "../../assets/images/blogpics/BeyondThisGeneration/BeyondThisGen1.jpg";
 import Image2 from "../../assets/images/blogpics/BeyondThisGeneration/BeyondThisGen2.jpg";
@@ -42,7 +43,8 @@ export default function BeyondThisMoment() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-        <PageHero imageUrl={Image1} title="Beyond This Generation" /> {/* Change blog name here */}
+        <PageHero imageUrl={Image1} title="Beyond This Generation" />{" "}
+        {/* Change blog name here */}
       </LazyLoad>
 
       <Container
@@ -80,11 +82,10 @@ export default function BeyondThisMoment() {
 
           <Grid
             container
-            alignItems="center" 
+            alignItems="center"
             justifyContent="center"
-            sx={{ marginTop: 5, marginBottom: 5, gap: 10 }} 
+            sx={{ marginTop: 5, marginBottom: 5, gap: 10 }}
           >
-  
             <Grid item>
               <LazyLoad height={200} offset={100} once>
                 <Box
@@ -92,15 +93,14 @@ export default function BeyondThisMoment() {
                   src={Image2}
                   alt="Miracle Families"
                   sx={{
-                    maxWidth: 400, 
+                    maxWidth: 400,
                     borderRadius: 4,
-                    display: "block", 
+                    display: "block",
                   }}
                 />
               </LazyLoad>
             </Grid>
 
-  
             <Grid item>
               <LazyLoad height={200} offset={100} once>
                 <Box
@@ -108,7 +108,7 @@ export default function BeyondThisMoment() {
                   src={Image3}
                   alt="Hospital Renovation"
                   sx={{
-                    maxWidth: 400, 
+                    maxWidth: 400,
                     borderRadius: 4,
                     display: "block",
                   }}
@@ -134,7 +134,8 @@ export default function BeyondThisMoment() {
           </Typography>
 
           <Typography variant="body2" color="text.secondary">
-            Public Relations, Assistant Director of Internal Communications {/* Change position name */}
+            Public Relations, Assistant Director of Internal Communications{" "}
+            {/* Change position name */}
           </Typography>
         </Box>
         <Grid
@@ -147,7 +148,9 @@ export default function BeyondThisMoment() {
             <Button
               variant="outlined"
               startIcon={<ArrowBackIcon />}
-              onClick={() => (window.location.href = "/blog/beyondthissummer")} /* Change link to previous blog url from index.js */
+              onClick={() =>
+                (window.location.href = "/blog/beyondthissummer")
+              } /* Complete Step 2 in list above and then change link to previous blog url from index.js ^*/
               sx={{
                 color: "primary.main",
                 borderColor: "white",
