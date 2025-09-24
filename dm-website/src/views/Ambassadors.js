@@ -75,7 +75,7 @@ export default function Ambassadors() {
     { organization: "Kappa Alpha Order", names: ["Edward Neff"] },
     {
       organization: "Kappa Alpha Theta",
-      names: ["orli clarin", "Lana Kostic"],
+      names: ["Orli Clarin", "Lana Kostic"],
     },
     {
       organization: "Kappa Delta",
