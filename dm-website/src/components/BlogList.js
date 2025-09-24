@@ -29,6 +29,7 @@ import LifelineOfLaughter from "../assets/images/blogpics/LifelineOfLaughter/Lif
 import BeyondTomorrow from "../assets/images/blogpics/BeyondTomorrow/BT1.jpg";
 import FeelTheMagic from "../assets/images/blogpics/FeelTheMagic/FTM1.jpg";
 import Spark from "../assets/images/blogpics/Spark/Spark1.jpg";
+import TogetherWe from "../assets/images/blogpics/TogetherWe/TogetherWe1.jpg";
 
 const blogs = [
   {
@@ -159,7 +160,14 @@ const blogs = [
     imageUrl: Spark,
     linkName: "spark",
   },
-
+  {
+    id: 17,
+    title: "Together We",
+    author: "Sarah Abisror",
+    date: "September 24, 2025",
+    imageUrl: TogetherWe,
+    linkName: "togetherwe",
+  },
 ];
 
 const reversedBlogs = [...blogs].reverse();
