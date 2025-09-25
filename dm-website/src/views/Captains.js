@@ -68,7 +68,7 @@ const teams = [
         "Eric Hengber - Assistant Director of Technology",
         "Phillip-Dylan Ndwiga - Assistant Director of Internal Affairs",
       ],
-      captains: ["Nicole Main","Joseph Laratro","Brooke Lee","Lindsey Kash","Ashley Diez","James Bruder","Ariana Brodows","Danny Gleeson","Savana Pham","Riley Floyd","Amey Dewangan","Hannah Chen","Brooke Telchin","Matthew Krusch", "Matt Greenspan"],
+      captains: ["Nicole Main","Joseph Laratro","Brooke Lee","Lindsey Kash","Ashley Diez","James Bruder","Ariana Brodows","Danny Gleeson","Savana Pham","Riley Floyd","Amey Dewangan","Hannah Chen","Brooke Telchin","Matthew Krusch", "Matt Greenspan", "Ethan Hejny"],
     },
   },
   {
