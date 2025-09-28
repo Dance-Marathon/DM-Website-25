@@ -45,10 +45,9 @@ export default function MiracleMakers() {
         }}
       >
         <Typography variant="body1" color="text.secondary">
-          Dance Marathon at the University of Florida is an annual event
-          benefiting the patients of UF Health Shands Children's Hospital in
-          Gainesville, Florida. Each year, students stay awake and pledge to
-          stay to raise money and awareness for Children's Miracle Network
+          Dance Marathon at the University of Florida is an organization benefiting the 
+          patients of UF Health Shands Children's Hospital in Gainesville, Florida. Each year, 
+          students pledge to raise money and awareness for Children's Miracle Network
           Hospitals.
         </Typography>
         <Typography variant="body1" color="text.secondary">
@@ -56,16 +55,16 @@ export default function MiracleMakers() {
           <span style={{ color: "#233563", fontWeight: "bold" }}>
             Miracle Maker
           </span>
-          , you will experience one of UF’s most adored traditions. Throughout
-          the duration of the Main Event, you will learn our Linedance, enjoy
-          live entertainment, eat delicious food from our local Sponsors, and
-          hear inspiring stories from our Miracle Families.
+          , you will experience one of UF’s most adored traditions. 
+          Throughout the duration of the 26.2-hour Main Event every spring, you will learn
+          our Linedance, enjoy live entertainment, eat delicious food from our local 
+          partners and hear inspiring stories from our Miracle Families.
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          In addition to standing, if able, for the duration of the Main Event,
-          Miracle Makers will have year-long activities to take part in such as
-          a Miracle Maker Retreat, Registered Miracle Maker Workshops, bonding
-          with their internal Organization, and more!
+          In addition to staying for the duration of the Main Event, Miracle Makers will 
+          have year-long activities they are welcomed to take part in such as Transform Today, 
+          Moralloween, Miracles in Color 5k, bonding with their internal Organization and 
+          more!
         </Typography>
         <Typography variant="body1" color="text.secondary">
           Please email Alexandra Polo, the Member Advancement Overall Director,
@@ -83,7 +82,7 @@ export default function MiracleMakers() {
         <Typography variant="body1" color="text.secondary">
           Follow the link{" "}
           <Link
-            href="https://events.dancemarathon.com/index.cfm?fuseaction=donorDrive.event&eventID=6292"
+            href="https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=6756"
             target="_blank"
           >
             <strong>here</strong>
@@ -92,10 +91,9 @@ export default function MiracleMakers() {
           with further details.
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          To be a Miracle Maker, participants must be enrolled as students at
-          the University of Florida during the spring semester. This includes
-          students who are enrolled but may have an internship in place of
-          classes.
+          To be a Miracle Maker, participants must be enrolled as full-time students at
+          the University of Florida. This includes students who are enrolled but may have an 
+          internship in place of classes.
         </Typography>
         <Typography variant="body1" color="text.secondary">
           You may register to be a Miracle Maker with an Organization team or as
@@ -103,7 +101,7 @@ export default function MiracleMakers() {
         </Typography>
         <Typography variant="body1" color="text.secondary">
           If you have any questions about being a Miracle Maker as an individual
-          or part of the Gator Aides team, please contact the Member Advancement
+          or part of Team Hope, please contact the Member Advancement
           Overall Director, Alexandra Polo, at
           <Link href="mailto:apolo@floridadm.org"> apolo@floridadm.org</Link>.
         </Typography>
@@ -137,7 +135,7 @@ export default function MiracleMakers() {
             answer={
               <>
                 See the Fundraising tab for instructions, or click{" "}
-                <Link href="/fundraising" color="primary">
+                <Link href="/register-to-fundraise" color="primary">
                   here
                 </Link>
                 .
@@ -150,7 +148,7 @@ export default function MiracleMakers() {
         /> */}
           <FAQ
             question="Who can come to the Event?"
-            answer="Anyone! Guests are allowed to stop in by at various time slots throughout the Main Event. This includes opportunities to watch the Linedance, hear from Miracle Families, and enjoy the entertainment."
+            answer="Anyone! Guests are allowed to stop in at various time slots throughout the Main Event. This includes opportunities to watch the Linedance, hear from Miracle Families, and enjoy the entertainment."
           />
           {/* <FAQ 
           question="What happens when someone registers to be a Miracle Maker and isn’t given a spot?" 
@@ -158,7 +156,7 @@ export default function MiracleMakers() {
         /> */}
           <FAQ
             question="What if I am not in an Organization and want to register as an individual?"
-            answer="You can register as an individual using the link under Miracle Maker Resources; individual Miracle Makers will be placed onto the Gator Aides team."
+            answer="You can register as an individual using the link under Miracle Maker Resources; individual Miracle Makers will be placed onto Team Hope."
           />
         </Box>
       </Container>
