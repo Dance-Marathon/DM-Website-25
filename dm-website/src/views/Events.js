@@ -14,7 +14,7 @@ import TTBoxPic from "../assets/images/miniboxpics/TTBox.jpg";
 import MEBoxPic from "../assets/images/miniboxpics/MEBox.jpg";
 import KickoffBoxPic from "../assets/images/miniboxpics/KickoffBox.jpg";
 import MMBox from "../assets/images/miniboxpics/MiniMarathonsBox.jpg";
-import MWeenBox from "../assets/images/miniboxpics/MWeenBox.JPG";
+import MWeenBox from "../assets/images/miniboxpics/MWeenBox.jpg";
 import LazyLoad from "react-lazyload";
 
 export default function Events() {

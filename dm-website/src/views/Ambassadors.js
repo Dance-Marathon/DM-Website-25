@@ -9,7 +9,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import "../App.css";
 import AmbassadorGuidelines from "../assets/pdfs/2026 Ambassador Guidelines.pdf";
-import AmbassadorsPic from "../assets/images/pagepics/AmbassadorsHero.JPG";
+import AmbassadorsPic from "../assets/images/pagepics/AmbassadorsHero.jpg";
 import LazyLoad from "react-lazyload";
 
 export default function Ambassadors() {

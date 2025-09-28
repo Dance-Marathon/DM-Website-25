@@ -17,7 +17,7 @@ import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 import LazyLoad from "react-lazyload";
 
-import OurStoryHero from "../assets/images/pagepics/OurStoryHero.JPG";
+import OurStoryHero from "../assets/images/pagepics/OurStoryHero.jpg";
 import "../App.css";
 
 export default function OurStory() {
