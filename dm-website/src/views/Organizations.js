@@ -138,7 +138,7 @@ export default function Organizations() {
             color="text.secondary"
           >
             Below are the Organizations currently involved in Dance Marathon at
-            UF 2025:
+            UF 2026:
           </Typography>
 
           {/* Adjusted Box and Grid */}
