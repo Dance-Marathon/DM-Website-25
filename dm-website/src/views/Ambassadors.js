@@ -42,6 +42,7 @@ export default function Ambassadors() {
     { organization: "AMSA", names: ["Isabella Fernandez"] },
     { organization: "Catholic Gators", names: ["Angela Trinh"] },
     { organization: "Chi Omega", names: ["Kylie Godino", "Katelyn Slaveski"] },
+    { organization: "Chi Phi", names: ["Steven Pham"]},
     { organization: "Delta Chi", names: ["Will Curran"] },
     {
       organization: "Delta Delta Delta",
@@ -98,10 +99,12 @@ export default function Ambassadors() {
       organization: "Phi Delta Theta",
       names: ["Alejandro Fernandez", "Eduardo Cabrera"],
     },
+    { organization: "Phi Gamma Delta", names: ["Michael Megaro"]},
     { organization: "Phi Kappa Tau", names: ["Beckett Papa"] },
     { organization: "Phi Mu", names: ["Sarah Abreu", "Kiera Blum"] },
     { organization: "Pi Beta Phi", names: ["Emi Varghese"] },
     { organization: "Pi Kappa Alpha", names: ["Robert Schuckel"] },
+    { organization: "Sigma Alpha Epsilon", names: ["Jack Pryor"]},
     { organization: "Sigma Kappa", names: ["Emily DiPeri"] },
     {
       organization: "Sigma Phi Epsilon",
