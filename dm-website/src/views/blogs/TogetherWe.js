@@ -148,8 +148,8 @@ export default function TogetherWe() {
           </Typography>
 
           <Typography variant="body2" color="text.secondary">
-            Public Relations, Assistant Director of Internal Affairs{" "}
-            {/* Change position name */}
+            Communications and Public Relations, Assistant Director of Internal
+            Affairs {/* Change position name */}
           </Typography>
         </Box>
         <Grid
@@ -180,13 +180,11 @@ export default function TogetherWe() {
 
           {/* If this is no longer most recent blog, uncomment below and change url to next blog */}
 
-          {/* <Grid item>
+          <Grid item>
             <Button
               variant="outlined"
               endIcon={<ArrowForwardIcon />}
-              onClick={() =>
-                (window.location.href = "/blog/findingyourdmfamily")
-              }
+              onClick={() => (window.location.href = "/blog/followthepromise")}
               sx={{
                 color: "primary.main",
                 borderColor: "white",
@@ -198,7 +196,7 @@ export default function TogetherWe() {
             >
               Next Blog
             </Button>
-          </Grid> */}
+          </Grid>
         </Grid>
       </Container>
       <Footer />

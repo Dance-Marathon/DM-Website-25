@@ -165,7 +165,7 @@ export default function GiftOfHope() {
             <Button
               variant="outlined"
               startIcon={<ArrowBackIcon />}
-              onClick={() => (window.location.href = "/blog/giftofhope")}
+              onClick={() => (window.location.href = "/blog/thankfulness")}
               sx={{
                 color: "primary.main",
                 borderColor: "white",

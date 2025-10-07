@@ -30,6 +30,7 @@ import BeyondTomorrow from "../assets/images/blogpics/BeyondTomorrow/BT1.jpg";
 import FeelTheMagic from "../assets/images/blogpics/FeelTheMagic/FTM1.jpg";
 import Spark from "../assets/images/blogpics/Spark/Spark1.jpg";
 import TogetherWe from "../assets/images/blogpics/TogetherWe/TogetherWe1.jpg";
+import FollowThePromise from "../assets/images/blogpics/FollowThePromise/FollowThePromise1.jpg";
 
 const blogs = [
   {
@@ -167,6 +168,14 @@ const blogs = [
     date: "September 24, 2025",
     imageUrl: TogetherWe,
     linkName: "togetherwe",
+  },
+  {
+    id: 18,
+    title: "#FollowThePromise",
+    author: "Sofia Amoroso",
+    date: "September 30, 2025",
+    imageUrl: FollowThePromise,
+    linkName: "followthepromise",
   },
 ];
 

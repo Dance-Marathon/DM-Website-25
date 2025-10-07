@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.05abc5e2.js",
+    "main.js": "/static/js/main.3a8599a1.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -185,6 +185,7 @@
     "static/media/CasaPinada.otf": "/static/media/CasaPinada.6852a39649a353af4285.otf",
     "static/media/SummerSpellbook1.png": "/static/media/SummerSpellbook1.398efa69897a85f4e6af.png",
     "static/media/Sponsor (65).png": "/static/media/Sponsor (65).70dc0902dda407876c88.png",
+    "static/media/FollowThePromise1.jpg": "/static/media/FollowThePromise1.083c6cbd35498e0d1502.jpg",
     "static/media/Sponsor (5).png": "/static/media/Sponsor (5).9f37a7ee329548fbbe6e.png",
     "static/media/Sponsor (66).png": "/static/media/Sponsor (66).d2c31c76bf52e4bdeaac.png",
     "static/media/DonorDriveBox.jpg": "/static/media/DonorDriveBox.27040884be2f6907ab35.jpg",
@@ -342,11 +343,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.05abc5e2.js.map": "/static/js/main.05abc5e2.js.map",
+    "main.3a8599a1.js.map": "/static/js/main.3a8599a1.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.05abc5e2.js"
+    "static/js/main.3a8599a1.js"
   ]
 }
