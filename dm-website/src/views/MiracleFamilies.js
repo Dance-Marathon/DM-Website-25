@@ -103,7 +103,7 @@ export default function MiracleFamilies() {
             sx={{ color: "text.secondary", marginBottom: 2 }}
           >
             Dance Marathon at the University of Florida is very fortunate to
-            have 31 Miracle Families who are true inspirations to everyone
+            have 27 Miracle Families who are true inspirations to everyone
             involved in the organization and are the pinnacle for what we stand
             for. The birthday parties, end-of-chemotherapy parties, and play
             dates that we have with the children constantly remind us of the
@@ -228,7 +228,7 @@ export default function MiracleFamilies() {
                 learnMoreLink:
                   "https://docs.google.com/document/d/1a_WC47MTq0q1PcqtODgHwauqZ_xMWNoEU5asqV6Nlj0/edit?tab=t.0",
                 content:
-                  "Caden was diagnosed with severe Hemophilia A at 4 weeks old and developed an inhibitor at 6 months old. After a serious infection in 2015, his mother stayed with him for six weeks during a hospital stay in Gainesville while his father worked in Tallahassee and visited on weekends. Caden now receives bi-weekly subcutaneous injections, reducing his bleeds to just two per year. He is now 13 years old and loves video games, learning the saxophone, and spending time with family and friends. He has missed two Chess Championships for Dance Marathon, saying, \"there’s no choice, it's always Dance Marathon.\" ",
+                  'Caden was diagnosed with severe Hemophilia A at 4 weeks old and developed an inhibitor at 6 months old. After a serious infection in 2015, his mother stayed with him for six weeks during a hospital stay in Gainesville while his father worked in Tallahassee and visited on weekends. Caden now receives bi-weekly subcutaneous injections, reducing his bleeds to just two per year. He is now 13 years old and loves video games, learning the saxophone, and spending time with family and friends. He has missed two Chess Championships for Dance Marathon, saying, "there’s no choice, it\'s always Dance Marathon." ',
               },
               {
                 image: CasonT,
@@ -241,7 +241,8 @@ export default function MiracleFamilies() {
               {
                 image: ClaireE,
                 title: "Claire E.",
-                learnMoreLink: "https://docs.google.com/document/d/1i7eV7RIjQ9sNbvyY9UPIB7df5fl1PLqeXuJJFGqw3lo/edit?tab=t.0",
+                learnMoreLink:
+                  "https://docs.google.com/document/d/1i7eV7RIjQ9sNbvyY9UPIB7df5fl1PLqeXuJJFGqw3lo/edit?tab=t.0",
                 content:
                   "Claire Essex’s mom, Jessi was referred to UF Health Shands Children’s Hospital because of her baby's size in utero and failure to thrive.  Claire was born on April 6th, 2012, weighing only 3 pounds, and spent 64 days in the NICU at Shands. In 2022 and 2024, Claire survived septic life-threatening emergencies and has spent a lot of time in the PICU throughout her life. Claire is now 13 years old and has been involved with Dance Marathon for 7 years. DM at UF and UF Health Shands Children’s Hospital are very special to Claire’s family, as they want the very best medical care for their local CMN hospital!",
               },
@@ -294,14 +295,16 @@ export default function MiracleFamilies() {
               {
                 image: GeneviveS,
                 title: "Genevive S.",
-                learnMoreLink: "https://docs.google.com/document/d/1ZZ7f1ESdQJxxeYhJtyVJh9lEB4vx1KiBAL0JU0aB7UY/edit?tab=t.0",
+                learnMoreLink:
+                  "https://docs.google.com/document/d/1ZZ7f1ESdQJxxeYhJtyVJh9lEB4vx1KiBAL0JU0aB7UY/edit?tab=t.0",
                 content:
                   "Genevieve was diagnosed with congenital heart disease (CHD) before birth, with three holes in her heart, leading to an immediate admission to the Pediatric Cardiac ICU at UF Health Shands Children's Hospital. At just 13 days old, she underwent a 15-hour heart surgery, followed by a second surgery at 10 months old. She continues to face health challenges and will need another surgery as she grows. With support from specialists and therapy services, Genevieve is now eating more and walking with confidence, growing stronger every day. In 2022, Genevieve was stabilized by a machine with a yellow balloon sticker that read, \"Funded by partners of Children's Miracle Network Hospitals,\" a powerful reminder of the impact of DM at UF.",
               },
               {
                 image: HaleyW,
                 title: "Haley W.",
-                learnMoreLink: "https://docs.google.com/document/d/1CFB3SXZrulv9tOtN5gBHEREcjkrT65oWVjsThjzwdQw/edit?tab=t.0",
+                learnMoreLink:
+                  "https://docs.google.com/document/d/1CFB3SXZrulv9tOtN5gBHEREcjkrT65oWVjsThjzwdQw/edit?tab=t.0",
                 content:
                   "In October of 2023, Haley was diagnosed with B-Cell ALL Leukemia and is currently undergoing chemotherapy treatments at UF Health Shands Children's Hospital. Her family credits UF Health Shands Children's Hospital as the best part of this unforeseen and difficult diagnosis and they are so thankful for the incredible care team they have had during treatment. Haley is a 10th Grader and enjoys dance and being a flyer on her cheer team. She looks forward to ringing the bell in March of 2026!",
               },
@@ -320,21 +323,21 @@ export default function MiracleFamilies() {
                 content:
                   "Jude and Oliver were born 14 weeks early at UF Health Shands Children’s Hospital, weighing just over 2 pounds each, and spent months in the NICU. Both boys received critical treatments for their underdeveloped lungs, with Oliver undergoing surgery for patent ductus arteriosus (PDA) at 3 weeks old. Jude went home after 81 days, and Oliver followed after 3 months, later being diagnosed with chronic lung disease and asthma, which is now well-managed. Now 15, Oliver loves, science, marching band, and soccer, and Jude loves history, piano, drawing, and video games.",
               },
-              {
-                image: KaliahE,
-                title: "Kaliah E.",
-                learnMoreLink:
-                  "https://docs.google.com/document/d/1d3NyBLjJo-8seY9Kxjzm3DSM9YQAnU_o_nWGq6pJ3oQ/edit?usp=share_link",
-                content:
-                  "Kaliah was a healthy 8-year-old athlete until she was diagnosed with nephrotic syndrome in 2015, after experiencing swelling and difficulty swallowing. She underwent a kidney biopsy and weekly infusions before starting dialysis in 2017. Kaliah received transplanted kidneys in 2018 and 2022. Now 17 years old, Kaliah is thriving thanks to the exceptional care she receives at UF Health Shands Children’s Hospital. Her family is grateful for the thoughtful and supportive staff who have helped Kaliah through her journey.",
-              },
+              // {
+              //   image: KaliahE,
+              //   title: "Kaliah E.",
+              //   learnMoreLink:
+              //     "https://docs.google.com/document/d/1d3NyBLjJo-8seY9Kxjzm3DSM9YQAnU_o_nWGq6pJ3oQ/edit?usp=share_link",
+              //   content:
+              //     "Kaliah was a healthy 8-year-old athlete until she was diagnosed with nephrotic syndrome in 2015, after experiencing swelling and difficulty swallowing. She underwent a kidney biopsy and weekly infusions before starting dialysis in 2017. Kaliah received transplanted kidneys in 2018 and 2022. Now 17 years old, Kaliah is thriving thanks to the exceptional care she receives at UF Health Shands Children’s Hospital. Her family is grateful for the thoughtful and supportive staff who have helped Kaliah through her journey.",
+              // },
               {
                 image: KendallL,
                 title: "Kendall L.",
                 learnMoreLink:
                   "https://docs.google.com/document/d/1NWXls9s168xFAfN4nSm4A7EJhNm-fB6YTeuqJIYw9FU/edit?tab=t.0",
                 content:
-                  "Kendall, also known as \"Miss K,\" was born with VACTERL Association, involving numerous medical challenges including heart, spinal, and esophageal issues, along with immune system complications. She had her first set of surgeries at just 5 days old and has undergone three open-heart surgeries and multiple bowel reconstructive surgeries. She still gets airway injections every 6 months. At age 5, Kendall was diagnosed with hemiplegic cerebral palsy following a stroke, but she continues to function highly despite the condition. Now 14, Kendall is an active student and athlete who loves volleyball and showing livestock at county fairs.",
+                  'Kendall, also known as "Miss K," was born with VACTERL Association, involving numerous medical challenges including heart, spinal, and esophageal issues, along with immune system complications. She had her first set of surgeries at just 5 days old and has undergone three open-heart surgeries and multiple bowel reconstructive surgeries. She still gets airway injections every 6 months. At age 5, Kendall was diagnosed with hemiplegic cerebral palsy following a stroke, but she continues to function highly despite the condition. Now 14, Kendall is an active student and athlete who loves volleyball and showing livestock at county fairs.',
               },
 
               {
@@ -364,14 +367,14 @@ export default function MiracleFamilies() {
                   "Mazzy was diagnosed with Hodgkin’s lymphoma at 11 years old and began chemotherapy shortly after starting middle school. She missed most of 6th grade while undergoing treatment, receiving chemotherapy through a port in her heart. Despite the challenges of long hospital stays, Mazzy responded well to treatment, with programs and volunteers making her time in the hospital easier. Now 21, Mazzy is healthy and her huge heart and beautiful smile remind us of the miracles made possible every day!",
               },
 
-              {
-                image: NakiaF,
-                title: "Nakia F.",
-                learnMoreLink:
-                  "https://docs.google.com/document/d/1ZIFg78z68Zrd3QEQHBkk6ODmYnJ7IaVvOQEHfi1R0bw/edit?usp=share_link",
-                content:
-                  "Nakia was once told she wouldn’t live past the age of 4, but this summer she celebrated her 26th birthday, defying all expectations. She lives with Epilepsy, Osteoporosis, HPE, and is a bilateral amputee, but her resilience continues to shine. Nakia now uses a Vest System and cough assist to keep her lungs clear and help with her breathing. Her family has been part of the Dance Marathon community for over 15 years, finding strength and support through the challenges they face.",
-              },
+              // {
+              //   image: NakiaF,
+              //   title: "Nakia F.",
+              //   learnMoreLink:
+              //     "https://docs.google.com/document/d/1ZIFg78z68Zrd3QEQHBkk6ODmYnJ7IaVvOQEHfi1R0bw/edit?usp=share_link",
+              //   content:
+              //     "Nakia was once told she wouldn’t live past the age of 4, but this summer she celebrated her 26th birthday, defying all expectations. She lives with Epilepsy, Osteoporosis, HPE, and is a bilateral amputee, but her resilience continues to shine. Nakia now uses a Vest System and cough assist to keep her lungs clear and help with her breathing. Her family has been part of the Dance Marathon community for over 15 years, finding strength and support through the challenges they face.",
+              // },
               {
                 image: NathanF,
                 title: "Nathan F.",
@@ -391,7 +394,7 @@ export default function MiracleFamilies() {
               {
                 image: NovaleeS,
                 title: "Novalee S.",
-                learnMoreLink: 
+                learnMoreLink:
                   "https://docs.google.com/document/d/1uBZiISLy0qRGqlFtiuJFkVEqKo-7axlBXWyblZ_cSqM/edit?tab=t.0",
                 content:
                   "Novalee was seven months old when her grandmother broke down in the emergency room of UF Health Shands Children’s Hospital, crying and unsure what to do to get her granddaughter the help she needed. Novalee wasn’t hitting milestones. She would suddenly stop breathing. Something was very wrong, and her local children’s hospital left her with more questions than answers. UF Health Shands doctors discovered Novalee had a Chiari malformation, Bronchiectasis, Central Apnea, Gastroparesis, and an Optic nerve coloboma, among a list of other diagnoses. To put it simply, her care was incredibly complex. But after multiple surgeries, therapies, and medical equipment to support & regulate her breathing, Novalee is a happy, bubbly five-year-old. Her mom shared, “The team at UF Health Shands promised me they would figure it out. They promised they wouldn’t stop until they knew how to help my daughter. And they didn’t.”",
@@ -405,14 +408,14 @@ export default function MiracleFamilies() {
                   "Owen was born with transposition of the great arteries, a congenital heart defect that prevented oxygenated blood from circulating properly. He had his first surgery at just 6 hours old and underwent open-heart surgery at 2 weeks old, performed by Dr. Bleiweis at UF Health Shands Children’s Hospital. Owen spent 2 months in the hospital before going home for the first time. Now 12 years old, Owen is full of energy and loves playing with his big brother, Noah, and little sister, Lainey!",
               },
 
-              {
-                image: SageP,
-                title: "Sage P.",
-                learnMoreLink:
-                  "https://docs.google.com/document/d/1t1x53OdIjt9nWnrkMuf0p1Pir-BEt2a1Er9FBBrrpjQ/edit?usp=share_link",
-                content:
-                  "Sage was born with hypoplastic left heart syndrome, meaning he was born with only half a heart. He has undergone three open- heart surgeries, and he received his gift of life, a heart transplant in 2021. Now 16 years old, Sage continues to live with strength and resilience. 2025 marks his 15th year as a Children’s Miracle Network ambassador for Dance Marathon at UF!",
-              },
+              // {
+              //   image: SageP,
+              //   title: "Sage P.",
+              //   learnMoreLink:
+              //     "https://docs.google.com/document/d/1t1x53OdIjt9nWnrkMuf0p1Pir-BEt2a1Er9FBBrrpjQ/edit?usp=share_link",
+              //   content:
+              //     "Sage was born with hypoplastic left heart syndrome, meaning he was born with only half a heart. He has undergone three open- heart surgeries, and he received his gift of life, a heart transplant in 2021. Now 16 years old, Sage continues to live with strength and resilience. 2025 marks his 15th year as a Children’s Miracle Network ambassador for Dance Marathon at UF!",
+              // },
               {
                 image: SamuelN,
                 title: "Samuel N.",

@@ -13,6 +13,7 @@ import LazyLoad from "react-lazyload";
 import FAQ from "../components/FAQ";
 
 import MainEventPic from "../assets/images/pagepics/MainEventPic.jpg";
+import MEBanner from "../assets/images/pagepics/MEBanner.png";
 
 export default function MainEvent() {
   const [mode, setMode] = React.useState(() => {
@@ -47,6 +48,31 @@ export default function MainEvent() {
           gap: { xs: 2, sm: 3 },
         }}
       >
+        <Box mt={2} width="100%" display="flex" justifyContent="center">
+          {/* Desktop Image */}
+          <Box
+            component="img"
+            src={MEBanner}
+            sx={{
+              display: { xs: "none", sm: "block" },
+              maxWidth: "100%",
+              height: "auto",
+              mb: 2,
+            }}
+          />
+
+          {/* Mobile Image */}
+          <Box
+            component="img"
+            src={MEBanner}
+            sx={{
+              display: { xs: "block", sm: "none" },
+              maxWidth: "100%",
+              height: "auto",
+              mb: 2,
+            }}
+          />
+        </Box>
         <Box
           sx={{
             width: { sm: "100%", md: "100%" },
@@ -56,10 +82,10 @@ export default function MainEvent() {
           <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
             <p>
               <span style={{ color: "#233563", fontWeight: "bold" }}>
-              Main Event 2026 will take place March 28-29th!
+                Main Event 2026 will take place March 28-29th!
               </span>
-              </p>
-              <p>
+            </p>
+            <p>
               Our{" "}
               <span style={{ color: "#233563", fontWeight: "bold" }}>
                 Main Event is a 26.2-hour event held in the Stephen O’Connell
