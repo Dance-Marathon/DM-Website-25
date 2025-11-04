@@ -55,6 +55,11 @@ export default function MainEvent() {
         >
           <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
             <p>
+              <span style={{ color: "#233563", fontWeight: "bold" }}>
+              Main Event 2026 will take place March 28-29th!
+              </span>
+              </p>
+              <p>
               Our{" "}
               <span style={{ color: "#233563", fontWeight: "bold" }}>
                 Main Event is a 26.2-hour event held in the Stephen O’Connell
