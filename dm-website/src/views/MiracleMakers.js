@@ -138,7 +138,7 @@ export default function MiracleMakers() {
                 <Link href="/register-to-fundraise" color="primary">
                   here
                 </Link>
-                .
+                
               </>
             }
           />
