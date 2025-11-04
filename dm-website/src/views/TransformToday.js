@@ -149,7 +149,7 @@ export default function TransformToday() {
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
               <span style={{ color: "#e2883c", fontWeight: "bold" }}>
-                October 29th - 30th
+                October 21st - 22nd
               </span>
             </p>
           </Typography>

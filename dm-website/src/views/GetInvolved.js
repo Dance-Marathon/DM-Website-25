@@ -16,9 +16,9 @@ import GetInvolvedPic from "../assets/images/pagepics/GetInvolvedPic.jpg";
 import AlumniBox from "../assets/images/miniboxpics/AlumniBox.jpg";
 import AmbassadorsMiniPic from "../assets/images/miniboxpics/AmbassadorsBox.jpg";
 import ELPBox from "../assets/images/miniboxpics/ELPBox.jpg";
-import CaptainsBox from "../assets/images/miniboxpics/CaptainTeamsBox.jpg";
+import CaptainsBox from "../assets/images/miniboxpics/CaptainTeamsBox.JPG";
 import MMBox from "../assets/images/miniboxpics/MiracleMakersBox.jpg";
-import OrgBox from "../assets/images/miniboxpics/OrgBox.jpg";
+import OrgBox from "../assets/images/miniboxpics/OrgBox.JPG";
 
 export default function GetInvolved() {
   const [mode, setMode] = React.useState(() => {
