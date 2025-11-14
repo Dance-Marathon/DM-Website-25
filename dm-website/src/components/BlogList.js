@@ -31,6 +31,7 @@ import FeelTheMagic from "../assets/images/blogpics/FeelTheMagic/FTM1.jpg";
 import Spark from "../assets/images/blogpics/Spark/Spark1.jpg";
 import TogetherWe from "../assets/images/blogpics/TogetherWe/TogetherWe1.jpg";
 import FollowThePromise from "../assets/images/blogpics/FollowThePromise/FollowThePromise1.jpg";
+import TT25 from "../assets/images/blogpics/TT25/TT251.jpg";
 
 const blogs = [
   {
@@ -176,6 +177,14 @@ const blogs = [
     date: "September 30, 2025",
     imageUrl: FollowThePromise,
     linkName: "followthepromise",
+  },
+  {
+    id: 19,
+    title: "Transform Today 2025: A Promise Transformed",
+    author: "Shae Helmer",
+    date: "November 14, 2025",
+    imageUrl: TT25,
+    linkName: "tt25",
   },
 ];
 

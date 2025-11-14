@@ -19,10 +19,11 @@ import LazyLoad from "react-lazyload";
 
 // Add all images to dm-website/src/assets/images/blogpics in a new folder with the title of the blog
 // Import images here and add any more if needed
-import Image1 from "../../assets/images/blogpics/FollowThePromise/FollowThePromise1.jpg";
+import Image1 from "../../assets/images/blogpics/TT25/TT251.jpg";
+import Image2 from "../../assets/images/blogpics/TT25/TT252.jpg";
 
 // Change name to Blog Name
-export default function FollowThePromise() {
+export default function TT25() {
   const [mode, setMode] = React.useState(() => {
     return localStorage.getItem("theme") || "light";
   });
@@ -41,7 +42,11 @@ export default function FollowThePromise() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-        <PageHero imageUrl={Image1} title="@FollowThePromise" />{" "}
+        <PageHero
+          imageUrl={Image1}
+          title="Transform Today 2025: A Promise Transformed
+"
+        />{" "}
         {/* Change blog name here */}
       </LazyLoad>
 
@@ -58,63 +63,45 @@ export default function FollowThePromise() {
       >
         <Box sx={{ textAlign: "left" }}>
           <Typography variant="body1" color="text.secondary" paragraph>
-            What moves us forward can’t always be measured or defined. It’s a
-            quiet pull, a reason that lives deep inside us. It’s one that asks
-            for more than we thought we could give yet somehow makes us want to
-            give all we can anyway. A promise.
+            Every member of Dance Marathon at UF has a different promise they
+            followed this Transform Today. For some, it was to keep fighting for
+            a future where no child has to wear a hospital band; for others, it
+            was to reach out to every single donor and follow up. But on the
+            night of October 21st, around 12 hours into Transform Today, I
+            witnessed a promise that changed my entire perspective about Dance
+            Marathon and what it means to fight childhood illness.
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            What’s unique about a promise is that each one is personal.
-            Powerful, perhaps even all-consuming, but entirely yours. You carry
-            it in your decisions: in the way you show up and in the things you
-            choose to fight for. A promise gives you a reason to take the next
-            step, even when the way forward isn’t clear.
+            At the end of Day 1, members of DM at UF completed an exercise that
+            involved writing our promise on a paper bag, and lighting that
+            promise with a tea candle. We set our bags down on the platform on
+            the Reitz Union North Lawn, and as I set mine down, I examined the
+            promises lining the wall.
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            Promises aren’t made lightly. They are built in moments of
-            commitment, held together by shared belief and carried by action.
-            For us, the action of showing up in every conversation, every event
-            and every push to make a difference moves us closer to the change
-            we’re walking toward.
+            The promise that caught my eye read, “So no kid has to fight alone.”
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            Every step we take, we take together. The moments we create, the
-            impact we build and the lives we stand beside are grounded in a
-            shared journey.
+            This promise was so blunt, so unique, that I couldn’t help but be
+            taken aback. I re-examined my “Why DM.” Previously, I was thinking I
+            was simply doing a good deed and getting involved on campus.
+            Truthfully, I have many friends who are in DM that convinced me to
+            join this year as a sophomore.
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            We all made a promise—to ourselves, to each other and to the
-            patients and families who need us.
+            After seeing that promise, it is so much easier for me to envision
+            who I do this for. I do not do this for myself or for my friends,
+            rather I know that I fundraise, work and advocate for the children
+            at UF Health Shands Children’s Hospital. Transform Today not only
+            transformed the lives of so many children fighting childhood
+            illness, but also the lives of those participating in it. Transform
+            Today changed my “Why,” and my relationship with DM. Forever.
           </Typography>
 
-          <Typography variant="body1" color="text.secondary" paragraph>
-            Keeping a promise isn’t about choosing the easy road. Moving through
-            the turns we didn’t see coming, the stretches that feel endless and
-            the moments that ask us to dig deeper strengthens the thread that
-            holds us together across roles, space and time.
-          </Typography>
-
-          <Typography variant="body1" color="text.secondary" paragraph>
-            No one walks this road alone. We follow together, building on the
-            work of those who came before us and creating a path for those who
-            will follow next.
-          </Typography>
-
-          <Typography variant="body1" color="text.secondary" paragraph>
-            This year, we will keep that promise. We’ll show up. We’ll fight for
-            progress. We’ll walk the hard roads.
-          </Typography>
-
-          <Typography variant="body1" color="text.secondary" paragraph>
-            <b>We will #FollowThePromise. </b>
-          </Typography>
-
-          <Typography variant="body1" color="text.secondary" paragraph>
-            Together.
-          </Typography>
+          {/* Add additional <Typography> blocks as needed, or delete any unneeded ones */}
 
           <Grid
             container
@@ -126,8 +113,8 @@ export default function FollowThePromise() {
               <LazyLoad height={200} offset={100} once>
                 <Box
                   component="img"
-                  src={Image1}
-                  alt="Follow The Promise"
+                  src={Image2}
+                  alt="Miracle Families"
                   sx={{
                     maxWidth: 400,
                     borderRadius: 4,
@@ -144,7 +131,7 @@ export default function FollowThePromise() {
             variant="h6"
             sx={{ fontStyle: "italic", mt: 2, color: "text.secondary" }}
           >
-            Maya Vaidya {/* Change author name */}
+            Shae Helmer {/* Change author name */}
           </Typography>
 
           <Typography
@@ -155,7 +142,8 @@ export default function FollowThePromise() {
           </Typography>
 
           <Typography variant="body2" color="text.secondary">
-            Marketing Manager {/* Change position name */}
+            Communications and Public Relations Captain{" "}
+            {/* Change position name */}
           </Typography>
         </Box>
         <Grid
@@ -169,7 +157,7 @@ export default function FollowThePromise() {
               variant="outlined"
               startIcon={<ArrowBackIcon />}
               onClick={() =>
-                (window.location.href = "/blog/togetherwe")
+                (window.location.href = "/blog/followthepromise")
               } /* Complete Step 2 in list above and then change link to previous blog url from index.js ^*/
               sx={{
                 color: "primary.main",
@@ -186,11 +174,13 @@ export default function FollowThePromise() {
 
           {/* If this is no longer most recent blog, uncomment below and change url to next blog */}
 
-          <Grid item>
+          {/* <Grid item>
             <Button
               variant="outlined"
               endIcon={<ArrowForwardIcon />}
-              onClick={() => (window.location.href = "/blog/tt25")}
+              onClick={() =>
+                (window.location.href = "/blog/findingyourdmfamily")
+              }
               sx={{
                 color: "primary.main",
                 borderColor: "white",
@@ -202,7 +192,7 @@ export default function FollowThePromise() {
             >
               Next Blog
             </Button>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
       <Footer />

@@ -13,7 +13,7 @@ import LazyLoad from "react-lazyload";
 import FAQ from "../components/FAQ";
 
 import MainEventPic from "../assets/images/pagepics/MainEventPic.jpg";
-import MEBanner from "../assets/images/pagepics/MEBanner.png";
+import MEBanner from "../assets/images/pagepics/MEBanner.jpg";
 
 export default function MainEvent() {
   const [mode, setMode] = React.useState(() => {
@@ -233,7 +233,7 @@ export default function MainEvent() {
           <Typography variant="body1" sx={{ color: "text.secondary" }}>
             For additional questions, email{" "}
             <Link href="mailto:dgeller@floridadm.org" sx={{ color: "#1a73e8" }}>
-              mainevent@floridadm.org
+              apaek@floridadm.org
             </Link>
             .
           </Typography>
