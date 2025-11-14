@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.8e33fba9.js",
+    "main.js": "/static/js/main.98b8f951.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -39,7 +39,6 @@
     "static/media/cursedcam.jpg": "/static/media/cursedcam.f79085955b14778ddfc8.jpg",
     "static/media/2026 Overall Director Application.pdf": "/static/media/2026 Overall Director Application.5ad3ce6d70be5a09d2b6.pdf",
     "static/media/Spark1.jpg": "/static/media/Spark1.421c62c36240f93009e7.jpg",
-    "static/media/MEBanner.png": "/static/media/MEBanner.494829c73431a8316be3.png",
     "static/media/Spark3.jpg": "/static/media/Spark3.4794d40e6d81c16d8fe8.jpg",
     "static/media/Spark4.jpg": "/static/media/Spark4.c82c5c864416aa65f9eb.jpg",
     "static/media/2026 Manager Application.pdf": "/static/media/2026 Manager Application.1a5f2380ca1b49cd0fbc.pdf",
@@ -177,6 +176,7 @@
     "static/media/Bella.jpg": "/static/media/Bella.d703530c29c8f0eb57a8.jpg",
     "static/media/BehindTheScenes2.jpg": "/static/media/BehindTheScenes2.795f1199e9f8f7425fed.jpg",
     "static/media/FTM1.jpg": "/static/media/FTM1.635fafa46711f66d5156.jpg",
+    "static/media/MEBanner.jpg": "/static/media/MEBanner.33f4d95dee11d5ce0f29.jpg",
     "static/media/TogetherWe2.jpg": "/static/media/TogetherWe2.d3f1e166d3b901a4fea9.jpg",
     "static/media/Lauren.jpg": "/static/media/Lauren.88057e46abfe82c727f9.jpg",
     "static/media/RS.jpg": "/static/media/RS.894a6036a2c94ad82f63.jpg",
@@ -191,6 +191,7 @@
     "static/media/Sponsor (66).png": "/static/media/Sponsor (66).d2c31c76bf52e4bdeaac.png",
     "static/media/DonorDriveBox.jpg": "/static/media/DonorDriveBox.27040884be2f6907ab35.jpg",
     "static/media/Sponsor (73).png": "/static/media/Sponsor (73).d39b846bfdd4d3404183.png",
+    "static/media/TT252.jpg": "/static/media/TT252.00bf6dbdc149aec1a4d3.jpg",
     "static/media/Sponsor (46).png": "/static/media/Sponsor (46).ad3c9cf980717390f174.png",
     "static/media/TriBrand_Color.png": "/static/media/TriBrand_Color.5275d5fa118b4e63649c.png",
     "static/media/Caden.jpg": "/static/media/Caden.b1eb3d4e06325750a0b0.jpg",
@@ -209,6 +210,7 @@
     "static/media/Sponsor (42).png": "/static/media/Sponsor (42).dbcdd0b26f9a2bff49c0.png",
     "static/media/Sponsor (2).png": "/static/media/Sponsor (2).7a0b9941e9d9f5dbd409.png",
     "static/media/Sponsor (14).png": "/static/media/Sponsor (14).993fb9cd29bb2d72e7ac.png",
+    "static/media/TT251.jpg": "/static/media/TT251.a4a96baf01f347acc95b.jpg",
     "static/media/Sponsor (63).png": "/static/media/Sponsor (63).3fbe6f0d81bb2f70f67a.png",
     "static/media/Sponsor (27).png": "/static/media/Sponsor (27).6dff9dd3f310e7138dec.png",
     "static/media/Sponsor (23).png": "/static/media/Sponsor (23).ba57d9084f81f91a80ab.png",
@@ -344,11 +346,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.8e33fba9.js.map": "/static/js/main.8e33fba9.js.map",
+    "main.98b8f951.js.map": "/static/js/main.98b8f951.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.8e33fba9.js"
+    "static/js/main.98b8f951.js"
   ]
 }
