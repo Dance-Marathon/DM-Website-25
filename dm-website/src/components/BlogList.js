@@ -173,7 +173,7 @@ const blogs = [
   {
     id: 18,
     title: "#FollowThePromise",
-    author: "Sofia Amoroso",
+    author: "Maya Vaidya",
     date: "September 30, 2025",
     imageUrl: FollowThePromise,
     linkName: "followthepromise",
