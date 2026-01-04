@@ -64,11 +64,10 @@ export default function Miracles5k() {
         >
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
-              Welcome to the{" "}
               <span style={{ color: "#e2883c", fontWeight: "bold" }}>
                 Miracles in Color 5K
               </span>{" "}
-              benefiting UF Health Shands Children's Hospital! It is open to
+              is on January 25, 2026, benefitting UF Health Shands Children’s Hospital! It is open to
               anyone who wants to support our cause and have a great time. We
               couldn't think of a better way for you to spend your Sunday
               morning than with paint and by supporting a hospital that is so
@@ -84,8 +83,11 @@ export default function Miracles5k() {
                 white shirt with registration.
               </u>
             </p>
-            The 5k course will be split into 2 shifts. When registering, you
-            will be able to choose which shift you would like to run at. Shift
+            The 5k course will be split into 2 shifts. Register{" "}
+            <Link href="mailto:https://events.dancemarathon.com/miraclesincolor26" sx={{ color: "#1a73e8" }}>
+              here{" "}
+            </Link>
+            and choose which shift you would like to run at. Shift
             options include 8:00 a.m. or 9:00 a.m.{" "}
             <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               {" "}
@@ -142,10 +144,10 @@ export default function Miracles5k() {
           >
             Check your email for more information, and email{" "}
             <Link
-              href="mailto:mthompson@floridadm.org"
+              href="mailto:afennen@floridadm.org"
               sx={{ color: "#1a73e8" }}
             >
-              mthompson@floridadm.org
+              afennen@floridadm.org
             </Link>{" "}
             with any questions.
           </Typography>
