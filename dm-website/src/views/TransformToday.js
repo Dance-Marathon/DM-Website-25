@@ -103,7 +103,7 @@ export default function TransformToday() {
             Our 2024 total, which was raised in just 26.2 hours for our
             hospital, was{" "}
             <span style={{ color: "#e2883c", fontWeight: "bold" }}>
-              $365,131.79!
+              $351,126.12!
             </span>
             <p>
               We are so eager to continue our efforts throughout this year and
@@ -116,7 +116,7 @@ export default function TransformToday() {
             </p>
           </Typography>
           <LazyLoad height={200} offset={100} once>
-            <YoutubeVid videoId="1mRhkA--yew" />
+            <YoutubeVid videoId="26xQt5sSrr4" />
           </LazyLoad>
           <Typography
             variant="h5"
