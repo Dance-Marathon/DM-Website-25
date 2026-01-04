@@ -78,7 +78,7 @@ export default function Moralloween() {
               href="mailto:kfinkelstein@floridadm.org"
               sx={{ color: "#1a73e8" }}
             >
-              dsiegel@floridadm.org
+              kfinkelstein@floridadm.org
             </Link>
             .
           </Typography>
