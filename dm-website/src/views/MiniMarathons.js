@@ -106,7 +106,7 @@ export default function MiniMarathons() {
           </Typography>
 
           <Grid container alignItems="center">
-            <Grid item xs={12} sm={4}>
+            <Grid item xs={14} sm={4}>
               <Typography
                 variant="h5"
                 component="h2"
@@ -131,6 +131,15 @@ export default function MiniMarathons() {
                     component="span"
                     color="text.secondary"
                   >
+                    Buchholz High School
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    component="span"
+                    color="text.secondary"
+                  >
                     East Ridge High School
                   </Typography>
                 </li>
@@ -140,7 +149,7 @@ export default function MiniMarathons() {
                     component="span"
                     color="text.secondary"
                   >
-                    Forest High School
+                    Eastside High School
                   </Typography>
                 </li>
                 <li>
@@ -149,7 +158,7 @@ export default function MiniMarathons() {
                     component="span"
                     color="text.secondary"
                   >
-                    F.W. Buchholz High School
+                    Forest High School
                   </Typography>
                 </li>
                 <li>
@@ -203,6 +212,15 @@ export default function MiniMarathons() {
                     component="span"
                     color="text.secondary"
                   >
+                    P.K. Yonge Developmental School
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    component="span"
+                    color="text.secondary"
+                  >
                     Tavares High School
                   </Typography>
                 </li>
@@ -221,7 +239,7 @@ export default function MiniMarathons() {
                     component="span"
                     color="text.secondary"
                   >
-                    Villages Charter School
+                    The Villages Charter School
                   </Typography>
                 </li>
               </ul>
@@ -229,7 +247,7 @@ export default function MiniMarathons() {
             <Grid item xs={12} sm={8}>
               <Box>
                 <LazyLoad height={200} offset={100} once>
-                  <YoutubeVid videoId="wDD1GzDla3c" />
+                  <YoutubeVid videoId="VN7E93VIKq0" />
                 </LazyLoad>
               </Box>
             </Grid>
