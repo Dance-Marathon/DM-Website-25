@@ -132,10 +132,10 @@ export default function EmployeeMatching() {
             will not accept this request, as our tax-exempt status is included
             under the larger umbrella of Shands Teaching Hospital and Clinics,
             Inc. If you have any questions about this process, please reach out
-            to Tara Tovkach, Development Associate for Children’s Miracle
+            to Gabriella Hinks, Development Associate for Children’s Miracle
             Network, for clarification at{" "}
-            <Link href="mailto:ttov0002@shands.ufl.edu">
-              ttov0002@shands.ufl.edu
+            <Link href="mailto:hospitaladvisor@floridadm.org">
+              hospitaladvisor@floridadm.org
             </Link>
             .
           </Typography>
