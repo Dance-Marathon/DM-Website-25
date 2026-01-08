@@ -19,11 +19,11 @@ import LazyLoad from "react-lazyload";
 
 // Add all images to dm-website/src/assets/images/blogpics in a new folder with the title of the blog
 // Import images here and add any more if needed
-import Image1 from "../../assets/images/blogpics/TT25/TT251.jpg";
-import Image2 from "../../assets/images/blogpics/TT25/TT252.jpg";
+import Image1 from "../../assets/images/blogpics/NewYears/NewYears1.jpg";
+import Image2 from "../../assets/images/blogpics/NewYears/NewYears2.jpg";
 
 // Change name to Blog Name
-export default function TT25() {
+export default function NewYears() {
   const [mode, setMode] = React.useState(() => {
     return localStorage.getItem("theme") || "light";
   });
@@ -42,11 +42,7 @@ export default function TT25() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-        <PageHero
-          imageUrl={Image1}
-          title="Transform Today 2025: A Promise Transformed
-"
-        />{" "}
+        <PageHero imageUrl={Image1} title="New Years" />{" "}
         {/* Change blog name here */}
       </LazyLoad>
 
@@ -63,42 +59,46 @@ export default function TT25() {
       >
         <Box sx={{ textAlign: "left" }}>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Every member of Dance Marathon at UF has a different promise they
-            followed this Transform Today. For some, it was to keep fighting for
-            a future where no child has to wear a hospital band; for others, it
-            was to reach out to every single donor and follow up. But on the
-            night of October 21st, around 12 hours into Transform Today, I
-            witnessed a promise that changed my entire perspective about Dance
-            Marathon and what it means to fight childhood illness.
+            What is your New Year's resolution? To learn a new skill? To work
+            harder in classes? To spend more time with your friends and family?
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            At the end of Day 1, members of DM at UF completed an exercise that
-            involved writing our promise on a paper bag, and lighting that
-            promise with a tea candle. We set our bags down on the platform on
-            the Reitz Union North Lawn, and as I set mine down, I examined the
-            promises lining the wall.
+            Every December 31st, we reflect on the year behind us and make goals
+            for the year ahead. We stay up late and count down the minutes until
+            the clock strikes twelve. It is in this time that we gain new
+            motivation, energy and excitement to make this new year the best one
+            yet.
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            The promise that caught my eye read, “So no kid has to fight alone.”
+            Oftentimes, our resolutions are filled with personal goals. Maybe to
+            eat healthier, go outside more, or do better in school. This year we
+            invite you to reflect on your time at Dance Marathon so far. Think
+            of all you have accomplished, the miracle families, the friends and
+            memories you have made along the way. How have you followed the
+            promise?
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            This promise was so blunt, so unique, that I couldn’t help but be
-            taken aback. I re-examined my “Why DM.” Previously, I was thinking I
-            was simply doing a good deed and getting involved on campus.
-            Truthfully, I have many friends who are in DM that convinced me to
-            join this year as a sophomore.
+            2025 has been an incredible year for DM at UF, but as we look
+            towards 2026, there is so much more we can do! With the main event
+            being just a few months away, what can you do this year to make a
+            change? What are some new ways we can fundraise? And how can we help
+            our miracle families' new year’s resolutions come true? Together, we
+            can make this next year one that is unforgettable.
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            After seeing that promise, it is so much easier for me to envision
-            who I do this for. I do not do this for myself or for my friends,
-            rather I know that I fundraise, work and advocate for the children
-            at UF Health Shands Children’s Hospital. Transform Today not only
-            transformed the lives of so many children fighting childhood
-            illness, but also the lives of those participating in it. Transform
-            Today changed my “Why,” and my relationship with DM. Forever.
+            This new year, we look into 2026 with renewed passion, purpose and
+            drive to give these children and their families the resolutions they
+            deserve. Whether you donate, fundraise or spread the messaging of DM
+            at UF, you are helping to make a change.
+          </Typography>
+
+          <Typography variant="body1" color="text.secondary" paragraph>
+            This year, at Dance Marathon at The University of Florida, our New
+            Year's resolution is to #FollowThePromise we made and continue our
+            fight to end childhood illness.
           </Typography>
 
           {/* Add additional <Typography> blocks as needed, or delete any unneeded ones */}
@@ -131,7 +131,7 @@ export default function TT25() {
             variant="h6"
             sx={{ fontStyle: "italic", mt: 2, color: "text.secondary" }}
           >
-            Shae Helmer {/* Change author name */}
+            Josephine Barsky {/* Change author name */}
           </Typography>
 
           <Typography
@@ -142,8 +142,7 @@ export default function TT25() {
           </Typography>
 
           <Typography variant="body2" color="text.secondary">
-            Communications and Public Relations Captain{" "}
-            {/* Change position name */}
+            Public Relations, Captain {/* Change position name */}
           </Typography>
         </Box>
         <Grid
@@ -157,7 +156,7 @@ export default function TT25() {
               variant="outlined"
               startIcon={<ArrowBackIcon />}
               onClick={() =>
-                (window.location.href = "/blog/followthepromise")
+                (window.location.href = "/blog/thankyousom")
               } /* Complete Step 2 in list above and then change link to previous blog url from index.js ^*/
               sx={{
                 color: "primary.main",
@@ -174,11 +173,13 @@ export default function TT25() {
 
           {/* If this is no longer most recent blog, uncomment below and change url to next blog */}
 
-          <Grid item>
+          {/* <Grid item>
             <Button
               variant="outlined"
               endIcon={<ArrowForwardIcon />}
-              onClick={() => (window.location.href = "/blog/thankyousom")}
+              onClick={() =>
+                (window.location.href = "/blog/findingyourdmfamily")
+              }
               sx={{
                 color: "primary.main",
                 borderColor: "white",
@@ -190,7 +191,7 @@ export default function TT25() {
             >
               Next Blog
             </Button>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
       <Footer />

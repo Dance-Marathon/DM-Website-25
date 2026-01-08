@@ -66,6 +66,8 @@ import Spark from "./views/blogs/Spark";
 import TogetherWe from "./views/blogs/TogetherWe";
 import FollowThePromise from "./views/blogs/FollowThePromise";
 import TT25 from "./views/blogs/TT25";
+import SOM from "./views/blogs/SOM";
+import NewYears from "./views/blogs/NewYears";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -124,6 +126,8 @@ root.render(
         <Route path="/blog/togetherwe" element={<TogetherWe />} />
         <Route path="/blog/followthepromise" element={<FollowThePromise />} />
         <Route path="/blog/tt25" element={<TT25 />} />
+        <Route path="/blog/thankyousom" element={<SOM />} />
+        <Route path="/blog/newyears" element={<NewYears />} />
         <Route path="/events" element={<Events />} />
         <Route path="/mainevent" element={<MainEvent />} />
         <Route path="/moralloween" element={<Moralloween />} />

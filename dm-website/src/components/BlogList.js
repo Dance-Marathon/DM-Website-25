@@ -32,6 +32,8 @@ import Spark from "../assets/images/blogpics/Spark/Spark1.jpg";
 import TogetherWe from "../assets/images/blogpics/TogetherWe/TogetherWe1.jpg";
 import FollowThePromise from "../assets/images/blogpics/FollowThePromise/FollowThePromise1.jpg";
 import TT25 from "../assets/images/blogpics/TT25/TT251.jpg";
+import SOM from "../assets/images/blogpics/SOM/SOM1.jpg";
+import NewYears from "../assets/images/blogpics/NewYears/NewYears1.jpg";
 
 const blogs = [
   {
@@ -185,6 +187,22 @@ const blogs = [
     date: "November 14, 2025",
     imageUrl: TT25,
     linkName: "tt25",
+  },
+  {
+    id: 20,
+    title: "Thank you SOM!",
+    author: "Molly Freeburg",
+    date: "December 12, 2025",
+    imageUrl: SOM,
+    linkName: "thankyousom",
+  },
+  {
+    id: 21,
+    title: "New Years",
+    author: "Josephine Barsky",
+    date: "January 8, 2026",
+    imageUrl: NewYears,
+    linkName: "newyears",
   },
 ];
 

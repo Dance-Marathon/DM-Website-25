@@ -19,11 +19,11 @@ import LazyLoad from "react-lazyload";
 
 // Add all images to dm-website/src/assets/images/blogpics in a new folder with the title of the blog
 // Import images here and add any more if needed
-import Image1 from "../../assets/images/blogpics/TT25/TT251.jpg";
-import Image2 from "../../assets/images/blogpics/TT25/TT252.jpg";
+import Image1 from "../../assets/images/blogpics/SOM/SOM1.jpg";
+import Image2 from "../../assets/images/blogpics/SOM/SOM2.jpg";
 
 // Change name to Blog Name
-export default function TT25() {
+export default function SOM() {
   const [mode, setMode] = React.useState(() => {
     return localStorage.getItem("theme") || "light";
   });
@@ -42,11 +42,7 @@ export default function TT25() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-        <PageHero
-          imageUrl={Image1}
-          title="Transform Today 2025: A Promise Transformed
-"
-        />{" "}
+        <PageHero imageUrl={Image1} title="Thank you SOM!" />{" "}
         {/* Change blog name here */}
       </LazyLoad>
 
@@ -63,66 +59,59 @@ export default function TT25() {
       >
         <Box sx={{ textAlign: "left" }}>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Every member of Dance Marathon at UF has a different promise they
-            followed this Transform Today. For some, it was to keep fighting for
-            a future where no child has to wear a hospital band; for others, it
-            was to reach out to every single donor and follow up. But on the
-            night of October 21st, around 12 hours into Transform Today, I
-            witnessed a promise that changed my entire perspective about Dance
-            Marathon and what it means to fight childhood illness.
+            As this year’s holiday season arrived, we saw the energy of our
+            ever-so-buzzing campus begin to fade. Classes began to end, crowds
+            of students began to thin and the lights across the University of
+            Florida began to dim to signal the end of yet another fall semester.
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            At the end of Day 1, members of DM at UF completed an exercise that
-            involved writing our promise on a paper bag, and lighting that
-            promise with a tea candle. We set our bags down on the platform on
-            the Reitz Union North Lawn, and as I set mine down, I examined the
-            promises lining the wall.
+            But just across from our campus, the lights of UF Health Shands
+            Children’s Hospital remained bright. While many students and
+            families were able to travel home for the holidays and reunite with
+            their loved ones, children continued their fight with childhood
+            illness within those hospital walls.
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            The promise that caught my eye read, “So no kid has to fight alone.”
+            This Season of Miracles, we pledged to do the same. We pledged to
+            continue to #FollowThePromise we made at the beginning of this
+            semester to ourselves, those around us and the patients and families
+            who need us most this holiday season. We pledged to remember that
+            while we are able to rest and return to the comfort of our own
+            homes, there are children who are not yet able to do the same.
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            This promise was so blunt, so unique, that I couldn’t help but be
-            taken aback. I re-examined my “Why DM.” Previously, I was thinking I
-            was simply doing a good deed and getting involved on campus.
-            Truthfully, I have many friends who are in DM that convinced me to
-            join this year as a sophomore.
+            And so, we did. To every donor and member of our organization who
+            followed their promise and continued their efforts during our Season
+            of Miracles, thank you. Each contribution and act of support
+            symbolizes a reminder to each child that if they could not take a
+            break in their battles, neither would we.
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            After seeing that promise, it is so much easier for me to envision
-            who I do this for. I do not do this for myself or for my friends,
-            rather I know that I fundraise, work and advocate for the children
-            at UF Health Shands Children’s Hospital. Transform Today not only
-            transformed the lives of so many children fighting childhood
-            illness, but also the lives of those participating in it. Transform
-            Today changed my “Why,” and my relationship with DM. Forever.
+            Because of you, the light of hope shined brighter than the lights at
+            UF Health Shands Children’s Hospital and paved the way for brighter
+            days ahead. Thank you for #FollowingThePromise to continue your
+            efforts during the Season of Miracles and showing each child that no
+            matter the season, they are never fighting alone.
           </Typography>
 
           {/* Add additional <Typography> blocks as needed, or delete any unneeded ones */}
 
-          <Grid
-            container
-            alignItems="center"
-            justifyContent="center"
-            sx={{ marginTop: 5, marginBottom: 5, gap: 10 }}
-          >
-            <Grid item>
-              <LazyLoad height={200} offset={100} once>
-                <Box
-                  component="img"
-                  src={Image2}
-                  alt="Miracle Families"
-                  sx={{
-                    maxWidth: 400,
-                    borderRadius: 4,
-                    display: "block",
-                  }}
-                />
-              </LazyLoad>
-            </Grid>
+          <Grid item>
+            <LazyLoad height={200} offset={100} once>
+              <Box
+                component="img"
+                src={Image2}
+                alt="Miracle Families"
+                sx={{
+                  maxWidth: 400,
+                  borderRadius: 4,
+                  display: "block",
+                }}
+              />
+            </LazyLoad>
           </Grid>
 
           {/* Add any additional Grids as needed for more images */}
@@ -131,7 +120,7 @@ export default function TT25() {
             variant="h6"
             sx={{ fontStyle: "italic", mt: 2, color: "text.secondary" }}
           >
-            Shae Helmer {/* Change author name */}
+            Molly Freeburg {/* Change author name */}
           </Typography>
 
           <Typography
@@ -142,8 +131,7 @@ export default function TT25() {
           </Typography>
 
           <Typography variant="body2" color="text.secondary">
-            Communications and Public Relations Captain{" "}
-            {/* Change position name */}
+            Public Relations, Captain {/* Change position name */}
           </Typography>
         </Box>
         <Grid
@@ -157,7 +145,7 @@ export default function TT25() {
               variant="outlined"
               startIcon={<ArrowBackIcon />}
               onClick={() =>
-                (window.location.href = "/blog/followthepromise")
+                (window.location.href = "/blog/tt25")
               } /* Complete Step 2 in list above and then change link to previous blog url from index.js ^*/
               sx={{
                 color: "primary.main",
@@ -178,7 +166,7 @@ export default function TT25() {
             <Button
               variant="outlined"
               endIcon={<ArrowForwardIcon />}
-              onClick={() => (window.location.href = "/blog/thankyousom")}
+              onClick={() => (window.location.href = "/blog/newyears")}
               sx={{
                 color: "primary.main",
                 borderColor: "white",
