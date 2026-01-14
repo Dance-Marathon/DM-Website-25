@@ -124,7 +124,7 @@ export default function Miracles5k() {
             <p>
               Please arrive 15 minutes before your scheduled run time to sign
               in. You must fill out the required{" "}
-              <Link href="https://ufl.qualtrics.com/jfe/form/SV_3mA8svPgLNm2xMy">
+              <Link href="https://ufl.qualtrics.com/jfe/form/SV_24UO4yrnhNwbtVc">
                 Liability Waiver Form
               </Link>{" "}
               prior to arriving at our 5k. We recommend you fill out this form
