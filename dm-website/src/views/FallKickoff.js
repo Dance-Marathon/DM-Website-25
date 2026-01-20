@@ -9,7 +9,7 @@ import { Container, Typography } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import YoutubeVid from "../components/YoutubeVid";
-import FallKickoffPic from "../assets/images/pagepics/FallKickoffPic.jpg";
+import FallKickoffPic from "../assets/images/pagepics/Kickoff25.jpg";
 import LazyLoad from "react-lazyload";
 
 export default function FallKickoff() {
@@ -53,15 +53,14 @@ export default function FallKickoff() {
         >
           <Typography color="text.secondary" sx={{ marginBottom: 6 }}>
             <p>
-              DM at UF hosted its first annual{" "}
+              DM at UF’s{" "}
               <span style={{ color: "#233563", fontWeight: "bold" }}>
                 Kickoff Event
               </span>{" "}
-              in 2021! We are excited to continue this event for many years to
-              come. It is the first event of the year for all of our internal
-              and external members, Miracle Families, and more to enjoy. The
-              event is held at Flavet Field including music, fun games, Miracle
-              Stories, food, merchandise, and more!
+              is our annual start to the year, which brings together our members,
+              Miracle Families and the UF community. It features music, games,
+              Miracle Stories, merch and more as we launch into a new year of 
+              making miracles happen.
             </p>
           </Typography>
           <LazyLoad height={200} offset={100} once>
