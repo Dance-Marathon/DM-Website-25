@@ -67,11 +67,11 @@ export default function Miracles5k() {
               <span style={{ color: "#e2883c", fontWeight: "bold" }}>
                 Miracles in Color 5K
               </span>{" "}
-              is on January 25, 2026, benefitting UF Health Shands Children’s Hospital! It is open to
-              anyone who wants to support our cause and have a great time. We
-              couldn't think of a better way for you to spend your Sunday
-              morning than with paint and by supporting a hospital that is so
-              prominent in our community!
+              is on January 25, 2026, benefitting UF Health Shands Children’s
+              Hospital! It is open to anyone who wants to support our cause and
+              have a great time. We couldn't think of a better way for you to
+              spend your Sunday morning than with paint and by supporting a
+              hospital that is so prominent in our community!
             </p>
             <p>
               The course runs through the University of Florida campus and will
@@ -84,11 +84,14 @@ export default function Miracles5k() {
               </u>
             </p>
             The 5k course will be split into 2 shifts. Register{" "}
-            <Link href="mailto:https://events.dancemarathon.com/miraclesincolor26" sx={{ color: "#1a73e8" }}>
+            <Link
+              href="https://events.dancemarathon.com/miraclesincolor26"
+              sx={{ color: "#1a73e8" }}
+            >
               here{" "}
             </Link>
-            and choose which shift you would like to run at. Shift
-            options include 8:00 a.m. or 9:00 a.m.{" "}
+            and choose which shift you would like to run at. Shift options
+            include 8:00 a.m. or 9:00 a.m.{" "}
             <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               {" "}
               On the day of the event, please arrive at least 15 minutes prior
@@ -143,10 +146,7 @@ export default function Miracles5k() {
             sx={{ color: "text.secondary", marginBottom: 4 }}
           >
             Check your email for more information, and email{" "}
-            <Link
-              href="mailto:afennen@floridadm.org"
-              sx={{ color: "#1a73e8" }}
-            >
+            <Link href="mailto:afennen@floridadm.org" sx={{ color: "#1a73e8" }}>
               afennen@floridadm.org
             </Link>{" "}
             with any questions.
