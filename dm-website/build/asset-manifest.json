@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.6a164449.js",
+    "main.js": "/static/js/main.07d64564.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -15,6 +15,8 @@
     "static/media/EB.jpg": "/static/media/EB.0f8a183938f4935cceb6.jpg",
     "static/media/KF.jpg": "/static/media/KF.7e026f9d6f407a33ce8c.jpg",
     "static/media/JR.jpg": "/static/media/JR.0d1349fd701a1c1a69da.jpg",
+    "static/media/Kickoff25.jpg": "/static/media/Kickoff25.aa325f91c9ff85f0de34.jpg",
+    "static/media/KickOff25.jpg": "/static/media/KickOff25.aa0d17748093adb0bf62.jpg",
     "static/media/SummerIncentives2.png": "/static/media/SummerIncentives2.803999991b0e5fed00db.png",
     "static/media/SummerSpellbook2.png": "/static/media/SummerSpellbook2.79d04be1892386cc8129.png",
     "static/media/how-to-guide.pdf": "/static/media/how-to-guide.6a410f804c228a2204e3.pdf",
@@ -118,7 +120,6 @@
     "static/media/OurStoryHero.jpg": "/static/media/OurStoryHero.d482c4f6d3d447841842.jpg",
     "static/media/MiracleFamiliesBox.jpg": "/static/media/MiracleFamiliesBox.c66d0aa5621e012b6384.jpg",
     "static/media/CMNHero.jpg": "/static/media/CMNHero.79f36dc9a2e4d5e70ca2.jpg",
-    "static/media/FallKickoffPic.jpg": "/static/media/FallKickoffPic.ceb5594bb15b903c13b9.jpg",
     "static/media/ELPPic.jpg": "/static/media/ELPPic.c0f7df793bb3fa07264d.jpg",
     "static/media/MiniMarathonsPic.jpg": "/static/media/MiniMarathonsPic.214e2d5f976781dee84b.jpg",
     "static/media/Miracle Families.jpg": "/static/media/Miracle Families.246d2fe03b26d3337cb6.jpg",
@@ -136,7 +137,6 @@
     "static/media/Sponsor (72).png": "/static/media/Sponsor (72).9c0131a46fbeda6646f4.png",
     "static/media/CanningBox.jpg": "/static/media/CanningBox.c932e46879728c5bac00.jpg",
     "static/media/FundraisingGuideMini.jpg": "/static/media/FundraisingGuideMini.df5092c60819223ba9b1.jpg",
-    "static/media/KickoffBox.jpg": "/static/media/KickoffBox.5868d8149ff874bf7b9d.jpg",
     "static/media/BlogsPic.jpg": "/static/media/BlogsPic.d5bf9ad0c7799c3e1a48.jpg",
     "static/media/TTBox.jpg": "/static/media/TTBox.f2a2a362296cce89a989.jpg",
     "static/media/ThankfulnessBox.jpg": "/static/media/ThankfulnessBox.73bb5cde2769ca8b3924.jpg",
@@ -350,11 +350,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.6a164449.js.map": "/static/js/main.6a164449.js.map",
+    "main.07d64564.js.map": "/static/js/main.07d64564.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.6a164449.js"
+    "static/js/main.07d64564.js"
   ]
 }
