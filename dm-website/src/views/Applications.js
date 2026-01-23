@@ -274,6 +274,13 @@ export default function Applications() {
             >
               sguerrero@floridadm.org
             </Link>
+            {" "}or the Member Advancement Overall Director, Alexandra Polo at
+            <Link
+              href="mailto:apolo@floridadm.org"
+              sx={{ color: "#1a73e8" }}
+            >
+              {" "}apolo@floridadm.org
+            </Link>
             .
           </Typography>
         </Box>
