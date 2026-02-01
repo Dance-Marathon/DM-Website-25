@@ -34,6 +34,7 @@ import FollowThePromise from "../assets/images/blogpics/FollowThePromise/FollowT
 import TT25 from "../assets/images/blogpics/TT25/TT251.jpg";
 import SOM from "../assets/images/blogpics/SOM/SOM1.jpg";
 import NewYears from "../assets/images/blogpics/NewYears/NewYears1.jpg";
+import OurPromise from "../assets/images/blogpics/OurPromise/OurPromise1.jpg";
 
 const blogs = [
   {
@@ -203,6 +204,14 @@ const blogs = [
     date: "January 8, 2026",
     imageUrl: NewYears,
     linkName: "newyears",
+  },
+  {
+    id: 22,
+    title: "Our Promise",
+    author: "Keagan Miller",
+    date: "February 1, 2026",
+    imageUrl: OurPromise,
+    linkName: "ourpromise",
   },
 ];
 

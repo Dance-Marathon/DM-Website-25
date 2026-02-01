@@ -19,11 +19,11 @@ import LazyLoad from "react-lazyload";
 
 // Add all images to dm-website/src/assets/images/blogpics in a new folder with the title of the blog
 // Import images here and add any more if needed
-import Image1 from "../../assets/images/blogpics/NewYears/NewYears1.jpg";
-import Image2 from "../../assets/images/blogpics/NewYears/NewYears2.jpg";
+import Image1 from "../../assets/images/blogpics/OurPromise/OurPromise1.jpg";
+import Image2 from "../../assets/images/blogpics/OurPromise/OurPromise2.jpg";
 
 // Change name to Blog Name
-export default function NewYears() {
+export default function OurPromise() {
   const [mode, setMode] = React.useState(() => {
     return localStorage.getItem("theme") || "light";
   });
@@ -42,7 +42,7 @@ export default function NewYears() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-        <PageHero imageUrl={Image1} title="New Years" />{" "}
+        <PageHero imageUrl={Image1} title="Our Promise" />{" "}
         {/* Change blog name here */}
       </LazyLoad>
 
@@ -59,46 +59,36 @@ export default function NewYears() {
       >
         <Box sx={{ textAlign: "left" }}>
           <Typography variant="body1" color="text.secondary" paragraph>
-            What is your New Year's resolution? To learn a new skill? To work
-            harder in classes? To spend more time with your friends and family?
+            This month, we’re following through on Our Promise from last fall,
+            which is to support children and families in meaningful ways. For
+            the kids, it means fun, learning and growing confidence. For
+            families, it’s knowing they have a partner who shows up and cares.
+            And for us, it’s a reminder of why we do this work. The smiles, the
+            progress and the small victories that make a big difference to so
+            many people around us.
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Every December 31st, we reflect on the year behind us and make goals
-            for the year ahead. We stay up late and count down the minutes until
-            the clock strikes twelve. It is in this time that we gain new
-            motivation, energy and excitement to make this new year the best one
-            yet.
-          </Typography>
-
-          <Typography variant="body1" color="text.secondary" paragraph>
-            Oftentimes, our resolutions are filled with personal goals. Maybe to
-            eat healthier, go outside more, or do better in school. This year we
-            invite you to reflect on your time at Dance Marathon so far. Think
-            of all you have accomplished, the miracle families, the friends and
-            memories you have made along the way. How have you followed the
-            promise?
-          </Typography>
-
-          <Typography variant="body1" color="text.secondary" paragraph>
-            2025 has been an incredible year for DM at UF, but as we look
-            towards 2026, there is so much more we can do! With the main event
-            being just a few months away, what can you do this year to make a
-            change? What are some new ways we can fundraise? And how can we help
-            our miracle families' new year’s resolutions come true? Together, we
-            can make this next year one that is unforgettable.
+            Throughout this month, we will follow through on our promise by
+            delivering programs, guidance and care that impact lives every day.
+            Whether through learning opportunities, mentorship or simply being
+            there to listen and support, we are committed to ensuring every
+            child and family feels seen, supported and empowered. Keeping our
+            promise isn’t just words on paper, but it’s deeds with consistency
+            and dedication. Together, we continue to build a stronger community
+            and make a real, positive difference with one child, one family and
+            one promise at a time.
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            This new year, we look into 2026 with renewed passion, purpose and
-            drive to give these children and their families the resolutions they
-            deserve. Whether you donate, fundraise or spread the messaging of DM
-            at UF, you are helping to make a change.
+            {/* Insert Paragraph Here */}
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            This year, at Dance Marathon at The University of Florida, our New
-            Year's resolution is to #FollowThePromise we made and continue our
-            fight to end childhood illness.
+            {/* Insert Paragraph Here */}
+          </Typography>
+
+          <Typography variant="body1" color="text.secondary" paragraph>
+            {/* Insert Paragraph Here */}
           </Typography>
 
           {/* Add additional <Typography> blocks as needed, or delete any unneeded ones */}
@@ -131,7 +121,7 @@ export default function NewYears() {
             variant="h6"
             sx={{ fontStyle: "italic", mt: 2, color: "text.secondary" }}
           >
-            Josephine Barsky {/* Change author name */}
+            Keagan Miller {/* Change author name */}
           </Typography>
 
           <Typography
@@ -156,7 +146,7 @@ export default function NewYears() {
               variant="outlined"
               startIcon={<ArrowBackIcon />}
               onClick={() =>
-                (window.location.href = "/blog/thankyousom")
+                (window.location.href = "/blog/newyears")
               } /* Complete Step 2 in list above and then change link to previous blog url from index.js ^*/
               sx={{
                 color: "primary.main",
@@ -173,11 +163,13 @@ export default function NewYears() {
 
           {/* If this is no longer most recent blog, uncomment below and change url to next blog */}
 
-          <Grid item>
+          {/* <Grid item>
             <Button
               variant="outlined"
               endIcon={<ArrowForwardIcon />}
-              onClick={() => (window.location.href = "/blog/ourpromise")}
+              onClick={() =>
+                (window.location.href = "/blog/findingyourdmfamily")
+              }
               sx={{
                 color: "primary.main",
                 borderColor: "white",
@@ -189,7 +181,7 @@ export default function NewYears() {
             >
               Next Blog
             </Button>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
       <Footer />

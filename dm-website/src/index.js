@@ -68,6 +68,7 @@ import FollowThePromise from "./views/blogs/FollowThePromise";
 import TT25 from "./views/blogs/TT25";
 import SOM from "./views/blogs/SOM";
 import NewYears from "./views/blogs/NewYears";
+import OurPromise from "./views/blogs/OurPromise";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -128,6 +129,7 @@ root.render(
         <Route path="/blog/tt25" element={<TT25 />} />
         <Route path="/blog/thankyousom" element={<SOM />} />
         <Route path="/blog/newyears" element={<NewYears />} />
+        <Route path="/blog/ourpromise" element={<OurPromise />} />
         <Route path="/events" element={<Events />} />
         <Route path="/mainevent" element={<MainEvent />} />
         <Route path="/moralloween" element={<Moralloween />} />
@@ -140,7 +142,7 @@ root.render(
       </Routes>
     </Router>
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById("root"),
 );
 
 reportWebVitals();
