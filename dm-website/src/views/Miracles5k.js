@@ -83,7 +83,7 @@ export default function Miracles5k() {
                 white shirt with registration.
               </u>
             </p>
-            The 5k course will be split into 2 shifts. Register{" "}
+            {/* The 5k course will be split into 2 shifts. Register{" "}
             <Link
               href="https://events.dancemarathon.com/miraclesincolor26"
               sx={{ color: "#1a73e8" }}
@@ -96,7 +96,7 @@ export default function Miracles5k() {
               {" "}
               On the day of the event, please arrive at least 15 minutes prior
               to your start time.
-            </span>
+            </span> */}
             <p>
               All proceeds will be donated to UF Health Shands Children's
               Hospital, our local Children's Miracle Network Hospital, from

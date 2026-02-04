@@ -100,7 +100,7 @@ export default function TransformToday() {
               extend a huge thank you to our participants, Alumni and donors for
               your continuous support throughout the day!
             </p>
-            Our 2024 total, which was raised in just 26.2 hours for our
+            Our 2025 total, which was raised in just 26.2 hours for our
             hospital, was{" "}
             <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               $351,126.12!
