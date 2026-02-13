@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.6daa66ae.js",
+    "main.js": "/static/js/main.a2c92014.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -174,13 +174,16 @@
     "static/media/Sponsor (32).png": "/static/media/Sponsor (32).26f46d5ae9e7e7847cf3.png",
     "static/media/SummerIncentives1.png": "/static/media/SummerIncentives1.c7b6e1a1e6b0474e9574.png",
     "static/media/Bella.jpg": "/static/media/Bella.d703530c29c8f0eb57a8.jpg",
+    "static/media/EarlyDetection2.jpg": "/static/media/EarlyDetection2.34fbf5ea87934e741a09.jpg",
     "static/media/BehindTheScenes2.jpg": "/static/media/BehindTheScenes2.795f1199e9f8f7425fed.jpg",
     "static/media/FTM1.jpg": "/static/media/FTM1.635fafa46711f66d5156.jpg",
     "static/media/MEBanner.jpg": "/static/media/MEBanner.33f4d95dee11d5ce0f29.jpg",
     "static/media/OurPromise1.jpg": "/static/media/OurPromise1.33d1f00d692ee0871ab4.jpg",
     "static/media/TogetherWe2.jpg": "/static/media/TogetherWe2.d3f1e166d3b901a4fea9.jpg",
+    "static/media/ResearchPic.jpg": "/static/media/ResearchPic.955deb2db7740fb7d422.jpg",
     "static/media/Lauren.jpg": "/static/media/Lauren.88057e46abfe82c727f9.jpg",
     "static/media/RS.jpg": "/static/media/RS.894a6036a2c94ad82f63.jpg",
+    "static/media/NewHope2.jpg": "/static/media/NewHope2.661cd7d1cd693f62a6ff.jpg",
     "static/media/BehindTheScenes3.jpg": "/static/media/BehindTheScenes3.4762956f4f328c3c0ff3.jpg",
     "static/media/NewYears1.jpg": "/static/media/NewYears1.6c622ccbc98827f78fc3.jpg",
     "static/media/TogetherWe1.jpg": "/static/media/TogetherWe1.47c3c930170e772fdaea.jpg",
@@ -191,10 +194,12 @@
     "static/media/Sponsor (65).png": "/static/media/Sponsor (65).70dc0902dda407876c88.png",
     "static/media/FollowThePromise1.jpg": "/static/media/FollowThePromise1.083c6cbd35498e0d1502.jpg",
     "static/media/Sponsor (5).png": "/static/media/Sponsor (5).9f37a7ee329548fbbe6e.png",
+    "static/media/EarlyDetection1.jpg": "/static/media/EarlyDetection1.11e2defd5b5493fff338.jpg",
     "static/media/Sponsor (66).png": "/static/media/Sponsor (66).d2c31c76bf52e4bdeaac.png",
     "static/media/DonorDriveBox.jpg": "/static/media/DonorDriveBox.27040884be2f6907ab35.jpg",
     "static/media/Sponsor (73).png": "/static/media/Sponsor (73).d39b846bfdd4d3404183.png",
     "static/media/TT252.jpg": "/static/media/TT252.00bf6dbdc149aec1a4d3.jpg",
+    "static/media/NewHope1.jpg": "/static/media/NewHope1.970e372acbe313dec610.jpg",
     "static/media/Sponsor (46).png": "/static/media/Sponsor (46).ad3c9cf980717390f174.png",
     "static/media/TriBrand_Color.png": "/static/media/TriBrand_Color.5275d5fa118b4e63649c.png",
     "static/media/Caden.jpg": "/static/media/Caden.b1eb3d4e06325750a0b0.jpg",
@@ -352,11 +357,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.6daa66ae.js.map": "/static/js/main.6daa66ae.js.map",
+    "main.a2c92014.js.map": "/static/js/main.a2c92014.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.6daa66ae.js"
+    "static/js/main.a2c92014.js"
   ]
 }

@@ -92,7 +92,18 @@ function AppAppBar({ mode, toggleColorMode }) {
               bgcolor: "#23356370",
               backdropFilter: "blur(24px)",
               maxHeight: 40,
-              width: "100%",
+              // width: "109%",
+              // mx: "auto",
+              // width: "calc(100% + 108px)",
+              // marginLeft: "-54px",
+              width: {
+                xs: "100%",
+                lg: "calc(100% + 110px)",
+              },
+              marginLeft: {
+                xs: 0,
+                lg: "-80px",
+              },
               border: "1px solid",
               borderColor: "divider",
               pl: 1.5,
@@ -175,6 +186,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   display: "flex",
                   alignItems: "center",
                   flexGrow: 1, // This Box needs to grow to push the rightmost elements
+                  maxWidth: "calc(100% - 220px)",
                 }}
               >
                 <Button
@@ -264,6 +276,18 @@ function AppAppBar({ mode, toggleColorMode }) {
                 <Button
                   variant="regular"
                   component={Link}
+                  to="/research"
+                  sx={{
+                    ...menuTheme,
+                  }}
+                >
+                  <Typography variant="body1" color="text.primary" noWrap>
+                    Research
+                  </Typography>
+                </Button>
+                <Button
+                  variant="regular"
+                  component={Link}
                   to="/shop"
                   sx={{
                     ...menuTheme,
@@ -316,7 +340,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   </Typography>
                 </Button>
                 {/* NEW: Dedicated spacer Box *inside* the flexGrow:1 navigation Box */}
-                <Box sx={{ minWidth: "40px" }} />{" "}
+                <Box sx={{ minWidth: "20px" }} />{" "}
                 {/* Adjust minWidth for desired space */}
               </Box>
             )}
@@ -634,6 +658,17 @@ function AppAppBar({ mode, toggleColorMode }) {
             >
               <ListItemText
                 primary="Blog"
+                sx={{ color: "white", fontSize: "1.5rem" }}
+              />
+            </ListItemButton>
+
+            <ListItemButton
+              component={Link}
+              to="/research"
+              onClick={handleNavigationAndCloseDrawer("/research")}
+            >
+              <ListItemText
+                primary="Research"
                 sx={{ color: "white", fontSize: "1.5rem" }}
               />
             </ListItemButton>

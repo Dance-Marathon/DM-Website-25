@@ -70,6 +70,10 @@ import SOM from "./views/blogs/SOM";
 import NewYears from "./views/blogs/NewYears";
 import OurPromise from "./views/blogs/OurPromise";
 
+import ResearchList from "./components/ResearchList";
+import EarlyDetectionType1Diabetes from "./views/research/EarlyDetectionType1Diabetes";
+import NewHope from "./views/research/NewHope";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
@@ -98,6 +102,15 @@ root.render(
         <Route path="/ambassadors" element={<Ambassadors />} />
         <Route path="/miraclemakers" element={<MiracleMakers />} />
         <Route path="/captainteams" element={<Captains />} />
+        <Route path="/research" element={<ResearchList />} />
+        <Route
+          path="/research/early-detection-of-type-1-diabetes"
+          element={<EarlyDetectionType1Diabetes />}
+        />
+        <Route
+          path="/research/new-hope-in-cancer-treatment"
+          element={<NewHope />}
+        />
         <Route path="/blog" element={<BlogList />} />
         <Route path="/blog/beyondthismoment" element={<BeyondThisMoment />} />
         <Route path="/blog/beyondourselves" element={<BeyondOurselves />} />
