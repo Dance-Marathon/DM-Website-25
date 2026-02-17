@@ -48,10 +48,11 @@ function PageHero({ imageUrl, title }) {
           textAlign: "center",
           zIndex: 1,
           fontSize: {
-            xs: "4rem",
-            sm: "5rem",
-            md: "clamp(3rem, 10vw, 5rem)",
+            xs: "3rem",
+            sm: "4rem",
+            md: "5rem",
           },
+
           textShadow: "2px 2px 2px rgba(0, 0, 0, 0.5)",
           maxWidth: "100%",
           px: 2, // Optional: prevent horizontal overflow

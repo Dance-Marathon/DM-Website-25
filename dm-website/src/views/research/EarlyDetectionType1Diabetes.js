@@ -47,7 +47,8 @@ export default function EarlyDetectionType1Diabetes() {
         sx={{
           pt: { xs: 4, sm: 6 },
           pb: { xs: 4, sm: 8 },
-          width: "50%",
+          // width: "75%",
+          width: { xs: "90%", sm: "75%", md: "50%" },
           display: "flex",
           flexDirection: "column",
           gap: { xs: 2, sm: 3 },
@@ -90,11 +91,12 @@ export default function EarlyDetectionType1Diabetes() {
                 <Box
                   component="img"
                   src={Image2}
-                  alt="Miracle Families"
+                  alt=""
                   sx={{
-                    maxWidth: 400, // Control image size
+                    width: "100%",
+                    maxWidth: { xs: "100%", sm: 500, md: 600 },
+                    height: "auto",
                     borderRadius: 4,
-                    display: "block", // Ensures image behaves like a block element
                   }}
                 />
               </LazyLoad>
@@ -130,7 +132,7 @@ export default function EarlyDetectionType1Diabetes() {
               "&:hover": { borderColor: "primary.main", color: "primary.main" },
             }}
           >
-            Next Research Spotlight
+            Next Research
           </Button>
         </Box>
       </Container>

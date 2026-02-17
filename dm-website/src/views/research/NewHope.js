@@ -44,7 +44,9 @@ export default function NewHope() {
         sx={{
           pt: { xs: 4, sm: 6 },
           pb: { xs: 4, sm: 8 },
-          width: "50%",
+          // width: "50%",
+          width: { xs: "90%", sm: "75%", md: "50%" },
+
           display: "flex",
           flexDirection: "column",
           gap: { xs: 2, sm: 3 },
@@ -89,11 +91,12 @@ export default function NewHope() {
                 <Box
                   component="img"
                   src={Image2}
-                  alt="Miracle Families"
+                  alt=""
                   sx={{
-                    maxWidth: 400, // Control image size
+                    width: "100%",
+                    maxWidth: { xs: "100%", sm: 500, md: 600 },
+                    height: "auto",
                     borderRadius: 4,
-                    display: "block", // Ensures image behaves like a block element
                   }}
                 />
               </LazyLoad>
@@ -116,11 +119,21 @@ export default function NewHope() {
             </Grid> */}
           </Grid>
         </Box>
-        <Grid
+        {/* <Grid
           container
           alignItems="center"
           justifyContent="space-between"
           sx={{ mt: 4 }}
+        > */}
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            mt: 4,
+            flexDirection: { xs: "column", sm: "row" },
+            justifyContent: { xs: "center", sm: "space-between" },
+            alignItems: "center",
+          }}
         >
           <Grid item>
             <Button
@@ -130,7 +143,16 @@ export default function NewHope() {
                 (window.location.href =
                   "/research/early-detection-of-type-1-diabetes")
               } /* Complete Step 2 in list above and then change link to previous blog url from index.js ^*/
+              // sx={{
+              //   color: "primary.main",
+              //   borderColor: "white",
+              //   "&:hover": {
+              //     borderColor: "primary.main",
+              //     color: "primary.main",
+              //   },
+              // }}
               sx={{
+                width: { xs: "100%", sm: "auto" },
                 color: "primary.main",
                 borderColor: "white",
                 "&:hover": {
@@ -139,7 +161,7 @@ export default function NewHope() {
                 },
               }}
             >
-              Previous Research Spotlight
+              Previous Research
             </Button>
           </Grid>
 
@@ -161,7 +183,7 @@ export default function NewHope() {
                 },
               }}
             >
-              Next Blog
+              Next Research
             </Button>
           </Grid> */}
         </Grid>
