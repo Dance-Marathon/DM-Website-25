@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.6415faf8.js",
+    "main.js": "/static/js/main.728fd933.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -31,7 +31,6 @@
     "static/media/SG.jpg": "/static/media/SG.9d085dd98d4f951c410c.jpg",
     "static/media/AT.jpg": "/static/media/AT.60d05fb271276fe0fd7a.jpg",
     "static/media/AP.jpg": "/static/media/AP.6f72e37fc1699aa013d7.jpg",
-    "static/media/BehindTheScenes1.jpg": "/static/media/BehindTheScenes1.67520e143c9d0faa7e8f.jpg",
     "static/media/Sponsor (61).png": "/static/media/Sponsor (61).fd6c999179ecc82dbd31.png",
     "static/media/TB.jpg": "/static/media/TB.62917221e4f0547ef2e2.jpg",
     "static/media/Sponsor (54).png": "/static/media/Sponsor (54).39bf6dc2e6b75ec0a82c.png",
@@ -55,8 +54,6 @@
     "static/media/Samuel.jpg": "/static/media/Samuel.ff7838332ee3ebac077a.jpg",
     "static/media/BeyondThisMoment2.jpg": "/static/media/BeyondThisMoment2.25c9aeeebff803bd8d84.jpg",
     "static/media/Eleanor.jpg": "/static/media/Eleanor.c5e6f7b9bf9dbc93017f.jpg",
-    "static/media/MMBox.jpg": "/static/media/MMBox.d0a487510a92cc055681.jpg",
-    "static/media/LifelineBox.jpg": "/static/media/LifelineBox.a78efc38cc3ff036ced8.jpg",
     "static/media/BeyondThisGen2.jpg": "/static/media/BeyondThisGen2.3e7099ca51661f1c0d85.jpg",
     "static/media/Genevive.jpg": "/static/media/Genevive.f076ab06dd7d624f2882.jpg",
     "static/media/Kendall.jpg": "/static/media/Kendall.dd5ff86fba68bc0f7157.jpg",
@@ -76,7 +73,6 @@
     "static/media/MM2.jpg": "/static/media/MM2.d816f7f5c38d6ee0b87c.jpg",
     "static/media/DMFamily2.jpg": "/static/media/DMFamily2.d6c33e0d414bf70a53be.jpg",
     "static/media/Mazzy.jpg": "/static/media/Mazzy.784af9a161bb21befcd9.jpg",
-    "static/media/CHDBox.jpg": "/static/media/CHDBox.8402a7740306d24fea54.jpg",
     "static/media/Nakia.jpg": "/static/media/Nakia.afbb0c2dc4f378b396bc.jpg",
     "static/media/Elie.jpg": "/static/media/Elie.30941ccdb3d497c73556.jpg",
     "static/media/CHD2.jpg": "/static/media/CHD2.3fb530d1541057b6ac07.jpg",
@@ -139,7 +135,6 @@
     "static/media/FundraisingGuideMini.jpg": "/static/media/FundraisingGuideMini.df5092c60819223ba9b1.jpg",
     "static/media/BlogsPic.jpg": "/static/media/BlogsPic.d5bf9ad0c7799c3e1a48.jpg",
     "static/media/TTBox.jpg": "/static/media/TTBox.f2a2a362296cce89a989.jpg",
-    "static/media/ThankfulnessBox.jpg": "/static/media/ThankfulnessBox.73bb5cde2769ca8b3924.jpg",
     "static/media/CanningPic.jpg": "/static/media/CanningPic.bfaba288fcbae6786ed1.jpg",
     "static/media/Owen.jpg": "/static/media/Owen.5733ba7931a82a9171f9.jpg",
     "static/media/Dani Lynn.jpg": "/static/media/Dani Lynn.f9e0e01ca8a4b5310d9d.jpg",
@@ -357,11 +352,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.6415faf8.js.map": "/static/js/main.6415faf8.js.map",
+    "main.728fd933.js.map": "/static/js/main.728fd933.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.6415faf8.js"
+    "static/js/main.728fd933.js"
   ]
 }
