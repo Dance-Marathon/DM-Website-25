@@ -47,32 +47,35 @@ import Miracles5k from "./views/Miracles5k";
 import ELP from "./views/ELP";
 import Canning from "./views/Canning";
 
-import BeyondThisMoment from "./views/blogs/BeyondThisMoment";
-import BeyondOurselves from "./views/blogs/BeyondOurselves";
-import BeyondThisSummer from "./views/blogs/BeyondThisSummer";
-import BeyondThisGeneration from "./views/blogs/BeyondThisGeneration";
-import FindingYourDMFamily from "./views/blogs/FindingYourDMFamily";
-import CampusClash from "./views/blogs/CampusClash";
-import ChildHealthDay from "./views/blogs/ChildHealthDay";
-import MiracleMaker from "./views/blogs/MiracleMaker";
-import Thankfulness from "./views/blogs/Thankfulness";
-import GiftOfHope from "./views/blogs/GiftOfHope";
-import BehindTheScenes from "./views/blogs/BehindTheScenes";
-import LifelineOfLaughter from "./views/blogs/LifelineOfLaughter";
-import YesToMiracles from "./views/blogs/YesToMiracles";
-import BeyondTomorrow from "./views/blogs/BeyondTomorrow";
-import FeelTheMagic from "./views/blogs/FeelTheMagic";
-import Spark from "./views/blogs/Spark";
-import TogetherWe from "./views/blogs/TogetherWe";
-import FollowThePromise from "./views/blogs/FollowThePromise";
-import TT25 from "./views/blogs/TT25";
-import SOM from "./views/blogs/SOM";
-import NewYears from "./views/blogs/NewYears";
-import OurPromise from "./views/blogs/OurPromise";
+// import BeyondThisMoment from "./views/blogs/BeyondThisMoment";
+// import BeyondOurselves from "./views/blogs/BeyondOurselves";
+// import BeyondThisSummer from "./views/blogs/BeyondThisSummer";
+// import BeyondThisGeneration from "./views/blogs/BeyondThisGeneration";
+// import FindingYourDMFamily from "./views/blogs/FindingYourDMFamily";
+// import CampusClash from "./views/blogs/CampusClash";
+// import ChildHealthDay from "./views/blogs/ChildHealthDay";
+// import MiracleMaker from "./views/blogs/MiracleMaker";
+// import Thankfulness from "./views/blogs/Thankfulness";
+// import GiftOfHope from "./views/blogs/GiftOfHope";
+// import BehindTheScenes from "./views/blogs/BehindTheScenes";
+// import LifelineOfLaughter from "./views/blogs/LifelineOfLaughter";
+// import YesToMiracles from "./views/blogs/YesToMiracles";
+// import BeyondTomorrow from "./views/blogs/BeyondTomorrow";
+// import FeelTheMagic from "./views/blogs/FeelTheMagic";
+// import Spark from "./views/blogs/Spark";
+// import TogetherWe from "./views/blogs/TogetherWe";
+// import FollowThePromise from "./views/blogs/FollowThePromise";
+// import TT25 from "./views/blogs/TT25";
+// import SOM from "./views/blogs/SOM";
+// import NewYears from "./views/blogs/NewYears";
+// import OurPromise from "./views/blogs/OurPromise";
 
 import ResearchList from "./components/ResearchList";
-import EarlyDetectionType1Diabetes from "./views/research/EarlyDetectionType1Diabetes";
-import NewHope from "./views/research/NewHope";
+// import EarlyDetectionType1Diabetes from "./views/research/EarlyDetectionType1Diabetes";
+// import NewHope from "./views/research/NewHope";
+
+import BlogTemplate from "./views/blog/BlogTemplate";
+import ResearchTemplate from "./views/research/ResearchTemplate";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -103,16 +106,17 @@ root.render(
         <Route path="/miraclemakers" element={<MiracleMakers />} />
         <Route path="/captainteams" element={<Captains />} />
         <Route path="/research" element={<ResearchList />} />
-        <Route
+        <Route path="/research/:linkName" element={<ResearchTemplate />} />
+        {/* <Route
           path="/research/early-detection-of-type-1-diabetes"
           element={<EarlyDetectionType1Diabetes />}
         />
         <Route
           path="/research/new-hope-in-cancer-treatment"
           element={<NewHope />}
-        />
+        /> */}
         <Route path="/blog" element={<BlogList />} />
-        <Route path="/blog/beyondthismoment" element={<BeyondThisMoment />} />
+        {/* <Route path="/blog/beyondthismoment" element={<BeyondThisMoment />} />
         <Route path="/blog/beyondourselves" element={<BeyondOurselves />} />
         <Route path="/blog/beyondthissummer" element={<BeyondThisSummer />} />
         <Route
@@ -142,7 +146,8 @@ root.render(
         <Route path="/blog/tt25" element={<TT25 />} />
         <Route path="/blog/thankyousom" element={<SOM />} />
         <Route path="/blog/newyears" element={<NewYears />} />
-        <Route path="/blog/ourpromise" element={<OurPromise />} />
+        <Route path="/blog/ourpromise" element={<OurPromise />} /> */}
+        <Route path="/blog/:linkName" element={<BlogTemplate />} />
         <Route path="/events" element={<Events />} />
         <Route path="/mainevent" element={<MainEvent />} />
         <Route path="/moralloween" element={<Moralloween />} />
