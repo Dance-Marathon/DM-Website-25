@@ -6,31 +6,34 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AppAppBar from "./AppAppBar";
 import getLPTheme from "../getLPTheme";
 import Footer from "./Footer";
-import { Container, Typography, Grid } from "@mui/material";
+import { Typography, Grid } from "@mui/material";
 import ScrollToTop from "./ScrollToTop";
 import PageHero from "./PageHero";
 import { useNavigate } from "react-router-dom";
 
 import ResearchPic from "../assets/images/pagepics/ResearchPic.jpg";
 
-import EarlyDetection from "../assets/images/researchpics/EarlyDetection/EarlyDetection1.jpg";
-import NewHope from "../assets/images/researchpics/NewHope/NewHope1.jpg";
-const research = [
-  {
-    id: 1,
-    title: "Early Detection of Type 1 Diabetes",
-    date: "February 10, 2026",
-    imageUrl: EarlyDetection,
-    linkName: "early-detection-of-type-1-diabetes",
-  },
-  {
-    id: 2,
-    title: "New Hope in Cancer Treatment",
-    date: "February 10, 2026",
-    imageUrl: NewHope,
-    linkName: "new-hope-in-cancer-treatment",
-  },
-];
+// import EarlyDetection from "../assets/images/researchpics/EarlyDetection/EarlyDetection1.jpg";
+// import NewHope from "../assets/images/researchpics/NewHope/NewHope1.jpg";
+
+import research from "../data/researchData";
+
+// const research = [
+//   {
+//     id: 1,
+//     title: "Early Detection of Type 1 Diabetes",
+//     date: "February 10, 2026",
+//     imageUrl: EarlyDetection,
+//     linkName: "early-detection-of-type-1-diabetes",
+//   },
+//   {
+//     id: 2,
+//     title: "New Hope in Cancer Treatment",
+//     date: "February 10, 2026",
+//     imageUrl: NewHope,
+//     linkName: "new-hope-in-cancer-treatment",
+//   },
+// ];
 
 const reversedResearch = [...research].reverse();
 
@@ -81,7 +84,7 @@ const ResearchList = () => {
               <CardMedia
                 component="img"
                 height="200"
-                image={research.imageUrl}
+                image={research.heroImage}
                 alt={research.title}
               />
               <CardContent>
