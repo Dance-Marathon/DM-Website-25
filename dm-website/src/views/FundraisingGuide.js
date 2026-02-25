@@ -114,7 +114,7 @@ export default function FundraisingGuide() {
                         href="https://drive.google.com/drive/folders/1qODxnR53iNFmyaHQnDKLQKH3f8jWaEKL"
                         target="_blank"
                       >
-                        Fundraising Templates
+                        Fundraising Resources
                       </Link>
                     </Typography>
                   </li>
@@ -122,7 +122,7 @@ export default function FundraisingGuide() {
                     <li>
                       <Typography variant="body1" color="text.secondary">
                         <Link
-                          href="https://drive.google.com/drive/folders/1CyXuSdcAVVwfSlbltYCR93x4RuHmeRSc"
+                          href="https://drive.google.com/drive/folders/1kVIKQl3bd_a6BTzH4Qqk9g1nVgo1gy0i?usp=sharing"
                           target="_blank"
                         >
                           Venmo Templates
