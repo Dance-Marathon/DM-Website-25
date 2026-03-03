@@ -428,7 +428,17 @@ function AppAppBar({ mode, toggleColorMode }) {
           </Toolbar>
         </Container>
       </AppBar>
-      <Drawer anchor="right" open={open} onClose={toggleDrawer(false)}>
+      <Drawer
+        anchor="right"
+        open={open}
+        onClose={toggleDrawer(false)}
+        PaperProps={{
+          sx: {
+            backgroundColor: "background.dm",
+            color: "white",
+          },
+        }}
+      >
         <Box
           sx={{
             width: 250,
