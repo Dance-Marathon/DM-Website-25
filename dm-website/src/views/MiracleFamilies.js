@@ -290,13 +290,13 @@ export default function MiracleFamilies() {
               //   content:
               //     "Born premature at 23 weeks, Emily lost most of her vision by age four due to uveitis and extended oxygen use during infancy. Now 19, Emily is full of energy and recently graduated from The Florida School for the Deaf and Blind. She loves Broadway, Taylor Swift, and singing, and is now teaching kids her love of music at a daycare. Emily has been involved with Dance Marathon at UF for over 10 years!",
               // },
-              { 
-                image: FletcherH, 
-                title: 'Fletcher H.',
+              {
+                image: FletcherH,
+                title: "Fletcher H.",
                 learnMoreLink:
                   "https://docs.google.com/document/d/1sH2XtfQMLVq0QLPosZ5YO4ZOKj2U0GOKq7pFAztRHes/edit?tab=t.0",
-                content: 
-                  "Fletcher was diagnosed with Burkitt’s lymphoma, an extremely aggressive cancer, in February 2017. In just one week he went from playing with his sister and friends to fighting for his life in the Pediatric ICU at UF Health Shands Children’s Hospital, relying on a breathing tube and dialysis. Thanks to the dedicated doctors and nurses at Shands and the support of programs funded by partners like Dance Marathon at UF, Fletcher received the innovative care he needed to recover. After months of intensive treatment, Fletcher completed his final round of chemotherapy and is now back to doing what he loves—playing with friends and getting ready for first grade. His journey is a powerful reminder of the resilience of children and the life-changing impact of the support provided through Dance Marathon." 
+                content:
+                  "Fletcher was diagnosed with Burkitt’s lymphoma, an extremely aggressive cancer, in February 2017. In just one week he went from playing with his sister and friends to fighting for his life in the Pediatric ICU at UF Health Shands Children’s Hospital, relying on a breathing tube and dialysis. Thanks to the dedicated doctors and nurses at Shands and the support of programs funded by partners like Dance Marathon at UF, Fletcher received the innovative care he needed to recover. After months of intensive treatment, Fletcher completed his final round of chemotherapy and is now back to doing what he loves—playing with friends and getting ready for first grade. His journey is a powerful reminder of the resilience of children and the life-changing impact of the support provided through Dance Marathon.",
               },
               // { image: HadleyP, title: 'Hadley P.', content: "When Powie was 2 weeks old, she stopped breathing during her first family outing. She was hospitalized, and that was the first time her family heard the words “mitochondrial disease.” The path to diagnosis was long and winding, as mitochondrial disease can be difficult to diagnose, and because there is no effective treatment, we focus on treating her symptoms. Powie sees nine specialists at UF Health Shands Children's Hospital and four specialists elsewhere. Mitochondrial disease is a systemic disease and impacts many of her organ systems. She relies on many medications and several medical interventions to function. The Patterson family is very fortunate that UF Health Shands Children's Hospital has a pediatric gastric stimulator program that has allowed Powie to thrive! Powie is now 7 years old, and she's truly doing so well with the correct support in place! She's a very typical child who loves school, her siblings, and her puppies! Dance Marathon at UF has become one of her most favorite things in this world!" },
 
