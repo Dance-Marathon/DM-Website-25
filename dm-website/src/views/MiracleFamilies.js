@@ -301,8 +301,8 @@ export default function MiracleFamilies() {
               // { image: HadleyP, title: 'Hadley P.', content: "When Powie was 2 weeks old, she stopped breathing during her first family outing. She was hospitalized, and that was the first time her family heard the words “mitochondrial disease.” The path to diagnosis was long and winding, as mitochondrial disease can be difficult to diagnose, and because there is no effective treatment, we focus on treating her symptoms. Powie sees nine specialists at UF Health Shands Children's Hospital and four specialists elsewhere. Mitochondrial disease is a systemic disease and impacts many of her organ systems. She relies on many medications and several medical interventions to function. The Patterson family is very fortunate that UF Health Shands Children's Hospital has a pediatric gastric stimulator program that has allowed Powie to thrive! Powie is now 7 years old, and she's truly doing so well with the correct support in place! She's a very typical child who loves school, her siblings, and her puppies! Dance Marathon at UF has become one of her most favorite things in this world!" },
 
               {
-                image: GeneviveS,
-                title: "Genevive S.",
+                image: GenevieveS,
+                title: "Genevieve S.",
                 learnMoreLink:
                   "https://docs.google.com/document/d/1ZZ7f1ESdQJxxeYhJtyVJh9lEB4vx1KiBAL0JU0aB7UY/edit?tab=t.0",
                 content:
