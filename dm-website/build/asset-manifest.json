@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.fd3a3cb0.js",
+    "main.js": "/static/js/main.e871c6e9.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -169,6 +169,7 @@
     "static/media/Sponsor (32).png": "/static/media/Sponsor (32).26f46d5ae9e7e7847cf3.png",
     "static/media/SummerIncentives1.png": "/static/media/SummerIncentives1.c7b6e1a1e6b0474e9574.png",
     "static/media/Bella.jpg": "/static/media/Bella.d703530c29c8f0eb57a8.jpg",
+    "static/media/Fletcher.jpg": "/static/media/Fletcher.1d89f40f2215a6064282.jpg",
     "static/media/EarlyDetection2.jpg": "/static/media/EarlyDetection2.34fbf5ea87934e741a09.jpg",
     "static/media/BehindTheScenes2.jpg": "/static/media/BehindTheScenes2.795f1199e9f8f7425fed.jpg",
     "static/media/FTM1.jpg": "/static/media/FTM1.635fafa46711f66d5156.jpg",
@@ -352,11 +353,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.fd3a3cb0.js.map": "/static/js/main.fd3a3cb0.js.map",
+    "main.e871c6e9.js.map": "/static/js/main.e871c6e9.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.fd3a3cb0.js"
+    "static/js/main.e871c6e9.js"
   ]
 }
