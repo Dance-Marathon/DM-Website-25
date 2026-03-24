@@ -7,85 +7,76 @@ import Footer from "../components/Footer";
 import { Container, Typography, Box, Grid } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
-import Table from "@mui/material/Table";
-import TableBody from "@mui/material/TableBody";
-import TableCell from "@mui/material/TableCell";
-import TableContainer from "@mui/material/TableContainer";
-import TableHead from "@mui/material/TableHead";
-import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
-import { styled } from "@mui/material/styles";
 import LazyLoad from "react-lazyload";
 
 import OurStoryHero from "../assets/images/pagepics/OurStoryHero.jpg";
 import "../App.css";
 
 export default function OurStory() {
-  const StyledTableHeadCell = styled(TableCell)(({ theme }) => ({
-    fontSize: 14,
-    fontWeight: "bold",
-    backgroundColor: "#ffffff", // White background for the header
-    color: "#000000", // Black text for the header
-    borderBottom: "2px solid rgba(224, 224, 224, 1)", // Light border for the header
-  }));
-
-  const StyledTableCell = styled(TableCell)(({ theme }) => ({
-    fontSize: 14,
-    borderBottom: "1px solid rgba(224, 224, 224, 1)",
-    color: "#000000",
-    borderRight: "2px solid rgba(224, 224, 224, 1)",
-  }));
-
-  const StyledTableRow = styled(TableRow)(({ theme }) => ({
-    "&:nth-of-type(odd)": {
-      backgroundColor: "#f5f5f5",
-    },
-    "&:nth-of-type(even)": {
-      backgroundColor: "#ffffff",
-    },
-    "&:last-child td, &:last-child th": {
-      borderBottom: 0,
-    },
-  }));
-
-  function createData(year, total) {
-    return { year, total };
+  function createData(year, total, image) {
+    return { year, total, image };
   }
 
   const rows = [
-    createData("1995", "$12,424.66"),
-    createData("1996", "$23,783.27"),
-    createData("1997", "$57,057.02"),
-    createData("1998", "$75,938.18"),
-    createData("1999", "$114,511.81"),
-    createData("2000", "$158,603.56"),
-    createData("2001", "$195,148.15"),
-    createData("2002", "$217,945.10"),
-    createData("2003", "$247,941.04"),
-    createData("2004", "$250,012.48"),
-    createData("2005", "$319,842.78"),
-    createData("2006", "$361,454.68"),
-    createData("2007", "$370,317.00"),
-    createData("2008", "$435,560.89"),
-    createData("2009", "$416,485.27"),
-    createData("2010", "$520,871.79"),
-    createData("2011", "$713,053.68"),
-    createData("2012", "$886,726.15"),
-    createData("2013", "$1,169,722.16"),
-    createData("2014", "$1,528,330.16"),
-    createData("2015", "$2,015,307.17"),
-    createData("2016", "$2,434,315.18"),
-    createData("2017", "$2,724,324.19"),
-    createData("2018", "$3,026,420.19"),
-    createData("2019", "$3,230,025.23"),
-    createData("2020", "$2,526,418.24"),
-    createData("2021", "$2,270,311.40"),
-    createData("2022", "$2,334,217.21"),
-    createData("2023", "$2,007,079.05"),
-    createData("2024", "$1,531,518.24"),
+    createData("1995", "$12,424.66", OurStoryHero),
+    createData("1996", "$23,783.27", null),
+    createData("1997", "$57,057.02", null),
+    createData("1998", "$75,938.18", null),
+    createData("1999", "$114,511.81", null),
+    createData("2000", "$158,603.56", null),
+    createData("2001", "$195,148.15", null),
+    createData("2002", "$217,945.10", null),
+    createData("2003", "$247,941.04", null),
+    createData("2004", "$250,012.48", null),
+    createData("2005", "$319,842.78", null),
+    createData("2006", "$361,454.68", null),
+    createData("2007", "$370,317.00", null),
+    createData("2008", "$435,560.89", null),
+    createData("2009", "$416,485.27", null),
+    createData("2010", "$520,871.79", null),
+    createData("2011", "$713,053.68", null),
+    createData("2012", "$886,726.15", null),
+    createData("2013", "$1,169,722.16", null),
+    createData("2014", "$1,528,330.16", null),
+    createData("2015", "$2,015,307.17", null),
+    createData("2016", "$2,434,315.18", null),
+    createData("2017", "$2,724,324.19", null),
+    createData("2018", "$3,026,420.19", null),
+    createData("2019", "$3,230,025.23", null),
+    createData("2020", "$2,526,418.24", null),
+    createData("2021", "$2,270,311.40", null),
+    createData("2022", "$2,334,217.21", null),
+    createData("2023", "$2,007,079.05", null),
+    createData("2024", "$1,531,518.24", null),
   ];
 
-  const reversedRows = [...rows].reverse();
+  const [hoveredIndex, setHoveredIndex] = React.useState(null);
+  const [hoverLeft, setHoverLeft] = React.useState(0);
+  const scrollerRef = React.useRef(null);
+  const itemRefs = React.useRef([]);
+
+  const updateHoverPosition = React.useCallback(() => {
+    if (hoveredIndex === null) {
+      return;
+    }
+    const scroller = scrollerRef.current;
+    const item = itemRefs.current[hoveredIndex];
+    if (!scroller || !item) {
+      return;
+    }
+    const left = item.offsetLeft - scroller.scrollLeft + item.offsetWidth / 2;
+    setHoverLeft(left);
+  }, [hoveredIndex]);
+
+  React.useEffect(() => {
+    updateHoverPosition();
+  }, [updateHoverPosition]);
+
+  React.useEffect(() => {
+    const handleResize = () => updateHoverPosition();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [updateHoverPosition]);
 
   const [mode, setMode] = React.useState(() => {
     // Retrieve the stored theme from localStorage or default to 'light'
@@ -164,6 +155,151 @@ export default function OurStory() {
             toward raising funds and awareness for the Children's Miracle
             Network.
           </Typography>
+
+          <Box
+            sx={{
+              mt: 3,
+              mb: 3,
+              p: { xs: 2, sm: 3 },
+              borderRadius: 3,
+              border: "1px solid rgba(35, 53, 99, 0.15)",
+              background:
+                "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,248,255,1) 100%)",
+            }}
+          >
+            <Typography
+              variant="h5"
+              component="h3"
+              gutterBottom
+              sx={{ color: "#233563" }}
+            >
+              Yearly Impact Timeline
+            </Typography>
+            <Typography variant="body2" color="text.secondary" paragraph>
+              Hover over a year to see the total raised.
+            </Typography>
+
+            <Box sx={{ position: "relative", minHeight: 220 }}>
+              <Box
+                sx={{
+                  overflowX: "auto",
+                  pb: 5,
+                  pt: 4,
+                }}
+                ref={scrollerRef}
+                onScroll={updateHoverPosition}
+              >
+                <Box
+                  sx={{
+                    position: "relative",
+                    display: "flex",
+                    alignItems: "flex-start",
+                    gap: 3,
+                    minWidth: "max-content",
+                    pt: 2,
+                    pb: 2,
+                    "&::before": {
+                      content: '""',
+                      position: "absolute",
+                      left: 0,
+                      right: 0,
+                      top: "50%",
+                      transform: "translateY(-50%)",
+                      height: 2,
+                      backgroundColor: "rgba(35, 53, 99, 0.2)",
+                    },
+                  }}
+                >
+                  {rows.map((row, index) => (
+                    <Box
+                      key={row.year}
+                      ref={(el) => {
+                        itemRefs.current[index] = el;
+                      }}
+                      sx={{
+                        position: "relative",
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                        minWidth: 90,
+                        cursor: "pointer",
+                      }}
+                      onMouseEnter={() => setHoveredIndex(index)}
+                      onMouseLeave={() => setHoveredIndex(null)}
+                      onFocus={() => setHoveredIndex(index)}
+                      onBlur={() => setHoveredIndex(null)}
+                      tabIndex={0}
+                      role="button"
+                    >
+                      <Box
+                        sx={{
+                          width: 14,
+                          height: 14,
+                          borderRadius: "50%",
+                          backgroundColor: "#ffffff",
+                          border: "2px solid rgba(35, 53, 99, 0.5)",
+                          position: "relative",
+                          zIndex: 1,
+                        }}
+                      />
+                      <Typography
+                        variant="subtitle2"
+                        sx={{ color: "#233563", mt: 1.5 }}
+                      >
+                        {row.year}
+                      </Typography>
+                    </Box>
+                  ))}
+                </Box>
+              </Box>
+
+              {hoveredIndex !== null && (
+                <Box
+                  sx={{
+                    position: "absolute",
+                    left: hoverLeft,
+                    top: 100,
+                    transform: "translateX(-50%)",
+                    px: 2,
+                    py: 1.5,
+                    borderRadius: 2,
+                    border: "1px solid rgba(226, 136, 60, 0.6)",
+                    backgroundColor: "rgba(255, 248, 240, 0.95)",
+                    boxShadow: "0 8px 20px rgba(35, 53, 99, 0.08)",
+                    minWidth: 180,
+                    maxWidth: 320,
+                    textAlign: "center",
+                    whiteSpace: "nowrap",
+                    zIndex: 2,
+                  }}
+                >
+                  <Typography
+                    variant="subtitle1"
+                    sx={{ color: "#233563", lineHeight: 1.05 }}
+                  >
+                    {rows[hoveredIndex].year}
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary">
+                    {rows[hoveredIndex].total} raised
+                  </Typography>
+                  {rows[hoveredIndex].image && (
+                    <Box
+                      component="img"
+                      src={rows[hoveredIndex].image}
+                      alt={`${rows[hoveredIndex].year} highlight`}
+                      sx={{
+                        width: "100%",
+                        borderRadius: 2,
+                        objectFit: "cover",
+                        maxHeight: 120,
+                        mt: 1,
+                      }}
+                    />
+                  )}
+                </Box>
+              )}
+            </Box>
+          </Box>
 
           <Box>
             <Grid container spacing={2}>
@@ -338,129 +474,6 @@ style={{ color: '#233563', marginBottom: '1px' }}>
          Not Acceptable: DM UF, UF DM, DM @ UF
        </Typography> */}
 
-                {/* Hospital Title Section */}
-                <Typography
-                  variant="h5"
-                  component="h2"
-                  gutterBottom
-                  style={{
-                    color: "#233563",
-                    marginTop: "25px",
-                    marginBottom: "1px",
-                  }}
-                >
-                  Hospital Title
-                </Typography>
-                <Typography variant="body1" color="text.secondary">
-                  First Reference: UF Health Shands Children’s Hospital
-                </Typography>
-                <Typography variant="body1" color="text.secondary">
-                  Second Reference: UF Health Shands
-                </Typography>
-
-                {/* Children and their Families Section */}
-                <Typography
-                  variant="h5"
-                  component="h2"
-                  gutterBottom
-                  style={{
-                    color: "#233563",
-                    marginTop: "40px",
-                    marginBottom: "1px",
-                  }}
-                >
-                  Children and their Families
-                </Typography>
-                <Typography variant="body1" color="text.secondary">
-                  Miracle Family
-                </Typography>
-                <Typography variant="body1" color="text.secondary">
-                  Miracle Children
-                </Typography>
-                <Typography variant="body1" color="text.secondary">
-                  Miracle Child (0-12)
-                </Typography>
-                <Typography variant="body1" color="text.secondary">
-                  Miracle Teen (13+)
-                </Typography>
-                <Typography variant="body1" color="text.secondary">
-                  CMN Hospital(s) Ambassador (18+)
-                </Typography>
-
-                <Typography
-                  variant="h5"
-                  component="h2"
-                  gutterBottom
-                  style={{ color: "#233563", marginTop: "40px" }}
-                >
-                  Levels of Involvement
-                </Typography>
-                <ul className="custom-bullet-points">
-                  <li>
-                    <Typography
-                      variant="body1"
-                      sx={{ color: "text.secondary" }}
-                    >
-                      Managers
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      variant="body1"
-                      sx={{ color: "text.secondary" }}
-                    >
-                      Executive Team (Overall Directors)
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      variant="body1"
-                      sx={{ color: "text.secondary" }}
-                    >
-                      Assistant Directors
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      variant="body1"
-                      sx={{ color: "text.secondary" }}
-                    >
-                      Captains
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      variant="body1"
-                      sx={{ color: "text.secondary" }}
-                    >
-                      Emerging Leaders
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      variant="body1"
-                      sx={{ color: "text.secondary" }}
-                    >
-                      Ambassadors
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      variant="body1"
-                      sx={{ color: "text.secondary" }}
-                    >
-                      Miracle Makers
-                    </Typography>
-                  </li>
-                  <li>
-                    <Typography
-                      variant="body1"
-                      sx={{ color: "text.secondary" }}
-                    >
-                      Dance Marathon Alumni (DMA)
-                    </Typography>
-                  </li>
-                </ul>
                 {/* <ul className="custom-bullet-points">
                   <li>
                     <Typography
@@ -842,54 +855,129 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                 </ul> */}
               </Grid>
               <Grid item xs={12} sm={6}>
-                <TableContainer
-                  component={Paper}
-                  sx={{
-                    width: "100%",
-                    maxHeight: "975px", // Set a specific height as needed
-                    overflowY: "auto",
-                    overflowX: "auto",
+                {/* Hospital Title Section */}
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  gutterBottom
+                  style={{
+                    color: "#233563",
+                    marginTop: "25px",
+                    marginBottom: "1px",
                   }}
                 >
-                  <Table
-                    sx={{ width: "100%", borderCollapse: "collapse" }}
-                    aria-label="simple table"
-                  >
-                    <TableHead>
-                      <TableRow>
-                        <StyledTableHeadCell
-                          sx={{
-                            width: "50%",
-                            borderRight: "2px solid rgba(224, 224, 224, 1)", // Vertical divider
-                          }}
-                        >
-                          Year
-                        </StyledTableHeadCell>
-                        <StyledTableHeadCell sx={{ width: "50%" }}>
-                          Total Raised
-                        </StyledTableHeadCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      {reversedRows.map((row) => (
-                        <StyledTableRow key={row.year}>
-                          <StyledTableCell
-                            component="th"
-                            scope="row"
-                            sx={{
-                              width: "50%",
-                            }}
-                          >
-                            {row.year}
-                          </StyledTableCell>
-                          <StyledTableCell sx={{ width: "50%" }}>
-                            {row.total}
-                          </StyledTableCell>
-                        </StyledTableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
+                  Hospital Title
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                  First Reference: UF Health Shands Children’s Hospital
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                  Second Reference: UF Health Shands
+                </Typography>
+
+                {/* Children and their Families Section */}
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  gutterBottom
+                  style={{
+                    color: "#233563",
+                    marginTop: "40px",
+                    marginBottom: "1px",
+                  }}
+                >
+                  Children and their Families
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                  Miracle Family
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                  Miracle Children
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                  Miracle Child (0-12)
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                  Miracle Teen (13+)
+                </Typography>
+                <Typography variant="body1" color="text.secondary">
+                  CMN Hospital(s) Ambassador (18+)
+                </Typography>
+
+                <Typography
+                  variant="h5"
+                  component="h2"
+                  gutterBottom
+                  style={{ color: "#233563", marginTop: "40px" }}
+                >
+                  Levels of Involvement
+                </Typography>
+                <ul className="custom-bullet-points">
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Managers
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Executive Team (Overall Directors)
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Assistant Directors
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Captains
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Emerging Leaders
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Ambassadors
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Miracle Makers
+                    </Typography>
+                  </li>
+                  <li>
+                    <Typography
+                      variant="body1"
+                      sx={{ color: "text.secondary" }}
+                    >
+                      Dance Marathon Alumni (DMA)
+                    </Typography>
+                  </li>
+                </ul>
               </Grid>
             </Grid>
           </Box>
