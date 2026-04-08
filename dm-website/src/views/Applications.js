@@ -236,13 +236,7 @@ export default function Applications() {
             color="text.secondary"
             marginBottom={3.5}
           >
-            If you are interested in becoming an Ambassador, you can join the
-            organization at any time! For more information, please contact our
-            Organization Relations Overall Director, Kelsey Reader, at{" "}
-            <Link href="mailto:kreader@floridadm.org" sx={{ color: "#1a73e8" }}>
-              kreader@floridadm.org
-            </Link>
-            .
+            Closed
           </Typography>
           {/* <Typography
             variant="body1"
@@ -261,14 +255,7 @@ export default function Applications() {
             Miracle Maker Application
           </Typography>
           <Typography variant="body1" color="text.secondary" gutterBottom>
-            No formal application, you can sign up to be a Miracle Maker{" "}
-            <Link
-              href="https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=6756"
-              target="_blank"
-            >
-              here
-            </Link>
-            , and someone from Member Advancement will reach out to you.
+            Closed
           </Typography>
 
           <Typography
