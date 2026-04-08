@@ -9,7 +9,7 @@ import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import LazyLoad from "react-lazyload";
 
-import OurStoryHero from "../assets/images/pagepics/OurStoryHero.jpg";
+import OurStoryHero from "../assets/images/pagepics/OurStoryHero.JPG";
 import "../App.css";
 
 export default function OurStory() {

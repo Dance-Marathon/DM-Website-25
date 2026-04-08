@@ -115,7 +115,13 @@ export default function Applications() {
             color="text.secondary"
             marginBottom={3.5}
           >
-            Closed
+            Here is the link to the 2027 Manager Application:{" "}
+            <Link href="https://drive.google.com/file/d/1OxP9xNOpjeat2kOsyx0XkCb7_7ypc_ye/view?usp=sharing" target="_blank">
+              2027 Manager Application
+            </Link>
+            ! Applications are open now until April 12th at 5pm. To submit your application, email{" "}
+            <Link href="mailto:aferrell@floridadm.org">aferrell@floridadm.org</Link>.
+
           </Typography>
 
           <Typography
@@ -131,7 +137,12 @@ export default function Applications() {
             color="text.secondary"
             marginBottom={3.5}
           >
-            Closed
+            Here is the link to the 2027 Overall Director Application:{" "}
+            <Link href="https://drive.google.com/file/d/1aKnmOtIW1di-xjuUL7L7NfRsow8m0zQj/view?usp=sharing" target="_blank">
+              2027 Overall Director Application
+            </Link>
+            ! Applications are open now until April 14th at 5pm. To submit your application, email{" "}
+            <Link href="mailto:aferrell@floridadm.org">aferrell@floridadm.org</Link>.
           </Typography>
 
           <Typography

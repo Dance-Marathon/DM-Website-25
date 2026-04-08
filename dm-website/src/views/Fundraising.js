@@ -13,10 +13,10 @@ import LazyLoad from "react-lazyload";
 
 import HowToGuide from "../assets/pdfs/how-to-guide.pdf";
 import RegisterToFundraise from "../assets/images/pagepics/RegisterToFundraisePic.jpg";
-import FundraisingGuideBox from "../assets/images/miniboxpics/FundraisingGuideMini.jpg";
-import DDBox from "../assets/images/miniboxpics/DonorDriveBox.jpg";
-import EmployeeBox from "../assets/images/miniboxpics/EmployeeMatchingBox.jpg";
-import PartnersBox from "../assets/images/miniboxpics/PartnersBox.jpg";
+import FundraisingGuideBox from "../assets/images/miniboxpics/FundraisingGuideMini.JPG";
+import DDBox from "../assets/images/miniboxpics/DonorDriveBox.JPG";
+import EmployeeBox from "../assets/images/miniboxpics/EmployeeMatchingBox.JPG";
+import PartnersBox from "../assets/images/miniboxpics/PartnersBox.JPG";
 import CanningBox from "../assets/images/miniboxpics/CanningBox.jpg";
 
 export default function Fundraising() {
