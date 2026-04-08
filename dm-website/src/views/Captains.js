@@ -63,8 +63,7 @@ const teams = [
     leadership: {
       overallDirector: "Marina Cheema",
       assistantDirectors: [
-        "Brendan Kenny - Assistant Director of Internal Design",
-        "Sydney Barnett - Assistant Director of External Design",
+        "Sydney Barnett - Assistant Director of Design",
         "Eric Hengber - Assistant Director of Technology",
         "Phillip-Dylan Ndwiga - Assistant Director of Internal Affairs",
       ],
