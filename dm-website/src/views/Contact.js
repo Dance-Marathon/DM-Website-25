@@ -15,24 +15,25 @@ import PageHero from "../components/PageHero";
 import HorizontalTeamCard from "../components/TeamCard";
 
 // Images
-import OT1 from "../assets/images/OTHeadshots/AF.jpg";
-import OT2 from "../assets/images/OTHeadshots/OK.jpg";
-import OT3 from "../assets/images/OTHeadshots/AF2.jpg";
-import OT4 from "../assets/images/OTHeadshots/MV.jpg";
-import OT5 from "../assets/images/OTHeadshots/SG.jpg";
-import OT6 from "../assets/images/OTHeadshots/SA.jpg";
-import OT7 from "../assets/images/OTHeadshots/MC.jpg";
-import OT8 from "../assets/images/OTHeadshots/AP.jpg";
-import OT9 from "../assets/images/OTHeadshots/CC.jpg";
-import OT10 from "../assets/images/OTHeadshots/TB.jpg";
-import OT11 from "../assets/images/OTHeadshots/EB.jpg";
-import OT12 from "../assets/images/OTHeadshots/GP.jpg";
-import OT13 from "../assets/images/OTHeadshots/AP2.jpg";
-import OT14 from "../assets/images/OTHeadshots/AT.jpg";
-import OT15 from "../assets/images/OTHeadshots/KF.jpg";
-import OT16 from "../assets/images/OTHeadshots/RS.jpg";
-import OT17 from "../assets/images/OTHeadshots/KR.jpg";
-import OT18 from "../assets/images/OTHeadshots/JR.jpg";
+import OT1 from "../assets/images/OTHeadshots/AP.jpg";
+import OT2 from "../assets/images/OTHeadshots/Joshua Yaciuk.jpg";
+import OT3 from "../assets/images/OTHeadshots/MC.jpg";
+import OT4 from "../assets/images/OTHeadshots/Lucy Eichler.jpg";
+import OT5 from "../assets/images/OTHeadshots/Vivian Lopez.jpg";
+import OT6 from "../assets/images/OTHeadshots/Sydney Barnett.jpg";
+import OT7 from "../assets/images/OTHeadshots/Kristina Guerra.jpg";
+import OT8 from "../assets/images/OTHeadshots/Gabriella Paredes.jpg";
+import OT9 from "../assets/images/OTHeadshots/Zachary Myton.jpg";
+import OT10 from "../assets/images/OTHeadshots/Courtney Carter.jpg";
+import OT11 from "../assets/images/OTHeadshots/Surleen Sahni.jpg";
+import OT12 from "../assets/images/OTHeadshots/Grace Nelson.jpg";
+import OT13 from "../assets/images/OTHeadshots/Rebekah Zuckerman.jpg";
+import OT14 from "../assets/images/OTHeadshots/Maizy Sadlo.jpg";
+import OT15 from "../assets/images/OTHeadshots/Anna Timko.jpg";
+import OT16 from "../assets/images/OTHeadshots/Kathryn Burke.jpg";
+import OT17 from "../assets/images/OTHeadshots/Shae Helmer.jpg";
+import OT18 from "../assets/images/OTHeadshots/Bruna Pereira.jpg";
+import OT19 from "../assets/images/OTHeadshots/Violet Collins.jpg";
 import Footer from "../components/Footer";
 
 import ScrollToTop from "../components/ScrollToTop";
@@ -70,119 +71,122 @@ function Contact() {
   const teamMembers = [
     {
       image: OT1,
-      name: "Abby Ferrell",
-      position: { color: "primary", label: "Executive Director" },
-      email: "aferrell@floridadm.org",
-    },
-    {
-      image: OT2,
-      name: "Olivia Knier",
-      position: { color: "info", label: "Finance Manager" },
-      email: "oknier@floridadm.org",
-    },
-    {
-      image: OT3,
-      name: "Alyssa Fennen",
-      position: { color: "primary-light", label: "Operations Manager" },
-      email: "afennen@floridadm.org",
-    },
-    {
-      image: OT4,
-      name: "Maya Vaidya",
-      position: { color: "info", label: "Marketing Manager" },
-      email: "mvaidya@floridadm.org",
-    },
-    {
-      image: OT5,
-      name: "Samantha Guerrero",
-      position: { color: "info", label: "Membership Manager" },
-      email: "sguerrero@floridadm.org",
-    },
-    {
-      image: OT6,
-      name: "Sofia Amoroso",
-      position: {
-        color: "info",
-        label: "Communications and Public Relations Overall",
-      },
-      email: "samoroso@floridadm.org",
-    },
-    {
-      image: OT7,
-      name: "Marina Cheema",
-      position: { color: "info", label: "Digital Marketing Overall" },
-      email: "mcheema@floridadm.org",
-    },
-    {
-      image: OT8,
       name: "Ashley Paek",
-      position: { color: "info", label: "Event Management Overall" },
+      position: { color: "primary", label: "Executive Director" },
       email: "apaek@floridadm.org",
     },
     {
-      image: OT9,
-      name: "Chloe Claxton",
+      image: OT2,
+      name: "Joshua Yaciuk",
+      position: { color: "info", label: "Finance Manager" },
+      email: "jyaciuk@floridadm.org",
+    },
+    {
+      image: OT3,
+      name: "Marina Cheema",
+      position: { color: "info", label: "Marketing Manager" },
+      email: "mcheema@floridadm.org",
+    },
+    {
+      image: OT4,
+      name: "Lucy Eichler",
+      position: { color: "info", label: "Membership Manager" },
+      email: "leichler@floridadm.org",
+    },
+    {
+      image: OT5,
+      name: "Vivian Lopez",
+      position: { color: "primary-light", label: "Operations Manager" },
+      email: "vlopez@floridadm.org",
+    },
+    {
+      image: OT6,
+      name: "Sydney Barnett",
+      position: { color: "info", label: "Digital Marketing Overall" },
+      email: "sbarnett@floridadm.org",
+    },
+    {
+      image: OT7,
+      name: "Kristina Guerra",
+      position: { color: "info", label: "Event Management Overall" },
+      email: "kguerra@floridadm.org",
+    },
+    {
+      image: OT8,
+      name: "Gabriella Paredes",
       position: { color: "info", label: "Family Relations Overall" },
-      email: "cclaxton@floridadm.org",
+      email: "gparedes@floridadm.org",
+    },
+    {
+      image: OT9,
+      name: "Zachary Myton",
+      position: { color: "info", label: "Finance Overall" },
+      email: "zmyton@floridadm.org",
     },
     {
       image: OT10,
-      name: "Tyler Bonnoront",
-      position: { color: "info", label: "Finance Overall" },
-      email: "tbonnoront@floridadm.org",
+      name: "Courtney Carter",
+      position: { color: "info", label: "Hospitality Overall" },
+      email: "ccarter@floridadm.org",
     },
     {
       image: OT11,
-      name: "Emily Brundage",
+      name: "Surleen Sahni",
       position: { color: "info", label: "Leadership Development Overall" },
-      email: "ebrundage@floridadm.org",
+      email: "ssahni@floridadm.org",
     },
     {
       image: OT12,
-      name: "Gabriella Petillo",
+      name: "Grace Nelson",
       position: { color: "info", label: "Marathon Relations Overall" },
-      email: "gpetillo@floridadm.org",
+      email: "gnelson@floridadm.org",
     },
     {
       image: OT13,
-      name: "Alexandra Polo",
-      position: { color: "info", label: "Member Advancement Overall" },
-      email: "apolo@floridadm.org",
+      name: "Rebekah Zuckerman",
+      position: { color: "info", label: "Member Development Overall" },
+      email: "rzuckerman@floridadm.org",
     },
     {
       image: OT14,
-      name: "Abby Thibodeau",
+      name: "Maizy Sadlo",
       position: { color: "info", label: "Merchandise Overall" },
-      email: "athibodeau@floridadm.org",
+      email: "msadlo@floridadm.org",
     },
     {
       image: OT15,
-      name: "Kylie Finkelstein",
+      name: "Anna Timko",
       position: { color: "info", label: "Morale Overall" },
-      email: "kfinkelstein@floridadm.org",
+      email: "atimko@floridadm.org",
     },
     {
       image: OT16,
-      name: "Rebecca Salamon",
+      name: "Kathryn Burke",
       position: { color: "info", label: "Multimedia Overall" },
-      email: "rsalamon@floridadm.org",
+      email: "kburke@floridadm.org",
     },
     {
       image: OT17,
-      name: "Kelsey Reader",
-      position: { color: "info", label: "Organization Relations Overall" },
-      email: "kreader@floridadm.org",
+      name: "Shae Helmer",
+      position: {
+        color: "info",
+        label: "Public Relations Overall",
+      },
+      email: "shelmer@floridadm.org",
     },
     {
       image: OT18,
-      name: "Jaxen Ranson",
-      position: { color: "info", label: "Partnerships Overall" },
-      email: "jranson@floridadm.org",
+      name: "Bruna Pereira",
+      position: { color: "info", label: "Recruitment Overall" },
+      email: "bpereira@floridadm.org",
+    },
+    {
+      image: OT19,
+      name: "Violet Collins",
+      position: { color: "info", label: "Sponsorships Overall" },
+      email: "vcollins@floridadm.org",
     },
   ];
-
-  const mainMembers = teamMembers.slice(0, teamMembers.length - 2);
-  const lastMembers = teamMembers.slice(teamMembers.length - 2);
 
   centerSectionWithMargins();
   return (
@@ -205,41 +209,10 @@ function Contact() {
         maxWidth={1200}
       >
         <Container>
-          <Grid container spacing={2} alignItems="stretch">
-            {mainMembers.map((member, index) => (
+          <Grid container spacing={2} justifyContent="center" alignItems="stretch">
+            {teamMembers.map((member, index) => (
               <Grid
                 key={index}
-                item
-                xs={6}
-                sm={6}
-                md={4}
-                lg={3}
-                sx={{ display: "flex", flexDirection: "column" }}
-              >
-                <Box sx={{ flex: 1, display: "flex" }}>
-                  <LazyLoad height={200} offset={100} once>
-                    <HorizontalTeamCard
-                      image={member.image}
-                      name={member.name}
-                      position={member.position}
-                      email={member.email}
-                    />
-                  </LazyLoad>
-                </Box>
-              </Grid>
-            ))}
-          </Grid>
-
-          <Grid
-            container
-            spacing={2}
-            justifyContent="center"
-            alignItems="stretch"
-            sx={{ mt: 0 }}
-          >
-            {lastMembers.map((member, index) => (
-              <Grid
-                key={`last-${index}`}
                 item
                 xs={6}
                 sm={6}

@@ -22,27 +22,6 @@ import LazyLoad from "react-lazyload";
 
 const teams = [
   {
-    name: "Communications and Public Relations Team",
-    responsibilities: (
-      <>
-        The Communications and Public Relations Team is responsible for
-        expanding Dance Marathon’s reach beyond the student body by engaging
-        with faculty, staff, families, and the Gainesville community. This team
-        also maintains the organization’s public reputation through strategic
-        outreach and communication.
-      </>
-    ),
-    leadership: {
-      overallDirector: "Sofia Amoroso",
-      assistantDirectors: [
-        "Alyza Dooley - Assistant Director of Social Media",
-        "Tori Kitchens - Assistant Director of Communications",
-        "Sarah Abisror - Assistant Director of Internal Affairs",
-      ],
-      captains: ["Emma Golub","Kayla Birkenmeyer","Alexa Gingold","Keagan Miller","Isabella Bach","Shae Helmer","Abigail Buckley","Kate Wagner","Josephine Barsky","Chloe Czop","Rachel Levy","Melina Gyftopoulos","Lily Peskin","Sylvia Arguello","Molly Freeburg"],
-    },
-  },
-  {
     name: "Digital Marketing Team",
     responsibilities: (
       <>
@@ -61,13 +40,9 @@ const teams = [
       </>
     ),
     leadership: {
-      overallDirector: "Marina Cheema",
-      assistantDirectors: [
-        "Sydney Barnett - Assistant Director of Design",
-        "Eric Hengber - Assistant Director of Technology",
-        "Phillip-Dylan Ndwiga - Assistant Director of Internal Affairs",
-      ],
-      captains: ["Nicole Main","Joseph Laratro","Brooke Lee","Lindsey Kash","Ashley Diez","James Bruder","Ariana Brodows","Danny Gleeson","Savana Pham","Riley Floyd","Amey Dewangan","Hannah Chen","Brooke Telchin","Matthew Krusch", "Matt Greenspan", "Ethan Hejny"],
+      overallDirector: "Sydney Barnett",
+      assistantDirectors: [      ],
+      captains: [],
     },
   },
   {
@@ -79,14 +54,9 @@ const teams = [
       </>
     ),
     leadership: {
-      overallDirector: "Ashley Paek",
-      assistantDirectors: [
-        "Kristina Guerra - Assistant Director of Talent Relations",
-        "Daniela San Martin - Assistant Director of External Logistics",
-        "Meagan Long  - Assistant Director of Internal Logistics",
-        "Vivian Lopez - Assistant Director of Fundraising",
-      ],
-      captains: ["Azlin Edwards","Lilia Silveira","Rebecca Weigle","Dani Primerano","Hanh (Brooke) Pham","Sarah Broe","Layna Hood","Olivia Rodriguez","Isabella Ward","Manuel-Alejandro Oquendo","Victoria Garvey","Luna Llano","Meryn Rubenstein","Avery Hearshman","Riley Gold","Oliver Hegarty","Kelli Martin","Rylee Haugh","Victoria Higuera","Ashley Erwin","Anjali Venkataraman","Kayleigh Kasinger","Brooke Tuttle","Mia Jimenez","Rowan Griese"],
+      overallDirector: "Kristina Guerra",
+      assistantDirectors: [      ],
+      captains: [],
     },
   },
   {
@@ -94,14 +64,9 @@ const teams = [
     responsibilities:
       "The Family Relations Team is composed of Captains that serve as liaisons between the Dance Marathon at UF community and the Miracle Families. Captains are paired with at least one Miracle Family and their responsibilities include maintaining consistent contact with their paired Miracle Family, facilitating cause-connection between their Family and the community, and organizing events between the Miracle Families and participating Organizations. Captains will attend monthly Family Fun Days, design and build the Family Room for the 26.2-hour Main Event, and facilitate activities and entertainment for the Miracle Families throughout the entirety of the year.",
     leadership: {
-      overallDirector: "Chloe Claxton",
-      assistantDirectors: [
-        "Emma Sugarman - Assistant Director of Family Events",
-        "Ashlin Cannella - Assistant Director of Captain Engagement",
-        "Madelyn Avergonzado - Assistant Director of Outreach",
-        "Victoria Poliak - Assistant Director of Cause Connection",
-      ],
-      captains: ["Riley Hearn","Hadassah Sternfeld","Emily Rodriguez","Haven Copeland","Lilly Smith","Gabriella Paredes","Stella Hurwitz","Gabrielle Monk","Mya Forbes","Addie Sptaru","Jackie Bernstein","Mollie Kron","London Taylor","Mary Grace Butler","Sara Sonnenblick","Parker Brown","Hailey Flynn","Rachel Yavner","Emma Shellard","Emma Bergren","Catherine Hanania","Sammi Leon","Jordan Smith","Haley Will","Lexi Chenven","Ava Cohen","Kaya Hall","Joshua Brandt","Amanda Grossman","Madison Daire","Elizabeth Batista","Ava Weitz","Tristan Swain","Rebecca Beer","Elle Lentz","Sophia Diaz","Shreya Shah","Avery Elofsson","Matthew Strogach","Arie Eitani"],
+      overallDirector: "Gabriella Paredes",
+      assistantDirectors: [      ],
+      captains: [],
     },
   },
   {
@@ -109,12 +74,19 @@ const teams = [
     responsibilities:
       "The Finance Team is responsible for the financial oversight of Dance Marathon at UF. This is achieved through the creative planning and strategic tracking of fundraising campaigns throughout the year. Captains will actively participate in discussions and spearhead special projects involving the creation of fundraising campaigns, incentives, and templates used by all members of Dance Marathon at UF. Through collaborating with the Merchandise, Digital Marketing, and Organization Relations Teams, Finance Captains will have the opportunity to directly impact fundraising initiatives.",
     leadership: {
-      overallDirector: "Tyler Bonnoront",
-      assistantDirectors: [
-        "Miray Eser - Assistant Director of Fundraising Development",
-        "Alejandra Gomez-Pina - Assistant Director of Finance Tracking",
-      ],
-      captains: ["Ashlee Thomas","Alana Shapiro","Samantha Mirer","Lindsay Nattis","Ava Fisher","Shanee Hamami","Simran Mani","Alexandra Kaye","Samantha Diamond","Mark Michna","Addison Barno","Myla Wollman","Thatcher Davis","James Bonerb"],
+      overallDirector: "Zachary Myton",
+      assistantDirectors: [],
+      captains: [],
+    },
+  },
+  {
+    name: "Hospitality Team",
+    responsibilities:
+      "",
+    leadership: {
+      overallDirector: "Courtney Carter",
+      assistantDirectors: [      ],
+      captains: [],
     },
   },
   {
@@ -122,14 +94,9 @@ const teams = [
     responsibilities:
       "The Leadership Development Team is responsible for overseeing and running the Emerging Leaders Program. This team will focus on developing and integrating students with minimal previous Dance Marathon experience into the Dance Marathon at UF community through tangible exposure to Dance Marathon’s various leadership roles.",
     leadership: {
-      overallDirector: "Emily Brundage",
-      assistantDirectors: [
-        "Surleen Sahni - Assistant Director of Development",
-        "Rebekah Zuckerman - Assistant Director of Logistics",
-        "Sabrina Gomez - Assistant Director of Impact Advancement",
-        "Bruna Pereira - Assistant Director of Internal Relations",
-      ],
-      captains: ["Sophia Pablos","Laynee Plawa","Sophia Cuna","Dana Schechter","Joshua Song","Hailey Rudman","Devan Adair","Cristyl Rodriguez","Elena Castelino","Haley Black","Olivia Murphy","Jamie Schlaen","Amelia Eipper","Eden Rothstein","Grace Nesbit","Aj Hamil","Mackenzie Gale","Piper Miller","Stella Monforte","Michayla Rinaldi","Zoe Licata","Samantha Schmid","Marella Quesnell","Gabriela Perez","Ally Mcgill","Rosselin Vera","Angela Montana","Rachel Shein"],
+      overallDirector: "Surleen Sahni",
+      assistantDirectors: [      ],
+      captains: [],
     },
   },
   {
@@ -137,29 +104,19 @@ const teams = [
     responsibilities:
       "The Marathon Relations Team is composed of Captains that are responsible for advising and growing Dance Marathon at UF’s high school programs, Mini Marathons. They energize and support our “Minis” by educating students on Children’s Miracle Network and Dance Marathon at UF’s history and culture.",
     leadership: {
-      overallDirector: "Gabriella Petillo",
-      assistantDirectors: [
-        "Grace Nelson  - Assistant Director of Established Programs",
-        "Marisa Ricks - Assistant Director of Evolving Programs",
-        "Lucy Eichler - Assistant Director of New Programs",
-        "Inara Drainville - Assistant Director of Finance and Sponsorships",
-        "Madelyn Scaringe - Assistant Director of Marketing and Engagement",
-      ],
-      captains: ["Adam Ahmad","Larah Moreira","Jacob Giambalvo","Alyssa Gottesman","Faith Giambalvo","Lindsay Hersh","Lauren Clark","Haven Wilson","Maria Victoria Sacchi","Jenna Hentrich","Kyley Holder","Kenlee Ammons","Priya Kalaria","Kaylin Djoko","Kayleigh Mccord","Ariana Bautro","Whitfield Brice","Seth Edwards","Julia Paulsen","Elizabeth Chapman","Braylee Dempsey","Sam Burghardt"],
+      overallDirector: "Grace Nelson",
+      assistantDirectors: [      ],
+      captains: [],
     },
   },
   {
-    name: "Member Advancement Team",
+    name: "Member Development Team",
     responsibilities:
-      "The Member Advancement Team is responsible for overseeing the Miracle Maker lifecycle from recruitment to attendance at Dance Marathon at UF events. This team also represents Dance Marathon at UF at student events such as club fairs and involvement expos to further our recruitment efforts. This team will execute all Miracle Maker specific events including weekly check-ins, engagement/ fundraising activation plans, as well as Main Event programming (Swim + shower, Zen room, etc.).",
+      "The Member Development Team is responsible for overseeing the Miracle Maker lifecycle from recruitment to attendance at Dance Marathon at UF events. This team also represents Dance Marathon at UF at student events such as club fairs and involvement expos to further our recruitment efforts. This team will execute all Miracle Maker specific events including weekly check-ins, engagement/ fundraising activation plans, as well as Main Event programming (Swim + shower, Zen room, etc.).",
     leadership: {
-      overallDirector: "Alexandra Polo",
-      assistantDirectors: [
-        "Kaitlyn Koviack - Assistant Director of Internal Relations",
-        "Avery McCormack  - Assistant Director of Recruitment",
-        "Isabella Diaz-Figueroa - Assistant Director of External Relations",
-      ],
-      captains: ["Amaana Quadir","Alexis Arnoldi","Kendall Mehlenbacher","Alexis Zanella","Rae Weinstein","Genesys Negroni","Francesca Abarno","Kylie Zimelman","Danielle Work","Catherine Morris","Maria Vittoria Rutherford","Rebecca Beer","Brooke Fatone","Fabiana Gorre","Abhilasha Kadel","Melanie Seremet","Raquel Christie","Reva Sedhain","Leah Krawczuk"],
+      overallDirector: "Rebekah Zuckerman",
+      assistantDirectors: [      ],
+      captains: [],
     },
   },
   {
@@ -167,14 +124,9 @@ const teams = [
     responsibilities:
       "The Merchandise Team is responsible for creating and distributing all official Dance Marathon at the University of Florida merchandise, including clothing, accessories, and fundraising incentives.",
     leadership: {
-      overallDirector: "Abby Thibodeau",
-      assistantDirectors: [
-        "Kenya Jarrett - Assistant Director of Stores and Incentives",
-        "Lauren Klein - Assistant Director of Fundraising",
-        "Taylor Barrett - Assistant Director of Inventory and Mini Marathons",
-        "Camile Robinson - Assistant Director of Internal Operations",
-      ],
-      captains: ["Elana Gabbay","Ava Morin","Maizy Sadlo","Melina Kehres","Suhani Nihalani","Maya Digeronimo","Lauren Silva","Isabella Simon","Sofia Durante","Lillian Della Porta","Desiree Haghgoo","Alexandra Saclayan"],
+      overallDirector: "Maizy Sadlo",
+      assistantDirectors: [      ],
+      captains: [],
     },
   },
   {
@@ -182,14 +134,9 @@ const teams = [
     responsibilities:
       "The Morale Team is responsible for keeping the spirit of Dance Marathon energetic, positive, and meaningful throughout the entire year.",
     leadership: {
-      overallDirector: "Kylie Finkelstein",
-      assistantDirectors: [
-        "Raina Khanna - Assistant Director of Captain Relations",
-        "Katie East - Assistant Director of Event Planning",
-        "Becca Harkins - Assistant Director of Fundraising",
-        "Jessica Perez - Assistant Director of Mini Marathon Coordination",
-      ],
-      captains: ["Madison Slosberg","River Koile","Jimmy Davis","Lily Darnell","Emma Liss","Lily Galkin","Makenzie Cole","Emily Sanz","Carson Duke","Abbie Grace Flohr","Sophie Fakhouri","Ethan Ricahrds","Anna Timko","Reese Tierney","Janie Akers","Cassandra Musca","Hailey Turtz","Annalee Watts","Nika Forouzannia","Abigail Hennessee","Kayla Flores","Ava Esmond","Claire Fox","Sammy Miret","Liliana Remillard","Genesis Rodriguez","Ava Schulz","Emily Celestrin","Sophia Esmond","Zoe Donohoe","Alexa Levine","Gabriela Pirtea","Nina Rico","Emma Liss","Samantha Peitz","Olivia Martinez","Sasha Crowe","Emma Stein","Anagha Mathur","Meghan Wilbrett","Cecilia Coleman","Lainey Hansen"],
+      overallDirector: "Anna Timko",
+      assistantDirectors: [      ],
+      captains: [],
     },
   },
   {
@@ -197,44 +144,46 @@ const teams = [
     responsibilities:
       "The Multimedia Team is responsible for capturing and editing all photography and videography content for Dance Marathon at the University of Florida throughout the year.",
     leadership: {
-      overallDirector: "Rebecca Salamon",
-      assistantDirectors: [
-        "Kathryn Burke - Assistant Director of Logistics",
-        "Kieran McAteer - Assistant Director of Photography",
-        "Alexa Freedman - Assistant Director of Social Media",
-        "Marissa Haberlin - Assistant Director of Videography",
-      ],
-      captains: ["Abby Brady","Christopher Tran","Huy Doan","Mariapaz Sandoval","Dahlia Harris","Sydney Crenshaw","Lorenzo Castillo-Rios","Katie Apolo","Kayla Smith","Evan Ellis","Breanne Dinow","Miles Kamp","Sky Augusta","Victoria Noguera"],
+      overallDirector: "Kathryn Burke",
+      assistantDirectors: [      ],
+      captains: [],
     },
   },
   {
-    name: "Organization Relations Team",
-    responsibilities:
-      "The Organization Relations Team is focused on fostering relationships between Dance Marathon and UF student organizations.",
+    name: "Public Relations Team",
+    responsibilities: (
+      <>
+        The Public Relations Team is responsible for
+        expanding Dance Marathon’s reach beyond the student body by engaging
+        with faculty, staff, families, and the Gainesville community. This team
+        also maintains the organization’s public reputation through strategic
+        outreach and communication.
+      </>
+    ),
     leadership: {
-      overallDirector: "Kelsey Reader",
-      assistantDirectors: [
-        "Ryan LaLiberty - Assistant Director of IFC Relations",
-        "Kaylee Wesner - Assistant Director of Panhellenic Relations",
-        "Suki Sidhu - Assistant Director of Student Organizations",
-        "Harmon Klein - Assistant Director of Operations",
-      ],
-      captains: ["Julian Morgan","Samantha Elmer","Maya Sakellarios","Corey Schwartz","Gabrielle Proulx","Abby Mccaskill","Sydney Ramsey","Sofia Smith","Jiya Bhatt","Lilly Daxon","Sean Gebert","Aishwarya Nagpal","Jeremy Simon","Alex Paul","Ella Galjanich","Brady Reis","Samantha Santo","Angelica Mir","Holly Kaplan","Mailee Minitello","Julia Glacer","Roselyn Almora","Hadassah Gusma Gusmao","Luis Carranza"],
+      overallDirector: "Shae Helmer",
+      assistantDirectors: [      ],
+      captains: [],
     },
   },
   {
-    name: "Partnerships Team",
+    name: "Recruitment Team",
     responsibilities:
-      "The Partnerships Team works year-round to solicit varied businesses, food distributors, and restaurants in the greater Gainesville area for monetary and in-kind item donations.",
+      "",
     leadership: {
-      overallDirector: "Jaxen Ranson",
-      assistantDirectors: [
-        "Joshua Yaciuk - Assistant Director of Development",
-        "Natalie Mann - Assistant Director of Stewardship",
-        "Courtney Carter  - Assistant Director of Events",
-        "Zachary Myton - Assistant Director of Logistics",
-      ],
-      captains: ["Samuel Abrams","Kayla Bigelman","Abby Chaiet","Cooper Neel","Gaven Ranson","Preston Frisch","Ciara O’Grady","Eden Gabbai","Daniel Wang","Robert Buonpastore","Jay Nemec","Violet Collins","Ari Spiegel","Amanda Demouey","Terren Smith"],
+      overallDirector: "Bruna Pereira",
+      assistantDirectors: [      ],
+      captains: [],
+    },
+  },
+  {
+    name: "Sponsorships Team",
+    responsibilities:
+      "The Sponsorships Team works year-round to solicit varied businesses, food distributors, and restaurants in the greater Gainesville area for monetary and in-kind item donations.",
+    leadership: {
+      overallDirector: "Violet Collins",
+      assistantDirectors: [      ],
+      captains: [],
     },
   },
 ];
