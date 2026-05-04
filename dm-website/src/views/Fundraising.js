@@ -16,7 +16,7 @@ import RegisterToFundraise from "../assets/images/pagepics/RegisterToFundraisePi
 import FundraisingGuideBox from "../assets/images/miniboxpics/FundraisingGuideMini.jpg";
 import DDBox from "../assets/images/miniboxpics/DonorDriveBox.jpg";
 import EmployeeBox from "../assets/images/miniboxpics/EmployeeMatchingBox.jpg";
-import PartnersBox from "../assets/images/miniboxpics/PartnersBox.jpg";
+import SponsorsBox from "../assets/images/miniboxpics/PartnersBox.jpg";
 import CanningBox from "../assets/images/miniboxpics/CanningBox.jpg";
 
 export default function Fundraising() {
@@ -127,9 +127,9 @@ export default function Fundraising() {
             sx={{ mt: 4 }}
           >
             If you have any questions about DonorDrive, contact the Finance
-            Overall Director, Tyler Bonnoront, at{" "}
-            <Link href="mailto:tbonnoront@floridadm.org">
-              tbonnoront@floridadm.org
+            Overall Director, Zachary Myton, at{" "}
+            <Link href="mailto:zmyton@floridadm.org">
+              zmyton@floridadm.org
             </Link>
             .
           </Typography>
@@ -171,10 +171,10 @@ export default function Fundraising() {
               link: "/fundraisingguide",
             },
             {
-              image: PartnersBox,
-              title: "Partners",
-              hoverText: "Discover our partners!",
-              link: "/partners",
+              image: SponsorsBox,
+              title: "Sponsors",
+              hoverText: "Discover our sponsors!",
+              link: "/sponsors",
             },
             {
               image: CanningBox,

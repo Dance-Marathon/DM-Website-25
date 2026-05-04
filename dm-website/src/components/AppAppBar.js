@@ -254,7 +254,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                     { label: "Employee Matching", url: "/employeematching" },
                     { label: "Fundraising Guide", url: "/fundraisingguide" },
                     { label: "Canning", url: "/canning" },
-                    { label: "Partners", url: "/partners" },
+                    { label: "Sponsors", url: "/partners" },
                   ]}
                   menuURL={"/register-to-fundraise"}
                   sx={{

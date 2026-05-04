@@ -152,7 +152,7 @@ export default function GetInvolved() {
                 image: CaptainsBox,
                 title: "Captain Teams",
                 hoverText:
-                  "Captains belong to 1 of 15 teams and take on yearlong responsibilities specific to their respective teams, with the goal of supporting and promoting our organization.",
+                  "Captains belong to 1 of 14 teams and take on yearlong responsibilities specific to their respective teams, with the goal of supporting and promoting our organization.",
                 link: "/captainteams",
               },
               {

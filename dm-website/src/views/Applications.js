@@ -162,7 +162,12 @@ export default function Applications() {
             color="text.secondary"
             marginBottom={3.5}
           >
-            Closed
+            Here is the link to the 2027 Assistant Director Application:{" "}
+            <Link href="https://docs.google.com/document/d/1siZozyqwijL7hbX2JnuO9zhvcWr-7pQCfvMpYBwDp_A/edit?usp=sharing" target="_blank">
+              2027 Assistant Director Application
+            </Link>
+            ! Applications are open now until Saturday, May 9th at 5pm. To submit your application, email{" "}
+            <Link href="mailto:leichler@floridadm.org">leichler@floridadm.org</Link>.
           </Typography>
 
           <Typography
@@ -269,19 +274,19 @@ export default function Applications() {
             color="text.secondary"
           >
             If you have any questions regarding applications, please reach out
-            to our Membership Manager, Samantha Guerrero, at{" "}
+            to our Membership Manager, Luch Eichler, at{" "}
             <Link
-              href="mailto:sguerrero@floridadm.org"
+              href="mailto:leichler@floridadm.org"
               sx={{ color: "#1a73e8" }}
             >
-              sguerrero@floridadm.org
+              leichler@floridadm.org
             </Link>
-            {" "}or the Member Advancement Overall Director, Alexandra Polo at
+            {" "}or the Member Development Overall Director, Rebekah Zuckerman at
             <Link
-              href="mailto:apolo@floridadm.org"
+              href="mailto:rzuckerman@floridadm.org"
               sx={{ color: "#1a73e8" }}
             >
-              {" "}apolo@floridadm.org
+              {" "}rzuckerman@floridadm.org
             </Link>
             .
           </Typography>

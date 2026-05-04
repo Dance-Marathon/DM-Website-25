@@ -73,12 +73,12 @@ export default function Moralloween() {
           </Typography>
           <Typography variant="body1" sx={{ color: "text.secondary" }}>
             For more information, please contact the Morale Overall Director,
-            Kylie Finkelstein, at{" "}
+            Anna Timko, at{" "}
             <Link
-              href="mailto:kfinkelstein@floridadm.org"
+              href="mailto:atimko@floridadm.org"
               sx={{ color: "#1a73e8" }}
             >
-              kfinkelstein@floridadm.org
+              atimko@floridadm.org
             </Link>
             .
           </Typography>

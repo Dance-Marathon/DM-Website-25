@@ -133,12 +133,12 @@ export default function MiracleFamilies() {
             sx={{ color: "text.secondary", marginBottom: 2 }}
           >
             If you have any questions about the Family Relations program, please
-            contact the Family Relations Overall Director, Chloe Claxton, at{" "}
+            contact the Family Relations Overall Director, Gabriella Paredes, at{" "}
             <Link
-              href="mailto:cclaxton@floridadm.org"
+              href="mailto:gparedes@floridadm.org"
               sx={{ color: "#1a73e8" }}
             >
-              cclaxton@floridadm.org
+              gparedes@floridadm.org
             </Link>
             .
           </Typography>

@@ -61,9 +61,9 @@ export default function Canning() {
           How to do it?
         </Typography>
         <Typography variant="body1" color="text.secondary" paragraph>
-          First, obtain specially designed canning buckets from our Partnerships
+          First, obtain specially designed canning buckets from our Sponsorships
           Team (contact{" "}
-          <Link href="mailto:jranson@floridadm.org">jranson@floridadm.org</Link>{" "}
+          <Link href="mailto:vcollins@floridadm.org">vcollins@floridadm.org</Link>{" "}
           for further information). Email, call, or go inside a local business
           in your hometown and request to speak to the General Manager regarding
           canning donations. They will inform you of all the necessary
@@ -100,9 +100,9 @@ export default function Canning() {
           sx={{ mt: 2 }}
         >
           If you have any questions about canning, contact the Finance Overall
-          Director, Tyler Bonnoront at{" "}
-          <Link href="mailto:tbonnoront@floridadm.org">
-            tbonnoront@floridadm.org.
+          Director, Zachary Myton, at{" "}
+          <Link href="mailto:zmyton@floridadm.org">
+            zmyton@floridadm.org
           </Link>
         </Typography>
       </Container>

@@ -183,7 +183,7 @@ export default function Sponsors() {
       <LazyLoad height={200} offset={100} once>
         <PageHero
           imageUrl={SponsorPic}
-          title="Partners"
+          title="Sponsors"
           sx={{ fontFamily: "CasaPinada" }}
         />
       </LazyLoad>
@@ -208,13 +208,13 @@ export default function Sponsors() {
         <Typography variant="body1" color="text.secondary" marginTop={-2}>
           <span style={{ color: "#e2883c", fontWeight: "bold" }}>
             Dance Marathon at UF is so thankful for the support of our generous
-            Partners!
+            Sponsors!
           </span>{" "}
-          DM at UF offers many different ways to get involved as a Partner for
+          DM at UF offers many different ways to get involved as a Sponsor for
           our cause, each with various benefits to show our appreciation for
           your support.{" "}
           <span style={{ color: "#233563", fontWeight: "bold" }}>
-            Our Partnerships Team will connect your company with our
+            Our Sponsorships Team will connect your company with our
             Organization
           </span>
           , along with access to an extensive network of supporters of all ages
@@ -223,7 +223,7 @@ export default function Sponsors() {
 
         {/* Link to sponsorship opportunities */}
         <Typography variant="body1" color="text.secondary" marginTop={0}>
-          For more information, view our partnership opportunities{" "}
+          For more information, view our sponsorship opportunities{" "}
           <Link href={SponsorshipPacket} underline="always">
             here
           </Link>
@@ -232,12 +232,12 @@ export default function Sponsors() {
 
         {/* Contact Information */}
         <Typography variant="body1" color="text.secondary" marginTop={0}>
-          If you have any questions, please contact our Partnership Overall
+          If you have any questions, please contact our Sponsorship Overall
           Director,{" "}
-          <Link href="mailto:jranson@floridadm.org" underline="always">
-            Jaxen Ranson
+          <Link href="mailto:vcollins@floridadm.org" underline="always">
+            Violet Collins
           </Link>
-          , at jranson@floridadm.org.
+          , at vcollins@floridadm.org.
         </Typography>
 
         {/* Sponsors Section */}
@@ -249,7 +249,7 @@ export default function Sponsors() {
           sx={{ marginTop: 4 }}
         >
           <span style={{ color: "#233563", fontWeight: "bold" }}>
-            Our 2025 Partners
+            Our 2025 Sponsors
           </span>
         </Typography>
         <LazyLoad height={200} offset={100} once>

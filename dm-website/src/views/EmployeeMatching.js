@@ -86,9 +86,9 @@ export default function EmployeeMatching() {
             2. Obtain a matching gift verification form from your Human
             Resources Department. Complete the form and list our organization
             name below. If you directed your donation to Children’s Miracle
-            Network, please email our Executive Director, Abby Ferrell, at{" "}
-            <Link href="mailto:aferrell@floridadm.org">
-              aferrell@floridadm.org
+            Network, please email our Executive Director, Ashley Paek, at{" "}
+            <Link href="mailto:apaek@floridadm.org">
+              apaek@floridadm.org
             </Link>{" "}
             with a copy of the matching gift verification form.
           </Typography>
@@ -187,8 +187,8 @@ export default function EmployeeMatching() {
             <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               PLEASE NOTE:
             </span>{" "}
-            Notify our Finance Manager, Olivia Knier, at{" "}
-            <Link href="mailto:oknier@floridadm.org">oknier@floridadm.org</Link>{" "}
+            Notify our Finance Manager, Joshua Yaciuk, at{" "}
+            <Link href="mailto:jyaciuk@floridadm.org">jyaciuk@floridadm.org</Link>{" "}
             whenever a matching gift request has been submitted. The matching
             gift will be attributed to the individual who received the original
             donation. Please allow 60 days for the Office of Development to
@@ -208,7 +208,7 @@ export default function EmployeeMatching() {
           <Typography color="text.secondary" paragraph>
             Please do not fill out any forms sent with checks; instead, turn
             them in directly into the Finance Manager, reachable at{" "}
-            <Link href="mailto:oknier@floridadm.org">oknier@floridadm.org</Link>
+            <Link href="mailto:jyaciuk@floridadm.org">jyaciuk@floridadm.org</Link>
             .
           </Typography>
         </Box>

@@ -67,11 +67,11 @@ export default function MiracleMakers() {
           with their internal Organization and more!
         </Typography>
         <Typography variant="body1" color="text.secondary">
-          Please email Alexandra Polo, the Member Advancement Overall Director,
+          Please email Rebekah Zuckerman, the Member Development Overall Director,
           at
-          <Link href="mailto:apolo@floridadm.org">
+          <Link href="mailto:rzuckerman@floridadm.org">
             {" "}
-            apolo@floridadm.org
+            rzuckerman@floridadm.org
           </Link>{" "}
           with any questions!
         </Typography>
@@ -87,7 +87,7 @@ export default function MiracleMakers() {
           >
             <strong>here</strong>
           </Link>{" "}
-          to register, and a Member Advancement Captain will reach out to you
+          to register, and a Member Development Captain will reach out to you
           with further details.
         </Typography>
         <Typography variant="body1" color="text.secondary">
@@ -101,9 +101,9 @@ export default function MiracleMakers() {
         </Typography>
         <Typography variant="body1" color="text.secondary">
           If you have any questions about being a Miracle Maker as an individual
-          or part of Team Hope, please contact the Member Advancement Overall
-          Director, Alexandra Polo, at
-          <Link href="mailto:apolo@floridadm.org"> apolo@floridadm.org</Link>.
+          or part of Team Hope, please contact the Member Development Overall
+          Director, Rebekah Zuckerman, at
+          <Link href="mailto:rzuckerman@floridadm.org"> rzuckerman@floridadm.org</Link>.
         </Typography>
 
         <Typography variant="h5" color="#233563" sx={{ marginTop: 2 }}>

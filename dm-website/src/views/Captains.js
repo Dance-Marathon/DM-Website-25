@@ -25,18 +25,7 @@ const teams = [
     name: "Digital Marketing Team",
     responsibilities: (
       <>
-        The Digital Marketing Team is composed of graphic designers and software
-        developers responsible for making the Dance Marathon at UF brand come to
-        life. Technology Captains are responsible for either the
-        development/maintenance of the website or mobile iOS/Android
-        applications, and Design Captains are responsible for the creation of
-        all print/web design needs (merchandise, social media graphics,
-        newsletters, calendars, etc.). Throughout the year, Captains work
-        together to create high-tech, portfolio-quality materials that showcase
-        Dance Marathon as a professional student-run movement. During the Main
-        Event, Captains run the tech booth, which includes managing multiple
-        screens inside the O’Dome, sending app notifications, coordinating
-        audio/visual feeds, and creating in-event graphics.
+        The Digital Marketing Team is composed of graphic designers and software developers responsible for making portfolio-quality materials that bring the Dance Marathon at UF brand to life. Technology Captains are responsible for either the development/maintenance of the website or mobile app. Design Captains are responsible for the creation of all print/web design needs such as all DM at UF merchandise, social media graphics, newsletters and more using Adobe platforms. During the Main Event, Captains run the tech booth, which includes managing multiple screens inside the O’Dome, sending app notifications, coordinating audio/visual feeds, and creating in-event graphics.
       </>
     ),
     leadership: {
@@ -49,8 +38,7 @@ const teams = [
     name: "Event Management Team",
     responsibilities: (
       <>
-        The Event Management Team is responsible for all logistics and
-        entertainment throughout the year and during the 26.2-hour Main Event.
+        The Event Management Team is responsible for all logistics and entertainment throughout the year and during the Main Event. Event Management Captains play an integral role in setting up and striking Dance Marathon at UF events, while also managing and supporting entertainment acts. This team focuses on bringing ideas to life while ensuring a seamless and engaging experience for participants.
       </>
     ),
     leadership: {
@@ -62,7 +50,7 @@ const teams = [
   {
     name: "Family Relations Team",
     responsibilities:
-      "The Family Relations Team is composed of Captains that serve as liaisons between the Dance Marathon at UF community and the Miracle Families. Captains are paired with at least one Miracle Family and their responsibilities include maintaining consistent contact with their paired Miracle Family, facilitating cause-connection between their Family and the community, and organizing events between the Miracle Families and participating Organizations. Captains will attend monthly Family Fun Days, design and build the Family Room for the 26.2-hour Main Event, and facilitate activities and entertainment for the Miracle Families throughout the entirety of the year.",
+      "The Family Relations Team is composed of Captains that serve as liaisons between the Dance Marathon at UF community and the Miracle Families. Captains are paired with at least one Miracle Family and their responsibilities include maintaining consistent contact with their paired Miracle Family, facilitating cause-connection between their Family and the community, and organizing events between the Miracle Families and participating Organizations. Captains will attend monthly Family Fun Days, design and build the Family Room for the Main Event, and facilitate activities and entertainment for the Miracle Families throughout the entirety of the year.",
     leadership: {
       overallDirector: "Gabriella Paredes",
       assistantDirectors: [      ],
@@ -72,7 +60,7 @@ const teams = [
   {
     name: "Finance Team",
     responsibilities:
-      "The Finance Team is responsible for the financial oversight of Dance Marathon at UF. This is achieved through the creative planning and strategic tracking of fundraising campaigns throughout the year. Captains will actively participate in discussions and spearhead special projects involving the creation of fundraising campaigns, incentives, and templates used by all members of Dance Marathon at UF. Through collaborating with the Merchandise, Digital Marketing, and Organization Relations Teams, Finance Captains will have the opportunity to directly impact fundraising initiatives.",
+      "The Finance Team supports the execution of the overall fundraising strategy for Dance Marathon at the University of Florida. Working under the Assistant Directors of Fundraising Innovation & Incentives, Internal Development, and Financial Planning, Captains help bring initiatives to life. Captains will develop and implement creative incentives, supporting participants and teams and staffing key efforts such as fundraising support stations and the incentives table during major events. They play an active role in encouraging participation, generating new ideas, and ensuring campaigns are engaging and appealing to participants. Captains also assist with tracking fundraising progress, contributing to monthly reports on fundraising performance and sharing new, encouraging ideas to further participant impact. Through mentorship, collaboration and development opportunities, Captains grow as leaders while fostering a positive and connected team culture.",
     leadership: {
       overallDirector: "Zachary Myton",
       assistantDirectors: [],
@@ -82,7 +70,7 @@ const teams = [
   {
     name: "Hospitality Team",
     responsibilities:
-      "",
+      "The Hospitality Team is responsible for planning, coordinating and securing a continuous and consistent flow of in-kind donations for Miracle Makers, Internal Members and Miracle Families throughout the year. Hospitality Captains oversee all donation-related logistics for all Dance Marathon at UF events, ensuring that all participant needs are met. They also work to establish partnerships with local businesses to obtain in-kind contributions and host benefit nights, such as Hospitality Nights, supporting the organization’s fundraising efforts while fostering community engagement.",
     leadership: {
       overallDirector: "Courtney Carter",
       assistantDirectors: [      ],
@@ -102,7 +90,7 @@ const teams = [
   {
     name: "Marathon Relations Team",
     responsibilities:
-      "The Marathon Relations Team is composed of Captains that are responsible for advising and growing Dance Marathon at UF’s high school programs, Mini Marathons. They energize and support our “Minis” by educating students on Children’s Miracle Network and Dance Marathon at UF’s history and culture.",
+      "The Marathon Relations team is responsible for collaborating, advising and growing Dance Marathon at the University of Florida’s partner high school programs, known as Mini Marathons. They energize and support our “Minis” by educating students on Children’s Miracle Network and Dance Marathon at UF’s history and culture. They meet with and support our high school partner programs throughout the year, all culminating in their Mini Marathon during ‘Mini Season.’ Mini Season consists of a few weeks in the spring semester where Marathon Relations collaborates with various other teams to attend all Mini Marathons each weekend. ",
     leadership: {
       overallDirector: "Grace Nelson",
       assistantDirectors: [      ],
@@ -112,7 +100,7 @@ const teams = [
   {
     name: "Member Development Team",
     responsibilities:
-      "The Member Development Team is responsible for overseeing the Miracle Maker lifecycle from recruitment to attendance at Dance Marathon at UF events. This team also represents Dance Marathon at UF at student events such as club fairs and involvement expos to further our recruitment efforts. This team will execute all Miracle Maker specific events including weekly check-ins, engagement/ fundraising activation plans, as well as Main Event programming (Swim + shower, Zen room, etc.).",
+      "The Member Development Team is responsible for overseeing the Ambassador and Miracle Maker lifecycle. Member Development Captains will be paired with Ambassadors and assist them in their organization engagement and communication and fundraising efforts, serving as the liaison between the assigned organization and Dance Marathon at UF. This team will execute all Ambassador and Miracle Maker-specific events including cause connection, general body meetings, bonding and Main Event programming. ",
     leadership: {
       overallDirector: "Rebekah Zuckerman",
       assistantDirectors: [      ],
@@ -122,7 +110,7 @@ const teams = [
   {
     name: "Merchandise Team",
     responsibilities:
-      "The Merchandise Team is responsible for creating and distributing all official Dance Marathon at the University of Florida merchandise, including clothing, accessories, and fundraising incentives.",
+      "The Merchandise Team is responsible for the ideation and distribution of all official Dance Marathon at the University of Florida merchandise, including clothing and accessories. Merchandise Captains help guide the creative direction of merchandise by creating mood boards to ensure alignment with the organization’s brand and fundraising goals. Captains also work at the merchandise store at events throughout the year, including fundraising pushes such as Transform Today, the Turlington Plaza store, high school Mini Marathons and the Main Event.",
     leadership: {
       overallDirector: "Maizy Sadlo",
       assistantDirectors: [      ],
@@ -132,7 +120,7 @@ const teams = [
   {
     name: "Morale Team",
     responsibilities:
-      "The Morale Team is responsible for keeping the spirit of Dance Marathon energetic, positive, and meaningful throughout the entire year.",
+      "The Morale Team is responsible for keeping the spirit of Dance Marathon at UF energetic, positive and meaningful throughout the entire year. Morale Captains create the linedance, lead theme hours at the Main Event and plan and execute events such as Moralloween and Morale Madness. Morale Captains also consistently engage with participants through outreach, hype, and personal connection, driving fundraising and maintaining excitement across the organization.",
     leadership: {
       overallDirector: "Anna Timko",
       assistantDirectors: [      ],
@@ -153,11 +141,7 @@ const teams = [
     name: "Public Relations Team",
     responsibilities: (
       <>
-        The Public Relations Team is responsible for
-        expanding Dance Marathon’s reach beyond the student body by engaging
-        with faculty, staff, families, and the Gainesville community. This team
-        also maintains the organization’s public reputation through strategic
-        outreach and communication.
+        The Public Relations Team is responsible for representing Dance Marathon at UF and engaging within and outside of the organization by communicating to members, faculty, staff, families and the broader Gainesville community. This team maintains DM at UF’s reputation through strategic outreach and communication, using resources such as social media, press relations and more.
       </>
     ),
     leadership: {
@@ -169,7 +153,7 @@ const teams = [
   {
     name: "Recruitment Team",
     responsibilities:
-      "",
+      "The Recruitment Team is responsible for representing Dance Marathon at UF in the most positive light by spreading our message across campus and throughout the Gainesville community. This team fosters relationships with existing organizations while building new connections with different student groups through outreach efforts. Recruitment Captains plan and execute a yearlong recruitment strategy that includes tabling opportunities, classroom and organization presentations, flyering and engagement with academic colleges and campus partners. The team oversees all informational sessions and events aimed at acquiring new members, while also promoting awareness of Dance Marathon at UF’s mission. Additionally, the Recruitment Team coordinates and executes all visitor affairs during the Main Event, ensuring a welcoming and engaging experience for all guests.",
     leadership: {
       overallDirector: "Bruna Pereira",
       assistantDirectors: [      ],
@@ -179,7 +163,7 @@ const teams = [
   {
     name: "Sponsorships Team",
     responsibilities:
-      "The Sponsorships Team works year-round to solicit varied businesses, food distributors, and restaurants in the greater Gainesville area for monetary and in-kind item donations.",
+      "The Sponsorships Team serves as the main point of connection between Dance Marathon at UF and the business community, working with companies in Gainesville and beyond to secure monetary donations. These contributions support both our operational needs and directly benefit our fundraising efforts for UF Health Shands Children’s Hospital. Through strategic outreach and consistent business engagement, Sponsorships Captains ensure DM at UF’s partners feel valued and connected to the cause, providing them with tailored incentives and recognition that reflect their impact. This team provides the essential financial foundation that enables our organization to grow and expand our impact.",
     leadership: {
       overallDirector: "Violet Collins",
       assistantDirectors: [      ],

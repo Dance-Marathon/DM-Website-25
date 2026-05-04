@@ -122,12 +122,12 @@ export default function Organizations() {
             Organizations are the backbone of our philanthropy, and we are
             always looking for more people to join our family! If you would like
             to get your organization involved with Dance Marathon, please
-            contact the Member Advancement Overall, Alexandra Polo, at{" "}
+            contact the Member Development Overall, Rebekah Zuckerman, at{" "}
             <Link
-              href="mailto:aorlando@floridadm.org"
+              href="mailto:rzuckerman@floridadm.org"
               sx={{ color: "#1a73e8" }}
             >
-              apolo@floridadm.org
+              rzuckerman@floridadm.org
             </Link>
             .
           </Typography>

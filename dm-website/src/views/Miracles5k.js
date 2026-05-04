@@ -108,10 +108,9 @@ export default function Miracles5k() {
             </p>
           </Typography>
           <Typography variant="body1" sx={{ color: "text.secondary" }}>
-            For more information, please contact the Operations Manager, Alyssa
-            Fennen, at{" "}
-            <Link href="mailto:afennen@floridadm.org" sx={{ color: "#1a73e8" }}>
-              afennen@floridadm.org
+            For more information, please contact the Operations Manager, Vivian Lopez, at{" "}
+            <Link href="mailto:vlopez@floridadm.org" sx={{ color: "#1a73e8" }}>
+              vlopez@floridadm.org
             </Link>
             .
           </Typography>
@@ -146,8 +145,8 @@ export default function Miracles5k() {
             sx={{ color: "text.secondary", marginBottom: 4 }}
           >
             Check your email for more information, and email{" "}
-            <Link href="mailto:afennen@floridadm.org" sx={{ color: "#1a73e8" }}>
-              afennen@floridadm.org
+            <Link href="mailto:vlopez@floridadm.org" sx={{ color: "#1a73e8" }}>
+              vlopez@floridadm.org
             </Link>{" "}
             with any questions.
           </Typography>
