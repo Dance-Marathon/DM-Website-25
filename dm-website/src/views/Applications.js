@@ -274,19 +274,19 @@ export default function Applications() {
             color="text.secondary"
           >
             If you have any questions regarding applications, please reach out
-            to our Membership Manager, Luch Eichler, at{" "}
+            to our Membership Manager, Lucy Eichler, at{" "}
             <Link
               href="mailto:leichler@floridadm.org"
               sx={{ color: "#1a73e8" }}
             >
               leichler@floridadm.org
             </Link>
-            {" "}or the Member Development Overall Director, Rebekah Zuckerman at
+            {" "}or the Recruitment Overall Director, Bruna Pereira at
             <Link
-              href="mailto:rzuckerman@floridadm.org"
+              href="mailto:bpereira@floridadm.org"
               sx={{ color: "#1a73e8" }}
             >
-              {" "}rzuckerman@floridadm.org
+              {" "}bpereira@floridadm.org
             </Link>
             .
           </Typography>
