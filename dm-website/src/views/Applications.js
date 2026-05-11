@@ -162,12 +162,14 @@ export default function Applications() {
             color="text.secondary"
             marginBottom={3.5}
           >
+            Closed
+            {/*}
             Here is the link to the 2027 Assistant Director Application:{" "}
             <Link href="https://docs.google.com/document/d/1siZozyqwijL7hbX2JnuO9zhvcWr-7pQCfvMpYBwDp_A/edit?usp=sharing" target="_blank">
               2027 Assistant Director Application
             </Link>
             ! Applications are open now until Saturday, May 9th at 5pm. To submit your application, email{" "}
-            <Link href="mailto:leichler@floridadm.org">leichler@floridadm.org</Link>.
+            <Link href="mailto:leichler@floridadm.org">leichler@floridadm.org</Link>.*/}
           </Typography>
 
           <Typography
