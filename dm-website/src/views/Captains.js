@@ -134,7 +134,7 @@ const teams = [
      "The Multimedia Team is responsible for capturing and editing all photography and videography content for Dance Marathon at the University of Florida throughout the year.",
    leadership: {
      overallDirector: "Kathryn Burke",
-     assistantDirectors: ["Assistant Director of Logistics: ", "Assistant Director of Photography: Katie Apolo", "Assistant Director of Social Engagement: Natalia Martinez", "Assistant Director of Videography: Julia Adkins"],
+     assistantDirectors: ["Assistant Director of Photography: Katie Apolo", "Assistant Director of Social Engagement: Natalia Martinez", "Assistant Director of Videography: Julia Adkins"],
      captains: [],
    },
  },
