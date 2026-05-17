@@ -114,7 +114,7 @@ const teams = [
      "The Merchandise Team is responsible for the ideation and distribution of all official Dance Marathon at the University of Florida merchandise, including clothing and accessories. Merchandise Captains help guide the creative direction of merchandise by creating mood boards to ensure alignment with the organization’s brand and fundraising goals. Captains also work at the merchandise store at events throughout the year, including fundraising pushes such as Transform Today, the Turlington Plaza store, high school Mini Marathons and the Main Event.",
    leadership: {
      overallDirector: "Maizy Sadlo",
-     assistantDirectors: ["Assistant Director of Stores and Mini Marathons: Samantha Elmer", "Assistant Director of Fundraising: Ryan LaLiberty", "Assistant Director of Inventory: Sofia Durante", "Assistant Director of Internal Operations: Hank Klein"],
+     assistantDirectors: ["Assistant Director of Stores and Minis: Samantha Elmer", "Assistant Director of Fundraising: Ryan LaLiberty", "Assistant Director of Inventory: Sofia Durante", "Assistant Director of Internal Operations: Hank Klein"],
      captains: [],
    },
  },
