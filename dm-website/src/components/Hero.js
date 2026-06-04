@@ -35,7 +35,7 @@ export default function Hero() {
           pointerEvents: "none",
         }}
       >
-        <source src="/home_video_2026.mp4" type="video/mp4" />
+        <source src="/home_video_summer26.mp4" type="video/mp4" />
       </video>
       {/* Centered text container */}
       <Box
@@ -103,7 +103,7 @@ export default function Hero() {
               textShadow: "4px 4px 4px rgba(0, 0, 0, 0.5)",
             }}
           >
-            @FollowThePromise
+            @CarryTheDream
           </Typography>
         </Box>
       </Box>
