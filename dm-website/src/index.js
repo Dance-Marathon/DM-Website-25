@@ -69,6 +69,7 @@ import Canning from "./views/Canning";
 // import SOM from "./views/blogs/SOM";
 // import NewYears from "./views/blogs/NewYears";
 // import OurPromise from "./views/blogs/OurPromise";
+import CarryTheDream from "./views/blogs/CarryTheDream";
 
 import ResearchList from "./components/ResearchList";
 // import EarlyDetectionType1Diabetes from "./views/research/EarlyDetectionType1Diabetes";
@@ -147,6 +148,7 @@ root.render(
         <Route path="/blog/thankyousom" element={<SOM />} />
         <Route path="/blog/newyears" element={<NewYears />} />
         <Route path="/blog/ourpromise" element={<OurPromise />} /> */}
+        <Route path="/blog/carrythedream" element={<CarryTheDream />} />
         <Route path="/blog/:linkName" element={<BlogTemplate />} />
         <Route path="/events" element={<Events />} />
         <Route path="/mainevent" element={<MainEvent />} />

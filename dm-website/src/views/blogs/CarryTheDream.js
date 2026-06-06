@@ -19,11 +19,11 @@ import LazyLoad from "react-lazyload";
 
 // Add all images to dm-website/src/assets/images/blogpics in a new folder with the title of the blog
 // Import images here and add any more if needed
-import Image1 from "../../assets/images/blogpics/OurPromise/OurPromise1.jpg";
-import Image2 from "../../assets/images/blogpics/OurPromise/OurPromise2.jpg";
+import Image1 from "../../assets/images/blogpics/CarryTheDream/CarryTheDream1.jpg";
+import Image2 from "../../assets/images/blogpics/CarryTheDream/CarryTheDream2.jpg";
 
 // Change name to Blog Name
-export default function OurPromise() {
+export default function CarryTheDream() {
   const [mode, setMode] = React.useState(() => {
     return localStorage.getItem("theme") || "light";
   });
@@ -42,7 +42,7 @@ export default function OurPromise() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-        <PageHero imageUrl={Image1} title="Our Promise" />{" "}
+        <PageHero imageUrl={Image1} title="A Dream Made True" />{" "}
         {/* Change blog name here */}
       </LazyLoad>
 
@@ -59,32 +59,18 @@ export default function OurPromise() {
       >
         <Box sx={{ textAlign: "left" }}>
           <Typography variant="body1" color="text.secondary" paragraph>
-            This month, we’re following through on Our Promise from last fall,
-            which is to support children and families in meaningful ways. For
-            the kids, it means fun, learning and growing confidence. For
-            families, it’s knowing they have a partner who shows up and cares.
-            And for us, it’s a reminder of why we do this work. The smiles, the
-            progress and the small victories that make a big difference to so
-            many people around us.
+            Growing up my biggest dream was to be a dolphin trainer. Little eight-year-old me was absolutely certain that I could run the same shows that my mom took my sister and I to. Today, that is not my biggest dream. Now, I dream of travelling far and wide, and getting a degree to pursue a career that is fulfilling.
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Throughout this month, we will follow through on our promise by
-            delivering programs, guidance and care that impact lives every day.
-            Whether through learning opportunities, mentorship or simply being
-            there to listen and support, we are committed to ensuring every
-            child and family feels seen, supported and empowered. Keeping our
-            promise isn’t just words on paper, but it’s deeds with consistency
-            and dedication. Together, we continue to build a stronger community
-            and make a real, positive difference with one child, one family and
-            one promise at a time.
+            Little me got to dream so big, far beyond what seemed possible for my life at the time. However, the patients admitted to UF Health Shands Children’s Hospital don’t always get to do the same. Instead, they dream of their next visiting hours, or being able to take off their hospital bands and walk out of the doors. 
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            {/* Insert Paragraph Here */}
+            Dance Marathon at the University of Florida’s mission is to one day end pediatric illness. Every single member has dreams of their own to uphold, whether they dream of raising enough to provide life-saving equipment, or they simply dream to ensure no kid fights alone. We dream of the day no child ever lays in a hospital bed, and we hold these patients' dreams in our hearts to give them more than money could ever provide: hope. 
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
-            {/* Insert Paragraph Here */}
+            As DM at UF, we #CarryTheDream.
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
@@ -104,7 +90,6 @@ export default function OurPromise() {
                 <Box
                   component="img"
                   src={Image2}
-                  alt="Miracle Families"
                   sx={{
                     maxWidth: 400,
                     borderRadius: 4,
@@ -121,7 +106,7 @@ export default function OurPromise() {
             variant="h6"
             sx={{ fontStyle: "italic", mt: 2, color: "text.secondary" }}
           >
-            Keagan Miller {/* Change author name */}
+            All The Right Reasons, Shae Helmer {/* Change author name */}
           </Typography>
 
           <Typography
@@ -132,7 +117,8 @@ export default function OurPromise() {
           </Typography>
 
           <Typography variant="body2" color="text.secondary">
-            Public Relations, Captain {/* Change position name */}
+            Public Relations, Overall Director{" "}
+            {/* Change position name */}
           </Typography>
         </Box>
         <Grid
@@ -146,7 +132,7 @@ export default function OurPromise() {
               variant="outlined"
               startIcon={<ArrowBackIcon />}
               onClick={() =>
-                (window.location.href = "/blog/newyears")
+                (window.location.href = "/blog/ourpromise")
               } /* Complete Step 2 in list above and then change link to previous blog url from index.js ^*/
               sx={{
                 color: "primary.main",
@@ -163,12 +149,12 @@ export default function OurPromise() {
 
           {/* If this is no longer most recent blog, uncomment below and change url to next blog */}
 
-           <Grid item>
+          {/* <Grid item>
             <Button
               variant="outlined"
               endIcon={<ArrowForwardIcon />}
               onClick={() =>
-                (window.location.href = "/blog/carrythedream")
+                (window.location.href = "/blog/findingyourdmfamily")
               }
               sx={{
                 color: "primary.main",
@@ -181,7 +167,7 @@ export default function OurPromise() {
             >
               Next Blog
             </Button>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Container>
       <Footer />

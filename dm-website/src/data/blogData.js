@@ -78,6 +78,9 @@ import NewYears2 from "../assets/images/blogpics/NewYears/NewYears2.jpg";
 import OurPromise1 from "../assets/images/blogpics/OurPromise/OurPromise1.jpg";
 import OurPromise2 from "../assets/images/blogpics/OurPromise/OurPromise2.jpg";
 
+import CarryTheDream1 from "../assets/images/blogpics/CarryTheDream/CarryTheDream1.jpg";
+import CarryTheDream2 from "../assets/images/blogpics/CarryTheDream/CarryTheDream2.jpg";
+
 const blogs = [
   {
     id: 1,
@@ -495,6 +498,23 @@ const blogs = [
     ],
     images: [OurPromise2],
     role: "Communications and Public Relations, Captain",
+    organization: "Dance Marathon at The University of Florida",
+  },
+  {
+    id: 23,
+    linkName: "carrythedream",
+    title: "A Dream Made True",
+    author: "Shae Helmer",
+    date: "June 6, 2026",
+    heroImage: CarryTheDream1,
+    content: [
+      "Growing up my biggest dream was to be a dolphin trainer. Little eight-year-old me was absolutely certain that I could run the same shows that my mom took my sister and I to. Today, that is not my biggest dream. Now, I dream of travelling far and wide, and getting a degree to pursue a career that is fulfilling.",
+      "Little me got to dream so big, far beyond what seemed possible for my life at the time. However, the patients admitted to UF Health Shands Children’s Hospital don’t always get to do the same. Instead, they dream of their next visiting hours, or being able to take off their hospital bands and walk out of the doors. ",
+      "Dance Marathon at the University of Florida’s mission is to one day end pediatric illness. Every single member has dreams of their own to uphold, whether they dream of raising enough to provide life-saving equipment, or they simply dream to ensure no kid fights alone. We dream of the day no child ever lays in a hospital bed, and we hold these patients' dreams in our hearts to give them more than money could ever provide: hope.",
+      "As DM at UF, we #CarryTheDream."
+    ],
+    images: [CarryTheDream2],
+    role: "Public Relations Overall Director",
     organization: "Dance Marathon at The University of Florida",
   },
 

@@ -215,6 +215,13 @@ import blogs from "../data/blogData.js";
 //     imageUrl: OurPromise,
 //     linkName: "ourpromise",
 //   },
+//     id: 23,
+//     title: "A Dream Made True",
+//     author: "Shae Helmer",
+//     date: "June 6, 2026",
+//     imageUrl: CarryTheDream,
+//     linkName: "ourpromise",
+//   },
 // ];
 
 const reversedBlogs = [...blogs].reverse();
