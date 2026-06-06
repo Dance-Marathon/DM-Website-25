@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.9ce60a43.js",
+    "main.js": "/static/js/main.823ac222.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -25,8 +25,10 @@
     "static/media/Sydney Barnett.jpg": "/static/media/Sydney Barnett.a86fbb9bb82d853259f3.jpg",
     "static/media/KickOff25.jpg": "/static/media/KickOff25.aa0d17748093adb0bf62.jpg",
     "static/media/Shae Helmer.jpg": "/static/media/Shae Helmer.a03d1dd09a37e8e41761.jpg",
+    "static/media/CarryTheDream1.jpg": "/static/media/CarryTheDream1.c163fb7c289f9709bfe9.jpg",
     "static/media/SummerIncentives2.png": "/static/media/SummerIncentives2.803999991b0e5fed00db.png",
     "static/media/SummerSpellbook2.png": "/static/media/SummerSpellbook2.79d04be1892386cc8129.png",
+    "static/media/CarryTheDream2.jpg": "/static/media/CarryTheDream2.4c357fe90272b7faac6c.jpg",
     "static/media/how-to-guide.pdf": "/static/media/how-to-guide.6a410f804c228a2204e3.pdf",
     "static/media/2026 Captain Application.pdf": "/static/media/2026 Captain Application.d8c6c7b4153989438ade.pdf",
     "static/media/CMNW-9.pdf": "/static/media/CMNW-9.b433bffe759581bd14d7.pdf",
@@ -354,11 +356,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.9ce60a43.js.map": "/static/js/main.9ce60a43.js.map",
+    "main.823ac222.js.map": "/static/js/main.823ac222.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.9ce60a43.js"
+    "static/js/main.823ac222.js"
   ]
 }
