@@ -16,6 +16,7 @@ import LazyLoad from "react-lazyload";
 // 1. Change all comments in here with text from blog
 // 2. Go to /src/index.js and add <Route> with path to the blog like the others
 // 3. Go to /src/components/BlogList.js and add blog to list with same formatting as above
+/// 4. Go to /src/data/blogData.js and add blog to list with same formatting as above
 
 // Add all images to dm-website/src/assets/images/blogpics in a new folder with the title of the blog
 // Import images here and add any more if needed
@@ -103,15 +104,22 @@ export default function CarryTheDream() {
           {/* Add any additional Grids as needed for more images */}
 
           <Typography
-            variant="h6"
-            sx={{ fontStyle: "italic", mt: 2, color: "text.secondary" }}
+            variant="body1"
+            sx={{ mt: 2, color: "text.secondary" }}
           >
-            All The Right Reasons, Shae Helmer {/* Change author name */}
+            All The Right Reasons, {/* Change author name */}
+          </Typography>
+
+          <Typography
+            variant="h6"
+            sx={{ fontStyle: "italic", mt: 2, mb: 0, color: "text.secondary" }}
+          >
+            Shae Helmer {/* Change author name */}
           </Typography>
 
           <Typography
             variant="subtitle1"
-            sx={{ fontWeight: "bold", mt: 1, color: "text.secondary" }}
+            sx={{ fontWeight: "bold", mt: 0, color: "text.secondary" }}
           >
             Dance Marathon at The University of Florida
           </Typography>
@@ -127,13 +135,12 @@ export default function CarryTheDream() {
           justifyContent="space-between"
           sx={{ mt: 4 }}
         >
-          <Grid item>
+          {/*<Grid item>
             <Button
               variant="outlined"
               startIcon={<ArrowBackIcon />}
               onClick={() =>
                 (window.location.href = "/blog/ourpromise")
-              } /* Complete Step 2 in list above and then change link to previous blog url from index.js ^*/
               sx={{
                 color: "primary.main",
                 borderColor: "white",
@@ -145,16 +152,16 @@ export default function CarryTheDream() {
             >
               Previous Blog
             </Button>
-          </Grid>
+          </Grid> */}
 
           {/* If this is no longer most recent blog, uncomment below and change url to next blog */}
 
-          {/* <Grid item>
+          <Grid item>
             <Button
               variant="outlined"
               endIcon={<ArrowForwardIcon />}
               onClick={() =>
-                (window.location.href = "/blog/findingyourdmfamily")
+                (window.location.href = "/blog/ourpromise")
               }
               sx={{
                 color: "primary.main",
@@ -167,7 +174,7 @@ export default function CarryTheDream() {
             >
               Next Blog
             </Button>
-          </Grid> */}
+          </Grid>
         </Grid>
       </Container>
       <Footer />
