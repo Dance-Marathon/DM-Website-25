@@ -48,6 +48,8 @@ export default function OurStory() {
     createData("2022", "$2,334,217.21", null),
     createData("2023", "$2,007,079.05", null),
     createData("2024", "$1,531,518.24", null),
+    createData("2025", "$1,351,566.99", null),
+    createData("2026", "$1,152,326.32", null),
   ];
 
   const [hoveredIndex, setHoveredIndex] = React.useState(null);

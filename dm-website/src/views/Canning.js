@@ -86,13 +86,6 @@ export default function Canning() {
           </Link>
           !
         </Typography>
-        <Typography variant="body1" color="text.secondary" paragraph>
-          Fill out our{" "}
-          <Link href="https://forms.gle/3nBuQXBxRBtvXwUs5">
-            Canning Interest Form
-          </Link>
-          !
-        </Typography>
         <Typography
           variant="b2"
           color="text.secondary"

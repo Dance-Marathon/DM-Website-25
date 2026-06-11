@@ -57,7 +57,7 @@ export default function MiniMarathons() {
             gutterBottom
             sx={{ color: "text.secondary", marginBottom: 2 }}
           >
-            12 high schools around the state of Florida participate each year in
+            14 high schools around the state of Florida participate each year in
             our{" "}
             <span style={{ color: "#233563", fontWeight: "bold" }}>
               Mini Marathon
@@ -247,7 +247,7 @@ export default function MiniMarathons() {
             <Grid item xs={12} sm={8}>
               <Box>
                 <LazyLoad height={200} offset={100} once>
-                  <YoutubeVid videoId="VN7E93VIKq0" />
+                  <YoutubeVid videoId="ZKIGzcCYf6Q" />
                 </LazyLoad>
               </Box>
             </Grid>

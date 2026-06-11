@@ -137,7 +137,7 @@ export default function Organizations() {
             sx={{ marginBottom: 4 }}
             color="text.secondary"
           >
-            Below are the Organizations currently involved in Dance Marathon at
+            Below are the Organizations who were involved in Dance Marathon at
             UF 2026:
           </Typography>
 

@@ -67,15 +67,7 @@ export default function DonorDrive() {
               DonorDrive is safe and easy to use
             </span>
             , and was utilized by UF Health Shands Children’s Hospital this past
-            year. To create a fundraising page, register using this {""}
-            <Link
-              href="https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=6756"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              link
-            </Link>
-            .
+            year.
           </Typography>
           <Typography
             variant="b2"

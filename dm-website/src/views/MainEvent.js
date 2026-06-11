@@ -48,31 +48,6 @@ export default function MainEvent() {
           gap: { xs: 2, sm: 3 },
         }}
       >
-        <Box mt={2} width="100%" display="flex" justifyContent="center">
-          {/* Desktop Image */}
-          <Box
-            component="img"
-            src={MEBanner}
-            sx={{
-              display: { xs: "none", sm: "block" },
-              maxWidth: "100%",
-              height: "auto",
-              mb: 2,
-            }}
-          />
-
-          {/* Mobile Image */}
-          <Box
-            component="img"
-            src={MEBanner}
-            sx={{
-              display: { xs: "block", sm: "none" },
-              maxWidth: "100%",
-              height: "auto",
-              mb: 2,
-            }}
-          />
-        </Box>
         <Box
           sx={{
             width: { sm: "100%", md: "100%" },
@@ -80,11 +55,6 @@ export default function MainEvent() {
           }}
         >
           <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
-            <p>
-              <span style={{ color: "#233563", fontWeight: "bold" }}>
-                Main Event 2026 will take place March 28-29th!
-              </span>
-            </p>
             <p>
               Our{" "}
               <span style={{ color: "#233563", fontWeight: "bold" }}>
@@ -117,7 +87,7 @@ export default function MainEvent() {
             </p>
           </Typography>
           <LazyLoad height={200} offset={100} once>
-            <YoutubeVid videoId="DF0LQNO86Bc" />
+            <YoutubeVid videoId="h1663qHRxyI" />
           </LazyLoad>
           <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
             <p>Follow us on social media for event updates!</p>
@@ -170,15 +140,6 @@ export default function MainEvent() {
               <Typography color="text.secondary">
                 You can pay to attend our Rave, but that is the only time
                 outside of visiting hours that outside guests are allowed in.
-                You can purchase{" "}
-                <a
-                  href="https://dance-marathon-at-uf-510104.square.site/product/2025-rave-ticket/808"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  HERE!
-                </a>
-                .
               </Typography>
             }
           />
@@ -207,16 +168,7 @@ export default function MainEvent() {
                 and friends of Dance Marathon to join us for a celebratory
                 evening, light bites and drinks provided. Happy Hour for Hope
                 will be hosted Saturday, April 5th from 6-9pm in the Center
-                Court Club of the Stephen O’Connell Center, tickets can be
-                purchased{" "}
-                <a
-                  href="https://dance-marathon-at-uf-510104.square.site/product/happy-hour-for-hope/807"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  HERE!
-                </a>
-                .
+                Court Club of the Stephen O’Connell Center.
               </Typography>
             }
           />

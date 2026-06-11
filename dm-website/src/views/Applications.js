@@ -60,7 +60,7 @@ export default function Applications() {
             sx={{ color: "#e2883c", fontWeight: "bold", marginBottom: 2 }}
           >
             Thank you for your interest in Dance Marathon at the University of
-            Florida 2026!
+            Florida 2027!
           </Typography>
           <Typography variant="body1" gutterBottom color="text.secondary">
             The online application forms are linked below. In order to be

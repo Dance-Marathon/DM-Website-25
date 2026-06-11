@@ -80,7 +80,7 @@ export default function LandingPage() {
             <i style={{ color: "#233563" }}>
               <b>UF Health Shands Children's Hospital</b>
             </i>
-            . We are going into our 32nd year of{" "}
+            . We are going into our 33rd year of{" "}
             <i style={{ color: "#e2883c" }}>
               <b>Dance Marathon</b>
             </i>{" "}
@@ -88,10 +88,10 @@ export default function LandingPage() {
             <i style={{ color: "#e2883c" }}>
               <b>UF</b>
             </i>
-            , having fundraised over $33,000,000 thus far. This past year, we
-            celebrated our 31st year by raising{" "}
+            , having fundraised over $34,000,000 thus far. This past year, we
+            celebrated our 32nd year by raising{" "}
             <i style={{ color: "#233563" }}>
-              <b>$1,351,566.99!</b>
+              <b>$1,152,326.32!</b>
             </i>
           </Typography>
         </Box>

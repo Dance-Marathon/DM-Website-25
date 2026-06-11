@@ -61,16 +61,16 @@ export default function About() {
             Children's Hospital in Gainesville, Florida. Each year, students
             stay awake and on their feet at our annual 26.2 hour event to raise
             funds and awareness for Children's Miracle Network Hospitals for the
-            duration of the event. In the 31 years of Dance Marathon at UF's
+            duration of the event. In the 32 years of Dance Marathon at UF's
             existence, we have{" "}
-            <b style={{ color: "#e2883c" }}>raised more than $33 million</b>,
+            <b style={{ color: "#e2883c" }}>raised more than $34 million</b>,
             making it{" "}
             <b style={{ color: "#233563" }}>
               the most successful student-run philanthropy in the Southeastern
               United States
             </b>
-            . In 2024, DM at UF raised a grand total of{" "}
-            <b style={{ color: "#e2883c" }}>$1,351,566.99</b> for UF Health
+            . In 2026, DM at UF raised a grand total of{" "}
+            <b style={{ color: "#e2883c" }}>$1,152,326.32</b> for UF Health
             Shands Children's Hospital, our local Children’s Miracle Network
             Hospital.
           </Typography>
@@ -103,7 +103,7 @@ export default function About() {
 
           <Typography variant="body1" color="text.secondary" paragraph>
             <b style={{ color: "#233563" }}>
-              As we head into our <b style={{ color: "#e2883c" }}>32nd year</b>,
+              As we head into our <b style={{ color: "#e2883c" }}>33rd year</b>,
               Dance Marathon at UF is excited to make even more miracles!
             </b>
           </Typography>
@@ -136,7 +136,7 @@ export default function About() {
                 image: OurStoryBox,
                 title: "Our Story",
                 hoverText:
-                  "As one of the five founding Dance Marathon programs, DM at UF has raised over $33 million for Miracle Families at UF Health Shands Children’s Hospital",
+                  "As one of the five founding Dance Marathon programs, DM at UF has raised over $34 million for Miracle Families at UF Health Shands Children’s Hospital",
                 link: "/ourstory",
               },
               {

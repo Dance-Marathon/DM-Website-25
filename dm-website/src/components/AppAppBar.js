@@ -25,7 +25,7 @@ import ExpandMore from "@mui/icons-material/ExpandMore";
 import ToggleColorMode from "./ToggleColorMode";
 import FacebookIcon from "@mui/icons-material/FacebookOutlined";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import TwitterIcon from "@mui/icons-material/X";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { useNavigate, Link } from "react-router-dom";
 import MenuPopupState from "./MenuPopupState";
 
@@ -398,8 +398,8 @@ function AppAppBar({ mode, toggleColorMode }) {
                       <FacebookIcon />
                     </IconButton>
                     <IconButton
-                      href="https://x.com/floridadm?lang=en"
-                      aria-label="X"
+                      href="https://www.linkedin.com/company/dance-marathon-at-the-university-of-florida/posts/?feedView=all"
+                      aria-label="LinkedIn"
                       sx={{
                         color: "white",
                         "&:hover": { background: alpha("#4965A6", 0.3) },
@@ -407,7 +407,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <TwitterIcon />
+                      <LinkedInIcon />
                     </IconButton>
                   </Stack>
                 </Box>
@@ -760,7 +760,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <TwitterIcon />
+                <LinkedInIcon />
               </IconButton>
             </Stack>
           </Box>
