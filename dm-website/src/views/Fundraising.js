@@ -68,7 +68,7 @@ export default function Fundraising() {
           <Typography variant="body1" color="text.secondary" paragraph>
             1. Follow this{" "}
             <Link
-              href="https://events.dancemarathon.com/index.cfm?fuseaction=register.start&eventID=6756"
+              href="https://events.dancemarathon.com/dmatuf27"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -84,7 +84,7 @@ export default function Fundraising() {
             </span>
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            3. If you have a DonorDrive account from DM at UF 2025, select{" "}
+            3. If you have a DonorDrive account from DM at UF 2026, select{" "}
             <span style={{ color: "#e2883c", fontWeight: "bold" }}>
               {" "}
               'Login to your account'
@@ -110,7 +110,11 @@ export default function Fundraising() {
             8. Once you have registered on DonorDrive, you can customize your
             fundraising page by adding a profile picture, editing your story,
             and updating your fundraising goal. Use this{" "}
-            <Link href={HowToGuide} target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://docs.google.com/document/d/1Y6NEa_TXl1w81UOt9Y4ReRZaZoVS2_vFaxCbt8kgW_Q/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               How-To Guide
             </Link>{" "}
             for step by step instructions!
