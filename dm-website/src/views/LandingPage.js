@@ -66,11 +66,11 @@ export default function LandingPage() {
             align="center"
             color="text.secondary"
           >
-            <i style={{ color: "#B85A00" }}>
+            <i style={{ color: "#A84A00" }}>
               <b>Dance Marathon</b>
             </i>{" "}
             at the{" "}
-            <i style={{ color: "#B85A00" }}>
+            <i style={{ color: "#A84A00" }}>
               <b>University of Florida</b>
             </i>{" "}
             is the largest student-run and highest fundraising philanthropy in
@@ -81,11 +81,11 @@ export default function LandingPage() {
               <b>UF Health Shands Children's Hospital</b>
             </i>
             . We are going into our 33rd year of{" "}
-            <i style={{ color: "#B85A00" }}>
+            <i style={{ color: "#A84A00" }}>
               <b>Dance Marathon</b>
             </i>{" "}
             at{" "}
-            <i style={{ color: "#B85A00" }}>
+            <i style={{ color: "#A84A00" }}>
               <b>UF</b>
             </i>
             , having fundraised over $34,000,000 thus far. This past year, we
@@ -115,7 +115,7 @@ export default function LandingPage() {
               >
                 <Box mb={2}>
                   <BookIcon style={{ fontSize: 50, color: "#e2883c" }} />
-                  <Typography variant="h5" color="#B85A00" gutterBottom>
+                  <Typography variant="h5" color="#A84A00" gutterBottom>
                     Our Story
                   </Typography>
                   <Typography variant="body1" color="primary" paragraph>
@@ -150,7 +150,7 @@ export default function LandingPage() {
                   <LocalHospitalIcon
                     style={{ fontSize: 50, color: "#e2883c" }}
                   />
-                  <Typography variant="h5" color="#B85A00"gutterBottom>
+                  <Typography variant="h5" color="#A84A00"gutterBottom>
                     CMN Hospitals & UF Health
                   </Typography>
                   <Typography variant="body1" color="primary" paragraph>
@@ -182,7 +182,7 @@ export default function LandingPage() {
               >
                 <Box mb={2}>
                   <FavoriteIcon style={{ fontSize: 50, color: "#e2883c" }} />
-                  <Typography variant="h5" color="#B85A00" gutterBottom>
+                  <Typography variant="h5" color="#A84A00" gutterBottom>
                     Miracle Families
                   </Typography>
                   <Typography variant="body1" color="primary" paragraph>
@@ -214,7 +214,7 @@ export default function LandingPage() {
               >
                 <Box mb={2}>
                   <RegisterIcon style={{ fontSize: 50, color: "#e2883c" }} />
-                  <Typography variant="h5" color="#B85A00" gutterBottom>
+                  <Typography variant="h5" color="#A84A00" gutterBottom>
                     Register to Fundraise
                   </Typography>
                   <Typography variant="body1" color="primary" paragraph>
