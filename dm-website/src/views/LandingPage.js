@@ -181,7 +181,7 @@ export default function LandingPage() {
                 textAlign="center"
               >
                 <Box mb={2}>
-                  <FavoriteIcon style={{ fontSize: 50, color: "#A84A00" }} />
+                  <FavoriteIcon style={{ fontSize: 50, color: "#4965A6" }} />
                   <Typography variant="h5" color="#A84A00" gutterBottom>
                     Miracle Families
                   </Typography>
