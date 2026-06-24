@@ -74,25 +74,25 @@ export default function Footer() {
           <Link color="white" href="https://ufhealth.org/myrx/disclaimer.shtml">
             Disclaimer & Permitted Use
           </Link>
-          <Typography variant="body2" color="primary" fontWeight={400}>
+          <Typography variant="body2" color="white" fontWeight={400}>
             |
           </Typography>
           <Link color="white" href="https://disability.ufl.edu/">
             Disability Services
           </Link>
-          <Typography variant="body2" color="primary" fontWeight={400}>
+          <Typography variant="body2" color="white" fontWeight={400}>
             |
           </Typography>
           <Link color="white" href="https://security.ufl.edu/">
             Security Policies
           </Link>
-          <Typography variant="body2" color="primary" fontWeight={400}>
+          <Typography variant="body2" color="white" fontWeight={400}>
             |
           </Typography>
           <Link color="white" href="https://privacy.ufl.edu/privacy-policies-and-procedures/onlineinternet-privacy-statement/">
             UF Privacy Policy
           </Link>
-          <Typography variant="body2" color="primary" fontWeight={400}>
+          <Typography variant="body2" color="white" fontWeight={400}>
             |
           </Typography>
           <Link color="white" href="#">
