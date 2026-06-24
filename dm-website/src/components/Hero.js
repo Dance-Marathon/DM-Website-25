@@ -115,7 +115,7 @@ export default function Hero() {
           left: 0,
           width: "100%",
           height: "10px",
-          backgroundColor: "#A84A00",
+          backgroundColor: "#4965A6",
         }}
       />
     </Box>

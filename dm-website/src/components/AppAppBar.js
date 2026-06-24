@@ -303,7 +303,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   to="/donate"
                   sx={{
                     ...menuTheme,
-                    bgcolor: "#A84A00",
+                    bgcolor: "#4965A6",
                     color: "white",
                     fontWeight: "bold",
                     ml: 1.5,
@@ -324,7 +324,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   to="/register"
                   sx={{
                     ...menuTheme,
-                    bgcolor: "#A84A00",
+                    bgcolor: "#4965A6",
                     color: "white",
                     fontWeight: "bold",
                     ml: 1.5,
