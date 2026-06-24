@@ -114,7 +114,7 @@ export default function LandingPage() {
                 textAlign="center"
               >
                 <Box mb={2}>
-                  <BookIcon style={{ fontSize: 50, color: "#e2883c" }} />
+                  <BookIcon style={{ fontSize: 50, color: "#A84A00" }} />
                   <Typography variant="h5" color="#A84A00" gutterBottom>
                     Our Story
                   </Typography>
@@ -148,7 +148,7 @@ export default function LandingPage() {
               >
                 <Box mb={2}>
                   <LocalHospitalIcon
-                    style={{ fontSize: 50, color: "#e2883c" }}
+                    style={{ fontSize: 50, color: "#A84A00" }}
                   />
                   <Typography variant="h5" color="#A84A00"gutterBottom>
                     CMN Hospitals & UF Health
@@ -181,7 +181,7 @@ export default function LandingPage() {
                 textAlign="center"
               >
                 <Box mb={2}>
-                  <FavoriteIcon style={{ fontSize: 50, color: "#e2883c" }} />
+                  <FavoriteIcon style={{ fontSize: 50, color: "#A84A00" }} />
                   <Typography variant="h5" color="#A84A00" gutterBottom>
                     Miracle Families
                   </Typography>
@@ -213,7 +213,7 @@ export default function LandingPage() {
                 textAlign="center"
               >
                 <Box mb={2}>
-                  <RegisterIcon style={{ fontSize: 50, color: "#e2883c" }} />
+                  <RegisterIcon style={{ fontSize: 50, color: "#A84A00" }} />
                   <Typography variant="h5" color="#A84A00" gutterBottom>
                     Register to Fundraise
                   </Typography>
