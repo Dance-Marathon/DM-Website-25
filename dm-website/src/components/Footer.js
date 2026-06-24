@@ -29,7 +29,7 @@ export default function Footer() {
     <ThemeProvider theme={LPtheme}>
     <Box
       sx={{
-        backgroundColor: '#E2883c',
+        backgroundColor: "#C45E00",
       }}
     >
     <Container
