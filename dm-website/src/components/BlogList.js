@@ -10,6 +10,7 @@ import { Typography, Grid } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import { useNavigate } from "react-router-dom";
+import CardActionArea from "@mui/material/CardActionArea";
 
 import BlogPic from "../assets/images/pagepics/BlogsPic.jpg";
 
@@ -256,18 +257,22 @@ const BlogList = () => {
       <Grid container spacing={3} sx={{ padding: 5 }} justifyContent="center">
         {reversedBlogs.map((blog) => (
           <Grid item xs={12} sm={6} md={3.5} key={blog.id}>
-            <Card
-              sx={{
-                height: "100%",
-                display: "flex",
-                flexDirection: "column",
-                cursor: "pointer", // Make the card look clickable
-                transition: "transform 0.2s ease, box-shadow 0.2s ease",
-                "&:hover": {
-                  transform: "translateY(-4px)",
-                  boxShadow: "0 8px 16px rgba(0, 0, 0, 0.2)",
-                },
-              }}
+            <Card>
+              <CardActionArea
+                onClick={() => handleCardClick(blog.linkName)}
+                sx={{
+                  height: "100%",
+                  alignItems: "stretch",
+
+                  "&:focus-visible": {
+                    outline: "4px solid #FFB000",
+                    outlineOffset: "4px",
+                    borderRadius: "8px",
+                    boxShadow: "0 0 0 8px rgba(255, 176, 0, 0.3)",
+                    transform: "scale(1.02)",
+                  },
+                }}
+              >
               onClick={() => handleCardClick(blog.linkName)} // Navigate on click
             >
               <CardMedia
@@ -292,6 +297,7 @@ const BlogList = () => {
                   Published: {blog.date}
                 </Typography>
               </CardContent>
+              </CardActionArea>
             </Card>
           </Grid>
         ))}
