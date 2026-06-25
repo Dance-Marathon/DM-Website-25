@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.81b930fc.css",
-    "main.js": "/static/js/main.87d21dd2.js",
+    "main.js": "/static/js/main.c2ec0ceb.js",
     "static/js/453.fb741700.chunk.js": "/static/js/453.fb741700.chunk.js",
     "static/media/SponsorshipPacket.pdf": "/static/media/SponsorshipPacket.705b99e7282d9063811c.pdf",
     "static/media/BeyondOurselves1.jpg": "/static/media/BeyondOurselves1.9b6191d5b122aa43524c.jpg",
@@ -157,6 +157,7 @@
     "static/media/Lifeline1.jpg": "/static/media/Lifeline1.ebb6c56d4c9d306ac227.jpg",
     "static/media/Sponsor (17).png": "/static/media/Sponsor (17).0dd2e386fb82418fbff1.png",
     "static/media/AlumniBox.jpg": "/static/media/AlumniBox.f0e77cf32a4550bfb2a3.jpg",
+    "static/media/CoBrand_Color.png": "/static/media/CoBrand_Color.32f2732cdcbc8597000e.png",
     "static/media/Employee Matching.jpg": "/static/media/Employee Matching.e8339534b36579083716.jpg",
     "static/media/BeyondThisGen1.jpg": "/static/media/BeyondThisGen1.45c3e90beebe93e35435.jpg",
     "static/media/AlumniPic.jpg": "/static/media/AlumniPic.8b2eceb6db367bd69cea.jpg",
@@ -200,7 +201,6 @@
     "static/media/TT252.jpg": "/static/media/TT252.00bf6dbdc149aec1a4d3.jpg",
     "static/media/NewHope1.jpg": "/static/media/NewHope1.970e372acbe313dec610.jpg",
     "static/media/Sponsor (46).png": "/static/media/Sponsor (46).ad3c9cf980717390f174.png",
-    "static/media/TriBrand_Color.png": "/static/media/TriBrand_Color.5275d5fa118b4e63649c.png",
     "static/media/Caden.jpg": "/static/media/Caden.b1eb3d4e06325750a0b0.jpg",
     "static/media/FTM2.jpg": "/static/media/FTM2.fea519d6df1aac5954f6.jpg",
     "static/media/SOM2.jpg": "/static/media/SOM2.ba14ad96c994706510ef.jpg",
@@ -356,11 +356,11 @@
     "static/media/roboto-greek-ext-700-normal.woff": "/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/index.html",
     "main.81b930fc.css.map": "/static/css/main.81b930fc.css.map",
-    "main.87d21dd2.js.map": "/static/js/main.87d21dd2.js.map",
+    "main.c2ec0ceb.js.map": "/static/js/main.c2ec0ceb.js.map",
     "453.fb741700.chunk.js.map": "/static/js/453.fb741700.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.81b930fc.css",
-    "static/js/main.87d21dd2.js"
+    "static/js/main.c2ec0ceb.js"
   ]
 }

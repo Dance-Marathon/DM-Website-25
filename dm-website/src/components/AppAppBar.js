@@ -28,6 +28,11 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { useNavigate, Link } from "react-router-dom";
 import MenuPopupState from "./MenuPopupState";
+import SearchIcon from "@mui/icons-material/Search";
+import TextField from "@mui/material/TextField";
+import searchData from "../data/searchData";
+import Paper from "@mui/material/Paper";
+import ClickAwayListener from "@mui/material/ClickAwayListener";
 
 const menuTheme = {
   color: "text.primary",
@@ -61,11 +66,23 @@ function AppAppBar({ mode, toggleColorMode }) {
     }));
   };
 
+  const [expanded, setExpanded] = React.useState(false);
+  const [query, setQuery] = React.useState("");
+  const results =
+    query.trim() === ""
+      ? []
+      : searchData.filter((page) =>
+          `${page.title} ${page.description} ${page.keywords}`
+            .toLowerCase()
+            .includes(query.toLowerCase())
+        );
+
   // Helper function to handle navigation and close drawer
   const handleNavigationAndCloseDrawer = (path) => () => {
     navigate(path);
     setOpen(false); // Close the drawer
   };
+
 
   return (
     <div>
@@ -78,7 +95,14 @@ function AppAppBar({ mode, toggleColorMode }) {
           mt: 2,
         }}
       >
-        <Container maxWidth="lg">
+        <Container
+          maxWidth={false}
+          sx={{
+            width: "96%",
+            maxWidth: "1500px",
+            mx: "auto",
+          }}
+        >
           <Toolbar
             variant="regular"
             sx={(theme) => ({
@@ -87,22 +111,17 @@ function AppAppBar({ mode, toggleColorMode }) {
               // Revert to original or implicit justify-content if not explicitly space-between
               justifyContent: "space-between", // Often useful here if there are 3 main sections
               flexWrap: "nowrap",
-              overflow: "hidden",
+              overflow: "visible",
               borderRadius: "999px",
               bgcolor: "#23356370",
               backdropFilter: "blur(24px)",
-              maxHeight: 40,
+              height: 40,
               // width: "109%",
               // mx: "auto",
               // width: "calc(100% + 108px)",
               // marginLeft: "-54px",
               width: {
                 xs: "100%",
-                lg: "calc(100% + 110px)",
-              },
-              marginLeft: {
-                xs: 0,
-                lg: "-80px",
               },
               border: "1px solid",
               borderColor: "divider",
@@ -188,6 +207,112 @@ function AppAppBar({ mode, toggleColorMode }) {
                   flexGrow: 1, // This Box needs to grow to push the rightmost elements
                   maxWidth: "calc(100% - 220px)",
                 }}
+              ><ClickAwayListener
+              onClickAway={() => {
+                setExpanded(false);
+                setQuery("");
+              }}
+            >
+              <Box
+                sx={{
+                  position: "relative",
+                  mr: 2,
+                }}
+              >
+              <Box
+                sx={{
+                  position: "relative",
+                  display: "flex",
+                  alignItems: "center",
+                  width: expanded ? 250 : 40,
+                  transition: "width .3s ease",
+                  overflow: "hidden",
+                  borderRadius: "999px",
+                  bgcolor: "rgba(255,255,255,.08)",
+                  mr: 2,
+                }}
+              >
+                </Box>
+                <IconButton
+                  onClick={() => setExpanded((prev) => !prev)}
+                >
+                  <SearchIcon sx={{ color: "white" }} />
+                </IconButton>
+            
+                {expanded && (
+                   <TextField
+                    size="small"
+                    variant="outlined"
+                    placeholder="Search..."
+                    value={query}
+                    onChange={(e) => setQuery(e.target.value)}
+                    autoFocus
+                    InputProps={{
+                      disableUnderline: true,
+                    }}
+                    sx={{
+                      flex: 1,
+                      "& input": {
+                        color: "white",
+                        py: 0.5,
+                      },
+                    }}
+                  />
+                )}
+            
+                {expanded && results.length > 0 && (
+                  <Paper
+                    sx={{
+                        position: "absolute",
+                        top: "100%",
+                        left: 0,
+                        width: "100%",
+                        mt: 1,
+                        borderRadius: 2,
+                        zIndex: 9999,
+                        bgcolor: "white"
+                      }}
+                    >
+                      <List dense>
+                      {results.slice(0, 5).map((page) => (
+                          <ListItemButton
+                            key={page.path}
+                            onClick={() => {
+                              navigate(page.path);
+                              setExpanded(false);
+                              setQuery("");
+                            }}
+                          >
+                            <ListItemText
+                              primary={page.title}
+                              secondary={page.description}
+                              primaryTypographyProps={{
+                                sx: {
+                                  color: "#233563",
+                                  fontWeight: 600,
+                                },
+                              }}
+                              secondaryTypographyProps={{
+                                sx: {
+                                  color: "#4965A6",
+                                },
+                              }}
+                            />
+                          </ListItemButton>
+                        ))}
+                      </List>
+                  </Paper>
+                )}
+              </Box>
+            </ClickAwayListener>
+               
+              {!expanded && (
+                <Box
+                sx={{
+                  display: "flex",
+                  position: "relative",
+                  alignItems: "center",
+                }}
               >
                 <Button
                   variant="regular"
@@ -200,7 +325,7 @@ function AppAppBar({ mode, toggleColorMode }) {
                   <Typography variant="body1" color="text.primary" noWrap>
                     Contact Us
                   </Typography>
-                </Button>
+                  </Button>
                 <MenuPopupState
                   title="About"
                   submenuItems={[
@@ -343,7 +468,9 @@ function AppAppBar({ mode, toggleColorMode }) {
                 <Box sx={{ minWidth: "20px" }} />{" "}
                 {/* Adjust minWidth for desired space */}
               </Box>
-            )}
+              )}
+            </Box>
+          )}
 
             {/* Toggle and Social Icons Section (Right) */}
             <Box

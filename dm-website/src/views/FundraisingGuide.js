@@ -107,6 +107,9 @@ export default function FundraisingGuide() {
                 paragraph
                 gutterBottom
               >
+                <Typography variant="body1" color="text.secondary">
+                      Click these links!
+                    </Typography>
                 <ul>
                   <li>
                     <Typography variant="body1" color="text.secondary">
