@@ -62,7 +62,7 @@ export default function Moralloween() {
               is an annual fall fundraiser put on by Dance Marathon at UF, a
               student-run philanthropy that raises funds and awareness
               year-round at UF Health Shands Children’s Hospital!{" "}
-              <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
                 Organizations across campus participate by creating booths with
                 activities, candy, and ways to bond with attendees and Miracle
                 Families.

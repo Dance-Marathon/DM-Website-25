@@ -172,7 +172,7 @@ export default function Ambassadors() {
         <Typography
           variant="body1"
           component="span"
-          color="#e2883c"
+          color="#4965A6"
           marginBottom={-2}
         >
           <b>Yearlong:</b>
@@ -222,7 +222,7 @@ export default function Ambassadors() {
         <Typography
           variant="body1"
           component="span"
-          color="#e2883c"
+          color="#4965A6"
           marginBottom={-2}
         >
           <b>During the Main Event:</b>

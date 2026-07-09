@@ -78,14 +78,14 @@ export default function Fundraising() {
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             2. Select{" "}
-            <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
               {" "}
               'Register Now'
             </span>
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
             3. If you have a DonorDrive account from DM at UF 2026, select{" "}
-            <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
               {" "}
               'Login to your account'
             </span>

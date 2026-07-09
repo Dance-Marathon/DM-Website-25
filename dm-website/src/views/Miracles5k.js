@@ -64,7 +64,7 @@ export default function Miracles5k() {
         >
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
-              <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
                 Miracles in Color 5K
               </span>{""}
               , benefitting UF Health Shands Children’s

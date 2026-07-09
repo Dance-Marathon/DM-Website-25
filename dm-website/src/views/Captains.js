@@ -19,7 +19,7 @@ import PageHero from "../components/PageHero";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CaptainPic from "../assets/images/pagepics/CaptainsPic.jpg";
 import LazyLoad from "react-lazyload";
-
+import Link from "@mui/material/Link";
 
 const teams = [
  {
@@ -210,6 +210,7 @@ export default function Captains() {
        {/* <Typography variant="h4" color='#233563' gutterBottom>
        Captain Teams
      </Typography> */}
+     
        <Typography variant="body1" color="text.secondary" paragraph>
          Each{" "}
          <span style={{ color: "#233563", fontWeight: "bold" }}>
@@ -222,7 +223,29 @@ export default function Captains() {
          duties throughout the year depending on their teams. Click each tab
          below to learn more about each team and its responsibilities.
        </Typography>
-
+       <Typography variant="body1" color="text.secondary" paragraph>
+         Unsure which team to join? Take this{" "}
+         <Link
+          component="button"
+          onClick={() => {
+            window.location.href = "/captainquiz";
+          }}
+          sx={{
+            color: "#233563",
+            textDecoration: "none",
+            font: "inherit",
+            lineHeight: "inherit",
+            verticalAlign: "baseline",
+            fontWeight: "bold",
+            "&:hover": {
+              color: "#3B82F6",
+            },
+          }}
+        >
+          quiz
+        </Link>
+        {" "}to find the right fit for you!
+       </Typography>
 
        {teams.map((team, index) => (
          <Accordion key={index}>

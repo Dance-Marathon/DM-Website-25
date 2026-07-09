@@ -9,6 +9,7 @@ import { Container, Typography, Link } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import LazyLoad from "react-lazyload";
+import { Link as RouterLink } from "react-router-dom";
 
 import ManagerApplication from "../assets/pdfs/2026 Manager Application.pdf";
 import OverallApplication from "../assets/pdfs/2026 Overall Director Application.pdf";
@@ -57,7 +58,7 @@ export default function Applications() {
           <Typography
             variant="body1"
             gutterBottom
-            sx={{ color: "#e2883c", fontWeight: "bold", marginBottom: 2 }}
+            sx={{ color: "#4965A6", fontWeight: "bold", marginBottom: 2 }}
           >
             Thank you for your interest in Dance Marathon at the University of
             Florida 2027!
@@ -83,7 +84,7 @@ export default function Applications() {
               <Typography variant="body1" color="text.secondary">
                 Pay the $25 application fee. You only need to pay the
                 application fee{" "}
-                <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+                <span style={{ color: "#4965A6", fontWeight: "bold" }}>
                   once
                 </span>{" "}
                 even if you are applying for more than one position.
@@ -98,7 +99,7 @@ export default function Applications() {
             Teams. However, your Captain Application will take priority over
             your Emerging Leader Application. To be eligible to be an
             Ambassador, you{" "}
-            <span style={{ color: "#e2883c", fontWeight: "bold" }}>cannot</span>{" "}
+            <span style={{ color: "#4965A6", fontWeight: "bold" }}>cannot</span>{" "}
             hold another position as well.
           </Typography>
 
@@ -202,9 +203,34 @@ export default function Applications() {
             variant="body1"
             gutterBottom
             color="text.secondary"
-            marginBottom={3.5}
+            marginBottom={0}
           >
             Closed
+          </Typography>
+          <Typography
+          variant="body1"
+          gutterBottom
+          color="text.secondary"
+          marginBottom={3.5}
+        >
+          Learn more about what it means to be a captain {" "}
+          <Link
+                    component={RouterLink}
+                    to="/captains"
+                    sx={{
+                      color: "#233563",
+                      textDecoration: "none",
+                      font: "inherit",
+                      lineHeight: "inherit",
+                      verticalAlign: "baseline",
+                      fontWeight: "bold",
+                      "&:hover": {
+                        color: "#3B82F6",
+                      },
+                    }}
+                  >
+                    here!
+                  </Link>
           </Typography>
           <Typography
             variant="body1"
@@ -229,11 +255,35 @@ export default function Applications() {
             variant="body1"
             gutterBottom
             color="text.secondary"
-            marginBottom={3.5}
+            marginBottom={0}
           >
             Closed
           </Typography>
-
+          <Typography
+          variant="body1"
+          gutterBottom
+          color="text.secondary"
+          marginBottom={3.5}
+        >
+          Learn more about what it means to be an emerging leader {" "}
+          <Link
+                    component={RouterLink}
+                    to="/elp"
+                    sx={{
+                      color: "#233563",
+                      textDecoration: "none",
+                      font: "inherit",
+                      lineHeight: "inherit",
+                      verticalAlign: "baseline",
+                      fontWeight: "bold",
+                      "&:hover": {
+                        color: "#3B82F6",
+                      },
+                    }}
+                  >
+                    here!
+                  </Link>
+          </Typography>
           <Typography
             variant="body1"
             sx={{ fontWeight: "bold", color: "#233563" }}
@@ -245,9 +295,34 @@ export default function Applications() {
             variant="body1"
             gutterBottom
             color="text.secondary"
-            marginBottom={3.5}
+            marginBottom={0}
           >
             Closed
+          </Typography>
+          <Typography
+          variant="body1"
+          gutterBottom
+          color="text.secondary"
+          marginBottom={3.5}
+        >
+          Learn more about what it means to be an ambassador {" "}
+          <Link
+                    component={RouterLink}
+                    to="/ambassadors"
+                    sx={{
+                      color: "#233563",
+                      textDecoration: "none",
+                      font: "inherit",
+                      lineHeight: "inherit",
+                      verticalAlign: "baseline",
+                      fontWeight: "bold",
+                      "&:hover": {
+                        color: "#3B82F6",
+                      },
+                    }}
+                  >
+                    here!
+                  </Link>
           </Typography>
           {/* <Typography
             variant="body1"
@@ -268,7 +343,31 @@ export default function Applications() {
           <Typography variant="body1" color="text.secondary" gutterBottom>
             Closed
           </Typography>
-
+          <Typography
+          variant="body1"
+          gutterBottom
+          color="text.secondary"
+          marginBottom={3.5}
+        >
+          Learn more about what it means to be a miracle maker {" "}
+          <Link
+                    component={RouterLink}
+                    to="/miraclemaker"
+                    sx={{
+                      color: "#233563",
+                      textDecoration: "none",
+                      font: "inherit",
+                      lineHeight: "inherit",
+                      verticalAlign: "baseline",
+                      fontWeight: "bold",
+                      "&:hover": {
+                        color: "#3B82F6",
+                      },
+                    }}
+                  >
+                    here!
+                  </Link>
+          </Typography>
           <Typography
             variant="body1"
             gutterBottom

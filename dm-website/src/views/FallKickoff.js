@@ -9,7 +9,7 @@ import { Container, Typography } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import YoutubeVid from "../components/YoutubeVid";
-import FallKickoffPic from "../assets/images/pagepics/Kickoff25.jpg";
+import FallKickoffPic from "../assets/images/pagepics/Kickoff26.jpg";
 import LazyLoad from "react-lazyload";
 
 export default function FallKickoff() {

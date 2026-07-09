@@ -80,7 +80,7 @@ export default function FundraisingGuide() {
         <Typography variant="body1" color="text.secondary" paragraph>
           Take a look at all the different ways you can fundraise with Dance
           Marathon at UF!{" "}
-          <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+          <span style={{ color: "#4965A6", fontWeight: "bold" }}>
             Whether you ask friends and family to support you, showcase your
             passion on social media, participate in canning, or volunteer your
             time for donations, there are so many ways to fundraise for DM at

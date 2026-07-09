@@ -62,7 +62,7 @@ export default function DonorDrive() {
             </span>{" "}
             Dance Marathon at the University of Florida’s Fundraisers will be
             creating DonorDrive accounts to begin fundraising for DM at UF 2026.
-            <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
               {" "}
               DonorDrive is safe and easy to use
             </span>

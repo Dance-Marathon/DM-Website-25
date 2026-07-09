@@ -95,7 +95,46 @@ export default function LandingPage() {
             </i>
           </Typography>
         </Box>
-        <Divider />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            maxWidth: "100%",
+          }}
+        >
+                  <Button
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfeJKWSa49Set5O2twZ_0kGOH-mhE3IkLGjgnW8kpPRwfgMZw/viewform"
+                      aria-label="Google Form"
+                    sx={{
+                      backgroundColor: "rgba(35, 53, 99, 0.85)",
+                      color: (theme) => theme.palette.primary.contrastText,
+                      borderRadius: "50px",
+                      transition: "background-color 0.3s ease",
+                      width: "80%",
+                      height: "80px",
+                      "&:hover": {
+                        backgroundColor: "rgba(226, 136, 60, 0.85)",
+                      },
+                    }}
+                  >
+                    <Typography
+                      variant="h4"
+                      fontSize={30}
+                      paddingTop="10px"
+                      paddingBottom="10px"
+                      sx={{
+                        whiteSpace: "nowrap",
+                        overflow: "hidden",
+                        textOverflow: "ellipsis",
+                        display: "block",
+                        color: "white",
+                      }}
+                    >
+                      Subscribe to Our Newsletter!
+                    </Typography>
+                  </Button>
+                </Box>
         <Container>
           <Grid
             container

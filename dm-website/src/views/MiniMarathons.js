@@ -68,9 +68,9 @@ export default function MiniMarathons() {
             programs raised a total of{" "}
             <Typography
               component="span"
-              sx={{ fontWeight: "bold", color: "#e2883c" }}
+              sx={{ fontWeight: "bold", color: "#4965A6" }}
             >
-              $190,190.99
+              $228,082.13
             </Typography>{" "}
             , proving that these students are truly one generation fighting for
             the next. All money raised by Mini Marathons goes toward DM at UF’s
@@ -88,7 +88,7 @@ export default function MiniMarathons() {
           >
             <Typography
               component="span"
-              sx={{ fontWeight: "bold", color: "#e2883c" }}
+              sx={{ fontWeight: "bold", color: "#4965A6" }}
             >
               We are always looking for more high schools to join our Dance
               Marathon family.

@@ -77,6 +77,8 @@ import ResearchList from "./components/ResearchList";
 
 import BlogTemplate from "./views/blog/BlogTemplate";
 import ResearchTemplate from "./views/research/ResearchTemplate";
+import CaptainQuiz from "./views/CaptainQuiz";
+import MiracleMaker from "./views/MiracleMakers";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -158,6 +160,11 @@ root.render(
         <Route path="/transformtoday" element={<TransformToday />} />
         <Route path="/miracles5k" element={<Miracles5k />} />
         <Route path="/emergingleaders" element={<ELP />} />
+        <Route path="/captainquiz" element={<CaptainQuiz />} />
+        <Route path="/captains" element={<Captains />} />
+        <Route path="/elp" element={<ELP />} />
+        <Route path="/miraclemaker" element={<MiracleMaker />} />
+        <Route path="/ambassadors" element={<Ambassadors />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>

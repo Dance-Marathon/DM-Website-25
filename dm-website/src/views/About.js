@@ -63,14 +63,14 @@ export default function About() {
             funds and awareness for Children's Miracle Network Hospitals for the
             duration of the event. In the 32 years of Dance Marathon at UF's
             existence, we have{" "}
-            <b style={{ color: "#e2883c" }}>raised more than $34 million</b>,
+            <b style={{ color: "#4965A6" }}>raised more than $34 million</b>,
             making it{" "}
             <b style={{ color: "#233563" }}>
               the most successful student-run philanthropy in the Southeastern
               United States
             </b>
             . In 2026, DM at UF raised a grand total of{" "}
-            <b style={{ color: "#e2883c" }}>$1,152,326.32</b> for UF Health
+            <b style={{ color: "#4965A6" }}>$1,152,326.32</b> for UF Health
             Shands Children's Hospital, our local Children’s Miracle Network
             Hospital.
           </Typography>
@@ -103,7 +103,7 @@ export default function About() {
 
           <Typography variant="body1" color="text.secondary" paragraph>
             <b style={{ color: "#233563" }}>
-              As we head into our <b style={{ color: "#e2883c" }}>33rd year</b>,
+              As we head into our <b style={{ color: "#4965A6" }}>33rd year</b>,
               Dance Marathon at UF is excited to make even more miracles!
             </b>
           </Typography>

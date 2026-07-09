@@ -206,7 +206,7 @@ export default function Sponsors() {
 
         {/* Description */}
         <Typography variant="body1" color="text.secondary" marginTop={-2}>
-          <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+          <span style={{ color: "#4965A6", fontWeight: "bold" }}>
             Dance Marathon at UF is so thankful for the support of our generous
             Sponsors!
           </span>{" "}

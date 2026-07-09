@@ -68,7 +68,7 @@ function PageHero({ imageUrl, title }) {
           left: 0,
           width: "100%",
           height: "10px",
-          backgroundColor: "secondary.main",
+          backgroundColor: "#4965A6",
         }}
       />
     </Box>

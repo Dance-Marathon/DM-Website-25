@@ -8,22 +8,11 @@ import { ThemeProvider, createTheme } from '@mui/material/styles';
 import getLPTheme from '../getLPTheme';
 
 // Images
-import Footer_Image from "../assets/images/footer/TriBrand_White.png";
-
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary" mt={1}>
-      {'Copyright © '}
-      <Link href="https://floridadm.org/">Dance Marathon at The University of Florida&nbsp;</Link>
-      {new Date().getFullYear()}
-    </Typography>
-  );
-}
+import Footer_Image from "../assets/images/footer/CoBrand_White.png";
 
 export default function Footer() {
-  const [mode, setMode] = React.useState('light');
+  const [mode] = React.useState('light');
   const LPtheme = createTheme(getLPTheme(mode));
-  const defaultTheme = createTheme({ palette: { mode } });
 
   return (
     <ThemeProvider theme={LPtheme}>
@@ -119,7 +108,7 @@ export default function Footer() {
             justifyContent: 'center',
             width: '100%',
           }}>
-            <img src={Footer_Image} alt="Footer Image" style={{ width: '100%', maxWidth: '600px', height: 'auto' }} />
+            <img src={Footer_Image} alt="Footer" style={{ width: '100%', maxWidth: '600px'}} />
         </Box>      
         {/* <Stack
           direction="row"

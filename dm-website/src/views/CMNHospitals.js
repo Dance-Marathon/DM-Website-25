@@ -59,7 +59,7 @@ export default function CMNHospitals() {
               marginBottom: 2,
             }}
           >
-            <Box component="span" sx={{ color: "#e2883c", fontWeight: "Bold" }}>
+            <Box component="span" sx={{ color: "#4965A6", fontWeight: "Bold" }}>
               UF Health Shands Children’s Hospital
             </Box>{" "}
             is the local{" "}
@@ -67,7 +67,7 @@ export default function CMNHospitals() {
               Children's Miracle Network
             </Box>{" "}
             participating hospital for the{" "}
-            <Box component="span" sx={{ color: "#e2883c", fontWeight: "Bold" }}>
+            <Box component="span" sx={{ color: "#4965A6", fontWeight: "Bold" }}>
               North Central Florida and South Georgia areas
             </Box>{" "}
             areas. Children's Miracle Network is an international non-profit
@@ -89,7 +89,7 @@ export default function CMNHospitals() {
               premier pediatric health center
             </Box>
             ,{" "}
-            <Box component="span" sx={{ color: "#e2883c", fontWeight: "Bold" }}>
+            <Box component="span" sx={{ color: "#4965A6", fontWeight: "Bold" }}>
               UF Health Shands Children's Hospital
             </Box>{" "}
             provides{" "}
@@ -98,7 +98,7 @@ export default function CMNHospitals() {
             </Box>{" "}
             at the highest standards of quality and service in partnership with
             patient families, healthcare teams, and communities.{" "}
-            <Box component="span" sx={{ color: "#e2883c", fontWeight: "Bold" }}>
+            <Box component="span" sx={{ color: "#4965A6", fontWeight: "Bold" }}>
               Community contributions
             </Box>{" "}
             support{" "}
@@ -118,7 +118,7 @@ export default function CMNHospitals() {
             sx={{ color: "text.secondary", marginBottom: 2 }}
           >
             Ranked one of the{" "}
-            <Box component="span" sx={{ color: "#e2883c", fontWeight: "bold" }}>
+            <Box component="span" sx={{ color: "#4965A6", fontWeight: "bold" }}>
               top pediatric hospitals in the nation in five categories
             </Box>
             <Box component="span" sx={{ fontStyle: "italic" }}>

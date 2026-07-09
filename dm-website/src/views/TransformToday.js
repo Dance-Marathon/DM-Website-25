@@ -74,7 +74,7 @@ export default function TransformToday() {
               teams' colored polos flooded the University of Florida; our
               participants took the initiative to dedicate their day to raise
               funds and awareness for patients at{" "}
-              <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
                 UF Health Shands Children's Hospital.
               </span>
             </p>
@@ -85,7 +85,7 @@ export default function TransformToday() {
                 Reitz Student Union
               </span>{" "}
               in the{" "}
-              <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
                 Grand Ballroom
               </span>{" "}
               and{" "}
@@ -93,7 +93,7 @@ export default function TransformToday() {
                 North Lawn.
               </span>{" "}
               Throughout the day, merchandise, fundraising activities and{" "}
-              <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
                 Miracle Stories
               </span>{" "}
               engaged and connected our members to our cause. We would like to
@@ -102,7 +102,7 @@ export default function TransformToday() {
             </p>
             Our 2025 total, which was raised in just 26.2 hours for our
             hospital, was{" "}
-            <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
               $351,126.12!
             </span>
             <p>
@@ -131,7 +131,7 @@ export default function TransformToday() {
               For 26.2 hours, Dance Marathon at the University of Florida unites
               during this fundraising campaign to transform the lives of the
               patients at UF Health Shands Children's Hospital.{" "}
-              <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
                 In only 26.2 hours, our campus community rises to create as many
                 miracles as possible for the children and families at Shands
                 Children's Hospital.
@@ -148,7 +148,7 @@ export default function TransformToday() {
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
-              <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
                 October 21st - 22nd
               </span>
             </p>
@@ -183,7 +183,7 @@ export default function TransformToday() {
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
-              <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
                 Transform Today is Dance Marathon at the University of Florida's
                 largest fundraising campaign in the Fall semester.
               </span>{" "}
@@ -220,7 +220,7 @@ export default function TransformToday() {
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
               Spirit Nights serve as{" "}
-              <span style={{ color: "#e2883c", fontWeight: "bold" }}>
+              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
                 an opportunity for the local Gainesville community to support
                 Dance Marathon at UF's fundraising efforts.
               </span>{" "}
