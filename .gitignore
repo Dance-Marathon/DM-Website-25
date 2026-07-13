@@ -1,2 +1,4 @@
 dm-website/package.json
 dm-website/package-lock.json
+dm-website/build/
+dm-website/src/assets/pdfs/SponsorshipPacket.pdf
