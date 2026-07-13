@@ -7,7 +7,7 @@ import Footer from "../components/Footer";
 import { Container, Typography, Box, Link, Grid } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
-import SponsorshipPacket from "../assets/pdfs/SponsorshipPacket.pdf";
+import SponsorshipPacket from "../assets/pdfs/SponsorshipPacket27.pdf";
 import SponsorPic from "../assets/images/pagepics/PartnersHero.jpg";
 import LazyLoad from "react-lazyload";
 
