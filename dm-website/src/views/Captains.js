@@ -223,7 +223,7 @@ export default function Captains() {
          duties throughout the year depending on their teams. Click each tab
          below to learn more about each team and its responsibilities.
        </Typography>
-       <Typography variant="body1" color="text.secondary" paragraph>
+       {/*<Typography variant="body1" color="text.secondary" paragraph>
          Unsure which team to join? Take this{" "}
          <Link
           component="button"
@@ -245,7 +245,7 @@ export default function Captains() {
           quiz
         </Link>
         {" "}to find the right fit for you!
-       </Typography>
+       </Typography> */}
 
        {teams.map((team, index) => (
          <Accordion key={index}>
