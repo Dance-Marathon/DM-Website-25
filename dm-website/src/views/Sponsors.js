@@ -57,33 +57,6 @@ import Sponsor43 from "../assets/images/sponsors/Sponsor (43).png";
 import Sponsor44 from "../assets/images/sponsors/Sponsor (44).png";
 import Sponsor45 from "../assets/images/sponsors/Sponsor (45).png";
 import Sponsor46 from "../assets/images/sponsors/Sponsor (46).png";
-import Sponsor47 from "../assets/images/sponsors/Sponsor (47).png";
-import Sponsor48 from "../assets/images/sponsors/Sponsor (48).png";
-import Sponsor49 from "../assets/images/sponsors/Sponsor (49).png";
-import Sponsor50 from "../assets/images/sponsors/Sponsor (50).png";
-import Sponsor51 from "../assets/images/sponsors/Sponsor (51).png";
-import Sponsor52 from "../assets/images/sponsors/Sponsor (52).png";
-import Sponsor53 from "../assets/images/sponsors/Sponsor (53).png";
-import Sponsor54 from "../assets/images/sponsors/Sponsor (54).png";
-import Sponsor55 from "../assets/images/sponsors/Sponsor (55).png";
-import Sponsor56 from "../assets/images/sponsors/Sponsor (56).png";
-import Sponsor57 from "../assets/images/sponsors/Sponsor (57).png";
-import Sponsor58 from "../assets/images/sponsors/Sponsor (58).png";
-import Sponsor59 from "../assets/images/sponsors/Sponsor (59).png";
-import Sponsor60 from "../assets/images/sponsors/Sponsor (60).png";
-import Sponsor61 from "../assets/images/sponsors/Sponsor (61).png";
-import Sponsor62 from "../assets/images/sponsors/Sponsor (62).png";
-import Sponsor63 from "../assets/images/sponsors/Sponsor (63).png";
-import Sponsor64 from "../assets/images/sponsors/Sponsor (64).png";
-import Sponsor65 from "../assets/images/sponsors/Sponsor (65).png";
-import Sponsor66 from "../assets/images/sponsors/Sponsor (66).png";
-import Sponsor67 from "../assets/images/sponsors/Sponsor (67).png";
-import Sponsor68 from "../assets/images/sponsors/Sponsor (68).png";
-import Sponsor69 from "../assets/images/sponsors/Sponsor (69).png";
-import Sponsor70 from "../assets/images/sponsors/Sponsor (70).png";
-import Sponsor71 from "../assets/images/sponsors/Sponsor (71).png";
-import Sponsor72 from "../assets/images/sponsors/Sponsor (72).png";
-import Sponsor73 from "../assets/images/sponsors/Sponsor (73).png";
 
 const sponsors = [
   { logo: Sponsor1 },
@@ -132,33 +105,6 @@ const sponsors = [
   { logo: Sponsor44 },
   { logo: Sponsor45 },
   { logo: Sponsor46 },
-  { logo: Sponsor47 },
-  { logo: Sponsor48 },
-  { logo: Sponsor49 },
-  { logo: Sponsor50 },
-  { logo: Sponsor51 },
-  { logo: Sponsor52 },
-  { logo: Sponsor53 },
-  { logo: Sponsor54 },
-  { logo: Sponsor55 },
-  { logo: Sponsor56 },
-  { logo: Sponsor57 },
-  { logo: Sponsor58 },
-  { logo: Sponsor59 },
-  { logo: Sponsor60 },
-  { logo: Sponsor61 },
-  { logo: Sponsor62 },
-  { logo: Sponsor63 },
-  { logo: Sponsor64 },
-  { logo: Sponsor65 },
-  { logo: Sponsor66 },
-  { logo: Sponsor67 },
-  { logo: Sponsor68 },
-  { logo: Sponsor69 },
-  { logo: Sponsor70 },
-  { logo: Sponsor71 },
-  { logo: Sponsor72 },
-  { logo: Sponsor73 },
 ];
 
 export default function Sponsors() {
