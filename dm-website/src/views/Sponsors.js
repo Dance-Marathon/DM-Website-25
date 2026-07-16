@@ -195,7 +195,7 @@ export default function Sponsors() {
           sx={{ marginTop: 4 }}
         >
           <span style={{ color: "#233563", fontWeight: "bold" }}>
-            Our 2025 Sponsors
+            Our 2026 Sponsors
           </span>
         </Typography>
         <LazyLoad height={200} offset={100} once>
