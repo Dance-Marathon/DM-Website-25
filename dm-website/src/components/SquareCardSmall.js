@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import { useTheme } from "@mui/material/styles"; // Import useTheme
 
 const Container = styled(Box)(({ theme }) => ({
   position: "relative",
@@ -57,7 +56,7 @@ const SquareCardSmall = ({ image, title, hoverText, link }) => {
 
   return (
     <Container onClick={handleClick}>
-      <Image src={image} alt={title} />
+      <Image src={image} alt=""/>
       <Box
         position="absolute"
         bottom="0px"
@@ -71,6 +70,7 @@ const SquareCardSmall = ({ image, title, hoverText, link }) => {
         alignItems="center"
       >
         <Typography
+          component="h2"
           variant="h4"
           color="white"
           fontWeight={500}
@@ -88,6 +88,7 @@ const SquareCardSmall = ({ image, title, hoverText, link }) => {
       </Box>
       <Overlay className="overlay">
         <Typography
+          component="h3"
           variant="h6"
           sx={{
             // Responsive font size for hover text

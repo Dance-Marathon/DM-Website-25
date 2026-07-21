@@ -19,7 +19,6 @@ import PageHero from "../components/PageHero";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CaptainPic from "../assets/images/pagepics/CaptainsPic.jpg";
 import LazyLoad from "react-lazyload";
-import Link from "@mui/material/Link";
 
 const teams = [
  {
@@ -250,7 +249,7 @@ export default function Captains() {
        {teams.map((team, index) => (
          <Accordion key={index}>
            <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-             <Typography variant="h6" color="text.secondary">
+             <Typography component="h2" variant="h6" color="text.secondary">
                {team.name}
              </Typography>
            </AccordionSummary>

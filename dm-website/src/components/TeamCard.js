@@ -2,7 +2,6 @@ import PropTypes from "prop-types";
 
 // @mui material components
 import Card from "@mui/material/Card";
-import Grid from "@mui/material/Grid";
 import { Box, Typography, Link } from "@mui/material";
 
 function HorizontalTeamCard({ image, name, position, email }) {
@@ -29,7 +28,7 @@ function HorizontalTeamCard({ image, name, position, email }) {
         <Box
           component="img"
           src={image}
-          alt={name}
+          alt=""
           sx={{
             width: "100%",
             height: "100%",
@@ -49,7 +48,7 @@ function HorizontalTeamCard({ image, name, position, email }) {
           justifyContent: "center",
         }}
       >
-        <Typography variant="h6" color="primary" fontWeight="bold">
+        <Typography variant="body1" component="p" color="primary" fontWeight="bold" sx={{ fontSize: "1.1rem" }}>
           {name}
         </Typography>
         <Typography

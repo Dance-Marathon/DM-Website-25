@@ -234,6 +234,7 @@ function AppAppBar({ mode, toggleColorMode }) {
               >
                 </Box>
                 <IconButton
+                  aria-label="Search"
                   onClick={() => setExpanded((prev) => !prev)}
                 >
                   <SearchIcon sx={{ color: "white" }} />
@@ -843,54 +844,6 @@ function AppAppBar({ mode, toggleColorMode }) {
               />
             </ListItemButton>
           </List>
-
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              p: 2,
-            }}
-          >
-            <Stack direction="row" spacing={1}>
-              <IconButton
-                href="https://www.instagram.com/dmatuf/?hl=en"
-                aria-label="Instagram"
-                sx={{
-                  color: "white",
-                  "&:hover": { background: alpha("#4965A6", 0.3) },
-                }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <InstagramIcon />
-              </IconButton>
-              <IconButton
-                href="https://www.facebook.com/floridaDM/"
-                aria-label="Facebook"
-                sx={{
-                  color: "white",
-                  "&:hover": { background: alpha("#4965A6", 0.3) },
-                }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FacebookIcon />
-              </IconButton>
-              <IconButton
-                href="https://x.com/floridadm?lang=en"
-                aria-label="X"
-                sx={{
-                  color: "white",
-                  "&:hover": { background: alpha("#4965A6", 0.3) },
-                }}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <LinkedInIcon />
-              </IconButton>
-            </Stack>
-          </Box>
         </Box>
       </Drawer>
     </div>

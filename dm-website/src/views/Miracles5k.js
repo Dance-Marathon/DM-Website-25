@@ -78,10 +78,10 @@ export default function Miracles5k() {
               have color stations throughout the course as well as at the finish
               line. At each color station, runners will be doused in color
               powder.*{" "}
-              <u>
+              <b>
                 All participants will be provided with a Miracles In Color 5k
                 white shirt with registration.
-              </u>
+              </b>
             </p>
             {/* The 5k course will be split into 2 shifts. Register{" "}
             <Link
@@ -158,7 +158,7 @@ export default function Miracles5k() {
                 inspired by the Hindu Festival of Holi. Participants wear white
                 at the beginning of the race and are covered with color by the
                 end. To learn more about Holi you can visit{" "}
-                <Link href="https://www.holifestival.org/">here</Link>.
+                <Link href="https://www.holifestival.org/">here (external link)</Link>.
               </Typography>
             }
           />

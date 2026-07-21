@@ -76,7 +76,7 @@ export default function MiracleMakers() {
           with any questions!
         </Typography>
 
-        <Typography variant="h5" color="#233563" sx={{ marginTop: 2 }}>
+        <Typography component="h2" variant="h5" color="#233563" sx={{ marginTop: 2 }}>
           Register to be a Miracle Maker
         </Typography>
         <Typography variant="body1" color="text.secondary">
@@ -88,14 +88,8 @@ export default function MiracleMakers() {
           You may register to be a Miracle Maker with an Organization team or as
           an individual.
         </Typography>
-        <Typography variant="body1" color="text.secondary">
-          If you have any questions about being a Miracle Maker as an individual
-          or part of Team Hope, please contact the Member Development Overall
-          Director, Rebekah Zuckerman, at
-          <Link href="mailto:rzuckerman@floridadm.org"> rzuckerman@floridadm.org</Link>.
-        </Typography>
 
-        <Typography variant="h5" color="#233563" sx={{ marginTop: 2 }}>
+        <Typography component="h2" variant="h5" color="#233563" sx={{ marginTop: 2 }}>
           FAQ
         </Typography>
         <Box component="ul" sx={{ pl: 3 }}>
@@ -125,7 +119,7 @@ export default function MiracleMakers() {
               <>
                 See the Fundraising tab for instructions, or click{" "}
                 <Link href="/register-to-fundraise" color="primary">
-                  here
+                  here (Register to Fundraise page)
                 </Link>
                 
               </>

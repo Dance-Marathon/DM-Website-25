@@ -11,7 +11,6 @@ import PageHero from "../components/PageHero";
 import SquareCardSmall from "../components/SquareCardSmall"; // Your updated SquareCardSmall
 import LazyLoad from "react-lazyload";
 
-import HowToGuide from "../assets/pdfs/how-to-guide.pdf";
 import RegisterToFundraise from "../assets/images/pagepics/RegisterToFundraisePic.jpg";
 import FundraisingGuideBox from "../assets/images/miniboxpics/FundraisingGuideMini.jpg";
 import DDBox from "../assets/images/miniboxpics/DonorDriveBox.jpg";
@@ -55,80 +54,99 @@ export default function Fundraising() {
           gap: { xs: 2, sm: 3 },
         }}
       >
-        <Box
-          sx={{
-            width: { sm: "100%", md: "100%" },
-            textAlign: { sm: "left", md: "left" },
-          }}
-        >
-          <Typography variant="b1" color="text.secondary" paragraph>
-            Registering to fundraise is pretty easy! Just follow the steps
-            below:
-          </Typography>
-          <Typography variant="body1" color="text.secondary" paragraph>
+      <Typography variant="body1"
+            color="text.secondary"
+            paragraph
+      >
+      Registering to fundraise is pretty easy! Just follow the steps below:
+      </Typography>
+      <Box
+        component="ol"
+        sx={{
+          pl: 4,
+          listStyle: "decimal",
+          "& li": {
+            display: "list-item",
+            listStyleType: "decimal",
+            marginBottom: 1,
+          },
+        }}
+      >
+        <li> 
+          <Typography component="span" variant="body1" color="text.secondary">
             1. Follow this{" "}
             <Link
               href="https://events.dancemarathon.com/dmatuf27"
               target="_blank"
               rel="noopener noreferrer"
             >
-              link
+              Dance Marathon at UF registration page
             </Link>{" "}
-            to register now!
+            to register now.
           </Typography>
-          <Typography variant="body1" color="text.secondary" paragraph>
-            2. Select{" "}
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
-              {" "}
-              'Register Now'
-            </span>
+        </li>
+
+        <li>
+          <Typography component="span" variant="body1" color="text.secondary">
+            2. Select <strong>Register Now</strong>.
           </Typography>
-          <Typography variant="body1" color="text.secondary" paragraph>
+        </li>
+
+        <li>
+          <Typography component="span" variant="body1" color="text.secondary">
             3. If you have a DonorDrive account from DM at UF 2026, select{" "}
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
-              {" "}
-              'Login to your account'
-            </span>
-            .
+            <strong>Login to your account</strong>.
           </Typography>
-          <Typography variant="body1" color="text.secondary" paragraph>
-            4. If you do not have a DonorDrive account, then create an account
-            now.
+        </li>
+
+        <li>
+          <Typography component="span" variant="body1" color="text.secondary">
+            4. If you do not have a DonorDrive account, create one.
           </Typography>
-          <Typography variant="body1" color="text.secondary" paragraph>
+        </li>
+
+        <li>
+          <Typography component="span" variant="body1" color="text.secondary">
             5. Next, select your role.
           </Typography>
-          <Typography variant="body1" color="text.secondary" paragraph>
-            6. Select ‘Participant’ then ‘Individual’ or join the team of your
-            choosing!
+        </li>
+
+        <li>
+          <Typography component="span" variant="body1" color="text.secondary">
+            6. Select <strong>Participant</strong>, then choose <strong>Individual</strong> or join the team of your choosing.
           </Typography>
-          <Typography variant="body1" color="text.secondary" paragraph>
-            7. After, you will finalize your registration by answering the
-            questions presented.
+        </li>
+
+        <li>
+          <Typography component="span" variant="body1" color="text.secondary">
+            7. Finalize your registration by answering the questions presented.
           </Typography>
-          <Typography variant="body1" color="text.secondary" paragraph>
-            8. Once you have registered on DonorDrive, you can customize your
-            fundraising page by adding a profile picture, editing your story,
-            and updating your fundraising goal. Use this{" "}
+        </li>
+
+        <li>
+          <Typography component="span" variant="body1" color="text.secondary">
+            8. Once you have registered on DonorDrive, customize your fundraising page by adding a profile picture, editing your story, and updating your fundraising goal. Use this{" "}
             <Link
               href="https://docs.google.com/document/d/1Y6NEa_TXl1w81UOt9Y4ReRZaZoVS2_vFaxCbt8kgW_Q/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
-              How-To Guide
+              DonorDrive How-To Guide
             </Link>{" "}
-            for step by step instructions!
+            for step-by-step instructions.
           </Typography>
-          <Typography variant="body1" color="text.secondary" paragraph>
-            9. From here, you can use the tools on DonorDrive to send emails
-            from a template, track your fundraising, and share your fundraising
-            link with others!
+        </li>
+
+        <li>
+          <Typography component="span" variant="body1" color="text.secondary">
+            9. Use the tools on DonorDrive to send email templates, track your fundraising, and share your fundraising page with others.
           </Typography>
+        </li>
+      </Box>
           <Typography
-            variant="b2"
+            variant="body1"
             color="text.secondary"
             paragraph
-            sx={{ mt: 4 }}
           >
             If you have any questions about DonorDrive, contact the Finance
             Overall Director, Zachary Myton, at{" "}
@@ -137,7 +155,6 @@ export default function Fundraising() {
             </Link>
             .
           </Typography>
-        </Box>
         <Box
           sx={{
             display: "flex",

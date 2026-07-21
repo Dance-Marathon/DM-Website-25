@@ -2,7 +2,7 @@
 import * as React from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
 import AppAppBar from "../components/AppAppBar";
 import CssBaseline from "@mui/material/CssBaseline";

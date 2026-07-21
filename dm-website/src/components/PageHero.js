@@ -22,7 +22,7 @@ function PageHero({ imageUrl, title }) {
       <Box
         component="img"
         src={imageUrl}
-        alt={title}
+        alt=""
         sx={{
           position: "absolute",
           top: 0,
@@ -34,7 +34,7 @@ function PageHero({ imageUrl, title }) {
       />
       <Typography
         variant="h1"
-        component="div"
+        component="h1"
         sx={{
           fontFamily: "CasaPinada",
           fontWeight: 300,

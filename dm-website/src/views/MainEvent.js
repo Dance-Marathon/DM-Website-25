@@ -13,7 +13,7 @@ import LazyLoad from "react-lazyload";
 import FAQ from "../components/FAQ";
 
 import MainEventPic from "../assets/images/pagepics/MainEventPic.jpg";
-import MEBanner from "../assets/images/pagepics/MEBanner.jpg";
+//import MEBanner from "../assets/images/pagepics/MEBanner.jpg";
 
 export default function MainEvent() {
   const [mode, setMode] = React.useState(() => {
@@ -93,7 +93,7 @@ export default function MainEvent() {
             <p>Follow us on social media for event updates!</p>
           </Typography>
 
-          <Typography variant="h4" sx={{ color: "#4965A6", marginBottom: 2 }}>
+          <Typography component="h2" variant="h4" sx={{ color: "#4965A6", marginBottom: 2 }}>
             FAQ
           </Typography>
           <FAQ

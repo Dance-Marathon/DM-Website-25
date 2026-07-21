@@ -245,6 +245,7 @@ export default function OurStory() {
                         }}
                       />
                       <Typography
+                      component="span"
                         variant="subtitle2"
                         sx={{ color: "#233563", mt: 1.5 }}
                       >

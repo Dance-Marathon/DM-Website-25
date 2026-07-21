@@ -119,6 +119,7 @@ export default function LandingPage() {
                     }}
                   >
                     <Typography
+                      component="h2"
                       variant="h4"
                       fontSize={30}
                       paddingTop="10px"
@@ -154,7 +155,7 @@ export default function LandingPage() {
               >
                 <Box mb={2}>
                   <BookIcon style={{ fontSize: 50, color: "#4965A6" }} />
-                  <Typography variant="h5" color="#4965A6" gutterBottom>
+                  <Typography component="h2" variant="h5" color="#4965A6" gutterBottom>
                     Our Story
                   </Typography>
                   <Typography variant="body1" color="primary" paragraph>
@@ -189,7 +190,7 @@ export default function LandingPage() {
                   <LocalHospitalIcon
                     style={{ fontSize: 50, color: "#4965A6" }}
                   />
-                  <Typography variant="h5" color="#4965A6"gutterBottom>
+                  <Typography component="h2" variant="h5" color="#4965A6"gutterBottom>
                     CMN Hospitals & UF Health
                   </Typography>
                   <Typography variant="body1" color="primary" paragraph>
@@ -221,7 +222,7 @@ export default function LandingPage() {
               >
                 <Box mb={2}>
                   <FavoriteIcon style={{ fontSize: 50, color: "#4965A6" }} />
-                  <Typography variant="h5" color="#4965A6" gutterBottom>
+                  <Typography component="h2" variant="h5" color="#4965A6" gutterBottom>
                     Miracle Families
                   </Typography>
                   <Typography variant="body1" color="primary" paragraph>
@@ -253,7 +254,7 @@ export default function LandingPage() {
               >
                 <Box mb={2}>
                   <RegisterIcon style={{ fontSize: 50, color: "#4965A6" }} />
-                  <Typography variant="h5" color="#4965A6" gutterBottom>
+                  <Typography component="h2" variant="h5" color="#4965A6" gutterBottom>
                     Register to Fundraise
                   </Typography>
                   <Typography variant="body1" color="primary" paragraph>

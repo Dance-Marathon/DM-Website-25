@@ -60,13 +60,13 @@ export default function CircleModalPopup({ image, title, content, learnMoreLink 
             alignItems: 'center',
           }}
         >
-          <Image src={image} alt={title} />
+          <Image src={image} alt="" />
           <Overlay className="overlay">
-            <Typography variant="h6">{/* Optional hover text */}</Typography>
           </Overlay>
         </Container>
 
         <Typography
+          component="h3"
           variant="h6"
           color="text.secondary"
           sx={{ marginTop: 2 }}

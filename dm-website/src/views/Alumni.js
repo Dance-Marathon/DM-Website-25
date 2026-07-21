@@ -68,7 +68,7 @@ export default function Alumni() {
         </Box>
 
         <Box mt={0}>
-          <Typography variant="h5" color="#233563" gutterBottom>
+          <Typography component="h2" variant="h5" color="#233563" gutterBottom>
             Get Involved!
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>

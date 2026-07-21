@@ -25,6 +25,8 @@ export default function Hero() {
         loop
         muted
         playsInline
+        aria-hidden="true"
+        tabIndex={-1}
         style={{
           position: "absolute",
           top: 0,
@@ -60,7 +62,7 @@ export default function Hero() {
         <Box sx={{ marginBottom: "0.2em" }}>
           <Typography
             variant="h1"
-            component="div"
+            component="h1"
             sx={{
               fontFamily: "CasaPinada",
               fontWeight: 300,

@@ -5,7 +5,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AppAppBar from "../components/AppAppBar";
 import getLPTheme from "../getLPTheme";
 import Footer from "../components/Footer";
-import { Container, Typography, Link } from "@mui/material";
+import { Container, Typography} from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import YoutubeVid from "../components/YoutubeVid";
@@ -195,16 +195,14 @@ export default function TransformToday() {
             <p>
               If you are looking to make a financial contribution to support our
               cause, you can donate using our{" "}
-              <span style={{ color: "#233563", fontWeight: "bold" }}>
-                DonorDrive,
-              </span>{" "}
-              linked{" "}
+              <span style={{ color: "#233563", fontWeight: "bold" }}> {" "}
+              </span>
               <a
                 href="https://dancemarathon.childrensmiraclenetworkhospitals.org/?notification=error&key=message_invalideventid"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                here
+                DonorDrive
               </a>
               .
             </p>

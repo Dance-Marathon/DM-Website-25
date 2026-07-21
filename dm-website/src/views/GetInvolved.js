@@ -94,6 +94,7 @@ export default function GetInvolved() {
             }}
           >
             <Typography
+              component="h2"
               variant="h4"
               fontSize={40}
               paddingTop="10px"
