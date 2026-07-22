@@ -88,6 +88,7 @@ export default function BlogTemplate() {
 
           <Box sx={{ mt: 3 }}>
             <Typography
+              component="p"
               variant="h6"
               sx={{
                 fontStyle: "italic",

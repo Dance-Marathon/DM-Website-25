@@ -59,52 +59,52 @@ import Sponsor45 from "../assets/images/sponsors/Sponsor (45).png";
 import Sponsor46 from "../assets/images/sponsors/Sponsor (46).png";
 
 const sponsors = [
-  { logo: Sponsor1 },
-  { logo: Sponsor2 },
-  { logo: Sponsor3 },
-  { logo: Sponsor4 },
-  { logo: Sponsor5 },
-  { logo: Sponsor6 },
-  { logo: Sponsor7 },
-  { logo: Sponsor8 },
-  { logo: Sponsor9 },
-  { logo: Sponsor10 },
-  { logo: Sponsor11 },
-  { logo: Sponsor12 },
-  { logo: Sponsor13 },
-  { logo: Sponsor14 },
-  { logo: Sponsor15 },
-  { logo: Sponsor16 },
-  { logo: Sponsor17 },
-  { logo: Sponsor18 },
-  { logo: Sponsor19 },
-  { logo: Sponsor20 },
-  { logo: Sponsor21 },
-  { logo: Sponsor22 },
-  { logo: Sponsor23 },
-  { logo: Sponsor24 },
-  { logo: Sponsor25 },
-  { logo: Sponsor26 },
-  { logo: Sponsor27 },
-  { logo: Sponsor28 },
-  { logo: Sponsor29 },
-  { logo: Sponsor30 },
-  { logo: Sponsor31 },
-  { logo: Sponsor32 },
-  { logo: Sponsor33 },
-  { logo: Sponsor34 },
-  { logo: Sponsor35 },
-  { logo: Sponsor36 },
-  { logo: Sponsor37 },
-  { logo: Sponsor38 },
-  { logo: Sponsor39 },
-  { logo: Sponsor40 },
-  { logo: Sponsor41 },
-  { logo: Sponsor42 },
-  { logo: Sponsor43 },
-  { logo: Sponsor44 },
-  { logo: Sponsor45 },
-  { logo: Sponsor46 },
+  { logo: Sponsor1, alt: "" },
+  { logo: Sponsor2, alt: "" },
+  { logo: Sponsor3, alt: "" },
+  { logo: Sponsor4, alt: "" },
+  { logo: Sponsor5, alt: "" },
+  { logo: Sponsor6, alt: "" },
+  { logo: Sponsor7, alt: "" },
+  { logo: Sponsor8, alt: "" },
+  { logo: Sponsor9, alt: "" },
+  { logo: Sponsor10, alt: "" },
+  { logo: Sponsor11, alt: "" },
+  { logo: Sponsor12, alt: "" },
+  { logo: Sponsor13, alt: "" },
+  { logo: Sponsor14, alt: "" },
+  { logo: Sponsor15, alt: "" },
+  { logo: Sponsor16, alt: "" },
+  { logo: Sponsor17, alt: "" },
+  { logo: Sponsor18, alt: "" },
+  { logo: Sponsor19, alt: "" },
+  { logo: Sponsor20, alt: "" },
+  { logo: Sponsor21, alt: "" },
+  { logo: Sponsor22, alt: "" },
+  { logo: Sponsor23, alt: "" },
+  { logo: Sponsor24, alt: "" },
+  { logo: Sponsor25, alt: "" },
+  { logo: Sponsor26, alt: "" },
+  { logo: Sponsor27, alt: "" },
+  { logo: Sponsor28, alt: "" },
+  { logo: Sponsor29, alt: "" },
+  { logo: Sponsor30, alt: "" },
+  { logo: Sponsor31, alt: "" },
+  { logo: Sponsor32, alt: "" },
+  { logo: Sponsor33, alt: "" },
+  { logo: Sponsor34, alt: "" },
+  { logo: Sponsor35, alt: "" },
+  { logo: Sponsor36, alt: "" },
+  { logo: Sponsor37, alt: "" },
+  { logo: Sponsor38, alt: "" },
+  { logo: Sponsor39, alt: "" },
+  { logo: Sponsor40, alt: "" },
+  { logo: Sponsor41, alt: "" },
+  { logo: Sponsor42, alt: "" },
+  { logo: Sponsor43, alt: "" },
+  { logo: Sponsor44, alt: "" },
+  { logo: Sponsor45, alt: "" },
+  { logo: Sponsor46, alt: "" },
 ];
 
 export default function Sponsors() {
@@ -169,9 +169,9 @@ export default function Sponsors() {
 
         {/* Link to sponsorship opportunities */}
         <Typography variant="body1" color="text.secondary" marginTop={0}>
-          For more information, view our sponsorship opportunities{" "}
+          For more information, view our{" "}
           <Link href={SponsorshipPacket} underline="always">
-            here
+            sponsorship opportunities (PDF)
           </Link>
           .
         </Typography>
@@ -188,6 +188,7 @@ export default function Sponsors() {
 
         {/* Sponsors Section */}
         <Typography
+          component="h2"
           variant="h3"
           color="text.secondary"
           align="center"
@@ -218,6 +219,7 @@ export default function Sponsors() {
                 <Box
                   component="img"
                   src={sponsor.logo}
+                  alt={sponsor.alt}
                   sx={{ maxWidth: "75%", height: "auto", mb: 2 }}
                 />
               </Grid>

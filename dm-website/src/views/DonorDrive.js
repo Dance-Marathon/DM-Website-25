@@ -58,7 +58,7 @@ export default function DonorDrive() {
             </span>
             <span style={{ color: "#233563", fontWeight: "bold" }}>
               , an online fundraising platform used widely by Children’s Miracle
-              Network Hospitals, for its Dance Marathon programs.
+              Network, for its Dance Marathon programs.
             </span>{" "}
             Dance Marathon at the University of Florida’s Fundraisers will be
             creating DonorDrive accounts to begin fundraising for DM at UF 2026.

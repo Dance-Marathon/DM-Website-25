@@ -15,7 +15,7 @@ import AydenM from "../assets/images/miraclechildren/Ayden.jpg";
 import BaileyA from "../assets/images/miraclechildren/Bailey.jpg";
 import BeckettG from "../assets/images/miraclechildren/Beckett.jpg";
 import BellaN from "../assets/images/miraclechildren/Bella.jpg";
-import BrooksBrowardR from "../assets/images/miraclechildren/Brooks And Broward.jpg";
+//import BrooksBrowardR from "../assets/images/miraclechildren/Brooks And Broward.jpg";
 import CadenB from "../assets/images/miraclechildren/Caden.jpg";
 import CasonT from "../assets/images/miraclechildren/Cason.jpg";
 import ClaireE from "../assets/images/miraclechildren/Claire.jpg";
@@ -23,21 +23,21 @@ import DaniLynnE from "../assets/images/miraclechildren/Dani Lynn.jpg";
 import ElizabethC from "../assets/images/miraclechildren/Elie.jpg";
 import EllaR from "../assets/images/miraclechildren/Ella Grace.jpg";
 import EleanorZ from "../assets/images/miraclechildren/Eleanor.jpg";
-import EmilyM from "../assets/images/miraclechildren/Emily.jpg";
+//import EmilyM from "../assets/images/miraclechildren/Emily.jpg";
 import JudeOliverS from "../assets/images/miraclechildren/Jude and Oliver.jpg";
 import GeneviveS from "../assets/images/miraclechildren/Genevive.jpg";
 import HaleyW from "../assets/images/miraclechildren/Haley.jpg";
-import KaliahE from "../assets/images/miraclechildren/Kaliah.jpg";
+//import KaliahE from "../assets/images/miraclechildren/Kaliah.jpg";
 import KendallL from "../assets/images/miraclechildren/Kendall.jpg";
 import KinseyB from "../assets/images/miraclechildren/Kinsey.jpg";
 import LaurenP from "../assets/images/miraclechildren/Lauren.jpg";
 import MazzyJ from "../assets/images/miraclechildren/Mazzy.jpg";
-import NakiaF from "../assets/images/miraclechildren/Nakia.jpg";
+//import NakiaF from "../assets/images/miraclechildren/Nakia.jpg";
 import NathanF from "../assets/images/miraclechildren/Nate.jpg";
 import NicolasM from "../assets/images/miraclechildren/Nicolas.jpg";
 import NovaleeS from "../assets/images/miraclechildren/Novalee.jpg";
 import OwenM from "../assets/images/miraclechildren/Owen.jpg";
-import SageP from "../assets/images/miraclechildren/Sage 1.jpg";
+//import SageP from "../assets/images/miraclechildren/Sage 1.jpg";
 import SamuelN from "../assets/images/miraclechildren/Samuel.jpg";
 import SuzanneL from "../assets/images/miraclechildren/Suzanne.jpg";
 import WyattT from "../assets/images/miraclechildren/Wyatt.jpg";
@@ -117,7 +117,7 @@ export default function MiracleFamilies() {
             variant="body1"
             sx={{ color: "text.secondary", marginBottom: 2 }}
           >
-            If you would like to become a Children's Miracle Network Hospital
+            If you would like to become a Children's Miracle Network
             Ambassador, please fill out the{" "}
             <Link
               href="https://giving.ufhealth.org/cmn/ambassadors/"

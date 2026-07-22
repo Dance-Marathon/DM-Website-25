@@ -273,13 +273,11 @@ const BlogList = () => {
                   },
                 }}
               >
-              onClick={() => handleCardClick(blog.linkName)} // Navigate on click
-            >
               <CardMedia
                 component="img"
                 height="200"
                 image={blog.heroImage}
-                alt={blog.title}
+                alt=""
               />
               <CardContent>
                 <Typography
@@ -290,10 +288,10 @@ const BlogList = () => {
                 >
                   {blog.title}
                 </Typography>
-                <Typography variant="subtitle2" color="text.secondary">
+                <Typography component="p" variant="subtitle2" color="text.secondary">
                   Author: {blog.author}
                 </Typography>
-                <Typography variant="subtitle2" color="text.secondary">
+                <Typography component="p" variant="subtitle2" color="text.secondary">
                   Published: {blog.date}
                 </Typography>
               </CardContent>

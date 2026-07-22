@@ -11,10 +11,10 @@ import { Link } from "react-router-dom";
 import LandingCarousel from "../components/LandingCarousel";
 import LazyLoad from "react-lazyload";
 
-import BookIcon from "@mui/icons-material/MenuBook";
-import LocalHospitalIcon from "@mui/icons-material/LocalHospitalOutlined";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import RegisterIcon from "@mui/icons-material/EscalatorWarning";
+import BookIcon from "../assets/icons/BookIcon.png";
+import LocalHospitalIcon from "../assets/icons/PlusIcon.png";
+import FavoriteIcon from "../assets/icons/HeartIconDark.png";
+import RegisterIcon from "../assets/icons/PeopleIcon.png";
 
 export const brand = {
   accentNavy: "#4965A6", // accent DM navy (light)
@@ -73,10 +73,9 @@ export default function LandingPage() {
             <i style={{ color: "#4965A6" }}>
               <b>University of Florida</b>
             </i>{" "}
-            is the largest student-run and highest fundraising philanthropy in
-            the Southeast United States. Our mission is to strive to bring
+            is the largest student-run and highest fundraising philanthropy on campus. Our mission is to strive to bring
             together the campus and community to raise funds and awareness for
-            our local Children's Miracle Network Hospital,{" "}
+            our local Children's Miracle Network hospital,{" "}
             <i style={{ color: "#233563" }}>
               <b>UF Health Shands Children's Hospital</b>
             </i>
@@ -154,7 +153,15 @@ export default function LandingPage() {
                 textAlign="center"
               >
                 <Box mb={2}>
-                  <BookIcon style={{ fontSize: 50, color: "#4965A6" }} />
+                <img
+                  src={BookIcon}
+                  alt="Book icon"
+                  style={{
+                    width: 50,
+                    height: 50,
+                    objectFit: "contain",
+                  }}
+                />
                   <Typography component="h2" variant="h5" color="#4965A6" gutterBottom>
                     Our Story
                   </Typography>
@@ -168,9 +175,18 @@ export default function LandingPage() {
                 </Box>
                 <Button
                   variant="outlined"
-                  color="primary"
                   component={Link}
                   to="/ourstory"
+                  sx={{
+                    color: "#E2883C",
+                    borderColor: "#E2883C",
+                    backgroundColor: "rgba(198, 106, 26, 0.08)",
+                    "&:hover": {
+                      borderColor: "#E2883C",
+                      backgroundColor: "rgba(198, 106, 26, 0.2)",
+                      color: "#EB9F68",
+                    },
+                  }}
                 >
                   Learn More
                 </Button>
@@ -187,11 +203,17 @@ export default function LandingPage() {
                 textAlign="center"
               >
                 <Box mb={2}>
-                  <LocalHospitalIcon
-                    style={{ fontSize: 50, color: "#4965A6" }}
-                  />
+                <img
+                  src={LocalHospitalIcon}
+                  alt="Plus icon"
+                  style={{
+                    width: 50,
+                    height: 50,
+                    objectFit: "contain",
+                  }}
+                />
                   <Typography component="h2" variant="h5" color="#4965A6"gutterBottom>
-                    CMN Hospitals & UF Health
+                    CMN & UF Health
                   </Typography>
                   <Typography variant="body1" color="primary" paragraph>
                     Ranked one of the top 50 pediatric hospitals in the nation
@@ -202,9 +224,18 @@ export default function LandingPage() {
                 </Box>
                 <Button
                   variant="outlined"
-                  color="primary"
                   component={Link}
                   to="/cmnhospitals"
+                  sx={{
+                    color: "#E2883C",
+                    borderColor: "#E2883C",
+                    backgroundColor: "rgba(198, 106, 26, 0.08)",
+                    "&:hover": {
+                      borderColor: "#E2883C",
+                      backgroundColor: "rgba(198, 106, 26, 0.2)",
+                      color: "#EB9F68",
+                    },
+                  }}
                 >
                   Learn More
                 </Button>
@@ -221,7 +252,15 @@ export default function LandingPage() {
                 textAlign="center"
               >
                 <Box mb={2}>
-                  <FavoriteIcon style={{ fontSize: 50, color: "#4965A6" }} />
+                <img
+                  src={FavoriteIcon}
+                  alt="Heart icon"
+                  style={{
+                    width: 50,
+                    height: 50,
+                    objectFit: "contain",
+                  }}
+                />
                   <Typography component="h2" variant="h5" color="#4965A6" gutterBottom>
                     Miracle Families
                   </Typography>
@@ -234,9 +273,18 @@ export default function LandingPage() {
                 </Box>
                 <Button
                   variant="outlined"
-                  color="primary"
                   component={Link}
                   to="/miraclefamilies"
+                  sx={{
+                    color: "#E2883C",
+                    borderColor: "#E2883C",
+                    backgroundColor: "rgba(198, 106, 26, 0.08)",
+                    "&:hover": {
+                      borderColor: "#E2883C",
+                      backgroundColor: "rgba(198, 106, 26, 0.2)",
+                      color: "#EB9F68",
+                    },
+                  }}
                 >
                   Learn More
                 </Button>
@@ -253,7 +301,15 @@ export default function LandingPage() {
                 textAlign="center"
               >
                 <Box mb={2}>
-                  <RegisterIcon style={{ fontSize: 50, color: "#4965A6" }} />
+                <img
+                  src={RegisterIcon}
+                  alt="People icon"
+                  style={{
+                    width: 50,
+                    height: 50,
+                    objectFit: "contain",
+                  }}
+                />
                   <Typography component="h2" variant="h5" color="#4965A6" gutterBottom>
                     Register to Fundraise
                   </Typography>
@@ -267,9 +323,18 @@ export default function LandingPage() {
                 </Box>
                 <Button
                   variant="outlined"
-                  color="primary"
                   component={Link}
                   to="/register"
+                  sx={{
+                    color: "#E2883C",
+                    borderColor: "#E2883C",
+                    backgroundColor: "rgba(198, 106, 26, 0.08)",
+                    "&:hover": {
+                      borderColor: "#E2883C",
+                      backgroundColor: "rgba(198, 106, 26, 0.2)",
+                      color: "#EB9F68",
+                    },
+                  }}
                 >
                   Learn More
                 </Button>

@@ -60,7 +60,7 @@ export default function About() {
             philanthropic effort benefiting the patients of UF Health Shands
             Children's Hospital in Gainesville, Florida. Each year, students
             stay awake and on their feet at our annual 26.2 hour event to raise
-            funds and awareness for Children's Miracle Network Hospitals for the
+            funds and awareness for Children's Miracle Network for the
             duration of the event. In the 32 years of Dance Marathon at UF's
             existence, we have{" "}
             <b style={{ color: "#4965A6" }}>raised more than $34 million</b>,
@@ -71,8 +71,7 @@ export default function About() {
             </b>
             . In 2026, DM at UF raised a grand total of{" "}
             <b style={{ color: "#4965A6" }}>$1,152,326.32</b> for UF Health
-            Shands Children's Hospital, our local Children’s Miracle Network
-            Hospital.
+            Shands Children's Hospital, our local Children’s Miracle Network hospital.
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>

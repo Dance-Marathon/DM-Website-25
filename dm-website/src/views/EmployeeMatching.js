@@ -72,32 +72,48 @@ export default function EmployeeMatching() {
             and Clinics, Inc. locally (preferred) OR Children’s Miracle Network
             nationally, here are two ways to match your contribution:
           </Typography>
-          <Typography color="text.secondary" paragraph>
-            1. If your company uses an online platform for gift matching, submit
-            an online gift matching verification form through your company’s
-            portal and use the information listed below as the destination for
-            your contribution. To be appropriately matched in the most efficient
-            manner, we encourage matching through our preferred donation
-            location listed below. Shands Teaching Hospital and Clinics, Inc. is
-            our local Children’s Miracle Network Hospital and it is easiest to
-            complete your employee match through this local option.
-          </Typography>
-          <Typography color="text.secondary" paragraph>
-            2. Obtain a matching gift verification form from your Human
-            Resources Department. Complete the form and list our organization
-            name below. If you directed your donation to Children’s Miracle
-            Network, please email our Executive Director, Ashley Paek, at{" "}
-            <Link href="mailto:apaek@floridadm.org">
-              apaek@floridadm.org
-            </Link>{" "}
-            with a copy of the matching gift verification form.
-          </Typography>
-          <Typography color="#233563" variant="h5" gutterBottom marginTop={4}>
+          <Box
+            component="ol"
+            sx={{
+              pl: 4,
+              listStyleType: "decimal",
+              "& li": {
+                mb: 2,
+              },
+            }}
+          >
+            <li>
+              <Typography component="span" color="text.secondary">
+                1.   If your company uses an online platform for gift matching, submit an
+                online gift matching verification form through your company’s portal and
+                use the information listed below as the destination for your
+                contribution. To be appropriately matched in the most efficient manner,
+                we encourage matching through our preferred donation location listed
+                below. Shands Teaching Hospital and Clinics, Inc. is our local
+                Children’s Miracle Network hospital and it is easiest to complete your
+                employee match through this local option.
+              </Typography>
+            </li>
+
+            <li>
+              <Typography component="span" color="text.secondary">
+                2.   Obtain a matching gift verification form from your Human Resources
+                Department. Complete the form and list our organization name below. If
+                you directed your donation to Children’s Miracle Network, please email
+                our Executive Director, Ashley Paek, at{" "}
+                <Link href="mailto:apaek@floridadm.org">
+                  apaek@floridadm.org
+                </Link>{" "}
+                with a copy of the matching gift verification form.
+              </Typography>
+            </li>
+          </Box>
+          <Typography color="#233563" component="h2" variant="h5" gutterBottom marginTop={4}>
             Primary Donation Location
           </Typography>
           <Typography color="#4965A6" paragraph>
             <strong>
-              UF Health Shands - Your Local Children's Miracle Network Hospital
+              UF Health Shands - Your Local Children's Miracle Network hospital
             </strong>
           </Typography>
           <Typography color="text.secondary" paragraph>
@@ -128,7 +144,7 @@ export default function EmployeeMatching() {
           <Typography color="text.secondary" paragraph>
             * PLEASE NOTE: If you are selecting this preferred donation
             location, please do not list Dance Marathon at the University of
-            Florida or CMN Hospital(s) as the matching entity. Many companies
+            Florida or CMN as the matching entity. Many companies
             will not accept this request, as our tax-exempt status is included
             under the larger umbrella of Shands Teaching Hospital and Clinics,
             Inc. If you have any questions about this process, please reach out
@@ -139,7 +155,7 @@ export default function EmployeeMatching() {
             </Link>
             .
           </Typography>
-          <Typography variant="h5" color="#233563" gutterBottom marginTop={4}>
+          <Typography component="h2" variant="h5" color="#233563" gutterBottom marginTop={4}>
             Alternative Donation Location
           </Typography>
           <Typography color="text.secondary" paragraph>
@@ -176,11 +192,11 @@ export default function EmployeeMatching() {
           </Typography>
           <Typography color="text.secondary" paragraph>
             <Link href={ShandsW9} target="_blank" rel="noopener">
-              Shands Teaching Hospital and Clinics, Inc.
+              Shands Teaching Hospital and Clinics, Inc. (PDF)
             </Link>
             <br />
             <Link href={CMNW9} target="_blank" rel="noopener">
-              Children's Miracle Network
+              Children's Miracle Network (PDF)
             </Link>
           </Typography>
           <Typography color="text.secondary" paragraph>
@@ -197,6 +213,7 @@ export default function EmployeeMatching() {
           </Typography>
           <Typography
             color="text.secondary"
+            component="h2"
             variant="h5"
             gutterBottom
             marginTop={4}

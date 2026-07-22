@@ -48,7 +48,7 @@ export default function MiracleMakers() {
           Dance Marathon at the University of Florida is an organization
           benefiting the patients of UF Health Shands Children's Hospital in
           Gainesville, Florida. Each year, students pledge to raise money and
-          awareness for Children's Miracle Network Hospitals.
+          awareness for Children's Miracle Network.
         </Typography>
         <Typography variant="body1" color="text.secondary">
           As a{" "}

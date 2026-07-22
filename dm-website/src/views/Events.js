@@ -92,7 +92,7 @@ export default function Events() {
           >
             Reaching out for the support of the entire community is vital for
             the continued success of Gainesville's local Children's Miracle
-            Network Hospital. For more information about how to get involved in
+            Network hospital. For more information about how to get involved in
             these events, please contact us at{" "}
             <Link
               href="mailto:floridadm@floridadm.org"

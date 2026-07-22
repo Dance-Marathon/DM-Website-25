@@ -52,7 +52,7 @@ export default function Alumni() {
           <Typography variant="body1" color="text.secondary" paragraph>
             Since 1995, Dance Marathon at UF has raised over $34 million for UF
             Health Shands Children's Hospital, our local Children’s Miracle
-            Network Hospital. Thanks to your dedication and support throughout
+            Network hospital. Thanks to your dedication and support throughout
             your college years, we have become the most successful student-run
             philanthropy in the southeastern United States.
           </Typography>

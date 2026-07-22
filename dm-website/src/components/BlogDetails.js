@@ -53,11 +53,11 @@ const BlogDetails = () => {
           alignItems: "center",
         }}
       >
-        <Box sx={{ my: 5, textAlign: "left" }}>
-          <Typography variant="h3" gutterBottom>
+        <Box sx={{ my: 5, textAlign: "left"}}>
+          <Typography component="p" variant="h3" gutterBottom>
             {blog.title}
           </Typography>
-          <Typography variant="subtitle1" color="text.secondary">
+          <Typography component="p" variant="subtitle1" color="text.secondary">
             Author: {blog.author} | Published: {blog.date}
           </Typography>
 

@@ -130,7 +130,7 @@ export default function OurStory() {
           <Typography variant="body1" paragraph color="text.secondary">
             <span style={{ color: "#4965A6", fontWeight: "bold" }}>100%</span>{" "}
             of the funds raised by DM at UF go directly to UF Health Shands
-            Children's Hospital, our local Children Miracle Network Hospital. Of
+            Children's Hospital, our local Children Miracle Network hospital. Of
             these funds, most recently,{" "}
             <span style={{ color: "#4965A6", fontWeight: "bold" }}>48%</span>{" "}
             goes to research,{" "}
@@ -928,7 +928,7 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                   Miracle Teen (13+)
                 </Typography>
                 <Typography variant="body1" color="text.secondary">
-                  CMN Hospital(s) Ambassador (18+)
+                  CMN Ambassador (18+)
                 </Typography>
 
                 <Typography

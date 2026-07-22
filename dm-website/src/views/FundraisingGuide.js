@@ -92,6 +92,7 @@ export default function FundraisingGuide() {
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography
+                component="h2"
                 variant="h5"
                 color="#233563"
                 gutterBottom
@@ -179,12 +180,12 @@ export default function FundraisingGuide() {
           </Accordion>
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
-              <Typography variant="h5" color="#233563" gutterBottom>
+              <Typography component="h2" variant="h5" color="#233563" gutterBottom>
                 Reaching Out
               </Typography>
             </AccordionSummary>
             <AccordionDetails>
-              <Typography variant="h6" color="#e2883c" gutterBottom>
+              <Typography component="h3" variant="h6" color="#e2883c" gutterBottom>
                 Letters and Emails
               </Typography>
               <Typography variant="body1" color="text.secondary" paragraph>
@@ -211,6 +212,7 @@ export default function FundraisingGuide() {
           <Accordion>
             <AccordionSummary expandIcon={<ExpandMoreIcon />}>
               <Typography
+              component="h2"
                 variant="h5"
                 color="#233563"
                 gutterBottom

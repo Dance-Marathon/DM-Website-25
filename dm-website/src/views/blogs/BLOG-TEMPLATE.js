@@ -120,6 +120,7 @@ export default function BeyondThisMoment() {
           {/* Add any additional Grids as needed for more images */}
 
           <Typography
+            component="p"
             variant="h6"
             sx={{ fontStyle: "italic", mt: 2, color: "text.secondary" }}
           >
@@ -127,7 +128,7 @@ export default function BeyondThisMoment() {
           </Typography>
 
           <Typography
-            variant="subtitle1"
+            component="p" variant="subtitle1"
             sx={{ fontWeight: "bold", mt: 1, color: "text.secondary" }}
           >
             Dance Marathon at The University of Florida

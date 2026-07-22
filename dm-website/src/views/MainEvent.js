@@ -58,7 +58,7 @@ export default function MainEvent() {
             <p>
               Our{" "}
               <span style={{ color: "#233563", fontWeight: "bold" }}>
-                Main Event is a 26.2-hour event held in the Stephen O’Connell
+                Main Event is a day-long event held in the Stephen O’Connell
                 Center, or as we like to call it, the O’Dome!
               </span>{" "}
               During the Main Event, we celebrate all of our members and

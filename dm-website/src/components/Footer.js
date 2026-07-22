@@ -16,6 +16,13 @@ export default function Footer() {
 
   return (
     <ThemeProvider theme={LPtheme}>
+      <Box
+    sx={{
+      width: "100%",
+      height: "10px",
+      backgroundColor: "#EB9F68",
+    }}
+  />
     <Box
       sx={{
         backgroundColor: "#4965A6",

@@ -38,11 +38,21 @@ export default function ResearchNavigation() {
     >
       {prevResearch && (
         <Grid item xs={12} sm="auto">
-          <Button
+           <Button
             fullWidth
             variant="outlined"
             startIcon={<ArrowBackIcon />}
             onClick={() => navigate(`/research/${prevResearch.linkName}`)}
+            sx={{
+              color: "#E2883C",
+              borderColor: "#E2883C",
+              backgroundColor: "rgba(198, 106, 26, 0.08)",
+              "&:hover": {
+                borderColor: "#E2883C",
+                backgroundColor: "rgba(198, 106, 26, 0.2)",
+                color: "#EB9F68",
+              },
+            }}
           >
             Previous Research Spotlight
           </Button>
@@ -51,11 +61,21 @@ export default function ResearchNavigation() {
 
       {nextResearch && (
         <Grid item xs={12} sm="auto">
-          <Button
+           <Button
             fullWidth
             variant="outlined"
             endIcon={<ArrowForwardIcon />}
             onClick={() => navigate(`/research/${nextResearch.linkName}`)}
+            sx={{
+              color: "#E2883C",
+              borderColor: "#E2883C",
+              backgroundColor: "rgba(198, 106, 26, 0.08)",
+              "&:hover": {
+                borderColor: "#E2883C",
+                backgroundColor: "rgba(198, 106, 26, 0.2)",
+                color: "#EB9F68",
+              },
+            }}
           >
             Next Research Spotlight
           </Button>

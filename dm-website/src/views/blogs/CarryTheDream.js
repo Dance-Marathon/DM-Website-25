@@ -9,7 +9,6 @@ import ScrollToTop from "../../components/ScrollToTop";
 import PageHero from "../../components/PageHero";
 import getLPTheme from "../../getLPTheme";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LazyLoad from "react-lazyload";
 
 // How to Add a Blog
@@ -157,23 +156,26 @@ export default function CarryTheDream() {
           {/* If this is no longer most recent blog, uncomment below and change url to next blog */}
 
           <Grid item>
-            <Button
-              variant="outlined"
-              endIcon={<ArrowForwardIcon />}
-              onClick={() =>
-                (window.location.href = "/blog/ourpromise")
-              }
-              sx={{
-                color: "primary.main",
-                borderColor: "white",
-                "&:hover": {
-                  borderColor: "primary.main",
-                  color: "primary.main",
-                },
-              }}
-            >
-              Next Blog
-            </Button>
+          <Button
+            fullWidth
+            variant="outlined"
+            endIcon={<ArrowForwardIcon />}
+            onClick={() =>
+              (window.location.href = "/blog/ourpromise")
+            }
+            sx={{
+              color: "#E2883C",
+              borderColor: "#E2883C",
+              backgroundColor: "rgba(198, 106, 26, 0.08)",
+              "&:hover": {
+                borderColor: "#E2883C",
+                backgroundColor: "rgba(198, 106, 26, 0.2)",
+                color: "#EB9F68",
+              },
+            }}
+          >
+            Next Blog
+          </Button>
           </Grid>
         </Grid>
       </Container>

@@ -99,7 +99,7 @@ export default function Miracles5k() {
             </span> */}
             <p>
               All proceeds will be donated to UF Health Shands Children's
-              Hospital, our local Children's Miracle Network Hospital, from
+              Hospital, our local Children's Miracle Network hospital, from
               Dance Marathon at the University of Florida.
             </p>
             <p>

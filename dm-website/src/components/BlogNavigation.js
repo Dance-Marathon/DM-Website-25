@@ -45,6 +45,16 @@ export default function BlogNavigation() {
             variant="outlined"
             startIcon={<ArrowBackIcon />}
             onClick={() => navigate(`/blog/${prevBlog.linkName}`)}
+            sx={{
+              color: "#E2883C",
+              borderColor: "#E2883C",
+              backgroundColor: "rgba(198, 106, 26, 0.08)",
+              "&:hover": {
+                borderColor: "#E2883C",
+                backgroundColor: "rgba(198, 106, 26, 0.2)",
+                color: "#EB9F68",
+              },
+            }}
           >
             Previous Blog
           </Button>
@@ -58,6 +68,16 @@ export default function BlogNavigation() {
             variant="outlined"
             endIcon={<ArrowForwardIcon />}
             onClick={() => navigate(`/blog/${nextBlog.linkName}`)}
+            sx={{
+              color: "#E2883C",
+              borderColor: "#E2883C",
+              backgroundColor: "rgba(198, 106, 26, 0.08)",
+              "&:hover": {
+                borderColor: "#E2883C",
+                backgroundColor: "rgba(198, 106, 26, 0.2)",
+                color: "#EB9F68",
+              },
+            }}
           >
             Next Blog
           </Button>

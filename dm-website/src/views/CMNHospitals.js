@@ -74,7 +74,7 @@ export default function CMNHospitals() {
             organization dedicated to raising funds and awareness for children's
             hospitals.{" "}
             <Box component="span" sx={{ fontStyle: "italic" }}>
-              CMN Hospitals's founding pledge
+              CMN's founding pledge
             </Box>
             , to keep all donations in the area in which they were raised,
             remains at the core of its philosophy.
@@ -126,7 +126,7 @@ export default function CMNHospitals() {
             </Box>{" "}
             and{" "}
             <Box component="span" sx={{ fontStyle: "italic" }}>
-              Children's Miracle Network Hospitals
+              Children's Miracle Network
             </Box>{" "}
             have created one of the greatest facilities of care for children and
             young adults.
