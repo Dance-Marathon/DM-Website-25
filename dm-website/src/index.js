@@ -169,6 +169,7 @@ root.render(
         <Route path="/financequiz" element={<FinanceQuiz />} />
         <Route path="/operationsquiz" element={<OperationsQuiz />} />
         <Route path="/captains" element={<Captains />} />
+        <Route path="/captainteams" element={<Captains />} />
         <Route path="/elp" element={<ELP />} />
         <Route path="/miraclemaker" element={<MiracleMaker />} />
         <Route path="/ambassadors" element={<Ambassadors />} />
