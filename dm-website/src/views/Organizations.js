@@ -125,7 +125,7 @@ export default function Organizations() {
             contact the Member Development Overall, Rebekah Zuckerman, at{" "}
             <Link
               href="mailto:rzuckerman@floridadm.org"
-              sx={{ color: "#1a73e8" }}
+              sx={{ color: mode === "dark" ? "#fff" : "#233563" }}
             >
               rzuckerman@floridadm.org
             </Link>

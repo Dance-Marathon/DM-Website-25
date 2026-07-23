@@ -13,12 +13,14 @@ import {
  AccordionDetails,
  Chip,
  Grid,
+ Link,
 } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CaptainPic from "../assets/images/pagepics/CaptainsPic.jpg";
 import LazyLoad from "react-lazyload";
+import { Link as RouterLink } from "react-router-dom";
 
 const teams = [
  {
@@ -212,7 +214,7 @@ export default function Captains() {
      
        <Typography variant="body1" color="text.secondary" paragraph>
          Each{" "}
-         <span style={{ color: "#233563", fontWeight: "bold" }}>
+         <span style={{ color: mode === "dark" ? "#FFFFFF" : "#233563" }}>
            Captain Team
          </span>{" "}
          is composed of an Overall Director, Assistant Directors, and Captains.
@@ -222,29 +224,21 @@ export default function Captains() {
          duties throughout the year depending on their teams. Click each tab
          below to learn more about each team and its responsibilities.
        </Typography>
-       {/*<Typography variant="body1" color="text.secondary" paragraph>
+       <Typography variant="body1" color="text.secondary" paragraph>
          Unsure which team to join? Take this{" "}
          <Link
-          component="button"
-          onClick={() => {
-            window.location.href = "/captainquiz";
-          }}
+          component={RouterLink}
+          to="/captainquiz"
           sx={{
-            color: "#233563",
-            textDecoration: "none",
-            font: "inherit",
-            lineHeight: "inherit",
-            verticalAlign: "baseline",
+            color: mode === "dark" ? "#fff" : "#233563",
             fontWeight: "bold",
-            "&:hover": {
-              color: "#3B82F6",
-            },
+            textDecoration: "none",
           }}
         >
           quiz
         </Link>
         {" "}to find the right fit for you!
-       </Typography> */}
+       </Typography>
 
        {teams.map((team, index) => (
          <Accordion key={index}>
@@ -259,7 +253,7 @@ export default function Captains() {
                color="text.secondary"
                marginBottom={1}
              >
-               <span style={{ color: "#233563", fontWeight: "bold" }}>
+               <span style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold" }}>
                  Responsibilities:{" "}
                </span>
                {team.responsibilities}
@@ -269,7 +263,7 @@ export default function Captains() {
                color="text.secondary"
                marginBottom={1}
              >
-               <span style={{ color: "#233563", fontWeight: "bold" }}>
+               <span style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold" }}>
                  Overall Director:{" "}
                </span>
                <Chip
@@ -278,7 +272,7 @@ export default function Captains() {
                />
              </Typography>
              <Typography variant="body2" color="text.secondary" gutterBottom>
-               <span style={{ color: "#233563", fontWeight: "bold" }}>
+               <span style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold" }}>
                  Assistant Directors:
                </span>
              </Typography>
@@ -289,7 +283,7 @@ export default function Captains() {
                sx={{ mb: 2 }}
              >
                {team.leadership.assistantDirectors.map((ad, i) => {
-                 const [name, title] = ad.split(" - ");
+                 const [title, name] = ad.split(": ");
                  return (
                    <Grid item xs={12} sm={6} md={4} key={i}>
                      <Box
@@ -321,7 +315,7 @@ export default function Captains() {
                })}
              </Grid>
              <Typography variant="body2" color="text.secondary">
-               <span style={{ color: "#233563", fontWeight: "bold" }}>
+               <span style={{color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold" }}>
                  Captains:
                </span>
                <Box

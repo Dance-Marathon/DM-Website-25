@@ -91,7 +91,7 @@ export default function NewHope() {
                 <Box
                   component="img"
                   src={Image2}
-                  alt=""
+                  alt="New Hope Image"
                   sx={{
                     width: "100%",
                     maxWidth: { xs: "100%", sm: 500, md: 600 },

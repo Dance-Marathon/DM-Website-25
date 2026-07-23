@@ -41,7 +41,7 @@ const BlogDetails = () => {
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
 
       {/* Hero Section */}
-      <PageHero imageUrl={blog.images[0]} title={blog.title} />
+      <PageHero imageUrl={blog.images[0]} alt = "" title={blog.title} />
 
       <Container
         maxWidth="lg"

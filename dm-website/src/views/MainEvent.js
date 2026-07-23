@@ -57,7 +57,7 @@ export default function MainEvent() {
           <Typography color="text.secondary" sx={{ marginBottom: 2 }}>
             <p>
               Our{" "}
-              <span style={{ color: "#233563", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#233563", fontWeight: "bold" }}>
                 Main Event is a day-long event held in the Stephen O’Connell
                 Center, or as we like to call it, the O’Dome!
               </span>{" "}
@@ -65,7 +65,7 @@ export default function MainEvent() {
               miracles made throughout the year. It is jam-packed full of
               entertainment, fundraising pushes, stories from Miracle Families,
               ceremonies, theme hours, a rave, and of course, the Linedance!{" "}
-              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#4965A6", fontWeight: "bold" }}>
                 Our Miracle Makers are encouraged to stand for the entire
                 duration to symbolize our cause and the impact that we are
                 making on the lives of children with pediatric illnesses at UF
@@ -80,7 +80,7 @@ export default function MainEvent() {
               We’re excited to keep building on our efforts this year, creating
               meaningful miracles for the families who need them most. Catch a
               glimpse of last year’s impact by watching our{" "}
-              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#4965A6", fontWeight: "bold" }}>
                 Main Event closing ceremonies video
               </span>{" "}
               here!
@@ -93,7 +93,7 @@ export default function MainEvent() {
             <p>Follow us on social media for event updates!</p>
           </Typography>
 
-          <Typography component="h2" variant="h4" sx={{ color: "#4965A6", marginBottom: 2 }}>
+          <Typography component="h2" variant="h4" sx={{ color: mode === "dark" ? "#fff" : "#4965A6", marginBottom: 2 }}>
             FAQ
           </Typography>
           <FAQ
@@ -184,7 +184,7 @@ export default function MainEvent() {
 
           <Typography variant="body1" sx={{ color: "text.secondary" }}>
             For additional questions, email{" "}
-            <Link href="mailto:dgeller@floridadm.org" sx={{ color: "#1a73e8" }}>
+            <Link href="mailto:dgeller@floridadm.org" sx={{ color: mode === "dark" ? "#fff" : "#233563"}}>
               apaek@floridadm.org
             </Link>
             .

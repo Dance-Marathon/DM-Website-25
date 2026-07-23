@@ -90,6 +90,7 @@ export default function CarryTheDream() {
                 <Box
                   component="img"
                   src={Image2}
+                  alt="Dance Marathon participants supporting the #CarryTheDream campaign"
                   sx={{
                     maxWidth: 400,
                     borderRadius: 4,
@@ -110,6 +111,7 @@ export default function CarryTheDream() {
           </Typography>
 
           <Typography
+            component="h2"
             variant="h6"
             sx={{ fontStyle: "italic", mt: 2, mb: 0, color: "text.secondary" }}
           >
@@ -117,6 +119,7 @@ export default function CarryTheDream() {
           </Typography>
 
           <Typography
+            component="p"
             variant="subtitle1"
             sx={{ fontWeight: "bold", mt: 0, color: "text.secondary" }}
           >

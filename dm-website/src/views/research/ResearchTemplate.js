@@ -76,7 +76,7 @@ export default function ResearchTemplate() {
             <Link
               target="_blank"
               href={research.externalLink}
-              sx={{ color: "#1a73e8" }}
+              sx={{ color: mode === "dark" ? "#FFFFFF" : "#233563" }}
             >
               Learn more
             </Link>
@@ -109,6 +109,7 @@ export default function ResearchTemplate() {
                       maxWidth: { xs: "100%", sm: 500, md: 600 },
                       borderRadius: 4,
                     }}
+                    alt={research.title}
                   />
                 </Grid>
               ))}

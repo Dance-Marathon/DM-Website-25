@@ -64,7 +64,7 @@ export default function Miracles5k() {
         >
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
-              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#4965A6", fontWeight: "bold" }}>
                 Miracles in Color 5K
               </span>{""}
               , benefitting UF Health Shands Children’s
@@ -109,7 +109,7 @@ export default function Miracles5k() {
           </Typography>
           <Typography variant="body1" sx={{ color: "text.secondary" }}>
             For more information, please contact the Operations Manager, Vivian Lopez, at{" "}
-            <Link href="mailto:vlopez@floridadm.org" sx={{ color: "#1a73e8" }}>
+            <Link href="mailto:vlopez@floridadm.org" sx={{ color: mode === "dark" ? "#fff" : "#233563" }}>
               vlopez@floridadm.org
             </Link>
             .
@@ -118,7 +118,7 @@ export default function Miracles5k() {
             variant="h5"
             component="h2"
             gutterBottom
-            sx={{ marginTop: 4, color: "#233563" }}
+            sx={{ marginTop: 4, color: mode === "dark" ? "#fff" : "#233563"}}
           >
             Race Day Info
           </Typography>
@@ -145,7 +145,7 @@ export default function Miracles5k() {
             sx={{ color: "text.secondary", marginBottom: 4 }}
           >
             Check your email for more information, and email{" "}
-            <Link href="mailto:vlopez@floridadm.org" sx={{ color: "#1a73e8" }}>
+            <Link href="mailto:vlopez@floridadm.org" sx={{ color: mode === "dark" ? "#fff" : "#233563" }}>
               vlopez@floridadm.org
             </Link>{" "}
             with any questions.

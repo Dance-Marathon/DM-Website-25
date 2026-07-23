@@ -43,7 +43,7 @@ export default function BeyondThisMoment() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-        <PageHero imageUrl={Image1} title="Beyond This Generation" />{" "}
+        <PageHero imageUrl={Image1} title="Beyond This Generation" alt=""/>{" "}
         {/* Change blog name here */}
       </LazyLoad>
 

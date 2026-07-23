@@ -64,7 +64,7 @@ export default function Events() {
             Dance Marathon is a{" "}
             <Typography
               component="span"
-              sx={{ fontWeight: "bold", color: "#4965A6" }}
+              sx={{ fontWeight: "bold", color: mode === "dark" ? "#fff" : "#4965A6"  }}
             >
               yearlong commitment
             </Typography>{" "}
@@ -80,7 +80,7 @@ export default function Events() {
           <Typography
             variant="body1"
             gutterBottom
-            sx={{ color: "#4965A6", fontWeight: "bold", marginTop: 2 }}
+            sx={{ color: mode === "dark" ? "#fff" : "#4965A6" , fontWeight: "bold", marginTop: 2 }}
           >
             Your involvement in these events is what makes them successful!
           </Typography>
@@ -96,7 +96,7 @@ export default function Events() {
             these events, please contact us at{" "}
             <Link
               href="mailto:floridadm@floridadm.org"
-              sx={{ color: "#1a73e8" }}
+              sx={{color: mode === "dark" ? "#fff" : "#233563"  }}
             >
               floridadm@floridadm.org
             </Link>

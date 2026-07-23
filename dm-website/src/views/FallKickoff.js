@@ -54,7 +54,7 @@ export default function FallKickoff() {
           <Typography color="text.secondary" sx={{ marginBottom: 6 }}>
             <p>
               DM at UF’s{" "}
-              <span style={{ color: "#233563", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#233563" , fontWeight: "bold" }}>
                 Kickoff Event
               </span>{" "}
               is our annual start to the year, which brings together our members,

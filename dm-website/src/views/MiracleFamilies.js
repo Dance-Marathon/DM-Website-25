@@ -92,7 +92,7 @@ export default function MiracleFamilies() {
             component="h2"
             sx={{
               fontWeight: "bold",
-              color: "#233563",
+              color: mode === "dark" ? "#FFFFFF" : "#233563",
               marginTop: { xs: 2, sm: 0 },
               marginBottom: 2,
             }}
@@ -121,7 +121,7 @@ export default function MiracleFamilies() {
             Ambassador, please fill out the{" "}
             <Link
               href="https://giving.ufhealth.org/cmn/ambassadors/"
-              sx={{ color: "#1a73e8" }}
+              sx={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6" }}
             >
               form
             </Link>
@@ -136,7 +136,7 @@ export default function MiracleFamilies() {
             contact the Family Relations Overall Director, Gabriella Paredes, at{" "}
             <Link
               href="mailto:gparedes@floridadm.org"
-              sx={{ color: "#1a73e8" }}
+              sx={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6" }}
             >
               gparedes@floridadm.org
             </Link>
@@ -148,7 +148,7 @@ export default function MiracleFamilies() {
             component="h2"
             sx={{
               fontWeight: "bold",
-              color: "#233563",
+              color: mode === "dark" ? "#FFFFFF" : "#233563",
               marginTop: 4,
               marginBottom: 2,
             }}

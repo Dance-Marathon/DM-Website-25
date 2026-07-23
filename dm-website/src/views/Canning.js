@@ -42,7 +42,9 @@ export default function Canning() {
           alignItems: "left",
         }}
       >
-        <Typography component="h2" variant="h6" color="#4965A6" gutterBottom>
+        <Typography component="h2" variant="h6" gutterBottom sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
           What is it?
         </Typography>
         <Typography variant="body1" color="text.secondary" paragraph>
@@ -50,14 +52,18 @@ export default function Canning() {
           places or businesses to benefit Dance Marathon at the University of
           Florida and UF Health Shands Children’s Hospital.
         </Typography>
-        <Typography component="h2" variant="h6" color="#4965A6" gutterBottom>
+        <Typography component="h2" variant="h6" gutterBottom sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
           How can I benefit?
         </Typography>
         <Typography variant="body1" color="text.secondary" paragraph>
           The money you raise via these efforts can be credited to your personal
           fundraising page as you look to raise more money and awareness!
         </Typography>
-        <Typography component="h2" variant="h6" color="#4965A6" gutterBottom>
+        <Typography component="h2" variant="h6" gutterBottom sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
           How to do it?
         </Typography>
         <Typography variant="body1" color="text.secondary" paragraph>
@@ -76,7 +82,9 @@ export default function Canning() {
           leave the business about donating to your cause. No donation is too
           small and every amount helps make miracles!
         </Typography>
-        <Typography component="h2" variant="h6" color="#4965A6" gutterBottom>
+        <Typography component="h2" variant="h6" gutterBottom sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
           What's next?
         </Typography>
         <Typography variant="body1" color="text.secondary" paragraph>

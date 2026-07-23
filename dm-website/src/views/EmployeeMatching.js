@@ -84,7 +84,7 @@ export default function EmployeeMatching() {
           >
             <li>
               <Typography component="span" color="text.secondary">
-                1.   If your company uses an online platform for gift matching, submit an
+                If your company uses an online platform for gift matching, submit an
                 online gift matching verification form through your company’s portal and
                 use the information listed below as the destination for your
                 contribution. To be appropriately matched in the most efficient manner,
@@ -97,7 +97,7 @@ export default function EmployeeMatching() {
 
             <li>
               <Typography component="span" color="text.secondary">
-                2.   Obtain a matching gift verification form from your Human Resources
+                Obtain a matching gift verification form from your Human Resources
                 Department. Complete the form and list our organization name below. If
                 you directed your donation to Children’s Miracle Network, please email
                 our Executive Director, Ashley Paek, at{" "}
@@ -108,22 +108,26 @@ export default function EmployeeMatching() {
               </Typography>
             </li>
           </Box>
-          <Typography color="#233563" component="h2" variant="h5" gutterBottom marginTop={4}>
+          <Typography component="h2" variant="h5" gutterBottom sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#233563", marginTop:4,
+  })}>
             Primary Donation Location
           </Typography>
-          <Typography color="#4965A6" paragraph>
+          <Typography paragraph sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
             <strong>
               UF Health Shands - Your Local Children's Miracle Network hospital
             </strong>
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
               EIN/TIN:
             </span>{" "}
             59-1943502
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
               Charitable Organization Section:
             </span>
             <br />
@@ -133,7 +137,7 @@ export default function EmployeeMatching() {
             ATTN: Dance Marathon at the University of Florida
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
               Address Field:
             </span>
             <br />
@@ -155,22 +159,24 @@ export default function EmployeeMatching() {
             </Link>
             .
           </Typography>
-          <Typography component="h2" variant="h5" color="#233563" gutterBottom marginTop={4}>
+          <Typography component="h2" variant="h5" gutterBottom sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#233563", marginTop:4,
+  })}>
             Alternative Donation Location
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
               Children's Miracle Network National Office
             </span>
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
               EIN/TIN:
             </span>{" "}
             87-0387205
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
               Charitable Organization Section:
             </span>
             <br />
@@ -179,7 +185,7 @@ export default function EmployeeMatching() {
             ATTN: Dance Marathon at the University of Florida
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
               Address Field:
             </span>
             <br />
@@ -200,7 +206,7 @@ export default function EmployeeMatching() {
             </Link>
           </Typography>
           <Typography color="text.secondary" paragraph>
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
               PLEASE NOTE:
             </span>{" "}
             Notify our Finance Manager, Joshua Yaciuk, at{" "}
@@ -218,7 +224,7 @@ export default function EmployeeMatching() {
             gutterBottom
             marginTop={4}
           >
-            <span style={{ color: "#233563", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold" }}>
               Important
             </span>
           </Typography>

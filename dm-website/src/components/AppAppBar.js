@@ -242,23 +242,26 @@ function AppAppBar({ mode, toggleColorMode }) {
             
                 {expanded && (
                    <TextField
-                    size="small"
-                    variant="outlined"
-                    placeholder="Search..."
-                    value={query}
-                    onChange={(e) => setQuery(e.target.value)}
-                    autoFocus
-                    InputProps={{
-                      disableUnderline: true,
-                    }}
-                    sx={{
-                      flex: 1,
-                      "& input": {
-                        color: "white",
-                        py: 0.5,
-                      },
-                    }}
-                  />
+                   size="small"
+                   variant="outlined"
+                   placeholder="Search..."
+                   value={query}
+                   onChange={(e) => setQuery(e.target.value)}
+                   autoFocus
+                   inputProps={{
+                     "aria-label": "Search",
+                   }}
+                   InputProps={{
+                     disableUnderline: true,
+                   }}
+                   sx={{
+                     flex: 1,
+                     "& input": {
+                       color: "white",
+                       py: 0.5,
+                     },
+                   }}
+                 />
                 )}
             
                 {expanded && results.length > 0 && (

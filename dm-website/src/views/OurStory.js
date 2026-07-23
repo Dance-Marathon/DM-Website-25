@@ -122,21 +122,21 @@ export default function OurStory() {
             variant="h5"
             component="h2"
             gutterBottom
-            style={{ color: "#233563" }}
+            style={{ color: mode === "dark" ? "#FFFFFF" : "#233563" }}
             sx={{ marginTop: { xs: 2, sm: 0 } }}
           >
             Where The Money Goes
           </Typography>
           <Typography variant="body1" paragraph color="text.secondary">
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>100%</span>{" "}
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>100%</span>{" "}
             of the funds raised by DM at UF go directly to UF Health Shands
             Children's Hospital, our local Children Miracle Network hospital. Of
             these funds, most recently,{" "}
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>48%</span>{" "}
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>48%</span>{" "}
             goes to research,{" "}
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>10%</span> to
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>10%</span> to
             education and{" "}
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>42%</span> to
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>42%</span> to
             patient care.
           </Typography>
           <Typography variant="body1" paragraph color="text.secondary">
@@ -311,7 +311,7 @@ export default function OurStory() {
                   variant="h5"
                   component="h2"
                   gutterBottom
-                  style={{ color: "#233563", marginTop: "40px" }}
+                  style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", marginTop: "40px" }}
                 >
                   Participants
                 </Typography>
@@ -323,7 +323,7 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Number of Registered Miracle Makers in 2026:{" "}
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         777
                       </span>
                     </Typography>
@@ -335,7 +335,7 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Number of Overall Team Members:{" "}
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         18
                       </span>
                     </Typography>
@@ -347,7 +347,7 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Number of Assistant Directors:{" "}
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         49
                       </span>
                     </Typography>
@@ -359,7 +359,7 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Number of Captains:{" "}
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         285
                       </span>
                     </Typography>
@@ -371,7 +371,7 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Number of Emerging Leaders:{" "}
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         137
                       </span>
                     </Typography>
@@ -383,7 +383,7 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Number of Org Ambassadors:{" "}
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         79
                       </span>
                     </Typography>
@@ -395,7 +395,7 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Number of Miracle Families:{" "}
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         27
                       </span>
                     </Typography>
@@ -407,7 +407,7 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Number of Sponsors:{" "}
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         74
                       </span>
                     </Typography>
@@ -419,7 +419,7 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Most Years as a Miracle Maker:{" "}
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         2 years
                       </span>
                     </Typography>
@@ -430,7 +430,7 @@ export default function OurStory() {
                   variant="h5"
                   component="h2"
                   gutterBottom
-                  style={{ color: "#233563", marginTop: "40px" }}
+                  style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", marginTop: "40px" }}
                 >
                   Fundraising
                 </Typography>
@@ -441,7 +441,7 @@ export default function OurStory() {
                       component="span"
                       color="text.secondary"
                     >
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         26,160
                       </span>{" "}
                       donations on DonorDrive
@@ -453,7 +453,7 @@ export default function OurStory() {
                       component="span"
                       color="text.secondary"
                     >
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         1,035
                       </span>{" "}
                       fundraisers raised at least $1
@@ -466,7 +466,7 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Amount raised in 2026:{" "}
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         $1,152,326.32
                       </span>
                     </Typography>
@@ -478,7 +478,7 @@ export default function OurStory() {
                       color="text.secondary"
                     >
                       Total amount raised in past 32 years: over{" "}
-                      <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                      <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                         34 million dollars
                       </span>
                     </Typography>
@@ -888,7 +888,7 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                   component="h2"
                   gutterBottom
                   style={{
-                    color: "#233563",
+                    color: mode === "dark" ? "#FFFFFF" : "#233563",
                     marginTop: "25px",
                     marginBottom: "1px",
                   }}
@@ -908,7 +908,7 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                   component="h2"
                   gutterBottom
                   style={{
-                    color: "#233563",
+                    color: mode === "dark" ? "#FFFFFF" : "#233563",
                     marginTop: "40px",
                     marginBottom: "1px",
                   }}
@@ -935,7 +935,7 @@ style={{ color: '#233563', marginBottom: '1px' }}>
                   variant="h5"
                   component="h2"
                   gutterBottom
-                  style={{ color: "#233563", marginTop: "40px" }}
+                  style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", marginTop: "40px" }}
                 >
                   Levels of Involvement
                 </Typography>

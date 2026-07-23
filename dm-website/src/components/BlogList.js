@@ -277,7 +277,7 @@ const BlogList = () => {
                 component="img"
                 height="200"
                 image={blog.heroImage}
-                alt=""
+                alt={blog.title}
               />
               <CardContent>
                 <Typography

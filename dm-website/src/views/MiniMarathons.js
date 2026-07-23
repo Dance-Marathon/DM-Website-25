@@ -59,7 +59,7 @@ export default function MiniMarathons() {
           >
             14 high schools around the state of Florida participate each year in
             our{" "}
-            <span style={{ color: "#233563", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#fff" : "#233563", fontWeight: "bold" }}>
               Mini Marathon
             </span>{" "}
             program. High school students at these schools show an enthusiastic
@@ -68,7 +68,7 @@ export default function MiniMarathons() {
             programs raised a total of{" "}
             <Typography
               component="span"
-              sx={{ fontWeight: "bold", color: "#4965A6" }}
+              sx={{ fontWeight: "bold", color: mode === "dark" ? "#fff" : "#4965A6" }}
             >
               $228,082.13
             </Typography>{" "}
@@ -88,7 +88,7 @@ export default function MiniMarathons() {
           >
             <Typography
               component="span"
-              sx={{ fontWeight: "bold", color: "#4965A6" }}
+              sx={{ fontWeight: "bold", color: mode === "dark" ? "#fff" : "#4965A6"}}
             >
               We are always looking for more high schools to join our Dance
               Marathon family.
@@ -98,7 +98,7 @@ export default function MiniMarathons() {
             Overall Director, Grace Nelson, at{" "}
             <Link
               href="mailto:gnelson@floridadm.org"
-              sx={{ color: "#1a73e8" }}
+              sx={{ color: mode === "dark" ? "#fff" : "#233563" }}
             >
               gnelson@floridadm.org
             </Link>
@@ -111,7 +111,7 @@ export default function MiniMarathons() {
                 variant="h5"
                 component="h2"
                 gutterBottom
-                sx={{ marginTop: 4, color: "#233563" }}
+                sx={{ marginTop: 4, color: mode === "dark" ? "#fff" : "#233563" }}
               >
                 Participating Schools
               </Typography>

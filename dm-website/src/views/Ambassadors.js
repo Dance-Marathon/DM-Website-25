@@ -140,7 +140,7 @@ export default function Ambassadors() {
         }}
       >
         <Typography variant="body1" color="text.secondary">
-          <span style={{ color: "#233563", fontWeight: "bold" }}>
+          <span style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold"}}>
             Organization Ambassadors
           </span>{" "}
           serve as a liaison between Dance Marathon and their respective
@@ -166,14 +166,16 @@ export default function Ambassadors() {
           component="h2"
           variant="h5"
           gutterBottom
-          sx={{ color: "#233563", pb: "0", mb: "0", mt: 2 }}
+          sx={{ color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold", pb: "0", mb: "0", mt: 2 }}
         >
           Responsibilities
         </Typography>
         <Typography
           variant="body1"
           component="span"
-          color="#4965A6"
+          sx={(theme) => ({
+            color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6", mt: 2
+          })}
           marginBottom={-2}
         >
           <b>Yearlong:</b>
@@ -223,7 +225,9 @@ export default function Ambassadors() {
         <Typography
           variant="body1"
           component="span"
-          color="#4965A6"
+          sx={(theme) => ({
+            color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6", mt: 2
+          })}
           marginBottom={-2}
         >
           <b>During the Main Event:</b>
@@ -258,7 +262,9 @@ export default function Ambassadors() {
           </li>
         </ul>
 
-        <Typography component="h2" variant="h5" color="#233563" sx={{ mt: 2 }}>
+        <Typography component="h2" variant="h5" sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#233563", mt: 2
+  })}>
           2026 Dance Marathon Ambassadors
         </Typography>
         <Grid

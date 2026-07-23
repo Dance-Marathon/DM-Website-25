@@ -52,17 +52,17 @@ export default function DonorDrive() {
         >
           <Typography variant="body1" gutterBottom color="text.secondary">
             UF Health Shands Children’s Hospital is continuing to use
-            <span style={{ color: "#233563", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold" }}>
               {" "}
               DonorDrive
             </span>
-            <span style={{ color: "#233563", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold" }}>
               , an online fundraising platform used widely by Children’s Miracle
               Network, for its Dance Marathon programs.
             </span>{" "}
             Dance Marathon at the University of Florida’s Fundraisers will be
             creating DonorDrive accounts to begin fundraising for DM at UF 2026.
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
               {" "}
               DonorDrive is safe and easy to use
             </span>
@@ -82,7 +82,9 @@ export default function DonorDrive() {
           </Typography>
         </Box>
 
-        <Typography component="h2" variant="h5" color="#233563" sx={{ marginTop: 0 }}>
+        <Typography component="h2" variant="h5" sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6", marginTop:0,
+  })}>
           FAQ
         </Typography>
         <FAQ

@@ -59,7 +59,7 @@ export default function Alumni() {
           <Typography variant="body1" color="text.secondary" paragraph>
             Dance Marathon at UF knows that the Gator Nation is everywhere.
             Formed in 2013,{" "}
-            <span style={{ color: "#233563", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold" }}>
               Dance Marathon at UF Alumni
             </span>{" "}
             gives alumni across the country the opportunity to continue to give
@@ -68,7 +68,9 @@ export default function Alumni() {
         </Box>
 
         <Box mt={0}>
-          <Typography component="h2" variant="h5" color="#233563" gutterBottom>
+          <Typography component="h2" variant="h5" color="#233563" gutterBottom sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#233563",
+  })}>
             Get Involved!
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
@@ -104,7 +106,7 @@ export default function Alumni() {
             sx={{ color: "text.secondary", marginBottom: 2 }}
           >
             If you have any questions, please feel free to email them to{" "}
-            <Link href="mailto:alumni@floridadm.org" sx={{ color: "#1a73e8" }}>
+            <Link href="mailto:alumni@floridadm.org" sx={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6" }}>
               alumni@floridadm.org
             </Link>
             .

@@ -65,7 +65,7 @@ export default function TransformToday() {
         >
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
-              <span style={{ color: "#233563", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#233563", fontWeight: "bold" }}>
                 Transform Today is our largest fall fundraising effort which
                 lasts 26.2 hours
               </span>{" "}
@@ -74,26 +74,26 @@ export default function TransformToday() {
               teams' colored polos flooded the University of Florida; our
               participants took the initiative to dedicate their day to raise
               funds and awareness for patients at{" "}
-              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#4965A6", fontWeight: "bold" }}>
                 UF Health Shands Children's Hospital.
               </span>
             </p>
             <p>
               In efforts to boost engagement and encourage fundraising, we
               hosted programming at the{" "}
-              <span style={{ color: "#233563", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#233563", fontWeight: "bold" }}>
                 Reitz Student Union
               </span>{" "}
               in the{" "}
-              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#4965A6", fontWeight: "bold" }}>
                 Grand Ballroom
               </span>{" "}
               and{" "}
-              <span style={{ color: "#233563", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#233563", fontWeight: "bold" }}>
                 North Lawn.
               </span>{" "}
               Throughout the day, merchandise, fundraising activities and{" "}
-              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#4965A6", fontWeight: "bold" }}>
                 Miracle Stories
               </span>{" "}
               engaged and connected our members to our cause. We would like to
@@ -102,14 +102,14 @@ export default function TransformToday() {
             </p>
             Our 2025 total, which was raised in just 26.2 hours for our
             hospital, was{" "}
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+            <span style={{ color: mode === "dark" ? "#fff" : "#4965A6", fontWeight: "bold" }}>
               $351,126.12!
             </span>
             <p>
               We are so eager to continue our efforts throughout this year and
               make miracles for the families who need it most! Please feel free
               to watch our{" "}
-              <span style={{ color: "#233563", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#233563", fontWeight: "bold" }}>
                 Transform Today recap video
               </span>{" "}
               from last year here.
@@ -122,7 +122,7 @@ export default function TransformToday() {
             variant="h5"
             component="h2"
             gutterBottom
-            sx={{ marginTop: 4, color: "#233563" }}
+            sx={{ marginTop: 4, color: mode === "dark" ? "#fff" : "#233563" }}
           >
             Why?
           </Typography>
@@ -131,7 +131,7 @@ export default function TransformToday() {
               For 26.2 hours, Dance Marathon at the University of Florida unites
               during this fundraising campaign to transform the lives of the
               patients at UF Health Shands Children's Hospital.{" "}
-              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#4965A6", fontWeight: "bold" }}>
                 In only 26.2 hours, our campus community rises to create as many
                 miracles as possible for the children and families at Shands
                 Children's Hospital.
@@ -142,13 +142,13 @@ export default function TransformToday() {
             variant="h5"
             component="h2"
             gutterBottom
-            sx={{ marginTop: 4, color: "#233563" }}
+            sx={{ marginTop: 4, color: mode === "dark" ? "#fff" : "#233563" }}
           >
             When?
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
-              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#4965A6", fontWeight: "bold" }}>
                 October 21st - 22nd
               </span>
             </p>
@@ -157,7 +157,7 @@ export default function TransformToday() {
             variant="h5"
             component="h2"
             gutterBottom
-            sx={{ marginTop: 4, color: "#233563" }}
+            sx={{ marginTop: 4, color: mode === "dark" ? "#fff" : "#233563" }}
           >
             What?
           </Typography>
@@ -165,7 +165,7 @@ export default function TransformToday() {
             <p>
               Transform Today is Dance Marathon at the University of Florida's
               Fall fundraising campaign. For{" "}
-              <span style={{ color: "#233563", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#233563", fontWeight: "bold" }}>
                 26.2 hours from 9 a.m. until 11:12 a.m.
               </span>{" "}
               the next day, Dance Marathon at UF compiles our efforts to raise
@@ -177,13 +177,13 @@ export default function TransformToday() {
             variant="h5"
             component="h2"
             gutterBottom
-            sx={{ marginTop: 4, color: "#233563" }}
+            sx={{ marginTop: 4, color: mode === "dark" ? "#fff" : "#233563" }}
           >
             How Can I Get Involved?
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
-              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#4965A6", fontWeight: "bold" }}>
                 Transform Today is Dance Marathon at the University of Florida's
                 largest fundraising campaign in the Fall semester.
               </span>{" "}
@@ -195,12 +195,17 @@ export default function TransformToday() {
             <p>
               If you are looking to make a financial contribution to support our
               cause, you can donate using our{" "}
-              <span style={{ color: "#233563", fontWeight: "bold" }}> {" "}
+              <span style={{ color: mode === "dark" ? "#fff" : "#233563", fontWeight: "bold" }}> {" "}
               </span>
               <a
                 href="https://dancemarathon.childrensmiraclenetworkhospitals.org/?notification=error&key=message_invalideventid"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{
+                  color: mode === "dark" ? "#FFFFFF" : "#233563",
+                  fontWeight: "bold",
+                  textDecoration: "none",
+                }}
               >
                 DonorDrive
               </a>
@@ -211,14 +216,14 @@ export default function TransformToday() {
             variant="h5"
             component="h2"
             gutterBottom
-            sx={{ marginTop: 4, color: "#233563" }}
+            sx={{ marginTop: 4, color: mode === "dark" ? "#fff" : "#233563" }}
           >
             Spirit Nights
           </Typography>
           <Typography color="text.secondary" sx={{ marginBottom: 4 }}>
             <p>
               Spirit Nights serve as{" "}
-              <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+              <span style={{ color: mode === "dark" ? "#fff" : "#4965A6", fontWeight: "bold" }}>
                 an opportunity for the local Gainesville community to support
                 Dance Marathon at UF's fundraising efforts.
               </span>{" "}

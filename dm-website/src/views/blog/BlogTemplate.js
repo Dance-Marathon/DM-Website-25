@@ -38,7 +38,7 @@ export default function BlogTemplate() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
 
-      <PageHero imageUrl={blog.heroImage} title={blog.title} />
+      <PageHero imageUrl={blog.heroImage} alt={blog.title} title={blog.title} />
 
       <Container
         sx={{
@@ -77,6 +77,7 @@ export default function BlogTemplate() {
                 <Box
                   component="img"
                   src={img}
+                  alt={`${blog.title} image ${i + 1}`}
                   sx={{
                     width: "100%",
                     borderRadius: 4,

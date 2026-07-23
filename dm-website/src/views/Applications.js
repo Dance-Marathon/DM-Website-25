@@ -11,9 +11,9 @@ import PageHero from "../components/PageHero";
 import LazyLoad from "react-lazyload";
 import { Link as RouterLink } from "react-router-dom";
 
-import ManagerApplication from "../assets/pdfs/2026 Manager Application.pdf";
-import OverallApplication from "../assets/pdfs/2026 Overall Director Application.pdf";
-import CaptainApplication from "../assets/pdfs/2026 Captain Application.pdf"
+//import ManagerApplication from "../assets/pdfs/2026 Manager Application.pdf";
+//import OverallApplication from "../assets/pdfs/2026 Overall Director Application.pdf";
+//import CaptainApplication from "../assets/pdfs/2026 Captain Application.pdf"
 
 import ApplicationsPic from "../assets/images/pagepics/Applications.jpg";
 
@@ -58,7 +58,7 @@ export default function Applications() {
           <Typography
             variant="body1"
             gutterBottom
-            sx={{ color: "#4965A6", fontWeight: "bold", marginBottom: 2 }}
+            sx={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold", marginBottom: 2 }}
           >
             Thank you for your interest in Dance Marathon at the University of
             Florida 2027!
@@ -84,7 +84,7 @@ export default function Applications() {
               <Typography variant="body1" color="text.secondary">
                 Pay the $25 application fee. You only need to pay the
                 application fee{" "}
-                <span style={{ color: "#4965A6", fontWeight: "bold" }}>
+                <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                   once
                 </span>{" "}
                 even if you are applying for more than one position.
@@ -99,13 +99,13 @@ export default function Applications() {
             Teams. However, your Captain Application will take priority over
             your Emerging Leader Application. To be eligible to be an
             Ambassador, you{" "}
-            <span style={{ color: "#4965A6", fontWeight: "bold" }}>cannot</span>{" "}
+            <span style={{color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>cannot</span>{" "}
             hold another position as well.
           </Typography>
 
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563", marginTop: 4 }}
+            sx={{ fontWeight: "bold", color: mode === "dark" ? "#FFFFFF" : "#233563", marginTop: 4 }}
             gutterBottom
           >
             Manager Application
@@ -118,7 +118,7 @@ export default function Applications() {
           >
             Closed
           </Typography>
-           {/*} Here is the link to the 2027 Manager Application:{" "}
+           {/* Here is the link to the 2027 Manager Application:{" "}
             <Link href="https://drive.google.com/file/d/1OxP9xNOpjeat2kOsyx0XkCb7_7ypc_ye/view?usp=sharing" target="_blank">
               2027 Manager Application
             </Link>
@@ -129,7 +129,7 @@ export default function Applications() {
 
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563" }}
+            sx={{ fontWeight: "bold", color: mode === "dark" ? "#FFFFFF" : "#233563" }}
             gutterBottom
           >
             Overall Director Application
@@ -152,7 +152,7 @@ export default function Applications() {
 
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563" }}
+            sx={{ fontWeight: "bold", color: mode === "dark" ? "#FFFFFF" : "#233563" }}
             gutterBottom
           >
             Assistant Director Application
@@ -175,7 +175,7 @@ export default function Applications() {
 
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563" }}
+            sx={{ fontWeight: "bold", color: mode === "dark" ? "#FFFFFF" : "#233563" }}
             gutterBottom
           >
             Captain Application
@@ -218,7 +218,7 @@ export default function Applications() {
                     component={RouterLink}
                     to="/captains"
                     sx={{
-                      color: "#233563",
+                      color: mode === "dark" ? "#FFFFFF" : "#233563",
                       textDecoration: "none",
                       font: "inherit",
                       lineHeight: "inherit",
@@ -234,7 +234,7 @@ export default function Applications() {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563" }}
+            sx={{ fontWeight: "bold", color: mode === "dark" ? "#FFFFFF" : "#233563" }}
             gutterBottom
           >
             Emerging Leaders Application
@@ -270,7 +270,7 @@ export default function Applications() {
                     component={RouterLink}
                     to="/elp"
                     sx={{
-                      color: "#233563",
+                      color: mode === "dark" ? "#FFFFFF" : "#233563",
                       textDecoration: "none",
                       font: "inherit",
                       lineHeight: "inherit",
@@ -286,7 +286,7 @@ export default function Applications() {
           </Typography>
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563" }}
+            sx={{ fontWeight: "bold", color: mode === "dark" ? "#FFFFFF" : "#233563" }}
             gutterBottom
           >
             Ambassador Application
@@ -310,7 +310,7 @@ export default function Applications() {
                     component={RouterLink}
                     to="/ambassadors"
                     sx={{
-                      color: "#233563",
+                      color: mode === "dark" ? "#FFFFFF" : "#233563",
                       textDecoration: "none",
                       font: "inherit",
                       lineHeight: "inherit",
@@ -335,7 +335,7 @@ export default function Applications() {
 
           <Typography
             variant="body1"
-            sx={{ fontWeight: "bold", color: "#233563" }}
+            sx={{ fontWeight: "bold", color: mode === "dark" ? "#FFFFFF" : "#233563" }}
             gutterBottom
           >
             Miracle Maker Application
@@ -354,7 +354,7 @@ export default function Applications() {
                     component={RouterLink}
                     to="/miraclemaker"
                     sx={{
-                      color: "#233563",
+                      color: mode === "dark" ? "#FFFFFF" : "#233563",
                       textDecoration: "none",
                       font: "inherit",
                       lineHeight: "inherit",
@@ -378,14 +378,14 @@ export default function Applications() {
             to our Membership Manager, Lucy Eichler, at{" "}
             <Link
               href="mailto:leichler@floridadm.org"
-              sx={{ color: "#1a73e8" }}
+              sx={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6" }}
             >
               leichler@floridadm.org
             </Link>
             {" "}or the Recruitment Overall Director, Bruna Pereira at
             <Link
               href="mailto:bpereira@floridadm.org"
-              sx={{ color: "#1a73e8" }}
+              sx={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6" }}
             >
               {" "}bpereira@floridadm.org
             </Link>

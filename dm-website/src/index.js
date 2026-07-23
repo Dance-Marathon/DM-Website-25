@@ -35,6 +35,10 @@ import Alumni from "./views/Alumni";
 import Ambassadors from "./views/Ambassadors";
 import MiracleMakers from "./views/MiracleMakers";
 import Captains from "./views/Captains";
+import MarketingQuiz from "./views/MarketingQuiz";
+import MembershipQuiz from "./views/MembershipQuiz";
+import FinanceQuiz from "./views/FinanceQuiz";
+import OperationsQuiz from "./views/OperationsQuiz";
 import BlogList from "./components/BlogList";
 import Events from "./views/Events";
 import NotFound from "./views/NotFound";
@@ -161,6 +165,10 @@ root.render(
         <Route path="/miracles5k" element={<Miracles5k />} />
         <Route path="/emergingleaders" element={<ELP />} />
         <Route path="/captainquiz" element={<CaptainQuiz />} />
+        <Route path="/marketingquiz" element={<MarketingQuiz />} />
+        <Route path="/membershipquiz" element={<MembershipQuiz />} />
+        <Route path="/financequiz" element={<FinanceQuiz />} />
+        <Route path="/operationsquiz" element={<OperationsQuiz />} />
         <Route path="/captains" element={<Captains />} />
         <Route path="/elp" element={<ELP />} />
         <Route path="/miraclemaker" element={<MiracleMaker />} />

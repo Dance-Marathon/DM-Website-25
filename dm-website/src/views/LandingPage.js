@@ -66,30 +66,30 @@ export default function LandingPage() {
             align="center"
             color="text.secondary"
           >
-            <i style={{ color: "#4965A6" }}>
+            <i style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6" }}>
               <b>Dance Marathon</b>
             </i>{" "}
             at the{" "}
-            <i style={{ color: "#4965A6" }}>
+            <i style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", }}>
               <b>University of Florida</b>
             </i>{" "}
             is the largest student-run and highest fundraising philanthropy on campus. Our mission is to strive to bring
             together the campus and community to raise funds and awareness for
             our local Children's Miracle Network hospital,{" "}
-            <i style={{ color: "#233563" }}>
+            <i style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", }}>
               <b>UF Health Shands Children's Hospital</b>
             </i>
             . We are going into our 33rd year of{" "}
-            <i style={{ color: "#4965A6" }}>
+            <i style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", }}>
               <b>Dance Marathon</b>
             </i>{" "}
             at{" "}
-            <i style={{ color: "#4965A6" }}>
+            <i style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", }}>
               <b>UF</b>
             </i>
             , having fundraised over $34,000,000 thus far. This past year, we
             celebrated our 32nd year by raising{" "}
-            <i style={{ color: "#233563" }}>
+            <i style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", }}>
               <b>$1,152,326.32!</b>
             </i>
           </Typography>
@@ -162,10 +162,14 @@ export default function LandingPage() {
                     objectFit: "contain",
                   }}
                 />
-                  <Typography component="h2" variant="h5" color="#4965A6" gutterBottom>
+                  <Typography component="h2" variant="h5" gutterBottom sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
                     Our Story
                   </Typography>
-                  <Typography variant="body1" color="primary" paragraph>
+                  <Typography variant="body1" paragraph sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
                     DM at UF is one of the five founding Dance Marathon programs
                     in the nation. Since our start, we have raised more than $33
                     million for the Miracle Families at UF Health Shands
@@ -212,10 +216,14 @@ export default function LandingPage() {
                     objectFit: "contain",
                   }}
                 />
-                  <Typography component="h2" variant="h5" color="#4965A6"gutterBottom>
+                  <Typography component="h2" variant="h5" gutterBottom sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
                     CMN & UF Health
                   </Typography>
-                  <Typography variant="body1" color="primary" paragraph>
+                  <Typography variant="body1" paragraph sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
                     Ranked one of the top 50 pediatric hospitals in the nation
                     in seven categories, UF Health Shands Children’s Hospital
                     and Children’s Miracle Network have created one of the
@@ -261,10 +269,14 @@ export default function LandingPage() {
                     objectFit: "contain",
                   }}
                 />
-                  <Typography component="h2" variant="h5" color="#4965A6" gutterBottom>
+                  <Typography component="h2" variant="h5" gutterBottom sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
                     Miracle Families
                   </Typography>
-                  <Typography variant="body1" color="primary" paragraph>
+                  <Typography variant="body1" paragraph sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
                     Take a moment to meet the heart and soul of our movement. We
                     are very fortunate to have 31 Miracle Families who are true
                     inspirations to everyone involved in the organization and
@@ -310,10 +322,14 @@ export default function LandingPage() {
                     objectFit: "contain",
                   }}
                 />
-                  <Typography component="h2" variant="h5" color="#4965A6" gutterBottom>
+                  <Typography component="h2" variant="h5" gutterBottom sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
                     Register to Fundraise
                   </Typography>
-                  <Typography variant="body1" color="primary" paragraph>
+                  <Typography variant="body1" paragraph sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6",
+  })}>
                     Join our fight against pediatric illness. Every dollar
                     raised is another miracle for the patients at UF Health
                     Shands Children’s Hospital. By registering to fundraise on

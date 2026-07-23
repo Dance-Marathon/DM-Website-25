@@ -48,11 +48,11 @@ export default function MiracleMakers() {
           Dance Marathon at the University of Florida is an organization
           benefiting the patients of UF Health Shands Children's Hospital in
           Gainesville, Florida. Each year, students pledge to raise money and
-          awareness for Children's Miracle Network.
+          awareness for Children's Miracle Network Hospitals.
         </Typography>
         <Typography variant="body1" color="text.secondary">
           As a{" "}
-          <span style={{ color: "#233563", fontWeight: "bold" }}>
+          <span style={{ color: mode === "dark" ? "#fff" : "#233563", fontWeight: "bold" }}>
             Miracle Maker
           </span>
           , you will experience one of UF’s most adored traditions. Throughout
@@ -76,7 +76,9 @@ export default function MiracleMakers() {
           with any questions!
         </Typography>
 
-        <Typography component="h2" variant="h5" color="#233563" sx={{ marginTop: 2 }}>
+        <Typography component="h2" variant="h5" sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6", marginTop: 2
+  })}>
           Register to be a Miracle Maker
         </Typography>
         <Typography variant="body1" color="text.secondary">
@@ -89,7 +91,9 @@ export default function MiracleMakers() {
           an individual.
         </Typography>
 
-        <Typography component="h2" variant="h5" color="#233563" sx={{ marginTop: 2 }}>
+        <Typography component="h2" variant="h5" color="#233563" sx={(theme) => ({
+    color: theme.palette.mode === "dark" ? "#FFFFFF" : "#4965A6", marginTop: 2,
+  })}>
           FAQ
         </Typography>
         <Box component="ul" sx={{ pl: 3 }}>
