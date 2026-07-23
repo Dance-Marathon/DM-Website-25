@@ -372,7 +372,7 @@ export default function CaptainQuiz() {
                     component="p"
                       variant="h6"
                       sx={{
-                        ccolor: mode === "dark" ? "#FFFFFF" : "#233563",
+                        color: mode === "dark" ? "#FFFFFF" : "#233563",
                         maxWidth: 700,
                         mx: "auto",
                         mb: 4,
@@ -400,23 +400,23 @@ export default function CaptainQuiz() {
 </Link>
                       !
                   </Typography>
-          <Button
-                                component={Link}
-                                to="/captains"
-                                variant="outlined"
-                                sx={{
-                                  color: "#E2883C",
-                                  borderColor: "#E2883C",
-                                  backgroundColor: "rgba(198, 106, 26, 0.08)",
-                                  "&:hover": {
-                                    borderColor: "#E2883C",
-                                    backgroundColor: "rgba(198, 106, 26, 0.2)",
-                                    color: "#EB9F68",
-                                  },
-                                }}
-                              >
-                                Back to Captain Teams page
-                              </Button>
+                  <Button
+                    component={RouterLink}
+                    to="/captains"
+                    variant="outlined"
+                    sx={{
+                      color: "#E2883C",
+                      borderColor: "#E2883C",
+                      backgroundColor: "rgba(198, 106, 26, 0.08)",
+                      "&:hover": {
+                        borderColor: "#E2883C",
+                        backgroundColor: "rgba(198, 106, 26, 0.2)",
+                        color: "#EB9F68",
+                      },
+                    }}
+                  >
+                    Back to Captain Teams page
+                  </Button>
         </Box>
         )}
     </Container>

@@ -111,7 +111,6 @@ root.render(
         <Route path="/alumni" element={<Alumni />} />
         <Route path="/ambassadors" element={<Ambassadors />} />
         <Route path="/miraclemakers" element={<MiracleMakers />} />
-        <Route path="/captainteams" element={<Captains />} />
         <Route path="/research" element={<ResearchList />} />
         <Route path="/research/:linkName" element={<ResearchTemplate />} />
         {/* <Route

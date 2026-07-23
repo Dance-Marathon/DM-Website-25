@@ -82,7 +82,7 @@ export default function Applications() {
             </li>
             <li>
               <Typography variant="body1" color="text.secondary">
-                Pay the $25 application fee. You only need to pay the
+                Pay the $20 application fee. You only need to pay the
                 application fee{" "}
                 <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
                   once

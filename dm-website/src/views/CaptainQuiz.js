@@ -21,7 +21,7 @@ import LazyLoad from "react-lazyload";
 import CaptainPic from "../assets/images/pagepics/CaptainsPic.jpg";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
   const originalQuestions = [
     {
@@ -181,6 +181,7 @@ export default function CaptainQuiz() {
 
   const [currentQuestion, setCurrentQuestion] = React.useState(0);
   const [answers, setAnswers] = React.useState({});
+  const navigate = useNavigate();
 
   const shuffleArray = (array) => {
     const shuffled = [...array];
@@ -335,8 +336,13 @@ export default function CaptainQuiz() {
             <Button
               variant="outlined"
               startIcon={<ArrowBackIcon />}
-              disabled={currentQuestion === 0}
-              onClick={() => setCurrentQuestion(currentQuestion - 1)}
+              onClick={() => {
+                if (currentQuestion === 0) {
+                  navigate("/captains");
+                } else {
+                  setCurrentQuestion(currentQuestion - 1);
+                }
+              }}
               sx={{
                 color: "#E2883C",
                 borderColor: "#E2883C",
