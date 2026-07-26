@@ -337,12 +337,12 @@ export default function CaptainQuiz() {
               variant="outlined"
               startIcon={<ArrowBackIcon />}
               onClick={() => {
-                if (currentQuestion === 0) {
-                  navigate("/captains");
-                } else {
-                  setCurrentQuestion(currentQuestion - 1);
-                }
-              }}
+              if (currentQuestion === 0) {
+                navigate("/captains");
+              } else {
+                setCurrentQuestion(currentQuestion - 1);
+              }
+            }}
               sx={{
                 color: "#E2883C",
                 borderColor: "#E2883C",
@@ -420,6 +420,9 @@ export default function CaptainQuiz() {
               color: "#E2883C",
               borderColor: "#E2883C",
               backgroundColor: "rgba(198, 106, 26, 0.08)",
+              px: 4,              // horizontal padding
+              py: 4,            // vertical padding
+              fontSize: "1.5rem",
               "&:hover": {
                 borderColor: "#E2883C",
                 backgroundColor: "rgba(198, 106, 26, 0.2)",

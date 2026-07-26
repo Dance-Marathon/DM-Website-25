@@ -92,7 +92,7 @@ const originalQuestions = [
       ],
     },
     {
-      question: "During Main Event...",
+      question: "During Main Event you'd rather be...",
       answers: [
         { text: "Dancing", team: "Morale" },
         { text: "Managing logistics", team: "Event Management" },

@@ -224,13 +224,13 @@ export default function Captains() {
          duties throughout the year depending on their teams. Click each tab
          below to learn more about each team and its responsibilities.
        </Typography>
-       <Typography variant="body1" color="text.secondary" paragraph>
+       <Typography variant="h5" color="text.secondary" paragraph>
          Unsure which team to join? Take this{" "}
          <Link
           component={RouterLink}
           to="/captainquiz"
           sx={{
-            color: mode === "dark" ? "#fff" : "#233563",
+            color: mode === "dark" ? "#fff" : "#4965A6",
             fontWeight: "bold",
             textDecoration: "none",
           }}
