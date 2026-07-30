@@ -81,6 +81,10 @@ import OurPromise2 from "../assets/images/blogpics/OurPromise/OurPromise2.jpg";
 import CarryTheDream1 from "../assets/images/blogpics/CarryTheDream/CarryTheDream1.jpg";
 import CarryTheDream2 from "../assets/images/blogpics/CarryTheDream/CarryTheDream2.jpg";
 
+
+import DreamsIntoMiracles1 from "../assets/images/blogpics/DreamsIntoMiracles/DreamsIntoMiracles1.png";
+import DreamsIntoMiracles2 from "../assets/images/blogpics/DreamsIntoMiracles/DreamsIntoMiracles2.jpeg";
+
 const blogs = [
   {
     id: 1,
@@ -514,6 +518,22 @@ const blogs = [
       "As DM at UF, we #CarryTheDream."
     ],
     images: [CarryTheDream2],
+    role: "Public Relations Overall Director",
+    organization: "Dance Marathon at The University of Florida",
+  },
+
+  {
+    id: 24,
+    linkName: "dreamsintomiracles",
+    title: "Dreams Into Miracles",
+    author: "Shae Helmer",
+    date: "July 30, 2026",
+    heroImage: DreamsIntoMiracles1,
+    content: [
+      "Aviana Gonzalez started her year off with a bang. Having raised $530 over the duration of this summer, Aviana created 305 of those miracles in the span of just one week, during our summer challenge, How Far Can You #CarryTheDream? Aviana felt empowered during this push, as it showed her that every dollar raised means something bigger is happening outside of an individual fundraising goal. She aims to lead by example, and her passion for fundraising is just the start. Her favorite way to fundraise is to text and call donors, saying she loves not only to fundraise but “educate family and friends on how DM helps the patients at Shands Children’s Hospital.\"",
+      "Starting as an Emerging Leader last year, Aviana learned to value connecting with others, educating them about our cause and pushed herself out of her comfort zone. This year, as the Hospitality Team’s Assistant Director of Internal Affairs, Aviana is wanting to start the year off by leading with energy and passion to #CarryTheDream long after the campaign ends. To her, #CarryTheDream means creating hope for those who need it most, and she loves working together with her team to make dreams come true every day. ",
+    ],
+    images: [DreamsIntoMiracles2],
     role: "Public Relations Overall Director",
     organization: "Dance Marathon at The University of Florida",
   },

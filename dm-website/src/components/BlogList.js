@@ -221,7 +221,14 @@ import blogs from "../data/blogData.js";
 //     author: "Shae Helmer",
 //     date: "June 6, 2026",
 //     imageUrl: CarryTheDream,
-//     linkName: "ourpromise",
+//     linkName: "carrythedream",
+//   },
+//     id: 24,
+//     title: "Dreams Into Miracles",
+//     author: "Shae Helmer",
+//     date: "July 30, 2026",
+//     imageUrl: DreamsIntoMiracles,
+//     linkName: "dreamsintomiracles",
 //   },
 // ];
 

@@ -4,7 +4,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AppAppBar from "../components/AppAppBar";
 import getLPTheme from "../getLPTheme";
 import Footer from "../components/Footer";
-import { Container, Typography, Box, Link } from "@mui/material";
+import { Container, Typography, Box, Link, Button } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import FAQ from "../components/FAQ";
@@ -44,6 +44,38 @@ export default function MiracleMakers() {
           gap: { xs: 2, sm: 3 },
         }}
       >
+         <Button
+            href="https://events.dancemarathon.com/dmatuf27?REFERRER=meta_ig"
+            aria-label="DonorDrive"
+            sx={{
+              backgroundColor: "rgba(35, 53, 99, 0.85)",
+              color: (theme) => theme.palette.primary.contrastText,
+              borderRadius: "50px",
+              transition: "background-color 0.3s ease",
+              width: "100%",
+              height: "80px",
+              "&:hover": {
+                backgroundColor: "rgba(226, 136, 60, 0.85)",
+              },
+            }}
+          >
+            <Typography
+              component="h2"
+              variant="h4"
+              fontSize={40}
+              paddingTop="10px"
+              paddingBottom="10px"
+              sx={{
+                whiteSpace: "nowrap",
+                overflow: "hidden",
+                textOverflow: "ellipsis",
+                display: "block",
+                color: "white",
+              }}
+            >
+              Register Here!
+            </Typography>
+          </Button>
         <Typography variant="body1" color="text.secondary">
           Dance Marathon at the University of Florida is an organization
           benefiting the patients of UF Health Shands Children's Hospital in

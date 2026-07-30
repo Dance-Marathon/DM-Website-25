@@ -97,44 +97,63 @@ export default function LandingPage() {
         <Box
           sx={{
             display: "flex",
+            flexDirection: { xs: "column", md: "row" },
             justifyContent: "center",
             alignItems: "center",
-            maxWidth: "100%",
+            gap: 3,
+            mt: 4,
           }}
         >
-                  <Button
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSfeJKWSa49Set5O2twZ_0kGOH-mhE3IkLGjgnW8kpPRwfgMZw/viewform"
-                      aria-label="Google Form"
-                    sx={{
-                      backgroundColor: "rgba(35, 53, 99, 0.85)",
-                      color: (theme) => theme.palette.primary.contrastText,
-                      borderRadius: "50px",
-                      transition: "background-color 0.3s ease",
-                      width: "80%",
-                      height: "80px",
-                      "&:hover": {
-                        backgroundColor: "rgba(226, 136, 60, 0.85)",
-                      },
-                    }}
-                  >
-                    <Typography
-                      component="h2"
-                      variant="h4"
-                      fontSize={30}
-                      paddingTop="10px"
-                      paddingBottom="10px"
-                      sx={{
-                        whiteSpace: "nowrap",
-                        overflow: "hidden",
-                        textOverflow: "ellipsis",
-                        display: "block",
-                        color: "white",
-                      }}
-                    >
-                      Subscribe to Our Newsletter!
-                    </Typography>
-                  </Button>
-                </Box>
+          <Button
+            component={Link}
+            to="/get-involved"
+            sx={{
+              backgroundColor: "rgba(35, 53, 99, 0.85)",
+              color: (theme) => theme.palette.primary.contrastText,
+              borderRadius: "50px",
+              transition: "background-color 0.3s ease",
+              width: { xs: "90%", md: "40%" },
+              height: "80px",
+              "&:hover": {
+                backgroundColor: "rgba(226, 136, 60, 0.85)",
+              },
+            }}
+          >
+            <Typography
+              component="h2"
+              variant="h4"
+              fontSize={30}
+              sx={{ color: "white" }}
+            >
+              Get Involved
+            </Typography>
+          </Button>
+
+          <Button
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfeJKWSa49Set5O2twZ_0kGOH-mhE3IkLGjgnW8kpPRwfgMZw/viewform"
+            aria-label="Google Form"
+            sx={{
+              backgroundColor: "rgba(35, 53, 99, 0.85)",
+              color: (theme) => theme.palette.primary.contrastText,
+              borderRadius: "50px",
+              transition: "background-color 0.3s ease",
+              width: { xs: "90%", md: "40%" },
+              height: "80px",
+              "&:hover": {
+                backgroundColor: "rgba(226, 136, 60, 0.85)",
+              },
+            }}
+          >
+            <Typography
+              component="h2"
+              variant="h4"
+              fontSize={30}
+              sx={{ color: "white" }}
+            >
+              Subscribe to Our Newsletter
+            </Typography>
+          </Button>
+        </Box>
         <Container>
           <Grid
             container

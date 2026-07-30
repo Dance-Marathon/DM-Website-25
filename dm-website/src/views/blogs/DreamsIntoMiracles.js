@@ -9,7 +9,6 @@ import ScrollToTop from "../../components/ScrollToTop";
 import PageHero from "../../components/PageHero";
 import getLPTheme from "../../getLPTheme";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import LazyLoad from "react-lazyload";
 
 // How to Add a Blog
@@ -20,11 +19,11 @@ import LazyLoad from "react-lazyload";
 
 // Add all images to dm-website/src/assets/images/blogpics in a new folder with the title of the blog
 // Import images here and add any more if needed
-import Image1 from "../../assets/images/blogpics/CarryTheDream/CarryTheDream1.jpg";
-import Image2 from "../../assets/images/blogpics/CarryTheDream/CarryTheDream2.jpg";
+import Image1 from "../../assets/images/blogpics/DreamsIntoMiracles/DreamsIntoMiracles1.png";
+import Image2 from "../../assets/images/blogpics/DreamsIntoMiracles/DreamsIntoMiracles2.jpeg";
 
 // Change name to Blog Name
-export default function CarryTheDream() {
+export default function DreamsIntoMiracles() {
   const [mode, setMode] = React.useState(() => {
     return localStorage.getItem("theme") || "light";
   });
@@ -43,7 +42,7 @@ export default function CarryTheDream() {
       <CssBaseline />
       <AppAppBar mode={mode} toggleColorMode={toggleColorMode} />
       <LazyLoad height={200} offset={100} once>
-        <PageHero imageUrl={Image1} title="A Dream Made True" />{" "}
+        <PageHero imageUrl={Image1} title="Dreams Into Miracles" />{" "}
         {/* Change blog name here */}
       </LazyLoad>
 
@@ -60,18 +59,10 @@ export default function CarryTheDream() {
       >
         <Box sx={{ textAlign: "left" }}>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Growing up my biggest dream was to be a dolphin trainer. Little eight-year-old me was absolutely certain that I could run the same shows that my mom took my sister and I to. Today, that is not my biggest dream. Now, I dream of travelling far and wide, and getting a degree to pursue a career that is fulfilling.
+          Aviana Gonzalez started her year off with a bang. Having raised $530 over the duration of this summer, Aviana created 305 of those miracles in the span of just one week, during our summer challenge, How Far Can You #CarryTheDream? Aviana felt empowered during this push, as it showed her that every dollar raised means something bigger is happening outside of an individual fundraising goal. She aims to lead by example, and her passion for fundraising is just the start. Her favorite way to fundraise is to text and call donors, saying she loves not only to fundraise but “educate family and friends on how DM helps the patients at Shands Children’s Hospital.\"” 
           </Typography>
           <Typography variant="body1" color="text.secondary" paragraph>
-            Little me got to dream so big, far beyond what seemed possible for my life at the time. However, the patients admitted to UF Health Shands Children’s Hospital don’t always get to do the same. Instead, they dream of their next visiting hours, or being able to take off their hospital bands and walk out of the doors. 
-          </Typography>
-
-          <Typography variant="body1" color="text.secondary" paragraph>
-            Dance Marathon at the University of Florida’s mission is to one day end pediatric illness. Every single member has dreams of their own to uphold, whether they dream of raising enough to provide life-saving equipment, or they simply dream to ensure no kid fights alone. We dream of the day no child ever lays in a hospital bed, and we hold these patients' dreams in our hearts to give them more than money could ever provide: hope. 
-          </Typography>
-
-          <Typography variant="body1" color="text.secondary" paragraph>
-            As DM at UF, we #CarryTheDream.
+          Starting as an Emerging Leader last year, Aviana learned to value connecting with others, educating them about our cause and pushed herself out of her comfort zone. This year, as the Hospitality Team’s Assistant Director of Internal Affairs, Aviana is wanting to start the year off by leading with energy and passion to #CarryTheDream long after the campaign ends. To her, #CarryTheDream means creating hope for those who need it most, and she loves working together with her team to make dreams come true every day. 
           </Typography>
 
           <Typography variant="body1" color="text.secondary" paragraph>
@@ -138,27 +129,26 @@ export default function CarryTheDream() {
           justifyContent="space-between"
           sx={{ mt: 4 }}
         >
-          <Grid item>
+          {/*<Grid item>
             <Button
               variant="outlined"
               startIcon={<ArrowBackIcon />}
               onClick={() =>
-                (window.location.href = "/blog/dreamsintomiracles")
-              }
+                (window.location.href = "/blog/ourpromise")
               sx={{
-                color: "#E2883C",
-                borderColor: "#E2883C",
-                backgroundColor: "rgba(198, 106, 26, 0.08)",
+                color: "primary.main",
+                borderColor: "white",
                 "&:hover": {
-                  borderColor: "#E2883C",
-                  backgroundColor: "rgba(198, 106, 26, 0.2)",
-                  color: "#EB9F68",
+                  borderColor: "primary.main",
+                  color: "primary.main",
                 },
               }}
             >
               Previous Blog
             </Button>
-          </Grid>
+          </Grid> */}
+
+          {/* If this is no longer most recent blog, uncomment below and change url to next blog */}
 
           <Grid item>
           <Button
@@ -166,7 +156,7 @@ export default function CarryTheDream() {
             variant="outlined"
             endIcon={<ArrowForwardIcon />}
             onClick={() =>
-              (window.location.href = "/blog/ourpromise")
+              (window.location.href = "/blog/carrythedream")
             }
             sx={{
               color: "#E2883C",
