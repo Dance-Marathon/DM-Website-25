@@ -88,7 +88,7 @@ export default function MiracleMakers() {
             Miracle Maker
           </span>
           , you will experience one of UF’s most adored traditions. Throughout
-          the duration of the 26.2-hour Main Event every spring, you will learn
+          the duration of the Main Event every spring, you will learn
           our Linedance, enjoy live entertainment, eat delicious food from our
           local partners and hear inspiring stories from our Miracle Families.
         </Typography>

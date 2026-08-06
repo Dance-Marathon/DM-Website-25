@@ -199,21 +199,13 @@ export default function Applications() {
              {" "} for application questions.
             </Typography>
           </Typography> */}
-            <Typography
-            variant="body1"
-            gutterBottom
-            color="text.secondary"
-            marginBottom={0}
-          >
-            Closed
-          </Typography>
           <Typography
           variant="body1"
           gutterBottom
           color="text.secondary"
           marginBottom={3.5}
         >
-          Learn more about what it means to be a captain {" "}
+          Captain applications will be open from Aug. 24 to Sept. 4. Learn more about what it means to be a Captain {" "}
           <Link
                     component={RouterLink}
                     to="/captains"
@@ -251,21 +243,13 @@ export default function Applications() {
             </Link>
             ! Applications are open until September 15th at 12pm.
           </Typography> */}
-                    <Typography
-            variant="body1"
-            gutterBottom
-            color="text.secondary"
-            marginBottom={0}
-          >
-            Closed
-          </Typography>
           <Typography
           variant="body1"
           gutterBottom
           color="text.secondary"
           marginBottom={3.5}
         >
-          Learn more about what it means to be an emerging leader {" "}
+          Emerging Leader applications will be open from Aug. 24 to Sept. 12. Learn more about what it means to be an Emerging Leader {" "}
           <Link
                     component={RouterLink}
                     to="/elp"
@@ -292,20 +276,12 @@ export default function Applications() {
             Ambassador Application
           </Typography>
           <Typography
-            variant="body1"
-            gutterBottom
-            color="text.secondary"
-            marginBottom={0}
-          >
-            Closed
-          </Typography>
-          <Typography
           variant="body1"
           gutterBottom
           color="text.secondary"
           marginBottom={3.5}
         >
-          Learn more about what it means to be an ambassador {" "}
+          Ambassador applications will be open from Aug. 24 to Sept. 4. Learn more about what it means to be an Ambassador {" "}
           <Link
                     component={RouterLink}
                     to="/ambassadors"
@@ -340,16 +316,13 @@ export default function Applications() {
           >
             Miracle Maker Application
           </Typography>
-          <Typography variant="body1" color="text.secondary" gutterBottom>
-            Closed
-          </Typography>
           <Typography
           variant="body1"
           gutterBottom
           color="text.secondary"
           marginBottom={3.5}
         >
-          Learn more about what it means to be a miracle maker {" "}
+          You can register to be a Miracle Maker at any time! Learn more about what it means to be a Miracle Maker {" "}
           <Link
                     component={RouterLink}
                     to="/miraclemaker"
