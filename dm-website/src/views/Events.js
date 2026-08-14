@@ -184,6 +184,39 @@ export default function Events() {
           </Box>
         </Box>
       </Container>
+
+      <Box
+        sx={{
+          width: "100%",
+          mt: 6,
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          pb: 6,
+        }}
+      >
+
+        <Box
+          sx={{
+            width: "100%",
+            maxWidth: "90%",
+            borderRadius: 2,
+            overflow: "hidden",
+            boxShadow: 2,
+          }}
+        >
+          <Box
+            component="iframe"
+            title="Dance Marathon Events Calendar"
+            src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York"
+            sx={{
+              width: "100%",
+              height: { xs: 500, md: 700 },
+              border: 0,
+            }}
+          />
+        </Box>
+      </Box>
       <Footer />
     </ThemeProvider>
   );

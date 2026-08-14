@@ -129,7 +129,7 @@ export default function Sponsors() {
       <LazyLoad height={200} offset={100} once>
         <PageHero
           imageUrl={SponsorPic}
-          title="Sponsors"
+          title="Partners"
           sx={{ fontFamily: "CasaPinada" }}
         />
       </LazyLoad>
@@ -154,13 +154,13 @@ export default function Sponsors() {
         <Typography variant="body1" color="text.secondary" marginTop={-2}>
           <span style={{  color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
             Dance Marathon at UF is so thankful for the support of our generous
-            Sponsors!
+            Partners!
           </span>{" "}
-          DM at UF offers many different ways to get involved as a Sponsor for
+          DM at UF offers many different ways to get involved as a Partner for
           our cause, each with various benefits to show our appreciation for
           your support.{" "}
           <span style={{  color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold" }}>
-            Our Sponsorships Team will connect your company with our
+            Our Sponsorships and Hospitality Team will connect your company with our
             Organization
           </span>
           , along with access to an extensive network of supporters of all ages
@@ -169,7 +169,7 @@ export default function Sponsors() {
 
         {/* Link to sponsorship opportunities */}
         <Typography variant="body1" color="text.secondary" marginTop={0}>
-          For more information, view our{" "}
+          For more information on sponsorships, view our{" "}
           <Link href={SponsorshipPacket} underline="always">
             sponsorship opportunities (PDF)
           </Link>
@@ -186,6 +186,24 @@ export default function Sponsors() {
           , at vcollins@floridadm.org.
         </Typography>
 
+        <Typography variant="body1" color="text.secondary" marginTop={0}>
+          For more information on hospitality partnership, view our{" "}
+          <Link href={SponsorshipPacket} underline="always">
+            hospitality opportunities (PDF)
+          </Link>
+          .
+        </Typography>
+
+        {/* Contact Information */}
+        <Typography variant="body1" color="text.secondary" marginTop={0}>
+          If you have any questions, please contact our Hospitality Overall
+          Director,{" "}
+          <Link href="mailto:vcollins@floridadm.org" underline="always">
+            Courtney Carter
+          </Link>
+          , at ccarter@floridadm.org.
+        </Typography>
+
         {/* Sponsors Section */}
         <Typography
           component="h2"
@@ -196,7 +214,7 @@ export default function Sponsors() {
           sx={{ marginTop: 4 }}
         >
           <span style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold" }}>
-            Our 2026 Sponsors
+            Our 2026 Partners
           </span>
         </Typography>
         <LazyLoad height={200} offset={100} once>

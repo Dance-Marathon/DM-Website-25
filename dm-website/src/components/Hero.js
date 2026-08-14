@@ -19,6 +19,20 @@ export default function Hero() {
         backgroundColor: "black",
       }}
     >
+      {/* <img
+        src="/hero.png"
+        alt=""
+        aria-hidden="true"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          pointerEvents: "none",
+        }}
+      /> */}
       <video
         className="VideoTag"
         autoPlay
