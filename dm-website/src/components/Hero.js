@@ -19,7 +19,7 @@ export default function Hero() {
         backgroundColor: "black",
       }}
     >
-      {/* <img
+      <img
         src="/hero.png"
         alt=""
         aria-hidden="true"
@@ -32,8 +32,8 @@ export default function Hero() {
           objectFit: "cover",
           pointerEvents: "none",
         }}
-      /> */}
-      <video
+      />
+      {/*<video
         className="VideoTag"
         autoPlay
         loop
@@ -52,7 +52,7 @@ export default function Hero() {
         }}
       >
         <source src="/home_video_summer26.mp4" type="video/mp4" />
-      </video>
+      </video> */}
       {/* Centered text container */}
       <Box
         sx={{
@@ -109,7 +109,7 @@ export default function Hero() {
           >
             University of Florida
           </Typography>
-          <Typography
+          {/*<Typography
             variant="h1"
             component="div"
             sx={{
@@ -120,7 +120,7 @@ export default function Hero() {
             }}
           >
             @CarryTheDream
-          </Typography>
+          </Typography> */}
         </Box>
       </Box>
       {/* Bottom bar */}

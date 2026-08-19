@@ -262,7 +262,7 @@ export default function Ambassadors() {
           </li>
         </ul>
 
-        <Typography component="h2" variant="h5" sx={(theme) => ({
+        {/*<Typography component="h2" variant="h5" sx={(theme) => ({
     color: theme.palette.mode === "dark" ? "#FFFFFF" : "#233563", mt: 2
   })}>
           2026 Dance Marathon Ambassadors
@@ -308,7 +308,7 @@ export default function Ambassadors() {
               </Box>
             </Grid>
           ))}
-        </Grid>
+        </Grid> */}
       </Container>
       <Footer />
     </ThemeProvider>
