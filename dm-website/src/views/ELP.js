@@ -73,7 +73,7 @@ export default function About() {
                              transition: "background-color 0.3s ease",
                              width: "100%",
                              height: "80px",
-                             gutterBottom: true,
+                             mb: 3,
                              "&:hover": {
                                backgroundColor: "rgba(226, 136, 60, 0.85)",
                              },
@@ -84,7 +84,7 @@ export default function About() {
                              variant="h4"
                              fontSize={40}
                              paddingTop="10px"
-                             paddingBottom="10px"
+                             paddingBottom="20px"
                              sx={{
                                whiteSpace: "nowrap",
                                overflow: "hidden",
