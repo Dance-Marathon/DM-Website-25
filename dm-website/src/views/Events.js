@@ -208,7 +208,7 @@ export default function Events() {
           <Box
             component="iframe"
             title="Dance Marathon Events Calendar"
-            src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FNew_York"
+            src="https://calendar.google.com/calendar/embed?src=c_d39c38f49d0e789459721d1d1352b16f9ce92a0312a4151fc14957c5626d53bc%40group.calendar.google.com&ctz=America%2FNew_York"
             sx={{
               width: "100%",
               height: { xs: 500, md: 700 },
