@@ -14,6 +14,7 @@ import {
  Chip,
  Grid,
  Link,
+ Button,
 } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
@@ -211,6 +212,75 @@ export default function Captains() {
        {/* <Typography variant="h4" color='#233563' gutterBottom>
        Captain Teams
      </Typography> */}
+<Typography
+          variant="body1"
+          gutterBottom
+          color="text.secondary"
+          marginBottom={3.5}
+        >
+         Linked {" "}
+          <Link
+                    href="https://docs.google.com/document/d/1cy0CHpb4Dv6MqchxkrXNOcy8enW0a-QewIxacaql0yA/edit?tab=t.0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: mode === "dark" ? "#FFFFFF" : "#233563",
+                      textDecoration: "none",
+                      font: "inherit",
+                      lineHeight: "inherit",
+                      verticalAlign: "baseline",
+                      fontWeight: "bold",
+                      "&:hover": {
+                        color: "#3B82F6",
+                      },
+                    }}
+                  >
+                    here
+                  </Link>
+                  {" "}are all Captain Team application questions for reference, as on Qualtrics, you will not be able to go back your application.
+          </Typography>
+     <Box
+               sx={{
+                 display: "flex",
+                 justifyContent: "center",
+                 alignItems: "center",
+                 maxWidth: "100%",
+               }}
+             >
+               <Button
+                 href="https://ufl.qualtrics.com/jfe/form/SV_5sxWHDD816DUXv8"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                 sx={{
+                   backgroundColor: "rgba(35, 53, 99, 0.85)",
+                   color: (theme) => theme.palette.primary.contrastText,
+                   borderRadius: "50px",
+                   transition: "background-color 0.3s ease",
+                   width: "100%",
+                   height: "80px",
+                   "&:hover": {
+                     backgroundColor: "rgba(226, 136, 60, 0.85)",
+                   },
+                 }}
+               >
+                 <Typography
+                   component="h2"
+                   variant="h4"
+                   fontSize={40}
+                   paddingTop="10px"
+                   paddingBottom="10px"
+                   sx={{
+                     whiteSpace: "nowrap",
+                     overflow: "hidden",
+                     textOverflow: "ellipsis",
+                     display: "block",
+                     color: "white",
+                   }}
+                 >
+                   Apply to be a Captain!
+                 </Typography>
+               </Button>
+             </Box>
      
        <Typography variant="body1" color="text.secondary" paragraph>
          Each{" "}

@@ -5,7 +5,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AppAppBar from "../components/AppAppBar";
 import getLPTheme from "../getLPTheme";
 import Footer from "../components/Footer";
-import { Container, Typography, Grid, Chip } from "@mui/material";
+import { Container, Typography, Grid, Chip, Button } from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import LazyLoad from "react-lazyload";
@@ -53,6 +53,50 @@ export default function About() {
             textAlign: { sm: "left", md: "left" },
           }}
         >
+
+          <Box
+                         sx={{
+                           display: "flex",
+                           justifyContent: "center",
+                           alignItems: "center",
+                           maxWidth: "100%",
+                         }}
+                       >
+                         <Button
+                           href="https://ufl.qualtrics.com/jfe/form/SV_0jFqxb7ks4MVT0i"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                           sx={{
+                             backgroundColor: "rgba(35, 53, 99, 0.85)",
+                             color: (theme) => theme.palette.primary.contrastText,
+                             borderRadius: "50px",
+                             transition: "background-color 0.3s ease",
+                             width: "100%",
+                             height: "80px",
+                             gutterBottom: true,
+                             "&:hover": {
+                               backgroundColor: "rgba(226, 136, 60, 0.85)",
+                             },
+                           }}
+                         >
+                           <Typography
+                             component="h2"
+                             variant="h4"
+                             fontSize={40}
+                             paddingTop="10px"
+                             paddingBottom="10px"
+                             sx={{
+                               whiteSpace: "nowrap",
+                               overflow: "hidden",
+                               textOverflow: "ellipsis",
+                               display: "block",
+                               color: "white",
+                             }}
+                           >
+                             Apply to be an ELP!
+                           </Typography>
+                         </Button>
+                       </Box>
           <Typography variant="body1" paragraph color="text.secondary">
             <span style={{ color: mode === "dark" ? "#fff" : "#233563", fontWeight: "bold" }}>
               The Emerging Leaders Program

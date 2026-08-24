@@ -205,10 +205,11 @@ export default function Applications() {
           color="text.secondary"
           marginBottom={3.5}
         >
-          Captain applications will be open from Aug. 24 to Sept. 4. Learn more about what it means to be a Captain {" "}
+          Captain applications are open NOW from Aug. 24 to Sept. 4 at 5 p.m. {" "}
           <Link
-                    component={RouterLink}
-                    to="/captains"
+                    href="https://ufl.qualtrics.com/jfe/form/SV_5sxWHDD816DUXv8"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     sx={{
                       color: mode === "dark" ? "#FFFFFF" : "#233563",
                       textDecoration: "none",
@@ -221,15 +222,50 @@ export default function Applications() {
                       },
                     }}
                   >
-                    here!
+                    Here
                   </Link>
+                  {" "}is the link to apply.
           </Typography>
           <Typography
             variant="body1"
             sx={{ fontWeight: "bold", color: mode === "dark" ? "#FFFFFF" : "#233563" }}
             gutterBottom
           >
-            Emerging Leaders Application
+            Ambassador Application
+          </Typography>
+          <Typography
+          variant="body1"
+          gutterBottom
+          color="text.secondary"
+          marginBottom={3.5}
+        >
+          Ambassador applications are open NOW from Aug. 24 to Sept. 4 at 5 p.m. {" "}
+          <Link
+                    href="https://ufl.qualtrics.com/jfe/form/SV_eh79nlChJJ1RM1w"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      color: mode === "dark" ? "#FFFFFF" : "#233563",
+                      textDecoration: "none",
+                      font: "inherit",
+                      lineHeight: "inherit",
+                      verticalAlign: "baseline",
+                      fontWeight: "bold",
+                      "&:hover": {
+                        color: "#3B82F6",
+                      },
+                    }}
+                  >
+                    Here
+                  </Link>
+              {" "}is the link to apply.
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{ fontWeight: "bold", color: mode === "dark" ? "#FFFFFF" : "#233563" }}
+            gutterBottom
+          >
+            Emerging Leader Application
           </Typography>
           {/* <Typography
             variant="body1"
@@ -249,10 +285,11 @@ export default function Applications() {
           color="text.secondary"
           marginBottom={3.5}
         >
-          Emerging Leader applications will be open from Aug. 24 to Sept. 12. Learn more about what it means to be an Emerging Leader {" "}
+          Emerging Leader applications are open NOW from Aug. 24 to Sept. 12 at 5 p.m. {" "}
           <Link
-                    component={RouterLink}
-                    to="/elp"
+                    href="https://ufl.qualtrics.com/jfe/form/SV_0jFqxb7ks4MVT0i"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     sx={{
                       color: mode === "dark" ? "#FFFFFF" : "#233563",
                       textDecoration: "none",
@@ -265,40 +302,9 @@ export default function Applications() {
                       },
                     }}
                   >
-                    here!
+                    Here
                   </Link>
-          </Typography>
-          <Typography
-            variant="body1"
-            sx={{ fontWeight: "bold", color: mode === "dark" ? "#FFFFFF" : "#233563" }}
-            gutterBottom
-          >
-            Ambassador Application
-          </Typography>
-          <Typography
-          variant="body1"
-          gutterBottom
-          color="text.secondary"
-          marginBottom={3.5}
-        >
-          Ambassador applications will be open from Aug. 24 to Sept. 4. Learn more about what it means to be an Ambassador {" "}
-          <Link
-                    component={RouterLink}
-                    to="/ambassadors"
-                    sx={{
-                      color: mode === "dark" ? "#FFFFFF" : "#233563",
-                      textDecoration: "none",
-                      font: "inherit",
-                      lineHeight: "inherit",
-                      verticalAlign: "baseline",
-                      fontWeight: "bold",
-                      "&:hover": {
-                        color: "#3B82F6",
-                      },
-                    }}
-                  >
-                    here!
-                  </Link>
+              {" "}is the link to apply.
           </Typography>
           {/* <Typography
             variant="body1"

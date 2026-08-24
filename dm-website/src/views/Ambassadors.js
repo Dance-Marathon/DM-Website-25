@@ -4,7 +4,7 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 import AppAppBar from "../components/AppAppBar";
 import getLPTheme from "../getLPTheme";
 import Footer from "../components/Footer";
-import { Container, Typography, Box, Link, Grid } from "@mui/material";
+import { Container, Typography, Box, Link, Grid, Button,} from "@mui/material";
 import ScrollToTop from "../components/ScrollToTop";
 import PageHero from "../components/PageHero";
 import "../App.css";
@@ -139,6 +139,48 @@ export default function Ambassadors() {
           gap: { xs: 2, sm: 3 },
         }}
       >
+         <Box
+               sx={{
+                 display: "flex",
+                 justifyContent: "center",
+                 alignItems: "center",
+                 maxWidth: "100%",
+               }}
+             >
+               <Button
+                 href="https://ufl.qualtrics.com/jfe/form/SV_eh79nlChJJ1RM1w"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                 sx={{
+                   backgroundColor: "rgba(35, 53, 99, 0.85)",
+                   color: (theme) => theme.palette.primary.contrastText,
+                   borderRadius: "50px",
+                   transition: "background-color 0.3s ease",
+                   width: "100%",
+                   height: "80px",
+                   "&:hover": {
+                     backgroundColor: "rgba(226, 136, 60, 0.85)",
+                   },
+                 }}
+               >
+                 <Typography
+                   component="h2"
+                   variant="h4"
+                   fontSize={40}
+                   paddingTop="10px"
+                   paddingBottom="10px"
+                   sx={{
+                     whiteSpace: "nowrap",
+                     overflow: "hidden",
+                     textOverflow: "ellipsis",
+                     display: "block",
+                     color: "white",
+                   }}
+                 >
+                   Apply to be an Ambassador!
+                 </Typography>
+               </Button>
+             </Box>
         <Typography variant="body1" color="text.secondary">
           <span style={{ color: mode === "dark" ? "#FFFFFF" : "#233563", fontWeight: "bold"}}>
             Organization Ambassadors
