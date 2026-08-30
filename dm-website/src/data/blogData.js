@@ -85,6 +85,9 @@ import CarryTheDream2 from "../assets/images/blogpics/CarryTheDream/CarryTheDrea
 import DreamsIntoMiracles1 from "../assets/images/blogpics/DreamsIntoMiracles/DreamsIntoMiracles1.png";
 import DreamsIntoMiracles2 from "../assets/images/blogpics/DreamsIntoMiracles/DreamsIntoMiracles2.jpeg";
 
+import MoreThanMorale1 from "../assets/images/blogpics/MoreThanMorale/MoreThanMorale1.jpg";
+import MoreThanMorale2 from "../assets/images/blogpics/MoreThanMorale/MoreThanMorale2.jpg";
+
 const blogs = [
   {
     id: 1,
@@ -535,6 +538,27 @@ const blogs = [
     ],
     images: [DreamsIntoMiracles2],
     role: "Public Relations Overall Director",
+    organization: "Dance Marathon at The University of Florida",
+  },
+
+  {
+    id: 25,
+    linkName: "morethanmorale",
+    title: "More Than Morale",
+    author: "Anna Timko",
+    date: "August 30, 2026",
+    heroImage: MoreThanMorale2,
+    content: [
+      "If someone asked me to describe Morale in one word, I don't think I could.\"",
+      "To some people, Morale is the team in the lime green polos cartwheeling across the Reitz Lawn, teaching the Linedance while dressed in a banana costume, or blowing the loud, brightly colored necklace whistle in every room. But to me, Morale is so much more than that. It is where I found my purpose, a place where I belonged, and the people who have completely changed my college experience.\n",
+      "When I joined DM at UF as an Ambassador my sophomore year, I found myself admiring the Morale Team. Not because they wore fun costumes or because they did silly dances, but because they had a way of making every person in the room feel welcome. Growing up in Michigan and moving 15 hours away for school, I was missing my community back home. Joining Dance Marathon, and eventually getting to know my team, gave me the sense of belonging I had been searching for.\n",
+      "When it was time to apply for Captain positions in the fall, I remember thinking, I want to help make people feel that same sense of belonging I felt.\n",
+      "That year, I was lucky enough to become a Morale Captain and I can confidently say that it was the best decision I have ever made. Most of my favorite college memories have come from this team. Whether it was laughing through Captain meetings, planning theme hours, teaching the Linedance, or spending an entire day at Main Event, every moment has been filled with purpose and people who inspire me every single day. They became the family I didn't know I needed when I first left home and the friendships I've made through Morale are ones I know will last long after graduation this spring.\n",
+      "Now, as the Morale Overall Director, I look back and it's incredible to think that joining Morale started with one application and one leap of faith. If you are considering getting involved with Dance Marathon, whether through a Captain position or another part of this organization, I encourage you to take that leap. You never know how one decision can shape your college experience, introduce you to your closest friends, or help you find a purpose and community you never expected.\n",
+      "There will never be enough words to describe how much I love Morale. It has shaped who I am, given me some of the happiest moments of my life, and people who inspire me everyday.\n",
+    ],
+    images: [MoreThanMorale1],
+    role: "Morale Overall Director",
     organization: "Dance Marathon at The University of Florida",
   },
 
