@@ -23,7 +23,7 @@ import OT5 from "../assets/images/OTHeadshots/Vivian Lopez.jpg";
 import OT6 from "../assets/images/OTHeadshots/Sydney Barnett.jpg";
 import OT7 from "../assets/images/OTHeadshots/Kristina Guerra.jpg";
 import OT8 from "../assets/images/OTHeadshots/Gabriella Paredes.jpg";
-import OT9 from "../assets/images/OTHeadshots/Zachary Myton.jpg";
+import OT9 from "../assets/images/OTHeadshots/Rena Eberhardt 1.jpeg";
 import OT10 from "../assets/images/OTHeadshots/Courtney Carter.jpg";
 import OT11 from "../assets/images/OTHeadshots/Surleen Sahni.jpg";
 import OT12 from "../assets/images/OTHeadshots/Grace Nelson.jpg";
@@ -119,9 +119,9 @@ function Contact() {
     },
     {
       image: OT9,
-      name: "Zachary Myton",
+      name: "Rena Eberhardt",
       position: { color: "info", label: "Finance Overall" },
-      email: "zmyton@floridadm.org",
+      email: "reberhardt@floridadm.org",
     },
     {
       image: OT10,
