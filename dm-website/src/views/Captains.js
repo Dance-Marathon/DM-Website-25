@@ -65,8 +65,8 @@ const teams = [
    responsibilities:
      "The Finance Team supports the execution of the overall fundraising strategy for Dance Marathon at the University of Florida. Working under the Assistant Directors of Fundraising Innovation & Incentives, Internal Development, and Financial Planning, Captains help bring initiatives to life. Captains will develop and implement creative incentives, supporting participants and teams and staffing key efforts such as fundraising support stations and the incentives table during major events. They play an active role in encouraging participation, generating new ideas, and ensuring campaigns are engaging and appealing to participants. Captains also assist with tracking fundraising progress, contributing to monthly reports on fundraising performance and sharing new, encouraging ideas to further participant impact. Through mentorship, collaboration and development opportunities, Captains grow as leaders while fostering a positive and connected team culture.",
    leadership: {
-     overallDirector: "Zachary Myton",
-     assistantDirectors: ["Assistant Director of Internal Affairs: Barra Shiffman", "Assistant Director of Financial Tracking: Rena Eberhardt", "Assistant Director of Strategy and Incentives: Kendall Mehlenbacher"],
+     overallDirector: "Rena Eberhardt",
+     assistantDirectors: ["Assistant Director of Internal Affairs: Barra Shiffman", "Assistant Director of Strategy and Incentives: Kendall Mehlenbacher"],
      captains: [],
    },
  },

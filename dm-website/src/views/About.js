@@ -66,8 +66,7 @@ export default function About() {
             <b style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6"}}>raised more than $34 million</b>,
             making it{" "}
             <b style={{ color: mode === "dark" ? "#FFFFFF" : "#233563" }}>
-              the most successful student-run philanthropy in the Southeastern
-              United States
+              the most successful student-run philanthropy on campus
             </b>
             . In 2026, DM at UF raised a grand total of{" "}
             <b style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6" }}>$1,152,326.32</b> for UF Health

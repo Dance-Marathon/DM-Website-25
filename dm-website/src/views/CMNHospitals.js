@@ -153,7 +153,7 @@ export default function CMNHospitals() {
               <img
                 src={TriBrand}
                 alt="UF Health Shands Children's Hospital"
-                style={{ maxWidth: "100%", height: "auto" }}
+                style={{ width: "400px", maxWidth: "100%", height: "auto" }}
               />
             </Box>
           </LazyLoad>

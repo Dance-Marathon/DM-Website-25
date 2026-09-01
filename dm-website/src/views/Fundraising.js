@@ -149,9 +149,9 @@ export default function Fundraising() {
             paragraph
           >
             If you have any questions about DonorDrive, contact the Finance
-            Overall Director, Zachary Myton, at{" "}
-            <Link href="mailto:zmyton@floridadm.org">
-              zmyton@floridadm.org
+            Overall Director, Rena Eberhardt, at{" "}
+            <Link href="mailto:reberhardt@floridadm.org">
+            reberhardt@floridadm.org
             </Link>
             .
           </Typography>

@@ -101,9 +101,9 @@ export default function Canning() {
           sx={{ mt: 2 }}
         >
           If you have any questions about canning, contact the Finance Overall
-          Director, Zachary Myton, at{" "}
-          <Link href="mailto:zmyton@floridadm.org">
-            zmyton@floridadm.org
+          Director, Rena Eberhardt, at{" "}
+          <Link href="mailto:reberhardt@floridadm.org">
+          reberhardt@floridadm.org
           </Link>
         </Typography>
       </Container>
