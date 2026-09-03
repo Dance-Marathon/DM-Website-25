@@ -15,15 +15,15 @@ import PageHero from "../components/PageHero";
 import HorizontalTeamCard from "../components/TeamCard";
 
 // Images
-import OT1 from "../assets/images/OTHeadshots/AP.jpg";
+import OT1 from "../assets/images/OTHeadshots/Ashley Paek.jpg";
 import OT2 from "../assets/images/OTHeadshots/Joshua Yaciuk.jpg";
-import OT3 from "../assets/images/OTHeadshots/MC.jpg";
+import OT3 from "../assets/images/OTHeadshots/Marina Cheema.jpg";
 import OT4 from "../assets/images/OTHeadshots/Lucy Eichler.jpg";
 import OT5 from "../assets/images/OTHeadshots/Vivian Lopez.jpg";
 import OT6 from "../assets/images/OTHeadshots/Sydney Barnett.jpg";
 import OT7 from "../assets/images/OTHeadshots/Kristina Guerra.jpg";
 import OT8 from "../assets/images/OTHeadshots/Gabriella Paredes.jpg";
-import OT9 from "../assets/images/OTHeadshots/Rena Eberhardt 1.jpeg";
+import OT9 from "../assets/images/OTHeadshots/Rena Eberhardt.jpg";
 import OT10 from "../assets/images/OTHeadshots/Courtney Carter.jpg";
 import OT11 from "../assets/images/OTHeadshots/Surleen Sahni.jpg";
 import OT12 from "../assets/images/OTHeadshots/Grace Nelson.jpg";
