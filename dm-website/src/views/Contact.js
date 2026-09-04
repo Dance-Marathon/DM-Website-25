@@ -22,7 +22,7 @@ import OT4 from "../assets/images/OTHeadshots/Lucy Eichler.jpg";
 import OT5 from "../assets/images/OTHeadshots/Vivian Lopez.jpg";
 import OT6 from "../assets/images/OTHeadshots/Sydney Barnett.jpg";
 import OT7 from "../assets/images/OTHeadshots/Kristina Guerra.jpg";
-import OT8 from "../assets/images/OTHeadshots/Gabriella Paredes.jpg";
+import OT8 from "../assets/images/OTHeadshots/Gaby Parades.jpg";
 import OT9 from "../assets/images/OTHeadshots/Rena Eberhardt.jpg";
 import OT10 from "../assets/images/OTHeadshots/Courtney Carter.jpg";
 import OT11 from "../assets/images/OTHeadshots/Surleen Sahni.jpg";
