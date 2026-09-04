@@ -206,7 +206,7 @@ export default function Applications() {
           marginBottom={3.5}
         >
           Closed
-          {/*Captain applications are open NOW from Aug. 24 to Sept. 4 at 5 p.m. {" "}
+          {/*Captain applications are open NOW from Aug. 24 to Sept. 4 at 5 p.m. {"  "}
           <Link
                     href="https://ufl.qualtrics.com/jfe/form/SV_5sxWHDD816DUXv8"
                     target="_blank"
