@@ -239,7 +239,7 @@ export default function Applications() {
           color="text.secondary"
           marginBottom={3.5}
         >
-          Ambassador applications are open NOW from Aug. 24 to Sept. 4 at 5 p.m. {" "}
+          Ambassador applications are rolling. {" "}
           <Link
                     href="https://ufl.qualtrics.com/jfe/form/SV_eh79nlChJJ1RM1w"
                     target="_blank"
