@@ -205,7 +205,8 @@ export default function Applications() {
           color="text.secondary"
           marginBottom={3.5}
         >
-          Captain applications are open NOW from Aug. 24 to Sept. 4 at 5 p.m. {" "}
+          Closed
+          {/*Captain applications are open NOW from Aug. 24 to Sept. 4 at 5 p.m. {" "}
           <Link
                     href="https://ufl.qualtrics.com/jfe/form/SV_5sxWHDD816DUXv8"
                     target="_blank"
@@ -224,7 +225,7 @@ export default function Applications() {
                   >
                     Here
                   </Link>
-                  {" "}is the link to apply.
+                  {" "}is the link to apply.*/}
           </Typography>
           <Typography
             variant="body1"
