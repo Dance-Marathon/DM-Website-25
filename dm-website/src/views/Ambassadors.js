@@ -45,7 +45,7 @@ export default function Ambassadors() {
     { organization: "Chi Phi", names: ["Thomas Tuzzolo", "Santiago Rodriguez Lopez"] },
     { organization: "Club Baseball", names: ["Jeremiah Webbert"] },
     {
-      organization: "Delta DChi",
+      organization: "Delta Chi",
       names: ["Will Curran", "Daniel Perez"],
     },
     {
