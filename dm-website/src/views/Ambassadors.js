@@ -157,9 +157,12 @@ export default function Ambassadors() {
                    paddingTop="10px"
                    paddingBottom="10px"
                    sx={{
-                     whiteSpace: "nowrap",
-                     overflow: "hidden",
-                     textOverflow: "ellipsis",
+                    fontSize: {
+                      xs: "24px",
+                      sm: "30px",
+                      md: "40px",
+                    },
+                     whiteSpace: "normal",
                      display: "block",
                      color: "white",
                    }}
