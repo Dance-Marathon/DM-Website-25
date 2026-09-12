@@ -30,94 +30,81 @@ export default function Ambassadors() {
   const ambassadors = [
     {
       organization: "Alpha Chi Omega",
-      names: [],
+      names: ["Daniella Brown", "Olivia McGoldrick"],
     },
-    { organization: "Alpha Delta Pi", names: [] },
-    { organization: "Alpha Epsilon Phi", names: [] },
-    { organization: "Alpha Epsilon Pi ", names: [] },
+    { organization: "Alpha Delta Pi", names: ["Isabella Delsancha", "Aubrey McCown"] },
+    { organization: "Alpha Epsilon Phi", names: ["Olivia Kalish"] },
+    { organization: "Alpha Omicron Pi ", names: ["Emma Fetherson", "Sophia Gonzalez"] },
     {
       organization: "Alpha Phi",
-      names: [],
+      names: ["Isabella John"],
     },
-    { organization: "AMSA", names: [] },
-    { organization: "Catholic Gators", names: [] },
-    { organization: "Chi Omega", names: [] },
-    { organization: "Chi Phi", names: [] },
-    { organization: "Delta Chi", names: [] },
+    { organization: "AMSA", names: ["Isabella Hyde", "Maya Hamdan"] },
+    { organization: "Beta Theta Pi", names: ["Jonathon Matus"] },
+    { organization: "Chi Omega", names: ["Savannah Whetstone"] },
+    { organization: "Chi Phi", names: ["Thomas Tuzzolo", "Santiago Rodriguez Lopez"] },
+    { organization: "Club Baseball", names: ["Jeremiah Webbert"] },
     {
-      organization: "Delta Delta Delta",
-      names: [],
+      organization: "Delta DChi",
+      names: ["Will Curran", "Daniel Perez"],
     },
     {
       organization: "Delta Gamma",
-      names: [],
+      names: ["Madeline Clark"],
     },
-    { organization: "Delta Nu Zeta", names: [] },
+    { organization: "Delta Nu Zeta", names: ["Nina Hughes", "Chloe Souliere"] },
     {
+      organization: "Delta Phi Epsilon",
+      names: ["Remi Potack"],
+    },{
       organization: "Delta Sigma Phi",
-      names: [],
+      names: ["Preston Frisch", "Peter Kaloudis"],
     },
-    { organization: "Delta Tau Delta", names: [] },
-    { organization: "Delta Zeta", names: [] },
-    {
-      organization: "Footprints",
-      names: [],
-    },
-    { organization: "Gamma Eta", names: [] },
+    { organization: "Delta Tau Delta", names: ["Tiago Machado Saenz"] },
+    { organization: "Delta Zeta", names: ["Skye Zenni"] },
+
+    { organization: "Gamma Eta", names: ["Valeria Palacio", "Sophia Vigil"] },
     {
       organization: "Gamma Phi Beta",
-      names: [],
+      names: ["Abby Henderson"],
     },
     {
       organization: "Hispanic Student Association",
-      names: [],
+      names: ["Zeke Serrano"],
     },
-    { organization: "Innovation Academy", names: [] },
-    { organization: "Kappa Alpha Order", names: [] },
+    { organization: "Kappa Alpha Order", names: ["Brant Peterson"] },
     {
       organization: "Kappa Alpha Theta",
-      names: [],
+      names: ["Seyran Kepic"],
     },
     {
       organization: "Kappa Delta",
-      names: [],
+      names: ["Caterina Arner"],
     },
     {
       organization: "Kappa Kappa Gamma",
-      names: [],
+      names: ["Abigail Anderson", "Julianna Wang"],
     },
     {
       organization: "Kappa Phi Epsilon",
-      names: [],
+      names: ["Anthony Soehnlein", "Ethan Swanson"],
     },
+    { organization: "LeadUF", names: ["Parker Tan"] },
     {
-      organization: "Kappa Sigma",
-      names: [],
+      organization: "Phi Delta Epsilon",
+      names: ["Saloni Datta", "Jackson Burkett"],
     },
-    { organization: "Lambda Chi Alpha", names: [] },
-    {
-      organization: "Phi Delta Theta",
-      names: [],
-    },
-    { organization: "Phi Gamma Delta", names: [] },
-    { organization: "Phi Kappa Tau", names: [] },
-    { organization: "Phi Mu", names: [] },
-    { organization: "Pi Beta Phi", names: [] },
-    { organization: "Pi Kappa Alpha", names: [] },
-    { organization: "Sigma Alpha Epsilon", names: [] },
-    { organization: "Sigma Kappa", names: [] },
-    {
-      organization: "Sigma Phi Epsilon",
-      names: [],
-    },
-    { organization: "Tau Epsilon Phi", names: [] },
-    { organization: "Tau Kappa Epsilon", names: [] },
-    { organization: "Theta Chi Fraternity ", names: [] },
-    { organization: "UF Honors Program", names: [] },
-    { organization: "UF Law", names: [] },
-    { organization: "UF PaCE", names: [] },
-    { organization: "Zeta Beta Tau", names: [] },
-    { organization: "Zeta Tau Alpha", names: [] },
+    { organization: "Phi Gamma Delta", names: ["Michael Megaro", "Jacon Giambalvo"] },
+    { organization: "Phi Kappa Tau", names: ["Dylan Dougherty", "Jake Lubin"] },
+    { organization: "Phi Mu", names: ["Paige Swanson"] },
+    { organization: "Pi Beta Phi", names: ["Mallory Farnand", "Julianna Grub"] },
+    { organization: "Pi Lambda Phi", names: ["Andrew Tanner"] },
+    { organization: "Sigma Kappa", names: ["Meadow Parker"] },
+    { organization: "Tau Epsilon Phi", names: ["Logan Weitzner"] },
+    { organization: "Team Hope", names: ["Claire Allen"] },
+    { organization: "Theta Chi ", names: ["Bennett Hoberman"] },
+    { organization: "Zeta Beta Tau", names: ["Jacob Schiller"] },
+    { organization: "Zeta Tau Alpha", names: ["Amanda Rodriguez"] },
   ];
 
   return (
@@ -200,7 +187,7 @@ export default function Ambassadors() {
         </Typography>
         <Typography variant="body1" sx={{ color: "#000000" }} marginTop={0}>
           <Link href={AmbassadorGuidelines} sx={{ display: "inline" }}>
-            View the 2026 Ambassador Guidelines (PDF)
+            View the 2027 Ambassador Guidelines (PDF)
           </Link>
         </Typography>
 
@@ -304,10 +291,10 @@ export default function Ambassadors() {
           </li>
         </ul>
 
-        {/*<Typography component="h2" variant="h5" sx={(theme) => ({
+        <Typography component="h2" variant="h5" sx={(theme) => ({
     color: theme.palette.mode === "dark" ? "#FFFFFF" : "#233563", mt: 2
   })}>
-          2026 Dance Marathon Ambassadors
+          2027 Dance Marathon Ambassadors
         </Typography>
         <Grid
           container
@@ -350,7 +337,7 @@ export default function Ambassadors() {
               </Box>
             </Grid>
           ))}
-        </Grid> */}
+        </Grid>
       </Container>
       <Footer />
     </ThemeProvider>
