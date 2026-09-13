@@ -286,26 +286,7 @@ export default function Applications() {
           color="text.secondary"
           marginBottom={3.5}
         >
-          Emerging Leader applications are open NOW from Aug. 24 to Sept. 12 at 5 p.m. {" "}
-          <Link
-                    href="https://ufl.qualtrics.com/jfe/form/SV_0jFqxb7ks4MVT0i"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    sx={{
-                      color: mode === "dark" ? "#FFFFFF" : "#233563",
-                      textDecoration: "none",
-                      font: "inherit",
-                      lineHeight: "inherit",
-                      verticalAlign: "baseline",
-                      fontWeight: "bold",
-                      "&:hover": {
-                        color: "#3B82F6",
-                      },
-                    }}
-                  >
-                    Here
-                  </Link>
-              {" "}is the link to apply.
+          Closed
           </Typography>
           {/* <Typography
             variant="body1"

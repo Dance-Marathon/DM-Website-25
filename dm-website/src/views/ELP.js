@@ -62,40 +62,6 @@ export default function About() {
                            maxWidth: "100%",
                          }}
                        >
-                         <Button
-                           href="https://ufl.qualtrics.com/jfe/form/SV_0jFqxb7ks4MVT0i"
-                              target="_blank"
-                              rel="noopener noreferrer"
-                           sx={{
-                             backgroundColor: "rgba(35, 53, 99, 0.85)",
-                             color: (theme) => theme.palette.primary.contrastText,
-                             borderRadius: "50px",
-                             transition: "background-color 0.3s ease",
-                             width: "100%",
-                             height: "80px",
-                             mb: 3,
-                             "&:hover": {
-                               backgroundColor: "rgba(226, 136, 60, 0.85)",
-                             },
-                           }}
-                         >
-                           <Typography
-                             component="h2"
-                             variant="h4"
-                             fontSize={40}
-                             paddingTop="10px"
-                             paddingBottom="20px"
-                             sx={{
-                               whiteSpace: "nowrap",
-                               overflow: "hidden",
-                               textOverflow: "ellipsis",
-                               display: "block",
-                               color: "white",
-                             }}
-                           >
-                             Apply to be an ELP!
-                           </Typography>
-                         </Button>
                        </Box>
           <Typography variant="body1" paragraph color="text.secondary">
             <span style={{ color: mode === "dark" ? "#fff" : "#233563", fontWeight: "bold" }}>
