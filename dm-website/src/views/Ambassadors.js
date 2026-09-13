@@ -32,7 +32,7 @@ export default function Ambassadors() {
       organization: "Alpha Chi Omega",
       names: ["Daniella Brown", "Olivia McGoldrick"],
     },
-    { organization: "Alpha Delta Pi", names: ["Isabella Delsancha", "Aubrey McCown"] },
+    { organization: "Alpha Delta Pi", names: ["Aubrey McCown"] },
     { organization: "Alpha Epsilon Phi", names: ["Olivia Kalish"] },
     { organization: "Alpha Omicron Pi ", names: ["Emma Fetherson", "Sophia Gonzalez"] },
     {
