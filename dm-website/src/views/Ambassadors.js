@@ -49,6 +49,10 @@ export default function Ambassadors() {
       names: ["Will Curran", "Daniel Perez"],
     },
     {
+      organization: "Delta Delta Delta",
+      names: ["Luciana Granados"],
+    },
+    {
       organization: "Delta Gamma",
       names: ["Madeline Clark"],
     },

@@ -107,7 +107,7 @@ const teams = [
    leadership: {
      overallDirector: "Rebekah Zuckerman",
      assistantDirectors: ["Assistant Director of Emerging Organizations: Abby McCaskill", "Assistant Director of Evolving Organizations: Ava Piersynski", "Assistant Director of Established Organizations: Juliana Buckley", "Assistant Director of Fundraising Development: Ari Spiegel", "Assistant Director of Internal Affairs: Alexis Arnoldi"],
-     captains: ["Sidney Kamerman", "Sydney Ramsey", "Gracie Pinto", "Ardyn Wales", "Elisa Koechner", "Ella Galjanich", "Roselyn Almora", "Isabella Roman", "Cecilia Allen", "Angelica Mir", "Emma Stewart", "Natalia Perez", "Fallon Rosenbaum", "Jack Cunningham"],
+     captains: ["Sidney Kamerman", "Sydney Ramsey", "Gracie Pinto", "Ardyn Wales", "Elisa Koechner", "Ella Galjanich", "Roselyn Almora", "Isabella Roman", "Cecilia Allen", "Angelica Mir", "Emma Stewart", "Natalia Perez", "Fallon Rosenbaum", "Jack Cunningham", "Mena Walker"],
    },
  },
  {
