@@ -109,7 +109,7 @@ export default function Hero() {
           >
             University of Florida
           </Typography>
-          {/*<Typography
+          <Typography
             variant="h1"
             component="div"
             sx={{
@@ -119,8 +119,8 @@ export default function Hero() {
               textShadow: "4px 4px 4px rgba(0, 0, 0, 0.5)",
             }}
           >
-            @CarryTheDream
-          </Typography> */}
+            @PowerOfUs
+          </Typography> 
         </Box>
       </Box>
       {/* Bottom bar */}
