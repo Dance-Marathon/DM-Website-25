@@ -93,6 +93,25 @@ export default function LandingPage() {
               <b>$1,152,326.32!</b>
             </i>
           </Typography>
+          <Typography
+            component="p"
+            variant="subtitle1"
+            align="center"
+            color="text.secondary"
+            py="10px"
+            pb="0px"
+          >
+            Click{" "}
+            <Link
+              href="https://youtu.be/x-uVU0F5s9Y?si=HSW-7ASV9x9kaDa3"
+              target="_blank"
+              rel="noopener noreferrer"
+              sx={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6" }}
+            >
+              here
+            </Link>
+            {" "}to view our yearlong campaign video!
+          </Typography>
         </Box>
         <Box
           sx={{

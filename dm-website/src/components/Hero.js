@@ -33,7 +33,7 @@ export default function Hero() {
           pointerEvents: "none",
         }}
       />
-      {/*<video
+      <video
         className="VideoTag"
         autoPlay
         loop
@@ -51,8 +51,8 @@ export default function Hero() {
           pointerEvents: "none",
         }}
       >
-        <source src="/home_video_summer26.mp4" type="video/mp4" />
-      </video> */}
+        <source src="27yearlongvideo.mp4" type="video/mp4" />
+      </video> 
       {/* Centered text container */}
       <Box
         sx={{
