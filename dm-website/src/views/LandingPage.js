@@ -7,7 +7,7 @@ import AppAppBar from "../components/AppAppBar";
 import Hero from "../components/Hero";
 import getLPTheme from "../getLPTheme";
 import { Typography, Container, Grid, Button } from "@mui/material";
-import { Link } from "react-router-dom";
+import Link from "@mui/material/Link";
 import LandingCarousel from "../components/LandingCarousel";
 import LazyLoad from "react-lazyload";
 
@@ -103,6 +103,7 @@ export default function LandingPage() {
           >
             Click{" "}
             <Link
+              component="a"
               href="https://youtu.be/x-uVU0F5s9Y?si=HSW-7ASV9x9kaDa3"
               target="_blank"
               rel="noopener noreferrer"
