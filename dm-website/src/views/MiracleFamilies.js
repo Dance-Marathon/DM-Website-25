@@ -323,14 +323,14 @@ export default function MiracleFamilies() {
               // { image: JadaT, title: 'Jada T.', content: "Jada Turner is a spunky 13-year-old girl in seventh grade. Jada loves drawing, playing in her school's band, and is an honorary UF Women's Lacrosse member. In August 2018, Jada was diagnosed with acute myeloid leukemia. Starting that fall, she underwent treatment and 6 months of chemotherapy. Upon completing her chemotherapy regimen, Jada received a bone marrow transplant and was given a remission status. Jada's cancer returned in the fall of 2020; she underwent a second round of chemotherapy and received her second bone marrow transplant. Jada was placed in remission once more, and returned to her life at home. On February 27th of 2022, halfway through her 6th grade year, Jada's family received the news that her cancer had returned for a third time. After a third round of chemotherapy and a bone marrow transplant, Jada is cancer free! Jada continues to inspire her family and friends everyday with her upbeat attitude and smile that can light up a room!" },
 
               // { image: JoelS, title: 'Joel S.', content: "Joel is 17 and Hannah is 5 and they are two people out of the 2,000 people in the world who have a rare genetic condition called Cystinosis. Cystinosis is a disease that effects every cell in your body. Joel had his first kidney transplant at Shands Children's Hospital in 2018. This kidney rejected and he received another transplant in 2020. Both Hannah and Joel receive food and medication through a g-tube around the clock. Hannah gets hooked up to a machine at bedtime so that way she can sleep through the night. One side effect of Cystinosis is that it can cause you to go blind without proper treatment. So, Hannah's eyes are always very sensitive. The funds we raise have allowed Hannah and Joel to receive the proper treatment, care, and medications that allow them to live a seemingly normal life." },
-              {
-                image: JudeOliverS,
-                title: "Jude & Oliver S.",
-                learnMoreLink:
-                  "https://docs.google.com/document/d/11bzxuABhlnkOzllpI3jhse5ESrT75p3k1hGiDB9gsgg/edit?usp=share_link",
-                content:
-                  "Jude and Oliver were born 14 weeks early at UF Health Shands Children’s Hospital, weighing just over 2 pounds each, and spent months in the NICU. Both boys received critical treatments for their underdeveloped lungs, with Oliver undergoing surgery for patent ductus arteriosus (PDA) at 3 weeks old. Jude went home after 81 days, and Oliver followed after 3 months, later being diagnosed with chronic lung disease and asthma, which is now well-managed. Now 15, Oliver loves, science, marching band, and soccer, and Jude loves history, piano, drawing, and video games.",
-              },
+              //{
+                //image: JudeOliverS,
+                //title: "Jude & Oliver S.",
+                //learnMoreLink:
+                  //"https://docs.google.com/document/d/11bzxuABhlnkOzllpI3jhse5ESrT75p3k1hGiDB9gsgg/edit?usp=share_link",
+                //content:
+                  //"Jude and Oliver were born 14 weeks early at UF Health Shands Children’s Hospital, weighing just over 2 pounds each, and spent months in the NICU. Both boys received critical treatments for their underdeveloped lungs, with Oliver undergoing surgery for patent ductus arteriosus (PDA) at 3 weeks old. Jude went home after 81 days, and Oliver followed after 3 months, later being diagnosed with chronic lung disease and asthma, which is now well-managed. Now 15, Oliver loves, science, marching band, and soccer, and Jude loves history, piano, drawing, and video games.",
+              //},
               // {
               //   image: KaliahE,
               //   title: "Kaliah E.",
