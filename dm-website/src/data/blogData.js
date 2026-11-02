@@ -88,6 +88,9 @@ import DreamsIntoMiracles2 from "../assets/images/blogpics/DreamsIntoMiracles/Dr
 import MoreThanMorale1 from "../assets/images/blogpics/MoreThanMorale/MoreThanMorale1.jpg";
 import MoreThanMorale2 from "../assets/images/blogpics/MoreThanMorale/MoreThanMorale2.jpg";
 
+import TT26 from "../assets/images/blogpics/TT26/TT26.jpg";
+import TT262 from "../assets/images/blogpics/TT26/TT26.jpg";
+
 const blogs = [
   {
     id: 1,
@@ -559,6 +562,23 @@ const blogs = [
     ],
     images: [MoreThanMorale1],
     role: "Morale Overall Director",
+    organization: "Dance Marathon at The University of Florida",
+  },
+
+  {
+    id: 26,
+    linkName: "tt26",
+    title: "United in Our Power",
+    author: "Lily Peskin",
+    date: "November 8, 2026",
+    heroImage: TT26,
+    content: [
+      "When I first joined Dance Marathon at UF my sophomore year, I wondered what this cause would one day mean to me. Ever since I was little, I’ve listened to my family members share countless stories about their Dance Marathon experiences in college, and could only hope to have the same life-changing opportunity they did. One year later, I look back on my journey in this organization and know my younger self would be proud. I’m filled with gratitude knowing I have the chance to be part of something so much bigger than myself and to contribute to a cause that truly changes lives. I’m still amazed by the extraordinary impact a couple hundred college students can have when we stand united in the fight against childhood illness.",
+      "This past week on Transform Today, I saw what our united power can translate into. From the long, tiring days spent fighting for kids to have a better future, to watching our campus come together to support our cause, to hitting the gong as a team during Miracles Under the Stars, we united for a bigger purpose. Each of these moments brought the #PowerOfUs to life, and I couldn’t help but be proud of what we accomplished together.",
+      "Transform Today was a testament to the profound impact Dance Marathon at UF can have when we stand united in our power to create something incredible and move closer to a brighter future for all kids. Seeing this firsthand made me feel so lucky to be part of this fight and to work alongside some of the most determined and genuine people to make a difference right down the road. As I look towards the rest of the year, I hope to carry the power and momentum from TT with me, remembering the miracles our efforts made possible and what makes DM at UF so special.",
+    ],
+    images: [TT262],
+    role: "Public Relations Captain",
     organization: "Dance Marathon at The University of Florida",
   },
 

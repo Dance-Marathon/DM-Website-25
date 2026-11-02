@@ -24,7 +24,6 @@ import ElizabethC from "../assets/images/miraclechildren/Elie.jpg";
 import EllaR from "../assets/images/miraclechildren/Ella Grace.jpg";
 import EleanorZ from "../assets/images/miraclechildren/Eleanor.jpg";
 //import EmilyM from "../assets/images/miraclechildren/Emily.jpg";
-import JudeOliverS from "../assets/images/miraclechildren/Jude and Oliver.jpg";
 import GeneviveS from "../assets/images/miraclechildren/Genevive.jpg";
 import HaleyW from "../assets/images/miraclechildren/Haley.jpg";
 //import KaliahE from "../assets/images/miraclechildren/Kaliah.jpg";
