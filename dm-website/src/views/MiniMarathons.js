@@ -194,6 +194,15 @@ export default function MiniMarathons() {
                     component="span"
                     color="text.secondary"
                   >
+                    Mount Dora High School
+                  </Typography>
+                </li>
+                <li>
+                  <Typography
+                    variant="body1"
+                    component="span"
+                    color="text.secondary"
+                  >
                     Newberry High School
                   </Typography>
                 </li>
