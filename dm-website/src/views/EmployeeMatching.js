@@ -209,8 +209,8 @@ export default function EmployeeMatching() {
             <span style={{ color: mode === "dark" ? "#FFFFFF" : "#4965A6", fontWeight: "bold" }}>
               PLEASE NOTE:
             </span>{" "}
-            Notify our Finance Manager, Joshua Yaciuk, at{" "}
-            <Link href="mailto:jyaciuk@floridadm.org">jyaciuk@floridadm.org</Link>{" "}
+            Notify our Executive Director, Ashley Paek, at{" "}
+            <Link href="mailto:apaek@floridadm.org">apaek@floridadm.org</Link>{" "}
             whenever a matching gift request has been submitted. The matching
             gift will be attributed to the individual who received the original
             donation. Please allow 60 days for the Office of Development to
@@ -230,8 +230,8 @@ export default function EmployeeMatching() {
           </Typography>
           <Typography color="text.secondary" paragraph>
             Please do not fill out any forms sent with checks; instead, turn
-            them in directly into the Finance Manager, reachable at{" "}
-            <Link href="mailto:jyaciuk@floridadm.org">jyaciuk@floridadm.org</Link>
+            them in directly into the Executive Director, reachable at{" "}
+            <Link href="mailto:apaek@floridadm.org">apaek@floridadm.org</Link>
             .
           </Typography>
         </Box>

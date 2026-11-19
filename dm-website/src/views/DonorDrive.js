@@ -75,10 +75,10 @@ export default function DonorDrive() {
             paragraph
             sx={{ mt: 4 }}
           >
-            If you have any further questions, please contact our Finance
-            Manager
-            <Link href="mailto:jyaciuk@floridadm.org."> Joshua Yaciuk</Link> at
-            jyaciuk@floridadm.org.
+            If you have any further questions, please contact our Executive Director
+            
+            <Link href="mailto:apaek@floridadm.org."> Ashley Paek</Link> at
+            apaek@floridadm.org.
           </Typography>
         </Box>
 

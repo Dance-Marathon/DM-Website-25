@@ -76,12 +76,6 @@ function Contact() {
       email: "apaek@floridadm.org",
     },
     {
-      image: OT2,
-      name: "Joshua Yaciuk",
-      position: { color: "info", label: "Finance Manager" },
-      email: "jyaciuk@floridadm.org",
-    },
-    {
       image: OT3,
       name: "Marina Cheema",
       position: { color: "info", label: "Marketing Manager" },
